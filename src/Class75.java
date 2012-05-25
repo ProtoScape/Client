@@ -312,7 +312,7 @@ class Class75
 	anInterface17_1244 = interface17;
 	aClass356_1241.removeAll(0);
 	int i = aClass45_1237.getArchiveId("details");
-	int[] is = aClass45_1237.method396(i, 0);
+	int[] is = aClass45_1237.getActiveChildren(i);
 	if (is != null) {
 	    for (int i_47_ = 0; i_47_ < is.length; i_47_++) {
 		Class348_Sub42_Sub14 class348_sub42_sub14
@@ -551,7 +551,7 @@ class Class75
     static final void method756(AbstractToolkit var_ha, int i, int i_75_) {
 	ByteBuffer class348_sub49
 	    = (new ByteBuffer
-	       (aClass45_1237.getArchiveChild((((Class348_Sub42_Sub14)
+	       (aClass45_1237.getChildArchive((((Class348_Sub42_Sub14)
 					  aClass348_Sub42_Sub14_1243)
 					 .aString9625),
 					"area")));
@@ -1103,14 +1103,9 @@ class Class75
 	}
     }
     
-    static final Class348_Sub42_Sub14 method766(int i, int i_191_) {
-	for (Class348_Sub42_Sub14 class348_sub42_sub14
-		 = (Class348_Sub42_Sub14) aClass356_1241.method3484(0);
-	     class348_sub42_sub14 != null;
-	     class348_sub42_sub14
-		 = (Class348_Sub42_Sub14) aClass356_1241.method3482(0)) {
-	    if (((Class348_Sub42_Sub14) class348_sub42_sub14).aBoolean9639
-		&& class348_sub42_sub14.method3238((byte) -120, i, i_191_))
+    static Class348_Sub42_Sub14 method766(int cX, int cY) {
+	for (Class348_Sub42_Sub14 class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3484(0); class348_sub42_sub14 != null; class348_sub42_sub14 = (Class348_Sub42_Sub14) aClass356_1241.method3482(0)) {
+	    if (((Class348_Sub42_Sub14) class348_sub42_sub14).aBoolean9639 && class348_sub42_sub14.method3238((byte) -120, cX, cY))
 		return class348_sub42_sub14;
 	}
 	return null;

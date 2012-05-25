@@ -67,7 +67,7 @@ final class Class187
 	    return class321;
 	byte[] is;
 	synchronized (aClass45_2498) {
-	    is = aClass45_2498.getArchiveChild(35, i_3_);
+	    is = aClass45_2498.getChildArchive(35, i_3_);
 	}
 	class321 = new Class321();
 	if (is != null)
@@ -105,7 +105,7 @@ final class Class187
 		aClass45_2498 = class45;
 		if (aClass45_2498 == null)
 		    break;
-		aClass45_2498.method407(35);
+		aClass45_2498.getAmountChildEntries(35);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("qga.<init>("

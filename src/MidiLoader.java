@@ -75,7 +75,7 @@ final class MidiLoader extends Node
     }
     
     static final MidiLoader method2734(IndexLoader class45, int i, int i_15_) {
-	byte[] is = class45.getArchiveChild(i, i_15_);
+	byte[] is = class45.getChildArchive(i, i_15_);
 	if (is == null)
 	    return null;
 	return new MidiLoader(new ByteBuffer(is));

@@ -60,8 +60,7 @@ final class Class97
 	if (i_6_ == 21719) {
 	    anInt1549++;
 	    if (Class81.anIntArray1432 != null)
-		Class348_Sub42_Sub10.aClass299_9571
-		    = GameMode.method1636(Class81.anIntArray1432[4],
+		Class348_Sub42_Sub10.aClass299_9571 = GameMode.method1636(Class81.anIntArray1432[4],
 					  Class81.anIntArray1432[3],
 					  Class81.anIntArray1432[0],
 					  Class81.anIntArray1432[5],

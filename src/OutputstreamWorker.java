@@ -109,11 +109,11 @@ final class OutputstreamWorker implements Runnable
 		method1527(65);
 	    if (i_1_ + anInt2713 > bufferSize) {
 		int i_4_ = bufferSize - anInt2713;
-		Class214.byteArrayCopy(is, i_2_, aByteArray2706, anInt2713, i_4_);
-		Class214.byteArrayCopy(is, i_2_ - -i_4_, aByteArray2706, 0,
+		ArrayUtils.arrayCopy(is, i_2_, aByteArray2706, anInt2713, i_4_);
+		ArrayUtils.arrayCopy(is, i_2_ - -i_4_, aByteArray2706, 0,
 				    -i_4_ + i_1_);
 	    } else
-		Class214.byteArrayCopy(is, i_2_, aByteArray2706, anInt2713, i_1_);
+		ArrayUtils.arrayCopy(is, i_2_, aByteArray2706, anInt2713, i_1_);
 	    anInt2713 = (i_1_ + anInt2713) % bufferSize;
 	    this.notifyAll();
 	}

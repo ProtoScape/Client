@@ -91,7 +91,7 @@ final class BitmapTable
 	}
     }
     
-    final int getOffset(int value) {
+    final int get(int value) {
 	anInt3960++;
 	int len = (values.length >> 1) - 1;
 	int i_39_ = len & value;

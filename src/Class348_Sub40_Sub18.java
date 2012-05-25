@@ -15,148 +15,136 @@ final class Class348_Sub40_Sub18 extends Class348_Sub40
     static int anInt9251;
     private int anInt9252;
     
-    static final void method3094(int i,
-				 GameBuffer class348_sub49_sub2) {
+    static final void method3094(int i, GameBuffer buffer) {
 	anInt9247++;
-	int i_0_ = 0;
-	class348_sub49_sub2.method3417(-87);
-	for (int i_1_ = 0;
-	     (Class328_Sub1.anInt6513 ^ 0xffffffff) < (i_1_ ^ 0xffffffff);
-	     i_1_++) {
+	int amountSkip = 0;
+	buffer.initiateBitAccess(-87);
+	for (int i_1_ = 0; (Class328_Sub1.anInt6513 ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
 	    int i_2_ = Class286_Sub7.anIntArray6290[i_1_];
-	    if ((0x1 & Class348_Sub5.aByteArray6624[i_2_] ^ 0xffffffff)
-		== -1) {
-		if (i_0_ > 0) {
-		    Class348_Sub5.aByteArray6624[i_2_]
-			= (byte) Class273.method2057((Class348_Sub5
-						      .aByteArray6624[i_2_]),
-						     2);
-		    i_0_--;
+	    if ((0x1 & Class348_Sub5.gpiFlags[i_2_]) == 0) {
+		if (amountSkip > 0) {
+		    Class348_Sub5.gpiFlags[i_2_] = (byte) Class273.bitOr(Class348_Sub5.gpiFlags[i_2_], 2);
+		    amountSkip--;
 		} else {
-		    int i_3_ = class348_sub49_sub2.method3410((byte) -24, 1);
-		    if ((i_3_ ^ 0xffffffff) == -1) {
-			i_0_ = Class318_Sub1_Sub3
-				   .method2413(1, class348_sub49_sub2);
-			Class348_Sub5.aByteArray6624[i_2_]
-			    = (byte) Class273.method2057((Class348_Sub5
-							  .aByteArray6624
-							  [i_2_]),
-							 2);
+		    int flag = buffer.getBits(1);
+		    if ((flag ^ 0xffffffff) == -1) {
+			amountSkip = Class318_Sub1_Sub3.getSkipAmount(1, buffer);
+			Class348_Sub5.gpiFlags[i_2_] = (byte) Class273.bitOr((Class348_Sub5.gpiFlags[i_2_]), 2);
 		    } else
-			Class286_Sub9.method2177(1, i_2_, class348_sub49_sub2);
+			Class286_Sub9.method2177(1, i_2_, buffer);
 		}
 	    }
 	}
-	class348_sub49_sub2.finalizeBitAccess(false);
-	if ((i_0_ ^ 0xffffffff) != -1)
+	buffer.finalizeBitAccess(false);
+	if (amountSkip != 0)
 	    throw new RuntimeException("nsn0");
-	class348_sub49_sub2.method3417(-65);
+	buffer.initiateBitAccess(-65);
 	for (int i_4_ = 0; i_4_ < Class328_Sub1.anInt6513; i_4_++) {
 	    int i_5_ = Class286_Sub7.anIntArray6290[i_4_];
-	    if ((0x1 & Class348_Sub5.aByteArray6624[i_5_] ^ 0xffffffff)
+	    if ((0x1 & Class348_Sub5.gpiFlags[i_5_] ^ 0xffffffff)
 		!= -1) {
-		if (i_0_ > 0) {
-		    Class348_Sub5.aByteArray6624[i_5_]
-			= (byte) Class273.method2057((Class348_Sub5
-						      .aByteArray6624[i_5_]),
+		if (amountSkip > 0) {
+		    Class348_Sub5.gpiFlags[i_5_]
+			= (byte) Class273.bitOr((Class348_Sub5
+						      .gpiFlags[i_5_]),
 						     2);
-		    i_0_--;
+		    amountSkip--;
 		} else {
-		    int i_6_ = class348_sub49_sub2.method3410((byte) -24, 1);
+		    int i_6_ = buffer.getBits(1);
 		    if (i_6_ == 0) {
-			i_0_ = Class318_Sub1_Sub3
-				   .method2413(1, class348_sub49_sub2);
-			Class348_Sub5.aByteArray6624[i_5_]
-			    = (byte) Class273.method2057((Class348_Sub5
-							  .aByteArray6624
+			amountSkip = Class318_Sub1_Sub3
+				   .getSkipAmount(1, buffer);
+			Class348_Sub5.gpiFlags[i_5_]
+			    = (byte) Class273.bitOr((Class348_Sub5
+							  .gpiFlags
 							  [i_5_]),
 							 2);
 		    } else
 			Class286_Sub9.method2177(i ^ ~0x53e4, i_5_,
-						 class348_sub49_sub2);
+						 buffer);
 		}
 	    }
 	}
-	class348_sub49_sub2.finalizeBitAccess(false);
-	if (i_0_ != 0)
+	buffer.finalizeBitAccess(false);
+	if (amountSkip != 0)
 	    throw new RuntimeException("nsn1");
-	class348_sub49_sub2.method3417(i ^ ~0x5398);
+	buffer.initiateBitAccess(i ^ ~0x5398);
 	for (int i_7_ = 0; ((Class348_Sub42_Sub4.anInt9513 ^ 0xffffffff)
 			    < (i_7_ ^ 0xffffffff)); i_7_++) {
 	    int i_8_ = Class135_Sub1.anIntArray4709[i_7_];
-	    if ((0x1 & Class348_Sub5.aByteArray6624[i_8_]) != 0) {
-		if ((i_0_ ^ 0xffffffff) < -1) {
-		    Class348_Sub5.aByteArray6624[i_8_]
-			= (byte) Class273.method2057((Class348_Sub5
-						      .aByteArray6624[i_8_]),
+	    if ((0x1 & Class348_Sub5.gpiFlags[i_8_]) != 0) {
+		if ((amountSkip ^ 0xffffffff) < -1) {
+		    Class348_Sub5.gpiFlags[i_8_]
+			= (byte) Class273.bitOr((Class348_Sub5
+						      .gpiFlags[i_8_]),
 						     2);
-		    i_0_--;
+		    amountSkip--;
 		} else {
-		    int i_9_ = class348_sub49_sub2.method3410((byte) -24, 1);
+		    int i_9_ = buffer.getBits(1);
 		    if (i_9_ == 0) {
-			i_0_ = Class318_Sub1_Sub3
-				   .method2413(i + 21479, class348_sub49_sub2);
-			Class348_Sub5.aByteArray6624[i_8_]
-			    = (byte) Class273.method2057((Class348_Sub5
-							  .aByteArray6624
+			amountSkip = Class318_Sub1_Sub3
+				   .getSkipAmount(i + 21479, buffer);
+			Class348_Sub5.gpiFlags[i_8_]
+			    = (byte) Class273.bitOr((Class348_Sub5
+							  .gpiFlags
 							  [i_8_]),
 							 2);
 		    } else if (Class211.method1538(i_8_, (byte) 105,
-						   class348_sub49_sub2))
-			Class348_Sub5.aByteArray6624[i_8_]
-			    = (byte) Class273.method2057((Class348_Sub5
-							  .aByteArray6624
+						   buffer))
+			Class348_Sub5.gpiFlags[i_8_]
+			    = (byte) Class273.bitOr((Class348_Sub5
+							  .gpiFlags
 							  [i_8_]),
 							 2);
 		}
 	    }
 	}
-	class348_sub49_sub2.finalizeBitAccess(false);
+	buffer.finalizeBitAccess(false);
 	if (i == -21478) {
-	    if (i_0_ != 0)
+	    if (amountSkip != 0)
 		throw new RuntimeException("nsn2");
-	    class348_sub49_sub2.method3417(36);
+	    buffer.initiateBitAccess(36);
 	    for (int i_10_ = 0;
 		 ((i_10_ ^ 0xffffffff)
 		  > (Class348_Sub42_Sub4.anInt9513 ^ 0xffffffff));
 		 i_10_++) {
 		int i_11_ = Class135_Sub1.anIntArray4709[i_10_];
-		if ((Class348_Sub5.aByteArray6624[i_11_] & 0x1) == 0) {
-		    if (i_0_ > 0) {
-			Class348_Sub5.aByteArray6624[i_11_]
-			    = (byte) Class273.method2057((Class348_Sub5
-							  .aByteArray6624
+		if ((Class348_Sub5.gpiFlags[i_11_] & 0x1) == 0) {
+		    if (amountSkip > 0) {
+			Class348_Sub5.gpiFlags[i_11_]
+			    = (byte) Class273.bitOr((Class348_Sub5
+							  .gpiFlags
 							  [i_11_]),
 							 2);
-			i_0_--;
+			amountSkip--;
 		    } else {
 			int i_12_
-			    = class348_sub49_sub2.method3410((byte) -24, 1);
+			    = buffer.getBits(1);
 			if ((i_12_ ^ 0xffffffff) == -1) {
-			    i_0_ = Class318_Sub1_Sub3
-				       .method2413(1, class348_sub49_sub2);
-			    Class348_Sub5.aByteArray6624[i_11_]
-				= (byte) Class273.method2057((Class348_Sub5
-							      .aByteArray6624
+			    amountSkip = Class318_Sub1_Sub3
+				       .getSkipAmount(1, buffer);
+			    Class348_Sub5.gpiFlags[i_11_]
+				= (byte) Class273.bitOr((Class348_Sub5
+							      .gpiFlags
 							      [i_11_]),
 							     2);
 			} else if (Class211.method1538(i_11_, (byte) 105,
-						       class348_sub49_sub2))
-			    Class348_Sub5.aByteArray6624[i_11_]
-				= (byte) Class273.method2057((Class348_Sub5
-							      .aByteArray6624
+						       buffer))
+			    Class348_Sub5.gpiFlags[i_11_]
+				= (byte) Class273.bitOr((Class348_Sub5
+							      .gpiFlags
 							      [i_11_]),
 							     2);
 		    }
 		}
 	    }
-	    class348_sub49_sub2.finalizeBitAccess(false);
-	    if ((i_0_ ^ 0xffffffff) != -1)
+	    buffer.finalizeBitAccess(false);
+	    if ((amountSkip ^ 0xffffffff) != -1)
 		throw new RuntimeException("nsn3");
 	    Class328_Sub1.anInt6513 = 0;
 	    Class348_Sub42_Sub4.anInt9513 = 0;
 	    for (int i_13_ = 1; i_13_ < 2048; i_13_++) {
-		Class348_Sub5.aByteArray6624[i_13_] >>= 1;
+		Class348_Sub5.gpiFlags[i_13_] >>= 1;
 		Player class318_sub1_sub3_sub3_sub2
 		    = ClassicLoadingScreen.players[i_13_];
 		if (class318_sub1_sub3_sub3_sub2 == null)

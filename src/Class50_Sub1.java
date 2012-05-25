@@ -72,18 +72,14 @@ final class Class50_Sub1 extends Class50
 		      i_17_, i_16_);
     }
     
-    static final byte[] getVariableBufferArray(boolean bool, Object object, int i) {
+    static byte[] getByteArray(Object object) {
 	anInt5215++;
 	if (object == null)
 	    return null;
 	if (object instanceof byte[]) {
 	    byte[] is = (byte[]) object;
-	    if (bool)
-		return NativeToolkit.split(is, 0);
 	    return is;
 	}
-	if (i != 53146732)
-	    return null;
 	if (object instanceof AbstractBuffer) {
 	    AbstractBuffer class344 = (AbstractBuffer) object;
 	    return class344.getPayload();

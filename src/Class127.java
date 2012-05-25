@@ -19,7 +19,7 @@ class Class127 implements Interface1
     public final boolean method8(byte i) {
 	int i_0_ = -79 / ((i - 25) / 52);
 	anInt4658++;
-	return indexLoader.getArchiveLoaded(false, (((Class288) (((Class127) this)
+	return indexLoader.getArchiveLoaded((((Class288) (((Class127) this)
 							    .aClass288_4659))
 					       .anInt4958));
     }

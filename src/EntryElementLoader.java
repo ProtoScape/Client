@@ -49,6 +49,6 @@ final class EntryElementLoader implements ElementTracker
 	anInt4790++;
 	if (indexLoader.getArchiveExists(aString4788))
 	    return 100;
-	return indexLoader.method397(aString4788, 0);
+	return indexLoader.getArchiveLoadedPerc(aString4788);
     }
 }

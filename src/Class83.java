@@ -26,18 +26,15 @@ final class Class83
 	((Class83) this).aBoolean1442 = ((OpenGlToolkit) var_ha_Sub2).aBoolean7831;
 	Class348_Sub37.method3030(8, var_ha_Sub2);
 	if (((Class83) this).aBoolean1442) {
-	    byte[] is = Class50_Sub1.getVariableBufferArray(false, Class337.anObject4177,
-					       53146732);
+	    byte[] is = Class50_Sub1.getByteArray(Class337.anObject4177);
 	    ((Class83) this).aClass258_Sub1_1440
 		= new Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, is, 6410);
-	    is = Class50_Sub1.getVariableBufferArray(false, GfxLoader.anObject3985,
-					53146732);
+	    is = Class50_Sub1.getByteArray(GfxLoader.anObject3985);
 	    ((Class83) this).aClass258_Sub1_1446
 		= new Class258_Sub1(var_ha_Sub2, 6410, 128, 128, 16, is, 6410);
 	    Class188 class188 = ((OpenGlToolkit) var_ha_Sub2).aClass188_7736;
 	    if (class188.method1414(35632)) {
-		is = Class50_Sub1.getVariableBufferArray(false, Class369_Sub2.anObject8592,
-					    53146732);
+		is = Class50_Sub1.getByteArray(Class369_Sub2.anObject8592);
 		((Class83) this).aClass258_Sub1_1443
 		    = new Class258_Sub1(var_ha_Sub2, 6408, 128, 128, 16);
 		Class258_Sub1 class258_sub1

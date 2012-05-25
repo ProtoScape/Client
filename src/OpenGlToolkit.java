@@ -3053,12 +3053,12 @@ final class OpenGlToolkit extends AbstractToolkit
 	    int i_252_ = class348_sub1.method2720(-1);
 	    float f = class348_sub1.method2721(-76) / 255.0F;
 	    Class328_Sub1.aFloatArray6514[2]
-		= (float) Class139.method1166(i_252_, 255) * f;
+		= (float) Class139.bitAnd(i_252_, 255) * f;
 	    Class328_Sub1.aFloatArray6514[0]
-		= ((float) (Class139.method1166(16762087, i_252_) >> -23446704)
+		= ((float) (Class139.bitAnd(16762087, i_252_) >> -23446704)
 		   * f);
 	    Class328_Sub1.aFloatArray6514[1]
-		= ((float) (Class139.method1166(i_252_, 65533) >> -42240920)
+		= ((float) (Class139.bitAnd(i_252_, 65533) >> -42240920)
 		   * f);
 	    OpenGL.glLightfv(i_251_, 4609, Class328_Sub1.aFloatArray6514, 0);
 	    OpenGL.glLightf(i_251_, 4617,
@@ -5197,13 +5197,13 @@ final class OpenGlToolkit extends AbstractToolkit
 	OpenGL.glFogf(2915, ((OpenGlToolkit) this).aFloat7792);
 	OpenGL.glFogf(2916, aFloat7824);
 	DummyInputstream.aFloatArray84[0]
-	    = ((float) Class139.method1166(i, ((OpenGlToolkit) this).anInt7856)
+	    = ((float) Class139.bitAnd(i, ((OpenGlToolkit) this).anInt7856)
 	       / 1.671168E7F);
 	DummyInputstream.aFloatArray84[1]
-	    = ((float) Class139.method1166(((OpenGlToolkit) this).anInt7856, 65280)
+	    = ((float) Class139.bitAnd(((OpenGlToolkit) this).anInt7856, 65280)
 	       / 65280.0F);
 	DummyInputstream.aFloatArray84[2]
-	    = ((float) Class139.method1166(((OpenGlToolkit) this).anInt7856, 255)
+	    = ((float) Class139.bitAnd(((OpenGlToolkit) this).anInt7856, 255)
 	       / 255.0F);
 	OpenGL.glFogfv(2918, DummyInputstream.aFloatArray84, 0);
     }
@@ -5363,11 +5363,11 @@ final class OpenGlToolkit extends AbstractToolkit
 			  < (i_469_ ^ 0xffffffff));
 			 i_469_++) {
 			is[i_467_++]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       ((((ImageSprite) class207).alphaIndex[i]
 				 << 1325175288),
 				(((ImageSprite) class207).colors
-				 [Class139.method1166((((ImageSprite) class207)
+				 [Class139.bitAnd((((ImageSprite) class207)
 						       .colorIndex[i]),
 						      255)])));
 			i++;
@@ -5384,7 +5384,7 @@ final class OpenGlToolkit extends AbstractToolkit
 				      [0xff & (((ImageSprite) class207)
 					       .colorIndex[i++])]);
 			is[i_467_++]
-			    = i_472_ == 0 ? 0 : Class273.method2057(-16777216,
+			    = i_472_ == 0 ? 0 : Class273.bitOr(-16777216,
 								    i_472_);
 		    }
 		}
@@ -5421,15 +5421,15 @@ final class OpenGlToolkit extends AbstractToolkit
     
     final void method3808(int i, int i_473_) {
 	DummyInputstream.aFloatArray84[2]
-	    = (float) Class139.method1166(i, 255) / 255.0F;
+	    = (float) Class139.bitAnd(i, 255) / 255.0F;
 	if (i_473_ <= 116)
 	    ((OpenGlToolkit) this).anInt7771 = 76;
 	DummyInputstream.aFloatArray84[3] = (float) (i >>> 444720536) / 255.0F;
 	DummyInputstream.aFloatArray84[1]
-	    = (float) Class139.method1166(i, 65280) / 65280.0F;
+	    = (float) Class139.bitAnd(i, 65280) / 65280.0F;
 	anInt7659++;
 	DummyInputstream.aFloatArray84[0]
-	    = (float) Class139.method1166(16711680, i) / 1.671168E7F;
+	    = (float) Class139.bitAnd(16711680, i) / 1.671168E7F;
 	OpenGL.glTexEnvfv(8960, 8705, DummyInputstream.aFloatArray84, 0);
     }
     

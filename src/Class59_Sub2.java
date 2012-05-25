@@ -51,7 +51,7 @@ class Class59_Sub2 extends Class59
     
     void method563(byte i, int i_7_, byte i_8_) {
 	aByteArray5309[anInt5308++]
-	    = (byte) (Class139.method1166(127, i_8_ >> -2027440895) + 127);
+	    = (byte) (Class139.bitAnd(127, i_8_ >> -2027440895) + 127);
 	if (i < 79)
 	    method543(true);
 	anInt5310++;

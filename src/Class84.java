@@ -105,7 +105,7 @@ final class Class84
 	    return class300;
 	byte[] is;
 	synchronized (aClass45_1460) {
-	    is = aClass45_1460.getArchiveChild(i_15_, i);
+	    is = aClass45_1460.getChildArchive(i_15_, i);
 	}
 	class300 = new Class300();
 	if (is != null)
@@ -185,9 +185,9 @@ final class Class84
 	     || WidgetVariable.aClass105_9658 == null
 	     || WidgetVariable.aClass105_9659 == null)
 	    && Class21.indexLoader8
-		   .getArchiveLoaded(false, Class318_Sub1_Sub3_Sub3.anInt10257)
-	    && Class21.indexLoader8.getArchiveLoaded(false, Class313.anInt3937)
-	    && Class21.indexLoader8.getArchiveLoaded(false, NpcDefinition.anInt1387)) {
+		   .getArchiveLoaded(Class318_Sub1_Sub3_Sub3.anInt10257)
+	    && Class21.indexLoader8.getArchiveLoaded(Class313.anInt3937)
+	    && Class21.indexLoader8.getArchiveLoaded(NpcDefinition.anInt1387)) {
 	    ImageSprite class207 = ImageSprite.getSprite(Class21.indexLoader8,
 						    Class313.anInt3937, 0);
 	    WidgetVariable.aClass105_9658
@@ -247,7 +247,7 @@ final class Class84
     Class84(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_1460 = class45;
-	    aClass45_1460.method407(29);
+	    aClass45_1460.getAmountChildEntries(29);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("lca.<init>("

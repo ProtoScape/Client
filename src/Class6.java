@@ -90,8 +90,7 @@ final class Class6
 		   .method3415(-62, Class348_Sub40_Sub25.currentPacketSize)
 	       >= 15) {
 	    int i_18_
-		= Class299.gameBuffer.method3410((byte) -24,
-								15);
+		= Class299.gameBuffer.getBits(15);
 	    if ((i_18_ ^ 0xffffffff) == -32768)
 		break;
 	    boolean bool = false;
@@ -126,28 +125,27 @@ final class Class6
 		       .definition.method793(0))
 		Class5.method181(true, class318_sub1_sub3_sub3_sub1);
 	    int i_19_
-		= Class299.gameBuffer.method3410((byte) -24, 2);
+		= Class299.gameBuffer.getBits(2);
 	    int i_20_
-		= Class299.gameBuffer.method3410((byte) -24, 1);
+		= Class299.gameBuffer.getBits(1);
 	    int i_21_
-		= Class299.gameBuffer.method3410((byte) -24, 5);
+		= Class299.gameBuffer.getBits(5);
 	    if ((i_21_ ^ 0xffffffff) < -16)
 		i_21_ -= 32;
 	    int i_22_
-		= Class299.gameBuffer.method3410((byte) -24, 5);
+		= Class299.gameBuffer.getBits(5);
 	    if ((i_22_ ^ 0xffffffff) < -16)
 		i_22_ -= 32;
 	    int i_23_
 		= 0x3d01 & 4 + Class299.gameBuffer
-				   .method3410((byte) -24, 3) << -724138005;
+				   .getBits(3) << -724138005;
 	    int i_24_
-		= Class299.gameBuffer.method3410((byte) -24, 1);
+		= Class299.gameBuffer.getBits(1);
 	    if (i_24_ == 1)
 		Class13.anIntArray224[Class101.anInt1597++] = i_18_;
 	    class318_sub1_sub3_sub3_sub1.method2448
 		((Class189.npcLoader.getNpcDefinition
-		  (Class299.gameBuffer.method3410((byte) -24,
-								 14))),
+		  (Class299.gameBuffer.getBits(14))),
 		 i ^ 0x2b297815);
 	    class318_sub1_sub3_sub3_sub1.method2434
 		((byte) 111, ((NpcDefinition) (((Npc)

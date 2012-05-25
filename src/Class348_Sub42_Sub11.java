@@ -71,7 +71,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 		     ^ 0xffffffff));
 		 i_3_++)
 		((Class348_Sub42_Sub11) this).anIntArray9580[i_3_]
-		    = Class273.method2057((((Class348_Sub42_Sub11) this)
+		    = Class273.bitOr((((Class348_Sub42_Sub11) this)
 					   .anIntArray9580[i_3_]),
 					  32768);
 	}
@@ -83,7 +83,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 		     ^ 0xffffffff));
 		 i_4_++)
 		((Class348_Sub42_Sub11) this).anIntArray9592[i_4_]
-		    = Class273.method2057((((Class348_Sub42_Sub11) this)
+		    = Class273.bitOr((((Class348_Sub42_Sub11) this)
 					   .anIntArray9592[i_4_]),
 					  32768);
 	}
@@ -97,9 +97,9 @@ final class Class348_Sub42_Sub11 extends SubNode
 		.aClass239_Sub14_7264.method1778(-32350)
 	    == 2) {
 	    byte i_5_ = (byte) (0xff & -4 + Class239_Sub15.anInt6006);
-	    int i_6_ = Class239_Sub15.anInt6006 % Class367_Sub4.anInt7319;
+	    int i_6_ = Class239_Sub15.anInt6006 % Class367_Sub4.mapSizeX;
 	    for (int i_7_ = 0; i_7_ < 4; i_7_++) {
-		for (int i_8_ = 0; Class348_Sub40_Sub3.anInt9109 > i_8_;
+		for (int i_8_ = 0; Class348_Sub40_Sub3.mapSizeY > i_8_;
 		     i_8_++)
 		    Class289.aByteArrayArrayArray3700[i_7_][i_6_][i_8_] = i_5_;
 	    }
@@ -124,7 +124,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 			    i_11_ = Class318_Sub1_Sub5_Sub2.anInt10163;
 			    i_10_ = Class9.anInt167;
 			}
-			if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			if ((0x4 & (Class348_Sub33.settingFlags
 				    [Class355.anInt4372][i_10_ >> -504285367]
 				    [i_11_ >> -1016460983]))
 			    != 0)
@@ -150,17 +150,17 @@ final class Class348_Sub42_Sub11 extends SubNode
 			    else
 				i_17_ = i_15_ + -i_13_;
 			    if (i_16_ == 0 && (i_17_ ^ 0xffffffff) == -1
-				|| -Class367_Sub4.anInt7319 >= i_16_
+				|| -Class367_Sub4.mapSizeX >= i_16_
 				|| ((i_16_ ^ 0xffffffff)
-				    <= (Class367_Sub4.anInt7319 ^ 0xffffffff))
-				|| (-Class348_Sub40_Sub3.anInt9109
+				    <= (Class367_Sub4.mapSizeX ^ 0xffffffff))
+				|| (-Class348_Sub40_Sub3.mapSizeY
 				    ^ 0xffffffff) <= (i_17_ ^ 0xffffffff)
-				|| Class348_Sub40_Sub3.anInt9109 <= i_17_)
+				|| Class348_Sub40_Sub3.mapSizeY <= i_17_)
 				Class156.method1242(("RC: " + i_12_ + ","
 						     + i_13_ + " " + i_14_
 						     + "," + i_15_ + " "
-						     + za_Sub2.anInt9780 + ","
-						     + Class90.anInt1517),
+						     + za_Sub2.baseRegionX + ","
+						     + Class90.baseRegionY),
 						    null, 15004);
 			    else if ((i_17_ ^ 0xffffffff)
 				     <= (i_16_ ^ 0xffffffff)) {
@@ -173,7 +173,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					     < (i_15_ ^ 0xffffffff))
 					i_13_--;
 				    if ((0x4 & (Class348_Sub33
-						.aByteArrayArrayArray6962
+						.settingFlags
 						[Class355.anInt4372][i_12_]
 						[i_13_]))
 					!= 0) {
@@ -192,7 +192,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					    i_12_--;
 					i_19_ -= 65536;
 					if ((0x4 & (Class348_Sub33
-						    .aByteArrayArrayArray6962
+						    .settingFlags
 						    [Class355.anInt4372][i_12_]
 						    [i_13_])
 					     ^ 0xffffffff)
@@ -217,7 +217,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 				    } else
 					i_12_++;
 				    if ((0x4 & (Class348_Sub33
-						.aByteArrayArrayArray6962
+						.settingFlags
 						[Class355.anInt4372][i_12_]
 						[i_13_])
 					 ^ 0xffffffff)
@@ -238,7 +238,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					    i_13_--;
 					i_21_ -= 65536;
 					if ((0x4 & (Class348_Sub33
-						    .aByteArrayArrayArray6962
+						    .settingFlags
 						    [Class355.anInt4372][i_12_]
 						    [i_13_]))
 					    != 0) {
@@ -259,7 +259,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 						  Class355.anInt4372, 11219,
 						  Class59_Sub2_Sub2.anInt8685);
 			if (i_22_ - Class305.anInt3855 < 3200
-			    && ((Class348_Sub33.aByteArrayArrayArray6962
+			    && ((Class348_Sub33.settingFlags
 				 [Class355.anInt4372]
 				 [Class286_Sub4.anInt6246 >> 378417865]
 				 [Class59_Sub2_Sub2.anInt8685 >> -1035753239])

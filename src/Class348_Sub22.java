@@ -25,39 +25,39 @@ final class Class348_Sub22 extends Node
     static final int method2958(int i, IndexLoader class45) {
 	anInt6861++;
 	int i_2_ = 0;
-	if (class45.getArchiveLoaded(false, hitmarksArchiveId))
+	if (class45.getArchiveLoaded(hitmarksArchiveId))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, AlternativeFontLoader.anInt1639))
+	if (class45.getArchiveLoaded(AlternativeFontLoader.anInt1639))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, MouseMovementListener.anInt7429))
+	if (class45.getArchiveLoaded(MouseMovementListener.anInt7429))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, AbstractToolkit.anInt4562))
+	if (class45.getArchiveLoaded(AbstractToolkit.anInt4562))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, StringVarScriptSettingLoader.headiconsArchiveId))
+	if (class45.getArchiveLoaded(StringVarScriptSettingLoader.headiconsArchiveId))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class115.anInt1756))
+	if (class45.getArchiveLoaded(Class115.anInt1756))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, IndexTable.anInt3739))
+	if (class45.getArchiveLoaded(IndexTable.anInt3739))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class86.mapflagArchiveId))
+	if (class45.getArchiveLoaded(Class86.mapflagArchiveId))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class239_Sub10.anInt5948))
+	if (class45.getArchiveLoaded(Class239_Sub10.anInt5948))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class113.mapdotsArchvieId))
+	if (class45.getArchiveLoaded(Class113.mapdotsArchvieId))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, LocationMode.anInt4469))
+	if (class45.getArchiveLoaded(LocationMode.anInt4469))
 	    i_2_++;
 	if (i != 22388)
 	    return 8;
-	if (class45.getArchiveLoaded(false, Class348_Sub40_Sub38.anInt9473))
+	if (class45.getArchiveLoaded(Class348_Sub40_Sub38.anInt9473))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class187.anInt2510))
+	if (class45.getArchiveLoaded(Class187.anInt2510))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, ColorNode.compassArchvieId))
+	if (class45.getArchiveLoaded(ColorNode.compassArchvieId))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class186_Sub1.anInt5814))
+	if (class45.getArchiveLoaded(Class186_Sub1.anInt5814))
 	    i_2_++;
-	if (class45.getArchiveLoaded(false, Class5_Sub3.anInt8370))
+	if (class45.getArchiveLoaded(Class5_Sub3.anInt8370))
 	    i_2_++;
 	return i_2_;
     }

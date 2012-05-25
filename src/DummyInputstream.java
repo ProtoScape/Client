@@ -36,9 +36,9 @@ final class DummyInputstream extends InputStream
 		int i_7_ = FileArchiveTracker.anInt4786 - -(i_5_ & 0x7);
 		if (Class282.method2112(126, Class312.anInt3931)
 		    || ((i_6_ ^ 0xffffffff) <= -1 && i_7_ >= 0
-			&& (i_6_ ^ 0xffffffff) > (Class367_Sub4.anInt7319
+			&& (i_6_ ^ 0xffffffff) > (Class367_Sub4.mapSizeX
 						  ^ 0xffffffff)
-			&& ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+			&& ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 			    < (i_7_ ^ 0xffffffff))))
 		    Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200,
 					      0, i_7_, -1, i_1_, i_3_, i_2_,
@@ -56,9 +56,9 @@ final class DummyInputstream extends InputStream
 		int i_14_
 		    = Class299.gameBuffer.getUByte();
 		if ((i_9_ ^ 0xffffffff) <= -1 && i_10_ >= 0
-		    && (Class367_Sub4.anInt7319 ^ 0xffffffff) < (i_9_
+		    && (Class367_Sub4.mapSizeX ^ 0xffffffff) < (i_9_
 								 ^ 0xffffffff)
-		    && Class348_Sub40_Sub3.anInt9109 > i_10_) {
+		    && Class348_Sub40_Sub3.mapSizeY > i_10_) {
 		    int i_15_ = 512 * i_9_ - -256;
 		    int i_16_ = 256 + 512 * i_10_;
 		    int i_17_ = Class348_Sub40_Sub12.anInt9200;
@@ -94,8 +94,8 @@ final class DummyInputstream extends InputStream
 		int i_27_ = Class299.gameBuffer
 				.getShort();
 		if ((i_19_ ^ 0xffffffff) <= -1 && i_20_ >= 0
-		    && i_19_ < Class367_Sub4.anInt7319
-		    && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+		    && i_19_ < Class367_Sub4.mapSizeX
+		    && ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 			< (i_20_ ^ 0xffffffff))) {
 		    int i_28_ = 1 + i_23_;
 		    if (((i_19_ + -i_28_ ^ 0xffffffff)
@@ -152,8 +152,8 @@ final class DummyInputstream extends InputStream
 		int i_40_
 		    = Class299.gameBuffer.getShort();
 		if (i_32_ >= 0 && (i_33_ ^ 0xffffffff) <= -1
-		    && i_32_ < Class367_Sub4.anInt7319
-		    && i_33_ < Class348_Sub40_Sub3.anInt9109) {
+		    && i_32_ < Class367_Sub4.mapSizeX
+		    && i_33_ < Class348_Sub40_Sub3.mapSizeY) {
 		    int i_41_ = i_36_ + 1;
 		    if ((((Class318_Sub1_Sub3_Sub3)
 			  Class132.localPlayer)
@@ -231,14 +231,14 @@ final class DummyInputstream extends InputStream
 		if (i_65_ == 255)
 		    i_65_ = -1;
 		if (i_51_ >= 0 && i_52_ >= 0
-		    && ((2 * Class367_Sub4.anInt7319 ^ 0xffffffff)
+		    && ((2 * Class367_Sub4.mapSizeX ^ 0xffffffff)
 			< (i_51_ ^ 0xffffffff))
-		    && ((Class367_Sub4.anInt7319 * 2 ^ 0xffffffff)
+		    && ((Class367_Sub4.mapSizeX * 2 ^ 0xffffffff)
 			< (i_52_ ^ 0xffffffff))
 		    && (i_56_ ^ 0xffffffff) <= -1 && i_57_ >= 0
-		    && ((Class348_Sub40_Sub3.anInt9109 * 2 ^ 0xffffffff)
+		    && ((Class348_Sub40_Sub3.mapSizeY * 2 ^ 0xffffffff)
 			< (i_56_ ^ 0xffffffff))
-		    && 2 * Class348_Sub40_Sub3.anInt9109 > i_57_
+		    && 2 * Class348_Sub40_Sub3.mapSizeY > i_57_
 		    && i_60_ != 65535) {
 		    i_57_ *= 256;
 		    i_56_ = 256 * i_56_;
@@ -314,9 +314,9 @@ final class DummyInputstream extends InputStream
 		int i_70_
 		    = Class299.gameBuffer.method3342();
 		int i_71_ = FileArchiveTracker.anInt4786 + (i_70_ & 0x7);
-		int i_72_ = Class90.anInt1517 + i_71_;
+		int i_72_ = Class90.baseRegionY + i_71_;
 		int i_73_ = NpcLoader.anInt3581 + (i_70_ >> 760724900 & 0x7);
-		int i_74_ = za_Sub2.anInt9780 + i_73_;
+		int i_74_ = za_Sub2.baseRegionX + i_73_;
 		Class348_Sub37 class348_sub37
 		    = ((Class348_Sub37)
 		       (Class130.aClass356_1895.get
@@ -344,8 +344,8 @@ final class DummyInputstream extends InputStream
 			    .isEnd((byte) 18))
 			class348_sub37.removeNode();
 		    if ((i_73_ ^ 0xffffffff) <= -1 && i_71_ >= 0
-			&& Class367_Sub4.anInt7319 > i_73_
-			&& Class348_Sub40_Sub3.anInt9109 > i_71_)
+			&& Class367_Sub4.mapSizeX > i_73_
+			&& Class348_Sub40_Sub3.mapSizeY > i_71_)
 			Class203.method1479(i_71_, (byte) -125, i_73_,
 					    Class348_Sub40_Sub12.anInt9200);
 		}
@@ -356,13 +356,13 @@ final class DummyInputstream extends InputStream
 		    = Class299.gameBuffer.readLEShort(false);
 		int i_77_ = Class299.gameBuffer.getUByte();
 		int i_78_ = FileArchiveTracker.anInt4786 - -(0x7 & i_77_);
-		int i_79_ = i_78_ + Class90.anInt1517;
+		int i_79_ = i_78_ + Class90.baseRegionY;
 		int i_80_
 		    = NpcLoader.anInt3581 - -((i_77_ & 0x79) >> 1608302404);
-		int i_81_ = za_Sub2.anInt9780 - -i_80_;
+		int i_81_ = za_Sub2.baseRegionX - -i_80_;
 		boolean bool = (i_80_ >= 0 && i_78_ >= 0
-				&& Class367_Sub4.anInt7319 > i_80_
-				&& Class348_Sub40_Sub3.anInt9109 > i_78_);
+				&& Class367_Sub4.mapSizeX > i_80_
+				&& Class348_Sub40_Sub3.mapSizeY > i_78_);
 		if (bool || Class282.method2112(124, Class312.anInt3931)) {
 		    GameFont.method3459(new Class348_Sub34(i_76_, i_75_),
 					Class348_Sub40_Sub12.anInt9200, i_79_,
@@ -383,9 +383,9 @@ final class DummyInputstream extends InputStream
 		int i_88_ = FileArchiveTracker.anInt4786 - -(0x7 & i_86_);
 		if (Class282.method2112(i ^ 0x73, Class312.anInt3931)
 		    || ((i_87_ ^ 0xffffffff) <= -1 && i_88_ >= 0
-			&& (i_87_ ^ 0xffffffff) > (Class367_Sub4.anInt7319
+			&& (i_87_ ^ 0xffffffff) > (Class367_Sub4.mapSizeX
 						   ^ 0xffffffff)
-			&& ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+			&& ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 			    < (i_88_ ^ 0xffffffff))))
 		    Class348_Sub12.method2800(Class348_Sub40_Sub12.anInt9200,
 					      0, i_88_, -1, i_83_, i_85_,
@@ -397,10 +397,10 @@ final class DummyInputstream extends InputStream
 		    int i_89_
 			= Class299.gameBuffer.getUByte();
 		    int i_90_ = FileArchiveTracker.anInt4786 + (0x7 & i_89_);
-		    int i_91_ = i_90_ + Class90.anInt1517;
+		    int i_91_ = i_90_ + Class90.baseRegionY;
 		    int i_92_ = (NpcLoader.anInt3581
 				 - -((i_89_ & 0x7a) >> -1560406972));
-		    int i_93_ = za_Sub2.anInt9780 + i_92_;
+		    int i_93_ = za_Sub2.baseRegionX + i_92_;
 		    int i_94_ = Class299.gameBuffer
 				    .getShort();
 		    int i_95_ = Class299.gameBuffer
@@ -442,10 +442,10 @@ final class DummyInputstream extends InputStream
 				}
 			    }
 			    if (i_92_ >= 0 && (i_90_ ^ 0xffffffff) <= -1
-				&& ((Class367_Sub4.anInt7319 ^ 0xffffffff)
+				&& ((Class367_Sub4.mapSizeX ^ 0xffffffff)
 				    < (i_92_ ^ 0xffffffff))
 				&& ((i_90_ ^ 0xffffffff)
-				    > (Class348_Sub40_Sub3.anInt9109
+				    > (Class348_Sub40_Sub3.mapSizeY
 				       ^ 0xffffffff)))
 				Class203.method1479(i_90_, (byte) -125, i_92_,
 						    (Class348_Sub40_Sub12
@@ -458,10 +458,10 @@ final class DummyInputstream extends InputStream
 		    int i_98_
 			= Class299.gameBuffer.getUByte();
 		    int i_99_ = (0x7 & i_98_) + FileArchiveTracker.anInt4786;
-		    int i_100_ = Class90.anInt1517 + i_99_;
+		    int i_100_ = Class90.baseRegionY + i_99_;
 		    int i_101_
 			= NpcLoader.anInt3581 - -((i_98_ & 0x7b) >> 1853674564);
-		    int i_102_ = za_Sub2.anInt9780 + i_101_;
+		    int i_102_ = za_Sub2.baseRegionX + i_101_;
 		    int i_103_
 			= Class299.gameBuffer.method3355(-25);
 		    int i_104_
@@ -469,9 +469,9 @@ final class DummyInputstream extends InputStream
 		    if (i_104_ != Class348_Sub42_Sub11.localPlayerId) {
 			boolean bool
 			    = (i_101_ >= 0 && i_99_ >= 0
-			       && ((Class367_Sub4.anInt7319 ^ 0xffffffff)
+			       && ((Class367_Sub4.mapSizeX ^ 0xffffffff)
 				   < (i_101_ ^ 0xffffffff))
-			       && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+			       && ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 				   < (i_99_ ^ 0xffffffff)));
 			if (bool
 			    || Class282.method2112(122, Class312.anInt3931)) {
@@ -519,14 +519,14 @@ final class DummyInputstream extends InputStream
 		    int i_117_ = Class299.gameBuffer
 				     .getShort();
 		    if (i_106_ >= 0 && (i_107_ ^ 0xffffffff) <= -1
-			&& ((Class367_Sub4.anInt7319 ^ 0xffffffff)
+			&& ((Class367_Sub4.mapSizeX ^ 0xffffffff)
 			    < (i_106_ ^ 0xffffffff))
-			&& i_107_ < Class348_Sub40_Sub3.anInt9109
+			&& i_107_ < Class348_Sub40_Sub3.mapSizeY
 			&& (i_108_ ^ 0xffffffff) <= -1
 			&& (i_109_ ^ 0xffffffff) <= -1
-			&& Class367_Sub4.anInt7319 > i_108_
+			&& Class367_Sub4.mapSizeX > i_108_
 			&& ((i_109_ ^ 0xffffffff)
-			    > (Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff))
+			    > (Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff))
 			&& (i_111_ ^ 0xffffffff) != -65536) {
 			i_117_ <<= 2;
 			i_109_ = 256 + i_109_ * 512;

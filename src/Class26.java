@@ -54,7 +54,7 @@ final class Class26
 	anInt373++;
 	if ((aClass45_379.getAmountChildren() ^ 0xffffffff) == i_3_)
 	    return method307(i, is, 122, 0);
-	if ((aClass45_379.method407(i) ^ 0xffffffff) == -2)
+	if ((aClass45_379.getAmountChildEntries(i) ^ 0xffffffff) == -2)
 	    return method307(0, is, 69, i);
 	throw new RuntimeException();
     }
@@ -63,7 +63,7 @@ final class Class26
 	anInt376++;
 	if ((aClass45_377.getAmountChildren() ^ 0xffffffff) == -2)
 	    return method310(i, 0, (byte) 92, is);
-	if (aClass45_377.method407(i) == 1)
+	if (aClass45_377.getAmountChildEntries(i) == 1)
 	    return method310(0, i, (byte) 78, is);
 	if (i_4_ != -1)
 	    method307(44, null, -124, -47);

@@ -46,7 +46,7 @@ final class Class217
 	    return class159;
 	byte[] is;
 	synchronized (aClass45_2842) {
-	    is = aClass45_2842.getArchiveChild(16, i_1_);
+	    is = aClass45_2842.getChildArchive(16, i_1_);
 	    if (i >= -17)
 		aClass60_2848 = null;
 	}
@@ -81,7 +81,7 @@ final class Class217
 	try {
 	    aClass45_2842 = class45;
 	    if (aClass45_2842 != null)
-		((Class217) this).anInt2845 = aClass45_2842.method407(16);
+		((Class217) this).anInt2845 = aClass45_2842.getAmountChildEntries(16);
 	    else
 		((Class217) this).anInt2845 = 0;
 	} catch (RuntimeException runtimeexception) {

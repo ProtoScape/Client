@@ -122,7 +122,7 @@ final class Class183
 	    return class22;
 	byte[] is;
 	synchronized (aClass45_2461) {
-	    is = aClass45_2461.getArchiveChild(1, i);
+	    is = aClass45_2461.getChildArchive(1, i);
 	}
 	class22 = new Class22();
 	if (is != null)
@@ -176,7 +176,7 @@ final class Class183
     Class183(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_2461 = class45;
-	    aClass45_2461.method407(1);
+	    aClass45_2461.getAmountChildEntries(1);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("qe.<init>("

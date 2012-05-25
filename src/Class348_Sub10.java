@@ -250,7 +250,7 @@ final class Class348_Sub10 extends Node
     
     private static final boolean method2792(IndexLoader class45) {
 	if (!aBoolean6724) {
-	    byte[] is = class45.getArchiveChild(0, 0);
+	    byte[] is = class45.getChildArchive(0, 0);
 	    if (is == null)
 		return false;
 	    method2790(is);
@@ -260,7 +260,7 @@ final class Class348_Sub10 extends Node
     
     static final Class348_Sub10 method2793(IndexLoader class45, int i) {
 	if (!method2792(class45)) {
-	    class45.getArchiveLoaded(false, i);
+	    class45.getArchiveLoaded(i);
 	    return null;
 	}
 	byte[] is = class45.getArchive(i);
@@ -497,7 +497,7 @@ final class Class348_Sub10 extends Node
 	    class45.isLoaded(i, i_115_);
 	    return null;
 	}
-	byte[] is = class45.getArchiveChild(i, i_115_);
+	byte[] is = class45.getChildArchive(i, i_115_);
 	if (is == null)
 	    return null;
 	return new Class348_Sub10(is);

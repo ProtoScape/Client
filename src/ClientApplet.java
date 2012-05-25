@@ -58,7 +58,7 @@ public abstract class ClientApplet extends Applet implements Runnable, FocusList
     static int anInt35;
     static int anInt36;
     static int anInt37;
-    static int[] anIntArray38;
+    static int[] lArchiveids;
     static int anInt39;
     static int anInt40;
     public static boolean aBoolean41;
@@ -611,7 +611,7 @@ public abstract class ClientApplet extends Applet implements Runnable, FocusList
     }
     
     public static void method98(int i) {
-	anIntArray38 = null;
+	lArchiveids = null;
 	p12fullFontRasterizer = null;
 	if (i != 32717)
 	    method86(null, 65);

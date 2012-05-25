@@ -16,13 +16,13 @@ final class Class307
 		return null;
 	    if ((i_0_ ^ 0xffffffff) == 0)
 		return new Class252(0);
-	    int[] is = class45.method396(i_0_, i ^ ~0x5a);
+	    int[] is = class45.getActiveChildren(i_0_);
 	    Class252 class252 = new Class252(is.length);
 	    int i_1_ = 0;
 	    int i_2_ = 0;
 	    while (i_1_ < ((Class252) class252).anInt3241) {
 		ByteBuffer class348_sub49
-		    = new ByteBuffer(class45.getArchiveChild(i_0_,
+		    = new ByteBuffer(class45.getChildArchive(i_0_,
 							   is[i_2_++]));
 		int i_3_ = class348_sub49.getDword();
 		int i_4_ = class348_sub49.getShort();

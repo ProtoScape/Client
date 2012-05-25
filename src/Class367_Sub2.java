@@ -79,7 +79,7 @@ final class Class367_Sub2 extends Class367
 	    else
 		aClass193_7293
 		    = za_Sub2.method3442(34336,
-					 class45.getArchiveChild("gl",
+					 class45.getChildArchive("gl",
 							   "transparent_water"),
 					 aClass377_7296, 4);
 	} catch (RuntimeException runtimeexception) {

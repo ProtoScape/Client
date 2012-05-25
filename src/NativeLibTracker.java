@@ -89,7 +89,7 @@ final class NativeLibTracker implements ElementTracker
 	byte[] is_11_ = new byte[is.length];
 	if (i >= -9)
 	    anInt4814 = 49;
-	Class214.byteArrayCopy(is, 0, is_11_, 0, is.length);
+	ArrayUtils.arrayCopy(is, 0, is_11_, 0, is.length);
 	return is_11_;
     }
     

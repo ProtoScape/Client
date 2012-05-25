@@ -160,7 +160,7 @@ final class Class31
 	if (anInt421 >= 0
 	    && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
 		   .method583((long) anInt421, 121) == null
-	    && class45.getArchiveLoaded(false, anInt421)) {
+	    && class45.getArchiveLoaded(anInt421)) {
 	    ImageSprite class207 = ImageSprite.getSprite(class45, anInt421);
 	    ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
 		(var_ha.createRasterForSprite(class207, true), (long) anInt421,
@@ -169,7 +169,7 @@ final class Class31
 	if (anInt433 >= 0
 	    && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
 		   .method583((long) anInt433, -99) == null
-	    && class45.getArchiveLoaded(false, anInt433)) {
+	    && class45.getArchiveLoaded(anInt433)) {
 	    ImageSprite class207 = ImageSprite.getSprite(class45, anInt433);
 	    ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
 		(var_ha.createRasterForSprite(class207, true), (long) anInt433,
@@ -178,7 +178,7 @@ final class Class31
 	if (anInt429 >= 0
 	    && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
 		   .method583((long) anInt429, 86) == null
-	    && class45.getArchiveLoaded(false, anInt429)) {
+	    && class45.getArchiveLoaded(anInt429)) {
 	    ImageSprite class207 = ImageSprite.getSprite(class45, anInt429);
 	    ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
 		(var_ha.createRasterForSprite(class207, true), (long) anInt429,
@@ -189,7 +189,7 @@ final class Class31
 	if ((anInt439 ^ 0xffffffff) <= -1
 	    && ((Class219) ((Class31) this).aClass219_438).aClass60_2862
 		   .method583((long) anInt439, -83) == null
-	    && class45.getArchiveLoaded(false, anInt439)) {
+	    && class45.getArchiveLoaded(anInt439)) {
 	    ImageSprite class207 = ImageSprite.getSprite(class45, anInt439);
 	    ((Class219) ((Class31) this).aClass219_438).aClass60_2862.method582
 		(var_ha.createRasterForSprite(class207, true), (long) anInt439,

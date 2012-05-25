@@ -458,23 +458,23 @@ final class Class101_Sub3 extends Class101
 	    if (i != -8212)
 		method944(65, null, null);
 	    anInt5752++;
-	    for (int i_52_ = 0; i_52_ < ((Class237) class237_sub1).anInt3130;
+	    for (int i_52_ = 0; i_52_ < ((MapLoader) class237_sub1).maximumZ;
 		 i_52_++) {
 		Class369_Sub1.method3570(false);
 		for (int i_53_ = 0;
-		     ((Class367_Sub4.anInt7319 >> 1239349699 ^ 0xffffffff)
+		     ((Class367_Sub4.mapSizeX >> 1239349699 ^ 0xffffffff)
 		      < (i_53_ ^ 0xffffffff));
 		     i_53_++) {
 		    for (int i_54_ = 0;
 			 ((i_54_ ^ 0xffffffff)
-			  > (Class348_Sub40_Sub3.anInt9109 >> 1502625827
+			  > (Class348_Sub40_Sub3.mapSizeY >> 1502625827
 			     ^ 0xffffffff));
 			 i_54_++) {
 			int i_55_ = (Class62.anIntArrayArrayArray1116[i_52_]
 				     [i_53_][i_54_]);
 			if ((i_55_ ^ 0xffffffff) != 0) {
 			    int i_56_ = 0x3 & i_55_ >> 1803633816;
-			    if (!((Class237) class237_sub1).aBoolean3109
+			    if (!((MapLoader) class237_sub1).aBoolean3109
 				|| i_56_ == 0) {
 				int i_57_ = (0x6 & i_55_) >> 1850987297;
 				int i_58_ = i_55_ >> -42415762 & 0x3ff;
@@ -482,10 +482,10 @@ final class Class101_Sub3 extends Class101
 				int i_60_
 				    = i_59_ / 8 + (i_58_ / 8 << 1157268520);
 				for (int i_61_ = 0;
-				     (Class348_Sub23_Sub3.anIntArray9042.length
+				     (Class348_Sub23_Sub3.regionHashes.length
 				      ^ 0xffffffff) < (i_61_ ^ 0xffffffff);
 				     i_61_++) {
-				    if (((Class348_Sub23_Sub3.anIntArray9042
+				    if (((Class348_Sub23_Sub3.regionHashes
 					  [i_61_])
 					 ^ 0xffffffff) == (i_60_ ^ 0xffffffff)
 					&& is[i_61_] != null) {

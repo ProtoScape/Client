@@ -112,7 +112,7 @@ final class Class130_Sub1 extends Class130
 		aa_Sub3.anInt5203 = 0;
 		Class186_Sub1.anInt5810 = 0;
 		Class286_Sub5.anInt6251 = 0;
-		VarbitHandler.anInt5080 = 0;
+		VarpHandler.anInt5080 = 0;
 		ClientApplet.anInt19 = 0;
 		Cache.anInt1093 = 0;
 		Class177.anInt4667 = 0;
@@ -314,7 +314,7 @@ final class Class130_Sub1 extends Class130
 		Npc.anInt10495 = 0;
 		Class348_Sub40_Sub8.anInt9155 = 0;
 		Cache.anInt1091 = 0;
-		VarbitHandler.anInt5081 = 0;
+		VarpHandler.anInt5081 = 0;
 		IndexLoader.anInt646 = 0;
 		SocketConnection.anInt5829 = 0;
 		Class64_Sub2.anInt5408 = 0;
@@ -462,7 +462,7 @@ final class Class130_Sub1 extends Class130
 		Class318_Sub1_Sub3_Sub5.anInt10406 = 0;
 		Class243.anInt3158 = 0;
 		Class88.anInt1492 = 0;
-		VarbitHandler.anInt5073 = 0;
+		VarpHandler.anInt5073 = 0;
 		Class279.anInt3608 = 0;
 		KeyboardListener.anInt6532 = 0;
 		s_Sub2.anInt8238 = 0;
@@ -699,7 +699,7 @@ final class Class130_Sub1 extends Class130
 		Class353.anInt4351 = 0;
 		Class14.anInt5104 = 0;
 		Class286_Sub1.anInt6184 = 0;
-		Class237.anInt3105 = 0;
+		MapLoader.anInt3105 = 0;
 		Model.anInt1840 = 0;
 		IsaacCipher.anInt1295 = 0;
 		Class18.anInt278 = 0;
@@ -802,7 +802,7 @@ final class Class130_Sub1 extends Class130
 		ClientApplet.anInt1 = 0;
 		AnimatableToolkit.anInt1135 = 0;
 		GameBuffer.anInt9767 = 0;
-		VarbitHandler.anInt5074 = 0;
+		VarpHandler.anInt5074 = 0;
 		ClientApplet.anInt24 = 0;
 		NativeToolkit.anInt7908 = 0;
 		NativeOpenGlToolkit.anInt9834 = 0;
@@ -814,7 +814,7 @@ final class Class130_Sub1 extends Class130
 		AbstractConnection.anInt3132 = 0;
 		Class239_Sub15.anInt6003 = 0;
 		Class348_Sub15.anInt6777 = 0;
-		Class237.anInt3118 = 0;
+		MapLoader.anInt3118 = 0;
 		Class5_Sub2.anInt8359 = 0;
 		Class318.anInt3975 = 0;
 		NativeToolkit.anInt7956 = 0;
@@ -861,7 +861,7 @@ final class Class130_Sub1 extends Class130
 		NativeToolkit.anInt8072 = 0;
 		Class318_Sub1_Sub4_Sub2.anInt10117 = 0;
 		Class101_Sub3.anInt5753 = 0;
-		VarbitHandler.anInt5066 = 0;
+		VarpHandler.anInt5066 = 0;
 		s.anInt4589 = 0;
 		Class179.anInt2358 = 0;
 		Class348_Sub23_Sub4.anInt9061 = 0;
@@ -966,7 +966,7 @@ final class Class130_Sub1 extends Class130
 		AbstractFontRasterizer.anInt4064 = 0;
 		Class318_Sub1_Sub4_Sub1.anInt10077 = 0;
 		Class369_Sub1.anInt8581 = 0;
-		VarbitHandler.anInt5076 = 0;
+		VarpHandler.anInt5076 = 0;
 		Class318_Sub1_Sub3_Sub4.anInt10354 = 0;
 		Class239_Sub8.anInt5923 = 0;
 		Class239_Sub19.anInt6044 = 0;
@@ -1372,7 +1372,7 @@ final class Class130_Sub1 extends Class130
 		Class18.anInt291 = 0;
 		Class191.anInt2556 = 0;
 		Class367_Sub3.anInt7300 = 0;
-		VarbitHandler.anInt5069 = 0;
+		VarpHandler.anInt5069 = 0;
 		OpenGlToolkit.anInt7656 = 0;
 		Class348_Sub40.anInt7028 = 0;
 		Class348_Sub1.anInt6552 = 0;
@@ -1678,7 +1678,7 @@ final class Class130_Sub1 extends Class130
 		Class318_Sub9_Sub1.anInt8788 = 0;
 		Class101_Sub3.anInt5782 = 0;
 		Class285_Sub1.anInt8485 = 0;
-		Class237.anInt3127 = 0;
+		MapLoader.anInt3127 = 0;
 		Class318_Sub1.anInt6385 = 0;
 		Class331.anInt4134 = 0;
 		OutputstreamWorker.anInt2711 = 0;
@@ -1872,7 +1872,7 @@ final class Class130_Sub1 extends Class130
 		ModernLoadingScreen.anInt5018 = 0;
 		Class318_Sub1_Sub1_Sub2.anInt9982 = 0;
 		Class318.anInt3972 = 0;
-		VarbitHandler.anInt5079 = 0;
+		VarpHandler.anInt5079 = 0;
 		ClientApplet.anInt34 = 0;
 		Class348_Sub42_Sub13.anInt9619 = 0;
 		Class318_Sub1_Sub3_Sub1.anInt10005 = 0;
@@ -1938,7 +1938,7 @@ final class Class130_Sub1 extends Class130
 		za_Sub2.anInt9777 = 0;
 		Class239_Sub28.anInt6137 = 0;
 		Class318_Sub1_Sub3_Sub1.anInt10029 = 0;
-		VarbitHandler.anInt5064 = 0;
+		VarpHandler.anInt5064 = 0;
 		Class285_Sub1.anInt8483 = 0;
 		Class239_Sub27.anInt6133 = 0;
 		Class64_Sub3.anInt5545 = 0;
@@ -2383,7 +2383,7 @@ final class Class130_Sub1 extends Class130
 		Class242.anInt3151 = 0;
 		Class37.anInt494 = 0;
 		Class318_Sub1_Sub5_Sub1.anInt10141 = 0;
-		Class237.anInt3106 = 0;
+		MapLoader.anInt3106 = 0;
 		Class181.anInt2396 = 0;
 		Class318_Sub1_Sub3.anInt8742 = 0;
 		IsaacCipher.anInt1297 = 0;
@@ -2406,7 +2406,7 @@ final class Class130_Sub1 extends Class130
 		Class239_Sub20.anInt6050 = 0;
 		IntergerVarScriptSettingDefinition.anInt2134 = 0;
 		Class239_Sub17.anInt6024 = 0;
-		VarbitHandler.anInt5077 = 0;
+		VarpHandler.anInt5077 = 0;
 		AnimationLoader.anInt1490 = 0;
 		GamePacket.anInt4325 = 0;
 		Class186_Sub1.anInt5809 = 0;
@@ -2505,7 +2505,7 @@ final class Class130_Sub1 extends Class130
 		OpenGlToolkit.anInt7589 = 0;
 		Class348_Sub13.anInt6754 = 0;
 		ModernLoadingScreen.anInt5005 = 0;
-		Class237.anInt3115 = 0;
+		MapLoader.anInt3115 = 0;
 		Class361.anInt4432 = 0;
 		Player.anInt10563 = 0;
 		Class348_Sub16_Sub3.anInt8908 = 0;
@@ -2613,7 +2613,7 @@ final class Class130_Sub1 extends Class130
 		Class101_Sub2.anInt5693 = 0;
 		AbstractToolkit.anInt4570 = 0;
 		Class273.anInt5168 = 0;
-		Class237.anInt3116 = 0;
+		MapLoader.anInt3116 = 0;
 		NativeToolkit.anInt8036 = 0;
 		NativeToolkit.anInt7996 = 0;
 		Class199.anInt2630 = 0;
@@ -2653,7 +2653,7 @@ final class Class130_Sub1 extends Class130
 		Class59_Sub2_Sub1.anInt8669 = 0;
 		NativeToolkit.anInt8013 = 0;
 		Class239_Sub16.anInt6013 = 0;
-		VarbitHandler.anInt5071 = 0;
+		VarpHandler.anInt5071 = 0;
 		Cache.anInt1090 = 0;
 		Class127.anInt4652 = 0;
 		Class328_Sub3.anInt6521 = 0;
@@ -2812,7 +2812,7 @@ final class Class130_Sub1 extends Class130
 		Class101_Sub1.anInt5659 = 0;
 		ObjectDefinition.anInt866 = 0;
 		Class16.anInt232 = 0;
-		VarbitHandler.anInt5075 = 0;
+		VarpHandler.anInt5075 = 0;
 		Class5_Sub1.anInt8340 = 0;
 		Class369_Sub3.anInt8594 = 0;
 		Class279.anInt3599 = 0;
@@ -3036,11 +3036,11 @@ final class Class130_Sub1 extends Class130
 		Class330.anInt4119 = 0;
 		Class251.anInt3233 = 0;
 		ClientApplet.anInt9 = 0;
-		VarbitHandler.anInt5072 = 0;
+		VarpHandler.anInt5072 = 0;
 		Class62.anInt1112 = 0;
 		ClientApplet.anInt10 = 0;
 		ClanChatPlayer.anInt309 = 0;
-		Class237.anInt3107 = 0;
+		MapLoader.anInt3107 = 0;
 		OpenGlToolkit.anInt7539 = 0;
 		Class261.anInt3316 = 0;
 		InputstreamWorker.anInt4552 = 0;
@@ -3113,10 +3113,10 @@ final class Class130_Sub1 extends Class130
 		Class299_Sub2.anInt6324 = 0;
 		FileIndexRequest.anInt10462 = 0;
 		Class151.anInt2064 = 0;
-		VarbitHandler.anInt5062 = 0;
+		VarpHandler.anInt5062 = 0;
 		ByteBuffer.anInt7196 = 0;
 		Class331.anInt4137 = 0;
-		Class237.anInt3110 = 0;
+		MapLoader.anInt3110 = 0;
 		Class348_Sub40_Sub31.anInt9409 = 0;
 		Class279.anInt3612 = 0;
 		Class348_Sub16_Sub2.anInt8867 = 0;
@@ -3156,7 +3156,7 @@ final class Class130_Sub1 extends Class130
 		Class30.anInt410 = 0;
 		Class101_Sub2.anInt5733 = 0;
 		Class285.anInt4749 = 0;
-		Class237.anInt3125 = 0;
+		MapLoader.anInt3125 = 0;
 		Class348_Sub40_Sub19.anInt9255 = 0;
 		Class348_Sub42_Sub7.anInt9544 = 0;
 		Class348_Sub23_Sub2.anInt9030 = 0;
@@ -3294,7 +3294,7 @@ final class Class130_Sub1 extends Class130
 		Class5.anInt4641 = 0;
 		Class307.anInt3877 = 0;
 		SocketWorker.anInt2647 = 0;
-		Class237.anInt3112 = 0;
+		MapLoader.anInt3112 = 0;
 		Class318_Sub1_Sub4_Sub1.anInt10067 = 0;
 		Class348_Sub16_Sub1.anInt8851 = 0;
 		ByteBuffer.anInt7177 = 0;
@@ -3373,7 +3373,7 @@ final class Class130_Sub1 extends Class130
 		ItemDefinition.anInt2800 = 0;
 		Class348_Sub40_Sub32.anInt9418 = 0;
 		Class239_Sub14.anInt5988 = 0;
-		VarbitHandler.anInt5068 = 0;
+		VarpHandler.anInt5068 = 0;
 		BitmapTable.anInt3962 = 0;
 		Class237_Sub1.anInt5816 = 0;
 		Class318_Sub1_Sub3_Sub2.anInt10044 = 0;
@@ -3496,7 +3496,7 @@ final class Class130_Sub1 extends Class130
 		anInt5796 = 0;
 		Class239_Sub8.anInt5920 = 0;
 		FileArchiveTracker.anInt4774 = 0;
-		Class237.anInt3121 = 0;
+		MapLoader.anInt3121 = 0;
 		Class55.anInt997 = 0;
 		NativeRaster.anInt8395 = 0;
 		Class369_Sub1.anInt8579 = 0;
@@ -3581,7 +3581,7 @@ final class Class130_Sub1 extends Class130
 		GameMode.anInt2989 = 0;
 		Class318_Sub1_Sub3_Sub1.anInt10018 = 0;
 		NativeOpenGlToolkit.anInt9877 = 0;
-		Class237.anInt3102 = 0;
+		MapLoader.anInt3102 = 0;
 		Class318_Sub1_Sub3_Sub1.anInt10009 = 0;
 		IndexLoader.anInt638 = 0;
 		ClanChatPlayer.anInt305 = 0;
@@ -3849,7 +3849,7 @@ final class Class130_Sub1 extends Class130
 		Class27.anInt392 = 0;
 		ByteBuffer.anInt7193 = 0;
 		Class326.anInt4083 = 0;
-		Class237.anInt3111 = 0;
+		MapLoader.anInt3111 = 0;
 		Class177.anInt4665 = 0;
 		FileIndexTracker.anInt4801 = 0;
 		Class235.anInt3078 = 0;
@@ -4089,7 +4089,7 @@ final class Class130_Sub1 extends Class130
 		Class298.anInt3808 = 0;
 		Class153.anInt2079 = 0;
 		Class14_Sub2.anInt8622 = 0;
-		Class237.anInt3131 = 0;
+		MapLoader.anInt3131 = 0;
 		Class239_Sub4.anInt5879 = 0;
 		Class91.anInt1520 = 0;
 		ByteBuffer.anInt7146 = 0;

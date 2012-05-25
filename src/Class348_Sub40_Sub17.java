@@ -95,10 +95,10 @@ class Class348_Sub40_Sub17 extends Class348_Sub40
 		    int i_7_
 			= ((Class348_Sub40_Sub17) this).anIntArray9232[i_5_++];
 		    is_4_[i_6_]
-			= Class139.method1166(4080, i_7_ << 1154281412);
+			= Class139.bitAnd(4080, i_7_ << 1154281412);
 		    is_3_[i_6_]
-			= Class139.method1166(65280, i_7_) >> 1238793732;
-		    is_2_[i_6_] = Class139.method1166(4080, i_7_ >> 812723916);
+			= Class139.bitAnd(65280, i_7_) >> 1238793732;
+		    is_2_[i_6_] = Class139.bitAnd(4080, i_7_ >> 812723916);
 		}
 	    } else {
 		for (int i_8_ = 0;
@@ -110,11 +110,11 @@ class Class348_Sub40_Sub17 extends Class348_Sub40
 		    int i_10_ = (((Class348_Sub40_Sub17) this).anIntArray9232
 				 [i_9_ + i_5_]);
 		    is_4_[i_8_]
-			= Class139.method1166(i_10_, 255) << -1837452316;
+			= Class139.bitAnd(i_10_, 255) << -1837452316;
 		    is_3_[i_8_]
-			= Class139.method1166(i_10_ >> -2005178940, 4080);
+			= Class139.bitAnd(i_10_ >> -2005178940, 4080);
 		    is_2_[i_8_]
-			= Class139.method1166(i_10_, 16711680) >> 77341932;
+			= Class139.bitAnd(i_10_, 16711680) >> 77341932;
 		}
 	    }
 	}

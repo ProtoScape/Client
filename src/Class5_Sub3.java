@@ -60,8 +60,7 @@ final class Class5_Sub3 extends Class5
 	anInt8373++;
 	if (!super.method8((byte) 82))
 	    return false;
-	return ((Class5) this).aClass45_4632.getArchiveLoaded(false,
-						       (((Class369_Sub1)
+	return ((Class5) this).aClass45_4632.getArchiveLoaded((((Class369_Sub1)
 							 (Class369_Sub1)
 							 (((Class5) this)
 							  .aClass369_4635))

@@ -221,11 +221,10 @@ final class StringVarScriptSettingLoader
 			}
 			if (string.equalsIgnoreCase("rebuildprofile")) {
 			    Class90.aLong1516 = Class62.getCurrentTimeMillis();
-			    Class258_Sub4.aBoolean8558 = true;
+			    Class258_Sub4.doMapProfile = true;
 			    Class348_Sub20.method2953((byte) -114);
 			    Class50_Sub2.method464(-1);
-			    ClientApplet.addConsoleMessage
-				("Rebuilding map (with profiling)");
+			    ClientApplet.addConsoleMessage("Rebuilding map (with profiling)");
 			    break;
 			}
 			if (string.equalsIgnoreCase("wm1")) {
@@ -393,7 +392,7 @@ final class StringVarScriptSettingLoader
 					  + ((Class348_Sub51)
 					     BitmapTable.aClass348_Sub51_3959)
 						.aClass239_Sub6_7226
-						.method1743(-32350)));
+						.getMapSizeId(-32350)));
 				    break;
 				}
 				break;
@@ -568,19 +567,19 @@ final class StringVarScriptSettingLoader
 				     .aByte6381)
 				  + ","
 				  + (((Class286_Sub4.anInt6246 >> 701891721)
-				      - -za_Sub2.anInt9780)
+				      - -za_Sub2.baseRegionX)
 				     >> -56573050)
 				  + ","
 				  + ((Class59_Sub2_Sub2.anInt8685
-				      >> 551964745) + Class90.anInt1517
+				      >> 551964745) + Class90.baseRegionY
 				     >> -1492367802)
 				  + ","
 				  + (((Class286_Sub4.anInt6246 >> 1523938025)
-				      - -za_Sub2.anInt9780)
+				      - -za_Sub2.baseRegionX)
 				     & 0x3f)
 				  + ","
 				  + ((Class59_Sub2_Sub2.anInt8685
-				      >> 580244777) - -Class90.anInt1517
+				      >> 580244777) - -Class90.baseRegionY
 				     & 0x3f)
 				  + " Height: "
 				  + ((Class275.method2064
@@ -598,17 +597,17 @@ final class StringVarScriptSettingLoader
 				       .localPlayer))
 				     .aByte6381)
 				  + ","
-				  + (GameFont.anInt4336 - -za_Sub2.anInt9780
+				  + (GameFont.anInt4336 - -za_Sub2.baseRegionX
 				     >> -576384442)
 				  + ","
-				  + (Class90.anInt1517 + Class281.anInt3647
+				  + (Class90.baseRegionY + Class281.anInt3647
 				     >> -1550298426)
 				  + ","
 				  + (0x3f
-				     & GameFont.anInt4336 - -za_Sub2.anInt9780)
+				     & GameFont.anInt4336 - -za_Sub2.baseRegionX)
 				  + ","
 				  + (0x3f
-				     & Class281.anInt3647 - -Class90.anInt1517)
+				     & Class281.anInt3647 - -Class90.baseRegionY)
 				  + " Height: "
 				  + ((Class275.method2064
 				      (GameFont.anInt4336,
@@ -1129,7 +1128,7 @@ final class StringVarScriptSettingLoader
     StringVarScriptSettingLoader(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_1436 = class45;
-	    ((StringVarScriptSettingLoader) this).amountScriptGlobalStrs = aClass45_1436.method407(15);
+	    ((StringVarScriptSettingLoader) this).amountScriptGlobalStrs = aClass45_1436.getAmountChildEntries(15);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("lba.<init>("

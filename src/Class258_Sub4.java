@@ -11,7 +11,7 @@ final class Class258_Sub4 extends Class258
     static int anInt8555;
     private int anInt8556;
     static int[] anIntArray8557 = new int[500];
-    static boolean aBoolean8558 = false;
+    static boolean doMapProfile = false;
     static int anInt8559;
     static float aFloat8560;
     

@@ -191,11 +191,10 @@ final class Class318_Sub7 extends Class318
 			 (((Class348_Sub42_Sub14)
 			   Class75.aClass348_Sub42_Sub14_1243).aString9625)) {
 			Node.anInt4290
-			    = (Class348_Sub32.indexLoader23.method397
+			    = (Class348_Sub32.indexLoader23.getArchiveLoadedPerc
 			       ((((Class348_Sub42_Sub14)
 				  Class75.aClass348_Sub42_Sub14_1243)
-				 .aString9625),
-				0)) / 10;
+				 .aString9625))) / 10;
 			return;
 		    }
 		    DummyInputstream2.method126(-16203);
@@ -225,7 +224,7 @@ final class Class318_Sub7 extends Class318
 		    int i_8_ = -1;
 		    if (Class75.aClass348_Sub42_Sub14_1243.method3236
 			(is,
-			 (za_Sub2.anInt9780
+			 (za_Sub2.baseRegionX
 			  - -((((Class318_Sub1)
 				Class132.localPlayer)
 			       .anInt6377)
@@ -233,7 +232,7 @@ final class Class318_Sub7 extends Class318
 			 ((((Class318_Sub1)
 			    Class132.localPlayer)
 			   .anInt6388)
-			  >> -1006269719) + Class90.anInt1517,
+			  >> -1006269719) + Class90.baseRegionY,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
 			  .aByte6381),
@@ -342,8 +341,8 @@ final class Class318_Sub7 extends Class318
 		    Class94.method867(true);
 		} else if (i <= -43) {
 		    if ((Node.anInt4290 ^ 0xffffffff) == -61) {
-			if (!Class75.aClass45_1237.method400
-			     (-18308, (((Class348_Sub42_Sub14)
+			if (!Class75.aClass45_1237.containsArchive
+			     ((((Class348_Sub42_Sub14)
 					Class75.aClass348_Sub42_Sub14_1243)
 				       .aString9625) + "_staticelements"))
 			    Class75.aClass252_1246 = new Class252(0);

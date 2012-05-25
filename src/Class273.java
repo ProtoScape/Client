@@ -31,7 +31,7 @@ final class Class273 implements Interface21
 		& (0x37 & i_1_ ^ 0xffffffff) == -1);
     }
     
-    static int method2057(int i, int i_2_) {
+    static int bitOr(int i, int i_2_) {
 	return i | i_2_;
     }
     

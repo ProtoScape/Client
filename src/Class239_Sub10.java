@@ -92,12 +92,12 @@ final class Class239_Sub10 extends Class239
 	int i_13_ = 56 / ((i - 74) / 43);
 	anInt5947++;
 	if ((0x8
-	     & Class348_Sub33.aByteArrayArrayArray6962[i_10_][i_12_][i_11_])
+	     & Class348_Sub33.settingFlags[i_10_][i_12_][i_11_])
 	    != 0)
 	    return 0;
 	if ((i_10_ ^ 0xffffffff) < -1
 	    && ((0x2
-		 & Class348_Sub33.aByteArrayArrayArray6962[1][i_12_][i_11_])
+		 & Class348_Sub33.settingFlags[1][i_12_][i_11_])
 		!= 0))
 	    return i_10_ + -1;
 	return i_10_;

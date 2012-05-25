@@ -19,13 +19,13 @@ final class Class275
 	int i_3_ = i >> 937361225;
 	int i_4_ = i_2_ >> -1589419447;
 	if ((i_3_ ^ 0xffffffff) > -1 || (i_4_ ^ 0xffffffff) > -1
-	    || i_3_ > -1 + Class367_Sub4.anInt7319
-	    || ((Class348_Sub40_Sub3.anInt9109 + -1 ^ 0xffffffff)
+	    || i_3_ > -1 + Class367_Sub4.mapSizeX
+	    || ((Class348_Sub40_Sub3.mapSizeY + -1 ^ 0xffffffff)
 		> (i_4_ ^ 0xffffffff)))
 	    return 0;
 	int i_5_ = i_0_;
 	if ((i_5_ ^ 0xffffffff) > -4
-	    && (Class348_Sub33.aByteArrayArrayArray6962[1][i_3_][i_4_] & 0x2
+	    && (Class348_Sub33.settingFlags[1][i_3_][i_4_] & 0x2
 		^ 0xffffffff) != -1)
 	    i_5_++;
 	if (i_1_ != 11219)

@@ -6,13 +6,13 @@ final class StringNode extends Node
 {
     static int anInt7210;
     String value;
-    static byte[][] aByteArrayArray7212;
+    static byte[][] nArchiveSrcs;
     static int anInt7213 = 0;
     static int anInt7214;
     
     public static void method3418(int i) {
 	if (i >= 108)
-	    aByteArrayArray7212 = null;
+	    nArchiveSrcs = null;
     }
     
     static final void method3419(int i) {

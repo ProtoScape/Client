@@ -105,7 +105,7 @@ final class BitmapFont
 		    if ((i_1_ ^ 0xffffffff) == 0) {
 			i_3_
 			    += 0xff & (aByteArray1986
-				       [Class354.decodeCharacter(c, false) & 0xff]);
+				       [Class354.charToByte(c) & 0xff]);
 			if (aByteArrayArray1979 != null
 			    && (i_2_ ^ 0xffffffff) != 0)
 			    i_3_ += aByteArrayArray1979[i_2_][c];
@@ -247,7 +247,7 @@ final class BitmapFont
 		    if ((i ^ 0xffffffff) == 0) {
 			i_17_
 			    += 0xff & (aByteArray1986
-				       [Class354.decodeCharacter(c, false) & 0xff]);
+				       [Class354.charToByte(c) & 0xff]);
 			if (aByteArrayArray1979 != null && i_16_ != -1)
 			    i_17_ += aByteArrayArray1979[i_16_][c];
 			i_16_ = c;
@@ -316,7 +316,7 @@ final class BitmapFont
 	    int i_34_ = string.length();
 	    for (int i_35_ = 0; i_34_ > i_35_; i_35_++) {
 		int i_36_
-		    = Class354.decodeCharacter(string.charAt(i_35_), false) & 0xff;
+		    = Class354.charToByte(string.charAt(i_35_)) & 0xff;
 		int i_37_ = 0;
 		if ((i_36_ ^ 0xffffffff) == -61)
 		    i_31_ = i_35_;

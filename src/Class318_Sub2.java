@@ -191,19 +191,19 @@ final class Class318_Sub2 extends Class318
 		    = ((3 + i_13_ ^ 0xffffffff) <= (i_12_ ^ 0xffffffff) ? -1
 		       : Class186_Sub1.method1399(7,
 						  string.charAt(i_13_ + 3)));
-		is[i_10_++] = (byte) Class273.method2057(i_14_ << -1270769342,
+		is[i_10_++] = (byte) Class273.bitOr(i_14_ << -1270769342,
 							 i_15_ >>> 1087501732);
 		if ((i_16_ ^ 0xffffffff) == 0)
 		    break;
 		is[i_10_++]
-		    = (byte) Class273.method2057((Class139.method1166(15,
+		    = (byte) Class273.bitOr((Class139.bitAnd(15,
 								      i_15_)
 						  << -2046845404),
 						 i_16_ >>> 647108994);
 		if (i_17_ == -1)
 		    break;
 		is[i_10_++]
-		    = (byte) Class273.method2057((Class139.method1166(3, i_16_)
+		    = (byte) Class273.bitOr((Class139.bitAnd(3, i_16_)
 						  << -1508075802),
 						 i_17_);
 	    }

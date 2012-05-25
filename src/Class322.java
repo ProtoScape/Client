@@ -17,7 +17,7 @@ final class Class322
     static int anInt4028;
     private int[][][] anIntArrayArrayArray4029;
     static int anInt4030;
-    static int[] anIntArray4031;
+    static int[] nArchiveids;
     static int anInt4032 = -1;
     private Class348_Sub24[] aClass348_Sub24Array4033;
     static int anInt4034;
@@ -65,7 +65,7 @@ final class Class322
     public static void method2555(byte i) {
 	if (i != 28)
 	    method2554((byte) 21);
-	anIntArray4031 = null;
+	nArchiveids = null;
 	aClass114_4027 = null;
 	aClass308_4036 = null;
     }
@@ -97,10 +97,10 @@ final class Class322
 	    || ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388 < 512
 	    || ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
 		 ^ 0xffffffff)
-		<= (-512 + Class367_Sub4.anInt7319 * 512 ^ 0xffffffff))
+		<= (-512 + Class367_Sub4.mapSizeX * 512 ^ 0xffffffff))
 	    || ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		 ^ 0xffffffff)
-		<= (-512 + Class348_Sub40_Sub3.anInt9109 * 512
+		<= (-512 + Class348_Sub40_Sub3.mapSizeY * 512
 		    ^ 0xffffffff))) {
 	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10291
 		= -1;
@@ -129,10 +129,10 @@ final class Class322
 	    && (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377 < 6144
 		|| (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		    ^ 0xffffffff) > -6145
-		|| ((512 * (Class367_Sub4.anInt7319 + -12) ^ 0xffffffff)
+		|| ((512 * (Class367_Sub4.mapSizeX + -12) ^ 0xffffffff)
 		    >= (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
 			^ 0xffffffff))
-		|| (512 * (Class348_Sub40_Sub3.anInt9109 - 12)
+		|| (512 * (Class348_Sub40_Sub3.mapSizeY - 12)
 		    <= ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388))) {
 	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10291
 		= -1;

@@ -344,7 +344,7 @@ final class Class348_Sub17 extends Node
 		i_37_ = class348_sub49.method3366((byte) 124);
 	    }
 	    ((Class348_Sub17) this).aShortArray6795[i_38_]
-		+= Class139.method1166(32768, i_37_ + -1 << -1686647154);
+		+= Class139.bitAnd(32768, i_37_ + -1 << -1686647154);
 	    i_35_--;
 	    anIntArray6793[i_38_] = i_37_;
 	}

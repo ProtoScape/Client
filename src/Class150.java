@@ -47,7 +47,7 @@ final class Class150
 	    return class34;
 	byte[] is;
 	synchronized (aClass45_2048) {
-	    is = aClass45_2048.getArchiveChild(3, i_3_);
+	    is = aClass45_2048.getChildArchive(3, i_3_);
 	}
 	class34 = new Class34();
 	((Class34) class34).aClass150_475 = this;
@@ -72,7 +72,7 @@ final class Class150
 						 IndexLoader class45, int i_4_) {
 	anInt2053++;
 	ByteBuffer class348_sub49
-	    = new ByteBuffer(class45.getArchiveChild(i_4_, i));
+	    = new ByteBuffer(class45.getChildArchive(i_4_, i));
 	if (bool != true)
 	    method1208(102);
 	Class348_Sub42_Sub14 class348_sub42_sub14
@@ -129,7 +129,7 @@ final class Class150
 	try {
 	    ((Class150) this).aClass45_2054 = class45_9_;
 	    aClass45_2048 = class45;
-	    aClass45_2048.method407(3);
+	    aClass45_2048.getAmountChildEntries(3);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929
 		      (runtimeexception,

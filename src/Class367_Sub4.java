@@ -15,7 +15,7 @@ final class Class367_Sub4 extends Class367
     static int anInt7316;
     private boolean aBoolean7317 = false;
     static GamePacket aClass351_7318 = new GamePacket(21, 2);
-    static int anInt7319 = 104;
+    static int mapSizeX = 104;
     static boolean aBoolean7320 = false;
     static int anInt7321;
     static int anInt7322;
@@ -230,7 +230,7 @@ final class Class367_Sub4 extends Class367
 	     ^ 0xffffffff)
 	    == (i_16_ ^ 0xffffffff))
 	    return false;
-	if (((Class348_Sub33.aByteArrayArrayArray6962[Class355.anInt4372]
+	if (((Class348_Sub33.settingFlags[Class355.anInt4372]
 	      [i_13_][i])
 	     & 0x4)
 	    == 0)
@@ -253,7 +253,7 @@ final class Class367_Sub4 extends Class367
 			 >> -782063056);
 	    i_18_ = i_18_ + 1 & 0xfff;
 	    boolean bool_24_ = false;
-	    if ((0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+	    if ((0x4 & (Class348_Sub33.settingFlags
 			[Class355.anInt4372][i_19_][i_22_]))
 		== 0)
 		bool_24_ = true;
@@ -263,7 +263,7 @@ final class Class367_Sub4 extends Class367
 	    while_223_:
 		for (/**/; (i_26_ ^ 0xffffffff) >= -4; i_26_++) {
 		    if (class357s[i_26_] != null
-			&& (0x8 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x8 & (Class348_Sub33.settingFlags
 				   [i_26_][i_19_][i_22_])
 			    ^ 0xffffffff) == -1) {
 			if (bool_24_
@@ -440,35 +440,35 @@ final class Class367_Sub4 extends Class367
 		    && (Class289.aByteArrayArrayArray3700[Class355.anInt4372]
 			[i_19_ - 1][i_22_]) != i_16_) {
 		    Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			= Class273.method2057(Class273.method2057(1179648,
+			= Class273.bitOr(Class273.bitOr(1179648,
 								  i_19_ + -1),
 					      -754974720);
 		    ToolkitException.anIntArray110[i_17_]
-			= Class273.method2057(i_22_, 1245184);
+			= Class273.bitOr(i_22_, 1245184);
 		    i_17_ = 0xfff & 1 + i_17_;
 		    Class289.aByteArrayArrayArray3700[Class355.anInt4372]
 			[i_19_ - 1][i_22_]
 			= i_16_;
 		}
-		if ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+		if ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 		    < (++i_22_ ^ 0xffffffff)) {
 		    if (i_19_ - 1 >= 0
 			&& ((Class289.aByteArrayArrayArray3700
 			     [Class355.anInt4372][-1 + i_19_][i_22_])
 			    ^ 0xffffffff) != (i_16_ ^ 0xffffffff)
-			&& ((Class348_Sub33.aByteArrayArrayArray6962
+			&& ((Class348_Sub33.settingFlags
 			     [Class355.anInt4372][i_19_][i_22_]) & 0x4
 			    ^ 0xffffffff) == -1
-			&& (0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x4 & (Class348_Sub33.settingFlags
 				   [Class355.anInt4372][-1 + i_19_]
 				   [-1 + i_22_])
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (1375731712,
-				Class273.method2057(i_19_ + -1, 1179648)));
+				Class273.bitOr(i_19_ + -1, 1179648)));
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(i_22_, 1245184);
+			    = Class273.bitOr(i_22_, 1245184);
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][-1 + i_19_][i_22_]
 			    = i_16_;
@@ -479,32 +479,32 @@ final class Class367_Sub4 extends Class367
 			     [Class355.anInt4372][i_19_][i_22_])
 			    ^ 0xffffffff)) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (318767104,
-				Class273.method2057(i_19_, 5373952)));
+				Class273.bitOr(i_19_, 5373952)));
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(i_22_, 5439488);
+			    = Class273.bitOr(i_22_, 5439488);
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][i_19_][i_22_]
 			    = i_16_;
 			i_17_ = i_17_ + 1 & 0xfff;
 		    }
-		    if ((anInt7319 ^ 0xffffffff) < (1 + i_19_ ^ 0xffffffff)
+		    if ((mapSizeX ^ 0xffffffff) < (1 + i_19_ ^ 0xffffffff)
 			&& ((i_16_ ^ 0xffffffff)
 			    != ((Class289.aByteArrayArrayArray3700
 				 [Class355.anInt4372][i_19_ + 1][i_22_])
 				^ 0xffffffff))
-			&& (0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x4 & (Class348_Sub33.settingFlags
 				   [Class355.anInt4372][i_19_][i_22_])) == 0
-			&& (0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x4 & (Class348_Sub33.settingFlags
 				   [Class355.anInt4372][1 + i_19_]
 				   [i_22_ + -1])) == 0) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (-1845493760,
-				Class273.method2057(1 + i_19_, 5373952)));
+				Class273.bitOr(1 + i_19_, 5373952)));
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(5439488, i_22_);
+			    = Class273.bitOr(5439488, i_22_);
 			i_17_ = 1 + i_17_ & 0xfff;
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][i_19_ - -1][i_22_]
@@ -512,15 +512,15 @@ final class Class367_Sub4 extends Class367
 		    }
 		}
 		i_22_--;
-		if ((anInt7319 ^ 0xffffffff) < (i_19_ - -1 ^ 0xffffffff)
+		if ((mapSizeX ^ 0xffffffff) < (i_19_ - -1 ^ 0xffffffff)
 		    && (Class289.aByteArrayArrayArray3700[Class355.anInt4372]
 			[i_19_ - -1][i_22_]) != i_16_) {
 		    Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			= Class273.method2057(1392508928,
-					      Class273.method2057(9568256,
+			= Class273.bitOr(1392508928,
+					      Class273.bitOr(9568256,
 								  1 + i_19_));
 		    ToolkitException.anIntArray110[i_17_]
-			= Class273.method2057(i_22_, 9633792);
+			= Class273.bitOr(i_22_, 9633792);
 		    i_17_ = 1 + i_17_ & 0xfff;
 		    Class289.aByteArrayArrayArray3700[Class355.anInt4372]
 			[i_19_ - -1][i_22_]
@@ -531,18 +531,18 @@ final class Class367_Sub4 extends Class367
 			&& ((Class289.aByteArrayArrayArray3700
 			     [Class355.anInt4372][i_19_ - 1][i_22_])
 			    ^ 0xffffffff) != (i_16_ ^ 0xffffffff)
-			&& (0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x4 & (Class348_Sub33.settingFlags
 				   [Class355.anInt4372][i_19_][i_22_])
 			    ^ 0xffffffff) == -1
-			&& (0x4 & (Class348_Sub33.aByteArrayArrayArray6962
+			&& (0x4 & (Class348_Sub33.settingFlags
 				   [Class355.anInt4372][-1 + i_19_][1 + i_22_])
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (301989888,
-				Class273.method2057(13762560, -1 + i_19_)));
+				Class273.bitOr(13762560, -1 + i_19_)));
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(i_22_, 13828096);
+			    = Class273.bitOr(i_22_, 13828096);
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][i_19_ - 1][i_22_]
 			    = i_16_;
@@ -553,31 +553,31 @@ final class Class367_Sub4 extends Class367
 			     [Class355.anInt4372][i_19_][i_22_])
 			    ^ 0xffffffff)) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = Class273.method2057(Class273.method2057(13762560,
+			    = Class273.bitOr(Class273.bitOr(13762560,
 								      i_19_),
 						  -1828716544);
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(13828096, i_22_);
+			    = Class273.bitOr(13828096, i_22_);
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][i_19_][i_22_]
 			    = i_16_;
 			i_17_ = 0xfff & i_17_ - -1;
 		    }
-		    if ((1 + i_19_ ^ 0xffffffff) > (anInt7319 ^ 0xffffffff)
+		    if ((1 + i_19_ ^ 0xffffffff) > (mapSizeX ^ 0xffffffff)
 			&& (Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][1 + i_19_][i_22_]) != i_16_
-			&& ((Class348_Sub33.aByteArrayArrayArray6962
+			&& ((Class348_Sub33.settingFlags
 			     [Class355.anInt4372][i_19_][i_22_])
 			    & 0x4) == 0
-			&& ((Class348_Sub33.aByteArrayArrayArray6962
+			&& ((Class348_Sub33.settingFlags
 			     [Class355.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (-771751936,
-				Class273.method2057(i_19_ - -1, 9568256)));
+				Class273.bitOr(i_19_ - -1, 9568256)));
 			ToolkitException.anIntArray110[i_17_]
-			    = Class273.method2057(i_22_, 9633792);
+			    = Class273.bitOr(i_22_, 9633792);
 			Class289.aByteArrayArrayArray3700
 			    [Class355.anInt4372][i_19_ - -1][i_22_]
 			    = i_16_;

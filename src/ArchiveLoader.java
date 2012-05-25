@@ -317,7 +317,7 @@ final class ArchiveLoader extends AbtractArchiveLoader
 	return 100;
     }
     
-    final int getLoadedPercent(int i) {
+    final int getLoadedPerc(int i) {
 	anInt6341++;
 	FileRequest request = ((FileRequest) requestTable.get((long) i));
 	if (request != null)

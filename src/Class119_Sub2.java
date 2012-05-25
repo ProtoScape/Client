@@ -17,7 +17,7 @@ final class Class119_Sub2 extends Class119 implements Interface8
 	if (i_0_ < 87)
 	    method1078(null, 22, -24);
 	short[] is_1_ = new short[i];
-	Class214.method1576(is, 0, is_1_, 0, i);
+	ArrayUtils.arrayCopy(is, 0, is_1_, 0, i);
 	return is_1_;
     }
     

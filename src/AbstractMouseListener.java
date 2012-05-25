@@ -24,7 +24,7 @@ abstract class AbstractMouseListener
 	    = (Class181) Class5.aClass60_4636.method583((long) i, i_0_ + -128);
 	if (class181 != null)
 	    return class181;
-	byte[] is = Class239_Sub12.aClass45_5964.getArchiveChild(i_0_, i);
+	byte[] is = Class239_Sub12.aClass45_5964.getChildArchive(i_0_, i);
 	class181 = new Class181();
 	if (is != null)
 	    class181.method1370(24, new ByteBuffer(is));

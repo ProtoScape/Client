@@ -122,12 +122,12 @@ final class Class367_Sub9 extends Class367
 		Class39 class39
 		    = (Class328.method2608
 		       (class377,
-			class45.getArchiveChild("gl", "environment_mapped_water_v"),
+			class45.getChildArchive("gl", "environment_mapped_water_v"),
 			-108, 35633));
 		Class39 class39_13_
 		    = (Class328.method2608
 		       (class377,
-			class45.getArchiveChild("gl", "environment_mapped_water_f"),
+			class45.getChildArchive("gl", "environment_mapped_water_f"),
 			-122, 35632));
 		aClass89_7369
 		    = AbstractFontRasterizer.method2582(class377,

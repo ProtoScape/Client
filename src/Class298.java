@@ -38,13 +38,13 @@ final class Class298
 		      Class132.localPlayer)
 		     .anIntArray10317[0]);
 	if ((i_11_ ^ 0xffffffff) > -1
-	    || (Class367_Sub4.anInt7319 ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)
+	    || (Class367_Sub4.mapSizeX ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)
 	    || (i_12_ ^ 0xffffffff) > -1
-	    || (i_12_ ^ 0xffffffff) <= (Class348_Sub40_Sub3.anInt9109
+	    || (i_12_ ^ 0xffffffff) <= (Class348_Sub40_Sub3.mapSizeY
 					^ 0xffffffff))
 	    return false;
-	if (i < 0 || i >= Class367_Sub4.anInt7319 || (i_4_ ^ 0xffffffff) > -1
-	    || (i_4_ ^ 0xffffffff) <= (Class348_Sub40_Sub3.anInt9109
+	if (i < 0 || i >= Class367_Sub4.mapSizeX || (i_4_ ^ 0xffffffff) > -1
+	    || (i_4_ ^ 0xffffffff) <= (Class348_Sub40_Sub3.mapSizeY
 				       ^ 0xffffffff))
 	    return false;
 	int i_13_

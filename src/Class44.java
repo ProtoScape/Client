@@ -35,22 +35,22 @@ final class Class44
 	    try {
 		anInt622++;
 		int[] is_5_ = { -1, 0, 0, 0, 0 };
-		for (int i = 0; i < ((Class237) class237_sub1).anInt3130;
+		for (int i = 0; i < ((MapLoader) class237_sub1).maximumZ;
 		     i++) {
 		    Class369_Sub1.method3570(false);
 		    for (int i_6_ = 0;
 			 ((i_6_ ^ 0xffffffff)
-			  > (Class367_Sub4.anInt7319 >> -1410936221
+			  > (Class367_Sub4.mapSizeX >> -1410936221
 			     ^ 0xffffffff));
 			 i_6_++) {
 			for (int i_7_ = 0;
-			     i_7_ < Class348_Sub40_Sub3.anInt9109 >> 48975811;
+			     i_7_ < Class348_Sub40_Sub3.mapSizeY >> 48975811;
 			     i_7_++) {
 			    int i_8_ = (Class62.anIntArrayArrayArray1116[i]
 					[i_6_][i_7_]);
 			    if ((i_8_ ^ 0xffffffff) != 0) {
 				int i_9_ = i_8_ >> -1306551304 & 0x3;
-				if (!((Class237) class237_sub1).aBoolean3109
+				if (!((MapLoader) class237_sub1).aBoolean3109
 				    || i_9_ == 0) {
 				    int i_10_ = (i_8_ & 0x6) >> 1432689025;
 				    int i_11_ = (i_8_ & 0xffd064) >> 86505390;
@@ -59,10 +59,10 @@ final class Class44
 						 - -(i_12_ / 8));
 				    for (int i_14_ = 0;
 					 i_14_ < (Class348_Sub23_Sub3
-						  .anIntArray9042).length;
+						  .regionHashes).length;
 					 i_14_++) {
 					if ((((Class348_Sub23_Sub3
-					       .anIntArray9042[i_14_])
+					       .regionHashes[i_14_])
 					      ^ 0xffffffff)
 					     == (i_13_ ^ 0xffffffff))
 					    && is[i_14_] != null) {
@@ -91,16 +91,16 @@ final class Class44
 			}
 		    }
 		}
-		for (int i = 0; ((Class237) class237_sub1).anInt3130 > i;
+		for (int i = 0; ((MapLoader) class237_sub1).maximumZ > i;
 		     i++) {
 		    Class369_Sub1.method3570(false);
 		    for (int i_15_ = 0;
-			 ((Class367_Sub4.anInt7319 >> 1013179203 ^ 0xffffffff)
+			 ((Class367_Sub4.mapSizeX >> 1013179203 ^ 0xffffffff)
 			  < (i_15_ ^ 0xffffffff));
 			 i_15_++) {
 			for (int i_16_ = 0;
 			     (i_16_
-			      < Class348_Sub40_Sub3.anInt9109 >> -811826653);
+			      < Class348_Sub40_Sub3.mapSizeY >> -811826653);
 			     i_16_++) {
 			    int i_17_ = (Class62.anIntArrayArrayArray1116[i]
 					 [i_15_][i_16_]);

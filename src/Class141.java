@@ -30,7 +30,7 @@ final class Class141
 	    return class218;
 	byte[] is;
 	synchronized (aClass45_1971) {
-	    is = aClass45_1971.getArchiveChild(34, i_0_);
+	    is = aClass45_1971.getChildArchive(34, i_0_);
 	}
 	class218 = new Class218();
 	if (i != 31)
@@ -110,7 +110,7 @@ final class Class141
 	try {
 	    ((Class141) this).aClass45_1965 = class45_4_;
 	    aClass45_1971 = class45;
-	    aClass45_1971.method407(34);
+	    aClass45_1971.getAmountChildEntries(34);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929
 		      (runtimeexception,

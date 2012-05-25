@@ -37,9 +37,9 @@ final class Class355
 	    return class348_sub42_sub10;
 	byte[] is;
 	if ((i ^ 0xffffffff) <= -32769)
-	    is = aClass45_4369.getArchiveChild(1, 0x7fff & i);
+	    is = aClass45_4369.getChildArchive(1, 0x7fff & i);
 	else
-	    is = aClass45_4368.getArchiveChild(1, i);
+	    is = aClass45_4368.getChildArchive(1, i);
 	class348_sub42_sub10 = new Class348_Sub42_Sub10();
 	((Class348_Sub42_Sub10) class348_sub42_sub10).aClass355_9567 = this;
 	if (is != null)
@@ -93,10 +93,10 @@ final class Class355
 		aClass45_4369 = class45_1_;
 		if (aClass45_4368 != null)
 		    ((Class355) this).anInt4365
-			= aClass45_4368.method407(1);
+			= aClass45_4368.getAmountChildEntries(1);
 		if (aClass45_4369 == null)
 		    break;
-		((Class355) this).anInt4364 = aClass45_4369.method407(1);
+		((Class355) this).anInt4364 = aClass45_4369.getAmountChildEntries(1);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929
 			  (runtimeexception,

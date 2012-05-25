@@ -42,8 +42,7 @@ abstract class AbstractFontRasterizer
 		int i_7_ = string.length();
 		int i_8_ = 0;
 		for (/**/; (i_8_ ^ 0xffffffff) > (i_7_ ^ 0xffffffff); i_8_++) {
-		    char c = (char) (Class354.decodeCharacter(string.charAt(i_8_),
-							 false)
+		    char c = (char) (Class354.charToByte(string.charAt(i_8_))
 				     & 0xff);
 		    if ((c ^ 0xffffffff) == -61)
 			i_4_ = i_8_;
@@ -655,8 +654,7 @@ abstract class AbstractFontRasterizer
 	    if (i_105_ == 25625) {
 		int i_110_ = 0;
 		for (/**/; i_110_ < strLength; i_110_++) {
-		    char c = (char) (Class354.decodeCharacter(string.charAt(i_110_),
-							 false)
+		    char c = (char) (Class354.charToByte(string.charAt(i_110_))
 				     & 0xff);
 		    if (c == 60)
 			i_107_ = i_110_;

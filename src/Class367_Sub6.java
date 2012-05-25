@@ -61,7 +61,7 @@ final class Class367_Sub6 extends Class367
 	else
 	    anIDirect3DVertexShader7341
 		= ((DirectxToolkit) aClass378_7340).anIDirect3DDevice9810
-		      .b(class45.getArchiveChild("dx", "transparent_water"));
+		      .b(class45.getChildArchive("dx", "transparent_water"));
     }
     
     final void method3523(byte i) {

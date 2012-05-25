@@ -5,7 +5,7 @@
 final class Class348_Sub15 extends Node
 {
     Class55_Sub1 aClass55_Sub1_6768;
-    static int anInt6769;
+    static int lastMapSizeId;
     static int[] anIntArray6770 = new int[1000];
     static int anInt6771;
     boolean aBoolean6772;
@@ -75,7 +75,7 @@ final class Class348_Sub15 extends Node
 	WidgetVariable class348_sub42_sub15 = Class318_Sub9_Sub1.method2516(i_0_, (byte) 105, 7);
 	class348_sub42_sub15.method3246(-25490);
 	if (bool != true)
-	    anInt6769 = -113;
+	    lastMapSizeId = -113;
 	((WidgetVariable) class348_sub42_sub15).intArg = i;
     }
     
@@ -103,6 +103,6 @@ final class Class348_Sub15 extends Node
     }
     
     static {
-	anInt6769 = -1;
+	lastMapSizeId = -1;
     }
 }

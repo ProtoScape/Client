@@ -78,10 +78,10 @@ final class Whirlpool
 			= (OpenGlRaster.method993
 			   (aLongArray1471[i_4_],
 			    (DummyInputstream2.aLongArrayArray75[i_5_]
-			     [(Class139.method1166
+			     [(Class139.bitAnd
 			       (255,
 				(int) ((aLongArray1472
-					[Class139.method1166(7, i_4_ - i_5_)])
+					[Class139.bitAnd(7, i_4_ - i_5_)])
 				       >>> i_6_)))])));
 		    i_6_ -= 8;
 		}
@@ -100,10 +100,10 @@ final class Whirlpool
 			= (OpenGlRaster.method993
 			   (aLongArray1471[i_8_],
 			    (DummyInputstream2.aLongArrayArray75[i_9_]
-			     [(Class139.method1166
+			     [(Class139.bitAnd
 			       (255,
 				(int) ((aLongArray1469
-					[Class139.method1166(-i_9_ + i_8_, 7)])
+					[Class139.bitAnd(-i_9_ + i_8_, 7)])
 				       >>> i_10_)))])));
 		    i_10_ -= 8;
 		}
@@ -218,7 +218,7 @@ final class Whirlpool
 		if (i_36_ < 0 || i_36_ >= 256)
 		    throw new RuntimeException("LOGIC ERROR");
 		aByteArray1475[anInt1468]
-		    = (byte) Class273.method2057(aByteArray1475[anInt1468],
+		    = (byte) Class273.bitOr(aByteArray1475[anInt1468],
 						 i_36_ >>> i_31_);
 		anInt1468++;
 		anInt1463 += 8 - i_31_;
@@ -227,7 +227,7 @@ final class Whirlpool
 		    anInt1463 = anInt1468 = 0;
 		}
 		aByteArray1475[anInt1468]
-		    = (byte) Class139.method1166(i_36_ << -i_31_ + 8, 255);
+		    = (byte) Class139.bitAnd(i_36_ << -i_31_ + 8, 255);
 		i_29_++;
 		l -= 8L;
 		anInt1463 += i_31_;
@@ -236,7 +236,7 @@ final class Whirlpool
 	    if (l > 0L) {
 		i_37_ = 0xff & is[i_29_] << i_30_;
 		aByteArray1475[anInt1468]
-		    = (byte) Class273.method2057(aByteArray1475[anInt1468],
+		    = (byte) Class273.bitOr(aByteArray1475[anInt1468],
 						 i_37_ >>> i_31_);
 	    } else
 		i_37_ = 0;
@@ -249,7 +249,7 @@ final class Whirlpool
 		    anInt1463 = anInt1468 = 0;
 		}
 		aByteArray1475[anInt1468]
-		    = (byte) Class139.method1166(i_37_ << 8 + -i_31_, 255);
+		    = (byte) Class139.bitAnd(i_37_ << 8 + -i_31_, 255);
 		anInt1463 += (int) l;
 	    } else
 		anInt1463 += l;
@@ -264,8 +264,8 @@ final class Whirlpool
     final void finalizeDigest(byte[] dest, int off) {
 	anInt1470++;
 	aByteArray1475[anInt1468]
-	    = (byte) Class273.method2057(aByteArray1475[anInt1468],
-					 128 >>> Class139.method1166(anInt1463,
+	    = (byte) Class273.bitOr(aByteArray1475[anInt1468],
+					 128 >>> Class139.bitAnd(anInt1463,
 								     7));
 	anInt1468++;
 	if ((anInt1468 ^ 0xffffffff) < -33) {
@@ -276,7 +276,7 @@ final class Whirlpool
 	}
 	while ((anInt1468 ^ 0xffffffff) > -33)
 	    aByteArray1475[anInt1468++] = (byte) 0;
-	Class214.byteArrayCopy(aByteArray1465, 0, aByteArray1475, 32, 32);
+	ArrayUtils.arrayCopy(aByteArray1465, 0, aByteArray1475, 32, 32);
 	method827(0);
 	int i_38_ = 0;
 	int destOff = off;

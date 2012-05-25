@@ -104,7 +104,7 @@ final class Class80
     }
     
     final int[] method809(int i, int i_4_) {
-	Class214.method1573(anIntArray1409, 0, i);
+	ArrayUtils.populateArray(anIntArray1409, 0, i);
 	if (i_4_ < 10)
 	    return anIntArray1409;
 	double d = (double) i / ((double) i_4_ + 0.0);

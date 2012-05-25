@@ -166,11 +166,9 @@ class Class59_Sub1 extends Class59
 	nativeLibSignlink = null;
     }
     
-    static final int getCalculatedChecksum(int i, int i_42_, byte[] is) {
-	if (i != 5126)
-	    method553(52);
+    static final int getChecksum(int i, int i_42_, byte[] is) {
 	anInt5284++;
-	return Class171.getCrcChecksum(i_42_, true, is, 0);
+	return Class171.getChecksum(i_42_, true, is, 0);
     }
     
     static final void method555(boolean bool, int i) {

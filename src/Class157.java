@@ -14,57 +14,57 @@ final class Class157
 	    aClass101_2123 = null;
 	class348_sub49_sub2.putInt(Class348_Sub29
 						       .indexLoader0
-						       .getTableChecksum());
+						       .getChecksum());
 	anInt2121++;
-	class348_sub49_sub2.putInt(Class186.indexLoader1.getTableChecksum());
-	class348_sub49_sub2.putInt(Class95.indexLoader2.getTableChecksum());
+	class348_sub49_sub2.putInt(Class186.indexLoader1.getChecksum());
+	class348_sub49_sub2.putInt(Class95.indexLoader2.getChecksum());
 	class348_sub49_sub2.putInt(Class348_Sub35
 						       .indexLoader3
-						       .getTableChecksum());
-	class348_sub49_sub2.putInt(Class129.indexLoader4.getTableChecksum());
+						       .getChecksum());
+	class348_sub49_sub2.putInt(Class129.indexLoader4.getChecksum());
 	class348_sub49_sub2.putInt(Class367_Sub10
 						      .indexLoader5
-						      .getTableChecksum());
+						      .getChecksum());
 	class348_sub49_sub2.putInt(Class59_Sub2_Sub1.indexLoader6
-					   .getTableChecksum());
-	class348_sub49_sub2.putInt(aa_Sub3.indexLoader7.getTableChecksum());
-	class348_sub49_sub2.putInt(Class21.indexLoader8.getTableChecksum());
+					   .getChecksum());
+	class348_sub49_sub2.putInt(aa_Sub3.indexLoader7.getChecksum());
+	class348_sub49_sub2.putInt(Class21.indexLoader8.getChecksum());
 	class348_sub49_sub2.putInt(Class369_Sub2
 						      .indexLoader9
-						      .getTableChecksum());
-	class348_sub49_sub2.putInt(Class16.aClass45_233.getTableChecksum());
+						      .getChecksum());
+	class348_sub49_sub2.putInt(Class16.aClass45_233.getChecksum());
 	class348_sub49_sub2.putInt(Class348_Sub23_Sub2.indexLoader10
-					   .getTableChecksum());
-	class348_sub49_sub2.putInt(Class113.indexLoader12.getTableChecksum());
-	class348_sub49_sub2.putInt(Class104.indexLoader13.getTableChecksum());
+					   .getChecksum());
+	class348_sub49_sub2.putInt(Class113.indexLoader12.getChecksum());
+	class348_sub49_sub2.putInt(Class104.indexLoader13.getChecksum());
 	class348_sub49_sub2
-	    .putInt(Class239_Sub4.indexLoader14.getTableChecksum());
-	class348_sub49_sub2.putInt(Class123.indexLoader15.getTableChecksum());
-	class348_sub49_sub2.putInt(Class94.indexLoader16.getTableChecksum());
-	class348_sub49_sub2.putInt(Class247.indexLoader17.getTableChecksum());
-	class348_sub49_sub2.putInt(Class216.indexLoader18.getTableChecksum());
-	class348_sub49_sub2.putInt(Class174.indexLoader19.getTableChecksum());
-	class348_sub49_sub2.putInt(r_Sub2.indexLoader20.getTableChecksum());
-	class348_sub49_sub2.putInt(BufferedFile.indexLoader21.getTableChecksum());
+	    .putInt(Class239_Sub4.indexLoader14.getChecksum());
+	class348_sub49_sub2.putInt(Class123.indexLoader15.getChecksum());
+	class348_sub49_sub2.putInt(Class94.indexLoader16.getChecksum());
+	class348_sub49_sub2.putInt(Class247.indexLoader17.getChecksum());
+	class348_sub49_sub2.putInt(Class216.indexLoader18.getChecksum());
+	class348_sub49_sub2.putInt(Class174.indexLoader19.getChecksum());
+	class348_sub49_sub2.putInt(r_Sub2.indexLoader20.getChecksum());
+	class348_sub49_sub2.putInt(BufferedFile.indexLoader21.getChecksum());
 	class348_sub49_sub2.putInt(Class348_Sub16_Sub3.indexLoader22
-					   .getTableChecksum());
+					   .getChecksum());
 	class348_sub49_sub2.putInt(Class348_Sub32
 						       .indexLoader23
-						       .getTableChecksum());
-	class348_sub49_sub2.putInt(Class130.indexLoader24.getTableChecksum());
-	class348_sub49_sub2.putInt(StringVarScriptSettingLoader.indexLoader25.getTableChecksum());
+						       .getChecksum());
+	class348_sub49_sub2.putInt(Class130.indexLoader24.getChecksum());
+	class348_sub49_sub2.putInt(StringVarScriptSettingLoader.indexLoader25.getChecksum());
 	class348_sub49_sub2.putInt(KeyboardEventNode
 						       .indexLoader26
-						       .getTableChecksum());
-	class348_sub49_sub2.putInt(Class239.indexLoader27.getTableChecksum());
+						       .getChecksum());
+	class348_sub49_sub2.putInt(Class239.indexLoader27.getChecksum());
 	class348_sub49_sub2
-	    .putInt(Class367_Sub8.indexLoader28.getTableChecksum());
-	class348_sub49_sub2.putInt(Deque.indexLoader29.getTableChecksum());
-	class348_sub49_sub2.putInt(Class126.indexLoader30.getTableChecksum());
-	class348_sub49_sub2.putInt(EntryElementLoader.indexLoader31.getTableChecksum());
+	    .putInt(Class367_Sub8.indexLoader28.getChecksum());
+	class348_sub49_sub2.putInt(Deque.indexLoader29.getChecksum());
+	class348_sub49_sub2.putInt(Class126.indexLoader30.getChecksum());
+	class348_sub49_sub2.putInt(EntryElementLoader.indexLoader31.getChecksum());
 	class348_sub49_sub2.putInt(Class172.method1327(31));
 	class348_sub49_sub2.putInt(Class101_Sub1.method912(0));
-	class348_sub49_sub2.putInt(VarbitDefinition.indexLoader36.getTableChecksum());
+	class348_sub49_sub2.putInt(VarbitDefinition.indexLoader36.getChecksum());
     }
     
     static final String method1245(String string, boolean bool) {

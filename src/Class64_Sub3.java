@@ -1304,8 +1304,8 @@ final class Class64_Sub3 extends AnimatableToolkit
 	    if ((i_196_ ^ 0xffffffff) != 0)
 		i_202_ += (i_196_ + -i_202_) * i_197_ >> -1261204825;
 	    aShortArray5580[i_198_]
-		= (short) (Class273.method2057
-			   (Class273.method2057(i_201_ << 1165960167,
+		= (short) (Class273.bitOr
+			   (Class273.bitOr(i_201_ << 1165960167,
 						i_200_ << -3437622),
 			    i_202_));
 	}
@@ -4076,8 +4076,8 @@ final class Class64_Sub3 extends AnimatableToolkit
 				else if ((i_465_ ^ 0xffffffff) < -128)
 				    i_465_ = 127;
 				aShortArray5580[i_461_]
-				    = (short) (Class273.method2057
-					       ((Class273.method2057
+				    = (short) (Class273.bitOr
+					       ((Class273.bitOr
 						 (i_464_ << 569683559,
 						  i_463_ << -1259831766)),
 						i_465_));
@@ -4317,9 +4317,9 @@ final class Class64_Sub3 extends AnimatableToolkit
 		} else
 		    i_503_ = 0;
 		aShortArray5580[i_499_]
-		    = (short) (Class273.method2057
+		    = (short) (Class273.bitOr
 			       (i_503_,
-				Class273.method2057(i_502_ << -1099514361,
+				Class273.bitOr(i_502_ << -1099514361,
 						    i_501_ << -1246866806)));
 	    }
 	    if (aClass123_5610 != null)
@@ -5142,9 +5142,9 @@ final class Class64_Sub3 extends AnimatableToolkit
 				    else if (i_668_ > 127)
 					i_668_ = 127;
 				    aShortArray5580[i_664_]
-					= (short) (Class273.method2057
+					= (short) (Class273.bitOr
 						   (i_668_,
-						    (Class273.method2057
+						    (Class273.bitOr
 						     (i_666_ << 1117163370,
 						      i_667_ << 1083573575))));
 				    if (aClass123_5610 != null)

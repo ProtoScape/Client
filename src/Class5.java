@@ -27,10 +27,9 @@ abstract class Class5 implements Interface1
 	anInt4641++;
 	boolean bool = true;
 	if (!((Class5) this).aClass45_4632.getArchiveLoaded
-	     (false, ((Class369) ((Class5) this).aClass369_4635).anInt4965))
+	     (((Class369) ((Class5) this).aClass369_4635).anInt4965))
 	    bool = false;
-	if (!indexLoader.getArchiveLoaded(false,
-				     ((Class369) (((Class5) this)
+	if (!indexLoader.getArchiveLoaded(((Class369) (((Class5) this)
 						  .aClass369_4635)).anInt4965))
 	    bool = false;
 	return bool;

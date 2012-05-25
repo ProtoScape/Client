@@ -97,10 +97,10 @@ final class Class348_Sub8 extends Node
 		    || (((Class318_Sub1_Sub3_Sub3)
 			 class318_sub1_sub3_sub3_sub1).anInt10326
 			^ 0xffffffff) < -1)) {
-		int i_3_ = (-((-za_Sub2.anInt9780
+		int i_3_ = (-((-za_Sub2.baseRegionX
 			       + ((Npc)
 				  class318_sub1_sub3_sub3_sub1).anInt10499
-			       - za_Sub2.anInt9780)
+			       - za_Sub2.baseRegionX)
 			      * 256)
 			    + (((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
 			       .anInt6377));
@@ -108,7 +108,7 @@ final class Class348_Sub8 extends Node
 		    = (((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6388
 		       - 256 * (((Npc)
 				 class318_sub1_sub3_sub3_sub1).anInt10512
-				+ (-Class90.anInt1517 + -Class90.anInt1517)));
+				+ (-Class90.baseRegionY + -Class90.baseRegionY)));
 		if (i_3_ != 0 || (i_4_ ^ 0xffffffff) != -1)
 		    class318_sub1_sub3_sub3_sub1.method2440
 			((byte) 49, 0x3fff & (int) (Math.atan2((double) i_3_,

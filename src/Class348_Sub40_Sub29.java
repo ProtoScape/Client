@@ -37,11 +37,11 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40
 		    int i_6_
 			= anInt9374 * i_5_ / Class348_Sub40_Sub6.anInt9139;
 		    int i_7_ = anIntArray9375[i_6_ + i_1_];
-		    is_4_[i_5_] = Class139.method1166(i_7_, 255) << 53282276;
+		    is_4_[i_5_] = Class139.bitAnd(i_7_, 255) << 53282276;
 		    is_3_[i_5_]
-			= Class139.method1166(65280, i_7_) >> 1400355748;
+			= Class139.bitAnd(65280, i_7_) >> 1400355748;
 		    is_2_[i_5_]
-			= Class139.method1166(i_7_ >> -1716259188, 4080);
+			= Class139.bitAnd(i_7_ >> -1716259188, 4080);
 		}
 	    } else {
 		for (int i_8_ = 0;
@@ -50,11 +50,11 @@ final class Class348_Sub40_Sub29 extends Class348_Sub40
 		     i_8_++) {
 		    int i_9_ = anIntArray9375[i_1_++];
 		    is_4_[i_8_]
-			= Class139.method1166(255, i_9_) << -2131950236;
+			= Class139.bitAnd(255, i_9_) << -2131950236;
 		    is_3_[i_8_]
-			= Class139.method1166(i_9_ >> -613090268, 4080);
+			= Class139.bitAnd(i_9_ >> -613090268, 4080);
 		    is_2_[i_8_]
-			= Class139.method1166(16711680, i_9_) >> 1624740716;
+			= Class139.bitAnd(16711680, i_9_) >> 1624740716;
 		}
 	    }
 	}

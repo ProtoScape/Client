@@ -24,7 +24,7 @@ final class Class326
 	    anInt4086 = 117;
 	byte[] is;
 	synchronized (aClass45_4085) {
-	    is = aClass45_4085.getArchiveChild(11, i);
+	    is = aClass45_4085.getChildArchive(11, i);
 	}
 	class254 = new Class254();
 	if (is != null)
@@ -67,7 +67,7 @@ final class Class326
 		aClass45_4085 = class45;
 		if (aClass45_4085 == null)
 		    break;
-		aClass45_4085.method407(11);
+		aClass45_4085.getAmountChildEntries(11);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("dc.<init>("

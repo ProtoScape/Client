@@ -163,8 +163,8 @@ final class Class348_Sub12 extends Node
 		((Class348_Sub27) class348_sub27).anInt6904 = i_7_;
 		((Class348_Sub27) class348_sub27).anInt6896 = i_4_;
 		((Class348_Sub27) class348_sub27).anInt6905 = i_11_;
-		if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.anInt7319 > i_11_
-		    && (i_4_ ^ 0xffffffff) > (Class348_Sub40_Sub3.anInt9109
+		if (i_11_ >= 0 && i_4_ >= 0 && Class367_Sub4.mapSizeX > i_11_
+		    && (i_4_ ^ 0xffffffff) > (Class348_Sub40_Sub3.mapSizeY
 					      ^ 0xffffffff))
 		    Class184.method1387(-69, class348_sub27);
 		Class348_Sub42_Sub20.aClass262_9711.addToFront(class348_sub27,

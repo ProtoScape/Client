@@ -160,7 +160,7 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40
 						    .aClass348_Sub51_3959))
 						  .aClass239_Sub12_7243),
 						 0);
-	Class237.method1686(i ^ 0x6e);
+	MapLoader.method1686(i ^ 0x6e);
 	BitmapTable.aClass348_Sub51_3959.method3429((byte) 74,
 						 (((Class348_Sub51)
 						   (BitmapTable
@@ -197,9 +197,9 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40
 		if (i_9_ > 256)
 		    i_9_ = 256;
 		i_9_ = anIntArray9199[i_9_];
-		is_5_[i_8_] = Class139.method1166(i_9_, 16711680) >> 684122924;
-		is_6_[i_8_] = Class139.method1166(65280, i_9_) >> 104937220;
-		is_7_[i_8_] = Class139.method1166(4080, i_9_ << -1353587132);
+		is_5_[i_8_] = Class139.bitAnd(i_9_, 16711680) >> 684122924;
+		is_6_[i_8_] = Class139.bitAnd(65280, i_9_) >> 104937220;
+		is_7_[i_8_] = Class139.bitAnd(4080, i_9_ << -1353587132);
 	    }
 	}
 	if (i_3_ != -1564599039)
@@ -511,8 +511,8 @@ final class Class348_Sub40_Sub12 extends Class348_Sub40
 		} else
 		    i_19_ = 0;
 		anIntArray9199[i_13_]
-		    = (Class273.method2057
-		       (i_18_, Class273.method2057(i_17_ << -1135762768,
+		    = (Class273.bitOr
+		       (i_18_, Class273.bitOr(i_17_ << -1135762768,
 						   i_19_ << -2037449336)));
 	    }
 	}

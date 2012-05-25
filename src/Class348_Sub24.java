@@ -362,7 +362,7 @@ final class Class348_Sub24 extends Node
 			Class186.method1397(0);
 			for (int id = Class318_Sub1_Sub3_Sub3.varbitHandler.handleQueuedConfig(true); (id ^ 0xffffffff) != 0; id = Class318_Sub1_Sub3_Sub3.varbitHandler.handleQueuedConfig(false)) {
 			    Class239_Sub11.method1767(true, id);
-			    Class327.anIntArray4096[Class139.method1166(31, GametipDefinition.anInt3695++)] = id;
+			    Class327.anIntArray4096[Class139.bitAnd(31, GametipDefinition.anInt3695++)] = id;
 			}
 			for (WidgetVariable variable
 				 = Class348_Sub40_Sub30.method3127(2681);
@@ -377,7 +377,7 @@ final class Class348_Sub24 extends Node
 				Class184.aBoolean2469
 				    |= Class286_Sub6.isCsVariableActive[id];
 				Class348_Sub26.anIntArray6890
-				    [Class139.method1166(31, Class5_Sub1
+				    [Class139.bitAnd(31, Class5_Sub1
 								 .anInt8352++)]
 				    = id;
 			    } else if (type == 2) {
@@ -385,7 +385,7 @@ final class Class348_Sub24 extends Node
 				    = ((WidgetVariable)
 				       variable).aString9654;
 				Class239_Sub21.anIntArray6061
-				    [Class139.method1166(Class348_Sub40_Sub30
+				    [Class139.bitAnd(Class348_Sub40_Sub30
 							     .anInt9385++,
 							 31)]
 				    = id;
@@ -729,7 +729,7 @@ final class Class348_Sub24 extends Node
 			    Class362.anInt4458 = -1;
 			Class216.method1583((byte) -73);
 			LoadingHandler.anInt3918++;
-			if (Class237.aBoolean3103) {
+			if (MapLoader.aBoolean3103) {
 			    Class98.anInt1568++;
 			    BufferedPacket class348_sub47
 				= Class286_Sub3.createBufferedPacket((OpenGlToolkit
@@ -744,7 +744,7 @@ final class Class348_Sub24 extends Node
 				  | NpcDefinition.anInt1404));
 			    Class348_Sub42_Sub14.queuePacket(30,
 							    class348_sub47);
-			    Class237.aBoolean3103 = false;
+			    MapLoader.aBoolean3103 = false;
 			}
 			for (;;) {
 			    InterfaceScript class348_sub36
@@ -855,11 +855,11 @@ final class Class348_Sub24 extends Node
 			    Class361.method3502
 				((((Class318_Sub1_Sub3_Sub3)
 				   Class132.localPlayer)
-				  .anIntArray10317[0]) + Class90.anInt1517,
+				  .anIntArray10317[0]) + Class90.baseRegionY,
 				 i ^ 0x2caa, i_30_,
 				 (((Class318_Sub1_Sub3_Sub3)
 				   Class132.localPlayer)
-				  .anIntArray10320[0]) + za_Sub2.anInt9780);
+				  .anIntArray10320[0]) + za_Sub2.baseRegionX);
 			}
 			Class261.method1987(-120);
 			int i_31_ = 0;

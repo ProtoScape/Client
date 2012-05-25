@@ -11,7 +11,7 @@ final class Class362
     static Class183 aClass183_4460;
     
     static final void method3511(boolean bool, AbstractFontRasterizer class324,
-				 BitmapFont class143, String string, int i,
+				 BitmapFont font, String string, int i,
 				 AbstractToolkit var_ha) {
 	try {
 	    if (i != 2)
@@ -21,15 +21,15 @@ final class Class362
 		= !Class295.aBoolean3763 || Class359.method3490(true);
 	    if (bool_0_) {
 		if (Class295.aBoolean3763 && bool_0_) {
-		    class143 = Class281.aClass143_3649;
-		    class324 = var_ha.createFontRasterizer(class143,
+		    font = Class281.aClass143_3649;
+		    class324 = var_ha.createFontRasterizer(font,
 						 (Class5_Sub1_Sub1
 						  .aClass207Array9929),
 						 true);
-		    int i_1_ = class143.method1187(string, false, 250, null);
+		    int i_1_ = font.method1187(string, false, 250, null);
 		    int i_2_
-			= class143.method1185(null, i ^ 0x2,
-					      ((BitmapFont) class143).anInt1992,
+			= font.method1185(null, i ^ 0x2,
+					      ((BitmapFont) font).anInt1992,
 					      250, string);
 		    int i_3_
 			= ((ImageSprite) Class348_Sub7.aClass207_6643).indexWidth;
@@ -123,8 +123,8 @@ final class Class362
 					false, 1, string);
 		    Class13.method226(i_5_, i_1_, i_6_, i ^ 0x2, i_2_);
 		} else {
-		    int i_7_ = class143.method1187(string, false, 250, null);
-		    int i_8_ = class143.method1190(null, 1, string, 250) * 13;
+		    int i_7_ = font.method1187(string, false, 250, null);
+		    int i_8_ = font.method1190(null, 1, string, 250) * 13;
 		    int i_9_ = 4;
 		    int i_10_ = 6 - -i_9_;
 		    int i_11_ = i_9_ + 6;
@@ -156,7 +156,7 @@ final class Class362
 		      (runtimeexception,
 		       ("fg.A(" + bool + ','
 			+ (class324 != null ? "{...}" : "null") + ','
-			+ (class143 != null ? "{...}" : "null") + ','
+			+ (font != null ? "{...}" : "null") + ','
 			+ (string != null ? "{...}" : "null") + ',' + i + ','
 			+ (var_ha != null ? "{...}" : "null") + ')'));
 	}

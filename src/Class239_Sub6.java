@@ -4,7 +4,7 @@
 
 final class Class239_Sub6 extends Class239
 {
-    static int[][] anIntArrayArray5894;
+    static int[][] lCipherKeys;
     static int anInt5895;
     static int anInt5896;
     static int anInt5897;
@@ -22,7 +22,7 @@ final class Class239_Sub6 extends Class239
 	return 0;
     }
     
-    final int method1743(int i) {
+    final int getMapSizeId(int i) {
 	anInt5896++;
 	if (i != -32350)
 	    return -65;
@@ -31,7 +31,7 @@ final class Class239_Sub6 extends Class239
     
     final boolean method1744(int i) {
 	if (i <= 85)
-	    method1743(-113);
+	    getMapSizeId(-113);
 	anInt5903++;
 	int i_0_ = ((Class239) this).aClass348_Sub51_3136.method3428
 		       ((byte) -93).method1458(-23688);
@@ -92,7 +92,7 @@ final class Class239_Sub6 extends Class239
 	if (i != -15628)
 	    aClass355_5900 = null;
 	aClass355_5900 = null;
-	anIntArrayArray5894 = null;
+	lCipherKeys = null;
     }
     
     Class239_Sub6(Class348_Sub51 class348_sub51) {

@@ -22,8 +22,8 @@ final class Class218
 				 int i_4_, int i_5_, int i_6_, int i_7_) {
 	anInt2855++;
 	if ((i ^ 0xffffffff) <= -2 && (i_5_ ^ 0xffffffff) <= -2
-	    && (i ^ 0xffffffff) >= (-2 + Class367_Sub4.anInt7319 ^ 0xffffffff)
-	    && i_5_ <= -2 + Class348_Sub40_Sub3.anInt9109) {
+	    && (i ^ 0xffffffff) >= (-2 + Class367_Sub4.mapSizeX ^ 0xffffffff)
+	    && i_5_ <= -2 + Class348_Sub40_Sub3.mapSizeY) {
 	    int i_8_ = i_7_;
 	    if ((i_8_ ^ 0xffffffff) > -4 && NpcDefinition.method802(i_5_, i, true))
 		i_8_++;
@@ -33,7 +33,7 @@ final class Class218
 				       i_8_))
 		|| Message.aClass357ArrayArrayArray2029 == null)
 		return;
-	    Class338.aClass237_Sub1_4197.method1694((AbstractMouseEvent
+	    Class338.mMapLoader.method1694((AbstractMouseEvent
 						     .aClass361Array7108
 						     [i_7_]),
 						    i_1_, i_7_,
@@ -47,7 +47,7 @@ final class Class218
 		     (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		      .aClass239_Sub4_7220),
 		     1);
-		Class338.aClass237_Sub1_4197.method1689(i, i_7_, i_3_,
+		Class338.mMapLoader.method1689(i, i_7_, i_3_,
 							Class348_Sub8.currentToolkit,
 							i_8_, 50, i_4_, i_5_,
 							i_2_, i_6_,
@@ -73,15 +73,15 @@ final class Class218
 		     .anIntArray10320[0]);
 	int i_14_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 		     .anIntArray10317[0]);
-	if (i_13_ >= 0 && Class367_Sub4.anInt7319 > i_13_
+	if (i_13_ >= 0 && Class367_Sub4.mapSizeX > i_13_
 	    && (i_14_ ^ 0xffffffff) <= -1
-	    && (Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff) < (i_14_
+	    && (Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff) < (i_14_
 							       ^ 0xffffffff)
 	    && ((i_12_ ^ 0xffffffff) <= -1
-		&& (Class367_Sub4.anInt7319 ^ 0xffffffff) < (i_12_
+		&& (Class367_Sub4.mapSizeX ^ 0xffffffff) < (i_12_
 							     ^ 0xffffffff)
 		&& i_10_ >= 0
-		&& (i_10_ ^ 0xffffffff) > (Class348_Sub40_Sub3.anInt9109
+		&& (i_10_ ^ 0xffffffff) > (Class348_Sub40_Sub3.mapSizeY
 					   ^ 0xffffffff))) {
 	    int i_15_
 		= (Class59_Sub2_Sub2.method574
@@ -116,7 +116,7 @@ final class Class218
 	    ((Class218) this).aClass141_2851 = null;
 	anInt2858++;
 	return ((Class141) ((Class218) this).aClass141_2851).aClass45_1965
-		   .getArchiveLoaded(false, ((Class218) this).anInt2853);
+		   .getArchiveLoaded(((Class218) this).anInt2853);
     }
     
     public static void method1594(int i) {
@@ -156,7 +156,7 @@ final class Class218
 	if (class105 != null)
 	    return class105;
 	if (!((Class141) ((Class218) this).aClass141_2851).aClass45_1965
-		 .getArchiveLoaded(false, ((Class218) this).anInt2853))
+		 .getArchiveLoaded(((Class218) this).anInt2853))
 	    return null;
 	ImageSprite class207
 	    = ImageSprite.getSprite(((Class141) (((Class218) this)

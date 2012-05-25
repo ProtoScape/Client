@@ -46,7 +46,7 @@ final class ObjectLoader
 	    return class51;
 	byte[] is;
 	synchronized (aClass45_3343) {
-	    is = aClass45_3343.getArchiveChild(Class239_Sub29.method1850(i_0_, 111),
+	    is = aClass45_3343.getChildArchive(Class239_Sub29.method1850(i_0_, 111),
 					 Class5_Sub1.method185(i_0_,
 							       (byte) -90));
 	}
@@ -424,7 +424,7 @@ final class ObjectLoader
 		if (aClass45_3343 == null)
 		    break;
 		int i_30_ = aClass45_3343.getAmountChildren() + -1;
-		aClass45_3343.method407(i_30_);
+		aClass45_3343.getAmountChildEntries(i_30_);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("uha.<init>("

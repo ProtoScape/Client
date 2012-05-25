@@ -126,7 +126,7 @@ final class Class42
 	if (class105 != null)
 	    return class105;
 	if (!((Class153) ((Class42) this).aClass153_593).aClass45_2087
-		 .getArchiveLoaded(false, i_3_))
+		 .getArchiveLoaded(i_3_))
 	    return null;
 	ImageSprite class207
 	    = ImageSprite.getSprite((((Class153) ((Class42) this).aClass153_593)
@@ -153,7 +153,7 @@ final class Class42
 	if (class105 != null)
 	    return class105;
 	((Class153) ((Class42) this).aClass153_593).aClass45_2087
-	    .getArchiveLoaded(bool, anInt598);
+	    .getArchiveLoaded(anInt598);
 	ImageSprite class207
 	    = ImageSprite.getSprite((((Class153) ((Class42) this).aClass153_593)
 				   .aClass45_2087),

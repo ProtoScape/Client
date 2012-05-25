@@ -161,11 +161,11 @@ final class Class348_Sub40_Sub39 extends Class348_Sub40
 		     i_21_++) {
 		    int i_22_ = is_16_[i_21_];
 		    is_20_[i_21_]
-			= Class139.method1166(i_22_, 255) << -1027400764;
+			= Class139.bitAnd(i_22_, 255) << -1027400764;
 		    is_19_[i_21_]
-			= Class139.method1166(i_22_ >> 1794601060, 4080);
+			= Class139.bitAnd(i_22_ >> 1794601060, 4080);
 		    is_18_[i_21_]
-			= Class139.method1166(4080, i_22_ >> 2055996268);
+			= Class139.bitAnd(4080, i_22_ >> 2055996268);
 		}
 	    }
 	}

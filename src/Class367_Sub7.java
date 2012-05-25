@@ -107,10 +107,10 @@ final class Class367_Sub7 extends Class367
 	} else {
 	    anIDirect3DVertexShader7345
 		= (((DirectxToolkit) aClass378_7346).anIDirect3DDevice9810.b
-		   (class45.getArchiveChild("dx", "environment_mapped_water_v")));
+		   (class45.getChildArchive("dx", "environment_mapped_water_v")));
 	    anIDirect3DPixelShader7343
 		= (((DirectxToolkit) aClass378_7346).anIDirect3DDevice9810.a
-		   (class45.getArchiveChild("dx", "environment_mapped_water_f")));
+		   (class45.getChildArchive("dx", "environment_mapped_water_f")));
 	    aBoolean7347 = (anIDirect3DVertexShader7345 != null
 			    && null != anIDirect3DPixelShader7343
 			    && aClass269_7348.method2041((byte) 49));

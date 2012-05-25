@@ -30,13 +30,13 @@ final class OutputStream_Sub1 extends OutputStream
 		  ^ 0xffffffff) > -1
 		 || (((Class318_Sub1)
 		      Class132.localPlayer).anInt6377
-		     >= Class367_Sub4.anInt7319 * 512)
+		     >= Class367_Sub4.mapSizeX * 512)
 		 || ((Class318_Sub1)
 		     Class132.localPlayer).anInt6388 < 0
 		 || ((((Class318_Sub1)
 		       Class132.localPlayer).anInt6388
 		      ^ 0xffffffff)
-		     <= (512 * Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)))
+		     <= (512 * Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)))
 	    Class348_Sub8.currentToolkit.method3675(i_0_, (byte) -125, i_1_, i_3_,
 					     i_2_, -16777216);
 	else {

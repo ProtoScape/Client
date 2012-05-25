@@ -7,7 +7,7 @@ final class Class347
     static boolean aBoolean4278 = true;
     int anInt4279;
     static int anInt4280;
-    static byte[][] aByteArrayArray4281;
+    static byte[][] mArchiveSrcs;
     int anInt4282;
     int anInt4283;
     static boolean aBoolean4284 = false;
@@ -17,7 +17,7 @@ final class Class347
     }
     
     public static void method2707(boolean bool) {
-	aByteArrayArray4281 = null;
+	mArchiveSrcs = null;
 	if (bool != false)
 	    method2708(57);
     }

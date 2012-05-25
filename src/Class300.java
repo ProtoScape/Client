@@ -71,7 +71,7 @@ final class Class300
     
     static final Model createModel(int childId, IndexLoader indexLoader, int archiveId) {
 	anInt3815++;
-	byte[] is = indexLoader.getArchiveChild(archiveId, childId);
+	byte[] is = indexLoader.getChildArchive(archiveId, childId);
 	if (is == null)
 	    return null;
 	return new Model(is);

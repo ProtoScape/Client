@@ -15,7 +15,7 @@ abstract class AbtractArchiveLoader
 	/* empty */
     }
     
-    abstract int getLoadedPercent(int archive);
+    abstract int getLoadedPerc(int archive);
     
     static final void method2336(ObjectDefinition class51, int i, int i_1_, int i_2_,
 				 int i_3_) {

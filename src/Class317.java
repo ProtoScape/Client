@@ -88,7 +88,7 @@ final class Class317
     }
     
     static final Class317 method2372(IndexLoader class45, int i, int i_11_) {
-	byte[] is = class45.getArchiveChild(i, i_11_);
+	byte[] is = class45.getChildArchive(i, i_11_);
 	if (is == null)
 	    return null;
 	return new Class317(new ByteBuffer(is));

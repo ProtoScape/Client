@@ -26,9 +26,9 @@ final class FileIndexTracker implements ElementTracker
     public final int getPercentComplete(int i) {
 	anInt4801++;
 	int i_0_ = 16 / ((i - -43) / 62);
-	if (indexLoader.isCompletelyLoaded(125))
+	if (indexLoader.loadAll())
 	    return 100;
-	return indexLoader.getPercentLoaded((byte) -31);
+	return indexLoader.getChildLoadedPerc();
     }
     
     public static void method2202(int i) {
@@ -69,9 +69,9 @@ final class FileIndexTracker implements ElementTracker
 		   + ((((Class318_Sub1_Sub3_Sub3)
 			Class132.localPlayer)
 		       .anIntArray10320[0])
-		      + za_Sub2.anInt9780)
+		      + za_Sub2.baseRegionX)
 		   + ","
-		   + (Class90.anInt1517
+		   + (Class90.baseRegionY
 		      - -(((Class318_Sub1_Sub3_Sub3)
 			   Class132.localPlayer)
 			  .anIntArray10317[0]))

@@ -40,10 +40,10 @@ final class Class363
 		     <= -1)
 		    && (((Class348_Sub27) class348_sub27).anInt6896
 			^ 0xffffffff) <= -1
-		    && ((Class367_Sub4.anInt7319 ^ 0xffffffff)
+		    && ((Class367_Sub4.mapSizeX ^ 0xffffffff)
 			< (((Class348_Sub27) class348_sub27).anInt6905
 			   ^ 0xffffffff))
-		    && ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+		    && ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 			< (((Class348_Sub27) class348_sub27).anInt6896
 			   ^ 0xffffffff)))
 		    Class184.method1387(i + 26, class348_sub27);

@@ -51,13 +51,13 @@ final class Class348_Sub42_Sub17 extends SubNode {
 			return true;
 		if (aByteArrayArray9671 == null) {
 			synchronized (Class138.skeleIndexLoader) {
-				if (!Class138.skeleIndexLoader.method408((byte) -116, anInt9669))
+				if (!Class138.skeleIndexLoader.method408(anInt9669))
 					return false;
-				int[] is = Class138.skeleIndexLoader.method396(anInt9669, 0);
+				int[] is = Class138.skeleIndexLoader.getActiveChildren(anInt9669);
 				aByteArrayArray9671 = new byte[is.length][];
 				for (int i_1_ = 0; (is.length ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++)
 					aByteArrayArray9671[i_1_] = Class138.skeleIndexLoader
-							.getArchiveChild(anInt9669, is[i_1_]);
+							.getChildArchive(anInt9669, is[i_1_]);
 			}
 		}
 		boolean bool = true;
@@ -67,7 +67,7 @@ final class Class348_Sub42_Sub17 extends SubNode {
 			((ByteBuffer) class348_sub49).position = 1;
 			int i_3_ = class348_sub49.getShort();
 			synchronized (Class135_Sub2.skinIndexLoader) {
-				bool &= Class135_Sub2.skinIndexLoader.getArchiveLoaded(false, i_3_);
+				bool &= Class135_Sub2.skinIndexLoader.getArchiveLoaded(i_3_);
 			}
 		}
 		if (!bool)
@@ -75,9 +75,9 @@ final class Class348_Sub42_Sub17 extends SubNode {
 		Deque class262 = new Deque();
 		int[] is;
 		synchronized (Class138.skeleIndexLoader) {
-			int i_4_ = Class138.skeleIndexLoader.method407(anInt9669);
+			int i_4_ = Class138.skeleIndexLoader.getAmountChildEntries(anInt9669);
 			((Class348_Sub42_Sub17) this).aClass4Array9673 = new Class4[i_4_];
-			is = Class138.skeleIndexLoader.method396(anInt9669, 0);
+			is = Class138.skeleIndexLoader.getActiveChildren(anInt9669);
 			if (i > -115)
 				method3266(null, 123, null);
 		}

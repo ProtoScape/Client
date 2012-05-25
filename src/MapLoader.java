@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-class Class237
+class MapLoader
 {
     static int anInt3102;
     static boolean aBoolean3103 = false;
@@ -15,25 +15,25 @@ class Class237
     static int anInt3110;
     static int anInt3111;
     static int anInt3112;
-    private byte[][][] aByteArrayArrayArray3113;
-    int anInt3114;
+    private byte[][][] underlayIds;
+    int maximumY;
     static int anInt3115;
     static int anInt3116;
-    int anInt3117;
+    int maximumX;
     static int anInt3118;
     private Class268 aClass268_3119;
     private Class183 aClass183_3120;
     static int anInt3121;
-    int[][][] anIntArrayArrayArray3122;
-    private byte[][][] aByteArrayArrayArray3123;
+    int[][][] heightmap;
+    private byte[][][] overlayIds;
     private int[] anIntArray3124;
     static int anInt3125;
-    private byte[][][] aByteArrayArrayArray3126;
+    private byte[][][] overlayShading;
     static int anInt3127;
     private int[] anIntArray3128
 	= { 0, 0, 0, 256, 512, 512, 512, 256, 256, 384, 128, 128, 256 };
-    private byte[][][] aByteArrayArrayArray3129;
-    int anInt3130;
+    private byte[][][] overlayRotation;
+    int maximumZ;
     static int anInt3131;
     
     private final void method1675
@@ -217,7 +217,7 @@ class Class237
 						= 32;
 					else
 					    Class180.anIntArray2370[i_33_]
-						= (Class273.method2057
+						= (Class273.bitOr
 						   ((Class180.anIntArray2370
 						     [i_33_]),
 						    32));
@@ -231,12 +231,12 @@ class Class237
 				if (!bools_8_[0x3 & i_4_])
 				    bools[0] = (Class50_Sub1
 						.aBooleanArrayArray5225[i_31_]
-						[Class139.method1166(i_32_ + 2,
+						[Class139.bitAnd(i_32_ + 2,
 								     3)]);
 			    } else if (!bools_8_[0x3 & i_4_])
 				bools[0]
 				    = (Class265.aBooleanArrayArray4693[i_31_]
-				       [Class139.method1166(3, i_32_ + 2)]);
+				       [Class139.bitAnd(3, i_32_ + 2)]);
 			}
 		    }
 		}
@@ -286,7 +286,7 @@ class Class237
 						= 16;
 					else
 					    Class180.anIntArray2370[i_41_]
-						= (Class273.method2057
+						= (Class273.bitOr
 						   ((Class180.anIntArray2370
 						     [i_41_]),
 						    16));
@@ -301,11 +301,11 @@ class Class237
 				    bools[2]
 					= (Class50_Sub1.aBooleanArrayArray5225
 					   [i_39_]
-					   [Class139.method1166(3, --i_40_)]);
+					   [Class139.bitAnd(3, --i_40_)]);
 			    } else if (!bools_8_[0x3 & 2 + i_4_])
 				bools[2]
 				    = (Class265.aBooleanArrayArray4693[i_39_]
-				       [Class139.method1166(3, i_40_)]);
+				       [Class139.bitAnd(3, i_40_)]);
 			}
 		    }
 		}
@@ -322,7 +322,7 @@ class Class237
 				    bools[3]
 					= (Class265.aBooleanArrayArray4693
 					   [i_47_]
-					   [Class139.method1166(3,
+					   [Class139.bitAnd(3,
 								1 + i_48_)]);
 			    } else {
 				int i_49_ = 6;
@@ -358,7 +358,7 @@ class Class237
 					    Class180.anIntArray2370[i_49_] = 8;
 					else
 					    Class180.anIntArray2370[i_49_]
-						= (Class273.method2057
+						= (Class273.bitOr
 						   ((Class180.anIntArray2370
 						     [i_49_]),
 						    8));
@@ -373,7 +373,7 @@ class Class237
 				    bools[3]
 					= (Class50_Sub1.aBooleanArrayArray5225
 					   [i_47_]
-					   [Class139.method1166(3,
+					   [Class139.bitAnd(3,
 								1 + i_48_)]);
 			    }
 			}
@@ -419,7 +419,7 @@ class Class237
 					if (((Class277) class277_54_).anInt3564
 					    == Class306.anIntArray3873[i_57_])
 					    Class180.anIntArray2370[i_57_]
-						= (Class273.method2057
+						= (Class273.bitOr
 						   ((Class180.anIntArray2370
 						     [i_57_]),
 						    4));
@@ -436,12 +436,12 @@ class Class237
 				    bools[1]
 					= (Class50_Sub1.aBooleanArrayArray5225
 					   [i_55_]
-					   [Class139.method1166(3,
+					   [Class139.bitAnd(3,
 								i_56_ + 3)]);
 			    } else if (!bools_8_[1 - -i_4_ & 0x3])
 				bools[1]
 				    = (Class265.aBooleanArrayArray4693[i_55_]
-				       [Class139.method1166(3, 3 - -i_56_)]);
+				       [Class139.bitAnd(3, 3 - -i_56_)]);
 			}
 		    }
 		}
@@ -470,7 +470,7 @@ class Class237
 			    Class180.anIntArray2370[i_63_] = 2;
 			else
 			    Class180.anIntArray2370[i_63_]
-				= Class273.method2057((Class180.anIntArray2370
+				= Class273.bitOr((Class180.anIntArray2370
 						       [i_63_]),
 						      2);
 			Class306.anIntArray3873[i_63_]
@@ -499,19 +499,19 @@ class Class237
 				  int[][] is, AbstractToolkit var_ha, int i_66_) {
 	try {
 	    anInt3102++;
-	    byte[][] is_67_ = aByteArrayArrayArray3126[i_66_];
+	    byte[][] is_67_ = overlayShading[i_66_];
 	    if (i != -26833)
-		((Class237) this).anInt3114 = -107;
-	    byte[][] is_68_ = aByteArrayArrayArray3129[i_66_];
-	    byte[][] is_69_ = aByteArrayArrayArray3113[i_66_];
-	    byte[][] is_70_ = aByteArrayArrayArray3123[i_66_];
-	    for (int i_71_ = 0; ((((Class237) this).anInt3117 ^ 0xffffffff)
+		maximumY = -107;
+	    byte[][] is_68_ = overlayRotation[i_66_];
+	    byte[][] is_69_ = underlayIds[i_66_];
+	    byte[][] is_70_ = overlayIds[i_66_];
+	    for (int i_71_ = 0; ((maximumX ^ 0xffffffff)
 				 < (i_71_ ^ 0xffffffff)); i_71_++) {
-		int i_72_ = (i_71_ >= ((Class237) this).anInt3117 - 1 ? i_71_
+		int i_72_ = (i_71_ >= maximumX - 1 ? i_71_
 			     : i_71_ + 1);
-		for (int i_73_ = 0; i_73_ < ((Class237) this).anInt3114;
+		for (int i_73_ = 0; i_73_ < maximumY;
 		     i_73_++) {
-		    int i_74_ = ((((Class237) this).anInt3114 + -1
+		    int i_74_ = ((maximumY + -1
 				  ^ 0xffffffff) < (i_73_ ^ 0xffffffff)
 				 ? 1 + i_73_ : i_73_);
 		    if ((DummyOutputstream.anInt101 ^ 0xffffffff) == 0
@@ -556,10 +556,10 @@ class Class237
 				&& (i_71_ ^ 0xffffffff) < -1
 				&& (i_73_ ^ 0xffffffff) < -1
 				&& ((i_71_ ^ 0xffffffff)
-				    > (((Class237) this).anInt3117
+				    > (maximumX
 				       ^ 0xffffffff))
 				&& ((i_73_ ^ 0xffffffff)
-				    > (((Class237) this).anInt3114
+				    > (maximumY
 				       ^ 0xffffffff))) {
 				int i_84_ = 0;
 				int i_85_ = 0;
@@ -643,10 +643,10 @@ class Class237
 				   ? Class265.aBooleanArrayArray4693[i_76_]
 				   : (Class50_Sub1.aBooleanArrayArray5225
 				      [i_76_]));
-			    method1675(i_71_, ((Class237) this).anInt3114,
+			    method1675(i_71_, maximumY,
 				       is_67_, i_73_, is_68_, -1, class277,
 				       class22, bools, i_77_, is_70_,
-				       ((Class237) this).anInt3117, i_76_,
+				       maximumX, i_76_,
 				       var_ha);
 			    boolean bool_92_
 				= (class277 != null
@@ -672,7 +672,7 @@ class Class237
 				bools[1]
 				    = (Class369_Sub3_Sub1.method3576
 				       (bools[1],
-					Class139.method1166((Class180
+					Class139.bitAnd((Class180
 							     .anIntArray2370
 							     [2]),
 							    (Class180
@@ -682,7 +682,7 @@ class Class237
 				bools[3]
 				    = (Class369_Sub3_Sub1.method3576
 				       (bools[3],
-					Class139.method1166((Class180
+					Class139.bitAnd((Class180
 							     .anIntArray2370
 							     [0]),
 							    (Class180
@@ -692,7 +692,7 @@ class Class237
 				bools[0]
 				    = (Class369_Sub3_Sub1.method3576
 				       (bools[0],
-					(Class139.method1166((Class180
+					(Class139.bitAnd((Class180
 							      .anIntArray2370
 							      [0]),
 							     (Class180
@@ -703,7 +703,7 @@ class Class237
 				bools[2]
 				    = (Class369_Sub3_Sub1.method3576
 				       (bools[2],
-					(Class139.method1166((Class180
+					(Class139.bitAnd((Class180
 							      .anIntArray2370
 							      [4]),
 							     (Class180
@@ -1058,7 +1058,7 @@ class Class237
 					}
 					i_102_++;
 				    }
-				    if (!((Class237) this).aBoolean3109
+				    if (!aBoolean3109
 					&& i_66_ == 0)
 					Class333.method2643
 					    (i_71_, i_73_,
@@ -1490,11 +1490,11 @@ class Class237
 					    == (i_156_ ^ 0xffffffff))
 					&& i_157_ == i_155_
 					&& i_155_ == i_158_)
-					((Class237) this)
+					((MapLoader) this)
 					    .aByteArrayArrayArray3108[i_66_]
 					    [i_71_][i_73_]
-					    = (byte) (Class273.method2057
-						      ((((Class237) this)
+					    = (byte) (Class273.bitOr
+						      ((((MapLoader) this)
 							.aByteArrayArrayArray3108
 							[i_66_][i_71_][i_73_]),
 						       4));
@@ -1502,7 +1502,7 @@ class Class237
 				int i_161_ = 0;
 				int i_162_ = 0;
 				int i_163_ = 0;
-				if (((Class237) this).aBoolean3109) {
+				if (aBoolean3109) {
 				    i_161_ = Class367_Sub8.method3547(i_71_,
 								      i_73_);
 				    i_162_
@@ -1548,118 +1548,118 @@ class Class237
     final void method1678(int i, int i_166_, int i_167_, int i_168_,
 			  int i_169_, int i_170_) {
 	if (i_168_ >= -80)
-	    ((Class237) this).aByteArrayArrayArray3108 = null;
+	    aByteArrayArrayArray3108 = null;
 	for (int i_171_ = i_167_;
 	     (i_171_ ^ 0xffffffff) > (i_166_ + i_167_ ^ 0xffffffff);
 	     i_171_++) {
 	    for (int i_172_ = i;
 		 (i_172_ ^ 0xffffffff) > (i_169_ + i ^ 0xffffffff); i_172_++) {
 		if ((i_172_ ^ 0xffffffff) <= -1
-		    && i_172_ < ((Class237) this).anInt3117
+		    && i_172_ < maximumX
 		    && (i_171_ ^ 0xffffffff) <= -1
-		    && ((Class237) this).anInt3114 > i_171_)
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_]
+		    && maximumY > i_171_)
+		    heightmap[i_170_]
 			[i_172_][i_171_]
 			= ((i_170_ ^ 0xffffffff) >= -1 ? 0
-			   : -960 + (((Class237) this).anIntArrayArrayArray3122
+			   : -960 + (heightmap
 				     [-1 + i_170_][i_172_][i_171_]));
 	    }
 	}
 	anInt3105++;
 	if (i > 0
-	    && (i ^ 0xffffffff) > (((Class237) this).anInt3117 ^ 0xffffffff)) {
+	    && (i ^ 0xffffffff) > (maximumX ^ 0xffffffff)) {
 	    for (int i_173_ = i_167_ - -1;
 		 (i_167_ - -i_166_ ^ 0xffffffff) < (i_173_ ^ 0xffffffff);
 		 i_173_++) {
 		if (i_173_ >= 0
-		    && (i_173_ ^ 0xffffffff) > (((Class237) this).anInt3114
+		    && (i_173_ ^ 0xffffffff) > (maximumY
 						^ 0xffffffff))
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_][i]
+		    heightmap[i_170_][i]
 			[i_173_]
-			= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			= (heightmap[i_170_]
 			   [i - 1][i_173_]);
 	    }
 	}
-	if (i_167_ > 0 && i_167_ < ((Class237) this).anInt3114) {
+	if (i_167_ > 0 && i_167_ < maximumY) {
 	    for (int i_174_ = 1 + i;
 		 (i_169_ + i ^ 0xffffffff) < (i_174_ ^ 0xffffffff); i_174_++) {
 		if ((i_174_ ^ 0xffffffff) <= -1
-		    && i_174_ < ((Class237) this).anInt3117)
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_]
+		    && i_174_ < maximumX)
+		    heightmap[i_170_]
 			[i_174_][i_167_]
-			= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			= (heightmap[i_170_]
 			   [i_174_][-1 + i_167_]);
 	    }
 	}
-	if (i >= 0 && i_167_ >= 0 && ((Class237) this).anInt3117 > i
-	    && i_167_ < ((Class237) this).anInt3114) {
+	if (i >= 0 && i_167_ >= 0 && maximumX > i
+	    && i_167_ < maximumY) {
 	    if (i_170_ != 0) {
 		if ((i ^ 0xffffffff) < -1
-		    && ((((Class237) this).anIntArrayArrayArray3122[i_170_ - 1]
+		    && ((heightmap[i_170_ - 1]
 			 [-1 + i][i_167_])
-			!= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			!= (heightmap[i_170_]
 			    [i - 1][i_167_])))
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_][i]
+		    heightmap[i_170_][i]
 			[i_167_]
-			= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			= (heightmap[i_170_]
 			   [i - 1][i_167_]);
 		else if ((i_167_ ^ 0xffffffff) >= -1
-			 || ((((Class237) this).anIntArrayArrayArray3122
+			 || ((heightmap
 			      [i_170_][i][-1 + i_167_])
-			     == (((Class237) this).anIntArrayArrayArray3122
+			     == (heightmap
 				 [-1 + i_170_][i][-1 + i_167_]))) {
 		    if ((i ^ 0xffffffff) < -1 && i_167_ > 0
-			&& (((((Class237) this).anIntArrayArrayArray3122
+			&& (((heightmap
 			      [i_170_][i + -1][-1 + i_167_])
 			     ^ 0xffffffff)
-			    != ((((Class237) this).anIntArrayArrayArray3122
+			    != ((heightmap
 				 [i_170_ + -1][i + -1][-1 + i_167_])
 				^ 0xffffffff)))
-			((Class237) this).anIntArrayArrayArray3122[i_170_]
+			heightmap[i_170_]
 			    [i][i_167_]
-			    = (((Class237) this).anIntArrayArrayArray3122
+			    = (heightmap
 			       [i_170_][i + -1][-1 + i_167_]);
 		} else
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_][i]
+		    heightmap[i_170_][i]
 			[i_167_]
-			= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			= (heightmap[i_170_]
 			   [i][i_167_ + -1]);
 	    } else if ((i ^ 0xffffffff) >= -1
-		       || ((((Class237) this).anIntArrayArrayArray3122[i_170_]
+		       || ((heightmap[i_170_]
 			    [-1 + i][i_167_])
 			   ^ 0xffffffff) == -1) {
 		if ((i_167_ ^ 0xffffffff) >= -1
-		    || ((((Class237) this).anIntArrayArrayArray3122[i_170_][i]
+		    || ((heightmap[i_170_][i]
 			 [-1 + i_167_])
 			^ 0xffffffff) == -1) {
 		    if ((i ^ 0xffffffff) < -1 && (i_167_ ^ 0xffffffff) < -1
-			&& (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			&& (heightmap[i_170_]
 			    [-1 + i][i_167_ - 1]) != 0)
-			((Class237) this).anIntArrayArrayArray3122[i_170_]
+			heightmap[i_170_]
 			    [i][i_167_]
-			    = (((Class237) this).anIntArrayArrayArray3122
+			    = (heightmap
 			       [i_170_][i - 1][-1 + i_167_]);
 		} else
-		    ((Class237) this).anIntArrayArrayArray3122[i_170_][i]
+		    heightmap[i_170_][i]
 			[i_167_]
-			= (((Class237) this).anIntArrayArrayArray3122[i_170_]
+			= (heightmap[i_170_]
 			   [i][-1 + i_167_]);
 	    } else
-		((Class237) this).anIntArrayArrayArray3122[i_170_][i][i_167_]
-		    = (((Class237) this).anIntArrayArrayArray3122[i_170_]
+		heightmap[i_170_][i][i_167_]
+		    = (heightmap[i_170_]
 		       [-1 + i][i_167_]);
 	}
     }
     
     final void method1679(int i, int i_175_, int[][] is) {
 	anInt3121++;
-	int[][] is_176_ = ((Class237) this).anIntArrayArrayArray3122[i];
+	int[][] is_176_ = heightmap[i];
 	for (int i_177_ = i_175_;
-	     ((((Class237) this).anInt3117 - -1 ^ 0xffffffff)
+	     ((maximumX - -1 ^ 0xffffffff)
 	      < (i_177_ ^ 0xffffffff));
 	     i_177_++) {
 	    for (int i_178_ = 0;
-		 ((((Class237) this).anInt3114 + 1 ^ 0xffffffff)
+		 ((maximumY + 1 ^ 0xffffffff)
 		  < (i_178_ ^ 0xffffffff));
 		 i_178_++)
 		is_176_[i_177_][i_178_] += is[i_177_][i_178_];
@@ -1669,26 +1669,26 @@ class Class237
     final void method1680(s var_s, byte i, s var_s_179_, AbstractToolkit var_ha) {
 	try {
 	    anInt3131++;
-	    int[][] is = (new int[((Class237) this).anInt3117]
-			  [((Class237) this).anInt3114]);
+	    int[][] is = (new int[maximumX]
+			  [maximumY]);
 	    if (i <= -122) {
 		if (Class348_Sub24.anIntArray6878 == null
-		    || (((Class237) this).anInt3114
+		    || (maximumY
 			!= Class348_Sub24.anIntArray6878.length)) {
 		    Class318_Sub9_Sub1.anIntArray8785
-			= new int[((Class237) this).anInt3114];
+			= new int[maximumY];
 		    Class348_Sub40_Sub6.anIntArray9135
-			= new int[((Class237) this).anInt3114];
+			= new int[maximumY];
 		    Class265.anIntArray4692
-			= new int[((Class237) this).anInt3114];
+			= new int[maximumY];
 		    Class348_Sub24.anIntArray6878
-			= new int[((Class237) this).anInt3114];
+			= new int[maximumY];
 		    Class348_Sub8.anIntArray6655
-			= new int[((Class237) this).anInt3114];
+			= new int[maximumY];
 		}
-		for (int i_180_ = 0; ((Class237) this).anInt3130 > i_180_;
+		for (int i_180_ = 0; maximumZ > i_180_;
 		     i_180_++) {
-		    for (int i_181_ = 0; ((Class237) this).anInt3114 > i_181_;
+		    for (int i_181_ = 0; maximumY > i_181_;
 			 i_181_++) {
 			Class348_Sub24.anIntArray6878[i_181_] = 0;
 			Class348_Sub40_Sub6.anIntArray9135[i_181_] = 0;
@@ -1696,16 +1696,16 @@ class Class237
 			Class265.anIntArray4692[i_181_] = 0;
 			Class318_Sub9_Sub1.anIntArray8785[i_181_] = 0;
 		    }
-		    for (int i_182_ = -5; i_182_ < ((Class237) this).anInt3117;
+		    for (int i_182_ = -5; i_182_ < maximumX;
 			 i_182_++) {
 			for (int i_183_ = 0;
-			     ((((Class237) this).anInt3114 ^ 0xffffffff)
+			     ((maximumY ^ 0xffffffff)
 			      < (i_183_ ^ 0xffffffff));
 			     i_183_++) {
 			    int i_184_ = i_182_ - -5;
 			    if ((i_184_ ^ 0xffffffff)
-				> (((Class237) this).anInt3117 ^ 0xffffffff)) {
-				int i_185_ = ((aByteArrayArrayArray3113[i_180_]
+				> (maximumX ^ 0xffffffff)) {
+				int i_185_ = ((underlayIds[i_180_]
 					       [i_184_][i_183_])
 					      & 0xff);
 				if ((i_185_ ^ 0xffffffff) < -1) {
@@ -1726,7 +1726,7 @@ class Class237
 			    }
 			    int i_186_ = i_182_ - 5;
 			    if (i_186_ >= 0) {
-				int i_187_ = 0xff & (aByteArrayArrayArray3113
+				int i_187_ = 0xff & (underlayIds
 						     [i_180_][i_186_][i_183_]);
 				if (i_187_ > 0) {
 				    Class22 class22
@@ -1753,11 +1753,11 @@ class Class237
 			    int i_192_ = 0;
 			    for (int i_193_ = -5;
 				 ((i_193_ ^ 0xffffffff)
-				  > (((Class237) this).anInt3114
+				  > (maximumY
 				     ^ 0xffffffff));
 				 i_193_++) {
 				int i_194_ = 5 + i_193_;
-				if ((((Class237) this).anInt3114 ^ 0xffffffff)
+				if ((maximumY ^ 0xffffffff)
 				    < (i_194_ ^ 0xffffffff)) {
 				    i_190_ += (Class348_Sub8.anIntArray6655
 					       [i_194_]);
@@ -1803,12 +1803,12 @@ class Class237
 				   aa_Sub1.aSArray5191[i_180_], -26833,
 				   i_180_ == 0 ? var_s_179_ : null, is, var_ha,
 				   i_180_);
-		    aByteArrayArrayArray3113[i_180_] = null;
-		    aByteArrayArrayArray3123[i_180_] = null;
-		    aByteArrayArrayArray3126[i_180_] = null;
-		    aByteArrayArrayArray3129[i_180_] = null;
+		    underlayIds[i_180_] = null;
+		    overlayIds[i_180_] = null;
+		    overlayShading[i_180_] = null;
+		    overlayRotation[i_180_] = null;
 		}
-		if (!((Class237) this).aBoolean3109) {
+		if (!aBoolean3109) {
 		    if ((IndexTable.anInt3720 ^ 0xffffffff) != -1)
 			Class258_Sub3.method1968();
 		    if (Class186.aBoolean2492)
@@ -1816,7 +1816,7 @@ class Class237
 		}
 		for (int i_196_ = 0;
 		     ((i_196_ ^ 0xffffffff)
-		      > (((Class237) this).anInt3130 ^ 0xffffffff));
+		      > (maximumZ ^ 0xffffffff));
 		     i_196_++)
 		    aa_Sub1.aSArray5191[i_196_].YA();
 	    }
@@ -1829,158 +1829,109 @@ class Class237
 	}
     }
     
-    final void method1681(ByteBuffer class348_sub49, int i,
-			  Class361[] class361s, int i_197_, int i_198_,
-			  int i_199_, byte i_200_) {
+    final void parseMapArchive(ByteBuffer buffer, int mX, int mY, int baseRx, int baseRy, Class361[] class361s) {
 	try {
 	    anInt3107++;
-	    if (!((Class237) this).aBoolean3109) {
-		for (int i_201_ = 0; (i_201_ ^ 0xffffffff) > -5; i_201_++) {
-		    Class361 class361 = class361s[i_201_];
-		    for (int i_202_ = 0; i_202_ < 64; i_202_++) {
-			for (int i_203_ = 0; i_203_ < 64; i_203_++) {
-			    int i_204_ = i_202_ + i;
-			    int i_205_ = i_199_ + i_203_;
-			    if (i_204_ >= 0
-				&& ((((Class237) this).anInt3117 ^ 0xffffffff)
-				    < (i_204_ ^ 0xffffffff))
-				&& (i_205_ ^ 0xffffffff) <= -1
-				&& ((i_205_ ^ 0xffffffff)
-				    > (((Class237) this).anInt3114
-				       ^ 0xffffffff)))
-				class361.method3501((byte) 107, i_205_,
-						    i_204_);
+	    if (!aBoolean3109) {
+		for (int z = 0; (z ^ 0xffffffff) > -5; z++) {
+		    Class361 class361 = class361s[z];
+		    for (int xOff = 0; xOff < 64; xOff++) {
+			for (int yOff = 0; yOff < 64; yOff++) {
+			    int x = xOff + mX;
+			    int y = mY + yOff;
+			    if (x >= 0 && ((maximumX ^ 0xffffffff) < (x ^ 0xffffffff)) && (y ^ 0xffffffff) <= -1 && ((y ^ 0xffffffff) > (maximumY ^ 0xffffffff)))
+				class361.method3501((byte) 107, y, x);
 			}
 		    }
 		}
 	    }
-	    int i_206_ = i + i_198_;
-	    int i_207_ = 65 % ((i_200_ - 34) / 42);
-	    int i_208_ = i_197_ - -i_199_;
-	    for (int i_209_ = 0; ((Class237) this).anInt3130 > i_209_;
-		 i_209_++) {
-		for (int i_210_ = 0; i_210_ < 64; i_210_++) {
-		    for (int i_211_ = 0; i_211_ < 64; i_211_++)
-			method1682(false, 0, i_211_ + i_199_, 0,
-				   class348_sub49, 0, 1115212770, i + i_210_,
-				   i_206_ + i_210_, i_208_ - -i_211_, i_209_);
+	    int cX = mX + baseRx;
+	    int cY = baseRy + mY;
+	    for (int z = 0; maximumZ > z; z++) {
+		for (int xOff = 0; xOff < 64; xOff++) {
+		    for (int yOff = 0; yOff < 64; yOff++)
+			parseMapArchive(buffer, mX + xOff, yOff + mY, z, 0, 0, cX + xOff, cY + yOff, 0, false);
 		}
 	    }
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("sr.I("
-					     + (class348_sub49 != null
+					     + (buffer != null
 						? "{...}" : "null")
-					     + ',' + i + ','
+					     + ',' + mX + ','
 					     + (class361s != null ? "{...}"
 						: "null")
-					     + ',' + i_197_ + ',' + i_198_
-					     + ',' + i_199_ + ',' + i_200_
+					     + ',' + baseRy + ',' + baseRx
+					     + ',' + mY 
 					     + ')'));
 	}
     }
     
-    private final void method1682(boolean bool, int i, int i_212_, int i_213_,
-				  ByteBuffer class348_sub49, int i_214_,
-				  int i_215_, int i_216_, int i_217_,
-				  int i_218_, int i_219_) {
+    private void parseMapArchive(ByteBuffer buffer, int x, int y, int z, int xOff, int yOff, int cX, int cY, int offSettings, boolean skipFloors) {
 	anInt3125++;
-	if (i_213_ != 1) {
-	    if (i_213_ == 2) {
-		i = 1;
-		i_214_ = 1;
-	    } else if (i_213_ == 3)
-		i_214_ = 1;
+	if (offSettings != 1) {
+	    if (offSettings == 2) {
+		yOff = 1;
+		xOff = 1;
+	    } else if (offSettings == 3)
+		xOff = 1;
 	} else
-	    i = 1;
-	if ((i_216_ ^ 0xffffffff) > -1
-	    || (((Class237) this).anInt3117 ^ 0xffffffff) >= (i_216_
-							      ^ 0xffffffff)
-	    || i_212_ < 0
-	    || (i_212_ ^ 0xffffffff) <= (((Class237) this).anInt3114
-					 ^ 0xffffffff)) {
+	    yOff = 1;
+	if (x < 0 || maximumX <= x || y < 0 || y >= maximumY) {
 	    for (;;) {
-		int i_220_ = class348_sub49.getUByte();
-		if ((i_220_ ^ 0xffffffff) == -1)
+		int opcode = buffer.getUByte();
+		if ((opcode ^ 0xffffffff) == -1)
 		    break;
-		if ((i_220_ ^ 0xffffffff) == -2) {
-		    class348_sub49.getUByte();
+		if ((opcode ^ 0xffffffff) == -2) {
+		    buffer.getUByte();
 		    break;
 		}
-		if ((i_220_ ^ 0xffffffff) >= -50)
-		    class348_sub49.getUByte();
+		if ((opcode ^ 0xffffffff) >= -50)
+		    buffer.getUByte();
 	    }
 	} else {
-	    if (!((Class237) this).aBoolean3109 && !bool)
-		Class348_Sub33.aByteArrayArrayArray6962[i_219_][i_216_][i_212_]
-		    = (byte) 0;
+	    if (!aBoolean3109 && !skipFloors)
+		Class348_Sub33.settingFlags[z][x][y] = (byte) 0;
 	    for (;;) {
-		int i_221_ = class348_sub49.getUByte();
-		if ((i_221_ ^ 0xffffffff) == -1) {
-		    if (((Class237) this).aBoolean3109)
-			((Class237) this).anIntArrayArrayArray3122[0]
-			    [i_214_ + i_216_][i + i_212_]
-			    = 0;
-		    else if ((i_219_ ^ 0xffffffff) != -1)
-			((Class237) this).anIntArrayArrayArray3122[i_219_]
-			    [i_214_ + i_216_][i + i_212_]
-			    = -960 + (((Class237) this)
-				      .anIntArrayArrayArray3122[-1 + i_219_]
-				      [i_214_ + i_216_][i + i_212_]);
+		int opcode = buffer.getUByte();
+		if (opcode == 0) {
+		    if (aBoolean3109)
+			heightmap[0][xOff + x][yOff + y] = 0;
+		    else if ((z ^ 0xffffffff) != -1)
+			heightmap[z][xOff + x][yOff + y] = (heightmap[z - 1][x + xOff][y + yOff]) - 960;
 		    else
-			((Class237) this).anIntArrayArrayArray3122[0]
-			    [i_214_ + i_216_][i_212_ - -i]
-			    = (8 * -(Class318_Sub1_Sub3_Sub4.method2462
-				     (-113, i_217_ + 932731, i_218_ + 556238))
-			       << -338573982);
+			heightmap[0][xOff + x][y + yOff]= (8 * -(Class318_Sub1_Sub3_Sub4.getNoise(cX + 932731, cY + 556238)) << 2);
 		    break;
 		}
-		if (i_221_ == 1) {
-		    int i_222_ = class348_sub49.getUByte();
-		    if (((Class237) this).aBoolean3109)
-			((Class237) this).anIntArrayArrayArray3122[0]
-			    [i_216_ - -i_214_][i_212_ + i]
-			    = i_222_ * 8 << 1925033730;
+		if (opcode == 1) {
+		    int value = buffer.getUByte();
+		    if (aBoolean3109)
+			heightmap[0][x + xOff][y + yOff] = value * 8 << 2;
 		    else {
-			if ((i_222_ ^ 0xffffffff) == -2)
-			    i_222_ = 0;
-			if (i_219_ != 0)
-			    ((Class237) this).anIntArrayArrayArray3122
-				[i_219_][i_214_ + i_216_][i + i_212_]
-				= (((Class237) this).anIntArrayArrayArray3122
-				   [-1 + i_219_][i_214_ + i_216_]
-				   [i_212_ - -i]) - (i_222_ * 8 << -591384382);
+			if (value == 1)
+			    value = 0;
+			if (z != 0)
+			    heightmap[z][xOff + x][yOff + y] = (heightmap[z - 1][xOff + x][y + yOff]) - (value * 8 << 2);
 			else
-			    ((Class237) this).anIntArrayArrayArray3122[0]
-				[i_216_ - -i_214_][i_212_ - -i]
-				= 8 * -i_222_ << 1115212770;
+			    heightmap[0][x + xOff][y + yOff] = 8 * -value << 2;
 		    }
 		    break;
 		}
-		if ((i_221_ ^ 0xffffffff) >= -50) {
-		    if (bool)
-			class348_sub49.getUByte();
+		if (opcode <= 49) {
+		    if (skipFloors)
+			buffer.getUByte();
 		    else {
-			aByteArrayArrayArray3123[i_219_][i_216_][i_212_]
-			    = class348_sub49.getByte();
-			aByteArrayArrayArray3126[i_219_][i_216_][i_212_]
-			    = (byte) ((i_221_ + -2) / 4);
-			aByteArrayArrayArray3129[i_219_][i_216_][i_212_]
-			    = (byte) Class139.method1166(3,
-							 -2 + i_221_ + i_213_);
+			overlayIds[z][x][y] = buffer.getByte();
+			overlayShading[z][x][y] = (byte) ((opcode - 2) / 4);
+			overlayRotation[z][x][y] = (byte) Class139.bitAnd(3, opcode + offSettings - 2);
 		    }
-		} else if (i_221_ <= 81) {
-		    if (!((Class237) this).aBoolean3109 && !bool)
-			Class348_Sub33.aByteArrayArrayArray6962[i_219_]
-			    [i_216_][i_212_]
-			    = (byte) (i_221_ - 49);
-		} else if (!bool)
-		    aByteArrayArrayArray3113[i_219_][i_216_][i_212_]
-			= (byte) (-81 + i_221_);
+		} else if (opcode <= 81) {
+		    if (!aBoolean3109 && !skipFloors)
+			Class348_Sub33.settingFlags[z][x][y] = (byte) (opcode - 49);
+		} else if (!skipFloors)
+		    underlayIds[z][x][y] = (byte) (opcode - 81);
 	    }
 	}
-	if (i_215_ != 1115212770)
-	    ((Class237) this).aByteArrayArrayArray3104 = null;
     }
     
     private final void method1683(AbstractToolkit var_ha, s var_s, int i, byte i_223_,
@@ -1988,22 +1939,22 @@ class Class237
 	do {
 	    try {
 		anInt3111++;
-		for (int i_226_ = 0; i_226_ < ((Class237) this).anInt3117;
+		for (int i_226_ = 0; i_226_ < maximumX;
 		     i_226_++) {
-		    for (int i_227_ = 0; ((Class237) this).anInt3114 > i_227_;
+		    for (int i_227_ = 0; maximumY > i_227_;
 			 i_227_++) {
 			if ((DummyOutputstream.anInt101 ^ 0xffffffff) == 0
 			    || Class58.method536(i_227_, false, i_226_,
 						 DummyOutputstream.anInt101,
 						 i)) {
 			    byte i_228_
-				= aByteArrayArrayArray3126[i][i_226_][i_227_];
+				= overlayShading[i][i_226_][i_227_];
 			    byte i_229_
-				= aByteArrayArrayArray3129[i][i_226_][i_227_];
+				= overlayRotation[i][i_226_][i_227_];
 			    int i_230_
-				= (aByteArrayArrayArray3123[i][i_226_][i_227_]
+				= (overlayIds[i][i_226_][i_227_]
 				   & 0xff);
-			    int i_231_ = 0xff & (aByteArrayArrayArray3113[i]
+			    int i_231_ = 0xff & (underlayIds[i]
 						 [i_226_][i_227_]);
 			    Class277 class277
 				= ((i_230_ ^ 0xffffffff) != -1
@@ -2086,7 +2037,7 @@ class Class237
 					}
 					i_235_++;
 				    }
-				    if (!((Class237) this).aBoolean3109
+				    if (!aBoolean3109
 					&& (i ^ 0xffffffff) == -1)
 					Class333.method2643
 					    (i_226_, i_227_,
@@ -2237,11 +2188,11 @@ class Class237
 					    == (i_263_ ^ 0xffffffff))
 					&& ((i_266_ ^ 0xffffffff)
 					    == (i_263_ ^ 0xffffffff)))
-					((Class237) this)
+					((MapLoader) this)
 					    .aByteArrayArrayArray3108[i]
 					    [i_226_][i_227_]
-					    = (byte) (Class273.method2057
-						      ((((Class237) this)
+					    = (byte) (Class273.bitOr
+						      ((((MapLoader) this)
 							.aByteArrayArrayArray3108
 							[i][i_226_][i_227_]),
 						       4));
@@ -2249,7 +2200,7 @@ class Class237
 				int i_269_ = 0;
 				int i_270_ = 0;
 				int i_271_ = 0;
-				if (((Class237) this).aBoolean3109) {
+				if (aBoolean3109) {
 				    i_269_ = Class367_Sub8.method3547(i_226_,
 								      i_227_);
 				    i_270_ = Class318_Sub1_Sub5
@@ -2273,7 +2224,7 @@ class Class237
 		}
 		if (i_223_ >= 115)
 		    break;
-		((Class237) this).anInt3117 = 57;
+		maximumX = 57;
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929
 			  (runtimeexception,
@@ -2297,7 +2248,7 @@ class Class237
 		anInt3115++;
 		int i_279_ = 8 * (i_276_ & 0x7);
 		int i_280_ = 8 * (0x7 & i_274_);
-		if (!((Class237) this).aBoolean3109) {
+		if (!aBoolean3109) {
 		    Class361 class361 = class361s[i_272_];
 		    for (int i_281_ = 0; i_281_ < 8; i_281_++) {
 			for (int i_282_ = 0; i_282_ < 8; i_282_++) {
@@ -2310,9 +2261,9 @@ class Class237
 						     0x7 & i_282_, i_277_)
 				   + i_275_);
 			    if (i_283_ > 0
-				&& i_283_ < -1 + ((Class237) this).anInt3117
+				&& i_283_ < -1 + maximumX
 				&& (i_284_ ^ 0xffffffff) < -1
-				&& ((Class237) this).anInt3114 + -1 > i_284_)
+				&& maximumY + -1 > i_284_)
 				class361.method3501((byte) 124, i_284_,
 						    i_283_);
 			}
@@ -2332,7 +2283,7 @@ class Class237
 		    }
 		} else
 		    i_288_ = 1;
-		for (int i_289_ = 0; ((Class237) this).anInt3130 > i_289_;
+		for (int i_289_ = 0; maximumZ > i_289_;
 		     i_289_++) {
 		    for (int i_290_ = 0; (i_290_ ^ 0xffffffff) > -65;
 			 i_290_++) {
@@ -2347,8 +2298,8 @@ class Class237
 							    ^ 0xffffffff)
 				|| (i_291_ ^ 0xffffffff) < (8 + i_280_
 							    ^ 0xffffffff))
-				method1682(false, 0, -1, 0, class348_sub49, 0,
-					   1115212770, -1, 0, 0, 0);
+				parseMapArchive(class348_sub49, -1, -1, 0, 0,
+					   0, 0, 0, 0, false);
 			    else {
 				int i_292_;
 				int i_293_;
@@ -2364,11 +2315,10 @@ class Class237
 								  true,
 								  0x7 & i_291_,
 								  i_277_));
-				    method1682(false, i_288_, i_292_, i_277_,
-					       class348_sub49, i_287_,
-					       1115212770, i_293_,
+				    parseMapArchive( class348_sub49, i_293_, i_292_,
+					       i_272_, i_287_, i_288_,
 					       i_285_ - -i_290_,
-					       i_291_ + i_286_, i_272_);
+					       i_291_ + i_286_, i_277_, false);
 				} else {
 				    if ((i_277_ ^ 0xffffffff) == -1) {
 					i_292_ = -i_280_ + (i_291_ + i_275_);
@@ -2389,10 +2339,10 @@ class Class237
 					    = i_275_ + 8 + (i_279_ + -i_290_);
 					i_293_ = i_291_ - (i_280_ - i);
 				    }
-				    method1682(true, 0, i_292_, 0,
-					       class348_sub49, 0, 1115212770,
-					       i_293_, i_290_ + i_285_,
-					       i_291_ + i_286_, i_272_);
+				    parseMapArchive( class348_sub49,
+					       i_293_,
+					       i_292_, i_272_, 0, 0, i_290_ + i_285_,
+					       i_291_ + i_286_, 0, true);
 				}
 				if (i_290_ == 63 || i_291_ == 63) {
 				    int i_294_ = 1;
@@ -2438,18 +2388,18 @@ class Class237
 					    i_299_ = i_279_ - (i_296_ - i - 8);
 					}
 					if ((i_299_ ^ 0xffffffff) <= -1
-					    && ((((Class237) this).anInt3117
+					    && ((maximumX
 						 ^ 0xffffffff)
 						< (i_299_ ^ 0xffffffff))
 					    && i_298_ >= 0
 					    && ((i_298_ ^ 0xffffffff)
-						> (((Class237) this).anInt3114
+						> (maximumY
 						   ^ 0xffffffff)))
-					    ((Class237) this)
-						.anIntArrayArrayArray3122
+					    ((MapLoader) this)
+						.heightmap
 						[i_272_][i_299_][i_298_]
-						= (((Class237) this)
-						   .anIntArrayArrayArray3122
+						= (((MapLoader) this)
+						   .heightmap
 						   [i_272_][i_287_ + i_293_]
 						   [i_288_ + i_292_]);
 				    }
@@ -2480,21 +2430,21 @@ class Class237
 	    anInt3118++;
 	    if (i != 21407)
 		method1680(null, (byte) -116, null, null);
-	    if (!((Class237) this).aBoolean3109) {
+	    if (!aBoolean3109) {
 		for (int i_300_ = 0; i_300_ < 4; i_300_++) {
 		    for (int i_301_ = 0;
-			 ((((Class237) this).anInt3117 ^ 0xffffffff)
+			 ((maximumX ^ 0xffffffff)
 			  < (i_301_ ^ 0xffffffff));
 			 i_301_++) {
 			for (int i_302_ = 0;
-			     ((Class237) this).anInt3114 > i_302_; i_302_++) {
-			    if ((0x1 & (Class348_Sub33.aByteArrayArrayArray6962
+			     maximumY > i_302_; i_302_++) {
+			    if ((0x1 & (Class348_Sub33.settingFlags
 					[i_300_][i_301_][i_302_])
 				 ^ 0xffffffff)
 				!= -1) {
 				int i_303_ = i_300_;
 				if ((0x2
-				     & (Class348_Sub33.aByteArrayArrayArray6962
+				     & (Class348_Sub33.settingFlags
 					[1][i_301_][i_302_]))
 				    != 0)
 				    i_303_--;
@@ -2507,11 +2457,11 @@ class Class237
 		    }
 		}
 	    }
-	    for (int i_304_ = 0; ((Class237) this).anInt3130 > i_304_;
+	    for (int i_304_ = 0; maximumZ > i_304_;
 		 i_304_++) {
 		int i_305_ = 0;
 		int i_306_ = 0;
-		if (!((Class237) this).aBoolean3109) {
+		if (!aBoolean3109) {
 		    if (Class186.aBoolean2492)
 			i_305_ |= 0x2;
 		    if (Class369.aBoolean4972)
@@ -2530,14 +2480,14 @@ class Class237
 		int[][] is_307_
 		    = (is == null || (i_304_ ^ 0xffffffff) <= (is.length
 							       ^ 0xffffffff)
-		       ? ((Class237) this).anIntArrayArrayArray3122[i_304_]
+		       ? heightmap[i_304_]
 		       : is[i_304_]);
 		AbstractMouseEvent.method3313
 		    (i_304_,
-		     var_ha.method3648(((Class237) this).anInt3117,
-				       ((Class237) this).anInt3114,
-				       (((Class237) this)
-					.anIntArrayArrayArray3122[i_304_]),
+		     var_ha.method3648(maximumX,
+				       maximumY,
+				       (((MapLoader) this)
+					.heightmap[i_304_]),
 				       is_307_, 512, i_305_, i_306_));
 	    }
 	} catch (RuntimeException runtimeexception) {
@@ -2594,48 +2544,48 @@ class Class237
 	if (i_312_ > 50) {
 	    for (int i_314_ = 0;
 		 ((i_314_ ^ 0xffffffff)
-		  > (((Class237) this).anInt3130 ^ 0xffffffff));
+		  > (maximumZ ^ 0xffffffff));
 		 i_314_++)
 		method1678(i_313_, i_310_, i, -124, i_311_, i_314_);
 	    anInt3127++;
 	}
     }
     
-    Class237(int i, int i_315_, int i_316_, boolean bool, Class268 class268,
+    MapLoader(int maxZ, int maxX, int maxY, boolean bool, Class268 class268,
 	     Class183 class183) {
 	anIntArray3124 = new int[] { 0, 256, 512, 512, 512, 256, 0, 0, 128,
 				     256, 128, 384, 256 };
 	try {
-	    ((Class237) this).aBoolean3109 = bool;
+	    aBoolean3109 = bool;
 	    aClass268_3119 = class268;
 	    aClass183_3120 = class183;
-	    ((Class237) this).anInt3117 = i_315_;
-	    ((Class237) this).anInt3130 = i;
-	    ((Class237) this).anInt3114 = i_316_;
-	    ((Class237) this).anIntArrayArrayArray3122
-		= (new int[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117 + 1]
-		   [1 + ((Class237) this).anInt3114]);
-	    ((Class237) this).aByteArrayArrayArray3108
-		= (new byte[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117 - -1]
-		   [1 + ((Class237) this).anInt3114]);
-	    aByteArrayArrayArray3113
-		= (new byte[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117][((Class237) this).anInt3114]);
-	    aByteArrayArrayArray3129
-		= (new byte[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117][((Class237) this).anInt3114]);
-	    aByteArrayArrayArray3126
-		= (new byte[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117][((Class237) this).anInt3114]);
-	    aByteArrayArrayArray3123
-		= (new byte[((Class237) this).anInt3130]
-		   [((Class237) this).anInt3117][((Class237) this).anInt3114]);
+	    maximumX = maxX;
+	    maximumZ = maxZ;
+	    maximumY = maxY;
+	    heightmap
+		= (new int[maximumZ]
+		   [maximumX + 1]
+		   [1 + maximumY]);
+	    aByteArrayArrayArray3108
+		= (new byte[maximumZ]
+		   [maximumX - -1]
+		   [1 + maximumY]);
+	    underlayIds
+		= (new byte[maximumZ]
+		   [maximumX][maximumY]);
+	    overlayRotation
+		= (new byte[maximumZ]
+		   [maximumX][maximumY]);
+	    overlayShading
+		= (new byte[maximumZ]
+		   [maximumX][maximumY]);
+	    overlayIds
+		= (new byte[maximumZ]
+		   [maximumX][maximumY]);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
-					    ("sr.<init>(" + i + ',' + i_315_
-					     + ',' + i_316_ + ',' + bool + ','
+					    ("sr.<init>(" + maxZ + ',' + maxX
+					     + ',' + maxY + ',' + bool + ','
 					     + (class268 != null ? "{...}"
 						: "null")
 					     + ','

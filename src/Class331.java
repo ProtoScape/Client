@@ -72,7 +72,7 @@ final class Class331
 	int i_7_ = 77 / ((i - -32) / 47);
 	anInt4132++;
 	short[] is_8_ = new short[i_6_];
-	Class214.method1576(is, 0, is_8_, 0, i_6_);
+	ArrayUtils.arrayCopy(is, 0, is_8_, 0, i_6_);
 	return is_8_;
     }
     

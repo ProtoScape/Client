@@ -95,7 +95,6 @@ final class Class265 implements Interface1
     public final boolean method8(byte i) {
 	int i_8_ = -105 % ((25 - i) / 52);
 	anInt4690++;
-	return aClass45_4694.getArchiveLoaded(false,
-				       ((Class120) aClass120_4687).anInt4912);
+	return aClass45_4694.getArchiveLoaded(((Class120) aClass120_4687).anInt4912);
     }
 }

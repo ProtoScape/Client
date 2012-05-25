@@ -19,7 +19,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23
     private DSPState aDSPState8993;
     private Class163 aClass163_8994;
     private Class348_Sub16_Sub2 aClass348_Sub16_Sub2_8995;
-    static byte[][] aByteArrayArray8996;
+    static byte[][] ulArchiveSrcs;
     static int anInt8997;
     static int anInt8998;
     static int anInt8999;
@@ -35,7 +35,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23
 				    int i_2_) {
 	anInt8991++;
 	if (i_2_ != 2)
-	    aByteArrayArray8996 = null;
+	    ulArchiveSrcs = null;
 	if (class64 == null)
 	    return null;
 	Class30 class30 = new Class30(i, i_1_, i_0_, class64.na(), class64.V(),
@@ -51,7 +51,7 @@ final class Class348_Sub23_Sub1 extends Class348_Sub23
     
     public static void method2968(byte i) {
 	signlink = null;
-	aByteArrayArray8996 = null;
+	ulArchiveSrcs = null;
 	if (i > -114)
 	    method2968((byte) -12);
     }

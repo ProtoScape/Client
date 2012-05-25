@@ -203,7 +203,7 @@ final class ConnectionMode
 						    .aClass348_Sub51_3959))
 						  .aClass239_Sub12_7243),
 						 0);
-	Class237.method1686(55);
+	MapLoader.method1686(55);
 	BitmapTable.aClass348_Sub51_3959.method3429((byte) 74,
 						 (((Class348_Sub51)
 						   (BitmapTable

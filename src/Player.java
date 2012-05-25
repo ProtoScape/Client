@@ -82,27 +82,20 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	}
     }
     
-    final void method2449(int i, int i_0_, byte i_1_) {
+    final void setLocationUnkn(int i, int i_0_) {
 	anInt10541++;
 	((Class318_Sub1_Sub3_Sub3) this).anInt10322 = 0;
 	((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] = i_0_;
 	((Class318_Sub1_Sub3_Sub3) this).anInt10319 = 0;
 	((Class318_Sub1_Sub3_Sub3) this).anInt10326 = 0;
 	((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0] = i;
-	if (i_1_ <= 55)
-	    anInt10567 = -3;
 	int i_2_ = method2436((byte) 103);
-	((Class318_Sub1) this).anInt6388
-	    = (256 * i_2_
-	       + 512 * ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]);
-	((Class318_Sub1) this).anInt6377
-	    = (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] * 512
-	       + i_2_ * 256);
+	((Class318_Sub1) this).anInt6388 = (256 * i_2_ + 512 * ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]);
+	((Class318_Sub1) this).anInt6377 = (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] * 512 + i_2_ * 256);
 	if (Class132.localPlayer == this)
 	    Class76.method773(true);
 	if (((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327 != null)
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327
-		.method2529();
+	    ((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327.method2529();
     }
     
     final String method2450(boolean bool, int i) {
@@ -207,12 +200,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		}
 		if ((i_18_ ^ 0xffffffff) <= -32769) {
 		    i_18_ = Class25.anIntArray369[-32768 + i_18_];
-		    is[i_15_] = Class273.method2057(1073741824, i_18_);
+		    is[i_15_] = Class273.bitOr(1073741824, i_18_);
 		    int i_19_ = (((ItemDefinition) ToolkitException.itemLoader.getItemDefinition(-111, i_18_)).anInt2827);
 		    if (i_19_ != 0)
 			((Player) this).anInt10542 = i_19_;
 		} else
-		    is[i_15_] = Class273.method2057(-256 + i_18_, -2147483648);
+		    is[i_15_] = Class273.bitOr(-256 + i_18_, -2147483648);
 	    }
 	}
 	int[] is_20_ = new int[5];
@@ -490,26 +483,26 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	}
 	((Player) this).anInt10524 = -1;
 	if (i_52_ >= 0
-	    && (i_52_ ^ 0xffffffff) > (Class367_Sub4.anInt7319 ^ 0xffffffff)
+	    && (i_52_ ^ 0xffffffff) > (Class367_Sub4.mapSizeX ^ 0xffffffff)
 	    && i >= 0
-	    && (i ^ 0xffffffff) > (Class348_Sub40_Sub3.anInt9109
+	    && (i ^ 0xffffffff) > (Class348_Sub40_Sub3.mapSizeY
 				   ^ 0xffffffff)) {
 	    if ((((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0]
 		 ^ 0xffffffff) <= -1
-		&& ((Class367_Sub4.anInt7319 ^ 0xffffffff)
+		&& ((Class367_Sub4.mapSizeX ^ 0xffffffff)
 		    < (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0]
 		       ^ 0xffffffff))
 		&& (((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]
 		    ^ 0xffffffff) <= -1
-		&& (Class348_Sub40_Sub3.anInt9109
+		&& (Class348_Sub40_Sub3.mapSizeY
 		    > ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0])) {
 		if (i_51_ == 2)
 		    Class218.method1592((byte) 2, i, 4, i_52_, this);
 		method2451(i_51_, i_52_, -29034, i);
 	    } else
-		method2449(i, i_52_, (byte) 111);
+		setLocationUnkn(i, i_52_);
 	} else
-	    method2449(i, i_52_, (byte) 112);
+	    setLocationUnkn(i, i_52_);
     }
     
     final Class318_Sub4 method2386(int i, AbstractToolkit var_ha) {
@@ -849,7 +842,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
     final boolean method2388(int i) {
 	anInt10523++;
 	if (i >= -65)
-	    method2449(-64, -39, (byte) 37);
+	    setLocationUnkn(-64, -39);
 	return false;
     }
     

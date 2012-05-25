@@ -35,7 +35,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1
 	    i_8_ = i_9_;
 	}
 	if (i != -21806)
-	    method2727((byte) -128, null, null);
+	    parseMapArchives((byte) -128, null, null);
 	anInt8804++;
 	int i_10_;
 	for (/**/; i_8_ != 0; i_8_ = i_10_) {
@@ -45,59 +45,35 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1
 	return i_7_;
     }
     
-    static final void method2727(byte i, Class237_Sub1 class237_sub1,
-				 byte[][] is) {
+    static void parseMapArchives(byte i, Class237_Sub1 class237_sub1, byte[][] srcs) {
 	try {
 	    anInt8802++;
 	    int[] is_11_ = { -1, 0, 0, 0, 0 };
-	    int i_12_ = 67 % ((i - 14) / 47);
-	    int i_13_ = is.length;
+	    int i_13_ = srcs.length;
 	    for (int i_14_ = 0; i_13_ > i_14_; i_14_++) {
-		byte[] is_15_ = is[i_14_];
-		if (is_15_ != null) {
-		    ByteBuffer class348_sub49 = new ByteBuffer(is_15_);
-		    int i_16_ = (Class348_Sub23_Sub3.anIntArray9042[i_14_]  >> -1157258968);
-		    int i_17_ = 0xff & Class348_Sub23_Sub3.anIntArray9042[i_14_];
-		    int i_18_ = -za_Sub2.anInt9780 + i_16_ * 64;
-		    int i_19_ = -Class90.anInt1517 + i_17_ * 64;
+		byte[] src = srcs[i_14_];
+		if (src != null) {
+		    ByteBuffer buffer = new ByteBuffer(src);
+		    int rX = Class348_Sub23_Sub3.regionHashes[i_14_] >> 8;
+		    int rY = 0xff & Class348_Sub23_Sub3.regionHashes[i_14_];
+		    int mX = rX * 64 - za_Sub2.baseRegionX;
+		    int mY = rY * 64 - Class90.baseRegionY;
 		    Class369_Sub1.method3570(false);
-		    class237_sub1.method1681(class348_sub49, i_18_,
-					     AbstractMouseEvent.aClass361Array7108,
-					     Class90.anInt1517,
-					     za_Sub2.anInt9780, i_19_,
-					     (byte) 110);
-		    class237_sub1.method1691(i_19_, Class348_Sub8.currentToolkit,
-					     class348_sub49, is_11_, i_18_,
-					     (byte) -126);
-		    if (!((Class237) class237_sub1).aBoolean3109
-			&& i_16_ == AbstractToolkit.anInt4581 / 8
-			&& ((Class327.anInt4095 / 8 ^ 0xffffffff)
-			    == (i_17_ ^ 0xffffffff))
-			&& (is_11_[0] ^ 0xffffffff) != 0) {
-			IntegerVarScriptSettingLoader.aClass305_3304
-			    = Class30.aClass84_413.method823(is_11_[2],
-							     is_11_[3],
-							     is_11_[1], -66,
-							     (Class123
-							      .aClass25_1813),
-							     is_11_[0]);
+		    class237_sub1.parseMapArchive(buffer, mX, mY, za_Sub2.baseRegionX, Class90.baseRegionY, AbstractMouseEvent.aClass361Array7108);
+		    class237_sub1.method1691(mY, Class348_Sub8.currentToolkit, buffer, is_11_, mX, (byte) -126);
+		    if (!((MapLoader) class237_sub1).aBoolean3109 && rX == AbstractToolkit.chnkX / 8 && ((Class327.chnkY / 8 ^ 0xffffffff) == (rY ^ 0xffffffff)) && (is_11_[0] ^ 0xffffffff) != 0) {
+			IntegerVarScriptSettingLoader.aClass305_3304 = Class30.aClass84_413.method823(is_11_[2], is_11_[3], is_11_[1], -66, (Class123.aClass25_1813),is_11_[0]);
 			Class185.anInt2481 = is_11_[4];
 		    }
 		}
 	    }
-	    for (int i_20_ = 0; (i_13_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff);
-		 i_20_++) {
-		int i_21_ = ((Class348_Sub23_Sub3.anIntArray9042[i_20_]
-			      >> -1341199640) * 64
-			     - za_Sub2.anInt9780);
-		int i_22_
-		    = (-Class90.anInt1517
-		       + ((0xff & Class348_Sub23_Sub3.anIntArray9042[i_20_])
-			  * 64));
-		byte[] is_23_ = is[i_20_];
-		if (is_23_ == null && Class327.anInt4095 < 800) {
+	    for (int i_20_ = 0; (i_13_ ^ 0xffffffff) < (i_20_ ^ 0xffffffff); i_20_++) {
+		int mX = ((Class348_Sub23_Sub3.regionHashes[i_20_] >> 8) * 64 - za_Sub2.baseRegionX);
+		int mY = (((0xff & Class348_Sub23_Sub3.regionHashes[i_20_]) * 64) - Class90.baseRegionY);
+		byte[] src = srcs[i_20_];
+		if (src == null && Class327.chnkY < 800) {
 		    Class369_Sub1.method3570(false);
-		    class237_sub1.method1688(i_22_, 64, 64, 125, i_21_);
+		    class237_sub1.method1688(mY, 64, 64, 125, mX);
 		}
 	    }
 	} catch (RuntimeException runtimeexception) {
@@ -106,7 +82,7 @@ final class Class348_Sub1_Sub1 extends Class348_Sub1
 					     + (class237_sub1 != null ? "{...}"
 						: "null")
 					     + ','
-					     + (is != null ? "{...}" : "null")
+					     + (srcs != null ? "{...}" : "null")
 					     + ')'));
 	}
     }

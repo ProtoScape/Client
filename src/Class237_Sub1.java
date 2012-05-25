@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class237_Sub1 extends Class237
+final class Class237_Sub1 extends MapLoader
 {
     static int anInt5815;
     static int anInt5816;
@@ -49,7 +49,7 @@ final class Class237_Sub1 extends Class237
 			method1695(null, null, -32, null, -51, 80);
 		    int i_10_;
 		    int i_11_;
-		    if ((((Class237) this).anInt3117 ^ 0xffffffff)
+		    if ((((MapLoader) this).maximumX ^ 0xffffffff)
 			<= (i - -i_9_ ^ 0xffffffff)) {
 			i_10_ = (i_9_ >> 66283169) + i;
 			i_11_ = i + (1 + i_9_ >> 1735661825);
@@ -59,7 +59,7 @@ final class Class237_Sub1 extends Class237
 		    }
 		    int i_12_;
 		    int i_13_;
-		    if (((Class237) this).anInt3114 < i_8_ + i_5_) {
+		    if (((MapLoader) this).maximumY < i_8_ + i_5_) {
 			i_12_ = i_5_ + 1;
 			i_13_ = i_5_;
 		    } else {
@@ -76,7 +76,7 @@ final class Class237_Sub1 extends Class237
 		    int i_15_ = (i << 1832206761) - -(i_9_ << 2012059304);
 		    int i_16_ = (i_8_ << -163621048) + (i_5_ << -1814777175);
 		    boolean bool = (Class348_Sub42_Sub3.aBoolean9498
-				    && !((Class237) this).aBoolean3109
+				    && !((MapLoader) this).aBoolean3109
 				    && ((ObjectDefinition) class51).aBoolean906);
 		    if (class51.method474((byte) 82))
 			Class223.method1614(979190089, null, i_0_, i_5_, i,
@@ -108,14 +108,14 @@ final class Class237_Sub1 extends Class237
 					= (new Class318_Sub1_Sub1_Sub1
 					   (var_ha, class51, i_0_, i_2_, i_15_,
 					    i_14_, i_16_,
-					    ((Class237) this).aBoolean3109,
+					    ((MapLoader) this).aBoolean3109,
 					    i_7_, i_6_));
 				else {
 				    Class318_Sub1_Sub1_Sub2 class318_sub1_sub1_sub2
 					= (new Class318_Sub1_Sub1_Sub2
 					   (var_ha, class51, i_0_, i_2_, i_15_,
 					    i_14_, i_16_,
-					    ((Class237) this).aBoolean3109,
+					    ((MapLoader) this).aBoolean3109,
 					    i_7_, bool));
 				    class318_sub1_sub1
 					= class318_sub1_sub1_sub2;
@@ -142,7 +142,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i,
+					((MapLoader) this).aBoolean3109, i,
 					i_9_ + (i + -1), i_5_,
 					-1 + (i_5_ + i_8_), i_4_, i_7_, i_6_));
 			    } else {
@@ -150,7 +150,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i,
+					((MapLoader) this).aBoolean3109, i,
 					i_9_ + (i + -1), i_5_,
 					-1 + (i_8_ + i_5_), i_4_, i_7_, bool));
 				class318_sub1_sub3
@@ -199,7 +199,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i,
+					((MapLoader) this).aBoolean3109, i,
 					i + (i_9_ - 1), i_5_,
 					i_5_ - (-i_8_ - -1), i_4_, i_7_,
 					i_6_));
@@ -208,7 +208,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i,
+					((MapLoader) this).aBoolean3109, i,
 					-1 + (i_9_ + i), i_5_,
 					-1 + i_5_ + i_8_, i_4_, i_7_, bool));
 				class318_sub1_sub3 = class318_sub1_sub3_sub1;
@@ -218,16 +218,16 @@ final class Class237_Sub1 extends Class237
 			    }
 			    Class89.method850(class318_sub1_sub3, false);
 			    if (Class348_Sub42_Sub3.aBoolean9498
-				&& !((Class237) this).aBoolean3109
+				&& !((MapLoader) this).aBoolean3109
 				&& (i_4_ ^ 0xffffffff) <= -13
 				&& (i_4_ ^ 0xffffffff) >= -18 && i_4_ != 13
 				&& i_0_ > 0
 				&& ((((ObjectDefinition) class51).anInt955 ^ 0xffffffff)
 				    != -1))
-				((Class237) this).aByteArrayArrayArray3108
+				((MapLoader) this).aByteArrayArrayArray3108
 				    [i_0_][i][i_5_]
-				    = (byte) (Class273.method2057
-					      ((((Class237) this)
+				    = (byte) (Class273.bitOr
+					      ((((MapLoader) this)
 						.aByteArrayArrayArray3108[i_0_]
 						[i][i_5_]),
 					       4));
@@ -252,14 +252,14 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, i_6_));
 			    else {
 				Class318_Sub1_Sub4_Sub1 class318_sub1_sub4_sub1
 				    = (new Class318_Sub1_Sub4_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, bool));
 				if (class318_sub1_sub4_sub1.method38(-18443))
 				    class318_sub1_sub4_sub1.method44(836,
@@ -276,7 +276,7 @@ final class Class237_Sub1 extends Class237
 				    var_s.ka(i, i_5_ - -1, 50);
 				}
 				if (i_22_ == 1
-				    && !((Class237) this).aBoolean3109)
+				    && !((MapLoader) this).aBoolean3109)
 				    Class239_Sub21.method1810
 					(i, ((ObjectDefinition) class51).anInt953,
 					 ((ObjectDefinition) class51).anInt909, i_5_,
@@ -288,7 +288,7 @@ final class Class237_Sub1 extends Class237
 				    var_s.ka(1 + i, 1 + i_5_, 50);
 				}
 				if ((i_22_ ^ 0xffffffff) == -2
-				    && !((Class237) this).aBoolean3109)
+				    && !((MapLoader) this).aBoolean3109)
 				    Class239_Sub21.method1810
 					(i, -((ObjectDefinition) class51).anInt953,
 					 ((ObjectDefinition) class51).anInt909,
@@ -301,7 +301,7 @@ final class Class237_Sub1 extends Class237
 					var_s.ka(1 + i, i_5_, 50);
 				    }
 				    if (i_22_ == 1
-					&& !((Class237) this).aBoolean3109)
+					&& !((MapLoader) this).aBoolean3109)
 					Class239_Sub21.method1810
 					    (i, ((ObjectDefinition) class51).anInt953,
 					     ((ObjectDefinition) class51).anInt909,
@@ -314,7 +314,7 @@ final class Class237_Sub1 extends Class237
 				    var_s.ka(1 + i, 1 + i_5_, 50);
 				}
 				if (i_22_ == 1
-				    && !((Class237) this).aBoolean3109)
+				    && !((MapLoader) this).aBoolean3109)
 				    Class239_Sub21.method1810
 					(1 + i, -((ObjectDefinition) class51).anInt953,
 					 ((ObjectDefinition) class51).anInt909, i_5_,
@@ -340,14 +340,14 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, i_6_));
 			    else {
 				Class318_Sub1_Sub4_Sub1 class318_sub1_sub4_sub1
 				    = (new Class318_Sub1_Sub4_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, bool));
 				if (class318_sub1_sub4_sub1.method38(-18443))
 				    class318_sub1_sub4_sub1.method44(836,
@@ -387,13 +387,13 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					4 + i_7_, bool));
 				Class318_Sub1_Sub4_Sub1 class318_sub1_sub4_sub1_25_
 				    = (new Class318_Sub1_Sub4_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_23_, bool));
 				if (class318_sub1_sub4_sub1.method38(-18443))
 				    class318_sub1_sub4_sub1.method44(836,
@@ -410,13 +410,13 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_ + 4, i_6_));
 				class318_sub1_sub4_24_
 				    = (new Class318_Sub1_Sub4_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_23_, i_6_));
 			    }
 			    FileRequest.method3254
@@ -426,7 +426,7 @@ final class Class237_Sub1 extends Class237
 				  == -2)
 				 || (Class348_Sub40_Sub10.aBoolean9184
 				     && ((ObjectDefinition) class51).anInt955 == -1))
-				&& !((Class237) this).aBoolean3109) {
+				&& !((MapLoader) this).aBoolean3109) {
 				if ((i_7_ ^ 0xffffffff) != -1) {
 				    if (i_7_ != 1) {
 					if ((i_7_ ^ 0xffffffff) != -3) {
@@ -499,7 +499,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, bool));
 				if (class318_sub1_sub4_sub1
 					.method38(i_3_ + -18493))
@@ -511,7 +511,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub4_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i_4_,
+					((MapLoader) this).aBoolean3109, i_4_,
 					i_7_, i_6_));
 			    FileRequest.method3254(i_0_, i, i_5_,
 							    class318_sub1_sub4,
@@ -544,7 +544,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i, i,
+					((MapLoader) this).aBoolean3109, i, i,
 					i_5_, i_5_, i_4_, i_7_, bool));
 				if (class318_sub1_sub3_sub1
 					.method38(i_3_ + -18493))
@@ -556,13 +556,13 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub3_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, i,
+					((MapLoader) this).aBoolean3109, i,
 					-1 + i + i_9_, i_5_, i_5_ + (i_8_ - 1),
 					i_4_, i_7_, i_6_));
 			    Class89.method850(class318_sub1_sub3, false);
 			    if (((((ObjectDefinition) class51).anInt955 ^ 0xffffffff)
 				 == -2)
-				&& !((Class237) this).aBoolean3109) {
+				&& !((MapLoader) this).aBoolean3109) {
 				int i_26_;
 				if ((i_7_ & 0x1) == 0)
 				    i_26_ = 8;
@@ -593,14 +593,14 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, i_7_, i_6_));
 			    else {
 				Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, i_7_));
 				if (class318_sub1_sub5_sub1.method38(-18443))
 				    class318_sub1_sub5_sub1
@@ -626,7 +626,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					i_27_ * Class148.anIntArray2039[i_7_],
 					(Class348_Sub40_Sub16.anIntArray9230
 					 [i_7_]) * i_27_,
@@ -640,7 +640,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					Class148.anIntArray2039[i_7_] * i_27_,
 					i_27_ * (Class348_Sub40_Sub16
 						 .anIntArray9230[i_7_]),
@@ -665,7 +665,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					i_28_ * Class148.anIntArray2039[i_7_],
 					(Class348_Sub40_Sub16.anIntArray9230
 					 [i_7_]) * i_28_,
@@ -679,7 +679,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					(OutputStream_Sub1.anIntArray99[i_7_]
 					 * i_28_),
 					i_28_ * Class273.anIntArray5165[i_7_],
@@ -694,14 +694,14 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, 4 + i_29_, i_6_));
 			    else {
 				Class318_Sub1_Sub5_Sub1 class318_sub1_sub5_sub1
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, 4 + i_29_));
 				if (class318_sub1_sub5_sub1
 					.method38(i_3_ ^ ~0x4838))
@@ -731,7 +731,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					i_31_ * (OutputStream_Sub1.anIntArray99
 						 [i_7_]),
 					i_31_ * Class273.anIntArray5165[i_7_],
@@ -740,7 +740,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub2
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, i_30_ + 4, i_6_));
 				class318_sub1_sub5_32_
 				    = class318_sub1_sub5_sub2;
@@ -751,7 +751,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109,
+					((MapLoader) this).aBoolean3109,
 					i_31_ * (OutputStream_Sub1.anIntArray99
 						 [i_7_]),
 					Class273.anIntArray5165[i_7_] * i_31_,
@@ -760,7 +760,7 @@ final class Class237_Sub1 extends Class237
 				    = (new Class318_Sub1_Sub5_Sub1
 				       (var_ha, class51, i_0_, i_2_, i_15_,
 					i_14_, i_16_,
-					((Class237) this).aBoolean3109, 0, 0,
+					((MapLoader) this).aBoolean3109, 0, 0,
 					i_4_, 4 + i_30_));
 				if (class318_sub1_sub5_sub1.method38(-18443))
 				    class318_sub1_sub5_sub1.method44(836,
@@ -827,7 +827,7 @@ final class Class237_Sub1 extends Class237
 	do {
 	    try {
 		anInt5818++;
-		if (!((Class237) this).aBoolean3109) {
+		if (!((MapLoader) this).aBoolean3109) {
 		    boolean bool = false;
 		    Class190 class190 = null;
 		    int i_41_ = -112 / ((-71 - i_40_) / 38);
@@ -848,10 +848,10 @@ final class Class237_Sub1 extends Class237
 				class190.method1423(8, class348_sub49);
 			    } else if (i_42_ != 128) {
 				if ((i_42_ ^ 0xffffffff) == -130) {
-				    if ((((Class237) this)
+				    if ((((MapLoader) this)
 					 .aByteArrayArrayArray3104)
 					== null)
-					((Class237) this)
+					((MapLoader) this)
 					    .aByteArrayArrayArray3104
 					    = new byte[4][][];
 				    for (int i_43_ = 0;
@@ -859,26 +859,26 @@ final class Class237_Sub1 extends Class237
 					byte i_44_
 					    = class348_sub49.getByte();
 					if (i_44_ != 0
-					    || (((Class237) this)
+					    || (((MapLoader) this)
 						.aByteArrayArrayArray3104
 						[i_43_]) == null) {
 					    if ((i_44_ ^ 0xffffffff) != -2) {
 						if (i_44_ == 2) {
-						    if ((((Class237) this)
+						    if ((((MapLoader) this)
 							 .aByteArrayArrayArray3104
 							 [i_43_])
 							== null)
-							((Class237) this)
+							((MapLoader) this)
 							    .aByteArrayArrayArray3104
 							    [i_43_]
 							    = (new byte
-							       [((((Class237)
+							       [((((MapLoader)
 								   this)
-								  .anInt3117)
+								  .maximumX)
 								 - -1)]
-							       [((((Class237)
+							       [((((MapLoader)
 								   this)
-								  .anInt3114)
+								  .maximumY)
 								 + 1)]);
 						    if ((i_43_ ^ 0xffffffff)
 							< -1) {
@@ -888,49 +888,49 @@ final class Class237_Sub1 extends Class237
 							if ((i_46_
 							     ^ 0xffffffff)
 							    <= -1) {
-							    if ((((Class237)
+							    if ((((MapLoader)
 								  this)
-								 .anInt3117)
+								 .maximumX)
 								<= i_46_)
 								i_46_
-								    = (((Class237)
+								    = (((MapLoader)
 									this)
-								       .anInt3117);
+								       .maximumX);
 							} else
 							    i_46_ = 0;
 							if (i_47_ < 0)
 							    i_47_ = 0;
-							else if ((((Class237)
+							else if ((((MapLoader)
 								   this)
-								  .anInt3114)
+								  .maximumY)
 								 <= i_47_)
 							    i_47_
-								= (((Class237)
+								= (((MapLoader)
 								    this)
-								   .anInt3114);
+								   .maximumY);
 							int i_48_ = 64 + i;
 							if (i_45_ >= 0) {
 							    if ((i_45_
 								 ^ 0xffffffff)
-								<= ((((Class237)
+								<= ((((MapLoader)
 								      this)
-								     .anInt3117)
+								     .maximumX)
 								    ^ 0xffffffff))
 								i_45_
-								    = (((Class237)
+								    = (((MapLoader)
 									this)
-								       .anInt3117);
+								       .maximumX);
 							} else
 							    i_45_ = 0;
 							if (i_48_ >= 0) {
 							    if (i_48_
-								>= (((Class237)
+								>= (((MapLoader)
 								     this)
-								    .anInt3114))
+								    .maximumY))
 								i_48_
-								    = (((Class237)
+								    = (((MapLoader)
 									this)
-								       .anInt3114);
+								       .maximumY);
 							} else
 							    i_48_ = 0;
 							for (/**/;
@@ -945,13 +945,13 @@ final class Class237_Sub1 extends Class237
 								  > (i_48_
 								     ^ 0xffffffff));
 								 i_47_++)
-								((Class237)
+								((MapLoader)
 								 this)
 								    .aByteArrayArrayArray3104
 								    [i_43_]
 								    [i_45_]
 								    [i_47_]
-								    = (((Class237)
+								    = (((MapLoader)
 									this)
 								       .aByteArrayArrayArray3104
 								       [(-1
@@ -962,20 +962,20 @@ final class Class237_Sub1 extends Class237
 						    }
 						}
 					    } else {
-						if ((((Class237) this)
+						if ((((MapLoader) this)
 						     .aByteArrayArrayArray3104
 						     [i_43_])
 						    == null)
-						    ((Class237) this)
+						    ((MapLoader) this)
 							.aByteArrayArrayArray3104
 							[i_43_]
 							= (new byte
-							   [1 + (((Class237)
+							   [1 + (((MapLoader)
 								  this)
-								 .anInt3117)]
-							   [1 + (((Class237)
+								 .maximumX)]
+							   [1 + (((MapLoader)
 								  this)
-								 .anInt3114)]);
+								 .maximumY)]);
 						for (int i_49_ = 0;
 						     ((i_49_ ^ 0xffffffff)
 						      > -65);
@@ -1008,16 +1008,16 @@ final class Class237_Sub1 extends Class237
 								if (i_52_ >= 0
 								    && ((i_52_
 									 ^ 0xffffffff)
-									> (((Class237)
-									    this).anInt3117
+									> (((MapLoader)
+									    this).maximumX
 									   ^ 0xffffffff))
 								    && (i_53_
 									>= 0)
 								    && (i_53_
-									< (((Class237)
+									< (((MapLoader)
 									    this)
-									   .anInt3114)))
-								    ((Class237)
+									   .maximumY)))
+								    ((MapLoader)
 								     this)
 									.aByteArrayArrayArray3104
 									[i_43_]
@@ -1036,41 +1036,41 @@ final class Class237_Sub1 extends Class237
 					    if ((i_56_ ^ 0xffffffff) > -1)
 						i_56_ = 0;
 					    else if ((i_56_ ^ 0xffffffff)
-						     <= ((((Class237) this)
-							  .anInt3114)
+						     <= ((((MapLoader) this)
+							  .maximumY)
 							 ^ 0xffffffff))
-						i_56_ = (((Class237) this)
-							 .anInt3114);
+						i_56_ = (((MapLoader) this)
+							 .maximumY);
 					    if (i_54_ >= 0) {
 						if ((i_54_ ^ 0xffffffff)
-						    <= ((((Class237) this)
-							 .anInt3117)
+						    <= ((((MapLoader) this)
+							 .maximumX)
 							^ 0xffffffff))
-						    i_54_ = (((Class237) this)
-							     .anInt3117);
+						    i_54_ = (((MapLoader) this)
+							     .maximumX);
 					    } else
 						i_54_ = 0;
 					    int i_57_ = i - -64;
 					    if (i_55_ < 0)
 						i_55_ = 0;
 					    else if (i_55_
-						     >= (((Class237) this)
-							 .anInt3117))
-						i_55_ = (((Class237) this)
-							 .anInt3117);
+						     >= (((MapLoader) this)
+							 .maximumX))
+						i_55_ = (((MapLoader) this)
+							 .maximumX);
 					    if ((i_57_ ^ 0xffffffff) > -1)
 						i_57_ = 0;
 					    else if ((i_57_ ^ 0xffffffff)
-						     <= ((((Class237) this)
-							  .anInt3114)
+						     <= ((((MapLoader) this)
+							  .maximumY)
 							 ^ 0xffffffff))
-						i_57_ = (((Class237) this)
-							 .anInt3114);
+						i_57_ = (((MapLoader) this)
+							 .maximumY);
 					    for (/**/; i_54_ < i_55_;
 						 i_54_++) {
 						for (/**/; i_57_ > i_56_;
 						     i_56_++)
-						    ((Class237) this)
+						    ((MapLoader) this)
 							.aByteArrayArrayArray3104
 							[i_43_][i_54_][i_56_]
 							= (byte) 0;
@@ -1125,14 +1125,14 @@ final class Class237_Sub1 extends Class237
 					int i_63_ = i_61_ >> 836557641;
 					if ((i_62_ ^ 0xffffffff) <= -1
 					    && (i_63_ ^ 0xffffffff) <= -1
-					    && (((Class237) this).anInt3117
+					    && (((MapLoader) this).maximumX
 						> i_62_)
-					    && (((Class237) this).anInt3114
+					    && (((MapLoader) this).maximumY
 						> i_63_)) {
 					    class348_sub1.method2725
 						(i_60_, (byte) 70, i_61_,
-						 ((((Class237) this)
-						   .anIntArrayArrayArray3122
+						 ((((MapLoader) this)
+						   .heightmap
 						   [(((Class211) class211)
 						     .anInt2731)]
 						   [i_62_][i_63_])
@@ -1153,11 +1153,11 @@ final class Class237_Sub1 extends Class237
 				int i_67_ = (i >> -1715812765) - -i_65_;
 				if (i_66_ >= 0
 				    && ((i_66_ ^ 0xffffffff)
-					> ((((Class237) this).anInt3117
+					> ((((MapLoader) this).maximumX
 					    >> -976492157)
 					   ^ 0xffffffff))
 				    && i_67_ >= 0
-				    && ((((Class237) this).anInt3114
+				    && ((((MapLoader) this).maximumY
 					 >> -2027336509)
 					^ 0xffffffff) < (i_67_ ^ 0xffffffff))
 				    Class5_Sub2.method192(class190, 10000,
@@ -1166,10 +1166,10 @@ final class Class237_Sub1 extends Class237
 			}
 		    }
 		    if (bool
-			|| ((Class237) this).aByteArrayArrayArray3104 == null)
+			|| ((MapLoader) this).aByteArrayArrayArray3104 == null)
 			break;
 		    for (int i_68_ = 0; i_68_ < 4; i_68_++) {
-			if (((Class237) this).aByteArrayArrayArray3104[i_68_]
+			if (((MapLoader) this).aByteArrayArrayArray3104[i_68_]
 			    != null) {
 			    for (int i_69_ = 0; (i_69_ ^ 0xffffffff) > -17;
 				 i_69_++) {
@@ -1181,7 +1181,7 @@ final class Class237_Sub1 extends Class237
 					&& (i_71_ ^ 0xffffffff) > -27
 					&& i_72_ >= 0
 					&& (i_72_ ^ 0xffffffff) > -27)
-					((Class237) this)
+					((MapLoader) this)
 					    .aByteArrayArrayArray3104[i_68_]
 					    [i_71_][i_72_]
 					    = (byte) 0;
@@ -1253,13 +1253,13 @@ final class Class237_Sub1 extends Class237
 							  i_84_ & 0x7, i_73_,
 							  (byte) 16);
 			if (i_90_ > 0 && i_91_ > 0
-			    && i_90_ < -1 + ((Class237) this).anInt3117
-			    && -1 + ((Class237) this).anInt3114 > i_91_) {
+			    && i_90_ < -1 + ((MapLoader) this).maximumX
+			    && -1 + ((MapLoader) this).maximumY > i_91_) {
 			    Class361 class361 = null;
-			    if (!((Class237) this).aBoolean3109) {
+			    if (!((MapLoader) this).aBoolean3109) {
 				int i_92_ = i_79_;
 				if ((0x2
-				     & (Class348_Sub33.aByteArrayArrayArray6962
+				     & (Class348_Sub33.settingFlags
 					[1][i_90_][i_91_]))
 				    == 2)
 				    i_92_--;
@@ -1378,12 +1378,12 @@ final class Class237_Sub1 extends Class237
 				if ((((ObjectDefinition) class51).anInt920
 				     ^ 0xffffffff) != -1
 				    && (((ObjectDefinition) class51).anInt961 + i_94_
-					< ((Class237) this).anInt3117)
+					< ((MapLoader) this).maximumX)
 				    && (i_95_ - -((ObjectDefinition) class51).anInt961
-					< ((Class237) this).anInt3114)
+					< ((MapLoader) this).maximumY)
 				    && (((ObjectDefinition) class51).anInt926 + i_94_
-					< ((Class237) this).anInt3117)
-				    && (((Class237) this).anInt3114
+					< ((MapLoader) this).maximumX)
+				    && (((MapLoader) this).maximumY
 					> (i_95_
 					   + ((ObjectDefinition) class51).anInt926)))
 				    class361.method3509
@@ -1455,14 +1455,14 @@ final class Class237_Sub1 extends Class237
 			int i_111_ = i_99_ + i_106_;
 			int i_112_ = i + i_105_;
 			if (i_111_ > 0 && (i_112_ ^ 0xffffffff) < -1
-			    && ((((Class237) this).anInt3117 - 1 ^ 0xffffffff)
+			    && ((((MapLoader) this).maximumX - 1 ^ 0xffffffff)
 				< (i_111_ ^ 0xffffffff))
-			    && i_112_ < ((Class237) this).anInt3114 - 1) {
+			    && i_112_ < ((MapLoader) this).maximumY - 1) {
 			    Class361 class361 = null;
-			    if (!((Class237) this).aBoolean3109) {
+			    if (!((MapLoader) this).aBoolean3109) {
 				int i_113_ = i_107_;
 				if ((0x2
-				     & (Class348_Sub33.aByteArrayArrayArray6962
+				     & (Class348_Sub33.settingFlags
 					[1][i_111_][i_112_]))
 				    == 2)
 				    i_113_--;
@@ -1486,9 +1486,8 @@ final class Class237_Sub1 extends Class237
 	}
     }
     
-    Class237_Sub1(int i, int i_114_, int i_115_, boolean bool) {
-	super(i, i_114_, i_115_, bool, Class229.aClass268_2979,
-	      Class362.aClass183_4460);
+    Class237_Sub1(int maxZ, int maxX, int maxY, boolean bool) {
+	super(maxZ, maxX, maxY, bool, Class229.aClass268_2979, Class362.aClass183_4460);
     }
     
     final void method1696(ByteBuffer class348_sub49, boolean bool, int i,
@@ -1497,7 +1496,7 @@ final class Class237_Sub1 extends Class237
 	do {
 	    try {
 		anInt5825++;
-		if (!((Class237) this).aBoolean3109) {
+		if (!((MapLoader) this).aBoolean3109) {
 		    boolean bool_122_ = bool;
 		    Class190 class190 = null;
 		    if (is != null)
@@ -1595,17 +1594,17 @@ final class Class237_Sub1 extends Class237
 						    && ((i_129_ ^ 0xffffffff)
 							<= -1)
 						    && (i_128_
-							< (((Class237) this)
-							   .anInt3117))
+							< (((MapLoader) this)
+							   .maximumX))
 						    && ((i_129_ ^ 0xffffffff)
-							> ((((Class237) this)
-							    .anInt3114)
+							> ((((MapLoader) this)
+							    .maximumY)
 							   ^ 0xffffffff))) {
 						    class348_sub1.method2725
 							(i_130_, (byte) 70,
 							 i_131_,
-							 ((((Class237) this)
-							   .anIntArrayArrayArray3122
+							 ((((MapLoader) this)
+							   .heightmap
 							   [i_121_][i_128_]
 							   [i_129_])
 							  - (class348_sub1
@@ -1635,15 +1634,15 @@ final class Class237_Sub1 extends Class237
 				    ((ByteBuffer) class348_sub49).position
 					+= 10;
 			    } else if (i_125_ == 129) {
-				if (((Class237) this).aByteArrayArrayArray3104
+				if (((MapLoader) this).aByteArrayArrayArray3104
 				    == null)
-				    ((Class237) this).aByteArrayArrayArray3104
+				    ((MapLoader) this).aByteArrayArrayArray3104
 					= new byte[4][][];
 				for (int i_132_ = 0; i_132_ < 4; i_132_++) {
 				    byte i_133_
 					= class348_sub49.getByte();
 				    if ((i_133_ ^ 0xffffffff) == -1
-					&& ((((Class237) this)
+					&& ((((MapLoader) this)
 					     .aByteArrayArrayArray3104[i_118_])
 					    != null)) {
 					if (i_121_ >= i_132_) {
@@ -1651,35 +1650,35 @@ final class Class237_Sub1 extends Class237
 					    int i_135_ = i_117_ - -7;
 					    int i_136_ = i_120_;
 					    if ((i_135_ ^ 0xffffffff) <= -1) {
-						if (((Class237) this).anInt3117
+						if (((MapLoader) this).maximumX
 						    <= i_135_)
-						    i_135_ = (((Class237) this)
-							      .anInt3117);
+						    i_135_ = (((MapLoader) this)
+							      .maximumX);
 					    } else
 						i_135_ = 0;
 					    if (i_134_ < 0)
 						i_134_ = 0;
-					    else if (((((Class237) this)
-						       .anInt3117)
+					    else if (((((MapLoader) this)
+						       .maximumX)
 						      ^ 0xffffffff)
 						     >= (i_134_ ^ 0xffffffff))
-						i_134_ = (((Class237) this)
-							  .anInt3117);
+						i_134_ = (((MapLoader) this)
+							  .maximumX);
 					    int i_137_ = i_120_ - -7;
 					    if ((i_136_ ^ 0xffffffff) > -1)
 						i_136_ = 0;
 					    else if ((i_136_ ^ 0xffffffff)
-						     <= ((((Class237) this)
-							  .anInt3114)
+						     <= ((((MapLoader) this)
+							  .maximumY)
 							 ^ 0xffffffff))
-						i_136_ = (((Class237) this)
-							  .anInt3114);
+						i_136_ = (((MapLoader) this)
+							  .maximumY);
 					    if ((i_137_ ^ 0xffffffff) <= -1) {
 						if (i_137_
-						    >= (((Class237) this)
-							.anInt3114))
-						    i_137_ = (((Class237) this)
-							      .anInt3114);
+						    >= (((MapLoader) this)
+							.maximumY))
+						    i_137_ = (((MapLoader) this)
+							      .maximumY);
 					    } else
 						i_137_ = 0;
 					    for (/**/;
@@ -1688,7 +1687,7 @@ final class Class237_Sub1 extends Class237
 						 i_134_++) {
 						for (/**/; i_136_ < i_137_;
 						     i_136_++)
-						    ((Class237) this)
+						    ((MapLoader) this)
 							.aByteArrayArrayArray3104
 							[i_118_][i_134_]
 							[i_136_]
@@ -1696,17 +1695,17 @@ final class Class237_Sub1 extends Class237
 					    }
 					}
 				    } else if ((i_133_ ^ 0xffffffff) == -2) {
-					if ((((Class237) this)
+					if ((((MapLoader) this)
 					     .aByteArrayArrayArray3104[i_118_])
 					    == null)
-					    ((Class237) this)
+					    ((MapLoader) this)
 						.aByteArrayArrayArray3104
 						[i_118_]
 						= (new byte
-						   [(((Class237) this)
-						     .anInt3117) + 1]
-						   [1 + (((Class237) this)
-							 .anInt3114)]);
+						   [(((MapLoader) this)
+						     .maximumX) + 1]
+						   [1 + (((MapLoader) this)
+							 .maximumY)]);
 					for (int i_138_ = 0;
 					     (i_138_ ^ 0xffffffff) > -65;
 					     i_138_ += 4) {
@@ -1764,17 +1763,17 @@ final class Class237_Sub1 extends Class237
 								if (i_143_ >= 0
 								    && ((i_143_
 									 ^ 0xffffffff)
-									> (((Class237)
-									    this).anInt3117
+									> (((MapLoader)
+									    this).maximumX
 									   ^ 0xffffffff))
 								    && ((i_144_
 									 ^ 0xffffffff)
 									<= -1)
-								    && ((((Class237)
+								    && ((((MapLoader)
 									  this)
-									 .anInt3114)
+									 .maximumY)
 									> i_144_))
-								    ((Class237)
+								    ((MapLoader)
 								     this)
 									.aByteArrayArrayArray3104
 									[i_118_]
@@ -1799,8 +1798,8 @@ final class Class237_Sub1 extends Class237
 					      i_117_ >> -1830399805,
 					      i_120_ >> 1365636387);
 		    if (bool_122_
-			|| ((Class237) this).aByteArrayArrayArray3104 == null
-			|| (((Class237) this).aByteArrayArrayArray3104[i_118_]
+			|| ((MapLoader) this).aByteArrayArrayArray3104 == null
+			|| (((MapLoader) this).aByteArrayArrayArray3104[i_118_]
 			    == null))
 			break;
 		    int i_145_ = 7 + i_117_;
@@ -1809,7 +1808,7 @@ final class Class237_Sub1 extends Class237
 			 (i_147_ ^ 0xffffffff) > (i_145_ ^ 0xffffffff);
 			 i_147_++) {
 			for (int i_148_ = i_120_; i_148_ < i_146_; i_148_++)
-			    ((Class237) this).aByteArrayArrayArray3104
+			    ((MapLoader) this).aByteArrayArrayArray3104
 				[i_118_][i_147_][i_148_]
 				= (byte) 0;
 		    }
@@ -1834,12 +1833,12 @@ final class Class237_Sub1 extends Class237
 	    Class342.method2686();
 	    anInt5816++;
 	    if (!bool) {
-		if ((((Class237) this).anInt3130 ^ 0xffffffff) < -2) {
-		    for (int i_149_ = 0; ((Class237) this).anInt3117 > i_149_;
+		if ((((MapLoader) this).maximumZ ^ 0xffffffff) < -2) {
+		    for (int i_149_ = 0; ((MapLoader) this).maximumX > i_149_;
 			 i_149_++) {
 			for (int i_150_ = 0;
-			     ((Class237) this).anInt3114 > i_150_; i_150_++) {
-			    if ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962
+			     ((MapLoader) this).maximumY > i_150_; i_150_++) {
+			    if ((0x2 & (Class348_Sub33.settingFlags
 					[1][i_149_][i_150_]))
 				== 2)
 				Class16.method258(i_149_, i_150_);
@@ -1848,15 +1847,15 @@ final class Class237_Sub1 extends Class237
 		}
 		for (int i_151_ = 0;
 		     ((i_151_ ^ 0xffffffff)
-		      > (((Class237) this).anInt3130 ^ 0xffffffff));
+		      > (((MapLoader) this).maximumZ ^ 0xffffffff));
 		     i_151_++) {
-		    for (int i_152_ = 0; ((Class237) this).anInt3114 >= i_152_;
+		    for (int i_152_ = 0; ((MapLoader) this).maximumY >= i_152_;
 			 i_152_++) {
 			for (int i_153_ = 0;
 			     ((i_153_ ^ 0xffffffff)
-			      >= (((Class237) this).anInt3117 ^ 0xffffffff));
+			      >= (((MapLoader) this).maximumX ^ 0xffffffff));
 			     i_153_++) {
-			    if ((0x4 & (((Class237) this)
+			    if ((0x4 & (((MapLoader) this)
 					.aByteArrayArrayArray3108[i_151_]
 					[i_153_][i_152_])
 				 ^ 0xffffffff)
@@ -1867,7 +1866,7 @@ final class Class237_Sub1 extends Class237
 				int i_157_ = i_152_;
 				for (/**/;
 				     (i_156_ > 0
-				      && ((((Class237) this)
+				      && ((((MapLoader) this)
 					   .aByteArrayArrayArray3108[i_151_]
 					   [i_153_][-1 + i_156_]) & 0x4
 					  ^ 0xffffffff) != -1);
@@ -1876,9 +1875,9 @@ final class Class237_Sub1 extends Class237
 					break;
 				}
 				for (/**/;
-				     (((Class237) this).anInt3114 > i_157_
+				     (((MapLoader) this).maximumY > i_157_
 				      && (0x4
-					  & (((Class237) this)
+					  & (((MapLoader) this)
 					     .aByteArrayArrayArray3108[i_151_]
 					     [i_153_][i_157_ + 1])) != 0);
 				     i_157_++) {
@@ -1894,7 +1893,7 @@ final class Class237_Sub1 extends Class237
 					 ((i_157_ ^ 0xffffffff)
 					  <= (i_158_ ^ 0xffffffff));
 					 i_158_++) {
-					if (((((Class237) this)
+					if (((((MapLoader) this)
 					      .aByteArrayArrayArray3108[i_151_]
 					      [-1 + i_154_][i_158_]) & 0x4
 					     ^ 0xffffffff)
@@ -1904,14 +1903,14 @@ final class Class237_Sub1 extends Class237
 				}
 			    while_79_:
 				for (/**/;
-				     (i_155_ < ((Class237) this).anInt3117
+				     (i_155_ < ((MapLoader) this).maximumX
 				      && -i_154_ + i_155_ < 10);
 				     i_155_++) {
 				    for (int i_159_ = i_156_;
 					 ((i_159_ ^ 0xffffffff)
 					  >= (i_157_ ^ 0xffffffff));
 					 i_159_++) {
-					if (((((Class237) this)
+					if (((((MapLoader) this)
 					      .aByteArrayArrayArray3108[i_151_]
 					      [i_155_ + 1][i_159_])
 					     & 0x4)
@@ -1922,8 +1921,8 @@ final class Class237_Sub1 extends Class237
 				if (((1 + (-i_156_ + i_157_))
 				     * (i_155_ + (-i_154_ + 1)))
 				    >= 4) {
-				    int i_160_ = (((Class237) this)
-						  .anIntArrayArrayArray3122
+				    int i_160_ = (((MapLoader) this)
+						  .heightmap
 						  [i_151_][i_154_][i_156_]);
 				    Class258_Sub3.method1966
 					(512 + (i_155_ << -20246743), i_160_,
@@ -1938,11 +1937,11 @@ final class Class237_Sub1 extends Class237
 					     ((i_162_ ^ 0xffffffff)
 					      >= (i_157_ ^ 0xffffffff));
 					     i_162_++)
-					    ((Class237) this)
+					    ((MapLoader) this)
 						.aByteArrayArrayArray3108
 						[i_151_][i_161_][i_162_]
-						= (byte) (Class139.method1166
-							  ((((Class237) this)
+						= (byte) (Class139.bitAnd
+							  ((((MapLoader) this)
 							    .aByteArrayArrayArray3108
 							    [i_151_][i_161_]
 							    [i_162_]),
@@ -1956,7 +1955,7 @@ final class Class237_Sub1 extends Class237
 		Class328_Sub3.method2616(12);
 	    }
 	    if (i < -6)
-		((Class237) this).aByteArrayArrayArray3108 = null;
+		((MapLoader) this).aByteArrayArrayArray3108 = null;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("vaa.T(" + bool + ','

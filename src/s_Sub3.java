@@ -1065,7 +1065,7 @@ final class s_Sub3 extends s
 	    }
 	    if (bool)
 		aByteArrayArray8317[i][i_167_]
-		    = (byte) Class273.method2057((aByteArrayArray8317[i]
+		    = (byte) Class273.bitOr((aByteArrayArray8317[i]
 						  [i_167_]),
 						 1);
 	    if ((anInt8331 ^ 0xffffffff) > (is_171_.length ^ 0xffffffff))

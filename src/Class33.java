@@ -21,7 +21,7 @@ final class Class33
 	if (class117 != null)
 	    return class117;
 	byte[] is
-	    = aClass45_458.getArchiveChild(Class5_Sub3.method200(-107, i),
+	    = aClass45_458.getChildArchive(Class5_Sub3.method200(-107, i),
 				     AbstractImageFetcher.method3013(i, bool));
 	class117 = new Class117();
 	if (is != null)
@@ -103,7 +103,7 @@ final class Class33
 		if (aClass45_458 == null)
 		    break;
 		int i_6_ = -1 + aClass45_458.getAmountChildren();
-		aClass45_458.method407(i_6_);
+		aClass45_458.getAmountChildEntries(i_6_);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("iba.<init>("

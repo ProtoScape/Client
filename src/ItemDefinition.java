@@ -635,7 +635,7 @@ final class ItemDefinition
 	    for (int i_52_ = 0;
 		 (is.length ^ 0xffffffff) < (i_52_ ^ 0xffffffff); i_52_++) {
 		if ((0xffffff & is[i_52_] ^ 0xffffffff) != -1)
-		    is[i_52_] = Class273.method2057(is[i_52_], -16777216);
+		    is[i_52_] = Class273.bitOr(is[i_52_], -16777216);
 		else
 		    is[i_52_] = 0;
 	    }

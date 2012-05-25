@@ -27,14 +27,14 @@ final class Class211
     static final boolean method1538(int i, byte i_0_,
 				    GameBuffer class348_sub49_sub2) {
 	anInt2732++;
-	int i_1_ = class348_sub49_sub2.method3410((byte) -24, 2);
+	int i_1_ = class348_sub49_sub2.getBits(2);
 	if ((i_1_ ^ 0xffffffff) == -1) {
-	    if (class348_sub49_sub2.method3410((byte) -24, 1) != 0)
+	    if (class348_sub49_sub2.getBits(1) != 0)
 		method1538(i, (byte) 105, class348_sub49_sub2);
-	    int i_2_ = class348_sub49_sub2.method3410((byte) -24, 6);
-	    int i_3_ = class348_sub49_sub2.method3410((byte) -24, 6);
+	    int i_2_ = class348_sub49_sub2.getBits(6);
+	    int i_3_ = class348_sub49_sub2.getBits(6);
 	    boolean bool
-		= ((class348_sub49_sub2.method3410((byte) -24, 1) ^ 0xffffffff)
+		= ((class348_sub49_sub2.getBits(1) ^ 0xffffffff)
 		   == -2);
 	    if (bool)
 		Class18.anIntArray279[Class101_Sub3.anInt5768++] = i;
@@ -59,11 +59,11 @@ final class Class211
 	    int i_5_ = i_4_ >> 1728102396;
 	    int i_6_ = (0x3fcd8e & i_4_) >> 2011097998;
 	    int i_7_ = 0xff & i_4_;
-	    int i_8_ = -za_Sub2.anInt9780 + i_2_ + (i_6_ << -895287706);
+	    int i_8_ = -za_Sub2.baseRegionX + i_2_ + (i_6_ << -895287706);
 	    ((Player) class318_sub1_sub3_sub3_sub2)
 		.aBoolean10554
 		= ((Class359) class359).aBoolean4426;
-	    int i_9_ = -Class90.anInt1517 + i_3_ + (i_7_ << 501837894);
+	    int i_9_ = -Class90.baseRegionY + i_3_ + (i_7_ << 501837894);
 	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 		.aByteArray10321[0]
 		= IntegerVarScriptSettingLoader.aByteArray3300[i];
@@ -72,7 +72,7 @@ final class Class211
 		= (byte) i_5_;
 	    if (NpcDefinition.method802(i_9_, i_8_, true))
 		((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376++;
-	    class318_sub1_sub3_sub3_sub2.method2449(i_9_, i_8_, (byte) 102);
+	    class318_sub1_sub3_sub3_sub2.setLocationUnkn(i_9_, i_8_);
 	    ((Player) class318_sub1_sub3_sub3_sub2)
 		.aBoolean10539
 		= false;
@@ -80,7 +80,7 @@ final class Class211
 	    return true;
 	}
 	if ((i_1_ ^ 0xffffffff) == -2) {
-	    int i_10_ = class348_sub49_sub2.method3410((byte) -24, 2);
+	    int i_10_ = class348_sub49_sub2.getBits(2);
 	    int i_11_
 		= ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420;
 	    ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420
@@ -89,7 +89,7 @@ final class Class211
 	    return false;
 	}
 	if (i_1_ == 2) {
-	    int i_12_ = class348_sub49_sub2.method3410((byte) -24, 5);
+	    int i_12_ = class348_sub49_sub2.getBits(5);
 	    int i_13_ = i_12_ >> -135563069;
 	    int i_14_ = 0x7 & i_12_;
 	    int i_15_
@@ -125,7 +125,7 @@ final class Class211
 		= i_18_ + ((i_16_ << 165004252) + (i_17_ << 706528398));
 	    return false;
 	}
-	int i_19_ = class348_sub49_sub2.method3410((byte) -24, 18);
+	int i_19_ = class348_sub49_sub2.getBits(18);
 	int i_20_ = i_19_ >> 672217744;
 	int i_21_ = 0xff & i_19_ >> 618722952;
 	int i_22_ = 0xff & i_19_;
@@ -454,7 +454,7 @@ final class Class211
 		if (-i_50_ + i_47_ < i_51_)
 		    i_51_ = i_47_ - i_50_;
 		((Class211) this).aShortArray2742[i_48_]
-		    = (short) Class273.method2057(i_51_, i_50_ << 775681064);
+		    = (short) Class273.bitOr(i_51_, i_50_ << 775681064);
 	    }
 	    i_46_ = ((i_46_ << Class362.anInt4459)
 		     + Class348_Sub23_Sub2.anInt9037);

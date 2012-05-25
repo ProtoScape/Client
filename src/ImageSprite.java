@@ -31,7 +31,7 @@ final class ImageSprite
 		i_0_ = ((ImageSprite) this).colors.length;
 		int[] is
 		    = new int[((ImageSprite) this).colors.length + 1];
-		Class214.intArrayCopy(((ImageSprite) this).colors, 0, is, 0, ((ImageSprite) this).colors.length);
+		ArrayUtils.arrayCopy(((ImageSprite) this).colors, 0, is, 0, ((ImageSprite) this).colors.length);
 		((ImageSprite) this).colors = is;
 		is[i_0_] = color;
 	    }
@@ -200,7 +200,7 @@ final class ImageSprite
 	    if (index == -1) {
 		index = ((ImageSprite) this).colors.length;
 		int[] is = new int[((ImageSprite) this).colors.length + 1];
-		Class214.intArrayCopy(((ImageSprite) this).colors, 0, is, 0, ((ImageSprite) this).colors.length);
+		ArrayUtils.arrayCopy(((ImageSprite) this).colors, 0, is, 0, ((ImageSprite) this).colors.length);
 		((ImageSprite) this).colors = is;
 		is[index] = color;
 	    }
@@ -408,7 +408,7 @@ final class ImageSprite
     }
     
     static final ImageSprite[] loadSprites(IndexLoader class45, int i, int i_105_) {
-	byte[] is = class45.getArchiveChild(i, i_105_);
+	byte[] is = class45.getChildArchive(i, i_105_);
 	if (is == null)
 	    return null;
 	return unpack(is);
@@ -461,7 +461,7 @@ final class ImageSprite
     }
     
     static final ImageSprite getSprite(IndexLoader class45, int i, int i_112_) {
-	byte[] is = class45.getArchiveChild(i, i_112_);
+	byte[] is = class45.getChildArchive(i, i_112_);
 	if (is == null)
 	    return null;
 	return unpack(is)[0];

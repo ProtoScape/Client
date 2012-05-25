@@ -14,10 +14,10 @@ final class Class139
     static int anInt1955;
     
     static final void method1165(int i) {
-	Class299.gameBuffer.method3417(i ^ ~0x79);
+	Class299.gameBuffer.initiateBitAccess(i ^ ~0x79);
 	anInt1950++;
 	int i_0_
-	    = Class299.gameBuffer.method3410((byte) -24, 8);
+	    = Class299.gameBuffer.getBits(8);
 	if (i == 1) {
 	    if ((Class150.anInt2057 ^ 0xffffffff) < (i_0_ ^ 0xffffffff)) {
 		for (int i_1_ = i_0_; Class150.anInt2057 > i_1_; i_1_++)
@@ -35,8 +35,7 @@ final class Class139
 			Class282.aClass356_3654.get((long) i_3_))
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 		int i_4_
-		    = Class299.gameBuffer.method3410((byte) -24,
-								    1);
+		    = Class299.gameBuffer.getBits(1);
 		if ((i_4_ ^ 0xffffffff) == -1) {
 		    EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
 		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
@@ -44,7 +43,7 @@ final class Class139
 			= Class348_Sub23_Sub3.anInt9041;
 		} else {
 		    int i_5_ = Class299.gameBuffer
-				   .method3410((byte) -24, 2);
+				   .getBits(2);
 		    if (i_5_ == 0) {
 			EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
 			((Class318_Sub1_Sub3_Sub3)
@@ -57,10 +56,10 @@ final class Class139
 			 class318_sub1_sub3_sub3_sub1).anInt10306
 			    = Class348_Sub23_Sub3.anInt9041;
 			int i_6_ = Class299.gameBuffer
-				       .method3410((byte) -24, 3);
+				       .getBits(3);
 			class318_sub1_sub3_sub3_sub1.method2443(i_6_, 1, -10);
 			int i_7_ = Class299.gameBuffer
-				       .method3410((byte) -24, 1);
+				       .getBits(1);
 			if (i_7_ == 1)
 			    Class13.anIntArray224[Class101.anInt1597++] = i_3_;
 		    } else if (i_5_ == 2) {
@@ -69,24 +68,24 @@ final class Class139
 			 class318_sub1_sub3_sub3_sub1).anInt10306
 			    = Class348_Sub23_Sub3.anInt9041;
 			if (Class299.gameBuffer
-				.method3410((byte) -24, 1)
+				.getBits(1)
 			    != 1) {
 			    int i_8_ = Class299.gameBuffer
-					   .method3410((byte) -24, 3);
+					   .getBits(3);
 			    class318_sub1_sub3_sub3_sub1.method2443(i_8_, 0,
 								    i + -11);
 			} else {
 			    int i_9_ = Class299.gameBuffer
-					   .method3410((byte) -24, 3);
+					   .getBits(3);
 			    class318_sub1_sub3_sub3_sub1.method2443(i_9_, 2,
 								    -10);
 			    int i_10_ = Class299.gameBuffer
-					    .method3410((byte) -24, 3);
+					    .getBits(3);
 			    class318_sub1_sub3_sub3_sub1.method2443(i_10_, 2,
 								    -10);
 			}
 			int i_11_ = Class299.gameBuffer
-					.method3410((byte) -24, 1);
+					.getBits(1);
 			if (i_11_ == 1)
 			    Class13.anIntArray224[Class101.anInt1597++] = i_3_;
 		    } else if (i_5_ == 3)
@@ -97,7 +96,7 @@ final class Class139
 	}
     }
     
-    static int method1166(int i, int i_12_) {
+    static int bitAnd(int i, int i_12_) {
 	return i & i_12_;
     }
     

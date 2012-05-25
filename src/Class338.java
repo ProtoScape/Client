@@ -20,7 +20,7 @@ final class Class338
     short[] aShortArray4194;
     static int anInt4195;
     static int[] anIntArray4196 = new int[5];
-    static Class237_Sub1 aClass237_Sub1_4197;
+    static Class237_Sub1 mMapLoader;
     
     static final Class348_Sub41 method2661(int i, int i_0_, int i_1_,
 					   boolean bool, int i_2_) {
@@ -51,7 +51,7 @@ final class Class338
     }
     
     public static void method2662(int i) {
-	aClass237_Sub1_4197 = null;
+	mMapLoader = null;
 	anIntArray4196 = null;
 	if (i != 4)
 	    method2663(91, -57, -85, 14, 6);

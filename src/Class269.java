@@ -54,8 +54,7 @@ final class Class269
 		Deque.anObject3331
 		    = Class179.getDirectByteBuffer(is);
 	    }
-	    byte[] is = Class50_Sub1.getVariableBufferArray(false, Deque.anObject3331,
-					       53146732);
+	    byte[] is = Class50_Sub1.getByteArray(Deque.anObject3331);
 	    byte[] is_0_ = new byte[4 * is.length];
 	    int i_1_ = 0;
 	    for (int i_2_ = 0; i_2_ < 16; i_2_++) {
@@ -140,14 +139,12 @@ final class Class269
 		}
 	    } else {
 		byte[] is
-		    = Class50_Sub1.getVariableBufferArray(false, Class355.anObject4366,
-					     53146732);
+		    = Class50_Sub1.getByteArray(Class355.anObject4366);
 		((Class269) this).anInterface18_Impl1_3452
 		    = aHa_Sub3_3457.method3872(16, 128,
 					       Class191.aClass304_2571, true,
 					       128, is);
-		is = Class50_Sub1.getVariableBufferArray(false, Class227.anObject2969,
-					    53146732);
+		is = Class50_Sub1.getByteArray(Class227.anObject2969);
 		aHa_Sub3_3457.method3872(16, 128, Class191.aClass304_2571,
 					 true, 128, is);
 	    }

@@ -53,7 +53,7 @@ final class GfxLoader
 	    return class368;
 	byte[] is;
 	synchronized (indexLoader) {
-	    is = indexLoader.getArchiveChild(Class318_Sub1_Sub3_Sub1
+	    is = indexLoader.getChildArchive(Class318_Sub1_Sub3_Sub1
 					     .method2419((byte) 127, i_1_),
 					 Class348_Sub1_Sub2.method2729(i_1_,
 								       16));
@@ -103,7 +103,7 @@ final class GfxLoader
 	    ((GfxLoader) this).aClass45_3981 = class45_3_;
 	    indexLoader = class45;
 	    int i_4_ = -1 + indexLoader.getAmountChildren();
-	    indexLoader.method407(i_4_);
+	    indexLoader.getAmountChildEntries(i_4_);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929
 		      (runtimeexception,

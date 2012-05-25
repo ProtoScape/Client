@@ -30,8 +30,8 @@ final class Class289
 	    = (((((Class318_Sub1) Class132.localPlayer)
 		 .anInt6377)
 		>> 768205065)
-	       - -za_Sub2.anInt9780);
-	int i_1_ = (Class90.anInt1517
+	       - -za_Sub2.baseRegionX);
+	int i_1_ = (Class90.baseRegionY
 		    + (((Class318_Sub1)
 			Class132.localPlayer).anInt6388
 		       >> -571249271));

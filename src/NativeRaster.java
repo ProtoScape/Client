@@ -443,11 +443,11 @@ final class NativeRaster extends RasterToolkit
 		int i_81_ = i_80_ * anInt8411;
 		for (int i_82_ = 0; i_82_ < anInt8411; i_82_++)
 		    is_79_[i_81_ + i_82_]
-			= (Class273.method2057
-			   ((Class139.method1166(1828651008,
+			= (Class273.bitOr
+			   ((Class139.bitAnd(1828651008,
 						 is[i_81_ - -i_82_])
 			     << 1430274504),
-			    Class139.method1166(is_79_[i_81_ - -i_82_],
+			    Class139.bitAnd(is_79_[i_81_ - -i_82_],
 						16777215)));
 	    }
 	} else if (i_78_ == 1) {
@@ -456,10 +456,10 @@ final class NativeRaster extends RasterToolkit
 		int i_84_ = i_83_ * anInt8411;
 		for (int i_85_ = 0; anInt8411 > i_85_; i_85_++)
 		    is_79_[i_85_ + i_84_]
-			= (Class273.method2057
-			   (Class139.method1166(is_79_[i_85_ + i_84_],
+			= (Class273.bitOr
+			   (Class139.bitAnd(is_79_[i_85_ + i_84_],
 						16777215),
-			    (Class139.method1166(is[i_84_ - -i_85_], 743571200)
+			    (Class139.bitAnd(is[i_84_ - -i_85_], 743571200)
 			     << -86836496)));
 	    }
 	} else if ((i_78_ ^ 0xffffffff) != -3) {
@@ -470,9 +470,9 @@ final class NativeRaster extends RasterToolkit
 		    int i_87_ = i_86_ * anInt8411;
 		    for (int i_88_ = 0; i_88_ < anInt8411; i_88_++)
 			is_79_[i_88_ + i_87_]
-			    = (Class273.method2057
+			    = (Class273.bitOr
 			       (is[i_88_ + i_87_] != 0 ? -16777216 : 0,
-				Class139.method1166(16777215,
+				Class139.bitAnd(16777215,
 						    is_79_[i_88_ + i_87_])));
 		}
 	    }
@@ -482,10 +482,10 @@ final class NativeRaster extends RasterToolkit
 		for (int i_91_ = 0;
 		     (anInt8411 ^ 0xffffffff) < (i_91_ ^ 0xffffffff); i_91_++)
 		    is_79_[i_90_ + i_91_]
-			= (Class273.method2057
-			   (Class139.method1166(is_79_[i_90_ + i_91_],
+			= (Class273.bitOr
+			   (Class139.bitAnd(is_79_[i_90_ + i_91_],
 						16777215),
-			    Class139.method1166(-3725444, (is[i_91_ + i_90_]
+			    Class139.bitAnd(-3725444, (is[i_91_ + i_90_]
 							   << -903347560))));
 	    }
 	}
@@ -598,7 +598,7 @@ final class NativeRaster extends RasterToolkit
 	int[] is = aHa_Sub3_8407.na(i_110_, i_111_, i_108_, i_109_);
 	if (is != null) {
 	    for (int i_112_ = 0; i_112_ < is.length; i_112_++)
-		is[i_112_] = Class273.method2057(is[i_112_], -16777216);
+		is[i_112_] = Class273.bitOr(is[i_112_], -16777216);
 	    method986(i, i_107_, i_108_, i_109_, is, 0, i_108_);
 	}
     }

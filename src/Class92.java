@@ -36,13 +36,13 @@ final class Class92
     
     static final void method859(int i) {
 	anInt1527++;
-	int i_0_ = StringNode.aByteArrayArray7212.length;
+	int i_0_ = StringNode.nArchiveSrcs.length;
 	if (i < -125) {
 	    for (int i_1_ = 0; i_0_ > i_1_; i_1_++) {
-		if (StringNode.aByteArrayArray7212[i_1_] != null) {
+		if (StringNode.nArchiveSrcs[i_1_] != null) {
 		    int i_2_ = -1;
 		    for (int i_3_ = 0; i_3_ < Class27.anInt388; i_3_++) {
-			if ((Class348_Sub23_Sub3.anIntArray9042[i_1_]
+			if ((Class348_Sub23_Sub3.regionHashes[i_1_]
 			     ^ 0xffffffff)
 			    == (Class342.anIntArray4250[i_3_] ^ 0xffffffff)) {
 			    i_2_ = i_3_;
@@ -51,14 +51,14 @@ final class Class92
 		    }
 		    if ((i_2_ ^ 0xffffffff) == 0) {
 			Class342.anIntArray4250[Class27.anInt388]
-			    = Class348_Sub23_Sub3.anIntArray9042[i_1_];
+			    = Class348_Sub23_Sub3.regionHashes[i_1_];
 			i_2_ = Class27.anInt388++;
 		    }
 		    ByteBuffer class348_sub49
-			= new ByteBuffer(StringNode.aByteArrayArray7212
+			= new ByteBuffer(StringNode.nArchiveSrcs
 					     [i_1_]);
 		    int i_4_ = 0;
-		    while ((StringNode.aByteArrayArray7212[i_1_].length
+		    while ((StringNode.nArchiveSrcs[i_1_].length
 			    ^ 0xffffffff)
 			   < (((ByteBuffer) class348_sub49).position
 			      ^ 0xffffffff)) {
@@ -72,12 +72,12 @@ final class Class92
 			int i_9_ = i_6_ & 0x3f;
 			int i_10_
 			    = (i_8_
-			       + (-za_Sub2.anInt9780
-				  + (Class348_Sub23_Sub3.anIntArray9042[i_1_]
+			       + (-za_Sub2.baseRegionX
+				  + (Class348_Sub23_Sub3.regionHashes[i_1_]
 				     >> -1716641816) * 64));
-			int i_11_ = (-Class90.anInt1517
+			int i_11_ = (-Class90.baseRegionY
 				     + (64 * (0xff & (Class348_Sub23_Sub3
-						      .anIntArray9042[i_1_]))
+						      .regionHashes[i_1_]))
 					- -i_9_));
 			NpcDefinition class79
 			    = (Class189.npcLoader.getNpcDefinition
@@ -91,11 +91,11 @@ final class Class92
 			    && (i_10_ ^ 0xffffffff) <= -1
 			    && ((i_10_ - -((NpcDefinition) class79).anInt1399
 				 ^ 0xffffffff)
-				> (Class367_Sub4.anInt7319 ^ 0xffffffff))
+				> (Class367_Sub4.mapSizeX ^ 0xffffffff))
 			    && i_11_ >= 0
 			    && ((i_11_ + ((NpcDefinition) class79).anInt1399
 				 ^ 0xffffffff)
-				> (Class348_Sub40_Sub3.anInt9109
+				> (Class348_Sub40_Sub3.mapSizeY
 				   ^ 0xffffffff))) {
 			    Npc class318_sub1_sub3_sub3_sub1
 				= new Npc();

@@ -48,9 +48,9 @@ final class GameBuffer extends ByteBuffer
 	for (int i_2_ = 0; Class348_Sub1.anIntArray6547.length > i_2_;
 	     i_2_++) {
 	    int i_3_ = Class348_Sub1.anIntArray6547[i_2_];
-	    if (Class39.spriteIndexLoader.getArchiveLoaded(false, i_3_))
+	    if (Class39.spriteIndexLoader.getArchiveLoaded(i_3_))
 		i_1_++;
-	    if (s.fontIndexLoader.getArchiveLoaded(false, i_3_))
+	    if (s.fontIndexLoader.getArchiveLoaded(i_3_))
 		i_1_++;
 	}
 	return i_1_;
@@ -88,9 +88,7 @@ final class GameBuffer extends ByteBuffer
 	
     }
     
-    final int method3410(byte i, int i_9_) {
-	if (i != -24)
-	    return -126;
+    final int getBits(int i_9_) {
 	anInt9763++;
 	int i_10_ = anInt9754 >> -1710832093;
 	int i_11_ = 8 + -(anInt9754 & 0x7);
@@ -168,7 +166,7 @@ final class GameBuffer extends ByteBuffer
 	super(i);
     }
     
-    final void method3417(int i) {
+    final void initiateBitAccess(int i) {
 	int i_24_ = -126 / ((-15 - i) / 49);
 	anInt9767++;
 	anInt9754 = 8 * ((ByteBuffer) this).position;

@@ -22,7 +22,7 @@ final class Class50_Sub2 extends Class50
 	if (i_1_ > -98)
 	    isQuickchat = false;
 	int i_5_ = i_0_ * anInt5230 >> 864282732;
-	VarbitHandler.method1308(((Class50) this).anInt864, i_4_, i_2_,
+	VarpHandler.method1308(((Class50) this).anInt864, i_4_, i_2_,
 			    ((Class50) this).anInt865, (byte) -123,
 			    ((Class50) this).anInt862, i_3_, i_5_);
     }

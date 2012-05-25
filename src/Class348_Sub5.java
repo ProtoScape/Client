@@ -13,7 +13,7 @@ abstract class Class348_Sub5 extends Node
     boolean aBoolean6621;
     static int anInt6622;
     static int anInt6623;
-    static byte[] aByteArray6624 = new byte[2048];
+    static byte[] gpiFlags = new byte[2048];
     static int anInt6625;
     static int anInt6626;
     static RasterToolkit aClass105_6627;
@@ -177,7 +177,7 @@ abstract class Class348_Sub5 extends Node
     }
     
     public static void method2762(int i) {
-	aByteArray6624 = null;
+	gpiFlags = null;
 	aClass105_6627 = null;
 	int i_12_ = -23 % ((i - -24) / 47);
     }
@@ -190,7 +190,7 @@ abstract class Class348_Sub5 extends Node
     
     final int method2764(int i) {
 	if (i != 1)
-	    aByteArray6624 = null;
+	    gpiFlags = null;
 	anInt6623++;
 	return 1;
     }

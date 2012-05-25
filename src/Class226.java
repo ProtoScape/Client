@@ -26,9 +26,9 @@ final class Class226
 	    return class348_sub42_sub11;
 	byte[] is;
 	if ((i_0_ ^ 0xffffffff) > -32769)
-	    is = aClass45_2961.getArchiveChild(0, i_0_);
+	    is = aClass45_2961.getChildArchive(0, i_0_);
 	else
-	    is = aClass45_2965.getArchiveChild(0, 0x7fff & i_0_);
+	    is = aClass45_2965.getChildArchive(0, 0x7fff & i_0_);
 	class348_sub42_sub11 = new Class348_Sub42_Sub11();
 	if (is != null)
 	    class348_sub42_sub11.method3221(117, new ByteBuffer(is));
@@ -60,10 +60,10 @@ final class Class226
 		aClass45_2961 = class45;
 		aClass45_2965 = class45_3_;
 		if (aClass45_2961 != null)
-		    aClass45_2961.method407(0);
+		    aClass45_2961.getAmountChildEntries(0);
 		if (aClass45_2965 == null)
 		    break;
-		aClass45_2965.method407(0);
+		aClass45_2965.getAmountChildEntries(0);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("sga.<init>(" + i + ','

@@ -32,7 +32,7 @@ final class Class348_Sub42_Sub10 extends SubNode
 	    for (int i = 0;
 		 ((Class348_Sub42_Sub10) this).anIntArray9566.length > i; i++)
 		((Class348_Sub42_Sub10) this).anIntArray9566[i]
-		    = Class273.method2057((((Class348_Sub42_Sub10) this)
+		    = Class273.bitOr((((Class348_Sub42_Sub10) this)
 					   .anIntArray9566[i]),
 					  32768);
 	}

@@ -64,7 +64,7 @@ class Class328
 	       Class322.aClass308_4036.method2302((long) i_2_, (byte) -68));
 	if (class348_sub42_sub19 != null)
 	    return class348_sub42_sub19;
-	byte[] is = Class113.indexLoader12.getArchiveChild(i_2_, 0);
+	byte[] is = Class113.indexLoader12.getChildArchive(i_2_, 0);
 	if (is == null || is.length <= 1)
 	    return null;
 	try {

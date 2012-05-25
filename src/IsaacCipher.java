@@ -199,11 +199,11 @@ final class IsaacCipher
 	    anInt1293 += anIntArray1296[0xff & 128 + i];
 	    int i_14_;
 	    anIntArray1296[i] = i_14_
-		= (anIntArray1296[Class139.method1166(255,
+		= (anIntArray1296[Class139.bitAnd(255,
 						      i_13_ >> 1990278754)]
 		   - (-anInt1293 - anInt1291));
 	    anIntArray1289[i] = anInt1291
-		= i_13_ + anIntArray1296[(Class139.method1166(261268, i_14_)
+		= i_13_ + anIntArray1296[(Class139.bitAnd(261268, i_14_)
 					  >> 278777480 >> 242087490)];
 	}
 	if (bool != false)

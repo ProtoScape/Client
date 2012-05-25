@@ -12,7 +12,7 @@ final class FileArchiveTracker implements ElementTracker
     static int anInt4777;
     private String fileName;
     static ServerPacket aClass114_4779;
-    static int[] anIntArray4780;
+    static int[] mapSizes;
     static int anInt4781;
     static Class219 aClass219_4782;
     static long aLong4783 = 20000000L;
@@ -22,7 +22,7 @@ final class FileArchiveTracker implements ElementTracker
     
     public static void method741(byte i) {
 	aFloatArray4772 = null;
-	anIntArray4780 = null;
+	mapSizes = null;
 	if (i != -128)
 	    method743(113, -98);
 	aClass114_4779 = null;
@@ -34,7 +34,7 @@ final class FileArchiveTracker implements ElementTracker
 	Class189 class189 = (Class189) Class217.aClass60_2844.method583((long) i_0_, -104);
 	if (class189 != null)
 	    return class189;
-	byte[] is = Class369_Sub3.aClass45_8601.getArchiveChild(0, i_0_);
+	byte[] is = Class369_Sub3.aClass45_8601.getChildArchive(0, i_0_);
 	if (i != 104)
 	    method741((byte) 98);
 	class189 = new Class189();
@@ -47,7 +47,7 @@ final class FileArchiveTracker implements ElementTracker
     public final int getPercentComplete(int i) {
 	int i_1_ = -62 / ((i - -43) / 62);
 	anInt4774++;
-	if (indexLoader.method416((byte) -74, fileName))
+	if (indexLoader.getArchiveLoaded(fileName))
 	    return 100;
 	return 0;
     }
@@ -85,7 +85,7 @@ final class FileArchiveTracker implements ElementTracker
     static {
 	anInt4776 = 0;
 	aFloatArray4772 = new float[16];
-	anIntArray4780 = new int[] { 104, 120, 136, 168 };
+	mapSizes = new int[] { 104, 120, 136, 168 };
 	aClass114_4779 = new ServerPacket(76, 6);
     }
 }

@@ -202,11 +202,11 @@ abstract class Class59
 	String libraryName = Class348_Sub41.aString7048 + string_52_;
 	if (i != 7468)
 	    method549((byte) 28, null, null, null);
-	if (!Class167.nativeLibIndexLoader.method422("", libraryName, -88))
+	if (!Class167.nativeLibIndexLoader.containsChild(libraryName, ""))
 	    return -1;
 	if (!Class167.nativeLibIndexLoader.getArchiveExists(libraryName))
-	    return Class167.nativeLibIndexLoader.method397(libraryName, 0);
-	byte[] src = Class167.nativeLibIndexLoader.getArchiveChild(libraryName, "");
+	    return Class167.nativeLibIndexLoader.getArchiveLoadedPerc(libraryName);
+	byte[] src = Class167.nativeLibIndexLoader.getChildArchive(libraryName, "");
 	Object object = null;
 	File file;
 	try {

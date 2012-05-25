@@ -17,8 +17,8 @@ final class Class348_Sub35 extends Node
 	if (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		.aClass239_Sub27_7261.method1840(-32350) == 0
 	    && Class355.anInt4372 != Class167.anInt2204)
-	    Class348_Sub41.method3157(Class327.anInt4095, (byte) 123,
-				      AbstractToolkit.anInt4581, 11, false);
+	    Class348_Sub41.updateLocation(AbstractToolkit.chnkX,
+				      Class327.chnkY, 11, false);
 	else {
 	    Class348_Sub46.method3319(Class348_Sub8.currentToolkit, (byte) -121);
 	    if (i != 33)

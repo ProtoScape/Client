@@ -70,11 +70,11 @@ final class LongNode extends Node
 	    Class177.anInt4665++;
 	}
 	((BufferedPacket) class348_sub47).buffer
-	    .method3353(i + Class90.anInt1517, (byte) 3);
+	    .method3353(i + Class90.baseRegionY, (byte) 3);
 	((BufferedPacket) class348_sub47).buffer.method3395
 	    ((byte) 78, !Class182.keyboardListener.method2696(82, -124) ? 0 : 1);
 	((BufferedPacket) class348_sub47).buffer
-	    .method3335(-124, za_Sub2.anInt9780 + i_2_);
+	    .method3335(-124, za_Sub2.baseRegionX + i_2_);
 	OndemandWorker.anInt3203 = i_2_;
 	if (i_3_ >= -88)
 	    aClass351_6764 = null;
@@ -87,8 +87,8 @@ final class LongNode extends Node
     static final boolean method2808(int i, AbstractToolkit var_ha, boolean bool) {
 	try {
 	    anInt6763++;
-	    int i_5_ = (-104 + Class367_Sub4.anInt7319) / 2;
-	    int i_6_ = (Class348_Sub40_Sub3.anInt9109 - 104) / 2;
+	    int i_5_ = (-104 + Class367_Sub4.mapSizeX) / 2;
+	    int i_6_ = (Class348_Sub40_Sub3.mapSizeY - 104) / 2;
 	    boolean bool_7_ = bool;
 	    for (int i_8_ = i_5_; i_8_ < 104 + i_5_; i_8_++) {
 		for (int i_9_ = i_6_; i_6_ + 104 > i_9_; i_9_++) {
@@ -487,12 +487,12 @@ final class LongNode extends Node
 			     .aByte6381)
 			    == i_52_ >> -172998788) {
 			    int i_53_ = ((i_52_ >> -1013473906 & 0x3fff)
-					 - za_Sub2.anInt9780);
-			    int i_54_ = (i_52_ & 0x3fff) + -Class90.anInt1517;
-			    if (i_53_ >= 0 && i_53_ < Class367_Sub4.anInt7319
+					 - za_Sub2.baseRegionX);
+			    int i_54_ = (i_52_ & 0x3fff) + -Class90.baseRegionY;
+			    if (i_53_ >= 0 && i_53_ < Class367_Sub4.mapSizeX
 				&& i_54_ >= 0
 				&& ((i_54_ ^ 0xffffffff)
-				    > (Class348_Sub40_Sub3.anInt9109
+				    > (Class348_Sub40_Sub3.mapSizeY
 				       ^ 0xffffffff)))
 				Class318_Sub1_Sub5_Sub1.aClass262_10125
 				    .addToFront
@@ -509,11 +509,11 @@ final class LongNode extends Node
 					>= 0)
 				    && ((((Class42) class42).anInt603 + i_53_
 					 ^ 0xffffffff)
-					> (Class367_Sub4.anInt7319
+					> (Class367_Sub4.mapSizeX
 					   ^ 0xffffffff))
 				    && (i_54_ + ((Class42) class42).anInt570
 					^ 0xffffffff) <= -1
-				    && (Class348_Sub40_Sub3.anInt9109
+				    && (Class348_Sub40_Sub3.mapSizeY
 					> (i_54_
 					   - -((Class42) class42).anInt607)))
 				    Class318_Sub1_Sub5_Sub1.aClass262_10125

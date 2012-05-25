@@ -18,7 +18,7 @@ final class Class231
 	if (i_0_ != -1)
 	    aClass297_2993 = null;
 	float[] fs_1_ = new float[i];
-	Class214.method1574(fs, 0, fs_1_, 0, i);
+	ArrayUtils.arrayCopy(fs, 0, fs_1_, 0, i);
 	return fs_1_;
     }
     

@@ -13,7 +13,7 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3
     byte aByte10206;
     int anInt10207;
     int anInt10208;
-    static VarbitHandler varbitHandler;
+    static VarpHandler varbitHandler;
     int anInt10210;
     int anInt10211;
     static int anInt10212;
@@ -207,10 +207,10 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3
 	    }
 	    if (i_10_ > 0 && (i_10_ ^ 0xffffffff) >= -8193 || i_10_ <= -8192)
 		((Class318_Sub1_Sub3_Sub3) this).anIntArray10296[i_3_]
-		    = Class139.method1166(16383, i_9_ - -i_7_);
+		    = Class139.bitAnd(16383, i_9_ - -i_7_);
 	    else
 		((Class318_Sub1_Sub3_Sub3) this).anIntArray10296[i_3_]
-		    = Class139.method1166(-i_7_ + i_9_, 16383);
+		    = Class139.bitAnd(-i_7_ + i_9_, 16383);
 	    return false;
 	}
 	if ((((Class318_Sub1_Sub3_Sub3) this).anIntArray10296[i_3_]
@@ -229,10 +229,10 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3
 	if ((i_13_ <= 0 || (i_13_ ^ 0xffffffff) < -8193)
 	    && (i_13_ ^ 0xffffffff) < 8191)
 	    ((Class318_Sub1_Sub3_Sub3) this).anIntArray10296[i_3_]
-		= Class139.method1166(16383, i_12_ - i_7_);
+		= Class139.bitAnd(16383, i_12_ - i_7_);
 	else
 	    ((Class318_Sub1_Sub3_Sub3) this).anIntArray10296[i_3_]
-		= Class139.method1166(16383, i_12_ - -i_7_);
+		= Class139.bitAnd(16383, i_12_ - -i_7_);
 	return false;
     }
     
@@ -661,20 +661,20 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3
 				    class129s_75_ = new Class129[i_67_];
 				    int i_76_ = 0;
 				    if (class129s != null) {
-					Class214.method1575(class129s, 0,
+					ArrayUtils.arrayCopy(class129s, 0,
 							    class129s_75_,
 							    i_76_,
 							    class129s.length);
 					i_76_ += class129s.length;
 				    }
 				    if (class129s_71_ != null) {
-					Class214.method1575
+					ArrayUtils.arrayCopy
 					    (class129s_71_, 0, class129s_75_,
 					     i_76_, class129s_71_.length);
 					i_76_ += class129s_71_.length;
 				    }
 				    if (class129s_73_ != null)
-					Class214.method1575
+					ArrayUtils.arrayCopy
 					    (class129s_73_, 0, class129s_75_,
 					     i_76_, class129s_73_.length);
 				} else if (class129s_71_ != null)
@@ -696,20 +696,20 @@ abstract class Class318_Sub1_Sub3_Sub3 extends Class318_Sub1_Sub3
 				    class342s_78_ = new Class342[i_69_];
 				    int i_79_ = 0;
 				    if (class342s != null) {
-					Class214.method1575(class342s, 0,
+					ArrayUtils.arrayCopy(class342s, 0,
 							    class342s_78_,
 							    i_79_,
 							    class342s.length);
 					i_79_ += class342s.length;
 				    }
 				    if (class342s_72_ != null) {
-					Class214.method1575
+					ArrayUtils.arrayCopy
 					    (class342s_72_, 0, class342s_78_,
 					     i_79_, class342s_72_.length);
 					i_79_ += class342s_72_.length;
 				    }
 				    if (class342s_74_ != null)
-					Class214.method1575
+					ArrayUtils.arrayCopy
 					    (class342s_74_, 0, class342s_78_,
 					     i_79_, class342s_74_.length);
 				}

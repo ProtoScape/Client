@@ -155,7 +155,7 @@ final class Class348_Sub23_Sub4 extends Class348_Sub23
 				^ 0xffffffff)))) {
 		    if ((Class348_Sub44.anInt7101 ^ 0xffffffff)
 			!= (i_11_ ^ 0xffffffff))
-			Class214.method1575(ClassicLoadingScreen.aClass338Array5060,
+			ArrayUtils.arrayCopy(ClassicLoadingScreen.aClass338Array5060,
 					    1 + i_11_,
 					    ClassicLoadingScreen.aClass338Array5060, i_11_,
 					    (ClassicLoadingScreen.aClass338Array5060.length

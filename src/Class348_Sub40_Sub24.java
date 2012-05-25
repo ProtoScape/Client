@@ -74,7 +74,7 @@ final class Class348_Sub40_Sub24 extends Class348_Sub40
 			break;
 		    }
 		}
-		Class214.method1579(is, 0, Class348_Sub40_Sub6.anInt9139,
+		ArrayUtils.populateArray(is, 0, Class348_Sub40_Sub6.anInt9139,
 				    i_7_);
 	    }
 	}

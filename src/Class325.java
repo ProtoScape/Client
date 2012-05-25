@@ -523,11 +523,11 @@ final class Class325
 						(byte) -120, 1, 0, 1, -4, 0);
 			} else
 			    Class361.method3502
-				(i_75_ + Class90.anInt1517, 2,
+				(i_75_ + Class90.baseRegionY, 2,
 				 (((Class318_Sub1)
 				   Class132.localPlayer)
 				  .aByte6381),
-				 i_74_ + za_Sub2.anInt9780);
+				 i_74_ + za_Sub2.baseRegionX);
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -5) {
 			Class93.anInt1534 = i_72_;
@@ -542,10 +542,10 @@ final class Class325
 							.outgoingGameIsaac));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3349(4325, Class90.anInt1517 + i_75_);
+			    .method3349(4325, Class90.baseRegionY + i_75_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(120, i_74_ + za_Sub2.anInt9780);
+			    .method3335(120, i_74_ + za_Sub2.baseRegionX);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3370
 			    ((byte) 117,
@@ -642,7 +642,7 @@ final class Class325
 							.outgoingGameIsaac));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3353(i_74_ + za_Sub2.anInt9780, (byte) 3);
+			    .method3353(i_74_ + za_Sub2.baseRegionX, (byte) 3);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3335(-107, i_77_);
 			((BufferedPacket) class348_sub47)
@@ -650,7 +650,7 @@ final class Class325
 			    .method3353(Class9.anInt169, (byte) 3);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .putShort(Class90.anInt1517 + i_75_);
+			    .putShort(Class90.baseRegionY + i_75_);
 			((BufferedPacket) class348_sub47)
 			    .buffer.putByte
 			    ((!Class182.keyboardListener.method2696(82, -126) ? 0
@@ -683,10 +683,10 @@ final class Class325
 							.outgoingGameIsaac));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .putShort(Class90.anInt1517 + i_75_);
+			    .putShort(Class90.baseRegionY + i_75_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(-110, i_74_ + za_Sub2.anInt9780);
+			    .method3335(-110, i_74_ + za_Sub2.baseRegionX);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3374
 			    ((byte) -44,
@@ -802,10 +802,10 @@ final class Class325
 			    (31, (int) (l >>> 1628456736) & 0x7fffffff);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(-104, za_Sub2.anInt9780 + i_74_);
+			    .method3335(-104, za_Sub2.baseRegionX + i_74_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3353(Class90.anInt1517 + i_75_, (byte) 3);
+			    .method3353(Class90.baseRegionY + i_75_, (byte) 3);
 			Class348_Sub42_Sub14.queuePacket(119, class348_sub47);
 			NativeLibTracker.method2307(i_75_, l, i_74_, 93);
 		    }
@@ -867,11 +867,11 @@ final class Class325
 			    && Class182.keyboardListener.method2696(82, -127)
 			    && Class182.keyboardListener.method2696(81, -126))
 			    Class361.method3502
-				(i_75_ + Class90.anInt1517, 2,
+				(i_75_ + Class90.baseRegionY, 2,
 				 (((Class318_Sub1)
 				   Class132.localPlayer)
 				  .aByte6381),
-				 za_Sub2.anInt9780 - -i_74_);
+				 za_Sub2.baseRegionX - -i_74_);
 			else {
 			    Class93.anInt1534 = i_72_;
 			    Class26.anInt385 = i_73_;
@@ -885,10 +885,10 @@ final class Class325
 							    .outgoingGameIsaac));
 			    ((BufferedPacket) class348_sub47)
 				.buffer
-				.method3335(101, za_Sub2.anInt9780 + i_74_);
+				.method3335(101, za_Sub2.baseRegionX + i_74_);
 			    ((BufferedPacket) class348_sub47)
 				.buffer.putShort
-				(Class90.anInt1517 - -i_75_);
+				(Class90.baseRegionY - -i_75_);
 			    Class348_Sub42_Sub14.queuePacket(6, class348_sub47);
 			}
 		    }
@@ -1010,7 +1010,7 @@ final class Class325
 							.outgoingGameIsaac));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3353(Class90.anInt1517 + i_75_, (byte) 3);
+			    .method3353(Class90.baseRegionY + i_75_, (byte) 3);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3395
 			    ((byte) -96,
@@ -1018,7 +1018,7 @@ final class Class325
 			      : 0));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3349(4325, za_Sub2.anInt9780 + i_74_);
+			    .method3349(4325, za_Sub2.baseRegionX + i_74_);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3335
 			    (68, 0x7fffffff & (int) (l >>> 1667663904));
@@ -1129,10 +1129,10 @@ final class Class325
 			    .putShort(i_77_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .putShort(za_Sub2.anInt9780 + i_74_);
+			    .putShort(za_Sub2.baseRegionX + i_74_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .putShort(i_75_ + Class90.anInt1517);
+			    .putShort(i_75_ + Class90.baseRegionY);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3370
 			    ((byte) 120,
@@ -1153,7 +1153,7 @@ final class Class325
 							.outgoingGameIsaac));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3353(za_Sub2.anInt9780 - -i_74_, (byte) 3);
+			    .method3353(za_Sub2.baseRegionX - -i_74_, (byte) 3);
 			((BufferedPacket) class348_sub47)
 			    .buffer
 			    .method3335(-85, Class301.anInt3829);
@@ -1165,7 +1165,7 @@ final class Class325
 			    .putInt(Class149.anInt2046);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(-84, Class90.anInt1517 + i_75_);
+			    .method3335(-84, Class90.baseRegionY + i_75_);
 			Class348_Sub42_Sub14.queuePacket(-62, class348_sub47);
 			Class298.method2252(true, i_74_, i_75_, (byte) -91, 1,
 					    0, 1, -4, 0);
@@ -1229,13 +1229,13 @@ final class Class325
 			    .putShort(Class301.anInt3829);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3349(4325, za_Sub2.anInt9780 + i_74_);
+			    .method3349(4325, za_Sub2.baseRegionX + i_74_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
 			    .method3348(-128, Class149.anInt2046);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(-82, Class90.anInt1517 + i_75_);
+			    .method3335(-82, Class90.baseRegionY + i_75_);
 			((BufferedPacket) class348_sub47)
 			    .buffer.method3370
 			    ((byte) -74,
@@ -1346,14 +1346,14 @@ final class Class325
 			    .putShort(i_77_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3335(106, i_74_ - -za_Sub2.anInt9780);
+			    .method3335(106, i_74_ - -za_Sub2.baseRegionX);
 			((BufferedPacket) class348_sub47)
 			    .buffer.putByte
 			    ((!Class182.keyboardListener.method2696(82, -128) ? 0
 			      : 1));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3349(4325, i_75_ - -Class90.anInt1517);
+			    .method3349(4325, i_75_ - -Class90.baseRegionY);
 			Class348_Sub42_Sub14.queuePacket(116, class348_sub47);
 			Class348_Sub42_Sub18.method3275(1, i_75_, i_74_);
 		    }
@@ -1375,10 +1375,10 @@ final class Class325
 			      : 1));
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3349(4325, za_Sub2.anInt9780 + i_74_);
+			    .method3349(4325, za_Sub2.baseRegionX + i_74_);
 			((BufferedPacket) class348_sub47)
 			    .buffer
-			    .method3353(i_75_ + Class90.anInt1517, (byte) 3);
+			    .method3353(i_75_ + Class90.baseRegionY, (byte) 3);
 			((BufferedPacket) class348_sub47)
 			    .buffer.putShort
 			    (0x7fffffff & (int) (l >>> -863296736));
@@ -1465,10 +1465,10 @@ final class Class325
 				  ? 0 : 1));
 			    ((BufferedPacket) class348_sub47)
 				.buffer
-				.method3335(-69, za_Sub2.anInt9780 + i_74_);
+				.method3335(-69, za_Sub2.baseRegionX + i_74_);
 			    ((BufferedPacket) class348_sub47)
 				.buffer.method3353
-				(Class90.anInt1517 + i_75_, (byte) 3);
+				(Class90.baseRegionY + i_75_, (byte) 3);
 			    ((BufferedPacket) class348_sub47)
 				.buffer
 				.putShort(i_77_);
@@ -1639,14 +1639,14 @@ final class Class325
 					Class348_Sub23_Sub2.outgoingGameIsaac));
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3335
-				    (-96, Class90.anInt1517 + i_75_);
+				    (-96, Class90.baseRegionY + i_75_);
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3349
 				    (4325,
 				     0x7fffffff & (int) (l >>> 1397559072));
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3353
-				    (i_74_ - -za_Sub2.anInt9780, (byte) 3);
+				    (i_74_ - -za_Sub2.baseRegionX, (byte) 3);
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3395
 				    ((byte) -91,
@@ -1713,13 +1713,13 @@ final class Class325
 					Class348_Sub23_Sub2.outgoingGameIsaac));
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3335
-				    (-108, i_75_ - -Class90.anInt1517);
+				    (-108, i_75_ - -Class90.baseRegionY);
 				((BufferedPacket) class348_sub47)
 				    .buffer
 				    .method3335(-70, i_77_);
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3353
-				    (za_Sub2.anInt9780 + i_74_, (byte) 3);
+				    (za_Sub2.baseRegionX + i_74_, (byte) 3);
 				((BufferedPacket) class348_sub47)
 				    .buffer.method3374
 				    ((byte) -70,

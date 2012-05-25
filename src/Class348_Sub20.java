@@ -36,7 +36,7 @@ final class Class348_Sub20 extends Node
 	if (i_0_ != 18)
 	    ((Class348_Sub20) this).anInt6825 = 85;
 	anIntArray6842[i_1_ * ((s) aS_Sub2_6839).anInt4587 + i]
-	    = Class273.method2057((anIntArray6842
+	    = Class273.bitOr((anIntArray6842
 				   [i_1_ * ((s) aS_Sub2_6839).anInt4587 + i]),
 				  1 << i_2_);
     }

@@ -745,8 +745,8 @@ abstract class NativeToolkit extends AbstractToolkit
 				 int i_38_, int i_39_, int i_40_, int i_41_) {
 	anInt7933++;
 	if ((i_37_ ^ 0xffffffff) <= -1 && i >= 0
-	    && -1 + Class367_Sub4.anInt7319 > i_37_
-	    && ((-1 + Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+	    && -1 + Class367_Sub4.mapSizeX > i_37_
+	    && ((-1 + Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 		< (i ^ 0xffffffff))) {
 	    if (Message.aClass357ArrayArrayArray2029 == null)
 		return;
@@ -1737,18 +1737,18 @@ abstract class NativeToolkit extends AbstractToolkit
 	}
     }
     
-    static final byte[] split(byte[] is, int i) {
+    static byte[] slice(byte[] src, int srcOff) {
 	try {
 	    anInt8015++;
-	    int i_127_ = is.length;
-	    byte[] is_128_ = new byte[i_127_];
-	    Class214.byteArrayCopy(is, i, is_128_, 0, i_127_);
-	    return is_128_;
+	    int length = src.length;
+	    byte[] dest = new byte[length];
+	    ArrayUtils.arrayCopy(src, srcOff, dest, 0, length);
+	    return dest;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("wga.GI("
-					     + (is != null ? "{...}" : "null")
-					     + ',' + i + ')'));
+					     + (src != null ? "{...}" : "null")
+					     + ',' + srcOff + ')'));
 	}
     }
     
@@ -2621,7 +2621,7 @@ abstract class NativeToolkit extends AbstractToolkit
 						   .colorIndex[i++])]);
 			    is[i_211_++]
 				= (i_214_ != 0
-				   ? Class273.method2057(i_214_, -16777216)
+				   ? Class273.bitOr(i_214_, -16777216)
 				   : 0);
 			}
 		    }
@@ -2632,9 +2632,9 @@ abstract class NativeToolkit extends AbstractToolkit
 			     ((ImageSprite) class207).indexWidth > i_216_;
 			     i_216_++) {
 			    is[i_211_++]
-				= (Class273.method2057
+				= (Class273.bitOr
 				   ((((ImageSprite) class207).colors
-				     [Class139.method1166((((ImageSprite)
+				     [Class139.bitAnd((((ImageSprite)
 							    class207)
 							   .colorIndex[i]),
 							  255)]),
@@ -3315,8 +3315,7 @@ abstract class NativeToolkit extends AbstractToolkit
     static final void method3936(int i) {
 	anInt7990++;
 	if (Deque.aClass190ArrayArray3335 != null) {
-	    for (int i_274_ = 0;
-		 ((Deque.aClass190ArrayArray3335.length ^ 0xffffffff)
+	    for (int i_274_ = 0; ((Deque.aClass190ArrayArray3335.length ^ 0xffffffff)
 		  < (i_274_ ^ 0xffffffff));
 		 i_274_++) {
 		for (int i_275_ = 0;
@@ -3324,8 +3323,7 @@ abstract class NativeToolkit extends AbstractToolkit
 		      > (Deque.aClass190ArrayArray3335[i_274_].length
 			 ^ 0xffffffff));
 		     i_275_++)
-		    Deque.aClass190ArrayArray3335[i_274_][i_275_]
-			= GameText.aClass190_3547;
+		    Deque.aClass190ArrayArray3335[i_274_][i_275_] = GameText.aClass190_3547;
 	    }
 	}
 	if (i != 0)

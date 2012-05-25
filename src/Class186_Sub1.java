@@ -68,14 +68,14 @@ final class Class186_Sub1 extends Class186
 				((AbtractArchiveLoader.method2337
 				  ((Class285.method2119
 				    (f_24_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_26_ + i_32_]),
 							 7),
 				     f_15_, -70, f_35_)),
 				   true,
 				   (Class285.method2119
 				    (f_24_,
-				     Class139.method1166(7,
+				     Class139.bitAnd(7,
 							 (anIntArray5804
 							  [i_33_ - -i_26_])),
 				     f_15_, -73, f_34_)),
@@ -84,13 +84,13 @@ final class Class186_Sub1 extends Class186
 				 (AbtractArchiveLoader.method2337
 				  ((Class285.method2119
 				    (f_23_,
-				     Class139.method1166(7, (anIntArray5804
+				     Class139.bitAnd(7, (anIntArray5804
 							     [i_32_ + i_27_])),
 				     f_15_, -75, f_35_)),
 				   true,
 				   (Class285.method2119
 				    (f_23_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_27_ + i_33_]),
 							 7),
 				     f_15_, -91, f_34_)),
@@ -101,14 +101,14 @@ final class Class186_Sub1 extends Class186
 				((AbtractArchiveLoader.method2337
 				  ((Class285.method2119
 				    (f_24_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_28_ + i_32_]),
 							 7),
 				     f_14_, -72, f_35_)),
 				   true,
 				   (Class285.method2119
 				    (f_24_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_28_ + i_33_]),
 							 7),
 				     f_14_, -75, f_34_)),
@@ -117,14 +117,14 @@ final class Class186_Sub1 extends Class186
 				 (AbtractArchiveLoader.method2337
 				  ((Class285.method2119
 				    (f_23_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_29_ + i_32_]),
 							 7),
 				     f_14_, -100, f_35_)),
 				   true,
 				   (Class285.method2119
 				    (f_23_,
-				     Class139.method1166((anIntArray5804
+				     Class139.bitAnd((anIntArray5804
 							  [i_29_ + i_33_]),
 							 7),
 				     f_14_, -72, f_34_)),

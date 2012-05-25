@@ -135,7 +135,7 @@ final class Class59_Sub2_Sub1 extends Class59_Sub2
 				((Model) class124).aShortArray1849[i_20_],
 				f_22_, f_23_, 126, f,
 				((Model) class124).aShortArray1829[i_20_],
-				Class139.method1166(255, (((Model) class124)
+				Class139.bitAnd(255, (((Model) class124)
 							  .aByteArray1833
 							  [i_20_]))));
 		    }

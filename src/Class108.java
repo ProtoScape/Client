@@ -33,15 +33,15 @@ final class Class108
 	    int i_16_ = (int) f_13_ >> 430575337;
 	    int i_17_ = (int) f_15_ >> 1868123209;
 	    if ((i_16_ ^ 0xffffffff) < -1 && i_17_ > 0
-		&& (i_16_ ^ 0xffffffff) > (Class367_Sub4.anInt7319
+		&& (i_16_ ^ 0xffffffff) > (Class367_Sub4.mapSizeX
 					   ^ 0xffffffff)
-		&& ((Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff)
+		&& ((Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff)
 		    < (i_17_ ^ 0xffffffff))) {
 		int i_18_ = (((Class318_Sub1)
 			      Class132.localPlayer)
 			     .aByte6381);
 		if ((i_18_ ^ 0xffffffff) > -4
-		    && ((Class348_Sub33.aByteArrayArrayArray6962[1][i_16_]
+		    && ((Class348_Sub33.settingFlags[1][i_16_]
 			 [i_17_]) & 0x2
 			^ 0xffffffff) != -1)
 		    i_18_++;
@@ -112,8 +112,7 @@ final class Class108
 	if (class190 != null) {
 	    Class196.anInt2601 = ((Class190) class190).anInt2535;
 	    Class21.anInt325 = ((Class190) class190).anInt2538;
-	    Class318_Sub1_Sub3_Sub1.anInt10023
-		= ((Class190) class190).anInt2548;
+	    Class318_Sub1_Sub3_Sub1.anInt10023 = ((Class190) class190).anInt2548;
 	}
 	Class348_Sub23_Sub4.method2988(bool);
     }

@@ -74,7 +74,7 @@ final class Class239_Sub23 extends Class239
     static final BitmapFont method1819(int i, int i_1_, int i_2_,
 				     IndexLoader class45) {
 	anInt6081++;
-	byte[] is = class45.getArchiveChild(i, i_1_);
+	byte[] is = class45.getChildArchive(i, i_1_);
 	if (i_2_ >= -31)
 	    method1819(65, -4, -97, null);
 	if (is == null)

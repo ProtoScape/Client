@@ -64,7 +64,7 @@ final class VarbitLoader
 	    return class146;
 	byte[] is;
 	synchronized (scriptConfigLoader) {
-	    is = scriptConfigLoader.getArchiveChild(Class179.method1359(true, i),
+	    is = scriptConfigLoader.getChildArchive(Class179.method1359(true, i),
 					 LongNode.method2806(false, i));
 	}
 	class146 = new VarbitDefinition();
@@ -85,7 +85,7 @@ final class VarbitLoader
 		if (scriptConfigLoader == null)
 		    break;
 		int amountChildren = scriptConfigLoader.getAmountChildren() - 1;
-		scriptConfigLoader.method407(amountChildren);
+		scriptConfigLoader.getAmountChildEntries(amountChildren);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("qs.<init>("

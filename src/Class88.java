@@ -422,11 +422,11 @@ final class Class88
 				= buffer.getShort();
 			    Class206.anInt4870
 				= buffer.getShort();
-			    VarbitHandler.anInt5065
+			    VarpHandler.anInt5065
 				= buffer.getDword();
 			    Class348_Sub42_Sub6.aClass144_9536
 				= Class348_Sub23_Sub1.signlink
-				      .method2232(116, VarbitHandler.anInt5065);
+				      .method2232(116, VarpHandler.anInt5065);
 			    Class216.anInt4976
 				= buffer.getUByte();
 			    Class130_Sub1.anInt5797
@@ -611,10 +611,10 @@ final class Class88
 			    Class239_Sub5.method1741
 				(Class299.gameBuffer,
 				 (byte) 118);
-			    AbstractToolkit.anInt4581 = -1;
+			    AbstractToolkit.chnkX = -1;
 			    if (Class348_Sub3.currentIncomingPacket
 				!= ClanChatPlayer.aClass114_304)
-				Class348_Sub40_Sub26.parseUpdateRegionPacket(-92);
+				Class348_Sub40_Sub26.parseSetRegionPacket(-92);
 			    else
 				Class90.method853((byte) 99);
 			    if ((((ByteBuffer)

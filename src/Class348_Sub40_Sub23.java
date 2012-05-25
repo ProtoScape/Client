@@ -135,12 +135,12 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 		    for (int i_11_ = 0;
 			 (i_2_ ^ 0xffffffff) < (i_11_ ^ 0xffffffff); i_11_++) {
 			int[] is_12_ = is[i_11_ + i_4_];
-			Class214.method1579(is_12_, i_3_, i_10_, i_6_);
-			Class214.method1579(is_12_, 0, i_5_ - i_10_, i_6_);
+			ArrayUtils.populateArray(is_12_, i_3_, i_10_, i_6_);
+			ArrayUtils.populateArray(is_12_, 0, i_5_ - i_10_, i_6_);
 		    }
 		} else {
 		    for (int i_13_ = 0; i_2_ > i_13_; i_13_++)
-			Class214.method1579(is[i_13_ + i_4_], i_3_, i_5_,
+			ArrayUtils.populateArray(is[i_13_ + i_4_], i_3_, i_5_,
 					    i_6_);
 		}
 	    } else if ((i_2_ ^ 0xffffffff) < -1 && (i_5_ ^ 0xffffffff) < -1) {
@@ -160,10 +160,10 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 				 (i_16_ ^ 0xffffffff) < (i_23_ ^ 0xffffffff);
 				 i_23_++) {
 				int i_24_ = i_6_ * i_23_ / i_16_;
-				is_21_[Class139.method1166(i_23_ + i_3_,
+				is_21_[Class139.bitAnd(i_23_ + i_3_,
 							   (Class239_Sub22
 							    .anInt6076))]
-				    = is_21_[(Class139.method1166
+				    = is_21_[(Class139.bitAnd
 					      (Class239_Sub22.anInt6076,
 					       i_3_ - (-i_5_ + (i_23_ - -1))))]
 				    = i_22_ * i_24_ >> 1318683468;
@@ -173,21 +173,21 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 				 (i_25_ ^ 0xffffffff) > (i_16_ ^ 0xffffffff);
 				 i_25_++) {
 				int i_26_ = i_6_ * i_25_ / i_16_;
-				is_21_[Class139.method1166((Class239_Sub22
+				is_21_[Class139.bitAnd((Class239_Sub22
 							    .anInt6076),
 							   i_25_ + i_3_)]
-				    = is_21_[(Class139.method1166
+				    = is_21_[(Class139.bitAnd
 					      (i_3_ - -i_5_ + (-i_25_ - 1),
 					       Class239_Sub22.anInt6076))]
 				    = i_26_ < i_22_ ? i_26_ : i_22_;
 			    }
 			}
 			if (Class348_Sub40_Sub6.anInt9139 >= i_19_ + i_18_)
-			    Class214.method1579(is_21_, i_18_, i_19_, i_22_);
+			    ArrayUtils.populateArray(is_21_, i_18_, i_19_, i_22_);
 			else {
 			    int i_27_ = -i_18_ + Class348_Sub40_Sub6.anInt9139;
-			    Class214.method1579(is_21_, i_18_, i_27_, i_22_);
-			    Class214.method1579(is_21_, 0, i_19_ - i_27_,
+			    ArrayUtils.populateArray(is_21_, i_18_, i_27_, i_22_);
+			    ArrayUtils.populateArray(is_21_, 0, i_19_ - i_27_,
 						i_22_);
 			}
 		    } else {
@@ -197,10 +197,10 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 			    if (anInt9312 == 0) {
 				for (int i_30_ = 0; i_16_ > i_30_; i_30_++) {
 				    int i_31_ = i_6_ * i_30_ / i_16_;
-				    is_21_[Class139.method1166((Class239_Sub22
+				    is_21_[Class139.bitAnd((Class239_Sub22
 								.anInt6076),
 							       i_30_ + i_3_)]
-					= is_21_[(Class139.method1166
+					= is_21_[(Class139.bitAnd
 						  (Class239_Sub22.anInt6076,
 						   -1 + i_5_ + i_3_ - i_30_))]
 					= i_31_ * i_29_ >> 299348108;
@@ -211,10 +211,10 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 				      > (i_16_ ^ 0xffffffff));
 				     i_32_++) {
 				    int i_33_ = i_32_ * i_6_ / i_16_;
-				    is_21_[Class139.method1166((Class239_Sub22
+				    is_21_[Class139.bitAnd((Class239_Sub22
 								.anInt6076),
 							       i_3_ + i_32_)]
-					= is_21_[(Class139.method1166
+					= is_21_[(Class139.bitAnd
 						  (Class239_Sub22.anInt6076,
 						   -i_32_ + i_5_ + (i_3_
 								    + -1)))]
@@ -222,35 +222,35 @@ final class Class348_Sub40_Sub23 extends Class348_Sub40
 				}
 			    }
 			    if (i_19_ + i_18_ <= Class348_Sub40_Sub6.anInt9139)
-				Class214.method1579(is_21_, i_18_, i_19_,
+				ArrayUtils.populateArray(is_21_, i_18_, i_19_,
 						    i_29_);
 			    else {
 				int i_34_
 				    = -i_18_ + Class348_Sub40_Sub6.anInt9139;
-				Class214.method1579(is_21_, i_18_, i_34_,
+				ArrayUtils.populateArray(is_21_, i_18_, i_34_,
 						    i_29_);
-				Class214.method1579(is_21_, 0, -i_34_ + i_19_,
+				ArrayUtils.populateArray(is_21_, 0, -i_34_ + i_19_,
 						    i_29_);
 			    }
 			} else {
 			    for (int i_35_ = 0; i_35_ < i_16_; i_35_++)
-				is_21_[Class139.method1166(i_35_ + i_3_,
+				is_21_[Class139.bitAnd(i_35_ + i_3_,
 							   (Class239_Sub22
 							    .anInt6076))]
-				    = is_21_[(Class139.method1166
+				    = is_21_[(Class139.bitAnd
 					      (Class239_Sub22.anInt6076,
 					       -i_35_ + (i_3_ - (-i_5_ + 1))))]
 				    = i_6_ * i_35_ / i_16_;
 			    if (Class348_Sub40_Sub6.anInt9139
 				>= i_18_ - -i_19_)
-				Class214.method1579(is_21_, i_18_, i_19_,
+				ArrayUtils.populateArray(is_21_, i_18_, i_19_,
 						    i_6_);
 			    else {
 				int i_36_
 				    = -i_18_ + Class348_Sub40_Sub6.anInt9139;
-				Class214.method1579(is_21_, i_18_, i_36_,
+				ArrayUtils.populateArray(is_21_, i_18_, i_36_,
 						    i_6_);
-				Class214.method1579(is_21_, 0, i_19_ - i_36_,
+				ArrayUtils.populateArray(is_21_, 0, i_19_ - i_36_,
 						    i_6_);
 			    }
 			}

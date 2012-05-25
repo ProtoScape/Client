@@ -11,7 +11,7 @@ final class Class348_Sub23_Sub3 extends Class348_Sub23
 {
     static int anInt9040;
     static int anInt9041 = 0;
-    static int[] anIntArray9042;
+    static int[] regionHashes;
     static String sskeyStr = null;
     static short aShort9044 = 256;
     static int anInt9045;
@@ -24,7 +24,7 @@ final class Class348_Sub23_Sub3 extends Class348_Sub23
     }
     
     public static void method2981(boolean bool) {
-	anIntArray9042 = null;
+	regionHashes = null;
 	if (bool != false)
 	    anInt9041 = -95;
 	sskeyStr = null;

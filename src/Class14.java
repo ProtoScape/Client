@@ -270,16 +270,16 @@ abstract class Class14 implements Interface18
 		    i_43_ += 0xff & i_44_ >> 1265083336;
 		    i_42_ += i_44_ & 0xff;
 		    is_31_[i_32_++]
-			= (Class273.method2057
-			   ((Class273.method2057
-			     (Class139.method1166(i_43_ << -1540493786, 65280),
-			      Class273.method2057((Class139.method1166(i_41_,
+			= (Class273.bitOr
+			   ((Class273.bitOr
+			     (Class139.bitAnd(i_43_ << -1540493786, 65280),
+			      Class273.bitOr((Class139.bitAnd(i_41_,
 								       1020)
 						   << -1408675754),
-						  (Class139.method1166(1020,
+						  (Class139.bitAnd(1020,
 								       i_40_)
 						   << 1588792334)))),
-			    Class139.method1166(255, i_42_ >> -1111915006)));
+			    Class139.bitAnd(255, i_42_ >> -1111915006)));
 		}
 		i_33_ += i;
 		i_34_ += i;

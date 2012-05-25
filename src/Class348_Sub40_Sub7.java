@@ -1629,7 +1629,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40
 					    ? Class299_Sub2.anInt6325 - i : i),
 					   i_75_ + 633706082, 0);
 	    if (!aBoolean9140)
-		Class214.intArrayCopy(is_76_, 0, is, 0,
+		ArrayUtils.arrayCopy(is_76_, 0, is, 0,
 				    Class348_Sub40_Sub6.anInt9139);
 	    else {
 		for (int i_77_ = 0;

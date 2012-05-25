@@ -38,7 +38,7 @@ final class AnimationLoader
 	    return class17;
 	byte[] is;
 	synchronized (animIndexLoader) {
-	    is = animIndexLoader.getArchiveChild(Class15.method256(i, (byte) 125),
+	    is = animIndexLoader.getChildArchive(Class15.method256(i, (byte) 125),
 					 ColorNode.method494(i_0_ ^ 0x55, i));
 	}
 	class17 = new AnimationDefinition();
@@ -116,7 +116,7 @@ final class AnimationLoader
 	    animIndexLoader = animLoader;
 	    if (animIndexLoader != null) {
 		int i_8_ = animIndexLoader.getAmountChildren() - 1;
-		animIndexLoader.method407(i_8_);
+		animIndexLoader.getAmountChildEntries(i_8_);
 	    }
 	    Class239.method1711(7, skeletonLoader, 2, skinLoader);
 	} catch (RuntimeException runtimeexception) {

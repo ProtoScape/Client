@@ -163,7 +163,7 @@ final class Class153
 	    return null;
 	byte[] is;
 	synchronized (aClass45_2084) {
-	    is = aClass45_2084.getArchiveChild(36, i);
+	    is = aClass45_2084.getChildArchive(36, i);
 	}
 	class42 = new Class42();
 	((Class42) class42).aClass153_593 = this;
@@ -181,7 +181,7 @@ final class Class153
 	try {
 	    aClass45_2084 = class45;
 	    ((Class153) this).aClass45_2087 = class45_10_;
-	    aClass45_2084.method407(36);
+	    aClass45_2084.getAmountChildEntries(36);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929
 		      (runtimeexception,

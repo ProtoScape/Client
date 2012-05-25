@@ -42,10 +42,10 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40
 	RequiredElement.anInt3428 = -1;
 	Class348_Sub40_Sub17_Sub1.method3093(i + 79);
 	Class101_Sub2.method921((byte) 99, true);
-	Class90.anInt1517 = 0;
-	za_Sub2.anInt9780 = 0;
-	AbstractToolkit.anInt4581 = 0;
-	Class327.anInt4095 = 0;
+	Class90.baseRegionY = 0;
+	za_Sub2.baseRegionX = 0;
+	AbstractToolkit.chnkX = 0;
+	Class327.chnkY = 0;
 	Class83.anInt1447 = Class312.anInt3931 = 0;
 	for (int i_3_ = 0;
 	     ((Class348_Sub27.aClass302Array6897.length ^ 0xffffffff)

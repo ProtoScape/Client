@@ -785,14 +785,14 @@ final class NativeOpenGlToolkit extends NativeToolkit
 	OpenGL.glFogf(2915, ((NativeToolkit) this).aFloat8173);
 	OpenGL.glFogf(2916, ((NativeToolkit) this).aFloat8115);
 	RuntimeException_Sub1.aFloatArray4602[2]
-	    = ((float) Class139.method1166(((NativeToolkit) this).anInt8144, 255)
+	    = ((float) Class139.bitAnd(((NativeToolkit) this).anInt8144, 255)
 	       / 255.0F);
 	RuntimeException_Sub1.aFloatArray4602[0]
-	    = ((float) Class139.method1166(16711680,
+	    = ((float) Class139.bitAnd(16711680,
 					   ((NativeToolkit) this).anInt8144)
 	       / 1.671168E7F);
 	RuntimeException_Sub1.aFloatArray4602[1]
-	    = ((float) Class139.method1166(65280, ((NativeToolkit) this).anInt8144)
+	    = ((float) Class139.bitAnd(65280, ((NativeToolkit) this).anInt8144)
 	       / 65280.0F);
 	OpenGL.glFogfv(2918, RuntimeException_Sub1.aFloatArray4602, 0);
     }
@@ -1040,12 +1040,12 @@ final class NativeOpenGlToolkit extends NativeToolkit
 	    OpenGL.glLightfv(i_49_, 4611,
 			     RuntimeException_Sub1.aFloatArray4602, 0);
 	    RuntimeException_Sub1.aFloatArray4602[2]
-		= (float) Class139.method1166(255, i_48_) * f;
+		= (float) Class139.bitAnd(255, i_48_) * f;
 	    RuntimeException_Sub1.aFloatArray4602[1]
-		= f * (float) (Class139.method1166(i_48_, 65338)
+		= f * (float) (Class139.bitAnd(i_48_, 65338)
 			       >> 1736677832);
 	    RuntimeException_Sub1.aFloatArray4602[0]
-		= (float) Class139.method1166(255, i_48_ >> 1806447760) * f;
+		= (float) Class139.bitAnd(255, i_48_ >> 1806447760) * f;
 	    RuntimeException_Sub1.aFloatArray4602[3] = 1.0F;
 	    OpenGL.glLightfv(i_49_, 4609,
 			     RuntimeException_Sub1.aFloatArray4602, 0);
@@ -1521,16 +1521,16 @@ final class NativeOpenGlToolkit extends NativeToolkit
     
     final void method3945(int i) {
 	RuntimeException_Sub1.aFloatArray4602[1]
-	    = ((float) Class139.method1166(65280, ((NativeToolkit) this).anInt8119)
+	    = ((float) Class139.bitAnd(65280, ((NativeToolkit) this).anInt8119)
 	       / 65280.0F);
 	RuntimeException_Sub1.aFloatArray4602[2]
-	    = ((float) Class139.method1166(255, ((NativeToolkit) this).anInt8119)
+	    = ((float) Class139.bitAnd(255, ((NativeToolkit) this).anInt8119)
 	       / 255.0F);
 	RuntimeException_Sub1.aFloatArray4602[3]
 	    = (float) (((NativeToolkit) this).anInt8119 >>> 1199324056) / 255.0F;
 	anInt9889++;
 	RuntimeException_Sub1.aFloatArray4602[0]
-	    = ((float) Class139.method1166(16711680,
+	    = ((float) Class139.bitAnd(16711680,
 					   ((NativeToolkit) this).anInt8119)
 	       / 1.671168E7F);
 	if (i >= -107)

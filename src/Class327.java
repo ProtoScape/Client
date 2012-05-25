@@ -10,7 +10,7 @@ final class Class327
     static int anInt4092;
     static int anInt4093;
     static GamePacket aClass351_4094 = new GamePacket(47, 4);
-    static int anInt4095;
+    static int chnkY;
     static int[] anIntArray4096 = new int[32];
     static int[] anIntArray4097 = new int[2];
     static EntityPacket aClass74_4098 = new EntityPacket(4, 7);

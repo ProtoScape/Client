@@ -51,13 +51,13 @@ final class Class282
 			if (((((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
 			      .anInt6377)
 			     ^ 0xffffffff) <= -1
-			    && (Class367_Sub4.anInt7319 * 512
+			    && (Class367_Sub4.mapSizeX * 512
 				> ((Class318_Sub1)
 				   class318_sub1_sub3_sub3_sub1).anInt6377)
 			    && ((((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
 				 .anInt6388)
 				^ 0xffffffff) <= -1
-			    && (512 * Class348_Sub40_Sub3.anInt9109
+			    && (512 * Class348_Sub40_Sub3.mapSizeY
 				> ((Class318_Sub1)
 				   class318_sub1_sub3_sub3_sub1).anInt6388))
 			    class318_sub1_sub3_sub5.method2471
@@ -96,7 +96,7 @@ final class Class282
 		    if (class318_sub1_sub3_sub3_sub2 != null
 			&& (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
 			    .anInt6377) >= 0
-			&& ((512 * Class367_Sub4.anInt7319 ^ 0xffffffff)
+			&& ((512 * Class367_Sub4.mapSizeX ^ 0xffffffff)
 			    < ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
 				.anInt6377)
 			       ^ 0xffffffff))
@@ -104,7 +104,7 @@ final class Class282
 			     .anInt6388)
 			    ^ 0xffffffff) <= -1
 			&& (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			    .anInt6388) < 512 * Class348_Sub40_Sub3.anInt9109)
+			    .anInt6388) < 512 * Class348_Sub40_Sub3.mapSizeY)
 			class318_sub1_sub3_sub5.method2471
 			    ((byte) -103,
 			     ((Class275.method2064

@@ -551,7 +551,7 @@ final class Model
 		&& ((((Model) this).vertexZ[i_107_] ^ 0xffffffff)
 		    == (i_106_ ^ 0xffffffff))) {
 		((Model) this).aShortArray1842[i_107_]
-		    = (short) Class273.method2057((((Model) this)
+		    = (short) Class273.bitOr((((Model) this)
 						   .aShortArray1842[i_107_]),
 						  i_103_);
 		return i_107_;

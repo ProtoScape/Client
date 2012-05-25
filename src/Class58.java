@@ -107,11 +107,11 @@ final class Class58
 	if (bool != false)
 	    method536(-65, true, 105, -126, 39);
 	anInt1066++;
-	if ((Class348_Sub33.aByteArrayArrayArray6962[0][i_24_][i] & 0x2
+	if ((Class348_Sub33.settingFlags[0][i_24_][i] & 0x2
 	     ^ 0xffffffff)
 	    != -1)
 	    return true;
-	if ((0x10 & Class348_Sub33.aByteArrayArrayArray6962[i_26_][i_24_][i])
+	if ((0x10 & Class348_Sub33.settingFlags[i_26_][i_24_][i])
 	    != 0)
 	    return false;
 	if (i_25_ == Class239_Sub10.method1762(-55, i_26_, i, i_24_))

@@ -115,7 +115,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 						     class348_sub42_sub12)
 						    .anInt9607));
 			 class46_9_ != null;
-			 class46_9_ = Class237.method1687(class46_9_, 3)) {
+			 class46_9_ = MapLoader.method1687(class46_9_, 3)) {
 			if (((Widget) class46_9_).anInt830
 			    == ((Widget) class46).anInt830)
 			    return true;
@@ -181,7 +181,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	if (Class261.aClass113_3314 == class113)
 	    return 34066;
 	if (i != 25602)
-	    method2413(-121, null);
+	    getSkipAmount(-121, null);
 	throw new IllegalArgumentException();
     }
     
@@ -294,20 +294,20 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	return i_19_;
     }
     
-    static final int method2413(int i,
+    static final int getSkipAmount(int i,
 				GameBuffer class348_sub49_sub2) {
 	anInt8749++;
-	int i_35_ = class348_sub49_sub2.method3410((byte) -24, 2);
+	int i_35_ = class348_sub49_sub2.getBits(2);
 	if (i != 1)
 	    aClass262_8744 = null;
 	int i_36_;
 	if (i_35_ != 0) {
 	    if (i_35_ == 1)
-		i_36_ = class348_sub49_sub2.method3410((byte) -24, 5);
+		i_36_ = class348_sub49_sub2.getBits(5);
 	    else if ((i_35_ ^ 0xffffffff) != -3)
-		i_36_ = class348_sub49_sub2.method3410((byte) -24, 11);
+		i_36_ = class348_sub49_sub2.getBits(11);
 	    else
-		i_36_ = class348_sub49_sub2.method3410((byte) -24, 8);
+		i_36_ = class348_sub49_sub2.getBits(8);
 	} else
 	    i_36_ = 0;
 	return i_36_;

@@ -52,7 +52,7 @@ final class Class239_Sub5 extends Class239
     static final void method1741(GameBuffer class348_sub49_sub2,
 				 byte i) {
 	anInt5893++;
-	class348_sub49_sub2.method3417(122);
+	class348_sub49_sub2.initiateBitAccess(122);
 	int i_3_ = Class348_Sub42_Sub11.localPlayerId;
 	Player class318_sub1_sub3_sub3_sub2
 	    = (Class132.localPlayer
@@ -60,14 +60,14 @@ final class Class239_Sub5 extends Class239
 	       = new Player());
 	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2).anInt10290
 	    = i_3_;
-	int i_4_ = class348_sub49_sub2.method3410((byte) -24, 30);
+	int i_4_ = class348_sub49_sub2.getBits(30);
 	if (i != 118)
 	    anInt5886 = 111;
 	byte i_5_ = (byte) (i_4_ >> -1874018660);
 	int i_6_ = i_4_ >> -1334666546 & 0x3fff;
 	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 	    .anIntArray10320[0]
-	    = -za_Sub2.anInt9780 + i_6_;
+	    = -za_Sub2.baseRegionX + i_6_;
 	int i_7_ = 0x3fff & i_4_;
 	((Class318_Sub1) class318_sub1_sub3_sub3_sub2).anInt6377
 	    = (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
@@ -77,7 +77,7 @@ final class Class239_Sub5 extends Class239
 		  << 564121416));
 	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 	    .anIntArray10317[0]
-	    = i_7_ + -Class90.anInt1517;
+	    = i_7_ + -Class90.baseRegionY;
 	((Class318_Sub1) class318_sub1_sub3_sub3_sub2).anInt6388
 	    = (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 		 .anIntArray10317[0])
@@ -102,11 +102,11 @@ final class Class239_Sub5 extends Class239
 						     [i_3_]));
 	Class328_Sub1.anInt6513 = 0;
 	Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_3_;
-	Class348_Sub5.aByteArray6624[i_3_] = (byte) 0;
+	Class348_Sub5.gpiFlags[i_3_] = (byte) 0;
 	Class348_Sub42_Sub4.anInt9513 = 0;
 	for (int i_8_ = 1; (i_8_ ^ 0xffffffff) > -2049; i_8_++) {
 	    if ((i_3_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)) {
-		int i_9_ = class348_sub49_sub2.method3410((byte) -24, 18);
+		int i_9_ = class348_sub49_sub2.getBits(18);
 		int i_10_ = i_9_ >> -916532240;
 		int i_11_ = (i_9_ & 0xff78) >> 1563982568;
 		int i_12_ = i_9_ & 0xff;
@@ -119,7 +119,7 @@ final class Class239_Sub5 extends Class239
 		((Class359) class359).anInt4425 = -1;
 		Class135_Sub1.anIntArray4709[Class348_Sub42_Sub4.anInt9513++]
 		    = i_8_;
-		Class348_Sub5.aByteArray6624[i_8_] = (byte) 0;
+		Class348_Sub5.gpiFlags[i_8_] = (byte) 0;
 	    }
 	}
 	class348_sub49_sub2.finalizeBitAccess(false);

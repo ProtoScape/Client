@@ -30,12 +30,12 @@ final class Class203
     
     static final void method1479(int i, byte i_1_, int i_2_, int i_3_) {
 	anInt2675++;
-	int i_4_ = i_2_ - -za_Sub2.anInt9780;
-	int i_5_ = Class90.anInt1517 + i;
+	int i_4_ = i_2_ - -za_Sub2.baseRegionX;
+	int i_5_ = Class90.baseRegionY + i;
 	if (Message.aClass357ArrayArrayArray2029 != null && i_2_ >= 0
 	    && i >= 0
-	    && (i_2_ ^ 0xffffffff) > (Class367_Sub4.anInt7319 ^ 0xffffffff)
-	    && Class348_Sub40_Sub3.anInt9109 > i
+	    && (i_2_ ^ 0xffffffff) > (Class367_Sub4.mapSizeX ^ 0xffffffff)
+	    && Class348_Sub40_Sub3.mapSizeY > i
 	    && (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		    .aClass239_Sub27_7261.method1840(-32350) != 0
 		|| i_3_ == (((Class318_Sub1)

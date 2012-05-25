@@ -163,7 +163,7 @@ final class Huffman
 		i_21_ += 24;
 		is_14_[i_20_]
 		    = (byte) (i_15_
-			      = Class273.method2057(i_15_, i_18_ >>> i_21_));
+			      = Class273.bitOr(i_15_, i_18_ >>> i_21_));
 		if ((i_20_ ^ 0xffffffff) > (i_22_ ^ 0xffffffff)) {
 		    i_20_++;
 		    i_21_ -= 8;
@@ -233,7 +233,7 @@ final class Huffman
 			    is_23_[i_30_] = is_23_[i_30_ - 1];
 			    break;
 			}
-			is_23_[i_30_] = Class273.method2057(i_31_, i_32_);
+			is_23_[i_30_] = Class273.bitOr(i_31_, i_32_);
 		    }
 		    i_29_ = i_27_ | i_28_;
 		}

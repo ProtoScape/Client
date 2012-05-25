@@ -117,10 +117,10 @@ final class Queue
 			i_6_ = 0x3fff & (int) -AbtractArchiveLoader.aFloat3938;
 		    }
 		    int i_7_ = 48 - (-(i_4_ / 128)
-				     - -(Class367_Sub4.anInt7319 * 2)) - -208;
+				     - -(Class367_Sub4.mapSizeX * 2)) - -208;
 		    int i_8_
-			= (208 - (Class348_Sub40_Sub3.anInt9109 * 2 - 48)
-			   + 4 * Class348_Sub40_Sub3.anInt9109 - i_3_ / 128);
+			= (208 - (Class348_Sub40_Sub3.mapSizeY * 2 - 48)
+			   + 4 * Class348_Sub40_Sub3.mapSizeY - i_3_ / 128);
 		    Class108.aClass105_1664.method967
 			(((float) ((Widget) class46).anInt709 / 2.0F
 			  + (float) i),
@@ -138,13 +138,13 @@ final class Queue
 						    .aClass262_10125
 						    .nextForward((byte) 92)) {
 			int i_9_ = ((Class348_Sub35) class348_sub35).anInt6976;
-			int i_10_ = (-za_Sub2.anInt9780
+			int i_10_ = (-za_Sub2.baseRegionX
 				     + ((0xfffe5b0
 					 & (((Class252) r_Sub2.aClass252_10488)
 					    .anIntArray3238[i_9_]))
 					>> -1329227730));
 			int i_11_
-			    = (-Class90.anInt1517
+			    = (-Class90.baseRegionY
 			       + (0x3fff & (((Class252) r_Sub2.aClass252_10488)
 					    .anIntArray3238[i_9_])));
 			int i_12_ = -(i_4_ / 128) + 2 + 4 * i_10_;
@@ -194,11 +194,11 @@ final class Queue
 			int i_17_ = (int) (0x3L & (((Node) class348_sub37)
 						   .nodeKey) >> 1012614876);
 			if (Class334.anInt4155 == i_17_) {
-			    int i_18_ = (-za_Sub2.anInt9780
+			    int i_18_ = (-za_Sub2.baseRegionX
 					 + (int) ((((Node) class348_sub37)
 						   .nodeKey)
 						  & 0x3fffL));
-			    int i_19_ = (-Class90.anInt1517
+			    int i_19_ = (-Class90.baseRegionY
 					 + (int) ((((Node) class348_sub37)
 						   .nodeKey) >> -1442950322
 						  & 0x3fffL));

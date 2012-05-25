@@ -54,7 +54,7 @@ final class Class93
 	    return null;
 	anInt1529++;
 	byte[] is_3_ = new byte[i];
-	Class214.byteArrayCopy(is, 0, is_3_, 0, i);
+	ArrayUtils.arrayCopy(is, 0, is_3_, 0, i);
 	return is_3_;
     }
     
@@ -63,7 +63,7 @@ final class Class93
 	if (i_5_ >= -30)
 	    aStringArray1531 = null;
 	byte[] is_6_ = new byte[i_4_];
-	Class214.byteArrayCopy(is, i, is_6_, 0, i_4_);
+	ArrayUtils.arrayCopy(is, i, is_6_, 0, i_4_);
 	return is_6_;
     }
 }

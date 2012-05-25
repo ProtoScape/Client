@@ -30,16 +30,16 @@ final class Class367_Sub5 extends Class367
 	else {
 	    anIDirect3DVertexShader7332
 		= ((DirectxToolkit) aClass378_7328).anIDirect3DDevice9810
-		      .b(class45.getArchiveChild("dx", "uw_ground_unlit"));
+		      .b(class45.getChildArchive("dx", "uw_ground_unlit"));
 	    anIDirect3DVertexShader7330
 		= ((DirectxToolkit) aClass378_7328).anIDirect3DDevice9810
-		      .b(class45.getArchiveChild("dx", "uw_ground_lit"));
+		      .b(class45.getChildArchive("dx", "uw_ground_lit"));
 	    anIDirect3DVertexShader7334
 		= ((DirectxToolkit) aClass378_7328).anIDirect3DDevice9810
-		      .b(class45.getArchiveChild("dx", "uw_model_unlit"));
+		      .b(class45.getChildArchive("dx", "uw_model_unlit"));
 	    anIDirect3DVertexShader7335
 		= ((DirectxToolkit) aClass378_7328).anIDirect3DDevice9810
-		      .b(class45.getArchiveChild("dx", "uw_model_lit"));
+		      .b(class45.getChildArchive("dx", "uw_model_lit"));
 	    if (null != anIDirect3DVertexShader7332
 		& anIDirect3DVertexShader7330 != null
 		& anIDirect3DVertexShader7334 != null

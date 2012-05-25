@@ -42,16 +42,16 @@ final class ColorNode implements Interface12
     static final void method491(byte i) {
 	for (int i_1_ = 0;
 	     ((i_1_ ^ 0xffffffff)
-	      > (Class348_Sub33.aByteArrayArrayArray6962.length ^ 0xffffffff));
+	      > (Class348_Sub33.settingFlags.length ^ 0xffffffff));
 	     i_1_++) {
 	    for (int i_2_ = 0;
-		 i_2_ < Class348_Sub33.aByteArrayArrayArray6962[0].length;
+		 i_2_ < Class348_Sub33.settingFlags[0].length;
 		 i_2_++) {
 		for (int i_3_ = 0;
-		     (Class348_Sub33.aByteArrayArrayArray6962[0][0].length
+		     (Class348_Sub33.settingFlags[0][0].length
 		      > i_3_);
 		     i_3_++)
-		    Class348_Sub33.aByteArrayArrayArray6962[i_1_][i_2_][i_3_]
+		    Class348_Sub33.settingFlags[i_1_][i_2_][i_3_]
 			= (byte) 0;
 	    }
 	}

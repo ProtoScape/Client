@@ -326,7 +326,7 @@ final class ItemLoader
 	    return class213;
 	byte[] is;
 	synchronized (itemIndexLoader) {
-	    is = itemIndexLoader.getArchiveChild(Class54.method500(7, i_13_),
+	    is = itemIndexLoader.getChildArchive(Class54.method500(7, i_13_),
 					 Class251.method1914(-23590, i_13_));
 	}
 	class213 = new ItemDefinition();
@@ -443,7 +443,7 @@ final class ItemLoader
 	    if (itemIndexLoader != null) {
 		int i_23_ = -1 + itemIndexLoader.getAmountChildren();
 		((ItemLoader) this).anInt3271
-		    = itemIndexLoader.method407(i_23_) + i_23_ * 256;
+		    = itemIndexLoader.getAmountChildEntries(i_23_) + i_23_ * 256;
 	    } else
 		((ItemLoader) this).anInt3271 = 0;
 	    aStringArray3290

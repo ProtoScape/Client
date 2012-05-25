@@ -1120,11 +1120,11 @@ final class NpcDefinition
 	    return false;
 	anInt1332++;
 	if (i_93_ < 0 || (i ^ 0xffffffff) > -1
-	    || i_93_ >= Class348_Sub33.aByteArrayArrayArray6962[1].length
-	    || (Class348_Sub33.aByteArrayArrayArray6962[1][i_93_].length
+	    || i_93_ >= Class348_Sub33.settingFlags[1].length
+	    || (Class348_Sub33.settingFlags[1][i_93_].length
 		^ 0xffffffff) >= (i ^ 0xffffffff))
 	    return false;
-	if ((Class348_Sub33.aByteArrayArrayArray6962[1][i_93_][i] & 0x2) != 0)
+	if ((Class348_Sub33.settingFlags[1][i_93_][i] & 0x2) != 0)
 	    return true;
 	return false;
     }

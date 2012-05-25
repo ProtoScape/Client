@@ -49,7 +49,7 @@ final class Class154
 		    is_10_[i_11_] = anIntArray2092[i_11_];
 		if (((AnimationDefinition) class17_0_).anInt249 >= 0) {
 		    if (((AnimationDefinition) class17_0_).anInt249 != 65535) {
-			is_10_[5] = Class273.method2057((((AnimationDefinition) class17_0_)
+			is_10_[5] = Class273.bitOr((((AnimationDefinition) class17_0_)
 							 .anInt249),
 							1073741824);
 			l ^= (long) is_10_[5] << 1203402208;
@@ -60,7 +60,7 @@ final class Class154
 		}
 		if ((((AnimationDefinition) class17_0_).anInt261 ^ 0xffffffff) <= -1) {
 		    if (((AnimationDefinition) class17_0_).anInt261 != 65535) {
-			is_10_[3] = Class273.method2057((((AnimationDefinition) class17_0_)
+			is_10_[3] = Class273.bitOr((((AnimationDefinition) class17_0_)
 							 .anInt261),
 							1073741824);
 			l ^= (long) is_10_[3];
@@ -481,7 +481,7 @@ final class Class154
 		    anIntArray2092[i_61_] = 0;
 		else if (class255.getItemDefinition(-125, i_62_) != null) {
 		    anIntArray2092[i_61_]
-			= Class273.method2057(1073741824, i_62_);
+			= Class273.bitOr(1073741824, i_62_);
 		    method1234(-100);
 		}
 	    }
@@ -845,7 +845,7 @@ final class Class154
 	    if (class150.method1203((byte) 33, i) != null) {
 		if (i_112_ != -1)
 		    aLong2094 = -53L;
-		anIntArray2092[i_114_] = Class273.method2057(i, -2147483648);
+		anIntArray2092[i_114_] = Class273.bitOr(i, -2147483648);
 		method1234(-54);
 	    }
 	} catch (RuntimeException runtimeexception) {

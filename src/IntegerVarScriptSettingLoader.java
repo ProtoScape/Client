@@ -31,7 +31,7 @@ final class IntegerVarScriptSettingLoader
 	int i_2_ = 44 % ((-41 - i_1_) / 33);
 	byte[] is;
 	synchronized (aClass45_3299) {
-	    is = aClass45_3299.getArchiveChild(19, i);
+	    is = aClass45_3299.getChildArchive(19, i);
 	}
 	de = new IntergerVarScriptSettingDefinition();
 	if (is != null)
@@ -45,7 +45,7 @@ final class IntegerVarScriptSettingLoader
     IntegerVarScriptSettingLoader(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_3299 = class45;
-	    ((IntegerVarScriptSettingLoader) this).amountScriptGlobalInts = aClass45_3299.method407(19);
+	    ((IntegerVarScriptSettingLoader) this).amountScriptGlobalInts = aClass45_3299.getAmountChildEntries(19);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("uea.<init>("

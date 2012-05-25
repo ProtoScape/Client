@@ -115,7 +115,7 @@ final class NpcLoader
 	    return definition;
 	byte[] payload;
 	synchronized (npcIndexLoader) {
-	    payload = npcIndexLoader.getArchiveChild(Class115.method1060(id, (byte) 69), Class253.method1920(127, id));
+	    payload = npcIndexLoader.getChildArchive(Class115.method1060(id, (byte) 69), Class253.method1920(127, id));
         }
 	definition = new NpcDefinition();
 	((NpcDefinition) definition).id = id;
@@ -155,7 +155,7 @@ final class NpcLoader
 		if (npcIndexLoader == null)
 		    break;
 		int i_8_ = npcIndexLoader.getAmountChildren() - 1;
-		npcIndexLoader.method407(i_8_);
+		npcIndexLoader.getAmountChildEntries(i_8_);
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929(runtimeexception,
 						("vda.<init>("

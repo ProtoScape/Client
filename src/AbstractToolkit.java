@@ -27,7 +27,7 @@ abstract class AbstractToolkit
     static int[] anIntArray4578 = new int[200];
     d aD4579;
     static int anInt4580;
-    static int anInt4581;
+    static int chnkX;
     static float aFloat4582;
     static int anInt4583;
     
@@ -100,7 +100,7 @@ abstract class AbstractToolkit
 				 int i_38_, int i_39_) {
 	anInt4575++;
 	if (i_36_ != -75)
-	    anInt4581 = 73;
+	    chnkX = 73;
 	if (i_35_ == i_38_)
 	    Class127.method1116(i, i_37_, i_39_, i_38_, (byte) -99);
 	else if (Class369.anInt4960 <= i_39_ + -i_38_

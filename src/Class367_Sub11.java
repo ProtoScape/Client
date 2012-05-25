@@ -246,22 +246,22 @@ final class Class367_Sub11 extends Class367
 	    if (class45 != null && ((NativeOpenGlToolkit) class377).aBoolean9923) {
 		aClass193_7395
 		    = za_Sub2.method3442(34336,
-					 class45.getArchiveChild("gl",
+					 class45.getChildArchive("gl",
 							   "uw_ground_unlit"),
 					 class377, 4);
 		aClass193_7392
 		    = za_Sub2.method3442(34336,
-					 class45.getArchiveChild("gl",
+					 class45.getChildArchive("gl",
 							   "uw_ground_lit"),
 					 class377, 4);
 		aClass193_7404
 		    = za_Sub2.method3442(34336,
-					 class45.getArchiveChild("gl",
+					 class45.getChildArchive("gl",
 							   "uw_model_unlit"),
 					 class377, 4);
 		aClass193_7407
 		    = za_Sub2.method3442(34336,
-					 class45.getArchiveChild("gl",
+					 class45.getChildArchive("gl",
 							   "uw_model_lit"),
 					 class377, 4);
 		if (!(aClass193_7395 != null & aClass193_7392 != null

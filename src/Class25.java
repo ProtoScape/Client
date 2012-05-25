@@ -45,7 +45,7 @@ final class Class25
 	    return class38;
 	byte[] is;
 	synchronized (aClass45_366) {
-	    is = aClass45_366.getArchiveChild(30, i);
+	    is = aClass45_366.getChildArchive(30, i);
 	}
 	if (i_2_ < 6)
 	    aClass60_360 = null;
@@ -108,7 +108,7 @@ final class Class25
     Class25(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_366 = class45;
-	    aClass45_366.method407(30);
+	    aClass45_366.getAmountChildEntries(30);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("hq.<init>("

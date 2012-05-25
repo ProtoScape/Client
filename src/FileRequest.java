@@ -214,7 +214,7 @@ abstract class FileRequest extends SubNode
     static final float[] method3258(int i, int i_11_, float[] fs) {
 	anInt9668++;
 	float[] fs_12_ = new float[i_11_];
-	Class214.method1574(fs, 0, fs_12_, i, i_11_);
+	ArrayUtils.arrayCopy(fs, 0, fs_12_, i, i_11_);
 	return fs_12_;
     }
     

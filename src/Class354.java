@@ -22,10 +22,8 @@ final class Class354
 	    aClass60_4361 = null;
     }
     
-    static final byte decodeCharacter(char c, boolean bool) {
+    static byte charToByte(char c) {
 	anInt4354++;
-	if (bool != false)
-	    decodeCharacter('\uffe1', false);
 	byte i;
 	if ((c <= 0 || c >= 128) && (c < 160 || c > 255)) {
 	    if ((c ^ 0xffffffff) != -8365) {

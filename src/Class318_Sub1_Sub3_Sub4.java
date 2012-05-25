@@ -133,7 +133,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 	throw new IllegalStateException();
     }
     
-    static final int method2462(int i, int i_3_, int i_4_) {
+    static final int getNoise(int i_3_, int i_4_) {
 	anInt10351++;
 	int i_5_
 	    = (Class301.method2278(4, 91923 + i_4_, (byte) 120, i_3_ + 45365)
@@ -149,8 +149,6 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 		i_5_ = 60;
 	} else
 	    i_5_ = 10;
-	if (i >= -35)
-	    method2463(36, -58, null, 49, -2, 122);
 	return i_5_;
     }
     
@@ -264,7 +262,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 				      i_12_ + i_11_, i_13_ + i_14_ + 1);
 		    Class75.method748(var_ha);
 		    if (i != -7)
-			method2462(63, -7, -14);
+			getNoise(-7, -14);
 		    Deque class262 = Class75.method758(var_ha);
 		    NativeLibTracker.method2312(-13084, 0, class262, 0, var_ha);
 		    if ((Class367_Sub9.anInt7379 ^ 0xffffffff) < -1) {
@@ -441,8 +439,8 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 	anInt10348++;
 	if (i == 3613) {
 	    int i_31_ = 0;
-	    for (int i_32_ = 0; Class367_Sub4.anInt7319 > i_32_; i_32_++) {
-		for (int i_33_ = 0; Class348_Sub40_Sub3.anInt9109 > i_33_;
+	    for (int i_32_ = 0; Class367_Sub4.mapSizeX > i_32_; i_32_++) {
+		for (int i_33_ = 0; Class348_Sub40_Sub3.mapSizeY > i_33_;
 		     i_33_++) {
 		    if (Class367_Sub4.method3542
 			(i_33_, Message.aClass357ArrayArrayArray2029, i_32_,

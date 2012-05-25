@@ -15,7 +15,7 @@ final class Class171
     static int anInt2275;
     /*synthetic*/ static Class aClass2276;
     
-    static final int getCrcChecksum(int i, boolean bool, byte[] is, int i_0_) {
+    static final int getChecksum(int i, boolean bool, byte[] is, int i_0_) {
 	anInt2267++;
 	if (bool != true)
 	    return 63;
@@ -145,43 +145,43 @@ final class Class171
 	    int i_38_ = i_32_ >> 1180576809;
 	    int i_39_ = i_33_ >> 188458601;
 	    if ((i_34_ ^ 0xffffffff) > -1 || i_36_ < 0
-		|| -1 + Class367_Sub4.anInt7319 < i_34_
-		|| ((Class348_Sub40_Sub3.anInt9109 - 1 ^ 0xffffffff)
+		|| -1 + Class367_Sub4.mapSizeX < i_34_
+		|| ((Class348_Sub40_Sub3.mapSizeY - 1 ^ 0xffffffff)
 		    > (i_36_ ^ 0xffffffff)))
 		return 0;
 	    if (i_38_ < 1 || (i_39_ ^ 0xffffffff) > -2
-		|| -1 + Class367_Sub4.anInt7319 < i_38_
-		|| (i_39_ ^ 0xffffffff) < (-1 + Class348_Sub40_Sub3.anInt9109
+		|| -1 + Class367_Sub4.mapSizeX < i_38_
+		|| (i_39_ ^ 0xffffffff) < (-1 + Class348_Sub40_Sub3.mapSizeY
 					   ^ 0xffffffff))
 		return 0;
 	    boolean bool
-		= ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		= ((0x2 & (Class348_Sub33.settingFlags[1]
 			   [i_32_ >> -1561487767][i_33_ >> 1692295945]))
 		   != 0);
 	    if ((i_32_ & 0x1ff ^ 0xffffffff) == -1) {
 		boolean bool_40_
-		    = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		    = ((0x2 & (Class348_Sub33.settingFlags[1]
 			       [-1 + i_38_][i_33_ >> 720652841]))
 		       != 0);
 		boolean bool_41_
-		    = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		    = ((0x2 & (Class348_Sub33.settingFlags[1]
 			       [i_38_][i_33_ >> -769339767]))
 		       != 0);
 		if (bool_40_ == !bool_41_)
-		    bool = (0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		    bool = (0x2 & (Class348_Sub33.settingFlags[1]
 				   [i_34_][i_36_])
 			    ^ 0xffffffff) != -1;
 	    }
 	    if ((i_33_ & 0x1ff) == 0) {
-		boolean bool_42_ = ((Class348_Sub33.aByteArrayArrayArray6962[1]
+		boolean bool_42_ = ((Class348_Sub33.settingFlags[1]
 				     [i_32_ >> -239805847][-1 + i_39_]) & 0x2
 				    ^ 0xffffffff) != -1;
 		boolean bool_43_
-		    = ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		    = ((0x2 & (Class348_Sub33.settingFlags[1]
 			       [i_32_ >> -691907255][i_39_]))
 		       != 0);
 		if (bool_42_ == !bool_43_)
-		    bool = (0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+		    bool = (0x2 & (Class348_Sub33.settingFlags[1]
 				   [i_34_][i_36_])
 			    ^ 0xffffffff) != -1;
 	    }

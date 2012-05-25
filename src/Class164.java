@@ -74,17 +74,17 @@ final class Class164
 	}
 	if (LoadingStage.loadingStage2 == WidgetVariable.currentLoadingStage) {
 	    boolean bool
-		= Class348_Sub40_Sub17_Sub1.indexLoader33.isCompletelyLoaded(89);
+		= Class348_Sub40_Sub17_Sub1.indexLoader33.loadAll();
 	    int i_2_ = Class13.indexLoaders[33].getTableRequestPercentComplete();
 	    i_2_ = i_2_ + Class13.indexLoaders
 			      [!Class286_Sub7.aBoolean6289 ? 32 : 34]
 			      .getTableRequestPercentComplete();
 	    i_2_ += Class13.indexLoaders[13].getTableRequestPercentComplete();
-	    i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.indexLoader33.getPercentLoaded((byte) -31) : 100);
+	    i_2_ = i_2_ + (!bool ? Class348_Sub40_Sub17_Sub1.indexLoader33.getChildLoadedPerc() : 100);
 	    if ((i_2_ ^ 0xffffffff) != -401)
 		return i_2_ / 4;
-	    AbstractImageFetcher.anInt6924 = Class286_Sub7.indexLoader32_34.getTableChecksum();
-	    Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.indexLoader33.getTableChecksum();
+	    AbstractImageFetcher.anInt6924 = Class286_Sub7.indexLoader32_34.getChecksum();
+	    Class108.anInt1663 = Class348_Sub40_Sub17_Sub1.indexLoader33.getChecksum();
 	    AlternativeFontLoader.method1001(Class286_Sub7.indexLoader32_34, 0);
 	    int i_3_ = ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 			   .aClass239_Sub19_7257.method1805(i ^ 0x11ae);
@@ -130,15 +130,15 @@ final class Class164
 			< 100))
 		    return 0;
 	    }
-	    VarbitHandler.method1311(5139, Class348_Sub8.currentToolkit);
+	    VarpHandler.method1311(5139, Class348_Sub8.currentToolkit);
 	    Class369.method3568(Class348_Sub8.currentToolkit, 4);
 	    ByteBuffer.setClientState(2, 1);
 	}
 	if (WidgetVariable.currentLoadingStage == LoadingStage.loadingStage6) {
 	    for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -5; i_7_++)
 		AbstractMouseEvent.aClass361Array7108[i_7_]
-		    = NativeRaster.method988(Class348_Sub40_Sub3.anInt9109, 1,
-					      Class367_Sub4.anInt7319);
+		    = NativeRaster.method988(Class348_Sub40_Sub3.mapSizeY, 1,
+					      Class367_Sub4.mapSizeX);
 	}
 	if (WidgetVariable.currentLoadingStage == LoadingStage.loadingStage7) {
 	    Class21.indexLoader8 = Class369_Sub2.createIndexLoader(false, 8, 1);
@@ -357,14 +357,14 @@ final class Class164
 		(i + 28539, (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 				 .aClass239_Sub27_7261.method1840(i + -3690)
 			     ^ 0xffffffff) == -1);
-	    Class318_Sub1_Sub3_Sub3.varbitHandler = new VarbitHandler();
+	    Class318_Sub1_Sub3_Sub3.varbitHandler = new VarpHandler();
 	    Class348_Sub40.method3038(-1);
 	    RuntimeException_Sub1.method4011(i + 29684,
 					     Class239.indexLoader27);
 	    Class348_Sub29.method3004(aa_Sub3.indexLoader7, false,
 				      Class348_Sub40_Sub4.textureLoader);
 	    Huffman class296
-		= new Huffman(Class16.aClass45_233.getArchiveChild("huffman", ""));
+		= new Huffman(Class16.aClass45_233.getChildArchive("huffman", ""));
 	    NativeToolkit.setHuffman(class296, (byte) 13);
 	    try {
 		jagmisc.init();
@@ -413,12 +413,12 @@ final class Class164
 		= Class348_Sub35.indexLoader3.getArchiveId("loginscreen");
 	    Class54.anInt970
 		= Class348_Sub35.indexLoader3.getArchiveId("lobbyscreen");
-	    Class367_Sub10.indexLoader5.destroy(0, true, false);
-	    Class59_Sub2_Sub1.indexLoader6.destroy(0, true, true);
-	    Class21.indexLoader8.destroy(i + 28660, true, true);
-	    Class104.indexLoader13.destroy(0, true, true);
-	    Class16.aClass45_233.destroy(0, true, true);
-	    Class348_Sub35.indexLoader3.destroy(0, true, true);
+	    Class367_Sub10.indexLoader5.destroy(true, false);
+	    Class59_Sub2_Sub1.indexLoader6.destroy(true, true);
+	    Class21.indexLoader8.destroy(true, true);
+	    Class104.indexLoader13.destroy(true, true);
+	    Class16.aClass45_233.destroy(true, true);
+	    Class348_Sub35.indexLoader3.destroy(true, true);
 	    ((IndexLoader) Class95.indexLoader2).unpackSettings = 2;
 	    GfxLoader.aBoolean3988 = true;
 	    ((IndexLoader) Class247.indexLoader17).unpackSettings = 2;
@@ -505,7 +505,7 @@ final class Class164
 	    Whirlpool.method830(((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 				  .aClass239_Sub8_7227.method1751(-32350),
 			      -1, (byte) 102, false, -1);
-	    VarbitHandler.method1311(5139, Class348_Sub8.currentToolkit);
+	    VarpHandler.method1311(5139, Class348_Sub8.currentToolkit);
 	    Class369.method3568(Class348_Sub8.currentToolkit, i ^ ~0x6ff7);
 	    ItemLoader.method1933(Class21.indexLoader8, Class348_Sub8.currentToolkit,
 				true);

@@ -47,7 +47,7 @@ final class BufferedFile
 		    > (long) aByteArray1305.length + aLong1321)) {
 		int i_1_ = (int) ((long) aByteArray1305.length
 				  + (aLong1321 + -aLong1324));
-		Class214.byteArrayCopy(is, i, aByteArray1305,
+		ArrayUtils.arrayCopy(is, i, aByteArray1305,
 				    (int) (-aLong1321 + aLong1324), i_1_);
 		i += i_1_;
 		i_0_ -= i_1_;
@@ -87,7 +87,7 @@ final class BufferedFile
 		    l_2_ = (long) anInt1320 + aLong1319;
 		if (l > -1L && l_2_ > l) {
 		    int i_3_ = (int) (l_2_ + -l);
-		    Class214.byteArrayCopy(is, (int) (-aLong1324 + l + (long) i),
+		    ArrayUtils.arrayCopy(is, (int) (-aLong1324 + l + (long) i),
 					aByteArray1311, (int) (-aLong1319 + l),
 					i_3_);
 		}
@@ -97,7 +97,7 @@ final class BufferedFile
 	    if ((i_0_ ^ 0xffffffff) < -1) {
 		if (aLong1321 == -1L)
 		    aLong1321 = aLong1324;
-		Class214.byteArrayCopy(is, i, aByteArray1305,
+		ArrayUtils.arrayCopy(is, i, aByteArray1305,
 				    (int) (-aLong1321 + aLong1324), i_0_);
 		aLong1324 += (long) i_0_;
 		if (aLong1324 + -aLong1321 > (long) anInt1314)
@@ -150,7 +150,7 @@ final class BufferedFile
 							 ^ 0xffffffffffffffffL)
 		&& (((long) anInt1314 + aLong1321 ^ 0xffffffffffffffffL)
 		    <= (aLong1324 - -(long) i_5_ ^ 0xffffffffffffffffL))) {
-		Class214.byteArrayCopy(aByteArray1305,
+		ArrayUtils.arrayCopy(aByteArray1305,
 				    (int) (-aLong1321 + aLong1324), is, i,
 				    i_5_);
 		aLong1324 += (long) i_5_;
@@ -165,7 +165,7 @@ final class BufferedFile
 		int i_9_ = (int) ((long) anInt1320 - (-aLong1319 + aLong1324));
 		if (i_5_ < i_9_)
 		    i_9_ = i_5_;
-		Class214.byteArrayCopy(aByteArray1311,
+		ArrayUtils.arrayCopy(aByteArray1311,
 				    (int) (aLong1324 + -aLong1319), is, i,
 				    i_9_);
 		aLong1324 += (long) i_9_;
@@ -189,7 +189,7 @@ final class BufferedFile
 		int i_11_ = i_5_;
 		if ((i_11_ ^ 0xffffffff) < (anInt1320 ^ 0xffffffff))
 		    i_11_ = anInt1320;
-		Class214.byteArrayCopy(aByteArray1311, 0, is, i, i_11_);
+		ArrayUtils.arrayCopy(aByteArray1311, 0, is, i, i_11_);
 		i += i_11_;
 		aLong1324 += (long) i_11_;
 		i_5_ -= i_11_;
@@ -235,7 +235,7 @@ final class BufferedFile
 		if (l_13_ > -1L && ((l_14_ ^ 0xffffffffffffffffL)
 				    < (l_13_ ^ 0xffffffffffffffffL))) {
 		    int i_15_ = (int) (l_14_ + -l_13_);
-		    Class214.byteArrayCopy(aByteArray1305,
+		    ArrayUtils.arrayCopy(aByteArray1305,
 					(int) (l_13_ + -aLong1321), is,
 					i_7_ - -(int) (l_13_ - l), i_15_);
 		    if ((aLong1324 ^ 0xffffffffffffffffL)
@@ -310,7 +310,7 @@ final class BufferedFile
 		l_18_ = (long) anInt1320 + aLong1319;
 	    if ((l ^ 0xffffffffffffffffL) < 0L && l < l_18_) {
 		int i_19_ = (int) (-l + l_18_);
-		Class214.byteArrayCopy(aByteArray1305, (int) (l - aLong1321),
+		ArrayUtils.arrayCopy(aByteArray1305, (int) (l - aLong1321),
 				    aByteArray1311, (int) (-aLong1319 + l),
 				    i_19_);
 	    }

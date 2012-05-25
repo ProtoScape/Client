@@ -112,7 +112,7 @@ final class TextureLoader implements d
 	    aClass45_4619 = class45_12_;
 	    indexLoader = class45_13_;
 	    ByteBuffer buffer
-		= new ByteBuffer(class45.getArchiveChild(0, 0));
+		= new ByteBuffer(class45.getChildArchive(0, 0));
 	    anInt4625 = buffer.getShort();
 	    definitions = new TextureDefinition[anInt4625];
 	    for (int i = 0; (i ^ 0xffffffff) > (anInt4625 ^ 0xffffffff); i++) {

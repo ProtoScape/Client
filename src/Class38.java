@@ -81,9 +81,9 @@ final class Class38
 		    && ((Class348_Sub27) class348_sub27).anInt6905 >= 1
 		    && ((Class348_Sub27) class348_sub27).anInt6896 >= 1
 		    && (((Class348_Sub27) class348_sub27).anInt6905
-			<= -2 + Class367_Sub4.anInt7319)
+			<= -2 + Class367_Sub4.mapSizeX)
 		    && (((Class348_Sub27) class348_sub27).anInt6896
-			<= -2 + Class348_Sub40_Sub3.anInt9109)
+			<= -2 + Class348_Sub40_Sub3.mapSizeY)
 		    && (((Class348_Sub27) class348_sub27).anInt6907 < 0
 			|| (Class5_Sub2.method195
 			    (((Class348_Sub27) class348_sub27).anInt6895,

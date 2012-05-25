@@ -18,7 +18,7 @@ final class Class129
     int anInt1884;
     static int[] maskTable = new int[32];
     private int anInt1886;
-    static byte[][] aByteArrayArray1887;
+    static byte[][] umArchiveSrcs;
     Class129 aClass129_1888;
     int anInt1889;
     int anInt1890;
@@ -44,7 +44,7 @@ final class Class129
     public static void method1126(int i) {
 	if (i == 32) {
 	    indexLoader4 = null;
-	    aByteArrayArray1887 = null;
+	    umArchiveSrcs = null;
 	    maskTable = null;
 	}
     }

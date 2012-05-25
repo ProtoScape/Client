@@ -69,16 +69,16 @@ final class Class353
 		    i_23_ += 0xff & i_25_ >> 1921786136;
 		    i_22_ += (0xff943a & i_25_) >> -630085136;
 		    is_11_[i_12_++]
-			= (Class273.method2057
-			   ((Class273.method2057
-			     (Class139.method1166(i_24_ << 1830115238, 65280),
-			      Class273.method2057((Class139.method1166(1020,
+			= (Class273.bitOr
+			   ((Class273.bitOr
+			     (Class139.bitAnd(i_24_ << 1830115238, 65280),
+			      Class273.bitOr((Class139.bitAnd(1020,
 								       i_22_)
 						   << 2110798030),
-						  (Class139.method1166(i_23_,
+						  (Class139.bitAnd(i_23_,
 								       1020)
 						   << -120087978)))),
-			    Class139.method1166(i_21_, 1020) >> 1691553410));
+			    Class139.bitAnd(i_21_, 1020) >> 1691553410));
 		}
 		i_13_ += i_3_;
 		i_14_ += i_3_;

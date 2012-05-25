@@ -29,7 +29,7 @@ final class Class55_Sub1 extends Class55
 						[i_0_ + anInt5270]),
 					       0))
 		    aByteArrayArray5275[i_0_]
-			= aClass45_5267.getArchiveChild((anIntArray5269
+			= aClass45_5267.getChildArchive((anIntArray5269
 						   [anInt5270 + i_0_]),
 						  0);
 	    }
@@ -79,7 +79,7 @@ final class Class55_Sub1 extends Class55
 	if (anIntArray5269 == null) {
 	    if (!aClass45_5267.isLoaded(anInt5272, 0))
 		return 0;
-	    byte[] is_4_ = aClass45_5267.getArchiveChild(anInt5272, 0);
+	    byte[] is_4_ = aClass45_5267.getChildArchive(anInt5272, 0);
 	    if (is_4_ == null)
 		throw new IllegalStateException("");
 	    ((ByteBuffer) aClass348_Sub49_5276).payload = is_4_;

@@ -65,75 +65,68 @@ final class Class348_Sub40_Sub26 extends Class348_Sub40
 	return is;
     }
     
-    static final void parseUpdateRegionPacket(int i) {
+    static void parseSetRegionPacket(int i) {
 	Class312.anInt3931 = 0;
 	anInt9345++;
-	int i_15_ = Class299.gameBuffer.method3342();
-	int i_16_ = Class299.gameBuffer.getWordLE128(-117);
-	int i_17_ = Class299.gameBuffer.readLEShort(false);
-	boolean bool
-	    = ((Class299.gameBuffer.method3329((byte) 21)
-		^ 0xffffffff)
+	int sizeId = Class299.gameBuffer.method3342();
+	int chnkY = Class299.gameBuffer.getWordLE128(-117);
+	int chnkX = Class299.gameBuffer.readLEShort(false);
+	boolean force = ((Class299.gameBuffer.method3329((byte) 21) ^ 0xffffffff)
 	       == -2);
-	
-	System.out.println("i_15_: "+i_15_);
-	System.out.println("i_16_: "+i_16_);
-	System.out.println("i_17_: "+i_17_);
-	
 	Class322.method2554((byte) -45);
-	Class348_Sub40_Sub22.method3111(111, i_15_);
+	Class348_Sub40_Sub22.setMapSize(sizeId);
 	int i_18_
 	    = (-((ByteBuffer) Class299.gameBuffer).position
 	       + Class348_Sub40_Sub25.currentPacketSize) / 16;
-	Class239_Sub6.anIntArrayArray5894 = new int[i_18_][4];
+	Class239_Sub6.lCipherKeys = new int[i_18_][4];
 	for (int i_19_ = 0; i_19_ < i_18_; i_19_++) {
 	    for (int i_20_ = 0; i_20_ < 4; i_20_++)
-		Class239_Sub6.anIntArrayArray5894[i_19_][i_20_]
+		Class239_Sub6.lCipherKeys[i_19_][i_20_]
 		    = Class299.gameBuffer
 			  .getDword();
 	}
-	Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_18_][];
-	Class129.aByteArrayArray1887 = new byte[i_18_][];
-	aa_Sub1.anIntArray5192 = new int[i_18_];
-	Class14_Sub4.aByteArrayArray8642 = new byte[i_18_][];
-	ClientApplet.anIntArray38 = new int[i_18_];
-	StringNode.aByteArrayArray7212 = null;
-	r.anIntArray9724 = new int[i_18_];
-	Class322.anIntArray4031 = null;
-	Class347.aByteArrayArray4281 = new byte[i_18_][];
+	Class348_Sub23_Sub1.ulArchiveSrcs = new byte[i_18_][];
+	Class129.umArchiveSrcs = new byte[i_18_][];
+	aa_Sub1.mArchiveids = new int[i_18_];
+	Class14_Sub4.lArchiveSrcs = new byte[i_18_][];
+	ClientApplet.lArchiveids = new int[i_18_];
+	StringNode.nArchiveSrcs = null;
+	r.ulArchiveids = new int[i_18_];
+	Class322.nArchiveids = null;
+	Class347.mArchiveSrcs = new byte[i_18_][];
 	if (i >= -47)
 	    anInt9349 = -54;
-	Class295.anIntArray3759 = new int[i_18_];
-	Class348_Sub23_Sub3.anIntArray9042 = new int[i_18_];
+	Class295.umArchiveids = new int[i_18_];
+	Class348_Sub23_Sub3.regionHashes = new int[i_18_];
 	i_18_ = 0;
 	for (int i_21_
-		 = (-(Class367_Sub4.anInt7319 >> -647938396) + i_17_) / 8;
-	     i_21_ <= (i_17_ + (Class367_Sub4.anInt7319 >> -1293697276)) / 8;
+		 = (-(Class367_Sub4.mapSizeX >> -647938396) + chnkX) / 8;
+	     i_21_ <= (chnkX + (Class367_Sub4.mapSizeX >> -1293697276)) / 8;
 	     i_21_++) {
-	    for (int i_22_ = (i_16_ - (Class348_Sub40_Sub3.anInt9109
+	    for (int i_22_ = (chnkY - (Class348_Sub40_Sub3.mapSizeY
 				       >> -1689129020)) / 8;
-		 ((((Class348_Sub40_Sub3.anInt9109 >> -163377948) + i_16_) / 8
+		 ((((Class348_Sub40_Sub3.mapSizeY >> -163377948) + chnkY) / 8
 		   ^ 0xffffffff)
 		  <= (i_22_ ^ 0xffffffff));
 		 i_22_++) {
-		Class348_Sub23_Sub3.anIntArray9042[i_18_]
+		Class348_Sub23_Sub3.regionHashes[i_18_]
 		    = i_22_ + (i_21_ << -209519576);
-		aa_Sub1.anIntArray5192[i_18_]
+		aa_Sub1.mArchiveids[i_18_]
 		    = Class367_Sub10.indexLoader5
 			  .getArchiveId("m" + i_21_ + "_" + i_22_);
-		ClientApplet.anIntArray38[i_18_]
+		ClientApplet.lArchiveids[i_18_]
 		    = Class367_Sub10.indexLoader5
 			  .getArchiveId("l" + i_21_ + "_" + i_22_);
-		Class295.anIntArray3759[i_18_]
+		Class295.umArchiveids[i_18_]
 		    = Class367_Sub10.indexLoader5
 			  .getArchiveId("um" + i_21_ + "_" + i_22_);
-		r.anIntArray9724[i_18_]
+		r.ulArchiveids[i_18_]
 		    = Class367_Sub10.indexLoader5
 			  .getArchiveId("ul" + i_21_ + "_" + i_22_);
 		i_18_++;
 	    }
 	}
-	Class348_Sub41.method3157(i_16_, (byte) 123, i_17_, 11, bool);
+	Class348_Sub41.updateLocation(chnkX, chnkY, 11, force);
     }
     
     final void method3049(ByteBuffer class348_sub49, int i, int i_23_) {

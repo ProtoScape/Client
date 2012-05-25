@@ -44,23 +44,23 @@ class Class5_Sub1 extends Class5
 	Class369_Sub3 class369_sub3
 	    = (Class369_Sub3) ((Class5) this).aClass369_4635;
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8599))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8599))
 	    return false;
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8595))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8595))
 	    return false;
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8603))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8603))
 	    return false;
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8602))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8602))
 	    return false;
 	int i_1_ = 47 / ((25 - i) / 52);
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8600))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8600))
 	    return false;
 	if (!((Class5) this).aClass45_4632
-		 .getArchiveLoaded(false, ((Class369_Sub3) class369_sub3).anInt8597))
+		 .getArchiveLoaded(((Class369_Sub3) class369_sub3).anInt8597))
 	    return false;
 	return true;
     }

@@ -111,7 +111,7 @@ final class Class179
 	anInt2359++;
 	int i_7_ = 95 % ((15 - i) / 32);
 	String[] strings = new String[1 + anInt2364];
-	Class214.method1575(aStringArray2367, 0, strings, 0, anInt2364 - -1);
+	ArrayUtils.arrayCopy(aStringArray2367, 0, strings, 0, anInt2364 - -1);
 	return strings;
     }
     
@@ -130,7 +130,7 @@ final class Class179
 	int i_10_ = 50 % ((3 - i_9_) / 63);
 	anInt2358++;
 	String[] strings = new String[method1358(i, 108)];
-	Class214.method1575(aStringArray2367, 0, strings, 0,
+	ArrayUtils.arrayCopy(aStringArray2367, 0, strings, 0,
 			    aStringArray2367.length);
 	aStringArray2367 = strings;
     }

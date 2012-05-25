@@ -2,14 +2,14 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class VarbitHandler implements ConfigHandler
+final class VarpHandler implements ConfigHandler
 {
     static int anInt5062;
     int[] configs;
     static int anInt5064;
     static int anInt5065;
     static int anInt5066;
-    static Class237_Sub1 aClass237_Sub1_5067;
+    static Class237_Sub1 umMaploader;
     static int anInt5068;
     static int anInt5069;
     private HashTable accessTimes = new HashTable(128);
@@ -32,7 +32,7 @@ final class VarbitHandler implements ConfigHandler
 	    if (((((LongNode) node).value & 0x3fffffffffffffffL) ^ 0xffffffffffffffffL) > (currentTime ^ 0xffffffffffffffffL)) {
 		if ((0x4000000000000000L & ((LongNode) node).value) != 0L) {
 		    int settingId = (int) ((Node) node).nodeKey;
-		    ((VarbitHandler) this).configs[settingId] = queue[settingId];
+		    ((VarpHandler) this).configs[settingId] = queue[settingId];
 		    node.removeNode();
 		    return settingId;
 		}
@@ -44,7 +44,7 @@ final class VarbitHandler implements ConfigHandler
     
     final void putConfig(int settingId, int value) {
         anInt5066++;
-        ((VarbitHandler) this).configs[settingId] = value;
+        ((VarpHandler) this).configs[settingId] = value;
         LongNode node = ((LongNode) accessTimes.get((long) settingId));
         if (node == null) {
             node = new LongNode(500L + Class62.getCurrentTimeMillis());
@@ -60,7 +60,7 @@ final class VarbitHandler implements ConfigHandler
 	int lowBit = ((VarbitDefinition) config).lowestBit;
 	int highBit = ((VarbitDefinition) config).highestBit;
 	int mask = Class129.maskTable[-lowBit + highBit];
-	return ((VarbitHandler) this).configs[configId] >> lowBit & mask;
+	return ((VarpHandler) this).configs[configId] >> lowBit & mask;
     }
     
     final void putSetting(int id, int value) {
@@ -73,7 +73,7 @@ final class VarbitHandler implements ConfigHandler
 	if (-1 < (value ^ 0xffffffff) || (value ^ 0xffffffff) < (mask ^ 0xffffffff))
 	    value = 0;
 	mask <<= lowBit;
-	putConfig(configId, value << lowBit & mask | (((VarbitHandler) this).configs[configId]) & (mask ^ 0xffffffff));
+	putConfig(configId, value << lowBit & mask | (((VarpHandler) this).configs[configId]) & (mask ^ 0xffffffff));
     }
     
     static final void method1308(int i, int i_14_, int i_15_, int i_16_,
@@ -87,14 +87,14 @@ final class VarbitHandler implements ConfigHandler
 	    s_Sub3.method4004(i_20_, i_19_, i_14_, i, i_18_, -80, i_15_,
 			      i_16_);
 	if (i_17_ > -113)
-	    aClass237_Sub1_5067 = null;
+	    umMaploader = null;
     }
     
     static final void method1309(boolean bool, int i) {
 	if (ObjectDefinition.loadingHandler == null)
 	    Class70.initializeLoadingHandler(92);
 	if (i < 116)
-	    aClass237_Sub1_5067 = null;
+	    umMaploader = null;
 	anInt5062++;
 	if (bool)
 	    ObjectDefinition.loadingHandler.method2326(96);
@@ -102,7 +102,7 @@ final class VarbitHandler implements ConfigHandler
     
     public static void method1310(boolean bool) {
 	if (bool == true)
-	    aClass237_Sub1_5067 = null;
+	    umMaploader = null;
     }
     
     static final void method1311(int i, AbstractToolkit var_ha) {
@@ -153,7 +153,7 @@ final class VarbitHandler implements ConfigHandler
 	    if (class159 != null
 		&& (((Class159) class159).anInt2125 ^ 0xffffffff) == -1) {
 		queue[i_26_] = 0;
-		((VarbitHandler) this).configs[i_26_] = 0;
+		((VarpHandler) this).configs[i_26_] = 0;
 	    }
 	}
 	anInt5076++;
@@ -162,7 +162,7 @@ final class VarbitHandler implements ConfigHandler
     
     public final int getRawConfig(int i) {
 	anInt5081++;
-	return ((VarbitHandler) this).configs[i];
+	return ((VarpHandler) this).configs[i];
     }
     
     static final void method1315(int i) {
@@ -312,7 +312,7 @@ final class VarbitHandler implements ConfigHandler
 			int i_57_ = Class299.gameBuffer
 					.getShort();
 			is[i_55_]
-			    = Class273.method2057(i_57_, i_56_ << -1521885072);
+			    = Class273.bitOr(i_57_, i_56_ << -1521885072);
 		    } else
 			is[i_55_] = i_56_;
 		    is_54_[i_55_] = Class299.gameBuffer
@@ -506,8 +506,8 @@ final class VarbitHandler implements ConfigHandler
 	anInt5080++;
     }
     
-    public VarbitHandler() {
-	((VarbitHandler) this).configs = new int[((Class217) Class269.aClass217_3453).anInt2845];
+    public VarpHandler() {
+	((VarpHandler) this).configs = new int[((Class217) Class269.aClass217_3453).anInt2845];
 	queue = new int[((Class217) Class269.aClass217_3453).anInt2845];
     }
 }

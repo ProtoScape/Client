@@ -76,18 +76,18 @@ final class Class122
 				 Class237_Sub1 class237_sub1) {
 	try {
 	    anInt1802++;
-	    int i_13_ = Class347.aByteArrayArray4281.length;
+	    int i_13_ = Class347.mArchiveSrcs.length;
 	    if (i == 65536) {
 		for (int i_14_ = 0; i_14_ < i_13_; i_14_++) {
 		    byte[] is_15_ = is[i_14_];
 		    if (is_15_ != null) {
 			int i_16_
-			    = (64 * (Class348_Sub23_Sub3.anIntArray9042[i_14_]
+			    = (64 * (Class348_Sub23_Sub3.regionHashes[i_14_]
 				     >> -2145332984)
-			       + -za_Sub2.anInt9780);
-			int i_17_ = ((Class348_Sub23_Sub3.anIntArray9042[i_14_]
+			       + -za_Sub2.baseRegionX);
+			int i_17_ = ((Class348_Sub23_Sub3.regionHashes[i_14_]
 				      & 0xff) * 64
-				     - Class90.anInt1517);
+				     - Class90.baseRegionY);
 			Class369_Sub1.method3570(false);
 			class237_sub1.method1695(is_15_,
 						 (AbstractMouseEvent

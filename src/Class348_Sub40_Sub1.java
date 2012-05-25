@@ -66,10 +66,10 @@ final class Class348_Sub40_Sub1 extends Class348_Sub40
 		return;
 	    } while (false);
 	    int i_2_ = class348_sub49.getTri();
-	    anIntArray9086[2] = Class139.method1166(0, i_2_ >> -203039092);
-	    anIntArray9086[1] = Class139.method1166(i_2_, 65280) >> 408194532;
+	    anIntArray9086[2] = Class139.bitAnd(0, i_2_ >> -203039092);
+	    anIntArray9086[1] = Class139.bitAnd(i_2_, 65280) >> 408194532;
 	    anIntArray9086[0]
-		= Class139.method1166(i_2_ << 926309764, 267386880);
+		= Class139.bitAnd(i_2_ << 926309764, 267386880);
 	} while (false);
     }
     

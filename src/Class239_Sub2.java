@@ -73,8 +73,8 @@ final class Class239_Sub2 extends Class239
 				  11219, Class192.anInt2578);
 	int i_6_ = 0;
 	if (i_3_ > 3 && (i_4_ ^ 0xffffffff) < -4
-	    && -4 + Class367_Sub4.anInt7319 > i_3_
-	    && Class348_Sub40_Sub3.anInt9109 - 4 > i_4_) {
+	    && -4 + Class367_Sub4.mapSizeX > i_3_
+	    && Class348_Sub40_Sub3.mapSizeY - 4 > i_4_) {
 	    for (int i_7_ = i_3_ - 4; i_3_ - -4 >= i_7_; i_7_++) {
 		for (int i_8_ = -4 + i_4_; i_8_ <= 4 + i_4_; i_8_++) {
 		    int i_9_ = Class355.anInt4372;
@@ -82,11 +82,11 @@ final class Class239_Sub2 extends Class239
 			&& NpcDefinition.method802(i_8_, i_7_, true))
 			i_9_++;
 		    int i_10_ = 0;
-		    if ((((Class237) Class338.aClass237_Sub1_4197)
+		    if ((((MapLoader) Class338.mMapLoader)
 			 .aByteArrayArrayArray3104) != null
-			&& (((Class237) Class338.aClass237_Sub1_4197)
+			&& (((MapLoader) Class338.mMapLoader)
 			    .aByteArrayArrayArray3104[i_9_]) != null)
-			i_10_ = 8 * ((((Class237) Class338.aClass237_Sub1_4197)
+			i_10_ = 8 * ((((MapLoader) Class338.mMapLoader)
 				      .aByteArrayArrayArray3104[i_9_][i_7_]
 				      [i_8_])
 				     & 0xff) << 1138837506;

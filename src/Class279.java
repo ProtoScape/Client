@@ -145,7 +145,7 @@ class Class279
 	int i_5_ = i;
 	if (Class282.aBoolean3652)
 	    i_5_ <<= 1;
-	Class214.method1573(is, 0, i_5_);
+	ArrayUtils.populateArray(is, 0, i_5_);
 	anInt3615 -= i;
 	if (aClass348_Sub16_3604 != null && anInt3615 <= 0) {
 	    anInt3615 += Class22.anInt339 >> 4;

@@ -81,7 +81,7 @@ final class ScriptExecutor
 		int i_5_ = class46s_4_.length;
 		class46s = Class369_Sub2.aClass46ArrayArray8584[i_3_]
 		    = new Widget[i_5_];
-		Class214.method1575(class46s_4_, 0, class46s, 0,
+		ArrayUtils.arrayCopy(class46s_4_, 0, class46s, 0,
 				    class46s_4_.length);
 	    }
 	    int i_6_;
@@ -90,7 +90,7 @@ final class ScriptExecutor
 		    break;
 	    }
 	    if (i_6_ < class46s.length) {
-		Class214.method1575(class46s, 0, class46s, 1, i_6_);
+		ArrayUtils.arrayCopy(class46s, 0, class46s, 1, i_6_);
 		class46s[0] = class46;
 	    }
 	}
@@ -469,7 +469,7 @@ final class ScriptExecutor
 	    if (i == 5059) {
 		anInt1165++;
 		BufferedPacket class348_sub47
-		    = Class286_Sub3.createBufferedPacket(IndexLoader.aClass351_643,
+		    = Class286_Sub3.createBufferedPacket(IndexLoader.gamePacket3,
 					       (Class348_Sub23_Sub2
 						.outgoingGameIsaac));
 		((BufferedPacket) class348_sub47).buffer
@@ -528,7 +528,7 @@ final class ScriptExecutor
 	    if (i == 5061) {
 		anInt1165++;
 		BufferedPacket class348_sub47
-		    = Class286_Sub3.createBufferedPacket(IndexLoader.aClass351_643,
+		    = Class286_Sub3.createBufferedPacket(IndexLoader.gamePacket3,
 					       (Class348_Sub23_Sub2
 						.outgoingGameIsaac));
 		((BufferedPacket) class348_sub47).buffer
@@ -1363,11 +1363,11 @@ final class ScriptExecutor
 		NpcDefinition.anInt1387 = intStack[intStackOffset + 8];
 		Class348_Sub42_Sub11.anInt9586 = intStack[intStackOffset + 9];
 		Class5_Sub2.anInt8363 = intStack[intStackOffset + 10];
-		Class21.indexLoader8.getArchiveLoaded(false, Class231.anInt2996);
-		Class21.indexLoader8.getArchiveLoaded(false, Class348_Sub40_Sub16.anInt9231);
-		Class21.indexLoader8.getArchiveLoaded(false, Class318_Sub1_Sub3_Sub3.anInt10257);
-		Class21.indexLoader8.getArchiveLoaded(false, Class313.anInt3937);
-		Class21.indexLoader8.getArchiveLoaded(false, NpcDefinition.anInt1387);
+		Class21.indexLoader8.getArchiveLoaded(Class231.anInt2996);
+		Class21.indexLoader8.getArchiveLoaded(Class348_Sub40_Sub16.anInt9231);
+		Class21.indexLoader8.getArchiveLoaded(Class318_Sub1_Sub3_Sub3.anInt10257);
+		Class21.indexLoader8.getArchiveLoaded(Class313.anInt3937);
+		Class21.indexLoader8.getArchiveLoaded(NpcDefinition.anInt1387);
 		WidgetVariable.aClass105_9659
 		    = AbstractWorld.aClass105_1706 = Class174.aClass105_2309 = null;
 		DummyOutputstream.aClass105_106 = Class121.aClass105_1800
@@ -1459,10 +1459,10 @@ final class ScriptExecutor
 		int i_127_ = intStack[intStackOffset + 3];
 		Class239_Sub28.method1844(i_126_,
 					  ((i_124_ >> 14 & 0x3fff)
-					   - za_Sub2.anInt9780),
+					   - za_Sub2.baseRegionX),
 					  false, i_125_ << 2, false, i_127_,
 					  ((i_124_ & 0x3fff)
-					   - Class90.anInt1517));
+					   - Class90.baseRegionY));
 		return;
 	    }
 	    if (i == 5501) {
@@ -1472,9 +1472,9 @@ final class ScriptExecutor
 		int i_130_ = intStack[intStackOffset + 2];
 		int i_131_ = intStack[intStackOffset + 3];
 		Class348_Sub42_Sub12.method3231(((i_128_ & 0x3fff)
-						 - Class90.anInt1517),
+						 - Class90.baseRegionY),
 						((i_128_ >> 14 & 0x3fff)
-						 - za_Sub2.anInt9780),
+						 - za_Sub2.baseRegionX),
 						i_129_ << 2, i_131_, i_130_,
 						-128);
 		return;
@@ -1545,16 +1545,16 @@ final class ScriptExecutor
 		int i_136_ = intStack[--intStackOffset];
 		int i_137_ = i_136_ >> 14 & 0x3fff;
 		int i_138_ = i_136_ & 0x3fff;
-		i_137_ -= za_Sub2.anInt9780;
+		i_137_ -= za_Sub2.baseRegionX;
 		if (i_137_ < 0)
 		    i_137_ = 0;
-		else if (i_137_ >= Class367_Sub4.anInt7319)
-		    i_137_ = Class367_Sub4.anInt7319;
-		i_138_ -= Class90.anInt1517;
+		else if (i_137_ >= Class367_Sub4.mapSizeX)
+		    i_137_ = Class367_Sub4.mapSizeX;
+		i_138_ -= Class90.baseRegionY;
 		if (i_138_ < 0)
 		    i_138_ = 0;
-		else if (i_138_ >= Class348_Sub40_Sub3.anInt9109)
-		    i_138_ = Class348_Sub40_Sub3.anInt9109;
+		else if (i_138_ >= Class348_Sub40_Sub3.mapSizeY)
+		    i_138_ = Class348_Sub40_Sub3.mapSizeY;
 		Class348_Sub6.anInt6633 = (i_137_ << 9) + 256;
 		Class348_Sub7.anInt6652 = (i_138_ << 9) + 256;
 		Class348_Sub40_Sub21.anInt9282 = 4;
@@ -1578,16 +1578,16 @@ final class ScriptExecutor
 		if (i_139_ == -1) {
 		    int i_140_ = i_139_ >> 14 & 0x3fff;
 		    int i_141_ = i_139_ & 0x3fff;
-		    i_140_ -= za_Sub2.anInt9780;
+		    i_140_ -= za_Sub2.baseRegionX;
 		    if (i_140_ < 0)
 			i_140_ = 0;
-		    else if (i_140_ >= Class367_Sub4.anInt7319)
-			i_140_ = Class367_Sub4.anInt7319;
-		    i_141_ -= Class90.anInt1517;
+		    else if (i_140_ >= Class367_Sub4.mapSizeX)
+			i_140_ = Class367_Sub4.mapSizeX;
+		    i_141_ -= Class90.baseRegionY;
 		    if (i_141_ < 0)
 			i_141_ = 0;
-		    else if (i_141_ >= Class348_Sub40_Sub3.anInt9109)
-			i_141_ = Class348_Sub40_Sub3.anInt9109;
+		    else if (i_141_ >= Class348_Sub40_Sub3.mapSizeY)
+			i_141_ = Class348_Sub40_Sub3.mapSizeY;
 		    Class9.anInt167 = (i_140_ << 9) + 256;
 		    Class318_Sub1_Sub5_Sub2.anInt10163 = (i_141_ << 9) + 256;
 		} else {
@@ -2301,7 +2301,7 @@ final class ScriptExecutor
 	    if (i == 6125) {
 		intStack[intStackOffset++]
 		    = ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
-			  .aClass239_Sub6_7226.method1743(-32350);
+			  .aClass239_Sub6_7226.getMapSizeId(-32350);
 		return;
 	    }
 	    if (i == 6127) {
@@ -4512,7 +4512,7 @@ final class ScriptExecutor
 		    return;
 		}
 		if (i == 1506) {
-		    Widget class46_294_ = Class237.method1687(class46, 3);
+		    Widget class46_294_ = MapLoader.method1687(class46, 3);
 		    intStack[intStackOffset++]
 			= (class46_294_ == null ? -1
 			   : ((Widget) class46_294_).anInt830);
@@ -4705,7 +4705,7 @@ final class ScriptExecutor
 		    return;
 		}
 		if (i == 1506) {
-		    Widget class46_297_ = Class237.method1687(class46, 3);
+		    Widget class46_297_ = MapLoader.method1687(class46, 3);
 		    intStack[intStackOffset++]
 			= (class46_297_ == null ? -1
 			   : ((Widget) class46_297_).anInt830);
@@ -5193,13 +5193,13 @@ final class ScriptExecutor
 			      Class132.localPlayer)
 			     .anInt6377)
 			    >> 9)
-			   + za_Sub2.anInt9780);
+			   + za_Sub2.baseRegionX);
 		    int i_329_
 			= (((((Class318_Sub1)
 			      Class132.localPlayer)
 			     .anInt6388)
 			    >> 9)
-			   + Class90.anInt1517);
+			   + Class90.baseRegionY);
 		    intStack[intStackOffset++]
 			= (i_327_ << 28) + (i_328_ << 14) + i_329_;
 		    return;
@@ -6600,7 +6600,7 @@ final class ScriptExecutor
 			intStack[intStackOffset++] = intOperands[position];
 		    else if (opcode == 1) {
 			int setting = intOperands[position];
-			intStack[intStackOffset++] = (((VarbitHandler) Class318_Sub1_Sub3_Sub3.varbitHandler).configs[setting]);
+			intStack[intStackOffset++] = (((VarpHandler) Class318_Sub1_Sub3_Sub3.varbitHandler).configs[setting]);
 		    } else if (opcode == 2) {
 			int i_493_ = intOperands[position];
 			Class318_Sub1_Sub3_Sub3.varbitHandler.putConfig(i_493_, intStack[--intStackOffset]);
@@ -6950,7 +6950,7 @@ final class ScriptExecutor
 		int i_522_ = class46s_521_.length;
 		class46s = Class369_Sub2.aClass46ArrayArray8584[i_520_]
 		    = new Widget[i_522_];
-		Class214.method1575(class46s_521_, 0, class46s, 0,
+		ArrayUtils.arrayCopy(class46s_521_, 0, class46s, 0,
 				    class46s_521_.length);
 	    }
 	    int i_523_;
@@ -6959,7 +6959,7 @@ final class ScriptExecutor
 		    break;
 	    }
 	    if (i_523_ < class46s.length) {
-		Class214.method1575(class46s, i_523_ + 1, class46s, i_523_,
+		ArrayUtils.arrayCopy(class46s, i_523_ + 1, class46s, i_523_,
 				    class46s.length - i_523_ - 1);
 		class46s[class46s.length - 1] = class46;
 	    }

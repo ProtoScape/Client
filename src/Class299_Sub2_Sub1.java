@@ -59,9 +59,9 @@ final class Class299_Sub2_Sub1 extends Class299_Sub2
 	try {
 	    if (DummyOutputstream.aClass105_106 == null
 		|| Class121.aClass105_1800 == null) {
-		if (Class21.indexLoader8.getArchiveLoaded(false, Class231.anInt2996)
+		if (Class21.indexLoader8.getArchiveLoaded(Class231.anInt2996)
 		    && Class21.indexLoader8
-			   .getArchiveLoaded(false, Class348_Sub40_Sub16.anInt9231)) {
+			   .getArchiveLoaded(Class348_Sub40_Sub16.anInt9231)) {
 		    DummyOutputstream.aClass105_106
 			= (var_ha.createRasterForSprite
 			   (ImageSprite.getSprite(Class21.indexLoader8,

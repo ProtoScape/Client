@@ -91,7 +91,7 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40
     final void method3049(ByteBuffer class348_sub49, int i, int i_8_) {
 	anInt9292++;
 	if (i_8_ != 31015)
-	    method3111(106, 16);
+	    setMapSize(16);
 	int i_9_ = i;
     while_189_:
 	do {
@@ -214,49 +214,41 @@ final class Class348_Sub40_Sub22 extends Class348_Sub40
 			is[i_16_] = anIntArrayArray9286[i_13_][i_20_];
 		}
 	    } else
-		Class214.method1579(is, 0, Class348_Sub40_Sub6.anInt9139, 0);
+		ArrayUtils.populateArray(is, 0, Class348_Sub40_Sub6.anInt9139, 0);
 	}
 	if (i_10_ != 255)
 	    method3110(44);
 	return is;
     }
     
-    static final void method3111(int i, int i_23_) {
+    static void setMapSize(int sizeId) {
 	anInt9290++;
-	if (i_23_ != Class348_Sub15.anInt6769) {
-	    if (i < 18)
-		aClass304_9303 = null;
-	    Class367_Sub4.anInt7319 = Class348_Sub40_Sub3.anInt9109
-		= FileArchiveTracker.anIntArray4780[i_23_];
+	if (sizeId != Class348_Sub15.lastMapSizeId) {
+	    Class367_Sub4.mapSizeX = Class348_Sub40_Sub3.mapSizeY = FileArchiveTracker.mapSizes[sizeId];
 	    Class290.method2196((byte) -9);
 	    Class62.anIntArrayArrayArray1116
-		= (new int[4][Class367_Sub4.anInt7319 >> 629360931]
-		   [Class348_Sub40_Sub3.anInt9109 >> -1129488413]);
+		= (new int[4][Class367_Sub4.mapSizeX >> 629360931]
+		   [Class348_Sub40_Sub3.mapSizeY >> -1129488413]);
 	    Class239_Sub8.anIntArrayArray5921
-		= (new int[Class367_Sub4.anInt7319]
-		   [Class348_Sub40_Sub3.anInt9109]);
+		= (new int[Class367_Sub4.mapSizeX]
+		   [Class348_Sub40_Sub3.mapSizeY]);
 	    Class348_Sub42_Sub17.anIntArrayArray9678
-		= (new int[Class367_Sub4.anInt7319]
-		   [Class348_Sub40_Sub3.anInt9109]);
+		= (new int[Class367_Sub4.mapSizeX]
+		   [Class348_Sub40_Sub3.mapSizeY]);
 	    for (int i_24_ = 0; i_24_ < 4; i_24_++)
 		AbstractMouseEvent.aClass361Array7108[i_24_]
-		    = NativeRaster.method988(Class348_Sub40_Sub3.anInt9109, 1,
-					      Class367_Sub4.anInt7319);
-	    Class289.aByteArrayArrayArray3700
-		= (new byte[4][Class367_Sub4.anInt7319]
-		   [Class348_Sub40_Sub3.anInt9109]);
-	    Class239.method1717(19278, Class348_Sub40_Sub3.anInt9109,
-				Class367_Sub4.anInt7319, 4);
-	    Class97.method873(Class367_Sub4.anInt7319 >> 1025673859, 21719,
-			      Class348_Sub8.currentToolkit,
-			      Class348_Sub40_Sub3.anInt9109 >> -184361181);
-	    Class348_Sub15.anInt6769 = i_23_;
+		    = NativeRaster.method988(Class348_Sub40_Sub3.mapSizeY, 1,
+					      Class367_Sub4.mapSizeX);
+	    Class289.aByteArrayArrayArray3700 = (new byte[4][Class367_Sub4.mapSizeX][Class348_Sub40_Sub3.mapSizeY]);
+	    Class239.method1717(19278, Class348_Sub40_Sub3.mapSizeY, Class367_Sub4.mapSizeX, 4);
+	    Class97.method873(Class367_Sub4.mapSizeX >> 4, 21719, Class348_Sub8.currentToolkit, Class348_Sub40_Sub3.mapSizeY >> 4);
+	    Class348_Sub15.lastMapSizeId = sizeId;
 	}
     }
     
     final void method3044(int i) {
 	if (i <= 108)
-	    method3111(-110, -119);
+	    setMapSize(-119);
 	anInt9295++;
 	method3109((byte) -125);
     }

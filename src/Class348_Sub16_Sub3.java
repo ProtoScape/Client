@@ -143,70 +143,70 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16
 	    if (i_16_ == 0)
 		anIntArray8947[i_15_]
 		    = ((i_17_ << 970567726)
-		       + Class139.method1166(anIntArray8947[i_15_], -2080769));
+		       + Class139.bitAnd(anIntArray8947[i_15_], -2080769));
 	    if (i_16_ == 32)
 		anIntArray8947[i_15_]
 		    = ((i_17_ << 362394375)
-		       + Class139.method1166(anIntArray8947[i_15_], -16257));
+		       + Class139.bitAnd(anIntArray8947[i_15_], -16257));
 	    if ((i_16_ ^ 0xffffffff) == -2)
 		anIntArray8899[i_15_]
-		    = (Class139.method1166(-16257, anIntArray8899[i_15_])
+		    = (Class139.bitAnd(-16257, anIntArray8899[i_15_])
 		       + (i_17_ << -95360601));
 	    if ((i_16_ ^ 0xffffffff) == -34)
 		anIntArray8899[i_15_]
-		    = (Class139.method1166(anIntArray8899[i_15_], -128)
+		    = (Class139.bitAnd(anIntArray8899[i_15_], -128)
 		       - -i_17_);
 	    if ((i_16_ ^ 0xffffffff) == -6)
 		anIntArray8939[i_15_]
-		    = (Class139.method1166(anIntArray8939[i_15_], -16257)
+		    = (Class139.bitAnd(anIntArray8939[i_15_], -16257)
 		       - -(i_17_ << -498217529));
 	    if ((i_16_ ^ 0xffffffff) == -38)
 		anIntArray8939[i_15_]
-		    = i_17_ + Class139.method1166(-128, anIntArray8939[i_15_]);
+		    = i_17_ + Class139.bitAnd(-128, anIntArray8939[i_15_]);
 	    if ((i_16_ ^ 0xffffffff) == -8)
 		anIntArray8953[i_15_]
 		    = ((i_17_ << 1772496327)
-		       + Class139.method1166(-16257, anIntArray8953[i_15_]));
+		       + Class139.bitAnd(-16257, anIntArray8953[i_15_]));
 	    if (i_16_ == 39)
 		anIntArray8953[i_15_]
-		    = i_17_ + Class139.method1166(anIntArray8953[i_15_], -128);
+		    = i_17_ + Class139.bitAnd(anIntArray8953[i_15_], -128);
 	    if ((i_16_ ^ 0xffffffff) == -11)
 		anIntArray8894[i_15_]
 		    = ((i_17_ << -530898297)
-		       + Class139.method1166(anIntArray8894[i_15_], -16257));
+		       + Class139.bitAnd(anIntArray8894[i_15_], -16257));
 	    if ((i_16_ ^ 0xffffffff) == -43)
 		anIntArray8894[i_15_]
-		    = i_17_ + Class139.method1166(anIntArray8894[i_15_], -128);
+		    = i_17_ + Class139.bitAnd(anIntArray8894[i_15_], -128);
 	    if ((i_16_ ^ 0xffffffff) == -12)
 		anIntArray8896[i_15_]
 		    = ((i_17_ << -1257694585)
-		       + Class139.method1166(-16257, anIntArray8896[i_15_]));
+		       + Class139.bitAnd(-16257, anIntArray8896[i_15_]));
 	    if (i_16_ == 43)
 		anIntArray8896[i_15_]
-		    = (Class139.method1166(-128, anIntArray8896[i_15_])
+		    = (Class139.bitAnd(-128, anIntArray8896[i_15_])
 		       - -i_17_);
 	    if ((i_16_ ^ 0xffffffff) == -65) {
 		if (i_17_ < 64)
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class139.method1166((((Class348_Sub16_Sub3) this)
+			= Class139.bitAnd((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      -2);
 		else
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class273.method2057((((Class348_Sub16_Sub3) this)
+			= Class273.bitOr((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      1);
 	    }
 	    if (i_16_ == 65) {
 		if (i_17_ >= 64)
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class273.method2057((((Class348_Sub16_Sub3) this)
+			= Class273.bitOr((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      2);
 		else {
 		    method2858(-106, i_15_);
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class139.method1166((((Class348_Sub16_Sub3) this)
+			= Class139.bitAnd((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      -3);
 		}
@@ -214,18 +214,18 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16
 	    if ((i_16_ ^ 0xffffffff) == -100)
 		anIntArray8904[i_15_]
 		    = ((i_17_ << -1622342009)
-		       + Class139.method1166(127, anIntArray8904[i_15_]));
+		       + Class139.bitAnd(127, anIntArray8904[i_15_]));
 	    if (i_16_ == 98)
 		anIntArray8904[i_15_]
-		    = (Class139.method1166(16256, anIntArray8904[i_15_])
+		    = (Class139.bitAnd(16256, anIntArray8904[i_15_])
 		       + i_17_);
 	    if ((i_16_ ^ 0xffffffff) == -102)
 		anIntArray8904[i_15_]
-		    = (16384 - -Class139.method1166(anIntArray8904[i_15_], 127)
+		    = (16384 - -Class139.bitAnd(anIntArray8904[i_15_], 127)
 		       + (i_17_ << -1645682425));
 	    if ((i_16_ ^ 0xffffffff) == -101)
 		anIntArray8904[i_15_]
-		    = i_17_ + (Class139.method1166(16256,
+		    = i_17_ + (Class139.bitAnd(16256,
 						   anIntArray8904[i_15_])
 			       + 16384);
 	    if ((i_16_ ^ 0xffffffff) == -121)
@@ -239,37 +239,37 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16
 		if (i_18_ == 16384)
 		    anIntArray8902[i_15_]
 			= ((i_17_ << 92762759)
-			   + Class139.method1166(anIntArray8902[i_15_],
+			   + Class139.bitAnd(anIntArray8902[i_15_],
 						 -16257));
 	    }
 	    if ((i_16_ ^ 0xffffffff) == -39) {
 		int i_19_ = anIntArray8904[i_15_];
 		if ((i_19_ ^ 0xffffffff) == -16385)
 		    anIntArray8902[i_15_]
-			= i_17_ + Class139.method1166(-128,
+			= i_17_ + Class139.bitAnd(-128,
 						      anIntArray8902[i_15_]);
 	    }
 	    if ((i_16_ ^ 0xffffffff) == -17)
 		((Class348_Sub16_Sub3) this).anIntArray8914[i_15_]
-		    = (Class139.method1166(-16257,
+		    = (Class139.bitAnd(-16257,
 					   (((Class348_Sub16_Sub3) this)
 					    .anIntArray8914[i_15_]))
 		       + (i_17_ << -120655961));
 	    if ((i_16_ ^ 0xffffffff) == -49)
 		((Class348_Sub16_Sub3) this).anIntArray8914[i_15_]
-		    = Class139.method1166((((Class348_Sub16_Sub3) this)
+		    = Class139.bitAnd((((Class348_Sub16_Sub3) this)
 					   .anIntArray8914[i_15_]),
 					  -128) - -i_17_;
 	    if (i_16_ == 81) {
 		if ((i_17_ ^ 0xffffffff) <= -65)
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class273.method2057((((Class348_Sub16_Sub3) this)
+			= Class273.bitOr((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      4);
 		else {
 		    method2850(i_15_, 0);
 		    ((Class348_Sub16_Sub3) this).anIntArray8895[i_15_]
-			= Class139.method1166((((Class348_Sub16_Sub3) this)
+			= Class139.bitAnd((((Class348_Sub16_Sub3) this)
 					       .anIntArray8895[i_15_]),
 					      -5);
 		}
@@ -533,7 +533,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16
 	for (int i = 0; (i ^ 0xffffffff) > -17; i++)
 	    anIntArray8916[i] = anIntArray8945[i];
 	for (int i = 0; (i ^ 0xffffffff) > -17; i++)
-	    anIntArray8947[i] = Class139.method1166(anIntArray8945[i], -128);
+	    anIntArray8947[i] = Class139.bitAnd(anIntArray8945[i], -128);
     }
     
     final boolean method2852(int[] is, int i, Class348_Sub43 class348_sub43,
@@ -852,7 +852,7 @@ final class Class348_Sub16_Sub3 extends Class348_Sub16
 	anIntArray8945[i_54_] = i;
 	if (i_55_ < 39)
 	    indexLoader22 = null;
-	anIntArray8947[i_54_] = Class139.method1166(i, -128);
+	anIntArray8947[i_54_] = Class139.bitAnd(i, -128);
 	method2873((byte) -21, i, i_54_);
     }
     

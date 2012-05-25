@@ -98,14 +98,14 @@ final class Class348_Sub42_Sub3 extends SubNode
 			  .anIntArray10317[0])
 			 >> 1031515907);
 	    if ((i_12_ ^ 0xffffffff) > -1
-		|| Class367_Sub4.anInt7319 >> -1390409597 <= i_12_
+		|| Class367_Sub4.mapSizeX >> -1390409597 <= i_12_
 		|| (i_13_ ^ 0xffffffff) > -1
 		|| ((i_13_ ^ 0xffffffff)
-		    <= (Class348_Sub40_Sub3.anInt9109 >> 269827523
+		    <= (Class348_Sub40_Sub3.mapSizeY >> 269827523
 			^ 0xffffffff)))
 		KeyboardListener.method2703(0,
-					 Class367_Sub4.anInt7319 >> -887543164,
-					 (Class348_Sub40_Sub3.anInt9109
+					 Class367_Sub4.mapSizeX >> -887543164,
+					 (Class348_Sub40_Sub3.mapSizeY
 					  >> -2041704060),
 					 (byte) -13);
 	    else

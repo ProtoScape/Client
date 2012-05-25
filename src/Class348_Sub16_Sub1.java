@@ -68,24 +68,16 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16
 	}
     }
     
-    static final void method2822
-	(int i, GameBuffer class348_sub49_sub2, int i_3_) {
+    static void parseGpi(GameBuffer buffer, int packetSize) {
 	Class101_Sub3.anInt5768 = 0;
 	anInt8846++;
 	Class55.aBoolean979 = false;
-	if (i < -17) {
-	    Class348_Sub40_Sub18.method3094(-21478, class348_sub49_sub2);
-	    Class375.method3612(75, class348_sub49_sub2);
-	    if (Class55.aBoolean979)
-		System.out.println("---endgpp---");
-	    if ((i_3_ ^ 0xffffffff)
-		!= (((ByteBuffer) class348_sub49_sub2).position
-		    ^ 0xffffffff))
-		throw new RuntimeException("gpi1 pos:"
-					   + ((ByteBuffer)
-					      class348_sub49_sub2).position
-					   + " psize:" + i_3_);
-	}
+        Class348_Sub40_Sub18.method3094(-21478, buffer);
+        Class375.method3612(75, buffer);
+        if (Class55.aBoolean979)
+            System.out.println("---endgpp---");
+        if (packetSize != buffer.position)
+            throw new RuntimeException("gpi1 pos:" + buffer.position + " psize:" + packetSize);
     }
     
     public static void method2823(int i) {

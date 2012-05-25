@@ -111,10 +111,10 @@ final class InputstreamWorker implements Runnable
 		throw new IOException(ioexception.toString());
 	    if (bufferSize < len + anInt4556) {
 		int bufferOff = bufferSize - anInt4556;
-		Class214.byteArrayCopy(buffer, anInt4556, dest, off, bufferOff);
-		Class214.byteArrayCopy(buffer, 0, dest, off + bufferOff, len - bufferOff);
+		ArrayUtils.arrayCopy(buffer, anInt4556, dest, off, bufferOff);
+		ArrayUtils.arrayCopy(buffer, 0, dest, off + bufferOff, len - bufferOff);
 	    } else
-		Class214.byteArrayCopy(buffer, anInt4556, dest, off, len);
+		ArrayUtils.arrayCopy(buffer, anInt4556, dest, off, len);
 	    anInt4556 = (anInt4556 + len) % bufferSize;
 	    this.notifyAll();
 	    return len;

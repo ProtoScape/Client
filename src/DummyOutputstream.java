@@ -20,7 +20,7 @@ final class DummyOutputstream extends OutputStream
 	if (i < 101)
 	    method139(34);
 	byte[] is_1_ = new byte[i_0_];
-	Class214.byteArrayCopy(is, 0, is_1_, 0, i_0_);
+	ArrayUtils.arrayCopy(is, 0, is_1_, 0, i_0_);
 	return is_1_;
     }
     

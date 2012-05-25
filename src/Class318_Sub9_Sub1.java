@@ -58,7 +58,7 @@ final class Class318_Sub9_Sub1 extends Class318_Sub9
 		}
 	    }
 	    Class228.aClass57Array2974 = new Class57[i_1_];
-	    Class214.method1575(class57s_0_, 0, Class228.aClass57Array2974, 0,
+	    ArrayUtils.arrayCopy(class57s_0_, 0, Class228.aClass57Array2974, 0,
 				i_1_);
 	    int[] is = new int[Class228.aClass57Array2974.length];
 	    for (int i_6_ = 0;

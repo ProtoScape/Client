@@ -186,9 +186,9 @@ abstract class Class348_Sub23 extends Node
 						.aClass239_Sub12_7243
 						.method1771(-32350) == 1,
 					    (byte) -24);
-	Class97.method873(Class367_Sub4.anInt7319 >> 411141731, 21719,
+	Class97.method873(Class367_Sub4.mapSizeX >> 411141731, 21719,
 			  Class348_Sub8.currentToolkit,
-			  Class348_Sub40_Sub3.anInt9109 >> -900745565);
+			  Class348_Sub40_Sub3.mapSizeY >> -900745565);
 	Class76.method773(true);
 	r.aBoolean9719 = false;
 	Class228.aClass57Array2974 = null;

@@ -286,7 +286,7 @@ public final class Client extends ClientApplet {
 	AbstractToolkit.method3680(-24016);
 	Class348_Sub51.method3430(false);
 	Class348_Sub4.method2748(-86);
-	VarbitHandler.method1310(true);
+	VarpHandler.method1310(true);
 	Deque.method1994(-13722);
 	SocketWorker.method1471((byte) 124);
 	OndemandWorker.method1897((byte) 119);
@@ -1176,7 +1176,7 @@ public final class Client extends ClientApplet {
 	    else if (!Class315.method2354(Class8.modeWhere, -1)
 		     && Class55_Sub1.aClass364_5271 != Class8.modeWhere)
 		Class8.modeWhere = Class55_Sub1.aClass364_5271;
-	    Class11.modeWhat = (Class237.getConnectionWhat(-121, Integer.parseInt(this.getParameter("modewhat"))));
+	    Class11.modeWhat = (MapLoader.getConnectionWhat(-121, Integer.parseInt(this.getParameter("modewhat"))));
 	    if (Class11.modeWhat != Class288.aClass231_4953
 		&& Class11.modeWhat != Class348_Sub40_Sub20.aClass231_9263
 		&& Class68.aClass231_1189 != Class11.modeWhat)
@@ -1370,7 +1370,7 @@ public final class Client extends ClientApplet {
 			    }
 			    SubNode.anInt7059 = 0;
 			    Class246.aBoolean3174 = false;
-			    Class237.aBoolean3103 = false;
+			    MapLoader.aBoolean3103 = false;
 			    if (!Class5_Sub1.aBoolean8335)
 				Class64_Sub2.method661((byte) 111);
 			}
@@ -1808,7 +1808,7 @@ public final class Client extends ClientApplet {
 									is[1]);
 						    continue;
 						}
-						Class237.aBoolean3103 = true;
+						MapLoader.aBoolean3103 = true;
 						Class348_Sub40_Sub26.anInt9349
 						    = is[0];
 						DummyInputstream.anInt85
@@ -2500,9 +2500,9 @@ public final class Client extends ClientApplet {
     }
     
     static final void method109() {
-	for (int i = 0; i < Class367_Sub4.anInt7319; i++) {
+	for (int i = 0; i < Class367_Sub4.mapSizeX; i++) {
 	    int[] is = Class348_Sub42_Sub17.anIntArrayArray9678[i];
-	    for (int i_91_ = 0; i_91_ < Class348_Sub40_Sub3.anInt9109; i_91_++)
+	    for (int i_91_ = 0; i_91_ < Class348_Sub40_Sub3.mapSizeY; i_91_++)
 		is[i_91_] = 0;
 	}
     }
@@ -2638,11 +2638,11 @@ public final class Client extends ClientApplet {
 					  - -i_99_);
 			    if (i_101_ < 0)
 				i_101_ = 0;
-			    else if ((Class367_Sub4.anInt7319 + -i_98_ + -1
+			    else if ((Class367_Sub4.mapSizeX + -i_98_ + -1
 				      ^ 0xffffffff)
 				     > (i_101_ ^ 0xffffffff))
 				i_101_
-				    = -1 + (-i_98_ + Class367_Sub4.anInt7319);
+				    = -1 + (-i_98_ + Class367_Sub4.mapSizeX);
 			    int i_102_
 				= i_100_ + (((Class318_Sub1_Sub3_Sub3)
 					     class318_sub1_sub3_sub3_sub1)
@@ -2650,11 +2650,11 @@ public final class Client extends ClientApplet {
 			    if (i_102_ < 0)
 				i_102_ = 0;
 			    else if ((i_102_ ^ 0xffffffff)
-				     < ((-i_98_ + Class348_Sub40_Sub3.anInt9109
+				     < ((-i_98_ + Class348_Sub40_Sub3.mapSizeY
 					 - 1)
 					^ 0xffffffff))
 				i_102_ = (-i_98_
-					  + Class348_Sub40_Sub3.anInt9109 - 1);
+					  + Class348_Sub40_Sub3.mapSizeY - 1);
 			    int i_103_ = (Class59_Sub2_Sub2.method574
 					  (i_101_, i_98_, i_98_,
 					   Class348_Sub40_Sub11.anIntArray9185,
@@ -2720,12 +2720,12 @@ public final class Client extends ClientApplet {
 		Class348_Sub21.method2954((byte) -127);
 	    if ((Class286_Sub4.anInt6246 >> -1885185047 ^ 0xffffffff) > -15
 		|| (Class286_Sub4.anInt6246 >> 817127913
-		    >= -14 + Class367_Sub4.anInt7319)
+		    >= -14 + Class367_Sub4.mapSizeX)
 		|| ((Class59_Sub2_Sub2.anInt8685 >> 114206697 ^ 0xffffffff)
 		    > -15)
 		|| ((Class59_Sub2_Sub2.anInt8685 >> 1350311433 ^ 0xffffffff)
-		    <= (Class348_Sub40_Sub3.anInt9109 + -14 ^ 0xffffffff)))
-		Class101.method893((byte) -49);
+		    <= (Class348_Sub40_Sub3.mapSizeY + -14 ^ 0xffffffff)))
+		Class101.method893();
 	}
 	if (i != 112)
 	    anInt5171 = 22;
@@ -2881,7 +2881,7 @@ public final class Client extends ClientApplet {
 	    Class258_Sub4.mouseMovementListener.process(0);
 	    if (Class348_Sub8.currentToolkit != null)
 		Class348_Sub8.currentToolkit.method3646((int) Class62.getCurrentTimeMillis());
-	    VarbitHandler.method1315(93);
+	    VarpHandler.method1315(93);
 	    Class253.anInt3246 = 0;
 	    ClientScript.anInt9699 = 0;
 	    for (KeyboardEvent interface6 = Class182.keyboardListener.method2697(0);
@@ -2941,7 +2941,7 @@ public final class Client extends ClientApplet {
 		Class94.method867(true);
 	    } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674,
 							  (byte) -120))
-		Canvas_Sub1.method123(0);
+		Canvas_Sub1.rebuildMap(0);
 	    if (i < 32)
 		aClass262_5185 = null;
 	    if (Class348_Sub42_Sub8.method3196(Class240.anInt4674, -74)
@@ -3001,9 +3001,9 @@ public final class Client extends ClientApplet {
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
 			.aShort8750) < 0
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
-			.aShort8751) >= Class367_Sub4.anInt7319
+			.aShort8751) >= Class367_Sub4.mapSizeX
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
-			.aShort8747) >= Class348_Sub40_Sub3.anInt9109)
+			.aShort8747) >= Class348_Sub40_Sub3.mapSizeY)
 		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
 			.anInt10285
 			= -1;
@@ -3069,9 +3069,9 @@ public final class Client extends ClientApplet {
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
 			.aShort8750) < 0
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
-			.aShort8751) >= Class367_Sub4.anInt7319
+			.aShort8751) >= Class367_Sub4.mapSizeX
 		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
-			.aShort8747) >= Class348_Sub40_Sub3.anInt9109)
+			.aShort8747) >= Class348_Sub40_Sub3.mapSizeY)
 		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
 			.anInt10285
 			= -1;
@@ -3245,16 +3245,16 @@ public final class Client extends ClientApplet {
 		|| (Class348_Sub42_Sub12.method3229() ^ 0xffffffff) != -2)
 		Class354.method3466(-77);
 	    if (Class139.method1167(Class240.anInt4674, (byte) -113))
-		VarbitHandler.method1309(bool_120_, 117);
+		VarpHandler.method1309(bool_120_, 117);
 	    else if (!WorldInfo.method2114(Class240.anInt4674, bool)) {
 		if (!Class348_Sub42_Sub8.method3197(Class240.anInt4674,
 						    (byte) 56)) {
 		    if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674,
 							   (byte) -78)) {
 			if ((Class36.anInt489 ^ 0xffffffff) == -2) {
-			    if (Class268.anInt3441 > Class348_Sub46.anInt7115)
-				Class348_Sub46.anInt7115 = Class268.anInt3441;
-			    int i = ((-Class268.anInt3441
+			    if (Class268.failedMapArchives > Class348_Sub46.anInt7115)
+				Class348_Sub46.anInt7115 = Class268.failedMapArchives;
+			    int i = ((-Class268.failedMapArchives
 				      + Class348_Sub46.anInt7115)
 				     * 50 / Class348_Sub46.anInt7115);
 			    Class362.method3511(true, ClientApplet.p12fullFontRasterizer,
@@ -3498,19 +3498,19 @@ public final class Client extends ClientApplet {
 	anInt5175++;
 	String string = null;
 	try {
-	    string = ("[1)" + za_Sub2.anInt9780 + "," + Class90.anInt1517 + ","
-		      + Class367_Sub4.anInt7319 + ","
-		      + Class348_Sub40_Sub3.anInt9109 + "|");
+	    string = ("[1)" + za_Sub2.baseRegionX + "," + Class90.baseRegionY + ","
+		      + Class367_Sub4.mapSizeX + ","
+		      + Class348_Sub40_Sub3.mapSizeY + "|");
 	    if (i < 40)
 		aClass262_5185 = null;
 	    if (Class132.localPlayer != null)
 		string += ("2)" + Class355.anInt4372 + ","
-			   + (za_Sub2.anInt9780
+			   + (za_Sub2.baseRegionX
 			      + (((Class318_Sub1_Sub3_Sub3)
 				  Class132.localPlayer)
 				 .anIntArray10320[0]))
 			   + ","
-			   + (Class90.anInt1517
+			   + (Class90.baseRegionY
 			      + (((Class318_Sub1_Sub3_Sub3)
 				  Class132.localPlayer)
 				 .anIntArray10317[0]))

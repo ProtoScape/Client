@@ -10,7 +10,7 @@ final class za_Sub2 extends za
     static int anInt9777;
     static int anInt9778;
     static int anInt9779;
-    static int anInt9780;
+    static int baseRegionX;
     static Class138 aClass138_9781;
     NativeHeap aNativeHeap9782;
     static boolean aBoolean9783 = false;
@@ -75,9 +75,9 @@ final class za_Sub2 extends za
 			int i_8_ = i_3_ & 0xfffffff;
 			int i_9_ = i_8_ >> -934245874;
 			i_7_ = (((Class318_Sub1) class318_sub1_sub3_sub3)
-				.anInt6377) - 512 * (i_9_ - anInt9780) - 256;
+				.anInt6377) - 512 * (i_9_ - baseRegionX) - 256;
 			int i_10_ = i_8_ & 0x3fff;
-			i_6_ = (-256 - (i_10_ - Class90.anInt1517) * 512
+			i_6_ = (-256 - (i_10_ - Class90.baseRegionY) * 512
 				+ (((Class318_Sub1) class318_sub1_sub3_sub3)
 				   .anInt6388));
 		    } else if ((0x8000 & i_3_) == 0) {
@@ -145,7 +145,7 @@ final class za_Sub2 extends za
     final void method3445(int i) {
 	((za_Sub2) this).aNativeHeap9782.b();
 	if (i != -9503)
-	    anInt9780 = -29;
+	    baseRegionX = -29;
 	anInt9777++;
     }
     

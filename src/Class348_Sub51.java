@@ -872,7 +872,7 @@ final class Class348_Sub51 extends Node
 				      .aClass239_Sub10_7232
 				      .method1764(-32350));
 	class348_sub49.putByte(((Class348_Sub51) this)
-				      .aClass239_Sub6_7226.method1743(-32350));
+				      .aClass239_Sub6_7226.getMapSizeId(-32350));
 	class348_sub49.putByte(((Class348_Sub51) this)
 				      .aClass239_Sub1_7246
 				      .method1720(i ^ ~0x7e45));

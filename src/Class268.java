@@ -16,7 +16,7 @@ final class Class268
     static boolean[] aBooleanArray3438;
     static int anInt3439 = 16777215;
     static int anInt3440;
-    static int anInt3441 = 0;
+    static int failedMapArchives = 0;
     private IndexLoader aClass45_3442;
     static short[][] aShortArrayArray3443;
     static int anInt3444;
@@ -82,7 +82,7 @@ final class Class268
 	    return class277;
 	byte[] is;
 	synchronized (aClass45_3442) {
-	    is = aClass45_3442.getArchiveChild(4, i);
+	    is = aClass45_3442.getChildArchive(4, i);
 	}
 	class277 = new Class277();
 	((Class277) class277).anInt3573 = i;
@@ -196,7 +196,7 @@ final class Class268
     Class268(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_3442 = class45;
-	    ((Class268) this).anInt3429 = aClass45_3442.method407(4);
+	    ((Class268) this).anInt3429 = aClass45_3442.getAmountChildEntries(4);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("cb.<init>("

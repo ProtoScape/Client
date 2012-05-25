@@ -265,7 +265,7 @@ class ByteBuffer extends Node
 		if (bool != false)
 			((ByteBuffer) this).payload = null;
 		int i_17_
-		= Class171.getCrcChecksum(((ByteBuffer) this).position, true,
+		= Class171.getChecksum(((ByteBuffer) this).position, true,
 				((ByteBuffer) this).payload, i);
 		putInt(i_17_);
 		return i_17_;
@@ -378,7 +378,7 @@ class ByteBuffer extends Node
 	final boolean isChecksumValid(int i) {
 		anInt7168++;
 		((ByteBuffer) this).position -= 4;
-		int i_34_ = Class171.getCrcChecksum(((ByteBuffer) this).position, true, ((ByteBuffer) this).payload, 0);
+		int i_34_ = Class171.getChecksum(((ByteBuffer) this).position, true, ((ByteBuffer) this).payload, 0);
 		int i_35_ = getDword();
 		if ((i_34_ ^ 0xffffffff) == (i_35_ ^ 0xffffffff))
 			return true;
@@ -569,7 +569,7 @@ class ByteBuffer extends Node
 		return i_46_ | i_45_;
 	}
 
-	final void decipherXTEA(int[] k, int off, int len) {
+	final void decipherXtea(int[] k, int off, int len) {
 		anInt7178++;
 		int i_49_ = ((ByteBuffer) this).position;
 		((ByteBuffer) this).position = off;
@@ -797,8 +797,7 @@ class ByteBuffer extends Node
 			else
 				Class135_Sub2.method1157(RuntimeException_Sub1.anInt4596,
 						(byte) -99);
-			if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674,
-					(byte) -78)) {
+			if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -78)) {
 				((IndexLoader) Class95.indexLoader2).unpackSettings = 2;
 				((IndexLoader) Class247.indexLoader17).unpackSettings = 2;
 				((IndexLoader) Class94.indexLoader16).unpackSettings = 2;
@@ -812,7 +811,7 @@ class ByteBuffer extends Node
 				Class36.anInt489 = 0;
 				Class348_Sub46.anInt7115 = 1;
 				Class154.anInt2101 = 0;
-				Class268.anInt3441 = 0;
+				Class268.failedMapArchives = 0;
 				Class348_Sub42_Sub3.method3177(-111, true);
 				((IndexLoader) Class95.indexLoader2).unpackSettings = 1;
 				((IndexLoader) Class247.indexLoader17).unpackSettings = 1;

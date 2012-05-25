@@ -14,7 +14,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3
     static int anInt8639;
     private int anInt8640;
     static int anInt8641;
-    static byte[][] aByteArrayArray8642;
+    static byte[][] lArchiveSrcs;
     static int anInt8643;
     static Class323 aClass323_8644;
     static int anInt8645;
@@ -60,7 +60,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3
 	    method250(-45, false, -102);
 	aClass323_8644 = null;
 	aClass230_8638 = null;
-	aByteArrayArray8642 = null;
+	lArchiveSrcs = null;
     }
     
     Class14_Sub4(NativeOpenGlToolkit class377, int i, int i_3_, int[] is, int i_4_,
@@ -153,7 +153,7 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3
     static final boolean method252(int i, int i_11_) {
 	anInt8636++;
 	if (i_11_ != 5126)
-	    aByteArrayArray8642 = null;
+	    lArchiveSrcs = null;
 	if (i != 0 && (i ^ 0xffffffff) != -3)
 	    return false;
 	return true;
@@ -205,14 +205,14 @@ final class Class14_Sub4 extends Class14 implements Interface18_Impl3
 			      is_31_, 0);
 	for (int i_32_ = 0; (i_32_ ^ 0xffffffff) > (i_28_ ^ 0xffffffff);
 	     i_32_++)
-	    Class214.intArrayCopy(is_31_,
+	    ArrayUtils.arrayCopy(is_31_,
 				anInt8640 * (i_28_ + -1 + (i_27_ + -i_32_)),
 				is, i_32_ * i_26_ + i_30_, i_26_);
     }
     
     public final float method67(float f, int i) {
 	if (i <= 69)
-	    aByteArrayArray8642 = null;
+	    lArchiveSrcs = null;
 	anInt8646++;
 	return f;
     }

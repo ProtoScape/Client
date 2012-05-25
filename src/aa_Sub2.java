@@ -73,9 +73,9 @@ final class aa_Sub2 extends aa
 				int i_14_) {
 	anInt5194++;
 	if (i_9_ < 512 || i_11_ < 512
-	    || (i_9_ ^ 0xffffffff) < ((-2 + Class367_Sub4.anInt7319) * 512
+	    || (i_9_ ^ 0xffffffff) < ((-2 + Class367_Sub4.mapSizeX) * 512
 				      ^ 0xffffffff)
-	    || (-2 + Class348_Sub40_Sub3.anInt9109) * 512 < i_11_)
+	    || (-2 + Class348_Sub40_Sub3.mapSizeY) * 512 < i_11_)
 	    Class239_Sub21.anIntArray6062[0]
 		= Class239_Sub21.anIntArray6062[1] = -1;
 	else if (i_12_ >= 22) {

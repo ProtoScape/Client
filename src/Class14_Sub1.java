@@ -380,7 +380,7 @@ final class Class14_Sub1 extends Class14 implements Interface18_Impl3
 	if (i_36_ == 112) {
 	    for (int i_39_ = 0; (i_39_ ^ 0xffffffff) > (i_35_ ^ 0xffffffff);
 		 i_39_++)
-		Class214.intArrayCopy(is_38_,
+		ArrayUtils.arrayCopy(is_38_,
 				    ((-i_39_ + i_35_ + (-1 + i_34_))
 				     * anInt8612),
 				    is, i_33_ * i_39_ + i_37_, i_33_);

@@ -28,9 +28,9 @@ final class Class348_Sub40_Sub17_Sub1 extends Class348_Sub40_Sub17
 		int i_6_ = (((Class348_Sub40_Sub17) this).anIntArray9232
 			    [(i_5_ % ((Class348_Sub40_Sub17) this).anInt9237
 			      + i_4_)]);
-		is_3_[i_5_] = Class139.method1166(4080, i_6_ << 815397828);
-		is_2_[i_5_] = Class139.method1166(65280, i_6_) >> -1149301340;
-		is_1_[i_5_] = Class139.method1166(4080, i_6_ >> -349345844);
+		is_3_[i_5_] = Class139.bitAnd(4080, i_6_ << 815397828);
+		is_2_[i_5_] = Class139.bitAnd(65280, i_6_) >> -1149301340;
+		is_1_[i_5_] = Class139.bitAnd(4080, i_6_ >> -349345844);
 	    }
 	}
 	return is;

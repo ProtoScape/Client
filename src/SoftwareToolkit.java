@@ -1781,17 +1781,17 @@ final class SoftwareToolkit extends AbstractToolkit
 	    float[] fs = ((SoftwareToolkit) this).aFloatArray7511;
 	    if (i_371_ < 0) {
 		int i_373_ = is.length + i_371_;
-		Class214.intArrayCopy(is, -i_371_, is, 0, i_373_);
+		ArrayUtils.arrayCopy(is, -i_371_, is, 0, i_373_);
 	    } else if (i_371_ > 0) {
 		int i_374_ = is.length - i_371_;
-		Class214.intArrayCopy(is, 0, is, i_371_, i_374_);
+		ArrayUtils.arrayCopy(is, 0, is, i_371_, i_374_);
 	    }
 	    if (i_372_ < 0) {
 		int i_375_ = fs.length + i_372_;
-		Class214.method1574(fs, -i_372_, fs, 0, i_375_);
+		ArrayUtils.arrayCopy(fs, -i_372_, fs, 0, i_375_);
 	    } else if (i_372_ > 0) {
 		int i_376_ = fs.length - i_372_;
-		Class214.method1574(fs, 0, fs, i_372_, i_376_);
+		ArrayUtils.arrayCopy(fs, 0, fs, i_372_, i_376_);
 	    }
 	}
     }

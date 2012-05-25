@@ -19,7 +19,7 @@ final class GametipLoader
     
     final GametipDefinition loadGameTip(int i, byte i_0_) {
 	anInt1721++;
-	byte[] is = aClass45_1718.getArchiveChild(1, i);
+	byte[] is = aClass45_1718.getChildArchive(1, i);
 	if (i_0_ < 12)
 	    return null;
 	GametipDefinition definition = new GametipDefinition();
@@ -70,7 +70,7 @@ final class GametipLoader
 	int i_9_ = i_8_ == (anInt1715 ^ 0xffffffff) ? 0 : 1;
 	Random random = new Random();
 	int[] is = new int[anIntArrayArray1724[i].length];
-	Class214.intArrayCopy(anIntArrayArray1724[i], 0, is, 0, is.length);
+	ArrayUtils.arrayCopy(anIntArrayArray1724[i], 0, is, 0, is.length);
 	for (int i_10_ = i_9_; is.length > i_10_; i_10_++) {
 	    int i_11_ = i_9_ + Model.method1097((byte) 80, is.length - i_9_,
 						   random);
@@ -90,7 +90,7 @@ final class GametipLoader
     static final void method1048(Widget class46, int i) {
 	anInt1723++;
 	int i_13_ = 113 % ((-25 - i) / 59);
-	Widget class46_14_ = Class237.method1687(class46, 3);
+	Widget class46_14_ = MapLoader.method1687(class46, 3);
 	int i_15_;
 	int i_16_;
 	if (class46_14_ != null) {
@@ -107,8 +107,8 @@ final class GametipLoader
     GametipLoader(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_1718 = class45;
-	    aClass45_1718.method407(1);
-	    ByteBuffer class348_sub49 = new ByteBuffer(aClass45_1718.getArchiveChild(0, 0));
+	    aClass45_1718.getAmountChildEntries(1);
+	    ByteBuffer class348_sub49 = new ByteBuffer(aClass45_1718.getChildArchive(0, 0));
 	    int i_17_ = class348_sub49.getUByte();
 	    if ((i_17_ ^ 0xffffffff) < -4) {
 		anIntArrayArray1724 = new int[0][];

@@ -35,7 +35,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40
 	} else if ((i_0_ ^ 0xffffffff) == -2) {
 	    Class301.method2280((byte) 0, 28587);
 	    Widget.method440(512, (byte) -61);
-	    if (Class348_Sub33.aByteArrayArrayArray6962 != null)
+	    if (Class348_Sub33.settingFlags != null)
 		Class318_Sub1_Sub3_Sub4.method2468(3613);
 	} else {
 	    Class301.method2280((byte) (-4 + Class239_Sub15.anInt6006 & 0xff),

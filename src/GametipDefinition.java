@@ -187,7 +187,7 @@ final class GametipDefinition
 	try {
 	    anInt3692++;
 	    if (Class219.aClass223_2868 == class223)
-		return VarbitHandler.method1312((byte) 64, buffer);
+		return VarpHandler.method1312((byte) 64, buffer);
 	    if (ByteBuffer.aClass223_7175 == class223)
 		return NativeRaster.method987(743571200, buffer);
 	    if (Class101_Sub1.aClass223_5689 == class223)

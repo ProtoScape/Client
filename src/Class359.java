@@ -17,8 +17,7 @@ final class Class359
 	anInt4419++;
 	boolean bool_0_ = bool;
 	if (Class348_Sub40_Sub1.aClass207_9090 == null) {
-	    if (!Class21.indexLoader8.getArchiveLoaded(false,
-						OutputStream_Sub1.anInt98))
+	    if (!Class21.indexLoader8.getArchiveLoaded(OutputStream_Sub1.anInt98))
 		bool_0_ = false;
 	    else
 		Class348_Sub40_Sub1.aClass207_9090
@@ -26,8 +25,7 @@ final class Class359
 					  OutputStream_Sub1.anInt98);
 	}
 	if (Class348_Sub7.aClass207_6643 == null) {
-	    if (Class21.indexLoader8.getArchiveLoaded(!bool,
-					       Class348_Sub32.anInt6938))
+	    if (Class21.indexLoader8.getArchiveLoaded(Class348_Sub32.anInt6938))
 		Class348_Sub7.aClass207_6643
 		    = ImageSprite.getSprite(Class21.indexLoader8,
 					  Class348_Sub32.anInt6938);
@@ -35,7 +33,7 @@ final class Class359
 		bool_0_ = false;
 	}
 	if (FileIndexWorker.aClass207_1727 == null) {
-	    if (!Class21.indexLoader8.getArchiveLoaded(false, Class295.anInt3762))
+	    if (!Class21.indexLoader8.getArchiveLoaded(Class295.anInt3762))
 		bool_0_ = false;
 	    else
 		FileIndexWorker.aClass207_1727
@@ -43,7 +41,7 @@ final class Class359
 					  Class295.anInt3762);
 	}
 	if (Class281.aClass143_3649 == null) {
-	    if (Class104.indexLoader13.getArchiveLoaded(false, Class20.anInt317))
+	    if (Class104.indexLoader13.getArchiveLoaded(Class20.anInt317))
 		Class281.aClass143_3649
 		    = Class239_Sub10.createBitmapFont((byte) -89, Class20.anInt317,
 						Class104.indexLoader13);
@@ -51,7 +49,7 @@ final class Class359
 		bool_0_ = false;
 	}
 	if (Class5_Sub1_Sub1.aClass207Array9929 == null) {
-	    if (Class21.indexLoader8.getArchiveLoaded(false, Class20.anInt317))
+	    if (Class21.indexLoader8.getArchiveLoaded(Class20.anInt317))
 		Class5_Sub1_Sub1.aClass207Array9929
 		    = ImageSprite.getSprites(Class21.indexLoader8,
 					  Class20.anInt317);

@@ -46,7 +46,7 @@ final class Class281
 		      .position));
 	Class348_Sub42_Sub14.queuePacket(118, class348_sub47);
 	if (i <= 99)
-	    getNameHash(null, 70);
+	    getArchiveHash(null);
 	Class367_Sub2.anInt7297 = 1;
 	GameFont.connectionOpcode = -3;
 	Class169.anInt2264 = 0;
@@ -61,15 +61,12 @@ final class Class281
 	    method2107((byte) -107);
     }
     
-    static final int getNameHash(String string, int i) {
+    static int getArchiveHash(String string) {
 	anInt3646++;
-	int i_2_ = string.length();
-	int i_3_ = 0;
-	for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > (i_2_ ^ 0xffffffff); i_4_++)
-	    i_3_ = (Class354.decodeCharacter(string.charAt(i_4_), false)
-		    + ((i_3_ << -126731387) - i_3_));
-	if (i != -29286)
-	    return 0;
-	return i_3_;
+	int length = string.length();
+	int hash = 0;
+	for (int i = 0; i < length; i++)
+	    hash = (Class354.charToByte(string.charAt(i)) + ((hash << 5) - hash));
+	return hash;
     }
 }

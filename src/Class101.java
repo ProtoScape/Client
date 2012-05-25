@@ -1,4 +1,5 @@
 /* Class101 - Decompiled by JODE
+
  * Visit http://jode.sourceforge.net/
  */
 
@@ -22,86 +23,59 @@ abstract class Class101
     
     abstract void method892(int i, int i_2_, int i_3_, int[] is);
     
-    static final void method893(byte i) {
-	Class348_Sub40_Sub22.method3111(91, ((Class348_Sub51)
-					     BitmapTable.aClass348_Sub51_3959)
-						.aClass239_Sub6_7226
-						.method1743(-32350));
+    static final void method893() {
+	Class348_Sub40_Sub22.setMapSize(((Class348_Sub51) BitmapTable.aClass348_Sub51_3959).aClass239_Sub6_7226.getMapSizeId(-32350));
 	anInt1595++;
-	int i_4_ = ((Class286_Sub4.anInt6246 >> 239567308)
-		    - -(za_Sub2.anInt9780 >> 515880227));
-	int i_5_ = ((Class90.anInt1517 >> 591146499)
-		    + (Class59_Sub2_Sub2.anInt8685 >> 1861651468));
-	Class355.anInt4372
-	    = ((Class318_Sub1) Class132.localPlayer)
-		  .aByte6381
-	    = (byte) 0;
-	Class132.localPlayer.method2449(8, 8,
-							       (byte) 118);
-	if (i != -49)
-	    anInt1597 = 115;
-	int i_6_ = 18;
-	Class322.anIntArray4031 = new int[i_6_];
-	StringNode.aByteArrayArray7212 = new byte[i_6_][];
-	Class239_Sub6.anIntArrayArray5894 = new int[i_6_][4];
-	aa_Sub1.anIntArray5192 = new int[i_6_];
-	Class14_Sub4.aByteArrayArray8642 = new byte[i_6_][];
-	Class348_Sub23_Sub3.anIntArray9042 = new int[i_6_];
-	r.anIntArray9724 = new int[i_6_];
-	Class295.anIntArray3759 = new int[i_6_];
-	Class347.aByteArrayArray4281 = new byte[i_6_][];
-	ClientApplet.anIntArray38 = new int[i_6_];
-	Class348_Sub23_Sub1.aByteArrayArray8996 = new byte[i_6_][];
-	Class129.aByteArrayArray1887 = new byte[i_6_][];
-	i_6_ = 0;
-	for (int i_7_ = (i_4_ + -(Class367_Sub4.anInt7319 >> 1284666244)) / 8;
-	     (i_4_ - -(Class367_Sub4.anInt7319 >> 21179204)) / 8 >= i_7_;
-	     i_7_++) {
-	    for (int i_8_ = (-(Class348_Sub40_Sub3.anInt9109 >> 1754847652)
-			     + i_5_) / 8;
-		 ((i_5_ + (Class348_Sub40_Sub3.anInt9109 >> -1988934620)) / 8
-		  >= i_8_);
-		 i_8_++) {
-		int i_9_ = i_8_ + (i_7_ << 1959591592);
-		Class348_Sub23_Sub3.anIntArray9042[i_6_] = i_9_;
-		aa_Sub1.anIntArray5192[i_6_]
-		    = Class367_Sub10.indexLoader5
-			  .getArchiveId("m" + i_7_ + "_" + i_8_);
-		ClientApplet.anIntArray38[i_6_]
-		    = Class367_Sub10.indexLoader5
-			  .getArchiveId("l" + i_7_ + "_" + i_8_);
-		Class322.anIntArray4031[i_6_]
-		    = Class367_Sub10.indexLoader5
-			  .getArchiveId("n" + i_7_ + "_" + i_8_);
-		Class295.anIntArray3759[i_6_]
-		    = Class367_Sub10.indexLoader5
-			  .getArchiveId("um" + i_7_ + "_" + i_8_);
-		r.anIntArray9724[i_6_]
-		    = (Class367_Sub10.indexLoader5.getArchiveId
-		       ("ul" + i_7_ + "_" + i_8_));
-		if (Class322.anIntArray4031[i_6_] == -1) {
-		    aa_Sub1.anIntArray5192[i_6_] = -1;
-		    ClientApplet.anIntArray38[i_6_] = -1;
-		    Class295.anIntArray3759[i_6_] = -1;
-		    r.anIntArray9724[i_6_] = -1;
+	int chunkX = ((Class286_Sub4.anInt6246 >> 239567308) + (za_Sub2.baseRegionX >> 515880227));
+	int chunkY = ((Class90.baseRegionY >> 591146499) + (Class59_Sub2_Sub2.anInt8685 >> 1861651468));
+	Class355.anInt4372 = ((Class318_Sub1) Class132.localPlayer).aByte6381 = (byte) 0;
+	Class132.localPlayer.setLocationUnkn(8, 8);
+	int i = 18;
+	Class322.nArchiveids = new int[i];
+	StringNode.nArchiveSrcs = new byte[i][];
+	Class239_Sub6.lCipherKeys = new int[i][4];
+	aa_Sub1.mArchiveids = new int[i];
+	Class14_Sub4.lArchiveSrcs = new byte[i][];
+	Class348_Sub23_Sub3.regionHashes = new int[i];
+	r.ulArchiveids = new int[i];
+	Class295.umArchiveids = new int[i];
+	Class347.mArchiveSrcs = new byte[i][];
+	ClientApplet.lArchiveids = new int[i];
+	Class348_Sub23_Sub1.ulArchiveSrcs = new byte[i][];
+	Class129.umArchiveSrcs = new byte[i][];
+	i = 0;
+	for (int rX = (chunkX - (Class367_Sub4.mapSizeX >> 1284666244)) / 8; (chunkX + (Class367_Sub4.mapSizeX >> 21179204)) / 8 >= rX; rX++) {
+	    for (int rY = (chunkY - (Class348_Sub40_Sub3.mapSizeY >> 1754847652)) / 8; ((chunkY + (Class348_Sub40_Sub3.mapSizeY >> -1988934620)) / 8 >= rY); rY++) {
+		int i_9_ = rY + (rX << 8);
+		Class348_Sub23_Sub3.regionHashes[i] = i_9_;
+		aa_Sub1.mArchiveids[i] = Class367_Sub10.indexLoader5.getArchiveId("m" + rX + "_" + rY);
+		ClientApplet.lArchiveids[i] = Class367_Sub10.indexLoader5.getArchiveId("l" + rX + "_" + rY);
+		Class322.nArchiveids[i] = Class367_Sub10.indexLoader5.getArchiveId("n" + rX + "_" + rY);
+		Class295.umArchiveids[i] = Class367_Sub10.indexLoader5.getArchiveId("um" + rX + "_" + rY);
+		r.ulArchiveids[i] = (Class367_Sub10.indexLoader5.getArchiveId("ul" + rX + "_" + rY));
+		if (Class322.nArchiveids[i] == -1) {
+		    aa_Sub1.mArchiveids[i] = -1;
+		    ClientApplet.lArchiveids[i] = -1;
+		    Class295.umArchiveids[i] = -1;
+		    r.ulArchiveids[i] = -1;
 		}
-		i_6_++;
+		i++;
 	    }
 	}
-	for (int i_10_ = i_6_; Class322.anIntArray4031.length > i_10_;
+	for (int i_10_ = i; Class322.nArchiveids.length > i_10_;
 	     i_10_++) {
-	    Class322.anIntArray4031[i_10_] = -1;
-	    aa_Sub1.anIntArray5192[i_10_] = -1;
-	    ClientApplet.anIntArray38[i_10_] = -1;
-	    Class295.anIntArray3759[i_10_] = -1;
-	    r.anIntArray9724[i_10_] = -1;
+	    Class322.nArchiveids[i_10_] = -1;
+	    aa_Sub1.mArchiveids[i_10_] = -1;
+	    ClientApplet.lArchiveids[i_10_] = -1;
+	    Class295.umArchiveids[i_10_] = -1;
+	    r.ulArchiveids[i_10_] = -1;
 	}
-	int i_11_;
+	int clientStage;
 	if (Class240.anInt4674 != 3)
-	    i_11_ = 8;
+	    clientStage = 8;
 	else
-	    i_11_ = 4;
-	Class348_Sub41.method3157(i_5_, (byte) 123, i_4_, i_11_, false);
+	    clientStage = 4;
+	Class348_Sub41.updateLocation(chunkX, chunkY, clientStage, false);
     }
     
     abstract void method894(int i, int i_12_, int i_13_);
@@ -123,9 +97,8 @@ abstract class Class101
 	    anInt1599++;
 	    Class239_Sub1.anInt5850 = class105s.length;
 	    Class175.anIntArray2330 = new int[Class239_Sub1.anInt5850 + 10];
-	    Class341.aClass105Array4234
-		= new RasterToolkit[Class239_Sub1.anInt5850 + 10];
-	    Class214.method1575(class105s, 0, Class341.aClass105Array4234, 0,
+	    Class341.aClass105Array4234 = new RasterToolkit[Class239_Sub1.anInt5850 + 10];
+	    ArrayUtils.arrayCopy(class105s, 0, Class341.aClass105Array4234, 0,
 				Class239_Sub1.anInt5850);
 	    for (int i_17_ = 0;
 		 (i_17_ ^ 0xffffffff) > (Class239_Sub1.anInt5850 ^ 0xffffffff);

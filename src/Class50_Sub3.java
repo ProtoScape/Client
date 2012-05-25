@@ -126,7 +126,7 @@ final class Class50_Sub3 extends Class50
 	if (is == null)
 	    return null;
 	short[] is_34_ = new short[is.length];
-	Class214.method1576(is, 0, is_34_, 0, is.length);
+	ArrayUtils.arrayCopy(is, 0, is_34_, 0, is.length);
 	if (i >= -103)
 	    method470(null, (byte) -35);
 	return is_34_;

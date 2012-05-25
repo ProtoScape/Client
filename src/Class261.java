@@ -91,7 +91,7 @@ final class Class261
 	    return class225;
 	byte[] is;
 	synchronized (aClass45_3319) {
-	    is = aClass45_3319.getArchiveChild(i_9_, i);
+	    is = aClass45_3319.getChildArchive(i_9_, i);
 	}
 	class225 = new Class225();
 	if (is != null)
@@ -482,7 +482,7 @@ final class Class261
     Class261(GameMode class230, int i, IndexLoader class45) {
 	try {
 	    aClass45_3319 = class45;
-	    aClass45_3319.method407(32);
+	    aClass45_3319.getAmountChildEntries(32);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("uga.<init>("

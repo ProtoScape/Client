@@ -120,7 +120,7 @@ final class Class348_Sub42_Sub5 extends SubNode
 		     ((i_17_ ^ 0xffffffff)
 		      > (anIntArray9524.length ^ 0xffffffff));
 		     i_17_++) {
-		    if (!class45.getArchiveLoaded(false, anIntArray9524[i_17_]))
+		    if (!class45.getArchiveLoaded(anIntArray9524[i_17_]))
 			return false;
 		}
 	    } else {

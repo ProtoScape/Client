@@ -5,13 +5,13 @@
 final class aa_Sub1 extends aa
 {
     static s[] aSArray5191;
-    static int[] anIntArray5192;
+    static int[] mArchiveids;
     Class258_Sub3_Sub1 aClass258_Sub3_Sub1_5193;
     
     public static void method161(int i) {
 	int i_0_ = -70 / ((i - 42) / 48);
 	aSArray5191 = null;
-	anIntArray5192 = null;
+	mArchiveids = null;
     }
     
     aa_Sub1(OpenGlToolkit var_ha_Sub2, int i, int i_1_, byte[] is) {

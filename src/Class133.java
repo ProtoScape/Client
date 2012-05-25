@@ -140,7 +140,7 @@ final class Class133
 									.aClass348_Sub51_3959))
 									.aClass239_Sub12_7243),
 									0);
-			Class237.method1686(-127);
+			MapLoader.method1686(-127);
 			BitmapTable.aClass348_Sub51_3959.method3429((byte) 74,
 					(((Class348_Sub51)
 							(BitmapTable
@@ -185,7 +185,7 @@ final class Class133
 								int i_8_
 								= class348_sub49_sub2.readLEShort(false);
 								is[i_6_]
-								   = Class273.method2057(i_7_ << -66426544,
+								   = Class273.bitOr(i_7_ << -66426544,
 										   i_8_);
 							} else
 								is[i_6_] = i_7_;
@@ -518,12 +518,11 @@ final class Class133
 								((Player)
 										class318_sub1_sub3_sub3_sub2).anInt10549);
 					} else
-						class318_sub1_sub3_sub3_sub2.method2449
+						class318_sub1_sub3_sub3_sub2.setLocationUnkn
 						(((Player)
 								class318_sub1_sub3_sub3_sub2).anInt10531,
 								((Player)
-										class318_sub1_sub3_sub3_sub2).anInt10549,
-										(byte) 84);
+										class318_sub1_sub3_sub3_sub2).anInt10549);
 				}
 			} catch (RuntimeException runtimeexception) {
 				throw Class348_Sub17.method2929

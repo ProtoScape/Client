@@ -62,7 +62,7 @@ final class Class258_Sub3_Sub1 extends Class258_Sub3
 	Class348_Sub22.method2959(-1);
 	Class348_Sub23.method2965(string, i_11_, bool, i ^ i);
 	Class348_Sub24.method2994(2);
-	VarbitHandler.method1311(5139, Class348_Sub8.currentToolkit);
+	VarpHandler.method1311(5139, Class348_Sub8.currentToolkit);
 	Class369.method3568(Class348_Sub8.currentToolkit, 4);
 	ItemLoader.method1933(Class21.indexLoader8, Class348_Sub8.currentToolkit, true);
 	GameText.method2061(-128);

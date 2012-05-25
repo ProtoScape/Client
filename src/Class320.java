@@ -12,9 +12,9 @@ final class Class320
 	anInt3993++;
 	if (Class163.aBooleanArray2162[i])
 	    return true;
-	if (!Class229.aClass45_2978.method408((byte) -124, i))
+	if (!Class229.aClass45_2978.method408(i))
 	    return false;
-	int i_1_ = Class229.aClass45_2978.method407(i);
+	int i_1_ = Class229.aClass45_2978.getAmountChildEntries(i);
 	if (i_1_ == 0) {
 	    Class163.aBooleanArray2162[i] = true;
 	    return true;
@@ -24,7 +24,7 @@ final class Class320
 	for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > (i_1_ ^ 0xffffffff); i_2_++) {
 	    if (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_] == null) {
 		byte[] is
-		    = Class229.aClass45_2978.getArchiveChild(i, i_2_);
+		    = Class229.aClass45_2978.getChildArchive(i, i_2_);
 		if (is != null) {
 		    Widget class46
 			= (Class348_Sub40_Sub33.aClass46ArrayArray9427[i][i_2_]

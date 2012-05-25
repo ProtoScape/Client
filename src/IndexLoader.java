@@ -21,7 +21,7 @@ final class IndexLoader
     static int anInt640;
     static int anInt641;
     static int anInt642;
-    static GamePacket aClass351_643 = new GamePacket(3, -1);
+    static GamePacket gamePacket3 = new GamePacket(3, -1);
     static int anInt644;
     static int anInt645;
     static int anInt646;
@@ -42,7 +42,7 @@ final class IndexLoader
     static int anInt661;
     static int anInt662;
     static int anInt663;
-    private Object[][] childArchiveBuffers;
+    private Object[][] childBuffers;
     static int anInt665;
     static int anInt666;
     static long aLong667;
@@ -50,29 +50,29 @@ final class IndexLoader
     static int anInt669 = 0;
     static float aFloat670;
     
-    final int getTableChecksum() {
+    final int getChecksum() {
 	anInt657++;
-	if (!method399(false))
+	if (!isInitialized())
 	    throw new IllegalStateException("");
-	return ((IndexTable) indexTable).checksum;
+	return indexTable.checksum;
     }
     
     public static void method390(byte i) {
-	aClass351_643 = null;
+	gamePacket3 = null;
     }
     
-    final byte[] getArchiveChild(String archiveName, String childName) {
+    final byte[] getChildArchive(String archiveName, String childName) {
 	try {
 	    anInt647++;
-	    if (!method399(false))
+	    if (!isInitialized())
 		return null;
 	    archiveName = archiveName.toLowerCase();
 	    childName = childName.toLowerCase();
-	    int archiveId = ((IndexTable) indexTable).nameHashTable.getOffset(Class281.getNameHash(archiveName, -29286));
-	    if (!isValidArchiveId(archiveId))
+	    int archiveId = indexTable.archiveHashTable.get(Class281.getArchiveHash(archiveName));
+	    if (!isValidArchive(archiveId))
 		return null;
-	    int childId = (((IndexTable) indexTable).childHashTables[archiveId].getOffset(Class281.getNameHash(childName, -29286)));
-	    return getArchiveChild(archiveId, childId);
+	    int childId = (indexTable.childHashTables[archiveId].get(Class281.getArchiveHash(childName)));
+	    return getChildArchive(archiveId, childId);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("in.EA("
@@ -85,16 +85,13 @@ final class IndexLoader
 	}
     }
     
-    private final boolean isValidArchiveId(int archiveId) {
+    private final boolean isValidArchive(int id) {
 	anInt646++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return false;
-	if ((archiveId ^ 0xffffffff) > -1
-	    || ((IndexTable) indexTable).maxChildEntry.length <= archiveId
-	    || ((((IndexTable) indexTable).maxChildEntry[archiveId] ^ 0xffffffff)
-		== -1)) {
+	if (id < 0 || indexTable.amountChildEntries.length <= id || (indexTable.amountChildEntries[id] == 0)) {
 	    if (Class285.aBoolean4741)
-		throw new IllegalArgumentException(Integer.toString(archiveId));
+		throw new IllegalArgumentException(Integer.toString(id));
 	    return false;
 	}
 	return true;
@@ -102,190 +99,175 @@ final class IndexLoader
     
     final byte[] loadArchiveChild(int i, int i_5_, int[] is) {
 	anInt639++;
-	if (!method418(i_5_, i))
+	if (!isValidChild(i, i_5_))
 	    return null;
-	if (childArchiveBuffers[i] == null || childArchiveBuffers[i][i_5_] == null) {
-	    boolean bool = load(i_5_, (byte) -78, is, i);
+	if (childBuffers[i] == null || childBuffers[i][i_5_] == null) {
+	    boolean bool = loadArchive(i, i_5_, is);
 	    if (!bool) {
 		loadArchive(i);
-		bool = load(i_5_, (byte) -103, is, i);
+		bool = loadArchive(i, i_5_, is);
 		if (!bool)
 		    return null;
 	    }
 	}
-	byte[] is_7_
-	    = Class50_Sub1.getVariableBufferArray(false, childArchiveBuffers[i][i_5_],
-				     53146732);
-	if ((((IndexLoader) this).unpackSettings ^ 0xffffffff) == -2) {
-	    childArchiveBuffers[i][i_5_] = null;
-	    if ((((IndexTable) indexTable).maxChildEntry[i] ^ 0xffffffff)
-		== -2)
-		childArchiveBuffers[i] = null;
-	} else if (((IndexLoader) this).unpackSettings == 2)
-	    childArchiveBuffers[i] = null;
+	byte[] is_7_ = Class50_Sub1.getByteArray(childBuffers[i][i_5_]);
+	if ((unpackSettings) == 1) {
+	    childBuffers[i][i_5_] = null;
+	    if ((indexTable.amountChildEntries[i]) == 1)
+		childBuffers[i] = null;
+	} else if (unpackSettings == 2)
+	    childBuffers[i] = null;
 	return is_7_;
     }
     
-    private final boolean load(int i, byte i_8_, int[] is, int i_9_) {
+    private boolean loadArchive(int archiveId,int childId, int[] cipherKeys) {
 	anInt628++;
-	if (!isValidArchiveId(i_9_))
+	if (!isValidArchive(archiveId))
 	    return false;
-	if (archiveBuffers[i_9_] == null)
+	if (archiveBuffers[archiveId] == null)
 	    return false;
-	int children = ((IndexTable) indexTable).amountChildren[i_9_];
-	int[] is_11_ = ((IndexTable) indexTable).anIntArrayArray3721[i_9_];
-	if (childArchiveBuffers[i_9_] == null)
-	    childArchiveBuffers[i_9_] = new Object[((IndexTable) indexTable).maxChildEntry[i_9_]];
-	Object[] objects = childArchiveBuffers[i_9_];
-	boolean bool = true;
-	for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > (children ^ 0xffffffff);
-	     i_12_++) {
-	    int i_13_;
-	    if (is_11_ == null)
-		i_13_ = i_12_;
+	int amountChildren = indexTable.amountChildren[archiveId];
+	int[] activeChildren = indexTable.activeChildren[archiveId];
+	if (childBuffers[archiveId] == null)
+	    childBuffers[archiveId] = new Object[indexTable.amountChildEntries[archiveId]];
+	Object[] buffers = childBuffers[archiveId];
+	boolean isLoaded = true;
+	for (int i = 0; i < amountChildren; i++) {
+	    int id;
+	    if (activeChildren == null)
+		id = i;
 	    else
-		i_13_ = is_11_[i_12_];
-	    if (objects[i_13_] == null) {
-		bool = false;
+		id = activeChildren[i];
+	    if (buffers[id] == null) {
+		isLoaded = false;
 		break;
 	    }
 	}
-	if (bool)
+	if (isLoaded)
 	    return true;
-	byte[] is_14_;
-	if (is == null
-	    || ((is[0] ^ 0xffffffff) == -1 && (is[1] ^ 0xffffffff) == -1
-		&& (is[2] ^ 0xffffffff) == -1 && (is[3] ^ 0xffffffff) == -1))
-	    is_14_ = Class50_Sub1.getVariableBufferArray(false, archiveBuffers[i_9_], 53146732);
+	byte[] archiveSrc;
+	if (cipherKeys == null || ((cipherKeys[0] ^ 0xffffffff) == -1 && (cipherKeys[1] ^ 0xffffffff) == -1 && (cipherKeys[2] ^ 0xffffffff) == -1 && (cipherKeys[3] ^ 0xffffffff) == -1))
+	    archiveSrc = Class50_Sub1.getByteArray(archiveBuffers[archiveId]);
 	else {
-	    is_14_ = Class50_Sub1.getVariableBufferArray(true, archiveBuffers[i_9_], 53146732);
-	    ByteBuffer class348_sub49 = new ByteBuffer(is_14_);
-	    class348_sub49.decipherXTEA(is, 5, (((ByteBuffer) class348_sub49).payload).length);
+	    archiveSrc = Class50_Sub1.getByteArray(archiveBuffers[archiveId]);
+	    ByteBuffer buffer = new ByteBuffer(archiveSrc);
+	    buffer.decipherXtea(cipherKeys, 5, buffer.payload.length);
 	}
-	byte[] is_15_;
+	byte[] unpackedSrc;
 	try {
-	    is_15_ = Class348_Sub41.unpackFileContainer(is_14_, -120);
+	    unpackedSrc = Class348_Sub41.unpackArchive(archiveSrc, -120);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929
 		      (runtimeexception,
-		       ("T3 - " + (is != null) + "," + i_9_ + ","
-			+ is_14_.length + ","
-			+ Class59_Sub1.getCalculatedChecksum(5126, is_14_.length, is_14_)
+		       ("T3 - " + (cipherKeys != null) + "," + archiveId + ","
+			+ archiveSrc.length + ","
+			+ Class59_Sub1.getChecksum(5126, archiveSrc.length, archiveSrc)
 			+ ","
-			+ Class59_Sub1.getCalculatedChecksum(5126, -2 + is_14_.length,
-						 is_14_)
-			+ "," + ((IndexTable) indexTable).checksums[i_9_]
-			+ "," + ((IndexTable) indexTable).checksum));
+			+ Class59_Sub1.getChecksum(5126, archiveSrc.length - 2, archiveSrc)
+			+ "," + indexTable.checksums[archiveId]
+			+ "," + indexTable.checksum));
 	}
 	if (directlyAllocate)
-	    archiveBuffers[i_9_] = null;
-	if (i_8_ >= -17)
-	    getArchive(-7);
-	if (children > 1) {
-	    if (((IndexLoader) this).unpackSettings != 2) {
-		int i_16_ = is_15_.length;
-		int i_17_ = 0xff & is_15_[--i_16_];
-		i_16_ -= 4 * (children * i_17_);
-		ByteBuffer class348_sub49 = new ByteBuffer(is_15_);
-		int[] is_18_ = new int[children];
-		((ByteBuffer) class348_sub49).position = i_16_;
-		for (int i_19_ = 0; i_19_ < i_17_; i_19_++) {
+	    archiveBuffers[archiveId] = null;
+	if (amountChildren > 1) {
+	    if (unpackSettings != 2) {
+		int pos = unpackedSrc.length;
+		int rounds = 0xff & unpackedSrc[--pos];
+		pos -= 4 * amountChildren * rounds;
+		ByteBuffer buffer = new ByteBuffer(unpackedSrc);
+		int[] childrenSizes = new int[amountChildren];
+		buffer.position = pos;
+		for (int i_19_ = 0; i_19_ < rounds; i_19_++) {
 		    int i_20_ = 0;
-		    for (int i_21_ = 0; i_21_ < children; i_21_++) {
-			i_20_ += class348_sub49.getDword();
-			is_18_[i_21_] += i_20_;
+		    for (int i_21_ = 0; i_21_ < amountChildren; i_21_++) {
+			i_20_ += buffer.getDword();
+			childrenSizes[i_21_] += i_20_;
 		    }
 		}
-		byte[][] is_22_ = new byte[children][];
-		for (int i_23_ = 0;
-		     (i_23_ ^ 0xffffffff) > (children ^ 0xffffffff); i_23_++) {
-		    is_22_[i_23_] = new byte[is_18_[i_23_]];
-		    is_18_[i_23_] = 0;
+		byte[][] childrenSrcs = new byte[amountChildren][];
+		for (int i = 0; i < amountChildren; i++) {
+		    childrenSrcs[i] = new byte[childrenSizes[i]];
+		    childrenSizes[i] = 0;
 		}
-		((ByteBuffer) class348_sub49).position = i_16_;
-		int i_24_ = 0;
-		for (int i_25_ = 0;
-		     (i_17_ ^ 0xffffffff) < (i_25_ ^ 0xffffffff); i_25_++) {
-		    int i_26_ = 0;
-		    for (int i_27_ = 0; children > i_27_; i_27_++) {
-			i_26_ += class348_sub49.getDword();
-			Class214.byteArrayCopy(is_15_, i_24_, is_22_[i_27_],
-					    is_18_[i_27_], i_26_);
-			i_24_ += i_26_;
-			is_18_[i_27_] += i_26_;
+		((ByteBuffer) buffer).position = pos;
+		int srcOff = 0;
+		for (int i = 0; rounds > i; i++) {
+		    int len = 0;
+		    for (int j = 0; amountChildren > j; j++) {
+			len += buffer.getDword();
+			ArrayUtils.arrayCopy(unpackedSrc, srcOff, childrenSrcs[j], childrenSizes[j], len);
+			srcOff += len;
+			childrenSizes[j] += len;
 		    }
 		}
-		for (int i_28_ = 0; children > i_28_; i_28_++) {
-		    int i_29_;
-		    if (is_11_ == null)
-			i_29_ = i_28_;
+		for (int j = 0; amountChildren > j; j++) {
+		    int id;
+		    if (activeChildren == null)
+			id = j;
 		    else
-			i_29_ = is_11_[i_28_];
-		    if ((((IndexLoader) this).unpackSettings ^ 0xffffffff) != -1)
-			objects[i_29_] = is_22_[i_28_];
+			id = activeChildren[j];
+		    if (unpackSettings != 0)
+			buffers[id] = childrenSrcs[j];
 		    else
-			objects[i_29_]
-			    = Class179.getDirectByteBuffer(is_22_[i_28_]);
+			buffers[id] = Class179.getDirectByteBuffer(childrenSrcs[j]);
 		}
 	    } else {
-		int i_30_ = is_15_.length;
-		int i_31_ = 0xff & is_15_[--i_30_];
-		i_30_ -= 4 * (i_31_ * children);
-		ByteBuffer class348_sub49 = new ByteBuffer(is_15_);
-		int i_32_ = 0;
-		int i_33_ = 0;
-		((ByteBuffer) class348_sub49).position = i_30_;
-		for (int i_34_ = 0;
-		     (i_31_ ^ 0xffffffff) < (i_34_ ^ 0xffffffff); i_34_++) {
+		int pos = unpackedSrc.length;
+		int rounds = 0xff & unpackedSrc[--pos];
+		pos -= 4 * rounds * amountChildren;
+		ByteBuffer buffer = new ByteBuffer(unpackedSrc);
+		int destPos = 0;
+		int fetchId = 0;
+		buffer.position = pos;
+		for (int i = 0; rounds > i; i++) {
 		    int i_35_ = 0;
-		    for (int i_36_ = 0; i_36_ < children; i_36_++) {
-			i_35_ += class348_sub49.getDword();
-			int i_37_;
-			if (is_11_ == null)
-			    i_37_ = i_36_;
+		    for (int j = 0; j < amountChildren; j++) {
+			i_35_ += buffer.getDword();
+			int id;
+			if (activeChildren == null)
+			    id = j;
 			else
-			    i_37_ = is_11_[i_36_];
-			if ((i_37_ ^ 0xffffffff) == (i ^ 0xffffffff)) {
-			    i_33_ = i_37_;
-			    i_32_ += i_35_;
+			    id = activeChildren[j];
+			if (id == childId) {
+			    fetchId = id;
+			    destPos += i_35_;
 			}
 		    }
 		}
-		if ((i_32_ ^ 0xffffffff) == -1)
+		if (destPos == 0)
 		    return true;
-		byte[] is_38_ = new byte[i_32_];
-		((ByteBuffer) class348_sub49).position = i_30_;
-		i_32_ = 0;
-		int i_39_ = 0;
-		for (int i_40_ = 0; i_40_ < i_31_; i_40_++) {
-		    int i_41_ = 0;
-		    for (int i_42_ = 0; i_42_ < children; i_42_++) {
-			i_41_ += class348_sub49.getDword();
-			int i_43_;
-			if (is_11_ != null)
-			    i_43_ = is_11_[i_42_];
+		byte[] dest = new byte[destPos];
+		buffer.position = pos;
+		destPos = 0;
+		int srcOff = 0;
+		for (int i = 0; i < rounds; i++) {
+		    int length = 0;
+		    for (int j = 0; j < amountChildren; j++) {
+			length += buffer.getDword();
+			int id;
+			if (activeChildren != null)
+			    id = activeChildren[j];
 			else
-			    i_43_ = i_42_;
-			if (i_43_ == i) {
-			    Class214.byteArrayCopy(is_15_, i_39_, is_38_, i_32_,
-						i_41_);
-			    i_32_ += i_41_;
+			    id = j;
+			if (id == childId) {
+			    ArrayUtils.arrayCopy(unpackedSrc, srcOff, dest, destPos, length);
+			    destPos += length;
 			}
-			i_39_ += i_41_;
+			srcOff += length;
 		    }
 		}
-		objects[i_33_] = is_38_;
+		buffers[fetchId] = dest;
 	    }
 	} else {
-	    int i_44_;
-	    if (is_11_ != null)
-		i_44_ = is_11_[0];
+	    int id;
+	    if (activeChildren != null)
+		id = activeChildren[0];
 	    else
-		i_44_ = 0;
-	    if (((IndexLoader) this).unpackSettings != 0)
-		objects[i_44_] = is_15_;
+		id = 0;
+	    if (unpackSettings != 0)
+		buffers[id] = unpackedSrc;
 	    else
-		objects[i_44_]  = Class179.getDirectByteBuffer(is_15_);
+		buffers[id]  = Class179.getDirectByteBuffer(unpackedSrc);
 	}
 	return true;
     }
@@ -296,104 +278,85 @@ final class IndexLoader
 				      Class348_Sub40_Sub8.anInt9157);
 	else
 	    Class21.aHa326.draw(0, 0);
-	if (i >= 73)
-	    anInt642++;
     }
     
-    final int[] method396(int i, int i_45_) {
+    final int[] getActiveChildren(int id) {
 	anInt640++;
-	if (i_45_ != 0)
-	    getTableChecksum();
-	if (!isValidArchiveId(i))
+	if (!isValidArchive(id))
 	    return null;
-	int[] is = ((IndexTable) indexTable).anIntArrayArray3721[i];
-	if (is == null) {
-	    is = new int[((IndexTable) indexTable).amountChildren[i]];
-	    for (int i_46_ = 0; i_46_ < is.length; i_46_++)
-		is[i_46_] = i_46_;
+	int[] activeChildren = indexTable.activeChildren[id];
+	if (activeChildren == null) {
+	    activeChildren = new int[indexTable.amountChildren[id]];
+	    for (int i = 0; i < activeChildren.length; i++)
+		activeChildren[i] = i;
 	}
-	return is;
+	return activeChildren;
     }
     
-    final int method397(String string, int i) {
+    final int getArchiveLoadedPerc(String string) {
 	anInt633++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return 0;
 	string = string.toLowerCase();
-	int i_47_ = ((IndexTable) indexTable).nameHashTable.getOffset(Class281.getNameHash(string, i ^ ~0x7265));
-	return getArchiveLoadedPercent(i_47_);
+	int id = indexTable.archiveHashTable.get(Class281.getArchiveHash(string));
+	return getArchiveLoadedPerc(id);
     }
     
-    final int getPercentLoaded(byte i) {
+    final int getChildLoadedPerc() {
 	anInt641++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return 0;
-	int i_48_ = 0;
-	int i_49_ = 0;
-	int i_50_ = 0;
-	if (i != -31)
-	    return 50;
-	for (/**/; archiveBuffers.length > i_50_; i_50_++) {
-	    if ((((IndexTable) indexTable).amountChildren[i_50_] ^ 0xffffffff)
-		< -1) {
-		i_49_ += getArchiveLoadedPercent(i_50_);
-		i_48_ += 100;
+	int totalPerc = 0;
+	int netPerc = 0;
+	int i = 0;
+	for (/**/; archiveBuffers.length > i; i++) {
+	    if (indexTable.amountChildren[i] > 0) {
+		netPerc += getArchiveLoadedPerc(i);
+		totalPerc += 100;
 	    }
 	}
-	if ((i_48_ ^ 0xffffffff) == -1)
+	if (totalPerc == 0)
 	    return 100;
-	int i_51_ = i_49_ * 100 / i_48_;
-	return i_51_;
+	int perc = netPerc * 100 / totalPerc;
+	return perc;
     }
     
-    private final boolean method399(boolean bool) {
+    private boolean isInitialized() {
 	anInt652++;
 	if (indexTable == null) {
 	    indexTable = archiveLoader.getIndexTable();
 	    if (indexTable == null)
 		return false;
-	    archiveBuffers
-		= new Object[((IndexTable) indexTable).maximumEntry];
-	    childArchiveBuffers
-		= new Object[((IndexTable) indexTable).maximumEntry][];
+	    archiveBuffers = new Object[indexTable.maximumEntry];
+	    childBuffers = new Object[indexTable.maximumEntry][];
 	}
-	if (bool != false)
-	    archiveLoader = null;
 	return true;
     }
     
-    final boolean method400(int i, String string) {
+    final boolean containsArchive(String string) {
 	anInt635++;
-	if (!method399(false))
-	    return false;
-	if (i != -18308)
+	if (!isInitialized())
 	    return false;
 	string = string.toLowerCase();
-	int i_52_ = ((IndexTable) indexTable).nameHashTable
-			.getOffset(Class281.getNameHash(string, -29286));
-	if ((i_52_ ^ 0xffffffff) > -1)
+	int index = indexTable.archiveHashTable.get(Class281.getArchiveHash(string));
+	if (index < 0)
 	    return false;
 	return true;
     }
     
-    final boolean isCompletelyLoaded(int i) {
+    final boolean loadAll() {
 	anInt648++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return false;
 	boolean bool = true;
-	for (int i_53_ = 0;
-	     ((((IndexTable) indexTable).anIntArray3738.length ^ 0xffffffff)
-	      < (i_53_ ^ 0xffffffff));
-	     i_53_++) {
-	    int i_54_ = ((IndexTable) indexTable).anIntArray3738[i_53_];
-	    if (archiveBuffers[i_54_] == null) {
-		loadArchive(i_54_);
-		if (archiveBuffers[i_54_] == null)
+	for (int i = 0; indexTable.activeArchives.length > i; i++) {
+	    int id = indexTable.activeArchives[i];
+	    if (archiveBuffers[id] == null) {
+		loadArchive(id);
+		if (archiveBuffers[id] == null)
 		    bool = false;
 	    }
 	}
-	if (i < 33)
-	    method407(-92);
 	return bool;
     }
     
@@ -403,22 +366,22 @@ final class IndexLoader
 	    archiveLoader.method2338((byte) -52, i_55_);
     }
     
-    private final boolean method403(String string, int i, String string_56_) {
+    private final boolean getChildLoaded(String string, int i, String string_56_) {
 	try {
 	    anInt626++;
-	    if (!method399(false))
+	    if (!isInitialized())
 		return false;
 	    string = string.toLowerCase();
 	    string_56_ = string_56_.toLowerCase();
-	    int i_57_ = (((IndexTable) indexTable).nameHashTable.getOffset
-			 (Class281.getNameHash(string, -29286)));
+	    int i_57_ = (indexTable.archiveHashTable.get
+			 (Class281.getArchiveHash(string)));
 	    if (i != 7195)
-		method403(null, -20, null);
-	    if (!isValidArchiveId(i_57_))
+		getChildLoaded(null, -20, null);
+	    if (!isValidArchive(i_57_))
 		return false;
 	    int i_58_
-		= ((IndexTable) indexTable).childHashTables[i_57_]
-		      .getOffset(Class281.getNameHash(string_56_, -29286));
+		= indexTable.childHashTables[i_57_]
+		      .get(Class281.getArchiveHash(string_56_));
 	    return isLoaded(i_57_, i_58_);
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
@@ -432,26 +395,22 @@ final class IndexLoader
 	}
     }
     
-    final void destroy(int i, boolean bool, boolean bool_59_) {
+    final void destroy(boolean bool, boolean bool_59_) {
 	anInt644++;
-	if (i != 0)
-	    getArchiveChild(null, null);
-	if (method399(false)) {
+	if (isInitialized()) {
 	    if (bool_59_) {
-		((IndexTable) indexTable).nameHashes = null;
-		((IndexTable) indexTable).nameHashTable = null;
+		indexTable.nameHashes = null;
+		indexTable.archiveHashTable = null;
 	    }
 	    if (bool) {
-		((IndexTable) indexTable).anIntArrayArray3735 = null;
-		((IndexTable) indexTable).childHashTables = null;
+		indexTable.anIntArrayArray3735 = null;
+		indexTable.childHashTables = null;
 	    }
 	}
     }
     
     final void removeArchives(int i) {
 	anInt650++;
-	if (i != 0)
-	    method416((byte) -45, null);
 	if (archiveBuffers != null) {
 	    for (int i_60_ = 0; i_60_ < archiveBuffers.length; i_60_++)
 		archiveBuffers[i_60_] = null;
@@ -466,141 +425,129 @@ final class IndexLoader
 	anInt665++;
     }
     
-    final int method407(int i_62_) {
+    final int getAmountChildEntries(int i_62_) {
 	anInt645++;
-	if (!isValidArchiveId(i_62_))
+	if (!isValidArchive(i_62_))
 	    return 0;
-	return ((IndexTable) indexTable).maxChildEntry[i_62_];
+	return indexTable.amountChildEntries[i_62_];
     }
     
-    final boolean method408(byte i, int i_63_) {
+    final boolean method408(int i_63_) {
 	anInt632++;
-	if (!isValidArchiveId(i_63_))
+	if (!isValidArchive(i_63_))
 	    return false;
 	if (archiveBuffers[i_63_] != null)
 	    return true;
 	loadArchive(i_63_);
 	if (archiveBuffers[i_63_] != null)
 	    return true;
-	if (i > -112)
-	    ((IndexLoader) this).unpackSettings = -26;
 	return false;
     }
     
     final void method409(String string, boolean bool) {
 	anInt663++;
-	if (bool == true && method399(false)) {
+	if (isInitialized()) {
 	    string = string.toLowerCase();
-	    int i = ((IndexTable) indexTable).nameHashTable
-			.getOffset(Class281.getNameHash(string, -29286));
+	    int i = indexTable.archiveHashTable.get(Class281.getArchiveHash(string));
 	    method402((byte) -86, i);
 	}
     }
     
-    final byte[] getArchiveChild(int i_64_, int i_65_) {
+    final byte[] getChildArchive(int i_64_, int i_65_) {
 	anInt651++;
 	return loadArchiveChild(i_64_, i_65_, null);
     }
     
     final void removeChildren(int i) {
 	anInt627++;
-	if (isValidArchiveId(i)) {
-	    if (childArchiveBuffers != null)
-		childArchiveBuffers[i] = null;
+	if (isValidArchive(i)) {
+	    if (childBuffers != null)
+		childBuffers[i] = null;
 	}
     }
     
     final void removeChildren() {
-	if (childArchiveBuffers != null) {
-	    for (int i_67_ = 0; childArchiveBuffers.length > i_67_; i_67_++)
-		childArchiveBuffers[i_67_] = null;
+	if (childBuffers != null) {
+	    for (int i_67_ = 0; childBuffers.length > i_67_; i_67_++)
+		childBuffers[i_67_] = null;
 	}
 	anInt660++;
     }
     
     final boolean getArchiveExists(String string) {
 	anInt636++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return false;
 	string = string.toLowerCase();
-	int i_69_ = ((IndexTable) indexTable).nameHashTable.getOffset(Class281.getNameHash(string, -29286));
-	return method408((byte) -120, i_69_);
+	int i_69_ = indexTable.archiveHashTable.get(Class281.getArchiveHash(string));
+	return method408(i_69_);
     }
     
     final int getAmountChildren() {
 	anInt637++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return -1;
-	return ((IndexTable) indexTable).maxChildEntry.length;
+	return indexTable.amountChildEntries.length;
     }
     
     final byte[] getArchive(int i_70_) {
 	anInt630++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return null;
-	if (((IndexTable) indexTable).maxChildEntry.length == 1)
-	    return getArchiveChild(0, i_70_);
-	if (!isValidArchiveId(i_70_))
+	if (indexTable.amountChildEntries.length == 1)
+	    return getChildArchive(0, i_70_);
+	if (!isValidArchive(i_70_))
 	    return null;
-	if ((((IndexTable) indexTable).maxChildEntry[i_70_] ^ 0xffffffff)
-	    == -2)
-	    return getArchiveChild(i_70_, 0);
+	if ((indexTable.amountChildEntries[i_70_] ^ 0xffffffff) == -2)
+	    return getChildArchive(i_70_, 0);
 	throw new RuntimeException();
     }
     
-    final boolean method416(byte i, String name) {
+    final boolean getArchiveLoaded(String name) {
 	anInt631++;
-	int i_71_ = getArchiveId("");
-	if ((i_71_ ^ 0xffffffff) != 0)
-	    return method403("", 7195, name);
-	if (i != -74)
-	    return false;
-	return method403(name, 7195, "");
+	int id = getArchiveId("");
+	if (id != -1)
+	    return getChildLoaded("", 7195, name);
+	return getChildLoaded(name, 7195, "");
     }
     
     final int getArchiveId(String string) {
 	anInt654++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return -1;
 	string = string.toLowerCase();
-	int archiveId = ((IndexTable) indexTable).nameHashTable.getOffset(Class281.getNameHash(string, -29286));
-	if (!isValidArchiveId(archiveId))
+	int archiveId = indexTable.archiveHashTable.get(Class281.getArchiveHash(string));
+	if (!isValidArchive(archiveId))
 	    return -1;
 	return archiveId;
     }
     
-    private final boolean method418(int i, int i_74_) {
+    private boolean isValidChild(int archiveId, int childId) {
 	anInt662++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return false;
-	if (i_74_ < 0 || (i ^ 0xffffffff) > -1 || ((i_74_ ^ 0xffffffff)
-		<= (((IndexTable) indexTable).maxChildEntry.length
-		    ^ 0xffffffff))
-	    || ((i ^ 0xffffffff)
-		<= (((IndexTable) indexTable).maxChildEntry[i_74_]
-		    ^ 0xffffffff))) {
+	if (archiveId < 0 || childId < 0 || archiveId >= indexTable.amountChildEntries.length || childId >= indexTable.amountChildEntries[archiveId]) {
 	    if (Class285.aBoolean4741)
-		throw new IllegalArgumentException(String.valueOf(i_74_) + ","
-						   + i);
+		throw new IllegalArgumentException(String.valueOf(archiveId) + "," + childId);
 	    return false;
 	}
 	return true;
     }
     
-    private final int getArchiveLoadedPercent(int archiveId) {
+    private int getArchiveLoadedPerc(int id) {
 	anInt653++;
-	if (!isValidArchiveId(archiveId))
+	if (!isValidArchive(id))
 	    return 0;
-	if (archiveBuffers[archiveId] != null)
+	if (archiveBuffers[id] != null)
 	    return 100;
-	return archiveLoader.getLoadedPercent(archiveId);
+	return archiveLoader.getLoadedPerc(id);
     }
     
     final boolean isLoaded(int archiveId, int childId) {
 	anInt638++;
-	if (!method418(childId, archiveId))
+	if (!isValidChild(archiveId, childId))
 	    return false;
-	if (childArchiveBuffers[archiveId] != null && childArchiveBuffers[archiveId][childId] != null)
+	if (childBuffers[archiveId] != null && childBuffers[archiveId][childId] != null)
 	    return true;
 	if (archiveBuffers[archiveId] != null)
 	    return true;
@@ -610,71 +557,61 @@ final class IndexLoader
 	return false;
     }
     
-    final boolean getArchiveLoaded(boolean bool, int i) {
+    final boolean getArchiveLoaded(int id) {
 	anInt661++;
-	if (!method399(bool))
+	if (!isInitialized())
 	    return false;
-	if (((IndexTable) indexTable).maxChildEntry.length == 1)
-	    return isLoaded(0, i);
-	if (!isValidArchiveId(i))
+	if (indexTable.amountChildEntries.length == 1)
+	    return isLoaded(0, id);
+	if (!isValidArchive(id))
 	    return false;
-	if (((IndexTable) indexTable).maxChildEntry[i] == 1)
-	    return isLoaded(i, 0);
-	if (bool != false)
-	    return false;
+	if (indexTable.amountChildEntries[id] == 1)
+	    return isLoaded(id, 0);
 	throw new RuntimeException();
     }
     
-    final boolean method422(String string, String string_78_, int i) {
+    final boolean containsChild(String archiveName, String childName) {
 	try {
 	    anInt668++;
-	    if (!method399(false))
+	    if (!isInitialized())
 		return false;
-	    string_78_ = string_78_.toLowerCase();
-	    if (i > -18)
-		anInt669 = 40;
-	    string = string.toLowerCase();
-	    int i_79_
-		= ((IndexTable) indexTable).nameHashTable
-		      .getOffset(Class281.getNameHash(string_78_, -29286));
-	    if ((i_79_ ^ 0xffffffff) > -1)
+	    archiveName = archiveName.toLowerCase();
+	    childName = childName.toLowerCase();
+	    int archiveId = indexTable.archiveHashTable.get(Class281.getArchiveHash(archiveName));
+	    if (archiveId < 0)
 		return false;
-	    int i_80_
-		= ((IndexTable) indexTable).childHashTables[i_79_]
-		      .getOffset(Class281.getNameHash(string, -29286));
-	    if (i_80_ < 0)
+	    int childId = indexTable.childHashTables[archiveId].get(Class281.getArchiveHash(childName));
+	    if (childId < 0)
 		return false;
 	    return true;
 	} catch (RuntimeException runtimeexception) {
 	    throw Class348_Sub17.method2929(runtimeexception,
 					    ("in.M("
-					     + (string != null ? "{...}"
+					     + (childName != null ? "{...}"
 						: "null")
 					     + ','
-					     + (string_78_ != null ? "{...}"
+					     + (archiveName != null ? "{...}"
 						: "null")
-					     + ',' + i + ')'));
+					     + ')'));
 	}
     }
     
     final int getNameHashIndex(int i) {
 	anInt649++;
-	if (!method399(false))
+	if (!isInitialized())
 	    return -1;
-	int i_82_ = ((IndexTable) indexTable).nameHashTable.getOffset(i);
-	if (!isValidArchiveId(i_82_))
+	int i_82_ = indexTable.archiveHashTable.get(i);
+	if (!isValidArchive(i_82_))
 	    return -1;
 	return i_82_;
     }
     
     IndexLoader(AbtractArchiveLoader loader, boolean direct, int unpack) {
 	if (unpack < 0 || unpack > 2)
-	    throw new IllegalArgumentException
-		      ("js5: Invalid value " + unpack
-		       + " supplied for discardunpacked");
+	    throw new IllegalArgumentException("js5: Invalid value " + unpack + " supplied for discardunpacked");
 	archiveLoader = loader;
 	directlyAllocate = direct;
-	((IndexLoader) this).unpackSettings = unpack;
+	unpackSettings = unpack;
     }
     
     static {

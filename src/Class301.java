@@ -45,15 +45,15 @@ final class Class301
 	anInt3826++;
 	if (Class289.aByteArrayArrayArray3700 == null)
 	    Class289.aByteArrayArrayArray3700
-		= (new byte[4][Class367_Sub4.anInt7319]
-		   [Class348_Sub40_Sub3.anInt9109]);
+		= (new byte[4][Class367_Sub4.mapSizeX]
+		   [Class348_Sub40_Sub3.mapSizeY]);
 	if (i_20_ != 28587)
 	    method2278(35, -47, (byte) 56, -93);
 	for (int i_21_ = 0; (i_21_ ^ 0xffffffff) > -5; i_21_++) {
-	    for (int i_22_ = 0; Class367_Sub4.anInt7319 > i_22_; i_22_++) {
+	    for (int i_22_ = 0; Class367_Sub4.mapSizeX > i_22_; i_22_++) {
 		for (int i_23_ = 0;
 		     ((i_23_ ^ 0xffffffff)
-		      > (Class348_Sub40_Sub3.anInt9109 ^ 0xffffffff));
+		      > (Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff));
 		     i_23_++)
 		    Class289.aByteArrayArrayArray3700[i_21_][i_22_][i_23_] = i;
 	    }

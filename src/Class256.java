@@ -14,7 +14,7 @@ final class Class256
 	       Class318_Sub1_Sub2.aClass60_8732.method583((long) i, -78));
 	if (class174 != null)
 	    return class174;
-	byte[] is = Class59_Sub2_Sub1.aClass45_8670.getArchiveChild(1, i);
+	byte[] is = Class59_Sub2_Sub1.aClass45_8670.getChildArchive(1, i);
 	class174 = new Class174();
 	if (bool != false)
 	    method1944(64);

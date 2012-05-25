@@ -254,7 +254,7 @@ final class Class348_Sub3 extends Node
     final void method2742(int i, int i_38_, int i_39_, byte i_40_) {
 	anInt6570++;
 	anIntArray6573[i_38_ * ((s) aS_Sub3_6566).anInt4587 - -i_39_]
-	    = Class273.method2057((anIntArray6573
+	    = Class273.bitOr((anIntArray6573
 				   [(i_38_ * ((s) aS_Sub3_6566).anInt4587
 				     - -i_39_)]),
 				  1 << i);

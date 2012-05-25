@@ -173,7 +173,7 @@ final class Class239_Sub24 extends Class239
 				  Class132.localPlayer)
 				 .aByte6381);
 		    if (i_26_ < 3
-			&& ((0x2 & (Class348_Sub33.aByteArrayArrayArray6962[1]
+			&& ((0x2 & (Class348_Sub33.settingFlags[1]
 				    [i_24_ >> 499347017][i_25_ >> -149021879]))
 			    != 0))
 			i_26_++;
@@ -752,8 +752,8 @@ final class Class239_Sub24 extends Class239
 			}
 			if (((Class318_Sub4) class318_sub4).aClass318_Sub1_6410
 			    instanceof Class318_Sub1_Sub2_Sub1) {
-			    int i_55_ = za_Sub2.anInt9780 + i_33_;
-			    int i_56_ = i_32_ - -Class90.anInt1517;
+			    int i_55_ = za_Sub2.baseRegionX + i_33_;
+			    int i_56_ = i_32_ - -Class90.baseRegionY;
 			    Class348_Sub37 class348_sub37
 				= ((Class348_Sub37)
 				   (Class130.aClass356_1895.get

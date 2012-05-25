@@ -32,7 +32,7 @@ final class Class361
     
     private final void method3493(int i, int i_0_, int i_1_, int i_2_) {
 	((Class361) this).anIntArrayArray4438[i_1_][i_2_]
-	    = Class139.method1166((((Class361) this).anIntArrayArray4438[i_1_]
+	    = Class139.bitAnd((((Class361) this).anIntArrayArray4438[i_1_]
 				   [i_2_]),
 				  i ^ 0xffffffff);
 	if (i_0_ > -120)
@@ -42,7 +42,7 @@ final class Class361
     
     private final void method3494(int i, int i_3_, int i_4_, int i_5_) {
 	((Class361) this).anIntArrayArray4438[i][i_4_]
-	    = Class273.method2057((((Class361) this).anIntArrayArray4438[i]
+	    = Class273.bitOr((((Class361) this).anIntArrayArray4438[i]
 				   [i_4_]),
 				  i_3_);
 	if (i_5_ != -6496)
@@ -450,7 +450,7 @@ final class Class361
 	anInt4444++;
 	i_16_ -= ((Class361) this).anInt4453;
 	((Class361) this).anIntArrayArray4438[i_16_][i]
-	    = Class273.method2057((((Class361) this).anIntArrayArray4438[i_16_]
+	    = Class273.bitOr((((Class361) this).anIntArrayArray4438[i_16_]
 				   [i]),
 				  262144);
     }
@@ -653,7 +653,7 @@ final class Class361
 	anInt4446++;
 	if (i == -52)
 	    ((Class361) this).anIntArrayArray4438[i_54_][i_55_]
-		= Class139.method1166((((Class361) this).anIntArrayArray4438
+		= Class139.bitAnd((((Class361) this).anIntArrayArray4438
 				       [i_54_][i_55_]),
 				      -262145);
     }
@@ -684,10 +684,7 @@ final class Class361
 	anInt4447++;
 	i_58_ -= ((Class361) this).anInt4441;
 	int i_60_ = -79 % ((i - 66) / 39);
-	((Class361) this).anIntArrayArray4438[i_59_][i_58_]
-	    = Class139.method1166((((Class361) this).anIntArrayArray4438[i_59_]
-				   [i_58_]),
-				  -2097153);
+	((Class361) this).anIntArrayArray4438[i_59_][i_58_] = Class139.bitAnd((anIntArrayArray4438[i_59_][i_58_]), -2097153);
     }
     
     static final void method3502(int i, int i_61_, int i_62_, int i_63_) {
@@ -1164,7 +1161,7 @@ final class Class361
 	anInt4431++;
 	i_97_ -= ((Class361) this).anInt4453;
 	((Class361) this).anIntArrayArray4438[i_97_][i]
-	    = Class273.method2057((((Class361) this).anIntArrayArray4438[i_97_]
+	    = Class273.bitOr((((Class361) this).anIntArrayArray4438[i_97_]
 				   [i]),
 				  2097152);
     }
