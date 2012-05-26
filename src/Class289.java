@@ -28,7 +28,7 @@ final class Class289
 	anInt3702++;
 	int i_0_
 	    = (((((Class318_Sub1) Class132.localPlayer)
-		 .anInt6377)
+		 .xHash)
 		>> 768205065)
 	       - -za_Sub2.baseRegionX);
 	int i_1_ = (Class90.baseRegionY

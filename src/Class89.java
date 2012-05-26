@@ -43,31 +43,31 @@ final class Class89
 	super.finalize();
     }
     
-    static final boolean method850(Class318_Sub1_Sub3 class318_sub1_sub3,
+    static final boolean method850(Entity class318_sub1_sub3,
 				   boolean bool) {
 	boolean bool_13_ = aa_Sub1.aSArray5191 == Class332.aSArray4142;
 	int i = 0;
 	short i_14_ = 0;
 	byte i_15_ = 0;
 	class318_sub1_sub3.method2409((byte) -116);
-	if (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743 < 0
-	    || ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750 < 0
-	    || (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8751
+	if (((Entity) class318_sub1_sub3).aShort8743 < 0
+	    || ((Entity) class318_sub1_sub3).aShort8750 < 0
+	    || (((Entity) class318_sub1_sub3).aShort8751
 		>= Class318_Sub7.anInt6451)
-	    || (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8747
+	    || (((Entity) class318_sub1_sub3).aShort8747
 		>= Class348_Sub41.anInt7054))
 	    return false;
 	short i_16_ = 0;
-	for (int i_17_ = ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743;
-	     i_17_ <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8751;
+	for (int i_17_ = ((Entity) class318_sub1_sub3).aShort8743;
+	     i_17_ <= ((Entity) class318_sub1_sub3).aShort8751;
 	     i_17_++) {
 	    for (int i_18_
-		     = ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750;
-		 i_18_ <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8747;
+		     = ((Entity) class318_sub1_sub3).aShort8750;
+		 i_18_ <= ((Entity) class318_sub1_sub3).aShort8747;
 		 i_18_++) {
 		Class357 class357
 		    = Class348_Sub46.method3321(((Class318_Sub1)
-						 class318_sub1_sub3).aByte6381,
+						 class318_sub1_sub3).heightLevel,
 						i_17_, i_18_);
 		if (class357 != null) {
 		    Class148 class148
@@ -108,13 +108,13 @@ final class Class89
 	}
 	if (bool_13_ && (i & ~0xffffff) != 0) {
 	    for (int i_20_
-		     = ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743;
-		 i_20_ <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8751;
+		     = ((Entity) class318_sub1_sub3).aShort8743;
+		 i_20_ <= ((Entity) class318_sub1_sub3).aShort8751;
 		 i_20_++) {
-		for (int i_21_ = (((Class318_Sub1_Sub3) class318_sub1_sub3)
+		for (int i_21_ = (((Entity) class318_sub1_sub3)
 				  .aShort8750);
 		     (i_21_
-		      <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8747);
+		      <= ((Entity) class318_sub1_sub3).aShort8747);
 		     i_21_++) {
 		    if ((Class342.anIntArrayArray4253[i_20_][i_21_]
 			 & ~0xffffff)
@@ -144,7 +144,7 @@ final class Class89
 			= Node.aClass318_Sub1Array4293[i_22_];
 		    Node.aClass318_Sub1Array4293[i_22_]
 			= class318_sub1_sub3;
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		}
 	    } else {
 		((Class318_Sub1) class318_sub1_sub3).aClass318_Sub1_6379

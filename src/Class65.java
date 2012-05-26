@@ -76,7 +76,7 @@ final class Class65
 	try {
 	    Class348_Sub40_Sub28.aClass45_9365 = class45_6_;
 	    anInt1147++;
-	    Class318_Sub1_Sub3.widgetSpriteIndexLoader = class45_5_;
+	    Entity.widgetSpriteIndexLoader = class45_5_;
 	    Class229.aClass45_2978 = class45_4_;
 	    Class348_Sub40_Sub33.aClass46ArrayArray9427
 		= new Widget[Class229.aClass45_2978.getAmountChildren()][];

@@ -14,7 +14,7 @@ final class Class18
     private int anInt276 = 0;
     static int anInt277;
     static int anInt278;
-    static int[] anIntArray279 = new int[2048];
+    static int[] playerUpdateList = new int[2048];
     static int anInt280;
     private Class206 aClass206_281;
     static int anInt282;
@@ -313,7 +313,7 @@ final class Class18
     
     public static void method277(byte i) {
 	if (i >= 77)
-	    anIntArray279 = null;
+	    playerUpdateList = null;
     }
     
     final void method278(Class348_Sub5 class348_sub5, boolean bool) {
@@ -402,7 +402,7 @@ final class Class18
 	FileArchiveTracker.anInt4784 = i_26_;
 	Class239_Sub24.anInt6095 = 0;
 	if (i_22_ <= 64)
-	    anIntArray279 = null;
+	    playerUpdateList = null;
 	AbstractBuffer.anInt4267 = i_23_;
 	Class286.anInt3682 = 0;
 	Class58.anInt1067 = i_24_;

@@ -82,7 +82,7 @@ final class Class348_Sub42_Sub12 extends SubNode
 	    int i_8_ = GameFont.anInt4336 * 512 - -256;
 	    int i_9_ = Class281.anInt3647 * 512 - -256;
 	    int i_10_
-		= (Class275.method2064(i_8_, Class355.anInt4372, 11219, i_9_)
+		= (Class275.method2064(i_8_, Class355.localHeightLevel, 11219, i_9_)
 		   + -Class121.anInt1797);
 	    int i_11_ = i_8_ - Class286_Sub4.anInt6246;
 	    int i_12_ = -Class305.anInt3855 + i_10_;

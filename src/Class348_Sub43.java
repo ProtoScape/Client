@@ -46,8 +46,8 @@ final class Class348_Sub43 extends Node
 			  + GameText.aClass274_3520
 				.getLanguageText(Class348_Sub33.gameLanguage)),
 			 0, (byte) -109, false, 0, -1, true, 50,
-			 (long) ((Class318_Sub1_Sub3_Sub3)
-				 class318_sub1_sub3_sub3_sub2).anInt10290,
+			 (long) ((Mob)
+				 class318_sub1_sub3_sub3_sub2).localId,
 			 Class28.aString5001, 0L,
 			 FloatBuffer.anInt9747);
 		}
@@ -174,11 +174,11 @@ final class Class348_Sub43 extends Node
 			(false,
 			 Class28.aString5000 + " -> <col=ffffff>" + string, 0,
 			 (byte) -109, false, 0, -1, true, 51,
-			 (long) ((Class318_Sub1_Sub3_Sub3)
-				 class318_sub1_sub3_sub3_sub2).anInt10290,
+			 (long) ((Mob)
+				 class318_sub1_sub3_sub3_sub2).localId,
 			 Class28.aString5001,
-			 (long) ((Class318_Sub1_Sub3_Sub3)
-				 class318_sub1_sub3_sub3_sub2).anInt10290,
+			 (long) ((Mob)
+				 class318_sub1_sub3_sub3_sub2).localId,
 			 FloatBuffer.anInt9747);
 		    Class341.anInt4228++;
 		}
@@ -187,8 +187,8 @@ final class Class348_Sub43 extends Node
 		if (bool)
 		    Class50_Sub3.method466
 			(true, "", 0, (byte) -115, false, 0, 0, false, -1,
-			 (long) ((Class318_Sub1_Sub3_Sub3)
-				 class318_sub1_sub3_sub3_sub2).anInt10290,
+			 (long) ((Mob)
+				 class318_sub1_sub3_sub3_sub2).localId,
 			 "<col=cccccc>" + string, 0L, -1);
 		else {
 		    for (int i_6_ = 7; (i_6_ ^ 0xffffffff) <= -1; i_6_--) {
@@ -237,14 +237,14 @@ final class Class348_Sub43 extends Node
 			    Class50_Sub3.method466
 				(false, "<col=ffffff>" + string, 0,
 				 (byte) -105, false, 0, -1, true, i_8_,
-				 (long) (((Class318_Sub1_Sub3_Sub3)
+				 (long) (((Mob)
 					  class318_sub1_sub3_sub3_sub2)
-					 .anInt10290),
+					 .localId),
 				 (Class318_Sub1_Sub2_Sub1.aStringArray10195
 				  [i_6_]),
-				 (long) (((Class318_Sub1_Sub3_Sub3)
+				 (long) (((Mob)
 					  class318_sub1_sub3_sub3_sub2)
-					 .anInt10290),
+					 .localId),
 				 i_9_);
 			    Canvas_Sub1.anInt69++;
 			}

@@ -109,7 +109,7 @@ final class Queue
 				& 0x3fff);
 			i_4_ = (((Class318_Sub1)
 				 Class132.localPlayer)
-				.anInt6377);
+				.xHash);
 		    } else {
 			i_3_ = Class348_Sub7.anInt6652;
 			i_4_ = Class348_Sub6.anInt6633;
@@ -171,7 +171,7 @@ final class Queue
 			       (0, ObjectLoader.anIntArray3347[i_14_]));
 			if (((ObjectDefinition) class51).anIntArray945 != null) {
 			    class51
-				= class51.method480((Class318_Sub1_Sub3_Sub3
+				= class51.method480((Mob
 						     .varbitHandler),
 						    (byte) 47);
 			    if (class51 == null
@@ -226,11 +226,11 @@ final class Queue
 				&& (((((Class318_Sub1)
 				       (Class132
 					.localPlayer))
-				      .aByte6381)
+				      .heightLevel)
 				     ^ 0xffffffff)
 				    == ((((Class318_Sub1)
 					  class318_sub1_sub3_sub3_sub1)
-					 .aByte6381)
+					 .heightLevel)
 					^ 0xffffffff))) {
 				NpcDefinition class79
 				    = (((Npc)
@@ -240,7 +240,7 @@ final class Queue
 				    && (((NpcDefinition) class79).anIntArray1377
 					!= null))
 				    class79 = (class79.method794
-					       ((Class318_Sub1_Sub3_Sub3
+					       ((Mob
 						 .varbitHandler),
 						-1));
 				if (class79 != null
@@ -250,7 +250,7 @@ final class Queue
 					= (-(i_4_ / 128)
 					   + (((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub1)
-					      .anInt6377) / 128);
+					      .xHash) / 128);
 				    int i_24_
 					= ((((Class318_Sub1)
 					     class318_sub1_sub3_sub3_sub1)
@@ -275,13 +275,13 @@ final class Queue
 			    }
 			}
 		    }
-		    int i_25_ = Class328_Sub1.anInt6513;
-		    int[] is = Class286_Sub7.anIntArray6290;
+		    int i_25_ = Class328_Sub1.onscreenGpiOffset;
+		    int[] is = Class286_Sub7.onscreenGpiList;
 		    for (int i_26_ = 0;
 			 (i_25_ ^ 0xffffffff) < (i_26_ ^ 0xffffffff);
 			 i_26_++) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [is[i_26_]]);
 			if (class318_sub1_sub3_sub3_sub2 != null
 			    && class318_sub1_sub3_sub3_sub2
@@ -292,15 +292,15 @@ final class Queue
 				!= class318_sub1_sub3_sub3_sub2)
 			    && (((((Class318_Sub1)
 				   Class132.localPlayer)
-				  .aByte6381)
+				  .heightLevel)
 				 ^ 0xffffffff)
 				== (((Class318_Sub1)
-				     class318_sub1_sub3_sub3_sub2).aByte6381
+				     class318_sub1_sub3_sub3_sub2).heightLevel
 				    ^ 0xffffffff))) {
 			    int i_27_ = (-(i_4_ / 128)
 					 + (((Class318_Sub1)
 					     class318_sub1_sub3_sub3_sub2)
-					    .anInt6377) / 128);
+					    .xHash) / 128);
 			    int i_28_ = (-(i_3_ / 128)
 					 + (((Class318_Sub1)
 					     class318_sub1_sub3_sub3_sub2)
@@ -410,7 +410,7 @@ final class Queue
 					= (-(i_4_ / 128)
 					   + (((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub1)
-					      .anInt6377) / 128);
+					      .xHash) / 128);
 				    int i_35_
 					= (-(i_3_ / 128)
 					   + (((Class318_Sub1)
@@ -447,20 +447,20 @@ final class Queue
 				&& (((Class302) class302).anInt3833
 				    ^ 0xffffffff) <= -1
 				&& (((ClassicLoadingScreen
-				      .players).length
+				      .onscreenPlayers).length
 				     ^ 0xffffffff)
 				    < (((Class302) class302).anInt3833
 				       ^ 0xffffffff))) {
 				Player class318_sub1_sub3_sub3_sub2
 				    = (ClassicLoadingScreen
-				       .players
+				       .onscreenPlayers
 				       [((Class302) class302).anInt3833]);
 				if (class318_sub1_sub3_sub3_sub2 != null) {
 				    int i_38_
 					= (-(i_4_ / 128)
 					   + (((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub2)
-					      .anInt6377) / 128);
+					      .xHash) / 128);
 				    int i_39_
 					= (-(i_3_ / 128)
 					   + (((Class318_Sub1)

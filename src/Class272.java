@@ -67,7 +67,7 @@ abstract class Class272
 	    Class290.anInt3712 = i_6_;
 	    FileIndexWorker.aClass207_1727 = null;
 	    Class348_Sub32.anInt6938 = i_1_;
-	    Class359.method3490(true);
+	    OffscreenPlayer.method3490(true);
 	    int i_9_ = -77 % ((i_4_ - 29) / 34);
 	    Class295.aBoolean3763 = true;
 	} catch (RuntimeException runtimeexception) {

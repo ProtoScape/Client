@@ -108,7 +108,7 @@ final class Class239_Sub28 extends Class239
 		Class286_Sub4.anInt6246 = 256 + Class348_Sub35.anInt6981 * 512;
 		Class305.anInt3855
 		    = (Class275.method2064(Class286_Sub4.anInt6246,
-					   Class355.anInt4372, 11219,
+					   Class355.localHeightLevel, 11219,
 					   Class59_Sub2_Sub2.anInt8685)
 		       + -Class348_Sub42_Sub4.anInt9515);
 	    }

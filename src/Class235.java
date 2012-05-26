@@ -76,7 +76,7 @@ final class Class235
 		      .getObject(i ^ 0x45, ((Class235) this).anInt3063);
 	    ObjectDefinition class51_2_ = class51;
 	    if (((ObjectDefinition) class51).anIntArray945 != null)
-		class51 = class51.method480((Class318_Sub1_Sub3_Sub3
+		class51 = class51.method480((Mob
 					     .varbitHandler),
 					    (byte) 47);
 	    if (class51 == null)
@@ -167,7 +167,7 @@ final class Class235
 			      .getObject(0, ((Class235) this).anInt3063);
 	if (((ObjectDefinition) class51).anIntArray945 != null)
 	    class51
-		= class51.method480(Class318_Sub1_Sub3_Sub3.varbitHandler,
+		= class51.method480(Mob.varbitHandler,
 				    (byte) 47);
 	if (class51 == null) {
 	    method1674(-1, var_ha);
@@ -209,7 +209,7 @@ final class Class235
 	if (bool_3_) {
 	    Class169.method1301(aR3071, aByte3067,
 				(((Class318_Sub1) aClass318_Sub1_3051)
-				 .anInt6377),
+				 .xHash),
 				(((Class318_Sub1) aClass318_Sub1_3051)
 				 .anInt6388),
 				aBooleanArray3072);
@@ -237,10 +237,10 @@ final class Class235
 		       (var_ha, var_s_5_,
 			(((Class235) this).anInt3079 != 11
 			 ? ((Class235) this).anInt3079 : 10),
-			i_4_, ((Class318_Sub1) aClass318_Sub1_3051).anInt6377,
+			i_4_, ((Class318_Sub1) aClass318_Sub1_3051).xHash,
 			bool_3_, var_s,
 			var_s.method3986((((Class318_Sub1) aClass318_Sub1_3051)
-					  .anInt6377),
+					  .xHash),
 					 (((Class318_Sub1) aClass318_Sub1_3051)
 					  .anInt6388),
 					 (byte) -114),
@@ -256,7 +256,7 @@ final class Class235
 			aR3071 = ((Class2) class2).aR118;
 			Class130.method1130
 			    (aR3071, aByte3067,
-			     ((Class318_Sub1) aClass318_Sub1_3051).anInt6377,
+			     ((Class318_Sub1) aClass318_Sub1_3051).xHash,
 			     ((Class318_Sub1) aClass318_Sub1_3051).anInt6388,
 			     null);
 			anInt3073 = -1;
@@ -282,7 +282,7 @@ final class Class235
 		    ((((Class235) this).anInt3079 ^ 0xffffffff) == -12 ? 10
 		     : ((Class235) this).anInt3079),
 		    var_s.method3986((((Class318_Sub1) aClass318_Sub1_3051)
-				      .anInt6377),
+				      .xHash),
 				     (((Class318_Sub1) aClass318_Sub1_3051)
 				      .anInt6388),
 				     (byte) -2),
@@ -292,7 +292,7 @@ final class Class235
 		     : ((Class235) this).anInt3052),
 		    i_4_, (byte) 76, var_s_5_,
 		    ((Class318_Sub1) aClass318_Sub1_3051).anInt6388, anInt3084,
-		    ((Class318_Sub1) aClass318_Sub1_3051).anInt6377,
+		    ((Class318_Sub1) aClass318_Sub1_3051).xHash,
 		    aClass17_3057, var_s));
 	    if (class64 == null) {
 		anInt3055 = 0;
@@ -306,7 +306,7 @@ final class Class235
 		    aR3071 = class64.ba(aR3071);
 		    Class130.method1130(aR3071, aByte3067,
 					(((Class318_Sub1) aClass318_Sub1_3051)
-					 .anInt6377),
+					 .xHash),
 					(((Class318_Sub1) aClass318_Sub1_3051)
 					 .anInt6388),
 					aBooleanArray3072);
@@ -349,7 +349,7 @@ final class Class235
 			= Class348_Sub40_Sub12.objectLoader
 			      .getObject(0, ((Class235) this).anInt3063);
 		    if (((ObjectDefinition) class51).anIntArray945 != null)
-			class51 = class51.method480((Class318_Sub1_Sub3_Sub3
+			class51 = class51.method480((Mob
 						     .varbitHandler),
 						    (byte) 47);
 		    if (class51 != null)
@@ -527,7 +527,7 @@ final class Class235
 	if (aR3071 != null) {
 	    Class169.method1301(aR3071, aByte3067,
 				(((Class318_Sub1) aClass318_Sub1_3051)
-				 .anInt6377),
+				 .xHash),
 				(((Class318_Sub1) aClass318_Sub1_3051)
 				 .anInt6388),
 				aBooleanArray3072);

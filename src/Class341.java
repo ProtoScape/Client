@@ -111,7 +111,7 @@ final class Class341
 		if (Class59_Sub1.aBoolean5300)
 		    Class187.method1406(true);
 		Class71.aClass76_1208.method775((byte) 69);
-		Class318_Sub1_Sub3_Sub3.method2433();
+		Mob.method2433();
 		Class50_Sub2.method464(i + -9865);
 		GameText.method2061(-127);
 		Class363.method3513(-113);
@@ -125,14 +125,14 @@ final class Class341
 		Class348_Sub42_Sub3.method3177(-78, false);
 		for (int i_12_ = 0; (i_12_ ^ 0xffffffff) > -2049; i_12_++) {
 		    Player class318_sub1_sub3_sub3_sub2
-			= (ClassicLoadingScreen.players
+			= (ClassicLoadingScreen.onscreenPlayers
 			   [i_12_]);
 		    if (class318_sub1_sub3_sub3_sub2 != null) {
-			for (int i_13_ = 0; ((((Class318_Sub1_Sub3_Sub3)
+			for (int i_13_ = 0; ((((Mob)
 					       class318_sub1_sub3_sub3_sub2)
 					      .aClass64Array10323).length
 					     > i_13_); i_13_++)
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2)
 				.aClass64Array10323[i_13_]
 				= null;
@@ -147,11 +147,11 @@ final class Class341
 			   .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 		    if (class318_sub1_sub3_sub3_sub1 != null) {
 			for (int i_15_ = 0;
-			     i_15_ < (((Class318_Sub1_Sub3_Sub3)
+			     i_15_ < (((Mob)
 				       class318_sub1_sub3_sub3_sub1)
 				      .aClass64Array10323).length;
 			     i_15_++)
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1)
 				.aClass64Array10323[i_15_]
 				= null;

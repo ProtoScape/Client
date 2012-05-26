@@ -8,7 +8,7 @@ final class Class135_Sub1 extends Class135 implements Interface2
     static int anInt4706;
     static ServerPacket aClass114_4707;
     private int anInt4708;
-    static int[] anIntArray4709 = new int[2048];
+    static int[] offscreenGpiList = new int[2048];
     static int anInt4710;
     static int anInt4711;
     static int anInt4712;
@@ -246,7 +246,7 @@ final class Class135_Sub1 extends Class135 implements Interface2
 			 (byte) 125, Class237_Sub1.anInt5819,
 			 anInt4717 - -i_4_, i_11_);
 		else
-		    Class318_Sub1_Sub3_Sub3.method2431
+		    Mob.method2431
 			(~0xffffff | Class348_Sub42_Sub11.anInt9586, i_21_,
 			 class348_sub42_sub13, i_11_, Class63.anInt1117,
 			 ~0xffffff | Class5_Sub2.anInt8363, i_12_, var_ha,
@@ -299,7 +299,7 @@ final class Class135_Sub1 extends Class135 implements Interface2
     
     public static void method1154(byte i) {
 	int i_23_ = -93 / ((i - -75) / 36);
-	anIntArray4709 = null;
+	offscreenGpiList = null;
 	aClass114_4707 = null;
     }
     

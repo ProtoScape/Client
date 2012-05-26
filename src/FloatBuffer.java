@@ -111,7 +111,7 @@ final class FloatBuffer extends ByteBuffer
 		Class13.method227(Class239_Sub21.aClass318_Sub1Array6066[i_6_],
 				  true, bool_3_);
 	}
-	if (Class318_Sub1_Sub3_Sub3.aBoolean10221)
+	if (Mob.aBoolean10221)
 	    Class9.aHa171.method3642(0, null);
 	if ((i_2_ & 0x2) == 0) {
 	    for (int i_7_ = Canvas_Sub1.anInt67; i_7_ < Class189.anInt2524;

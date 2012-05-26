@@ -14,7 +14,7 @@ final class Class348_Sub16_Sub2 extends Class348_Sub16
     static int anInt8867;
     static int anInt8868;
     static double aDouble8869;
-    static boolean aBoolean8870 = true;
+    static boolean heightLevelChanged = true;
     static int anInt8871;
     static int anInt8872;
     static int anInt8873;

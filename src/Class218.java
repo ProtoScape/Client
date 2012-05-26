@@ -25,7 +25,7 @@ final class Class218
 	    && (i ^ 0xffffffff) >= (-2 + Class367_Sub4.mapSizeX ^ 0xffffffff)
 	    && i_5_ <= -2 + Class348_Sub40_Sub3.mapSizeY) {
 	    int i_8_ = i_7_;
-	    if ((i_8_ ^ 0xffffffff) > -4 && NpcDefinition.method802(i_5_, i, true))
+	    if ((i_8_ ^ 0xffffffff) > -4 && NpcDefinition.isElevatedTile(i, i_5_))
 		i_8_++;
 	    if ((((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		     .aClass239_Sub27_7261.method1840(-32350) == 0
@@ -69,10 +69,10 @@ final class Class218
 	(byte i, int i_10_, int i_11_, int i_12_,
 	 Player class318_sub1_sub3_sub3_sub2) {
 	anInt2849++;
-	int i_13_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		     .anIntArray10320[0]);
-	int i_14_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		     .anIntArray10317[0]);
+	int i_13_ = (((Mob) class318_sub1_sub3_sub3_sub2)
+		     .xList[0]);
+	int i_14_ = (((Mob) class318_sub1_sub3_sub3_sub2)
+		     .yList[0]);
 	if (i_13_ >= 0 && Class367_Sub4.mapSizeX > i_13_
 	    && (i_14_ ^ 0xffffffff) <= -1
 	    && (Class348_Sub40_Sub3.mapSizeY ^ 0xffffffff) < (i_14_
@@ -91,7 +91,7 @@ final class Class218
 		    i_10_,
 		    (AbstractMouseEvent.aClass361Array7108
 		     [(((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-		       .aByte6381)]),
+		       .heightLevel)]),
 		    0, 0, 0));
 	    if ((i_15_ ^ 0xffffffff) <= -2) {
 		if (i_11_ != 4)

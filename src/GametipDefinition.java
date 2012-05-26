@@ -69,14 +69,14 @@ final class GametipDefinition
 			    ^ 0xffffffff)
 			   != -1) {
 		    int i_8_
-			= (((Class318_Sub1) class318_sub1).anInt6377 + -256
+			= (((Class318_Sub1) class318_sub1).xHash + -256
 			   >> -301859767);
 		    int i_9_ = (((Class318_Sub1) class318_sub1).anInt6388 - 256
 				>> -2115417367);
 		    int i_10_
 			= ((Class132.localPlayer
 			    != class318_sub1)
-			   ? ((((Class318_Sub1) class318_sub1).aByte6381
+			   ? ((((Class318_Sub1) class318_sub1).heightLevel
 			       << 111160376)
 			      + ((i_8_ << 1221818896) + (i_9_ << -395896696))
 			      + i_5_)

@@ -593,41 +593,32 @@ final class Class88
 			    = class348_sub49_sub2.getShort();
 			Class225.anInt2955 = 10;
 		    }
-		    if ((Class225.anInt2955 ^ 0xffffffff) == -11) {
+		    if ((Class225.anInt2955) == -10) {
 			if (Class348_Sub40_Sub8.gameConnection.method1705
 			    (Class348_Sub40_Sub25.currentPacketSize, 96)) {
-			    Class348_Sub40_Sub8.gameConnection.read
-				(Class348_Sub40_Sub25.currentPacketSize, 0, (byte) 28,
-				 (((ByteBuffer)
-				   Class299.gameBuffer)
-				  .payload));
-			    ((ByteBuffer)
-			     Class299.gameBuffer).position
-				= 0;
+			    Class348_Sub40_Sub8.gameConnection.read(Class348_Sub40_Sub25.currentPacketSize, 0, (byte) 28,(((ByteBuffer) Class299.gameBuffer).payload));
+			    ((ByteBuffer) Class299.gameBuffer).position = 0;
 			    Class225.anInt2955 = 0;
-			    int i_13_ = Class348_Sub40_Sub25.currentPacketSize;
+			    int packetSize = Class348_Sub40_Sub25.currentPacketSize;
 			    Class14_Sub4.method254(2, (byte) -124);
 			    Class130_Sub1.method1135(0);
-			    Class239_Sub5.method1741
-				(Class299.gameBuffer,
-				 (byte) 118);
+			    Class239_Sub5.parseGpiInitiate(Class299.gameBuffer, (byte) 118);
 			    AbstractToolkit.chnkX = -1;
-			    if (Class348_Sub3.currentIncomingPacket
-				!= ClanChatPlayer.aClass114_304)
+			    if (Class348_Sub3.currentIncomingPacket != ClanChatPlayer.serverPacket70)
 				Class348_Sub40_Sub26.parseSetRegionPacket(-92);
 			    else
-				Class90.method853((byte) 99);
+				Class90.parseBuildMapPacket((byte) 99);
 			    if ((((ByteBuffer)
 				  Class299.gameBuffer).position
 				 ^ 0xffffffff)
-				!= (i_13_ ^ 0xffffffff))
+				!= (packetSize ^ 0xffffffff))
 				throw new RuntimeException
 					  ("lswp pos:"
 					   + (((ByteBuffer)
 					       (Class299
 						.gameBuffer))
 					      .position)
-					   + " psize:" + i_13_);
+					   + " psize:" + packetSize);
 			    Class348_Sub3.currentIncomingPacket = null;
 			}
 		    } else {
@@ -665,7 +656,7 @@ final class Class88
 				Class225.anInt2955 = 0;
 				Class14_Sub4.method254(15, (byte) -120);
 				Class312.method2330((byte) 86);
-				Class239_Sub5.method1741
+				Class239_Sub5.parseGpiInitiate
 				    (Class299.gameBuffer,
 				     (byte) 118);
 				if (((((ByteBuffer)

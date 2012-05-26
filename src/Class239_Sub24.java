@@ -171,7 +171,7 @@ final class Class239_Sub24 extends Class239
 				    << -1176190008) >> -1962267255;
 		    int i_26_ = (((Class318_Sub1)
 				  Class132.localPlayer)
-				 .aByte6381);
+				 .heightLevel);
 		    if (i_26_ < 3
 			&& ((0x2 & (Class348_Sub33.settingFlags[1]
 				    [i_24_ >> 499347017][i_25_ >> -149021879]))
@@ -238,10 +238,10 @@ final class Class239_Sub24 extends Class239
 		    if ((RuntimeException_Sub1.aBoolean4599
 			 || ((((Class318_Sub1)
 			       Class132.localPlayer)
-			      .aByte6381)
+			      .heightLevel)
 			     == ((Class318_Sub1)
 				 (((Class318_Sub4) class318_sub4)
-				  .aClass318_Sub1_6410)).aByte6381))
+				  .aClass318_Sub1_6410)).heightLevel))
 			&& class318_sub4.method2504(i_29_, i_28_, var_ha,
 						    -115)) {
 			boolean bool_30_ = false;
@@ -249,11 +249,11 @@ final class Class239_Sub24 extends Class239
 			int i_32_;
 			int i_33_;
 			if (((Class318_Sub4) class318_sub4).aClass318_Sub1_6410
-			    instanceof Class318_Sub1_Sub3) {
-			    i_32_ = ((Class318_Sub1_Sub3) (Class318_Sub1_Sub3)
+			    instanceof Entity) {
+			    i_32_ = ((Entity) (Entity)
 				     (((Class318_Sub4) class318_sub4)
 				      .aClass318_Sub1_6410)).aShort8750;
-			    i_33_ = ((Class318_Sub1_Sub3) (Class318_Sub1_Sub3)
+			    i_33_ = ((Entity) (Entity)
 				     (((Class318_Sub4) class318_sub4)
 				      .aClass318_Sub1_6410)).aShort8743;
 			} else {
@@ -263,7 +263,7 @@ final class Class239_Sub24 extends Class239
 				     >> 1531405961);
 			    i_33_ = (((Class318_Sub1)
 				      (((Class318_Sub4) class318_sub4)
-				       .aClass318_Sub1_6410)).anInt6377
+				       .aClass318_Sub1_6410)).xHash
 				     >> -1761317527);
 			}
 			if (((Class318_Sub4) class318_sub4).aClass318_Sub1_6410
@@ -277,7 +277,7 @@ final class Class239_Sub24 extends Class239
 			    if (((0x1 & i_34_ ^ 0xffffffff) == -1
 				 && (0x1ff & (((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub2)
-					      .anInt6377)) == 0
+					      .xHash)) == 0
 				 && (0x1ff & (((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub2)
 					      .anInt6388)
@@ -285,7 +285,7 @@ final class Class239_Sub24 extends Class239
 				|| ((i_34_ & 0x1 ^ 0xffffffff) == -2
 				    && ((((Class318_Sub1)
 					  class318_sub1_sub3_sub3_sub2)
-					 .anInt6377) & 0x1ff
+					 .xHash) & 0x1ff
 					^ 0xffffffff) == -257
 				    && ((((Class318_Sub1)
 					  class318_sub1_sub3_sub3_sub2)
@@ -293,7 +293,7 @@ final class Class239_Sub24 extends Class239
 					& 0x1ff) == 256)) {
 				int i_35_
 				    = (((Class318_Sub1)
-					class318_sub1_sub3_sub3_sub2).anInt6377
+					class318_sub1_sub3_sub3_sub2).xHash
 				       - (-1 + class318_sub1_sub3_sub3_sub2
 						   .method2436((byte) 82)
 					  << 1764881480));
@@ -317,19 +317,19 @@ final class Class239_Sub24 extends Class239
 					    = (((Class348_Sub22)
 						class348_sub22)
 					       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-					if ((((((Class318_Sub1_Sub3_Sub3)
+					if ((((((Mob)
 						class318_sub1_sub3_sub3_sub1)
 					       .anInt10215)
 					      ^ 0xffffffff)
 					     != (Class367_Sub11.logicCycle
 						 ^ 0xffffffff))
-					    && (((Class318_Sub1_Sub3_Sub3)
+					    && (((Mob)
 						 class318_sub1_sub3_sub3_sub1)
 						.aBoolean10309)) {
 					    int i_38_
 						= ((((Class318_Sub1)
 						     class318_sub1_sub3_sub3_sub1)
-						    .anInt6377)
+						    .xHash)
 						   - ((((NpcDefinition)
 							(((Npc)
 							  class318_sub1_sub3_sub3_sub1)
@@ -377,17 +377,17 @@ final class Class239_Sub24 extends Class239
 						    ((((((Class318_Sub1)
 							 (Class132
 							  .localPlayer))
-							.aByte6381)
+							.heightLevel)
 						       ^ 0xffffffff)
 						      != ((((Class318_Sub1)
 							    (((Class318_Sub4)
 							      class318_sub4)
 							     .aClass318_Sub1_6410))
-							   .aByte6381)
+							   .heightLevel)
 							  ^ 0xffffffff)),
 						     false,
 						     class318_sub1_sub3_sub3_sub1);
-						((Class318_Sub1_Sub3_Sub3)
+						((Mob)
 						 class318_sub1_sub3_sub3_sub1)
 						    .anInt10215
 						    = Class367_Sub11.logicCycle;
@@ -395,31 +395,31 @@ final class Class239_Sub24 extends Class239
 					}
 				    }
 				}
-				int i_40_ = Class328_Sub1.anInt6513;
-				int[] is = Class286_Sub7.anIntArray6290;
+				int i_40_ = Class328_Sub1.onscreenGpiOffset;
+				int[] is = Class286_Sub7.onscreenGpiList;
 				for (int i_41_ = 0;
 				     ((i_41_ ^ 0xffffffff)
 				      > (i_40_ ^ 0xffffffff));
 				     i_41_++) {
 				    Player class318_sub1_sub3_sub3_sub2_42_
 					= (ClassicLoadingScreen
-					   .players
+					   .onscreenPlayers
 					   [is[i_41_]]);
 				    if ((class318_sub1_sub3_sub3_sub2_42_
 					 != null)
 					&& (Class367_Sub11.logicCycle
-					    != (((Class318_Sub1_Sub3_Sub3)
+					    != (((Mob)
 						 class318_sub1_sub3_sub3_sub2_42_)
 						.anInt10215))
 					&& (class318_sub1_sub3_sub3_sub2
 					    != class318_sub1_sub3_sub3_sub2_42_)
-					&& (((Class318_Sub1_Sub3_Sub3)
+					&& (((Mob)
 					     class318_sub1_sub3_sub3_sub2_42_)
 					    .aBoolean10309)) {
 					int i_43_
 					    = ((((Class318_Sub1)
 						 class318_sub1_sub3_sub3_sub2_42_)
-						.anInt6377)
+						.xHash)
 					       + -((class318_sub1_sub3_sub3_sub2_42_
 							.method2436((byte) 94)
 						    - 1)
@@ -458,16 +458,16 @@ final class Class239_Sub24 extends Class239
 						 (((((Class318_Sub1)
 						     (Class132
 						      .localPlayer))
-						    .aByte6381)
+						    .heightLevel)
 						   ^ 0xffffffff)
 						  != ((((Class318_Sub1)
 							(((Class318_Sub4)
 							  class318_sub4)
 							 .aClass318_Sub1_6410))
-						       .aByte6381)
+						       .heightLevel)
 						      ^ 0xffffffff)),
 						 class318_sub1_sub3_sub3_sub2_42_);
-					    ((Class318_Sub1_Sub3_Sub3)
+					    ((Mob)
 					     class318_sub1_sub3_sub3_sub2_42_)
 						.anInt10215
 						= Class367_Sub11.logicCycle;
@@ -476,7 +476,7 @@ final class Class239_Sub24 extends Class239
 				}
 			    }
 			    if (Class367_Sub11.logicCycle
-				== ((Class318_Sub1_Sub3_Sub3)
+				== ((Mob)
 				    class318_sub1_sub3_sub3_sub2).anInt10215)
 				continue;
 			    Class348_Sub43.method3298
@@ -484,12 +484,12 @@ final class Class239_Sub24 extends Class239
 				 ((((Class318_Sub1)
 				    (Class132
 				     .localPlayer))
-				   .aByte6381)
+				   .heightLevel)
 				  != ((Class318_Sub1)
 				      (((Class318_Sub4) class318_sub4)
-				       .aClass318_Sub1_6410)).aByte6381),
+				       .aClass318_Sub1_6410)).heightLevel),
 				 class318_sub1_sub3_sub3_sub2);
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10215
 				= Class367_Sub11.logicCycle;
 			}
@@ -510,7 +510,7 @@ final class Class239_Sub24 extends Class239
 				     && ((0x1ff
 					  & (((Class318_Sub1)
 					      class318_sub1_sub3_sub3_sub1)
-					     .anInt6377))
+					     .xHash))
 					 ^ 0xffffffff) == -1
 				     && (0x1ff
 					 & (((Class318_Sub1)
@@ -524,7 +524,7 @@ final class Class239_Sub24 extends Class239
 					&& (0x1ff
 					    & (((Class318_Sub1)
 						class318_sub1_sub3_sub3_sub1)
-					       .anInt6377)) == 256
+					       .xHash)) == 256
 					&& ((((Class318_Sub1)
 					      class318_sub1_sub3_sub3_sub1)
 					     .anInt6388)
@@ -532,7 +532,7 @@ final class Class239_Sub24 extends Class239
 				    int i_45_
 					= ((((Class318_Sub1)
 					     class318_sub1_sub3_sub3_sub1)
-					    .anInt6377)
+					    .xHash)
 					   - ((-1
 					       + ((NpcDefinition)
 						  (((Npc)
@@ -563,13 +563,13 @@ final class Class239_Sub24 extends Class239
 						   .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 					    if (((Class367_Sub11.logicCycle
 						  ^ 0xffffffff)
-						 != ((((Class318_Sub1_Sub3_Sub3)
+						 != ((((Mob)
 						       class318_sub1_sub3_sub3_sub1_48_)
 						      .anInt10215)
 						     ^ 0xffffffff))
 						&& (class318_sub1_sub3_sub3_sub1
 						    != class318_sub1_sub3_sub3_sub1_48_)
-						&& (((Class318_Sub1_Sub3_Sub3)
+						&& (((Mob)
 						     class318_sub1_sub3_sub3_sub1_48_)
 						    .aBoolean10309)) {
 						int i_49_
@@ -581,7 +581,7 @@ final class Class239_Sub24 extends Class239
 							 << 88355048)
 						       + (((Class318_Sub1)
 							   class318_sub1_sub3_sub3_sub1_48_)
-							  .anInt6377));
+							  .xHash));
 						int i_50_
 						    = ((((Class318_Sub1)
 							 class318_sub1_sub3_sub3_sub1_48_)
@@ -628,17 +628,17 @@ final class Class239_Sub24 extends Class239
 							((((((Class318_Sub1)
 							     (Class132
 							      .localPlayer))
-							    .aByte6381)
+							    .heightLevel)
 							   ^ 0xffffffff)
 							  != ((((Class318_Sub1)
 								(((Class318_Sub4)
 								  class318_sub4)
 								 .aClass318_Sub1_6410))
-							       .aByte6381)
+							       .heightLevel)
 							      ^ 0xffffffff)),
 							 false,
 							 class318_sub1_sub3_sub3_sub1_48_);
-						    ((Class318_Sub1_Sub3_Sub3)
+						    ((Mob)
 						     class318_sub1_sub3_sub3_sub1_48_)
 							.anInt10215
 							= (Class367_Sub11
@@ -647,31 +647,31 @@ final class Class239_Sub24 extends Class239
 					    }
 					}
 				    }
-				    int i_51_ = Class328_Sub1.anInt6513;
-				    int[] is = Class286_Sub7.anIntArray6290;
+				    int i_51_ = Class328_Sub1.onscreenGpiOffset;
+				    int[] is = Class286_Sub7.onscreenGpiList;
 				    for (int i_52_ = 0;
 					 ((i_52_ ^ 0xffffffff)
 					  > (i_51_ ^ 0xffffffff));
 					 i_52_++) {
 					Player class318_sub1_sub3_sub3_sub2
 					    = (ClassicLoadingScreen
-					       .players
+					       .onscreenPlayers
 					       [is[i_52_]]);
 					if ((class318_sub1_sub3_sub3_sub2
 					     != null)
-					    && (((((Class318_Sub1_Sub3_Sub3)
+					    && (((((Mob)
 						   class318_sub1_sub3_sub3_sub2)
 						  .anInt10215)
 						 ^ 0xffffffff)
 						!= (Class367_Sub11.logicCycle
 						    ^ 0xffffffff))
-					    && (((Class318_Sub1_Sub3_Sub3)
+					    && (((Mob)
 						 class318_sub1_sub3_sub3_sub2)
 						.aBoolean10309)) {
 					    int i_53_
 						= ((((Class318_Sub1)
 						     class318_sub1_sub3_sub3_sub2)
-						    .anInt6377)
+						    .xHash)
 						   - ((-1
 						       + (class318_sub1_sub3_sub3_sub2
 							      .method2436
@@ -714,16 +714,16 @@ final class Class239_Sub24 extends Class239
 						     (((((Class318_Sub1)
 							 (Class132
 							  .localPlayer))
-							.aByte6381)
+							.heightLevel)
 						       ^ 0xffffffff)
 						      != ((((Class318_Sub1)
 							    (((Class318_Sub4)
 							      class318_sub4)
 							     .aClass318_Sub1_6410))
-							   .aByte6381)
+							   .heightLevel)
 							  ^ 0xffffffff)),
 						     class318_sub1_sub3_sub3_sub2);
-						((Class318_Sub1_Sub3_Sub3)
+						((Mob)
 						 class318_sub1_sub3_sub3_sub2)
 						    .anInt10215
 						    = Class367_Sub11.logicCycle;
@@ -731,7 +731,7 @@ final class Class239_Sub24 extends Class239
 					}
 				    }
 				}
-				if ((((Class318_Sub1_Sub3_Sub3)
+				if ((((Mob)
 				      class318_sub1_sub3_sub3_sub1).anInt10215
 				     ^ 0xffffffff)
 				    == (Class367_Sub11.logicCycle ^ 0xffffffff))
@@ -739,13 +739,13 @@ final class Class239_Sub24 extends Class239
 				Class286_Sub3.method2150
 				    ((((Class318_Sub1)
 				       (((Class318_Sub4) class318_sub4)
-					.aClass318_Sub1_6410)).aByte6381
+					.aClass318_Sub1_6410)).heightLevel
 				      != (((Class318_Sub1)
 					   (Class132
 					    .localPlayer))
-					  .aByte6381)),
+					  .heightLevel)),
 				     false, class318_sub1_sub3_sub3_sub1);
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3_sub1).anInt10215
 				    = Class367_Sub11.logicCycle;
 			    }
@@ -760,7 +760,7 @@ final class Class239_Sub24 extends Class239
 				    ((long) ((((Class318_Sub1)
 					       (((Class318_Sub4) class318_sub4)
 						.aClass318_Sub1_6410))
-					      .aByte6381) << -1312548548
+					      .heightLevel) << -1312548548
 					     | i_56_ << -623006738 | i_55_))));
 			    if (class348_sub37 != null) {
 				int i_57_ = 0;
@@ -778,12 +778,12 @@ final class Class239_Sub24 extends Class239
 				    if (r.aBoolean9722
 					&& ((((Class318_Sub1)
 					      (((Class318_Sub4) class318_sub4)
-					       .aClass318_Sub1_6410)).aByte6381
+					       .aClass318_Sub1_6410)).heightLevel
 					     ^ 0xffffffff)
 					    == ((((Class318_Sub1)
 						  (Class132
 						   .localPlayer))
-						 .aByte6381)
+						 .heightLevel)
 						^ 0xffffffff))) {
 					Class254 class254
 					    = (Class246.anInt3176 != -1
@@ -822,11 +822,11 @@ final class Class239_Sub24 extends Class239
 				    }
 				    if (((Class318_Sub1)
 					 (((Class318_Sub4) class318_sub4)
-					  .aClass318_Sub1_6410)).aByte6381
+					  .aClass318_Sub1_6410)).heightLevel
 					== (((Class318_Sub1)
 					     (Class132
 					      .localPlayer))
-					    .aByte6381)) {
+					    .heightLevel)) {
 					String[] strings
 					    = (((ItemDefinition) class213)
 					       .aStringArray2811);
@@ -883,12 +883,12 @@ final class Class239_Sub24 extends Class239
 				    Class50_Sub3.method466
 					(((((Class318_Sub1)
 					    (((Class318_Sub4) class318_sub4)
-					     .aClass318_Sub1_6410)).aByte6381
+					     .aClass318_Sub1_6410)).heightLevel
 					   ^ 0xffffffff)
 					  != ((((Class318_Sub1)
 						(Class132
 						 .localPlayer))
-					       .aByte6381)
+					       .heightLevel)
 					      ^ 0xffffffff)),
 					 ("<col=ff9040>"
 					  + ((ItemDefinition) class213).aString2795),
@@ -920,7 +920,7 @@ final class Class239_Sub24 extends Class239
 				   (0, interface10.method42(-100)));
 			    if (((ObjectDefinition) class51).anIntArray945 != null)
 				class51 = (class51.method480
-					   ((Class318_Sub1_Sub3_Sub3
+					   ((Mob
 					     .varbitHandler),
 					    (byte) 47));
 			    if (class51 != null) {
@@ -928,11 +928,11 @@ final class Class239_Sub24 extends Class239
 				    && ((((Class318_Sub1)
 					  (Class132
 					   .localPlayer))
-					 .aByte6381)
+					 .heightLevel)
 					== (((Class318_Sub1)
 					     (((Class318_Sub4) class318_sub4)
 					      .aClass318_Sub1_6410))
-					    .aByte6381))) {
+					    .heightLevel))) {
 				    Class254 class254
 					= (Class246.anInt3176 != -1
 					   ? (Class101_Sub3.aClass326_5764
@@ -971,11 +971,11 @@ final class Class239_Sub24 extends Class239
 				if (((((Class318_Sub1)
 				       (Class132
 					.localPlayer))
-				      .aByte6381)
+				      .heightLevel)
 				     ^ 0xffffffff)
 				    == (((Class318_Sub1)
 					 (((Class318_Sub4) class318_sub4)
-					  .aClass318_Sub1_6410)).aByte6381
+					  .aClass318_Sub1_6410)).heightLevel
 					^ 0xffffffff)) {
 				    String[] strings
 					= ((ObjectDefinition) class51).aStringArray913;
@@ -1031,12 +1031,12 @@ final class Class239_Sub24 extends Class239
 				    Class50_Sub3.method466
 					(((((Class318_Sub1)
 					    (((Class318_Sub4) class318_sub4)
-					     .aClass318_Sub1_6410)).aByte6381
+					     .aClass318_Sub1_6410)).heightLevel
 					   ^ 0xffffffff)
 					  != ((((Class318_Sub1)
 						(Class132
 						 .localPlayer))
-					       .aByte6381)
+					       .heightLevel)
 					      ^ 0xffffffff)),
 					 ("<col=00ffff>"
 					  + ((ObjectDefinition) class51).aString884),

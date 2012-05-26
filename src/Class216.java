@@ -19,7 +19,7 @@ final class Class216 implements Interface13
 	    int i_1_ = Class258_Sub4.mouseMovementListener.method3594((byte) 72);
 	    AbstractMouseEvent class348_sub45
 		= ((AbstractMouseEvent)
-		   Class318_Sub1_Sub3.aClass262_8744.getFirst(4));
+		   Entity.aClass262_8744.getFirst(4));
 	    if (class348_sub45 != null) {
 		i_0_ = class348_sub45.method3308((byte) -128);
 		i_1_ = class348_sub45.method3311(58);

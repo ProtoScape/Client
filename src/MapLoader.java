@@ -1470,7 +1470,7 @@ class MapLoader
 				    = var_s_64_.method3982((byte) -86, i_74_,
 							   i_71_);
 				boolean bool_159_
-				    = NpcDefinition.method802(i_73_, i_71_, true);
+				    = NpcDefinition.isElevatedTile(i_71_, i_73_);
 				if (bool_159_ && (i_66_ ^ 0xffffffff) < -2
 				    || (!bool_159_
 					&& (i_66_ ^ 0xffffffff) < -1)) {
@@ -2167,7 +2167,7 @@ class MapLoader
 								   i_227_ + 1,
 								   i_226_);
 				boolean bool_267_
-				    = NpcDefinition.method802(i_227_, i_226_, true);
+				    = NpcDefinition.isElevatedTile(i_226_, i_227_);
 				if (bool_267_ && i > 1
 				    || !bool_267_ && i > 0) {
 				    boolean bool_268_ = true;

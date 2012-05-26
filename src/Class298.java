@@ -31,12 +31,12 @@ final class Class298
 				    int i_6_, int i_7_, int i_8_, int i_9_,
 				    int i_10_) {
 	anInt3808++;
-	int i_11_ = (((Class318_Sub1_Sub3_Sub3)
+	int i_11_ = (((Mob)
 		      Class132.localPlayer)
-		     .anIntArray10320[0]);
-	int i_12_ = (((Class318_Sub1_Sub3_Sub3)
+		     .xList[0]);
+	int i_12_ = (((Mob)
 		      Class132.localPlayer)
-		     .anIntArray10317[0]);
+		     .yList[0]);
 	if ((i_11_ ^ 0xffffffff) > -1
 	    || (Class367_Sub4.mapSizeX ^ 0xffffffff) >= (i_11_ ^ 0xffffffff)
 	    || (i_12_ ^ 0xffffffff) > -1
@@ -56,7 +56,7 @@ final class Class298
 		i_9_, i_11_, i_12_, Class348_Sub42_Sub14.anIntArray9626, i_4_,
 		(AbstractMouseEvent.aClass361Array7108
 		 [((Class318_Sub1)
-		   Class132.localPlayer).aByte6381]),
+		   Class132.localPlayer).heightLevel]),
 		i_8_, i_7_, i_10_));
 	if ((i_13_ ^ 0xffffffff) > -2)
 	    return false;

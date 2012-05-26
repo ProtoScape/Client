@@ -295,7 +295,7 @@ final class Class286_Sub3 extends Class286
 				class318_sub1_sub3_sub3_sub1)
 			       .definition);
 	    if (((NpcDefinition) class79).anIntArray1377 != null) {
-		class79 = class79.method794((Class318_Sub1_Sub3_Sub3
+		class79 = class79.method794((Mob
 					     .varbitHandler),
 					    -1);
 		if (class79 == null)
@@ -334,11 +334,11 @@ final class Class286_Sub3 extends Class286
 			    (false,
 			     Class28.aString5000 + " -> <col=ffff00>" + string,
 			     0, (byte) -81, false, 0, -1, true, 30,
-			     (long) ((Class318_Sub1_Sub3_Sub3)
-				     class318_sub1_sub3_sub3_sub1).anInt10290,
+			     (long) ((Mob)
+				     class318_sub1_sub3_sub3_sub1).localId,
 			     Class28.aString5001,
-			     (long) ((Class318_Sub1_Sub3_Sub3)
-				     class318_sub1_sub3_sub3_sub1).anInt10290,
+			     (long) ((Mob)
+				     class318_sub1_sub3_sub3_sub1).localId,
 			     FloatBuffer.anInt9747);
 			Class193.anInt2586++;
 		    }
@@ -375,13 +375,13 @@ final class Class286_Sub3 extends Class286
 				Class50_Sub3.method466
 				    (false, "<col=ffff00>" + string, 0,
 				     (byte) -93, false, 0, -1, true, i_16_,
-				     (long) (((Class318_Sub1_Sub3_Sub3)
+				     (long) (((Mob)
 					      class318_sub1_sub3_sub3_sub1)
-					     .anInt10290),
+					     .localId),
 				     strings[i],
-				     (long) (((Class318_Sub1_Sub3_Sub3)
+				     (long) (((Mob)
 					      class318_sub1_sub3_sub3_sub1)
-					     .anInt10290),
+					     .localId),
 				     (!(strings[i].equalsIgnoreCase
 					(GameText.attackGameText.getLanguageText
 					 (Class348_Sub33.gameLanguage)))
@@ -423,13 +423,13 @@ final class Class286_Sub3 extends Class286
 				Class50_Sub3.method466
 				    (false, "<col=ffff00>" + string, 0,
 				     (byte) -101, false, 0, -1, true, i_19_,
-				     (long) (((Class318_Sub1_Sub3_Sub3)
+				     (long) (((Mob)
 					      class318_sub1_sub3_sub3_sub1)
-					     .anInt10290),
+					     .localId),
 				     strings[i],
-				     (long) (((Class318_Sub1_Sub3_Sub3)
+				     (long) (((Mob)
 					      class318_sub1_sub3_sub3_sub1)
-					     .anInt10290),
+					     .localId),
 				     ((NpcDefinition) class79).anInt1401);
 			    }
 			}
@@ -439,12 +439,12 @@ final class Class286_Sub3 extends Class286
 		Class50_Sub3.method466
 		    (bool, "<col=ffff00>" + string, 0, (byte) -105, bool_14_,
 		     0, -1, true, 1008,
-		     (long) ((Class318_Sub1_Sub3_Sub3)
-			     class318_sub1_sub3_sub3_sub1).anInt10290,
+		     (long) ((Mob)
+			     class318_sub1_sub3_sub3_sub1).localId,
 		     GameText.examineGameText
 			 .getLanguageText(Class348_Sub33.gameLanguage),
-		     (long) ((Class318_Sub1_Sub3_Sub3)
-			     class318_sub1_sub3_sub3_sub1).anInt10290,
+		     (long) ((Mob)
+			     class318_sub1_sub3_sub3_sub1).localId,
 		     Class286_Sub8.anInt6299);
 	    }
 	}

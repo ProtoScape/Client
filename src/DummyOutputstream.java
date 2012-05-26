@@ -100,7 +100,7 @@ final class DummyOutputstream extends OutputStream
 						 .aLong9605) >>> -273616224)));
 			if (((ObjectDefinition) class51).anIntArray945 != null)
 			    class51
-				= class51.method480((Class318_Sub1_Sub3_Sub3
+				= class51.method480((Mob
 						     .varbitHandler),
 						    (byte) 47);
 			if (class51 != null)
@@ -121,7 +121,7 @@ final class DummyOutputstream extends OutputStream
 					   .definition);
 			if (((NpcDefinition) class79).anIntArray1377 != null)
 			    class79
-				= class79.method794((Class318_Sub1_Sub3_Sub3
+				= class79.method794((Mob
 						     .varbitHandler),
 						    -1);
 			if (class79 != null)

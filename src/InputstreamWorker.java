@@ -158,7 +158,7 @@ final class InputstreamWorker implements Runnable
 	thread.start();
     }
     
-    static final Class148 method3620(Class318_Sub1_Sub3 class318_sub1_sub3,
+    static final Class148 method3620(Entity class318_sub1_sub3,
 				     int i) {
 	if (i < 9)
 	    anInt4559 = -27;

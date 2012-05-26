@@ -16,14 +16,14 @@ final class Class348_Sub35 extends Node
 	anInt6975++;
 	if (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		.aClass239_Sub27_7261.method1840(-32350) == 0
-	    && Class355.anInt4372 != Class167.anInt2204)
+	    && Class355.localHeightLevel != Class167.anInt2204)
 	    Class348_Sub41.updateLocation(AbstractToolkit.chnkX,
 				      Class327.chnkY, 11, false);
 	else {
 	    Class348_Sub46.method3319(Class348_Sub8.currentToolkit, (byte) -121);
 	    if (i != 33)
 		method3028(-79);
-	    if ((Class355.anInt4372 ^ 0xffffffff)
+	    if ((Class355.localHeightLevel ^ 0xffffffff)
 		!= (Class318_Sub1_Sub3_Sub5.anInt10395 ^ 0xffffffff))
 		Class348_Sub40_Sub9.method3072((byte) -96);
 	}

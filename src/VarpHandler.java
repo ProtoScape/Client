@@ -228,7 +228,7 @@ final class VarpHandler implements ConfigHandler
 		    ((byte) 95, ((NpcDefinition) (((Npc)
 					     npc)
 					    .definition)).anInt1399);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10310
 		    = ((NpcDefinition) (((Npc)
 				   npc)
@@ -240,13 +240,13 @@ final class VarpHandler implements ConfigHandler
 					npc,
 					(((Class318_Sub1)
 					  npc)
-					 .aByte6381),
-					(((Class318_Sub1_Sub3_Sub3)
+					 .heightLevel),
+					(((Mob)
 					  npc)
-					 .anIntArray10317[0]),
-					(((Class318_Sub1_Sub3_Sub3)
+					 .yList[0]),
+					(((Mob)
 					  npc)
-					 .anIntArray10320[0]),
+					 .xList[0]),
 					null, null, 0);
 	    }
 	    if ((0x8 & i_40_ ^ 0xffffffff) != -1) {
@@ -329,74 +329,74 @@ final class VarpHandler implements ConfigHandler
 		    = Class299.gameBuffer.readLEShort(false);
 	    }
 	    if ((0x1000 & i_40_) != 0) {
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10293
 		    = Class299.gameBuffer.method3345(-27697);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10314
 		    = Class299.gameBuffer.method3345(-27697);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10241
 		    = Class299.gameBuffer.getByte();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10288
 		    = Class299.gameBuffer.method3345(-27697);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10239
 		    = (Class299.gameBuffer.readLEShort(false)
 		       + Class367_Sub11.logicCycle);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10300
 		    = (Class299.gameBuffer.method3355(12)
 		       - -Class367_Sub11.logicCycle);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10231
 		    = Class299.gameBuffer.method3342();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10314
-		    += ((Class318_Sub1_Sub3_Sub3)
-			npc).anIntArray10317[0];
-		((Class318_Sub1_Sub3_Sub3) npc)
+		    += ((Mob)
+			npc).yList[0];
+		((Mob) npc)
 		    .anInt10322
 		    = 0;
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10288
-		    += ((Class318_Sub1_Sub3_Sub3)
-			npc).anIntArray10317[0];
-		((Class318_Sub1_Sub3_Sub3) npc)
+		    += ((Mob)
+			npc).yList[0];
+		((Mob) npc)
 		    .anInt10293
-		    += ((Class318_Sub1_Sub3_Sub3)
-			npc).anIntArray10320[0];
-		((Class318_Sub1_Sub3_Sub3) npc)
+		    += ((Mob)
+			npc).xList[0];
+		((Mob) npc)
 		    .anInt10241
-		    += ((Class318_Sub1_Sub3_Sub3)
-			npc).anIntArray10320[0];
-		((Class318_Sub1_Sub3_Sub3) npc)
+		    += ((Mob)
+			npc).xList[0];
+		((Mob) npc)
 		    .anInt10319
 		    = 1;
 	    }
 	    if ((i_40_ & 0x2000) != 0) {
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aByte10255
 		    = Class299.gameBuffer
 			  .method3361(-622951480);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aByte10206
 		    = Class299.gameBuffer.method3345(-27697);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aByte10270
 		    = Class299.gameBuffer
 			  .method3361(i + -622885944);
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aByte10279
 		    = (byte) Class299.gameBuffer
 				 .getUByte();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10248
 		    = Class367_Sub11.logicCycle + Class299
 						     .gameBuffer
 						     .getShort();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10250
 		    = Class367_Sub11.logicCycle + Class299
 						     .gameBuffer
@@ -441,48 +441,48 @@ final class VarpHandler implements ConfigHandler
 		}
 	    }
 	    if ((i_40_ & 0x80 ^ 0xffffffff) != -1) {
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10275
 		    = Class299.gameBuffer.getShort();
-		if ((((Class318_Sub1_Sub3_Sub3) npc)
+		if ((((Mob) npc)
 		     .anInt10275)
 		    == 65535)
-		    ((Class318_Sub1_Sub3_Sub3) npc)
+		    ((Mob) npc)
 			.anInt10275
 			= -1;
 	    }
 	    if ((0x1 & i_40_) != 0) {
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aString10292
 		    = Class299.gameBuffer
 			  .getJstr();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10264
 		    = 100;
 	    }
 	    if ((i_40_ & 0x800 ^ 0xffffffff) != -1) {
 		int i_66_
 		    = Class299.gameBuffer.getShort();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10227
 		    = Class299.gameBuffer
 			  .method3342();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10271
 		    = Class299.gameBuffer
 			  .method3342();
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10210
 		    = 0x7fff & i_66_;
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .aBoolean10226
 		    = (0x8000 & i_66_) != 0;
-		((Class318_Sub1_Sub3_Sub3) npc)
+		((Mob) npc)
 		    .anInt10287
-		    = (((Class318_Sub1_Sub3_Sub3)
+		    = (((Mob)
 			npc).anInt10227
 		       + Class367_Sub11.logicCycle
-		       + ((Class318_Sub1_Sub3_Sub3)
+		       + ((Mob)
 			  npc).anInt10210);
 	    }
 	    if ((i_40_ & 0x400) != 0) {

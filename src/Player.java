@@ -3,7 +3,7 @@
  */
 import java.util.Hashtable;
 
-final class Player extends Class318_Sub1_Sub3_Sub3
+final class Player extends Mob
 {
     int anInt10516;
     boolean aBoolean10517 = false;
@@ -28,7 +28,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
     Class154 aClass154_10536;
     String username;
     private byte aByte10538;
-    boolean aBoolean10539;
+    boolean isOffscreen;
     int anInt10540;
     static int anInt10541;
     int anInt10542;
@@ -61,41 +61,41 @@ final class Player extends Class318_Sub1_Sub3_Sub3
     final void method2387(AbstractToolkit var_ha, int i) {
 	anInt10533++;
 	if (((Player) this).aClass154_10536 != null
-	    && (((Class318_Sub1_Sub3_Sub3) this).aBoolean10318
+	    && (((Mob) this).aBoolean10318
 		|| method2459(0, var_ha, -123))) {
 	    Class101 class101 = var_ha.method3705();
 	    if (i >= -125)
 		method2457((byte) -106);
-	    class101.method895(((Class318_Sub1_Sub3_Sub3) this)
+	    class101.method895(((Mob) this)
 				   .aClass264_10217.method2019((byte) -116));
-	    class101.method891(((Class318_Sub1) this).anInt6377,
+	    class101.method891(((Class318_Sub1) this).xHash,
 			       -5 + ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    this.method2432(var_ha, -15074, class101,
-			    ((Class318_Sub1_Sub3_Sub3) this).aBoolean10318,
-			    (((Class318_Sub1_Sub3_Sub3) this)
+			    ((Mob) this).aBoolean10318,
+			    (((Mob) this)
 			     .aClass64Array10323));
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[0]
-		= ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[1]
-		= ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[2]
+	    ((Mob) this).aClass64Array10323[0]
+		= ((Mob) this).aClass64Array10323[1]
+		= ((Mob) this).aClass64Array10323[2]
 		= null;
 	}
     }
     
-    final void setLocationUnkn(int i, int i_0_) {
+    final void setLocalCoords(int i, int i_0_) {
 	anInt10541++;
-	((Class318_Sub1_Sub3_Sub3) this).anInt10322 = 0;
-	((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] = i_0_;
-	((Class318_Sub1_Sub3_Sub3) this).anInt10319 = 0;
-	((Class318_Sub1_Sub3_Sub3) this).anInt10326 = 0;
-	((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0] = i;
+	((Mob) this).anInt10322 = 0;
+	((Mob) this).xList[0] = i_0_;
+	((Mob) this).anInt10319 = 0;
+	((Mob) this).anInt10326 = 0;
+	((Mob) this).yList[0] = i;
 	int i_2_ = method2436((byte) 103);
-	((Class318_Sub1) this).anInt6388 = (256 * i_2_ + 512 * ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]);
-	((Class318_Sub1) this).anInt6377 = (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] * 512 + i_2_ * 256);
+	((Class318_Sub1) this).anInt6388 = (256 * i_2_ + 512 * ((Mob) this).yList[0]);
+	((Class318_Sub1) this).xHash = (((Mob) this).xList[0] * 512 + i_2_ * 256);
 	if (Class132.localPlayer == this)
 	    Class76.method773(true);
-	if (((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327 != null)
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327.method2529();
+	if (((Mob) this).aClass318_Sub10_10327 != null)
+	    ((Mob) this).aClass318_Sub10_10327.method2529();
     }
     
     final String method2450(boolean bool, int i) {
@@ -111,20 +111,20 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	if (i_4_ != -29034)
 	    ((Player) this).anInt10557 = -47;
 	anInt10528++;
-	if ((((Class318_Sub1_Sub3_Sub3) this).anInt10319 ^ 0xffffffff) > -10)
-	    ((Class318_Sub1_Sub3_Sub3) this).anInt10319++;
-	for (int i_6_ = ((Class318_Sub1_Sub3_Sub3) this).anInt10319; i_6_ > 0;
+	if ((((Mob) this).anInt10319 ^ 0xffffffff) > -10)
+	    ((Mob) this).anInt10319++;
+	for (int i_6_ = ((Mob) this).anInt10319; i_6_ > 0;
 	     i_6_--) {
-	    ((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[i_6_]
-		= ((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[-1 + i_6_];
-	    ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[i_6_]
-		= ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[i_6_ + -1];
-	    ((Class318_Sub1_Sub3_Sub3) this).aByteArray10321[i_6_]
-		= ((Class318_Sub1_Sub3_Sub3) this).aByteArray10321[-1 + i_6_];
+	    ((Mob) this).xList[i_6_]
+		= ((Mob) this).xList[-1 + i_6_];
+	    ((Mob) this).yList[i_6_]
+		= ((Mob) this).yList[i_6_ + -1];
+	    ((Mob) this).aByteArray10321[i_6_]
+		= ((Mob) this).aByteArray10321[-1 + i_6_];
 	}
-	((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0] = i_3_;
-	((Class318_Sub1_Sub3_Sub3) this).aByteArray10321[0] = i;
-	((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0] = i_5_;
+	((Mob) this).xList[0] = i_3_;
+	((Mob) this).aByteArray10321[0] = i;
+	((Mob) this).yList[0] = i_5_;
     }
     
     final boolean method2391(AbstractToolkit var_ha, int i, int i_7_, int i_8_) {
@@ -133,33 +133,33 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    || !method2459(131072, var_ha, 113))
 	    return false;
 	Class101 class101 = var_ha.method3705();
-	int i_9_ = ((Class318_Sub1_Sub3_Sub3) this).aClass264_10217
+	int i_9_ = ((Mob) this).aClass264_10217
 		       .method2019((byte) -31);
 	class101.method895(i_9_);
-	class101.method891(((Class318_Sub1) this).anInt6377,
+	class101.method891(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	boolean bool = false;
 	for (int i_10_ = 0;
 	     ((i_10_ ^ 0xffffffff)
-	      > (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323.length
+	      > (((Mob) this).aClass64Array10323.length
 		 ^ 0xffffffff));
 	     i_10_++) {
-	    if ((((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i_10_]
+	    if ((((Mob) this).aClass64Array10323[i_10_]
 		 != null)
 		&& (Class305.aBoolean3870
-		    ? (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323
+		    ? (((Mob) this).aClass64Array10323
 			   [i_10_].method623
 		       (i_7_, i, class101, true, 0, Class132.anInt1906))
-		    : ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323
+		    : ((Mob) this).aClass64Array10323
 			  [i_10_].method628(i_7_, i, class101, true, 0))) {
 		bool = true;
 		break;
 	    }
 	}
-	((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i_8_]
-	    = ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[1]
-	    = ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[2] = null;
+	((Mob) this).aClass64Array10323[i_8_]
+	    = ((Mob) this).aClass64Array10323[1]
+	    = ((Mob) this).aClass64Array10323[2] = null;
 	return bool;
     }
     
@@ -174,7 +174,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	int i_13_ = super.method2436((byte) 68);
 	this.method2434((byte) 51, 1 + ((0x3f & i_11_) >> 939208163));
 	aByte10552 = (byte) (i_11_ >> 2109005158 & 0x3);
-	((Class318_Sub1) this).anInt6377 += -i_13_ + method2436((byte) 47) << 1271420456;
+	((Class318_Sub1) this).xHash += -i_13_ + method2436((byte) 47) << 1271420456;
 	((Class318_Sub1) this).anInt6388 += method2436((byte) 96) + -i_13_ << 2109816392;
 	aByte10556 = class348_sub49.getByte();
 	((Player) this).anInt10540 = class348_sub49.getByte();
@@ -287,14 +287,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    (i_14_, 105, method2421((byte) 121), is,
 	     (aByte10538 ^ 0xffffffff) == -2, is_20_);
 	if (i_14_ != i_29_) {
-	    ((Class318_Sub1) this).anInt6377
-		= (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0]
+	    ((Class318_Sub1) this).xHash
+		= (((Mob) this).xList[0]
 		   << -757818679) + (method2436((byte) 89) << -341559384);
 	    ((Class318_Sub1) this).anInt6388
-		= (((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]
+		= (((Mob) this).yList[0]
 		   << 1810217385) + (method2436((byte) 98) << -592799704);
 	}
-	if (((((Class318_Sub1_Sub3_Sub3) this).anInt10290 ^ 0xffffffff)
+	if (((((Mob) this).localId ^ 0xffffffff)
 	     == (Class348_Sub42_Sub11.localPlayerId ^ 0xffffffff))
 	    && is_30_ != null) {
 	    for (int i_31_ = 0; i_31_ < is_20_.length; i_31_++) {
@@ -304,17 +304,17 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		}
 	    }
 	}
-	if (((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327 != null)
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327
+	if (((Mob) this).aClass318_Sub10_10327 != null)
+	    ((Mob) this).aClass318_Sub10_10327
 		.method2529();
-	if (((Class318_Sub1_Sub3_Sub3) this).anInt10268 != -1
-	    && ((Class318_Sub1_Sub3_Sub3) this).aBoolean10213) {
+	if (((Mob) this).anInt10268 != -1
+	    && ((Mob) this).aBoolean10213) {
 	    Class225 class225 = this.method2422((byte) 72);
-	    if (!class225.method1623((((Class318_Sub1_Sub3_Sub3) this)
+	    if (!class225.method1623((((Mob) this)
 				      .anInt10268),
 				     -40)) {
-		((Class318_Sub1_Sub3_Sub3) this).aBoolean10213 = false;
-		((Class318_Sub1_Sub3_Sub3) this).anInt10268 = -1;
+		((Mob) this).aBoolean10213 = false;
+		((Mob) this).anInt10268 = -1;
 	    }
 	}
     }
@@ -333,9 +333,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 						    * 2607.5945876176133);
 			AnimatableToolkit class64_38_
 			    = (Canvas_Sub1.method122
-			       (((Class318_Sub1_Sub3_Sub3) this).anInt10252,
-				((Class318_Sub1_Sub3_Sub3) this).anInt10302,
-				((Class318_Sub1_Sub3_Sub3) this).anInt10208,
+			       (((Mob) this).anInt10252,
+				((Mob) this).anInt10302,
+				((Mob) this).anInt10208,
 				i_37_, i_35_, (byte) -35, var_ha));
 			if (class64_38_ == null)
 			    break;
@@ -379,9 +379,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			   & 0x3fff);
 		    AnimatableToolkit class64_46_
 			= (Canvas_Sub1.method122
-			   (((Class318_Sub1_Sub3_Sub3) this).anInt10252,
-			    ((Class318_Sub1_Sub3_Sub3) this).anInt10302,
-			    ((Class318_Sub1_Sub3_Sub3) this).anInt10208, i_45_,
+			   (((Mob) this).anInt10252,
+			    ((Mob) this).anInt10302,
+			    ((Mob) this).anInt10208, i_45_,
 			    i_41_, (byte) -35, var_ha));
 		    if (class64_46_ == null)
 			break;
@@ -447,18 +447,14 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	anInt10529++;
 	if (i_50_ != -26443)
 	    method2451((byte) -35, 9, 26, 87);
-	if ((((Class318_Sub1_Sub3_Sub3) this).anInt10286 ^ 0xffffffff) != 0
-	    && ((AnimationDefinition)
-		Class10.animationLoader.method835(((Class318_Sub1_Sub3_Sub3)
-						this).anInt10286,
-					       7)).anInt245 == 1) {
-	    ((Class318_Sub1_Sub3_Sub3) this).anInt10286 = -1;
-	    ((Class318_Sub1_Sub3_Sub3) this).anIntArray10236 = null;
+	if ((((Mob) this).anInt10286 ^ 0xffffffff) != 0 && ((AnimationDefinition) Class10.animationLoader.method835(((Mob)this).anInt10286, 7)).anInt245 == 1) {
+	    ((Mob) this).anInt10286 = -1;
+	    ((Mob) this).anIntArray10236 = null;
 	}
-	if ((((Class318_Sub1_Sub3_Sub3) this).anInt10269 ^ 0xffffffff) != 0) {
+	if ((((Mob) this).anInt10269 ^ 0xffffffff) != 0) {
 	    GfxDefinition class368
 		= (Class348_Sub40_Sub18.gfxLoader.loadDefinition
-		   ((byte) 59, ((Class318_Sub1_Sub3_Sub3) this).anInt10269));
+		   ((byte) 59, ((Mob) this).anInt10269));
 	    if (((GfxDefinition) class368).aBoolean4487
 		&& ((GfxDefinition) class368).anInt4503 != -1
 		&& (((AnimationDefinition)
@@ -466,12 +462,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 						     .anInt4503),
 						    i_50_ ^ ~0x674d)).anInt245
 		    ^ 0xffffffff) == -2)
-		((Class318_Sub1_Sub3_Sub3) this).anInt10269 = -1;
+		((Mob) this).anInt10269 = -1;
 	}
-	if (((Class318_Sub1_Sub3_Sub3) this).anInt10291 != -1) {
+	if (((Mob) this).anInt10291 != -1) {
 	    GfxDefinition class368
 		= (Class348_Sub40_Sub18.gfxLoader.loadDefinition
-		   ((byte) 124, ((Class318_Sub1_Sub3_Sub3) this).anInt10291));
+		   ((byte) 124, ((Mob) this).anInt10291));
 	    if (((GfxDefinition) class368).aBoolean4487
 		&& ((GfxDefinition) class368).anInt4503 != -1
 		&& ((((AnimationDefinition)
@@ -479,7 +475,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			  .method835(((GfxDefinition) class368).anInt4503, 7))
 		     .anInt245)
 		    ^ 0xffffffff) == -2)
-		((Class318_Sub1_Sub3_Sub3) this).anInt10291 = -1;
+		((Mob) this).anInt10291 = -1;
 	}
 	((Player) this).anInt10524 = -1;
 	if (i_52_ >= 0
@@ -487,22 +483,20 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    && i >= 0
 	    && (i ^ 0xffffffff) > (Class348_Sub40_Sub3.mapSizeY
 				   ^ 0xffffffff)) {
-	    if ((((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0]
-		 ^ 0xffffffff) <= -1
-		&& ((Class367_Sub4.mapSizeX ^ 0xffffffff)
-		    < (((Class318_Sub1_Sub3_Sub3) this).anIntArray10320[0]
+	    if ((((Mob) this).xList[0] ^ 0xffffffff) <= -1 && ((Class367_Sub4.mapSizeX ^ 0xffffffff)
+		    < (((Mob) this).xList[0]
 		       ^ 0xffffffff))
-		&& (((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0]
+		&& (((Mob) this).yList[0]
 		    ^ 0xffffffff) <= -1
 		&& (Class348_Sub40_Sub3.mapSizeY
-		    > ((Class318_Sub1_Sub3_Sub3) this).anIntArray10317[0])) {
+		    > ((Mob) this).yList[0])) {
 		if (i_51_ == 2)
 		    Class218.method1592((byte) 2, i, 4, i_52_, this);
 		method2451(i_51_, i_52_, -29034, i);
 	    } else
-		setLocationUnkn(i, i_52_);
+		setLocalCoords(i, i_52_);
 	} else
-	    setLocationUnkn(i, i_52_);
+	    setLocalCoords(i, i_52_);
     }
     
     final Class318_Sub4 method2386(int i, AbstractToolkit var_ha) {
@@ -511,33 +505,33 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    || !method2459(2048, var_ha, -95))
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	int i_53_ = ((Class318_Sub1_Sub3_Sub3) this).aClass264_10217
+	int i_53_ = ((Mob) this).aClass264_10217
 			.method2019((byte) -126);
 	class101.method895(i_53_);
 	Class357 class357
 	    = (Message.aClass357ArrayArrayArray2029
-	       [((Class318_Sub1) this).aByte6381]
-	       [((Class318_Sub1) this).anInt6377 >> Class362.anInt4459]
+	       [((Class318_Sub1) this).heightLevel]
+	       [((Class318_Sub1) this).xHash >> Class362.anInt4459]
 	       [((Class318_Sub1) this).anInt6388 >> Class362.anInt4459]);
 	if (class357 == null
 	    || ((Class357) class357).aClass318_Sub1_Sub1_4402 == null)
-	    ((Class318_Sub1_Sub3_Sub3) this).anInt10274
-		-= (float) ((Class318_Sub1_Sub3_Sub3) this).anInt10274 / 10.0F;
+	    ((Mob) this).anInt10274
+		-= (float) ((Mob) this).anInt10274 / 10.0F;
 	else {
-	    int i_54_ = (((Class318_Sub1_Sub3_Sub3) this).anInt10274
+	    int i_54_ = (((Mob) this).anInt10274
 			 + -(((Class318_Sub1_Sub1)
 			      ((Class357) class357).aClass318_Sub1_Sub1_4402)
 			     .aShort8727));
-	    ((Class318_Sub1_Sub3_Sub3) this).anInt10274
+	    ((Mob) this).anInt10274
 		-= (float) i_54_ / 10.0F;
 	}
-	class101.method891(((Class318_Sub1) this).anInt6377,
+	class101.method891(((Class318_Sub1) this).xHash,
 			   (-20
 			    + (((Class318_Sub1) this).anInt6382
-			       - ((Class318_Sub1_Sub3_Sub3) this).anInt10274)),
+			       - ((Mob) this).anInt10274)),
 			   ((Class318_Sub1) this).anInt6388);
 	Class318_Sub4 class318_sub4 = null;
-	((Class318_Sub1_Sub3_Sub3) this).aBoolean10324 = false;
+	((Mob) this).aBoolean10324 = false;
 	if ((((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 		 .aClass239_Sub21_7270.method1812(-32350)
 	     ^ 0xffffffff)
@@ -551,51 +545,51 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			 (((Class154) (((Player) this)
 				       .aClass154_10536)).anInt2093))).aBoolean1369)) {
 		AnimationDefinition class17
-		    = (((((Class318_Sub1_Sub3_Sub3) this).anInt10286
+		    = (((((Mob) this).anInt10286
 			 ^ 0xffffffff) != 0
-			&& ((Class318_Sub1_Sub3_Sub3) this).anInt10218 == 0)
+			&& ((Mob) this).anInt10218 == 0)
 		       ? (Class10.animationLoader.method835
-			  (((Class318_Sub1_Sub3_Sub3) this).anInt10286, 7))
+			  (((Mob) this).anInt10286, 7))
 		       : null);
 		AnimationDefinition class17_55_
-		    = (((((Class318_Sub1_Sub3_Sub3) this).anInt10268
+		    = (((((Mob) this).anInt10268
 			 ^ 0xffffffff) == 0
 			|| ((Player) this).aBoolean10521
-			|| (((Class318_Sub1_Sub3_Sub3) this).aBoolean10213
+			|| (((Mob) this).aBoolean10213
 			    && class17 != null))
 		       ? null
 		       : (Class10.animationLoader.method835
-			  (((Class318_Sub1_Sub3_Sub3) this).anInt10268, 7)));
+			  (((Mob) this).anInt10268, 7)));
 		AnimatableToolkit class64
 		    = (Node.method2711
-		       (((Class318_Sub1_Sub3_Sub3) this).anInt10302, i_53_,
-			((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[0],
-			((Class318_Sub1_Sub3_Sub3) this).anInt10208, false,
+		       (((Mob) this).anInt10302, i_53_,
+			((Mob) this).aClass64Array10323[0],
+			((Mob) this).anInt10208, false,
 			(class17_55_ == null
-			 ? ((Class318_Sub1_Sub3_Sub3) this).anInt10267
-			 : ((Class318_Sub1_Sub3_Sub3) this).anInt10245),
-			0, 1, ((Class318_Sub1_Sub3_Sub3) this).anInt10252,
+			 ? ((Mob) this).anInt10267
+			 : ((Mob) this).anInt10245),
+			0, 1, ((Mob) this).anInt10252,
 			var_ha, 160, 0, 240,
 			class17_55_ == null ? class17 : class17_55_));
 		if (class64 != null) {
 		    class318_sub4 = (DummyOutputstream.method136
-				     (1 + (((Class318_Sub1_Sub3_Sub3) this)
+				     (1 + (((Mob) this)
 					   .aClass64Array10323).length,
 				      true, false));
-		    ((Class318_Sub1_Sub3_Sub3) this).aBoolean10324 = true;
+		    ((Mob) this).aBoolean10324 = true;
 		    var_ha.C(false);
 		    if (Class305.aBoolean3870)
 			class64.method608(class101,
 					  (((Class318_Sub4) class318_sub4)
 					   .aClass318_Sub3Array6414
-					   [(((Class318_Sub1_Sub3_Sub3) this)
+					   [(((Mob) this)
 					     .aClass64Array10323).length]),
 					  Class132.anInt1906, 0);
 		    else
 			class64.method615(class101,
 					  (((Class318_Sub4) class318_sub4)
 					   .aClass318_Sub3Array6414
-					   [(((Class318_Sub1_Sub3_Sub3) this)
+					   [(((Mob) this)
 					     .aClass64Array10323).length]),
 					  0);
 		    var_ha.C(true);
@@ -603,7 +597,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    }
 	}
 	if (this == Class132.localPlayer) {
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    for (int i_56_ = -1 + Class348_Sub27.aClass302Array6897.length;
@@ -624,9 +618,9 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 				= (-(((Class318_Sub1)
 				      (Class132
 				       .localPlayer))
-				     .anInt6377)
+				     .xHash)
 				   + ((Class318_Sub1)
-				      class318_sub1_sub3_sub3_sub1).anInt6377);
+				      class318_sub1_sub3_sub3_sub1).xHash);
 			    int i_58_
 				= (-(((Class318_Sub1)
 				      (Class132
@@ -637,12 +631,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			    if (Class305.aBoolean3870)
 				method2454(6253, i_57_, Class132.anInt1906,
 					   ((Class302) class302).anInt3834,
-					   (((Class318_Sub1_Sub3_Sub3) this)
+					   (((Mob) this)
 					    .aClass64Array10323[0]),
 					   92160000, class101, var_ha, i_58_);
 			    else
 				method2453(i_57_, var_ha, 92160000,
-					   (((Class318_Sub1_Sub3_Sub3) this)
+					   (((Mob) this)
 					    .aClass64Array10323[0]),
 					   0, i_58_, class101,
 					   ((Class302) class302).anInt3834);
@@ -652,7 +646,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			int i_59_
 			    = (-(((Class318_Sub1)
 				  Class132.localPlayer)
-				 .anInt6377)
+				 .xHash)
 			       + 256 + ((Class302) class302).anInt3835);
 			int i_60_
 			    = (-(((Class318_Sub1)
@@ -665,12 +659,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			if (Class305.aBoolean3870)
 			    method2454(6253, i_59_, Class132.anInt1906,
 				       ((Class302) class302).anInt3834,
-				       (((Class318_Sub1_Sub3_Sub3) this)
+				       (((Mob) this)
 					.aClass64Array10323[0]),
 				       i_61_, class101, var_ha, i_60_);
 			else
 			    method2453(i_59_, var_ha, i_61_,
-				       (((Class318_Sub1_Sub3_Sub3) this)
+				       (((Mob) this)
 					.aClass64Array10323[0]),
 				       0, i_60_, class101,
 				       ((Class302) class302).anInt3834);
@@ -678,22 +672,22 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		    if (((Class302) class302).anInt3840 == 10
 			&& (((Class302) class302).anInt3833 ^ 0xffffffff) <= -1
 			&& (((ClassicLoadingScreen
-			      .players).length
+			      .onscreenPlayers).length
 			     ^ 0xffffffff)
 			    < (((Class302) class302).anInt3833
 			       ^ 0xffffffff))) {
 			Player class318_sub1_sub3_sub3_sub2_62_
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [((Class302) class302).anInt3833]);
 			if (class318_sub1_sub3_sub3_sub2_62_ != null) {
 			    int i_63_
 				= (-(((Class318_Sub1)
 				      (Class132
 				       .localPlayer))
-				     .anInt6377)
+				     .xHash)
 				   + (((Class318_Sub1)
 				       class318_sub1_sub3_sub3_sub2_62_)
-				      .anInt6377));
+				      .xHash));
 			    int i_64_
 				= (-(((Class318_Sub1)
 				      (Class132
@@ -705,12 +699,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			    if (Class305.aBoolean3870)
 				method2454(6253, i_63_, Class132.anInt1906,
 					   ((Class302) class302).anInt3834,
-					   (((Class318_Sub1_Sub3_Sub3) this)
+					   (((Mob) this)
 					    .aClass64Array10323[0]),
 					   92160000, class101, var_ha, i_64_);
 			    else
 				method2453(i_63_, var_ha, 92160000,
-					   (((Class318_Sub1_Sub3_Sub3) this)
+					   (((Mob) this)
 					    .aClass64Array10323[0]),
 					   i ^ 0x1, i_64_, class101,
 					   ((Class302) class302).anInt3834);
@@ -719,31 +713,31 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		}
 	    }
 	    class101.method895(i_53_);
-	    class101.method891(((Class318_Sub1) this).anInt6377,
+	    class101.method891(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	}
 	class101.method895(i_53_);
-	class101.method891(((Class318_Sub1) this).anInt6377,
+	class101.method891(((Class318_Sub1) this).xHash,
 			   (((Class318_Sub1) this).anInt6382
-			    + (-5 + -(((Class318_Sub1_Sub3_Sub3) this)
+			    + (-5 + -(((Mob) this)
 				      .anInt10274))),
 			   ((Class318_Sub1) this).anInt6388);
 	if (class318_sub4 == null)
 	    class318_sub4
-		= DummyOutputstream.method136((((Class318_Sub1_Sub3_Sub3) this)
+		= DummyOutputstream.method136((((Mob) this)
 					       .aClass64Array10323).length,
 					      true, false);
 	this.method2432(var_ha, -15074, class101, false,
-			((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323);
+			((Mob) this).aClass64Array10323);
 	if (Class305.aBoolean3870) {
 	    for (int i_65_ = 0;
-		 i_65_ < (((Class318_Sub1_Sub3_Sub3) this)
+		 i_65_ < (((Mob) this)
 			  .aClass64Array10323).length;
 		 i_65_++) {
-		if (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i_65_]
+		if (((Mob) this).aClass64Array10323[i_65_]
 		    != null)
-		    ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323
+		    ((Mob) this).aClass64Array10323
 			[i_65_].method608
 			(class101,
 			 (((Class318_Sub4) class318_sub4)
@@ -754,12 +748,12 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    }
 	} else {
 	    for (int i_66_ = 0;
-		 i_66_ < (((Class318_Sub1_Sub3_Sub3) this)
+		 i_66_ < (((Mob) this)
 			  .aClass64Array10323).length;
 		 i_66_++) {
-		if (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i_66_]
+		if (((Mob) this).aClass64Array10323[i_66_]
 		    != null)
-		    ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323
+		    ((Mob) this).aClass64Array10323
 			[i_66_].method615
 			(class101,
 			 (((Class318_Sub4) class318_sub4)
@@ -768,8 +762,8 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			  ? 1 : 0));
 	    }
 	}
-	if (((Class318_Sub1_Sub3_Sub3) this).aClass318_Sub10_10327 != null) {
-	    Class98 class98 = ((Class318_Sub1_Sub3_Sub3) this)
+	if (((Mob) this).aClass318_Sub10_10327 != null) {
+	    Class98 class98 = ((Mob) this)
 				  .aClass318_Sub10_10327.method2525();
 	    if (Class305.aBoolean3870)
 		var_ha.method3685(class98, Class132.anInt1906);
@@ -778,18 +772,18 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	}
 	for (int i_67_ = 0;
 	     (i_67_
-	      < ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323.length);
+	      < ((Mob) this).aClass64Array10323.length);
 	     i_67_++) {
-	    if (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i_67_]
+	    if (((Mob) this).aClass64Array10323[i_67_]
 		!= null)
-		((Class318_Sub1_Sub3_Sub3) this).aBoolean10324
-		    |= ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323
+		((Mob) this).aBoolean10324
+		    |= ((Mob) this).aClass64Array10323
 			   [i_67_].F();
 	}
-	((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[0]
-	    = ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[i]
-	    = ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[2] = null;
-	((Class318_Sub1_Sub3_Sub3) this).anInt10301 = Class239_Sub15.anInt6006;
+	((Mob) this).aClass64Array10323[0]
+	    = ((Mob) this).aClass64Array10323[i]
+	    = ((Mob) this).aClass64Array10323[2] = null;
+	((Mob) this).anInt10301 = Class239_Sub15.anInt6006;
 	return class318_sub4;
     }
     
@@ -842,7 +836,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
     final boolean method2388(int i) {
 	anInt10523++;
 	if (i >= -65)
-	    setLocationUnkn(-64, -39);
+	    setLocalCoords(-64, -39);
 	return false;
     }
     
@@ -873,51 +867,51 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	int i_70_ = i;
 	Class225 class225 = this.method2422((byte) 72);
 	AnimationDefinition class17
-	    = ((((Class318_Sub1_Sub3_Sub3) this).anInt10286 == -1
-		|| ((Class318_Sub1_Sub3_Sub3) this).anInt10218 != 0)
+	    = ((((Mob) this).anInt10286 == -1
+		|| ((Mob) this).anInt10218 != 0)
 	       ? null
-	       : Class10.animationLoader.method835(((Class318_Sub1_Sub3_Sub3)
+	       : Class10.animationLoader.method835(((Mob)
 						 this).anInt10286,
 						7));
 	AnimationDefinition class17_71_
-	    = (((((Class318_Sub1_Sub3_Sub3) this).anInt10268 ^ 0xffffffff) != 0
+	    = (((((Mob) this).anInt10268 ^ 0xffffffff) != 0
 		&& !((Player) this).aBoolean10521
-		&& (!((Class318_Sub1_Sub3_Sub3) this).aBoolean10213
+		&& (!((Mob) this).aBoolean10213
 		    || class17 == null))
 	       ? Class10.animationLoader
-		     .method835(((Class318_Sub1_Sub3_Sub3) this).anInt10268, 7)
+		     .method835(((Mob) this).anInt10268, 7)
 	       : null);
 	int i_72_ = ((Class225) class225).anInt2932;
 	int i_73_ = ((Class225) class225).anInt2941;
 	if (i_72_ != 0 || i_73_ != 0 || ((Class225) class225).anInt2950 != 0
 	    || (((Class225) class225).anInt2926 ^ 0xffffffff) != -1)
 	    i |= 0x7;
-	int i_74_ = ((Class318_Sub1_Sub3_Sub3) this).aClass264_10217
+	int i_74_ = ((Mob) this).aClass264_10217
 			.method2019((byte) -106);
 	boolean bool
-	    = (((Class318_Sub1_Sub3_Sub3) this).aByte10279 != 0
-	       && (((Class318_Sub1_Sub3_Sub3) this).anInt10248
+	    = (((Mob) this).aByte10279 != 0
+	       && (((Mob) this).anInt10248
 		   <= Class367_Sub11.logicCycle)
-	       && ((((Class318_Sub1_Sub3_Sub3) this).anInt10250 ^ 0xffffffff)
+	       && ((((Mob) this).anInt10250 ^ 0xffffffff)
 		   < (Class367_Sub11.logicCycle ^ 0xffffffff)));
 	if (bool)
 	    i |= 0x80000;
 	AnimatableToolkit class64
-	    = (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[0]
+	    = (((Mob) this).aClass64Array10323[0]
 	       = (((Player) this).aClass154_10536
 		      .method1226
-		  (Class318_Sub1_Sub3_Sub3.varbitHandler, class17_71_,
-		   ((Class318_Sub1_Sub3_Sub3) this).aClass182Array10308, true,
+		  (Mob.varbitHandler, class17_71_,
+		   ((Mob) this).aClass182Array10308, true,
 		   ToolkitException.itemLoader, i_74_, class17,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10244, true,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10312,
-		   ((Class318_Sub1_Sub3_Sub3) this).anIntArray10296, i,
+		   ((Mob) this).anInt10244, true,
+		   ((Mob) this).anInt10312,
+		   ((Mob) this).anIntArray10296, i,
 		   Class348_Sub40_Sub25.aClass150_9342,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10232, var_ha,
+		   ((Mob) this).anInt10232, var_ha,
 		   Class189.npcLoader, Class10.animationLoader,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10245,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10267,
-		   ((Class318_Sub1_Sub3_Sub3) this).anInt10203,
+		   ((Mob) this).anInt10245,
+		   ((Mob) this).anInt10267,
+		   ((Mob) this).anInt10203,
 		   Class64_Sub3.aClass261_5558)));
 	int i_75_ = FileIndexTracker.method2201(2121);
 	if ((Class226.anInt2964 ^ 0xffffffff) > -97
@@ -942,105 +936,105 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	}
 	if (class64 == null)
 	    return false;
-	((Class318_Sub1_Sub3_Sub3) this).anInt10207 = class64.fa();
-	((Class318_Sub1_Sub3_Sub3) this).anInt10230 = class64.ma();
+	((Mob) this).anInt10207 = class64.fa();
+	((Mob) this).anInt10230 = class64.ma();
 	this.method2439(-115, class64);
 	if ((i_72_ ^ 0xffffffff) != -1 || (i_73_ ^ 0xffffffff) != -1) {
 	    this.method2424(i_74_, i_72_, ((Class225) class225).anInt2943,
 			    i_73_, (byte) 108,
 			    ((Class225) class225).anInt2912);
-	    if (((Class318_Sub1_Sub3_Sub3) this).anInt10302 != 0)
-		class64.FA(((Class318_Sub1_Sub3_Sub3) this).anInt10302);
-	    if (((Class318_Sub1_Sub3_Sub3) this).anInt10208 != 0)
-		class64.VA(((Class318_Sub1_Sub3_Sub3) this).anInt10208);
-	    if ((((Class318_Sub1_Sub3_Sub3) this).anInt10252 ^ 0xffffffff)
+	    if (((Mob) this).anInt10302 != 0)
+		class64.FA(((Mob) this).anInt10302);
+	    if (((Mob) this).anInt10208 != 0)
+		class64.VA(((Mob) this).anInt10208);
+	    if ((((Mob) this).anInt10252 ^ 0xffffffff)
 		!= -1)
-		class64.H(0, ((Class318_Sub1_Sub3_Sub3) this).anInt10252, 0);
+		class64.H(0, ((Mob) this).anInt10252, 0);
 	} else
 	    this.method2424(i_74_, method2436((byte) 124) << 471770697, 0,
 			    method2436((byte) 58) << -790952727, (byte) 65, 0);
 	if (bool)
-	    class64.method624(((Class318_Sub1_Sub3_Sub3) this).aByte10255,
-			      ((Class318_Sub1_Sub3_Sub3) this).aByte10206,
-			      ((Class318_Sub1_Sub3_Sub3) this).aByte10270,
-			      (((Class318_Sub1_Sub3_Sub3) this).aByte10279
+	    class64.method624(((Mob) this).aByte10255,
+			      ((Mob) this).aByte10206,
+			      ((Mob) this).aByte10270,
+			      (((Mob) this).aByte10279
 			       & 0xff));
 	if (!((Player) this).aBoolean10521
-	    && ((Class318_Sub1_Sub3_Sub3) this).anInt10269 != -1
-	    && ((Class318_Sub1_Sub3_Sub3) this).anInt10240 != -1) {
+	    && ((Mob) this).anInt10269 != -1
+	    && ((Mob) this).anInt10240 != -1) {
 	    GfxDefinition class368
 		= (Class348_Sub40_Sub18.gfxLoader.loadDefinition
-		   ((byte) 76, ((Class318_Sub1_Sub3_Sub3) this).anInt10269));
+		   ((byte) 76, ((Mob) this).anInt10269));
 	    boolean bool_78_ = (((GfxDefinition) class368).aByte4488 == 3
 				&& ((i_72_ ^ 0xffffffff) != -1 || i_73_ != 0));
 	    int i_79_ = i_70_;
 	    if (!bool_78_) {
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10237 != 0)
+		if (((Mob) this).anInt10237 != 0)
 		    i_79_ |= 0x5;
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10220 != 0)
+		if (((Mob) this).anInt10220 != 0)
 		    i_79_ |= 0x2;
-		if ((((Class318_Sub1_Sub3_Sub3) this).anInt10278 ^ 0xffffffff)
+		if ((((Mob) this).anInt10278 ^ 0xffffffff)
 		    <= -1)
 		    i_79_ |= 0x7;
 	    } else
 		i_79_ |= 0x7;
 	    AnimatableToolkit class64_80_
-		= (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[1]
+		= (((Mob) this).aClass64Array10323[1]
 		   = (class368.method3562
-		      (((Class318_Sub1_Sub3_Sub3) this).anInt10240, var_ha,
-		       ((Class318_Sub1_Sub3_Sub3) this).anInt10243, i_79_,
-		       ((Class318_Sub1_Sub3_Sub3) this).anInt10283,
+		      (((Mob) this).anInt10240, var_ha,
+		       ((Mob) this).anInt10243, i_79_,
+		       ((Mob) this).anInt10283,
 		       Class10.animationLoader, (byte) 46)));
 	    if (class64_80_ != null) {
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10278 >= 0
+		if (((Mob) this).anInt10278 >= 0
 		    && ((Class225) class225).anIntArrayArray2939 != null
 		    && ((((Class225) class225).anIntArrayArray2939
-			 [((Class318_Sub1_Sub3_Sub3) this).anInt10278])
+			 [((Mob) this).anInt10278])
 			!= null)) {
 		    int i_81_ = 0;
 		    int i_82_ = 0;
 		    int i_83_ = 0;
 		    if (((Class225) class225).anIntArrayArray2939 != null
 			&& ((((Class225) class225).anIntArrayArray2939
-			     [((Class318_Sub1_Sub3_Sub3) this).anInt10278])
+			     [((Mob) this).anInt10278])
 			    != null)) {
 			i_82_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [1]);
 			i_83_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [2]);
 			i_81_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [0]);
 		    }
 		    if (((Class225) class225).anIntArrayArray2910 != null
 			&& ((((Class225) class225).anIntArrayArray2910
-			     [((Class318_Sub1_Sub3_Sub3) this).anInt10278])
+			     [((Mob) this).anInt10278])
 			    != null)) {
 			i_82_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [1]);
 			i_83_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [2]);
 			i_81_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10278]
+				  [((Mob) this).anInt10278]
 				  [0]);
 		    }
 		    if (i_83_ != 0 || i_81_ != 0) {
 			int i_84_ = i_74_;
-			if ((((Class318_Sub1_Sub3_Sub3) this).anIntArray10296
+			if ((((Mob) this).anIntArray10296
 			     != null)
-			    && ((((Class318_Sub1_Sub3_Sub3) this)
+			    && ((((Mob) this)
 				 .anIntArray10296
-				 [((Class318_Sub1_Sub3_Sub3) this).anInt10278])
+				 [((Mob) this).anInt10278])
 				!= -1))
-			    i_84_ = (((Class318_Sub1_Sub3_Sub3) this)
+			    i_84_ = (((Mob) this)
 				     .anIntArray10296
-				     [(((Class318_Sub1_Sub3_Sub3) this)
+				     [(((Mob) this)
 				       .anInt10278)]);
-			int i_85_ = (i_84_ + (((Class318_Sub1_Sub3_Sub3) this)
+			int i_85_ = (i_84_ + (((Mob) this)
 					      .anInt10237) * 2048 + -i_74_
 				     & 0x3fff);
 			if ((i_85_ ^ 0xffffffff) != -1)
@@ -1053,38 +1047,38 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 			i_81_ = i_88_;
 		    }
 		    class64_80_.H(i_81_, i_82_, i_83_);
-		} else if ((((Class318_Sub1_Sub3_Sub3) this).anInt10237
+		} else if ((((Mob) this).anInt10237
 			    ^ 0xffffffff)
 			   != -1)
 		    class64_80_
-			.a(2048 * ((Class318_Sub1_Sub3_Sub3) this).anInt10237);
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10220 != 0)
+			.a(2048 * ((Mob) this).anInt10237);
+		if (((Mob) this).anInt10220 != 0)
 		    class64_80_.H(0,
-				  (-((Class318_Sub1_Sub3_Sub3) this).anInt10220
+				  (-((Mob) this).anInt10220
 				   << -1384741150),
 				  0);
 		if (bool_78_) {
-		    if (((Class318_Sub1_Sub3_Sub3) this).anInt10302 != 0)
+		    if (((Mob) this).anInt10302 != 0)
 			class64_80_
-			    .FA(((Class318_Sub1_Sub3_Sub3) this).anInt10302);
-		    if (((Class318_Sub1_Sub3_Sub3) this).anInt10208 != 0)
+			    .FA(((Mob) this).anInt10302);
+		    if (((Mob) this).anInt10208 != 0)
 			class64_80_
-			    .VA(((Class318_Sub1_Sub3_Sub3) this).anInt10208);
-		    if (((Class318_Sub1_Sub3_Sub3) this).anInt10252 != 0)
-			class64_80_.H(0, (((Class318_Sub1_Sub3_Sub3) this)
+			    .VA(((Mob) this).anInt10208);
+		    if (((Mob) this).anInt10252 != 0)
+			class64_80_.H(0, (((Mob) this)
 					  .anInt10252), 0);
 		}
 	    }
 	} else
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[1] = null;
+	    ((Mob) this).aClass64Array10323[1] = null;
 	if (((Player) this).aBoolean10521
-	    || ((Class318_Sub1_Sub3_Sub3) this).anInt10291 == -1
-	    || ((Class318_Sub1_Sub3_Sub3) this).anInt10224 == -1)
-	    ((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[2] = null;
+	    || ((Mob) this).anInt10291 == -1
+	    || ((Mob) this).anInt10224 == -1)
+	    ((Mob) this).aClass64Array10323[2] = null;
 	else {
 	    GfxDefinition class368
 		= (Class348_Sub40_Sub18.gfxLoader.loadDefinition
-		   ((byte) 76, ((Class318_Sub1_Sub3_Sub3) this).anInt10291));
+		   ((byte) 76, ((Mob) this).anInt10291));
 	    boolean bool_89_ = (((GfxDefinition) class368).aByte4488 == 3
 				&& ((i_72_ ^ 0xffffffff) != -1
 				    || (i_73_ ^ 0xffffffff) != -1));
@@ -1092,29 +1086,29 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	    if (bool_89_)
 		i_90_ |= 0x7;
 	    else {
-		if ((((Class318_Sub1_Sub3_Sub3) this).anInt10202 ^ 0xffffffff)
+		if ((((Mob) this).anInt10202 ^ 0xffffffff)
 		    != -1)
 		    i_90_ |= 0x5;
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10260 != 0)
+		if (((Mob) this).anInt10260 != 0)
 		    i_90_ |= 0x2;
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10289 >= 0)
+		if (((Mob) this).anInt10289 >= 0)
 		    i_90_ |= 0x7;
 	    }
 	    AnimatableToolkit class64_91_
-		= (((Class318_Sub1_Sub3_Sub3) this).aClass64Array10323[2]
+		= (((Mob) this).aClass64Array10323[2]
 		   = (class368.method3558
-		      (((Class318_Sub1_Sub3_Sub3) this).anInt10273,
-		       ((Class318_Sub1_Sub3_Sub3) this).anInt10276, var_ha,
+		      (((Mob) this).anInt10273,
+		       ((Mob) this).anInt10276, var_ha,
 		       i_90_, 3172, Class10.animationLoader,
-		       ((Class318_Sub1_Sub3_Sub3) this).anInt10224)));
+		       ((Mob) this).anInt10224)));
 	    if (class64_91_ != null) {
-		if (((Class318_Sub1_Sub3_Sub3) this).anInt10289 < 0
+		if (((Mob) this).anInt10289 < 0
 		    || ((Class225) class225).anIntArrayArray2939 == null
 		    || ((((Class225) class225).anIntArrayArray2939
-			 [((Class318_Sub1_Sub3_Sub3) this).anInt10289])
+			 [((Mob) this).anInt10289])
 			== null)) {
-		    if (((Class318_Sub1_Sub3_Sub3) this).anInt10202 != 0)
-			class64_91_.a(2048 * (((Class318_Sub1_Sub3_Sub3) this)
+		    if (((Mob) this).anInt10202 != 0)
+			class64_91_.a(2048 * (((Mob) this)
 					      .anInt10202));
 		} else {
 		    int i_92_ = 0;
@@ -1122,47 +1116,47 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		    int i_94_ = 0;
 		    if (((Class225) class225).anIntArrayArray2939 != null
 			&& ((((Class225) class225).anIntArrayArray2939
-			     [((Class318_Sub1_Sub3_Sub3) this).anInt10289])
+			     [((Mob) this).anInt10289])
 			    != null)) {
 			i_92_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [0]);
 			i_93_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [1]);
 			i_94_ += (((Class225) class225).anIntArrayArray2939
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [2]);
 		    }
 		    if (((Class225) class225).anIntArrayArray2910 != null
 			&& ((((Class225) class225).anIntArrayArray2910
-			     [((Class318_Sub1_Sub3_Sub3) this).anInt10289])
+			     [((Mob) this).anInt10289])
 			    != null)) {
 			i_92_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [0]);
 			i_93_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [1]);
 			i_94_ += (((Class225) class225).anIntArrayArray2910
-				  [((Class318_Sub1_Sub3_Sub3) this).anInt10289]
+				  [((Mob) this).anInt10289]
 				  [2]);
 		    }
 		    if ((i_94_ ^ 0xffffffff) != -1 || i_92_ != 0) {
 			int i_95_ = i_74_;
-			if ((((Class318_Sub1_Sub3_Sub3) this).anIntArray10296
+			if ((((Mob) this).anIntArray10296
 			     != null)
-			    && ((((Class318_Sub1_Sub3_Sub3) this)
+			    && ((((Mob) this)
 				 .anIntArray10296
-				 [((Class318_Sub1_Sub3_Sub3) this).anInt10289])
+				 [((Mob) this).anInt10289])
 				!= -1))
-			    i_95_ = (((Class318_Sub1_Sub3_Sub3) this)
+			    i_95_ = (((Mob) this)
 				     .anIntArray10296
-				     [(((Class318_Sub1_Sub3_Sub3) this)
+				     [(((Mob) this)
 				       .anInt10289)]);
 			int i_96_
 			    = (0x3fff
-			       & -i_74_ + ((((Class318_Sub1_Sub3_Sub3) this)
+			       & -i_74_ + ((((Mob) this)
 					    .anInt10202) * 2048
 					   + i_95_));
 			if (i_96_ != 0)
@@ -1175,25 +1169,25 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 		    }
 		    class64_91_.H(i_92_, i_93_, i_94_);
 		}
-		if ((((Class318_Sub1_Sub3_Sub3) this).anInt10260 ^ 0xffffffff)
+		if ((((Mob) this).anInt10260 ^ 0xffffffff)
 		    != -1)
 		    class64_91_.H(0,
-				  (-((Class318_Sub1_Sub3_Sub3) this).anInt10260
+				  (-((Mob) this).anInt10260
 				   << -1898332830),
 				  0);
 		if (bool_89_) {
-		    if (((Class318_Sub1_Sub3_Sub3) this).anInt10302 != 0)
+		    if (((Mob) this).anInt10302 != 0)
 			class64_91_
-			    .FA(((Class318_Sub1_Sub3_Sub3) this).anInt10302);
-		    if ((((Class318_Sub1_Sub3_Sub3) this).anInt10208
+			    .FA(((Mob) this).anInt10302);
+		    if ((((Mob) this).anInt10208
 			 ^ 0xffffffff)
 			!= -1)
 			class64_91_
-			    .VA(((Class318_Sub1_Sub3_Sub3) this).anInt10208);
-		    if ((((Class318_Sub1_Sub3_Sub3) this).anInt10252
+			    .VA(((Mob) this).anInt10208);
+		    if ((((Mob) this).anInt10252
 			 ^ 0xffffffff)
 			!= -1)
-			class64_91_.H(0, (((Class318_Sub1_Sub3_Sub3) this)
+			class64_91_.H(0, (((Mob) this)
 					  .anInt10252), 0);
 		}
 	    }
@@ -1261,7 +1255,7 @@ final class Player extends Class318_Sub1_Sub3_Sub3
 	((Player) this).anInt10535 = -1;
 	((Player) this).aBoolean10521 = false;
 	((Player) this).anInt10526 = -1;
-	((Player) this).aBoolean10539 = false;
+	((Player) this).isOffscreen = false;
 	((Player) this).anInt10519 = -1;
 	((Player) this).anInt10522 = -1;
 	((Player) this).aBoolean10554 = false;

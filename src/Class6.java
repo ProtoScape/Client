@@ -100,8 +100,8 @@ final class Class6
 	    if (class348_sub22 == null) {
 		Npc class318_sub1_sub3_sub3_sub1
 		    = new Npc();
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
-		    .anInt10290
+		((Mob) class318_sub1_sub3_sub3_sub1)
+		    .localId
 		    = i_18_;
 		class348_sub22
 		    = new Class348_Sub22(class318_sub1_sub3_sub3_sub1);
@@ -116,7 +116,7 @@ final class Class6
 		= (((Class348_Sub22) class348_sub22)
 		   .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 	    EntityPacket.anIntArray1233[Class150.anInt2057++] = i_18_;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1).anInt10306
+	    ((Mob) class318_sub1_sub3_sub3_sub1).anInt10306
 		= Class348_Sub23_Sub3.anInt9041;
 	    if ((((Npc) class318_sub1_sub3_sub3_sub1)
 		 .definition) != null
@@ -151,7 +151,7 @@ final class Class6
 		((byte) 111, ((NpcDefinition) (((Npc)
 					  class318_sub1_sub3_sub3_sub1)
 					 .definition)).anInt1399);
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1).anInt10310
+	    ((Mob) class318_sub1_sub3_sub3_sub1).anInt10310
 		= (((NpcDefinition) ((Npc)
 			       class318_sub1_sub3_sub3_sub1).definition)
 		   .anInt1329) << -233569405;
@@ -159,28 +159,28 @@ final class Class6
 		class318_sub1_sub3_sub3_sub1.method2435((byte) -108, i_23_,
 							true);
 	    class318_sub1_sub3_sub3_sub1.method2444
-		((((Class318_Sub1_Sub3_Sub3)
+		((((Mob)
 		   Class132.localPlayer)
-		  .anIntArray10317[0]) - -i_21_,
+		  .yList[0]) - -i_21_,
 		 (i_20_ ^ 0xffffffff) == -2,
-		 (((Class318_Sub1_Sub3_Sub3)
+		 (((Mob)
 		   Class132.localPlayer)
-		  .anIntArray10320[0]) + i_22_,
+		  .xList[0]) + i_22_,
 		 i + 724138125,
 		 class318_sub1_sub3_sub3_sub1.method2436((byte) 50), i_19_);
 	    if (((Npc) class318_sub1_sub3_sub3_sub1)
 		    .definition.method793(0))
 		Class223.method1614
 		    (979190089, class318_sub1_sub3_sub3_sub1,
-		     ((Class318_Sub1) class318_sub1_sub3_sub3_sub1).aByte6381,
-		     (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
-		      .anIntArray10317[0]),
-		     (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
-		      .anIntArray10320[0]),
+		     ((Class318_Sub1) class318_sub1_sub3_sub3_sub1).heightLevel,
+		     (((Mob) class318_sub1_sub3_sub3_sub1)
+		      .yList[0]),
+		     (((Mob) class318_sub1_sub3_sub3_sub1)
+		      .xList[0]),
 		     null, null, 0);
 	}
 	if (i == -724138005)
-	    Class299.gameBuffer.finalizeBitAccess(false);
+	    Class299.gameBuffer.finalizeBitAccess();
     }
     
     static final void method205(int i, int i_25_, int i_26_, String string,

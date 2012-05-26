@@ -11,7 +11,7 @@ import jagtheora.ogg.OggSyncState;
 abstract class Class55
 {
     static int anInt978;
-    static boolean aBoolean979;
+    static boolean printEndGpp;
     static int anInt980;
     private OggPage anOggPage981;
     static int anInt982;
@@ -487,6 +487,6 @@ abstract class Class55
     }
     
     static {
-	aBoolean979 = false;
+	printEndGpp = false;
     }
 }

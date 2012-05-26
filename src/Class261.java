@@ -190,7 +190,7 @@ final class Class261
 	}
 	int i_14_ = -1;
 	AbstractMouseEvent class348_sub45
-	    = (AbstractMouseEvent) Class318_Sub1_Sub3.aClass262_8744.getFirst(4);
+	    = (AbstractMouseEvent) Entity.aClass262_8744.getFirst(4);
 	if (class348_sub45 != null)
 	    i_14_ = class348_sub45.getType(58);
 	if (Class5_Sub1.aBoolean8335) {

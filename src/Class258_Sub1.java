@@ -76,7 +76,7 @@ final class Class258_Sub1 extends Class258
 	 byte i_21_, int i_22_, int i_23_, boolean bool, boolean bool_24_,
 	 int i_25_, int i_26_, boolean bool_27_) {
 	Class23.aBoolean351 = true;
-	Class318_Sub1_Sub3_Sub3.aBoolean10221 = Class9.aHa171.method3704() > 0;
+	Mob.aBoolean10221 = Class9.aHa171.method3704() > 0;
 	Class348_Sub40_Sub17.aBoolean9242 = bool_24_;
 	Class239_Sub25.anInt6111 = i_12_ >> Class362.anInt4459;
 	Class285_Sub2.anInt8502 = i_14_ >> Class362.anInt4459;
@@ -220,7 +220,7 @@ final class Class258_Sub1 extends Class258
 		Class59_Sub1_Sub1.method560(class318_sub4, 6);
 	    }
 	}
-	if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
+	if (Mob.aBoolean10221) {
 	    for (int i_42_ = 0; i_42_ < Class331.anInt4135; i_42_++)
 		Class239_Sub14.aClass211Array5993[i_42_].method1544(8688, bool,
 								    i);

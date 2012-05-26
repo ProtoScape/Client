@@ -7,7 +7,7 @@ final class Class148
     static int anInt2037;
     Class148 aClass148_2038;
     static int[] anIntArray2039 = { 1, 0, -1, 0 };
-    Class318_Sub1_Sub3 aClass318_Sub1_Sub3_2040;
+    Entity aClass318_Sub1_Sub3_2040;
     static int anInt2041;
     static Class196 aClass196_2042 = new Class196();
     static int anInt2043;

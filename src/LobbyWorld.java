@@ -76,73 +76,73 @@ final class LobbyWorld extends AbstractWorld
     }
     
     static final void method1041
-	(int i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	(int i, Mob class318_sub1_sub3_sub3) {
 	anInt5790++;
 	boolean bool = false;
 	if ((Class367_Sub11.logicCycle
-	     != ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10300)
-	    && (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10286
+	     != ((Mob) class318_sub1_sub3_sub3).anInt10300)
+	    && (((Mob) class318_sub1_sub3_sub3).anInt10286
 		^ 0xffffffff) != 0
-	    && (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10218
+	    && (((Mob) class318_sub1_sub3_sub3).anInt10218
 		^ 0xffffffff) == -1) {
 	    AnimationDefinition class17
-		= Class10.animationLoader.method835((((Class318_Sub1_Sub3_Sub3)
+		= Class10.animationLoader.method835((((Mob)
 						   class318_sub1_sub3_sub3)
 						  .anInt10286),
 						 i + 8);
 	    if (((AnimationDefinition) class17).aBoolean241
-		|| ((1 + (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		|| ((1 + (((Mob) class318_sub1_sub3_sub3)
 			  .anInt10232)
 		     ^ 0xffffffff)
 		    < ((((AnimationDefinition) class17).anIntArray267
-			[(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			[(((Mob) class318_sub1_sub3_sub3)
 			  .anInt10267)])
 		       ^ 0xffffffff)))
 		bool = true;
 	} else
 	    bool = true;
 	if (bool) {
-	    int i_4_ = ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    int i_4_ = ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10300)
-			+ -(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			+ -(((Mob) class318_sub1_sub3_sub3)
 			    .anInt10239));
 	    int i_5_ = (Class367_Sub11.logicCycle
-			+ -(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			+ -(((Mob) class318_sub1_sub3_sub3)
 			    .anInt10239));
-	    int i_6_ = ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    int i_6_ = ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10293) * 512
 			+ 256 * class318_sub1_sub3_sub3.method2436((byte) 90));
 	    int i_7_
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
 			  .anInt10314)
 		   - -(class318_sub1_sub3_sub3.method2436((byte) 44) * 256));
 	    int i_8_
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
 			  .anInt10241)
 		   + 256 * class318_sub1_sub3_sub3.method2436((byte) 98));
 	    int i_9_
-		= ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		= ((((Mob) class318_sub1_sub3_sub3)
 		    .anInt10288) * 512
 		   - -(class318_sub1_sub3_sub3.method2436((byte) 76) * 256));
-	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+	    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 		= (i_8_ * i_5_ + (i_4_ - i_5_) * i_6_) / i_4_;
 	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		= (i_7_ * (-i_5_ + i_4_) - -(i_5_ * i_9_)) / i_4_;
 	}
-	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10326 = 0;
-	if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	((Mob) class318_sub1_sub3_sub3).anInt10326 = 0;
+	if ((((Mob) class318_sub1_sub3_sub3).anInt10231
 	     ^ 0xffffffff)
 	    == i)
 	    class318_sub1_sub3_sub3.method2435((byte) -108, 8192, false);
-	if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	if ((((Mob) class318_sub1_sub3_sub3).anInt10231
 	     ^ 0xffffffff)
 	    == -2)
 	    class318_sub1_sub3_sub3.method2435((byte) -108, 12288, false);
-	if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	if ((((Mob) class318_sub1_sub3_sub3).anInt10231
 	     ^ 0xffffffff)
 	    == -3)
 	    class318_sub1_sub3_sub3.method2435((byte) -108, 0, false);
-	if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	if (((Mob) class318_sub1_sub3_sub3).anInt10231
 	    == 3)
 	    class318_sub1_sub3_sub3.method2435((byte) -108, 4096, false);
     }

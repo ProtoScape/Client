@@ -47,10 +47,10 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1
 	AnimatableToolkit class64 = ((Class318_Sub1_Sub1_Sub1) this).aClass235_9955
 			      .method1668(true, true, -128, 262144, var_ha);
 	if (class64 != null) {
-	    int i_0_ = ((Class318_Sub1) this).anInt6377 >> -18245271;
+	    int i_0_ = ((Class318_Sub1) this).xHash >> -18245271;
 	    int i_1_ = ((Class318_Sub1) this).anInt6388 >> 1917451561;
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    ((Class318_Sub1_Sub1_Sub1) this).aClass235_9955.method1670
@@ -103,12 +103,12 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1
 	if (class64 == null)
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	Class318_Sub4 class318_sub4
 	    = DummyOutputstream.method136(i, aBoolean9966, false);
-	int i_2_ = ((Class318_Sub1) this).anInt6377 >> 385218761;
+	int i_2_ = ((Class318_Sub1) this).xHash >> 385218761;
 	int i_3_ = ((Class318_Sub1) this).anInt6388 >> -1811765719;
 	((Class318_Sub1_Sub1_Sub1) this).aClass235_9955.method1670
 	    (i_2_, class101, i_3_, var_ha, i_2_, class64, true, (byte) -73,
@@ -140,10 +140,10 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1
 	    ItemLoader.method1935(((Class318_Sub1) this).anInt6388,
 				((Class318_Sub1) this).anInt6382,
 				aClass30_9950, class64, false,
-				((Class318_Sub1) this).anInt6377);
+				((Class318_Sub1) this).xHash);
 	else
 	    aClass30_9950 = (Class348_Sub23_Sub1.method2967
-			     (((Class318_Sub1) this).anInt6377, class64,
+			     (((Class318_Sub1) this).xHash, class64,
 			      ((Class318_Sub1) this).anInt6388,
 			      ((Class318_Sub1) this).anInt6382, 2));
 	return class318_sub4;
@@ -221,7 +221,7 @@ final class Class318_Sub1_Sub1_Sub1 extends Class318_Sub1_Sub1
 	Class101 class101 = var_ha.method3705();
 	if (i_14_ != 0)
 	    return true;
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	if (Class305.aBoolean3870)

@@ -2,10 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class359
+final class OffscreenPlayer
 {
     static int anInt4419;
-    int anInt4420;
+    int locationHash;
     static ServerPacket aClass114_4421 = new ServerPacket(13, -2);
     static int anInt4422;
     int anInt4423;
@@ -91,7 +91,7 @@ final class Class359
 	return 0;
     }
     
-    public Class359() {
+    public OffscreenPlayer() {
 	/* empty */
     }
 }

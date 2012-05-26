@@ -268,11 +268,11 @@ final class Class34
     
     static final void method349(int i) {
 	anInt462++;
-	int i_32_ = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i_32_ = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	for (int i_33_ = 0; i_33_ < i_32_; i_33_++) {
 	    Player class318_sub1_sub3_sub3_sub2
-		= ClassicLoadingScreen.players[is[i_33_]];
+		= ClassicLoadingScreen.onscreenPlayers[is[i_33_]];
 	    if (class318_sub1_sub3_sub3_sub2 != null)
 		Class322.method2556(false,
 				    class318_sub1_sub3_sub3_sub2

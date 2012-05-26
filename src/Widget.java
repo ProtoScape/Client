@@ -218,7 +218,7 @@ final class Widget
 			     .method583((long) ((Widget) this).anInt830, 119);
 	if (var_aa != null)
 	    return var_aa;
-	ImageSprite class207 = ImageSprite.getSprite(Class318_Sub1_Sub3.widgetSpriteIndexLoader, ((Widget) this).id, 0);
+	ImageSprite class207 = ImageSprite.getSprite(Entity.widgetSpriteIndexLoader, ((Widget) this).id, 0);
 	if (class207 == null)
 	    return null;
 	int totalWidth = (((ImageSprite) class207).widthOffset + (((ImageSprite) class207).indexWidth + ((ImageSprite) class207).widthPadding));
@@ -930,7 +930,7 @@ final class Widget
 	RasterToolkit raster  = (RasterToolkit) GamePacket.widgetRasters.method583(l, -71);
 	if (raster != null)
 	    return raster;
-	ImageSprite imageSprite = ImageSprite.getSprite(Class318_Sub1_Sub3.widgetSpriteIndexLoader, ((Widget) this).id, 0);
+	ImageSprite imageSprite = ImageSprite.getSprite(Entity.widgetSpriteIndexLoader, ((Widget) this).id, 0);
 	if (imageSprite == null) {
 	    Class348_Sub42_Sub13.aBoolean9616 = true;
 	    return null;

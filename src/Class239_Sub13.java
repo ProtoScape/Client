@@ -33,7 +33,7 @@ final class Class239_Sub13 extends Class239
     }
     
     static final void method1777
-	(int i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	(int i, Mob class318_sub1_sub3_sub3) {
 	if (i == -3) {
 	    if (!(class318_sub1_sub3_sub3
 		  instanceof Npc)) {
@@ -45,10 +45,10 @@ final class Class239_Sub13 extends Class239
 		    Class348_Sub43.method3298
 			((byte) 105,
 			 ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			   .aByte6381)
+			   .heightLevel)
 			  != (((Class318_Sub1)
 			       Class132.localPlayer)
-			      .aByte6381)),
+			      .heightLevel)),
 			 class318_sub1_sub3_sub3_sub2);
 		}
 	    } else {
@@ -60,9 +60,9 @@ final class Class239_Sub13 extends Class239
 		    Class286_Sub3.method2150
 			(((((Class318_Sub1)
 			    Class132.localPlayer)
-			   .aByte6381)
+			   .heightLevel)
 			  != (((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
-			      .aByte6381)),
+			      .heightLevel)),
 			 false, class318_sub1_sub3_sub3_sub1);
 	    }
 	    anInt5981++;

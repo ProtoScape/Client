@@ -30,13 +30,13 @@ class SubNode extends Node
     }
     
     static final void method3163(byte i) {
-	Class328_Sub1.anInt6513 = 0;
+	Class328_Sub1.onscreenGpiOffset = 0;
 	anInt7062++;
 	if (i == -114) {
 	    for (int i_0_ = 0; i_0_ < 2048; i_0_++) {
 		Class154.aClass348_Sub49Array2105[i_0_] = null;
 		IntegerVarScriptSettingLoader.aByteArray3300[i_0_] = (byte) 1;
-		Class348_Sub17.aClass359Array6802[i_0_] = null;
+		Class348_Sub17.offscreenPlayers[i_0_] = null;
 	    }
 	}
     }

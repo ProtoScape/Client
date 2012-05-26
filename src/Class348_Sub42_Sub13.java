@@ -20,7 +20,7 @@ final class Class348_Sub42_Sub13 extends SubNode
 		for (int i_0_ = 0; (i_0_ ^ 0xffffffff) > -257; i_0_++) {
 		    int i_1_
 			= (int) (255.0 * Math.pow((double) i_0_ / 255.0, d));
-		    Class318_Sub1_Sub3_Sub3.anIntArray10266[i_0_]
+		    Mob.anIntArray10266[i_0_]
 			= i_1_ > 255 ? 255 : i_1_;
 		}
 		Class299_Sub2_Sub1.aDouble8713 = d;

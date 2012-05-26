@@ -1101,7 +1101,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40
 						    > -2049)) {
 						Player class318_sub1_sub3_sub3_sub2
 						    = (ClassicLoadingScreen
-						       .players
+						       .onscreenPlayers
 						       [i_61_]);
 						AnimationDefinition class17
 						    = (((((Widget) widget)
@@ -1135,7 +1135,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40
 							    class318_sub1_sub3_sub3_sub2)
 							       .aClass154_10536
 							       .method1226
-							   ((Class318_Sub1_Sub3_Sub3
+							   ((Mob
 							     .varbitHandler),
 							    null, null, true,
 							    (ToolkitException
@@ -1188,7 +1188,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40
 							 .anInt841),
 							(ToolkitException
 							 .itemLoader),
-							(Class318_Sub1_Sub3_Sub3
+							(Mob
 							 .varbitHandler),
 							255,
 							(((Player)
@@ -1218,7 +1218,7 @@ final class Class348_Sub40_Sub7 extends Class348_Sub40
 							-1, 0,
 							(ToolkitException
 							 .itemLoader),
-							(Class318_Sub1_Sub3_Sub3
+							(Mob
 							 .varbitHandler),
 							255,
 							(((Player)

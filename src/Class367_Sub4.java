@@ -226,11 +226,11 @@ final class Class367_Sub4 extends Class367
 	anInt7310++;
 	byte i_16_
 	    = bool ? (byte) 1 : (byte) (Class239_Sub15.anInt6006 & 0xff);
-	if ((Class289.aByteArrayArrayArray3700[Class355.anInt4372][i_13_][i]
+	if ((Class289.aByteArrayArrayArray3700[Class355.localHeightLevel][i_13_][i]
 	     ^ 0xffffffff)
 	    == (i_16_ ^ 0xffffffff))
 	    return false;
-	if (((Class348_Sub33.settingFlags[Class355.anInt4372]
+	if (((Class348_Sub33.settingFlags[Class355.localHeightLevel]
 	      [i_13_][i])
 	     & 0x4)
 	    == 0)
@@ -239,7 +239,7 @@ final class Class367_Sub4 extends Class367
 	int i_18_ = 0;
 	Class348_Sub16_Sub2.anIntArray8862[i_17_] = i_13_;
 	ToolkitException.anIntArray110[i_17_++] = i;
-	Class289.aByteArrayArrayArray3700[Class355.anInt4372][i_13_][i]
+	Class289.aByteArrayArrayArray3700[Class355.localHeightLevel][i_13_][i]
 	    = i_16_;
 	while ((i_18_ ^ 0xffffffff) != (i_17_ ^ 0xffffffff)) {
 	    int i_19_ = 0xffff & Class348_Sub16_Sub2.anIntArray8862[i_18_];
@@ -254,12 +254,12 @@ final class Class367_Sub4 extends Class367
 	    i_18_ = i_18_ + 1 & 0xfff;
 	    boolean bool_24_ = false;
 	    if ((0x4 & (Class348_Sub33.settingFlags
-			[Class355.anInt4372][i_19_][i_22_]))
+			[Class355.localHeightLevel][i_19_][i_22_]))
 		== 0)
 		bool_24_ = true;
 	    boolean bool_25_ = false;
 	    if (class357s != null) {
-		int i_26_ = Class355.anInt4372 + 1;
+		int i_26_ = Class355.localHeightLevel + 1;
 	    while_223_:
 		for (/**/; (i_26_ ^ 0xffffffff) >= -4; i_26_++) {
 		    if (class357s[i_26_] != null
@@ -271,7 +271,7 @@ final class Class367_Sub4 extends Class367
 			    if ((((Class357) class357s[i_26_][i_19_][i_22_])
 				 .aClass318_Sub1_Sub4_4406)
 				!= null) {
-				int i_27_ = Class359.method3492(i_20_, 226);
+				int i_27_ = OffscreenPlayer.method3492(i_20_, 226);
 				if (((i_27_ ^ 0xffffffff)
 				     == ((((Class318_Sub1_Sub4)
 					   (((Class357)
@@ -292,7 +292,7 @@ final class Class367_Sub4 extends Class367
 				    continue;
 				if ((i_21_ ^ 0xffffffff) != -1) {
 				    int i_28_
-					= Class359.method3492(i_21_, 226);
+					= OffscreenPlayer.method3492(i_21_, 226);
 				    if (((i_28_ ^ 0xffffffff)
 					 == ((((Class318_Sub1_Sub4)
 					       (((Class357) (class357s[i_26_]
@@ -315,7 +315,7 @@ final class Class367_Sub4 extends Class367
 				}
 				if (i_23_ != 0) {
 				    int i_29_
-					= Class359.method3492(i_23_, 226);
+					= OffscreenPlayer.method3492(i_23_, 226);
 				    if ((((Class318_Sub1_Sub4)
 					  (((Class357)
 					    class357s[i_26_][i_19_][i_22_])
@@ -342,7 +342,7 @@ final class Class367_Sub4 extends Class367
 				     class148 != null;
 				     class148 = (((Class148) class148)
 						 .aClass148_2038)) {
-				    Class318_Sub1_Sub3 class318_sub1_sub3
+				    Entity class318_sub1_sub3
 					= (((Class148) class148)
 					   .aClass318_Sub1_Sub3_2040);
 				    if (class318_sub1_sub3
@@ -372,31 +372,31 @@ final class Class367_Sub4 extends Class367
 				 class148 != null;
 				 class148
 				     = ((Class148) class148).aClass148_2038) {
-				Class318_Sub1_Sub3 class318_sub1_sub3
+				Entity class318_sub1_sub3
 				    = (((Class148) class148)
 				       .aClass318_Sub1_Sub3_2040);
-				if (((((Class318_Sub1_Sub3) class318_sub1_sub3)
+				if (((((Entity) class318_sub1_sub3)
 				      .aShort8743)
-				     != ((Class318_Sub1_Sub3)
+				     != ((Entity)
 					 class318_sub1_sub3).aShort8751)
-				    || ((((Class318_Sub1_Sub3)
+				    || ((((Entity)
 					  class318_sub1_sub3).aShort8747
 					 ^ 0xffffffff)
-					!= (((Class318_Sub1_Sub3)
+					!= (((Entity)
 					     class318_sub1_sub3).aShort8750
 					    ^ 0xffffffff))) {
-				    for (int i_33_ = (((Class318_Sub1_Sub3)
+				    for (int i_33_ = (((Entity)
 						       class318_sub1_sub3)
 						      .aShort8743);
-					 ((((Class318_Sub1_Sub3)
+					 ((((Entity)
 					    class318_sub1_sub3).aShort8751
 					   ^ 0xffffffff)
 					  <= (i_33_ ^ 0xffffffff));
 					 i_33_++) {
-					for (int i_34_ = (((Class318_Sub1_Sub3)
+					for (int i_34_ = (((Entity)
 							   class318_sub1_sub3)
 							  .aShort8750);
-					     ((((Class318_Sub1_Sub3)
+					     ((((Entity)
 						class318_sub1_sub3).aShort8747
 					       ^ 0xffffffff)
 					      <= (i_34_ ^ 0xffffffff));
@@ -416,7 +416,7 @@ final class Class367_Sub4 extends Class367
 		}
 	    }
 	    if (bool_25_) {
-		int i_35_ = aa_Sub1.aSArray5191[1 + Class355.anInt4372]
+		int i_35_ = aa_Sub1.aSArray5191[1 + Class355.localHeightLevel]
 				.method3982((byte) -86, i_22_, i_19_);
 		if (i_35_ > Class327.anIntArray4097[i_15_])
 		    Class327.anIntArray4097[i_15_] = i_35_;
@@ -437,7 +437,7 @@ final class Class367_Sub4 extends Class367
 	    }
 	    if (!bool_24_) {
 		if (i_19_ >= 1
-		    && (Class289.aByteArrayArrayArray3700[Class355.anInt4372]
+		    && (Class289.aByteArrayArrayArray3700[Class355.localHeightLevel]
 			[i_19_ - 1][i_22_]) != i_16_) {
 		    Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			= Class273.bitOr(Class273.bitOr(1179648,
@@ -446,7 +446,7 @@ final class Class367_Sub4 extends Class367
 		    ToolkitException.anIntArray110[i_17_]
 			= Class273.bitOr(i_22_, 1245184);
 		    i_17_ = 0xfff & 1 + i_17_;
-		    Class289.aByteArrayArrayArray3700[Class355.anInt4372]
+		    Class289.aByteArrayArrayArray3700[Class355.localHeightLevel]
 			[i_19_ - 1][i_22_]
 			= i_16_;
 		}
@@ -454,13 +454,13 @@ final class Class367_Sub4 extends Class367
 		    < (++i_22_ ^ 0xffffffff)) {
 		    if (i_19_ - 1 >= 0
 			&& ((Class289.aByteArrayArrayArray3700
-			     [Class355.anInt4372][-1 + i_19_][i_22_])
+			     [Class355.localHeightLevel][-1 + i_19_][i_22_])
 			    ^ 0xffffffff) != (i_16_ ^ 0xffffffff)
 			&& ((Class348_Sub33.settingFlags
-			     [Class355.anInt4372][i_19_][i_22_]) & 0x4
+			     [Class355.localHeightLevel][i_19_][i_22_]) & 0x4
 			    ^ 0xffffffff) == -1
 			&& (0x4 & (Class348_Sub33.settingFlags
-				   [Class355.anInt4372][-1 + i_19_]
+				   [Class355.localHeightLevel][-1 + i_19_]
 				   [-1 + i_22_])
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
@@ -470,13 +470,13 @@ final class Class367_Sub4 extends Class367
 			ToolkitException.anIntArray110[i_17_]
 			    = Class273.bitOr(i_22_, 1245184);
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][-1 + i_19_][i_22_]
+			    [Class355.localHeightLevel][-1 + i_19_][i_22_]
 			    = i_16_;
 			i_17_ = 0xfff & 1 + i_17_;
 		    }
 		    if ((i_16_ ^ 0xffffffff)
 			!= ((Class289.aByteArrayArrayArray3700
-			     [Class355.anInt4372][i_19_][i_22_])
+			     [Class355.localHeightLevel][i_19_][i_22_])
 			    ^ 0xffffffff)) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			    = (Class273.bitOr
@@ -485,19 +485,19 @@ final class Class367_Sub4 extends Class367
 			ToolkitException.anIntArray110[i_17_]
 			    = Class273.bitOr(i_22_, 5439488);
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][i_19_][i_22_]
+			    [Class355.localHeightLevel][i_19_][i_22_]
 			    = i_16_;
 			i_17_ = i_17_ + 1 & 0xfff;
 		    }
 		    if ((mapSizeX ^ 0xffffffff) < (1 + i_19_ ^ 0xffffffff)
 			&& ((i_16_ ^ 0xffffffff)
 			    != ((Class289.aByteArrayArrayArray3700
-				 [Class355.anInt4372][i_19_ + 1][i_22_])
+				 [Class355.localHeightLevel][i_19_ + 1][i_22_])
 				^ 0xffffffff))
 			&& (0x4 & (Class348_Sub33.settingFlags
-				   [Class355.anInt4372][i_19_][i_22_])) == 0
+				   [Class355.localHeightLevel][i_19_][i_22_])) == 0
 			&& (0x4 & (Class348_Sub33.settingFlags
-				   [Class355.anInt4372][1 + i_19_]
+				   [Class355.localHeightLevel][1 + i_19_]
 				   [i_22_ + -1])) == 0) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			    = (Class273.bitOr
@@ -507,13 +507,13 @@ final class Class367_Sub4 extends Class367
 			    = Class273.bitOr(5439488, i_22_);
 			i_17_ = 1 + i_17_ & 0xfff;
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][i_19_ - -1][i_22_]
+			    [Class355.localHeightLevel][i_19_ - -1][i_22_]
 			    = i_16_;
 		    }
 		}
 		i_22_--;
 		if ((mapSizeX ^ 0xffffffff) < (i_19_ - -1 ^ 0xffffffff)
-		    && (Class289.aByteArrayArrayArray3700[Class355.anInt4372]
+		    && (Class289.aByteArrayArrayArray3700[Class355.localHeightLevel]
 			[i_19_ - -1][i_22_]) != i_16_) {
 		    Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			= Class273.bitOr(1392508928,
@@ -522,20 +522,20 @@ final class Class367_Sub4 extends Class367
 		    ToolkitException.anIntArray110[i_17_]
 			= Class273.bitOr(i_22_, 9633792);
 		    i_17_ = 1 + i_17_ & 0xfff;
-		    Class289.aByteArrayArrayArray3700[Class355.anInt4372]
+		    Class289.aByteArrayArrayArray3700[Class355.localHeightLevel]
 			[i_19_ - -1][i_22_]
 			= i_16_;
 		}
 		if ((--i_22_ ^ 0xffffffff) <= -1) {
 		    if ((i_19_ + -1 ^ 0xffffffff) <= -1
 			&& ((Class289.aByteArrayArrayArray3700
-			     [Class355.anInt4372][i_19_ - 1][i_22_])
+			     [Class355.localHeightLevel][i_19_ - 1][i_22_])
 			    ^ 0xffffffff) != (i_16_ ^ 0xffffffff)
 			&& (0x4 & (Class348_Sub33.settingFlags
-				   [Class355.anInt4372][i_19_][i_22_])
+				   [Class355.localHeightLevel][i_19_][i_22_])
 			    ^ 0xffffffff) == -1
 			&& (0x4 & (Class348_Sub33.settingFlags
-				   [Class355.anInt4372][-1 + i_19_][1 + i_22_])
+				   [Class355.localHeightLevel][-1 + i_19_][1 + i_22_])
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			    = (Class273.bitOr
@@ -544,13 +544,13 @@ final class Class367_Sub4 extends Class367
 			ToolkitException.anIntArray110[i_17_]
 			    = Class273.bitOr(i_22_, 13828096);
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][i_19_ - 1][i_22_]
+			    [Class355.localHeightLevel][i_19_ - 1][i_22_]
 			    = i_16_;
 			i_17_ = i_17_ - -1 & 0xfff;
 		    }
 		    if ((i_16_ ^ 0xffffffff)
 			!= ((Class289.aByteArrayArrayArray3700
-			     [Class355.anInt4372][i_19_][i_22_])
+			     [Class355.localHeightLevel][i_19_][i_22_])
 			    ^ 0xffffffff)) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			    = Class273.bitOr(Class273.bitOr(13762560,
@@ -559,18 +559,18 @@ final class Class367_Sub4 extends Class367
 			ToolkitException.anIntArray110[i_17_]
 			    = Class273.bitOr(13828096, i_22_);
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][i_19_][i_22_]
+			    [Class355.localHeightLevel][i_19_][i_22_]
 			    = i_16_;
 			i_17_ = 0xfff & i_17_ - -1;
 		    }
 		    if ((1 + i_19_ ^ 0xffffffff) > (mapSizeX ^ 0xffffffff)
 			&& (Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][1 + i_19_][i_22_]) != i_16_
+			    [Class355.localHeightLevel][1 + i_19_][i_22_]) != i_16_
 			&& ((Class348_Sub33.settingFlags
-			     [Class355.anInt4372][i_19_][i_22_])
+			     [Class355.localHeightLevel][i_19_][i_22_])
 			    & 0x4) == 0
 			&& ((Class348_Sub33.settingFlags
-			     [Class355.anInt4372][i_19_ + 1][i_22_ + 1]) & 0x4
+			     [Class355.localHeightLevel][i_19_ + 1][i_22_ + 1]) & 0x4
 			    ^ 0xffffffff) == -1) {
 			Class348_Sub16_Sub2.anIntArray8862[i_17_]
 			    = (Class273.bitOr
@@ -579,7 +579,7 @@ final class Class367_Sub4 extends Class367
 			ToolkitException.anIntArray110[i_17_]
 			    = Class273.bitOr(i_22_, 9633792);
 			Class289.aByteArrayArrayArray3700
-			    [Class355.anInt4372][i_19_ - -1][i_22_]
+			    [Class355.localHeightLevel][i_19_ - -1][i_22_]
 			    = i_16_;
 			i_17_ = 0xfff & i_17_ - -1;
 		    }

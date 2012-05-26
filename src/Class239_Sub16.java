@@ -111,17 +111,17 @@ final class Class239_Sub16 extends Class239
 	do {
 	    try {
 		anInt6009++;
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		if ((((Mob) class318_sub1_sub3_sub3_sub2)
 		     .anIntArray10236)
 		    != null) {
 		    boolean bool = true;
 		    for (int i_9_ = 0;
-			 (((Class318_Sub1_Sub3_Sub3)
+			 (((Mob)
 			   class318_sub1_sub3_sub3_sub2).anIntArray10236.length
 			  > i_9_);
 			 i_9_++) {
 			if ((is[i_9_] ^ 0xffffffff)
-			    != ((((Class318_Sub1_Sub3_Sub3)
+			    != ((((Mob)
 				  class318_sub1_sub3_sub3_sub2)
 				 .anIntArray10236[i_9_])
 				^ 0xffffffff)) {
@@ -129,41 +129,41 @@ final class Class239_Sub16 extends Class239
 			    break;
 			}
 		    }
-		    if (bool && (((Class318_Sub1_Sub3_Sub3)
+		    if (bool && (((Mob)
 				  class318_sub1_sub3_sub3_sub2).anInt10286
 				 ^ 0xffffffff) != 0) {
 			AnimationDefinition class17
 			    = (Class10.animationLoader.method835
-			       (((Class318_Sub1_Sub3_Sub3)
+			       (((Mob)
 				 class318_sub1_sub3_sub3_sub2).anInt10286,
 				7));
 			int i_10_ = ((AnimationDefinition) class17).anInt248;
 			if ((i_10_ ^ 0xffffffff) == -2) {
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10232
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10267
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10294
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10218
 				= i_8_;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10244
 				= 1;
-			    if (!((Class318_Sub1_Sub3_Sub3)
+			    if (!((Mob)
 				  class318_sub1_sub3_sub3_sub2).aBoolean10309)
 				GametipDefinition.method2178
 				    (class318_sub1_sub3_sub3_sub2,
-				     ((Class318_Sub1_Sub3_Sub3)
+				     ((Mob)
 				      class318_sub1_sub3_sub3_sub2).anInt10267,
 				     class17, i ^ ~0x5df4);
 			}
 			if ((i_10_ ^ 0xffffffff) == -3)
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10294
 				= 0;
 		    }
@@ -176,9 +176,9 @@ final class Class239_Sub16 extends Class239
 		     i_11_++) {
 		    if (is[i_11_] != -1)
 			bool = false;
-		    if (((Class318_Sub1_Sub3_Sub3)
+		    if (((Mob)
 			 class318_sub1_sub3_sub3_sub2).anIntArray10236 == null
-			|| ((((Class318_Sub1_Sub3_Sub3)
+			|| ((((Mob)
 			      class318_sub1_sub3_sub3_sub2)
 			     .anIntArray10236[i_11_])
 			    ^ 0xffffffff) == 0
@@ -187,15 +187,15 @@ final class Class239_Sub16 extends Class239
 			      .anInt239)
 			     ^ 0xffffffff)
 			    <= (((AnimationDefinition) (Class10.animationLoader.method835
-					    ((((Class318_Sub1_Sub3_Sub3)
+					    ((((Mob)
 					       class318_sub1_sub3_sub3_sub2)
 					      .anIntArray10236[i_11_]),
 					     7))).anInt239
 				^ 0xffffffff))) {
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10218
 			    = i_8_;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub2).anIntArray10236
 			    = is;
 			break;
@@ -203,10 +203,10 @@ final class Class239_Sub16 extends Class239
 		}
 		if (!bool)
 		    break;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		((Mob) class318_sub1_sub3_sub3_sub2)
 		    .anIntArray10236
 		    = is;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		((Mob) class318_sub1_sub3_sub3_sub2)
 		    .anInt10218
 		    = i_8_;
 	    } catch (RuntimeException runtimeexception) {

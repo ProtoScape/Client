@@ -12,30 +12,23 @@ final class Class375
     static int anInt4544 = -1;
     static int anInt4545 = -1;
     
-    static final void method3612(int i,
-				 GameBuffer class348_sub49_sub2) {
-	if (i < 59)
-	    method3614(-51, 64, -115, null, -96);
-	for (int i_0_ = 0;
-	     (Class101_Sub3.anInt5768 ^ 0xffffffff) < (i_0_ ^ 0xffffffff);
-	     i_0_++) {
-	    int i_1_ = Class18.anIntArray279[i_0_];
-	    Player class318_sub1_sub3_sub3_sub2
-		= ClassicLoadingScreen.players[i_1_];
-	    int i_2_ = class348_sub49_sub2.getUByte();
-	    if ((i_2_ & 0x40 ^ 0xffffffff) != -1)
-		i_2_ += class348_sub49_sub2.getUByte() << -1102225048;
-	    if ((i_2_ & 0x4000 ^ 0xffffffff) != -1)
-		i_2_ += class348_sub49_sub2.getUByte() << -2048992976;
-	    Class133.method1141(class348_sub49_sub2, i_1_, i_2_, 123,
-				class318_sub1_sub3_sub3_sub2);
+    static void parsePlayerUpdates(GameBuffer buffer) {
+	for (int i = 0; (Class101_Sub3.amountUpdatePlayers ^ 0xffffffff) < (i ^ 0xffffffff); i++) {
+	    int id = Class18.playerUpdateList[i];
+	    Player player = ClassicLoadingScreen.onscreenPlayers[id];
+	    int mask = buffer.getUByte();
+	    if ((mask & 0x40) != 0)
+		mask += buffer.getUByte() << 8;
+	    if ((mask & 0x4000) != 0)
+		mask += buffer.getUByte() << 16;
+	    Class133.parsePlayerUpdateFlags(buffer, id, mask, 123, player);
 	}
 	anInt4541++;
     }
     
     public static void method3613(int i) {
 	if (i != 64)
-	    method3612(-7, null);
+	    parsePlayerUpdates(null);
 	aClass60_4543 = null;
     }
     

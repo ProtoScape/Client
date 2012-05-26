@@ -3,7 +3,7 @@
  */
 import java.awt.Frame;
 
-final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
+final class Class318_Sub1_Sub3_Sub4 extends Entity
 {
     static int anInt10328;
     static int anInt10329;
@@ -54,7 +54,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 	if (anInt10334 != 0)
 	    class64.a(anInt10334 * 2048);
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	method2467(class64, var_ha, -1, class101);
@@ -316,22 +316,22 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 	GfxDefinition class368
 	    = Class348_Sub40_Sub18.gfxLoader.loadDefinition((byte) 122, i);
 	s var_s
-	    = Class348_Sub1_Sub1.aSArray8801[((Class318_Sub1) this).aByte6381];
-	s var_s_28_ = ((((Class318_Sub1) this).aByte6376 ^ 0xffffffff) > -4
+	    = Class348_Sub1_Sub1.aSArray8801[((Class318_Sub1) this).heightLevel];
+	s var_s_28_ = ((((Class318_Sub1) this).mapHeightLevel ^ 0xffffffff) > -4
 		       ? (Class348_Sub1_Sub1.aSArray8801
-			  [1 + ((Class318_Sub1) this).aByte6376])
+			  [1 + ((Class318_Sub1) this).mapHeightLevel])
 		       : null);
 	if (!((Class318_Sub1_Sub3_Sub4) this).aBoolean10345)
 	    return class368.method3565(anInt10339, anInt10335,
 				       ((Class318_Sub1) this).anInt6382, i_26_,
 				       true, var_ha, anInt10350,
-				       ((Class318_Sub1) this).anInt6377, -129,
+				       ((Class318_Sub1) this).xHash, -129,
 				       Class10.animationLoader, var_s_28_,
 				       ((Class318_Sub1) this).anInt6388,
 				       var_s);
 	return class368.method3565(0, -1, ((Class318_Sub1) this).anInt6382,
 				   i_26_, true, var_ha, -1,
-				   ((Class318_Sub1) this).anInt6377, -129,
+				   ((Class318_Sub1) this).xHash, -129,
 				   Class10.animationLoader, var_s_28_,
 				   ((Class318_Sub1) this).anInt6388, var_s);
     }
@@ -375,11 +375,11 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 						     class129s, class342s,
 						     false);
 		    aClass318_Sub10_10341.method2533
-			(((Class318_Sub1) this).aByte6381,
-			 ((Class318_Sub1_Sub3) this).aShort8743,
-			 ((Class318_Sub1_Sub3) this).aShort8751,
-			 ((Class318_Sub1_Sub3) this).aShort8750,
-			 ((Class318_Sub1_Sub3) this).aShort8747);
+			(((Class318_Sub1) this).heightLevel,
+			 ((Entity) this).aShort8743,
+			 ((Entity) this).aShort8751,
+			 ((Entity) this).aShort8750,
+			 ((Entity) this).aShort8747);
 		}
 	    } catch (RuntimeException runtimeexception) {
 		throw Class348_Sub17.method2929
@@ -421,7 +421,7 @@ final class Class318_Sub1_Sub3_Sub4 extends Class318_Sub1_Sub3
 	AnimatableToolkit class64 = method2465(var_ha, anInt10355, 0, (byte) -82);
 	if (class64 != null) {
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    method2467(class64, var_ha, -1, class101);

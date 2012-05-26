@@ -71,11 +71,11 @@ final class Class348_Sub42_Sub5 extends SubNode
 		    int i_14_ = is_5_[i_11_] >> -816062588;
 		    if (i_14_ > 255)
 			i_14_ = 255;
-		    i_13_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_13_];
+		    i_13_ = Mob.anIntArray10266[i_13_];
 		    if (i_14_ < 0)
 			i_14_ = 0;
-		    i_12_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_12_];
-		    i_14_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_14_];
+		    i_12_ = Mob.anIntArray10266[i_12_];
+		    i_14_ = Mob.anIntArray10266[i_14_];
 		    int i_15_;
 		    if (i_12_ == 0 && i_13_ == 0 && (i_14_ ^ 0xffffffff) == -1)
 			i_15_ = 0;
@@ -210,11 +210,11 @@ final class Class348_Sub42_Sub5 extends SubNode
 		    int i_38_ = is_32_[i_35_] >> -310157596;
 		    if ((i_38_ ^ 0xffffffff) < -256)
 			i_38_ = 255;
-		    i_37_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_37_];
-		    i_36_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_36_];
+		    i_37_ = Mob.anIntArray10266[i_37_];
+		    i_36_ = Mob.anIntArray10266[i_36_];
 		    if ((i_38_ ^ 0xffffffff) > -1)
 			i_38_ = 0;
-		    i_38_ = Class318_Sub1_Sub3_Sub3.anIntArray10266[i_38_];
+		    i_38_ = Mob.anIntArray10266[i_38_];
 		    int i_39_
 			= (i_37_ << 1965956712) + (i_36_ << 934532560) + i_38_;
 		    if ((i_39_ ^ 0xffffffff) != -1)

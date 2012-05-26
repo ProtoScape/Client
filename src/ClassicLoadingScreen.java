@@ -48,7 +48,7 @@ final class ClassicLoadingScreen implements LoadingScreen
     static int anInt5055;
     private Image anImage5056;
     static GamePacket aClass351_5057 = new GamePacket(10, -1);
-    static Player[] players
+    static Player[] onscreenPlayers
 	= new Player[2048];
     private Image anImage5059;
     static Class338[] aClass338Array5060;
@@ -148,9 +148,9 @@ final class ClassicLoadingScreen implements LoadingScreen
     public static void method2214(int i) {
 	aClass351_5057 = null;
 	if (i != 0)
-	    players = null;
+	    onscreenPlayers = null;
 	aClass338Array5060 = null;
-	players = null;
+	onscreenPlayers = null;
     }
     
     public final int method60(int i) {

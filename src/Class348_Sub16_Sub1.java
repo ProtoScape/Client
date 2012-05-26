@@ -69,12 +69,12 @@ final class Class348_Sub16_Sub1 extends Class348_Sub16
     }
     
     static void parseGpi(GameBuffer buffer, int packetSize) {
-	Class101_Sub3.anInt5768 = 0;
+	Class101_Sub3.amountUpdatePlayers = 0;
 	anInt8846++;
-	Class55.aBoolean979 = false;
-        Class348_Sub40_Sub18.method3094(-21478, buffer);
-        Class375.method3612(75, buffer);
-        if (Class55.aBoolean979)
+	Class55.printEndGpp = false;
+        Class348_Sub40_Sub18.parsePlayerMovements(buffer);
+        Class375.parsePlayerUpdates(buffer);
+        if (Class55.printEndGpp)
             System.out.println("---endgpp---");
         if (packetSize != buffer.position)
             throw new RuntimeException("gpi1 pos:" + buffer.position + " psize:" + packetSize);

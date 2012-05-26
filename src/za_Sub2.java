@@ -45,22 +45,22 @@ final class za_Sub2 extends za
     }
     
     static final void method3443
-	(boolean bool, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	(boolean bool, Mob class318_sub1_sub3_sub3) {
 	anInt9778++;
-	if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	if ((((Mob) class318_sub1_sub3_sub3)
 	     .anIntArray10242) != null
-	    || (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    || (((Mob) class318_sub1_sub3_sub3)
 		.anIntArray10296) != null) {
 	    boolean bool_2_ = bool;
 	    for (int i = 0;
-		 i < (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		 i < (((Mob) class318_sub1_sub3_sub3)
 		      .anIntArray10242).length;
 		 i++) {
 		int i_3_ = -1;
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if ((((Mob) class318_sub1_sub3_sub3)
 		     .anIntArray10242)
 		    != null)
-		    i_3_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    i_3_ = (((Mob) class318_sub1_sub3_sub3)
 			    .anIntArray10242[i]);
 		if ((i_3_ ^ 0xffffffff) == 0) {
 		    if (!class318_sub1_sub3_sub3.method2423(-80, i, -1))
@@ -75,7 +75,7 @@ final class za_Sub2 extends za
 			int i_8_ = i_3_ & 0xfffffff;
 			int i_9_ = i_8_ >> -934245874;
 			i_7_ = (((Class318_Sub1) class318_sub1_sub3_sub3)
-				.anInt6377) - 512 * (i_9_ - baseRegionX) - 256;
+				.xHash) - 512 * (i_9_ - baseRegionX) - 256;
 			int i_10_ = i_8_ & 0x3fff;
 			i_6_ = (-256 - (i_10_ - Class90.baseRegionY) * 512
 				+ (((Class318_Sub1) class318_sub1_sub3_sub3)
@@ -97,13 +97,13 @@ final class za_Sub2 extends za
 				   class318_sub1_sub3_sub3_sub1).anInt6388);
 			i_7_
 			    = (-(((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
-				 .anInt6377)
+				 .xHash)
 			       + (((Class318_Sub1) class318_sub1_sub3_sub3)
-				  .anInt6377));
+				  .xHash));
 		    } else {
 			int i_11_ = i_3_ & 0x7fff;
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_11_]);
 			if (class318_sub1_sub3_sub3_sub2 == null) {
 			    class318_sub1_sub3_sub3.method2423(67, i, -1);
@@ -115,9 +115,9 @@ final class za_Sub2 extends za
 				   class318_sub1_sub3_sub3_sub2).anInt6388);
 			i_7_
 			    = (-(((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-				 .anInt6377)
+				 .xHash)
 			       + (((Class318_Sub1) class318_sub1_sub3_sub3)
-				  .anInt6377));
+				  .xHash));
 		    }
 		    if ((i_7_ ^ 0xffffffff) != -1 || (i_6_ ^ 0xffffffff) != -1)
 			class318_sub1_sub3_sub3.method2423
@@ -127,10 +127,10 @@ final class za_Sub2 extends za
 		}
 	    }
 	    if (bool_2_) {
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		((Mob) class318_sub1_sub3_sub3)
 		    .anIntArray10242
 		    = null;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		((Mob) class318_sub1_sub3_sub3)
 		    .anIntArray10296
 		    = null;
 	    }

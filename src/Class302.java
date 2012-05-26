@@ -72,13 +72,13 @@ final class Class302
 		Class335.method2655
 		    (98,
 		     ((Class318_Sub1)
-		      Class132.localPlayer).aByte6381,
+		      Class132.localPlayer).heightLevel,
 		     Class348_Sub51.anInt7267,
 		     i_5_ + (((Class318_Sub1)
 			      Class132.localPlayer)
 			     .anInt6388),
 		     (((Class318_Sub1)
-		       Class132.localPlayer).anInt6377
+		       Class132.localPlayer).xHash
 		      - -i_5_));
 		Class348_Sub51.anInt7267 = 0;
 	    }

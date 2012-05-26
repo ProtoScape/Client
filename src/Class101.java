@@ -28,8 +28,8 @@ abstract class Class101
 	anInt1595++;
 	int chunkX = ((Class286_Sub4.anInt6246 >> 239567308) + (za_Sub2.baseRegionX >> 515880227));
 	int chunkY = ((Class90.baseRegionY >> 591146499) + (Class59_Sub2_Sub2.anInt8685 >> 1861651468));
-	Class355.anInt4372 = ((Class318_Sub1) Class132.localPlayer).aByte6381 = (byte) 0;
-	Class132.localPlayer.setLocationUnkn(8, 8);
+	Class355.localHeightLevel = ((Class318_Sub1) Class132.localPlayer).heightLevel = (byte) 0;
+	Class132.localPlayer.setLocalCoords(8, 8);
 	int i = 18;
 	Class322.nArchiveids = new int[i];
 	StringNode.nArchiveSrcs = new byte[i][];

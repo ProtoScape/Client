@@ -75,10 +75,10 @@ final class Class348_Sub40_Sub32 extends Class348_Sub40
 		    = (((i_5_ * ((((Class190) Class239_Sub14.aClass190_5990)
 				  .anInt2540)
 				 & 0xff00ff)
-			 + (Class318_Sub1_Sub3.anInt8739 & 0xff00ff) * i_4_)
+			 + (Entity.anInt8739 & 0xff00ff) * i_4_)
 			& ~0xff00ff)
 		       - -(0xff0000
-			   & (i_4_ * (0xff00 & Class318_Sub1_Sub3.anInt8739)
+			   & (i_4_ * (0xff00 & Entity.anInt8739)
 			      + (0xff00
 				 & (((Class190) Class239_Sub14.aClass190_5990)
 				    .anInt2540)) * i_5_))) >>> -2125200792;

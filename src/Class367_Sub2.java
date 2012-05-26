@@ -22,7 +22,7 @@ final class Class367_Sub2 extends Class367
 				 Class318_Sub1_Sub2 class318_sub1_sub2) {
 	Class357 class357 = Class348_Sub46.method3321(i, i_0_, i_1_);
 	if (class357 != null) {
-	    ((Class318_Sub1) class318_sub1_sub2).anInt6377
+	    ((Class318_Sub1) class318_sub1_sub2).xHash
 		= (i_0_ << Class362.anInt4459) + Class348_Sub23_Sub2.anInt9037;
 	    ((Class318_Sub1) class318_sub1_sub2).anInt6382 = i_2_;
 	    ((Class318_Sub1) class318_sub1_sub2).anInt6388
@@ -41,7 +41,7 @@ final class Class367_Sub2 extends Class367
 			= Node.aClass318_Sub1Array4293[i_3_];
 		    Node.aClass318_Sub1Array4293[i_3_]
 			= class318_sub1_sub2;
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		}
 	    } else {
 		((Class318_Sub1) class318_sub1_sub2).aClass318_Sub1_6379

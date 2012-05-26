@@ -49,11 +49,11 @@ final class Class282
 			    = (((Class348_Sub22) class348_sub22)
 			       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 			if (((((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
-			      .anInt6377)
+			      .xHash)
 			     ^ 0xffffffff) <= -1
 			    && (Class367_Sub4.mapSizeX * 512
 				> ((Class318_Sub1)
-				   class318_sub1_sub3_sub3_sub1).anInt6377)
+				   class318_sub1_sub3_sub3_sub1).xHash)
 			    && ((((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
 				 .anInt6388)
 				^ 0xffffffff) <= -1
@@ -64,9 +64,9 @@ final class Class282
 				((byte) -103,
 				 ((Class275.method2064
 				   (((Class318_Sub1)
-				     class318_sub1_sub3_sub3_sub1).anInt6377,
+				     class318_sub1_sub3_sub3_sub1).xHash,
 				    (((Class318_Sub1) class318_sub1_sub3_sub5)
-				     .aByte6381),
+				     .heightLevel),
 				    11219,
 				    ((Class318_Sub1)
 				     class318_sub1_sub3_sub3_sub1).anInt6388))
@@ -76,7 +76,7 @@ final class Class282
 				  class318_sub1_sub3_sub3_sub1).anInt6388,
 				 Class367_Sub11.logicCycle,
 				 ((Class318_Sub1)
-				  class318_sub1_sub3_sub3_sub1).anInt6377);
+				  class318_sub1_sub3_sub3_sub1).xHash);
 		    }
 		}
 		if ((((Class318_Sub1_Sub3_Sub5) class318_sub1_sub3_sub5)
@@ -91,14 +91,14 @@ final class Class282
 			    = Class132.localPlayer;
 		    else
 			class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_0_]);
 		    if (class318_sub1_sub3_sub3_sub2 != null
 			&& (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			    .anInt6377) >= 0
+			    .xHash) >= 0
 			&& ((512 * Class367_Sub4.mapSizeX ^ 0xffffffff)
 			    < ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-				.anInt6377)
+				.xHash)
 			       ^ 0xffffffff))
 			&& ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
 			     .anInt6388)
@@ -109,9 +109,9 @@ final class Class282
 			    ((byte) -103,
 			     ((Class275.method2064
 			       ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-				 .anInt6377),
+				 .xHash),
 				(((Class318_Sub1) class318_sub1_sub3_sub5)
-				 .aByte6381),
+				 .heightLevel),
 				11219,
 				(((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
 				 .anInt6388)))
@@ -121,7 +121,7 @@ final class Class282
 			      .anInt6388),
 			     Class367_Sub11.logicCycle,
 			     (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			      .anInt6377));
+			      .xHash));
 		}
 		class318_sub1_sub3_sub5.method2475((byte) 75,
 						   Class348_Sub51.anInt7267);

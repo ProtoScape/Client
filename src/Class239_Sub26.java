@@ -35,38 +35,38 @@ final class Class239_Sub26 extends Class239
     }
     
     static final void method1834
-	(Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3, byte i) {
+	(Mob class318_sub1_sub3_sub3, byte i) {
 	anInt6125++;
 	int i_2_
-	    = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10239
+	    = (((Mob) class318_sub1_sub3_sub3).anInt10239
 	       - Class367_Sub11.logicCycle);
 	if (i < 0) {
-	    int i_3_ = ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    int i_3_ = ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10293) * 512
 			+ 256 * class318_sub1_sub3_sub3.method2436((byte) 73));
 	    int i_4_
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
 			  .anInt10314)
 		   - -(class318_sub1_sub3_sub3.method2436((byte) 114) * 256));
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10326 = 0;
+	    ((Mob) class318_sub1_sub3_sub3).anInt10326 = 0;
 	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		+= ((i_4_
 		     + -((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388)
 		    / i_2_);
-	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+	    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 		+= ((i_3_
-		     + -((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377)
+		     + -((Class318_Sub1) class318_sub1_sub3_sub3).xHash)
 		    / i_2_);
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10231
 		== 0)
 		class318_sub1_sub3_sub3.method2440((byte) 49, 8192);
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10231
 		== 1)
 		class318_sub1_sub3_sub3.method2440((byte) 49, 12288);
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10231
 		== 2)
 		class318_sub1_sub3_sub3.method2440((byte) 49, 0);
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10231
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10231
 		== 3)
 		class318_sub1_sub3_sub3.method2440((byte) 49, 4096);
 	}

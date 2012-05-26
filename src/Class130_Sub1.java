@@ -158,7 +158,7 @@ final class Class130_Sub1 extends Class130
 		Class22.anInt329 = 0;
 		OpenGlToolkit.anInt7596 = 0;
 		NpcDefinition.anInt1341 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10311 = 0;
+		Mob.anInt10311 = 0;
 		NativeToolkit.anInt8026 = 0;
 		Class268.anInt3431 = 0;
 		AbstractMouseEvent.anInt7104 = 0;
@@ -570,7 +570,7 @@ final class Class130_Sub1 extends Class130
 		AbstractToolkit.anInt4561 = 0;
 		Class27.anInt393 = 0;
 		Class318_Sub1_Sub4.anInt8761 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10272 = 0;
+		Mob.anInt10272 = 0;
 		Class64_Sub2.anInt5440 = 0;
 		Class318_Sub1_Sub5_Sub1.anInt10132 = 0;
 		Class348_Sub16_Sub3.anInt8919 = 0;
@@ -956,7 +956,7 @@ final class Class130_Sub1 extends Class130
 		ClientApplet.anInt5 = 0;
 		NativeToolkit.anInt7917 = 0;
 		Class11.anInt195 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10251 = 0;
+		Mob.anInt10251 = 0;
 		Class295.anInt3757 = 0;
 		Class318_Sub1_Sub4_Sub2.anInt10108 = 0;
 		Class5_Sub3.anInt8372 = 0;
@@ -1398,7 +1398,7 @@ final class Class130_Sub1 extends Class130
 		Class258.anInt4854 = 0;
 		Class93.anInt1529 = 0;
 		Class371.anInt4523 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10212 = 0;
+		Mob.anInt10212 = 0;
 		OpenGlToolkit.anInt7718 = 0;
 		Class348_Sub16_Sub1.anInt8858 = 0;
 		Class98.anInt1571 = 0;
@@ -1428,7 +1428,7 @@ final class Class130_Sub1 extends Class130
 		Npc.anInt10506 = 0;
 		Class367_Sub2.anInt7291 = 0;
 		Class318_Sub1_Sub2_Sub1.anInt10183 = 0;
-		Class318_Sub1_Sub3.anInt8746 = 0;
+		Entity.anInt8746 = 0;
 		Class239_Sub13.anInt5981 = 0;
 		NativeOpenGlToolkit.anInt9817 = 0;
 		OndemandWorker.anInt3200 = 0;
@@ -1741,7 +1741,7 @@ final class Class130_Sub1 extends Class130
 		Class223.anInt2897 = 0;
 		NativeToolkit.anInt8009 = 0;
 		Class126.anInt4986 = 0;
-		Class318_Sub1_Sub3.anInt8753 = 0;
+		Entity.anInt8753 = 0;
 		OpenGlToolkit.anInt7515 = 0;
 		MouseMovementListener.anInt7431 = 0;
 		Class191.anInt2560 = 0;
@@ -2080,7 +2080,7 @@ final class Class130_Sub1 extends Class130
 		Class40.anInt551 = 0;
 		Class268.anInt3445 = 0;
 		ScriptExecutor.anInt1171 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10235 = 0;
+		Mob.anInt10235 = 0;
 		ClassicLoadingScreen.anInt5052 = 0;
 		Class239_Sub9.anInt5926 = 0;
 		ClientApplet.anInt15 = 0;
@@ -2145,7 +2145,7 @@ final class Class130_Sub1 extends Class130
 		Class348_Sub5.anInt6628 = 0;
 		OpenGlRaster.anInt8440 = 0;
 		Class239_Sub10.anInt5936 = 0;
-		Class318_Sub1_Sub3.anInt8754 = 0;
+		Entity.anInt8754 = 0;
 		Class341.anInt4227 = 0;
 		Class367_Sub10.anInt7387 = 0;
 		Class348_Sub44.anInt7100 = 0;
@@ -2226,7 +2226,7 @@ final class Class130_Sub1 extends Class130
 		NpcDefinition.anInt1379 = 0;
 		Class286_Sub8.anInt6305 = 0;
 		Class318_Sub1_Sub4_Sub1.anInt10083 = 0;
-		Class318_Sub1_Sub3.anInt8740 = 0;
+		Entity.anInt8740 = 0;
 		Class367.anInt4484 = 0;
 		Class253.anInt3250 = 0;
 		Class285.anInt4752 = 0;
@@ -2263,7 +2263,7 @@ final class Class130_Sub1 extends Class130
 		ClientApplet.anInt22 = 0;
 		Class239_Sub11.anInt5953 = 0;
 		Class64_Sub2.anInt5500 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10262 = 0;
+		Mob.anInt10262 = 0;
 		Class299_Sub1_Sub2.anInt8702 = 0;
 		LoadingHandler.anInt3902 = 0;
 		Model.anInt1819 = 0;
@@ -2385,7 +2385,7 @@ final class Class130_Sub1 extends Class130
 		Class318_Sub1_Sub5_Sub1.anInt10141 = 0;
 		MapLoader.anInt3106 = 0;
 		Class181.anInt2396 = 0;
-		Class318_Sub1_Sub3.anInt8742 = 0;
+		Entity.anInt8742 = 0;
 		IsaacCipher.anInt1297 = 0;
 		NativeToolkit.anInt7961 = 0;
 		Class348_Sub40_Sub35.anInt9441 = 0;
@@ -2464,7 +2464,7 @@ final class Class130_Sub1 extends Class130
 		OpenGlToolkit.anInt7671 = 0;
 		ClientApplet.anInt16 = 0;
 		Class357.anInt4393 = 0;
-		Class318_Sub1_Sub3.anInt8748 = 0;
+		Entity.anInt8748 = 0;
 		Class285_Sub1.anInt8489 = 0;
 		SocketWorker.anInt2653 = 0;
 		Class308.anInt3880 = 0;
@@ -2510,7 +2510,7 @@ final class Class130_Sub1 extends Class130
 		Player.anInt10563 = 0;
 		Class348_Sub16_Sub3.anInt8908 = 0;
 		Class14_Sub4.anInt8646 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10216 = 0;
+		Mob.anInt10216 = 0;
 		Class187.anInt2508 = 0;
 		Class348_Sub41.anInt7046 = 0;
 		Class59.anInt1077 = 0;
@@ -2587,7 +2587,7 @@ final class Class130_Sub1 extends Class130
 		MouseMovementListener.anInt7443 = 0;
 		NpcDefinition.anInt1378 = 0;
 		Class239_Sub21.anInt6067 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10298 = 0;
+		Mob.anInt10298 = 0;
 		Class318.anInt3973 = 0;
 		Class284.anInt3664 = 0;
 		Client.anInt5179 = 0;
@@ -2682,7 +2682,7 @@ final class Class130_Sub1 extends Class130
 		Class239_Sub29.anInt6144 = 0;
 		Class315.anInt3955 = 0;
 		Class348_Sub40_Sub28.anInt9361 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10313 = 0;
+		Mob.anInt10313 = 0;
 		Class108.anInt1658 = 0;
 		OpenGlToolkit.anInt7514 = 0;
 		Player.anInt10529 = 0;
@@ -2926,7 +2926,7 @@ final class Class130_Sub1 extends Class130
 		ItemLoader.anInt3282 = 0;
 		Class14.anInt5086 = 0;
 		Class169.anInt2263 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10228 = 0;
+		Mob.anInt10228 = 0;
 		Client.anInt5170 = 0;
 		OpenGlToolkit.anInt7535 = 0;
 		Class348_Sub23_Sub1.anInt9003 = 0;
@@ -2955,7 +2955,7 @@ final class Class130_Sub1 extends Class130
 		Class239_Sub24.anInt6088 = 0;
 		NpcLoader.anInt3579 = 0;
 		ByteBuffer.anInt7195 = 0;
-		Class359.anInt4422 = 0;
+		OffscreenPlayer.anInt4422 = 0;
 		s_Sub2.anInt8254 = 0;
 		Class348_Sub23.anInt6863 = 0;
 		OndemandWorker.anInt3188 = 0;
@@ -2972,7 +2972,7 @@ final class Class130_Sub1 extends Class130
 		Class64_Sub2.anInt5522 = 0;
 		Class14.anInt5097 = 0;
 		Class348_Sub40_Sub34.anInt9433 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10233 = 0;
+		Mob.anInt10233 = 0;
 		OpenGlToolkit.anInt7528 = 0;
 		NativeToolkit.anInt8067 = 0;
 		OutputstreamWorker.anInt2714 = 0;
@@ -2994,7 +2994,7 @@ final class Class130_Sub1 extends Class130
 		AnimationDefinition.anInt266 = 0;
 		Class348_Sub16_Sub3.anInt8936 = 0;
 		Class254.anInt3262 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10277 = 0;
+		Mob.anInt10277 = 0;
 		Class348_Sub40_Sub4.anInt9115 = 0;
 		Class285.anInt4751 = 0;
 		FileIndexRequest.anInt10460 = 0;
@@ -3014,7 +3014,7 @@ final class Class130_Sub1 extends Class130
 		Client.anInt5188 = 0;
 		Class348_Sub18.anInt6807 = 0;
 		OpenGlToolkit.anInt7726 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10307 = 0;
+		Mob.anInt10307 = 0;
 		Model.anInt1826 = 0;
 		Class127_Sub1.anInt8381 = 0;
 		Class348_Sub40_Sub39.anInt9483 = 0;
@@ -3047,7 +3047,7 @@ final class Class130_Sub1 extends Class130
 		OndemandWorker.anInt3194 = 0;
 		Class367_Sub9.anInt7374 = 0;
 		Class289.anInt3703 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10205 = 0;
+		Mob.anInt10205 = 0;
 		Class239_Sub24.anInt6085 = 0;
 		HashTable.anInt4375 = 0;
 		Npc.anInt10498 = 0;
@@ -3149,7 +3149,7 @@ final class Class130_Sub1 extends Class130
 		Class166.anInt2189 = 0;
 		Class240.anInt4680 = 0;
 		Class50_Sub3.anInt5244 = 0;
-		Class359.anInt4419 = 0;
+		OffscreenPlayer.anInt4419 = 0;
 		FileOnDisk.anInt3041 = 0;
 		OpenGlRaster.anInt8433 = 0;
 		Class183.anInt2463 = 0;
@@ -3225,7 +3225,7 @@ final class Class130_Sub1 extends Class130
 		Class64_Sub3.anInt5599 = 0;
 		s_Sub2.anInt8248 = 0;
 		Class318_Sub1_Sub4_Sub1.anInt10088 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10214 = 0;
+		Mob.anInt10214 = 0;
 		Player.anInt10543 = 0;
 		Class285.anInt4740 = 0;
 		Class269.anInt3461 = 0;
@@ -3254,7 +3254,7 @@ final class Class130_Sub1 extends Class130
 		Class67.anInt4644 = 0;
 		Class239_Sub20.anInt6052 = 0;
 		Class286_Sub2.anInt6206 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10249 = 0;
+		Mob.anInt10249 = 0;
 		Class100.anInt1587 = 0;
 		Class113.anInt1741 = 0;
 		s_Sub2.anInt8271 = 0;
@@ -3278,7 +3278,7 @@ final class Class130_Sub1 extends Class130
 		Whirlpool.anInt1464 = 0;
 		Class101_Sub1.anInt5657 = 0;
 		EntryElementLoader.anInt4794 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10299 = 0;
+		Mob.anInt10299 = 0;
 		NativeRaster.anInt8390 = 0;
 		NativeOpenGlToolkit.anInt9843 = 0;
 		Class318_Sub1_Sub4_Sub1.anInt10093 = 0;
@@ -3316,7 +3316,7 @@ final class Class130_Sub1 extends Class130
 		Class348_Sub16_Sub2.anInt8873 = 0;
 		Npc.anInt10493 = 0;
 		NativeToolkit.anInt8017 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10297 = 0;
+		Mob.anInt10297 = 0;
 		Class50_Sub2.anInt5234 = 0;
 		Class141.anInt1967 = 0;
 		GamePacket.anInt4324 = 0;
@@ -3368,7 +3368,7 @@ final class Class130_Sub1 extends Class130
 		ScriptExecutor.anInt1159 = 0;
 		Class50_Sub3.anInt5251 = 0;
 		Class239.anInt3134 = 0;
-		Class318_Sub1_Sub3.anInt8749 = 0;
+		Entity.anInt8749 = 0;
 		s_Sub3.anInt8310 = 0;
 		ItemDefinition.anInt2800 = 0;
 		Class348_Sub40_Sub32.anInt9418 = 0;
@@ -3441,7 +3441,7 @@ final class Class130_Sub1 extends Class130
 		Queue.anInt1653 = 0;
 		Class348_Sub44.anInt7095 = 0;
 		Class348_Sub16_Sub3.anInt8909 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10200 = 0;
+		Mob.anInt10200 = 0;
 		Class258.anInt4850 = 0;
 		Class277.anInt3565 = 0;
 		Class48.anInt850 = 0;
@@ -3648,7 +3648,7 @@ final class Class130_Sub1 extends Class130
 		NativeRaster.anInt8404 = 0;
 		ByteBuffer.anInt7174 = 0;
 		Class348_Sub40.anInt7040 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10263 = 0;
+		Mob.anInt10263 = 0;
 		Class18.anInt273 = 0;
 		Class318_Sub1_Sub3_Sub4.anInt10361 = 0;
 		Class286_Sub3.anInt6217 = 0;
@@ -3669,7 +3669,7 @@ final class Class130_Sub1 extends Class130
 		Class64_Sub2.anInt5518 = 0;
 		Class315.anInt3944 = 0;
 		Class348_Sub40_Sub8.anInt9154 = 0;
-		Class318_Sub1_Sub3.anInt8752 = 0;
+		Entity.anInt8752 = 0;
 		r_Sub1.anInt10475 = 0;
 		Class348_Sub42_Sub20.anInt9709 = 0;
 		Class135_Sub2.anInt4834 = 0;
@@ -3951,7 +3951,7 @@ final class Class130_Sub1 extends Class130
 		Class318_Sub1_Sub1.anInt8721 = 0;
 		DummyInputstream2.anInt74 = 0;
 		Class361.anInt4450 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10256 = 0;
+		Mob.anInt10256 = 0;
 		Class299_Sub1_Sub2.anInt8703 = 0;
 		Class279.anInt3607 = 0;
 		AnimationDefinition.anInt246 = 0;
@@ -4082,9 +4082,9 @@ final class Class130_Sub1 extends Class130
 		MouseMovementListener.anInt7437 = 0;
 		Class239_Sub1.anInt5845 = 0;
 		s_Sub3.anInt8295 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10254 = 0;
+		Mob.anInt10254 = 0;
 		Widget.anInt684 = 0;
-		Class318_Sub1_Sub3_Sub3.anInt10281 = 0;
+		Mob.anInt10281 = 0;
 		TextureLoader.anInt4621 = 0;
 		Class298.anInt3808 = 0;
 		Class153.anInt2079 = 0;
@@ -4120,7 +4120,7 @@ final class Class130_Sub1 extends Class130
 		Class20.anInt319 = (int)(Math.random() * 100D) - 50;
 		Class348_Sub40_Sub16.method3089(-126);
 		for(int k = 0; ~k > -2049; k++)
-			ClassicLoadingScreen.players[k] = null;
+			ClassicLoadingScreen.onscreenPlayers[k] = null;
 
 		Class150.anInt2057 = 0;
 		Class348_Sub32.anInt6930 = 0;
@@ -4130,7 +4130,7 @@ final class Class130_Sub1 extends Class130
 		Class225.aClass243_2957.method1876((byte)-45);
 		Class130.aClass356_1895.removeAll(0);
 		Class348_Sub42_Sub20.aClass262_9711 = new Deque();
-		Class318_Sub1_Sub3_Sub3.varbitHandler.reset();
+		Mob.varbitHandler.reset();
 		Class331.method2636(i + 69);
 		Class239_Sub12.anInt5973 = 0;
 		Class275.anInt3550 = 0;

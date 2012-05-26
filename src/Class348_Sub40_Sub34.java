@@ -30,7 +30,7 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40
 	anInt9437++;
 	Class225.anInt2955 = 0;
 	Class348_Sub18.method2938((byte) 87);
-	Class318_Sub1_Sub3_Sub3.method2433();
+	Mob.method2433();
 	if (i != 11)
 	    anIntArray9436 = null;
 	for (int i_2_ = 0; (i_2_ ^ 0xffffffff) > -5; i_2_++)
@@ -54,14 +54,14 @@ final class Class348_Sub40_Sub34 extends Class348_Sub40
 	    Class348_Sub27.aClass302Array6897[i_3_] = null;
 	SubNode.method3163((byte) -114);
 	for (int i_4_ = 0; (i_4_ ^ 0xffffffff) > -2049; i_4_++)
-	    ClassicLoadingScreen.players[i_4_] = null;
+	    ClassicLoadingScreen.onscreenPlayers[i_4_] = null;
 	Class150.anInt2057 = 0;
 	Class282.aClass356_3654.removeAll(i ^ 0xb);
 	Class348_Sub32.anInt6930 = 0;
 	Class130.aClass356_1895.removeAll(0);
 	Class128.method1122(0);
 	Class135_Sub1.anInt4718 = 0;
-	Class318_Sub1_Sub3_Sub3.varbitHandler.reset();
+	Mob.varbitHandler.reset();
 	Class301.method2282(-12648);
 	Class50_Sub3.method465(i + -1636518175);
 	Class101_Sub2.aLong5745 = 0L;

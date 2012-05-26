@@ -116,11 +116,9 @@ final class GameBuffer extends ByteBuffer
 	((WidgetVariable) class348_sub42_sub15).intArg = i_14_;
     }
     
-    final void finalizeBitAccess(boolean bool) {
+    final void finalizeBitAccess() {
 	anInt9753++;
 	((ByteBuffer) this).position = (7 + anInt9754) / 8;
-	if (bool != false)
-	    aShortArray9768 = null;
     }
     
     static final int[][] method3413(int i, int i_15_, int i_16_, int i_17_,
@@ -166,8 +164,7 @@ final class GameBuffer extends ByteBuffer
 	super(i);
     }
     
-    final void initiateBitAccess(int i) {
-	int i_24_ = -126 / ((-15 - i) / 49);
+    final void initiateBitAccess() {
 	anInt9767++;
 	anInt9754 = 8 * ((ByteBuffer) this).position;
     }

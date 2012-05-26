@@ -76,10 +76,10 @@ final class Class348_Sub41 extends Node
     
     static void updateLocation(int chnkX, int chnkY, int mode, boolean force) {
 	anInt7049++;
-	if (force || chnkX != AbstractToolkit.chnkX || (chnkY ^ 0xffffffff) != (Class327.chnkY ^ 0xffffffff) || (Class355.anInt4372 != Class167.anInt2204 && ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959).aClass239_Sub27_7261.method1840(-32350) != 1)) {
+	if (force || chnkX != AbstractToolkit.chnkX || (chnkY ^ 0xffffffff) != (Class327.chnkY ^ 0xffffffff) || (Class355.localHeightLevel != Class167.anInt2204 && ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959).aClass239_Sub27_7261.method1840(-32350) != 1)) {
 	    AbstractToolkit.chnkX = chnkX;
 	    Class327.chnkY = chnkY;
-	    Class167.anInt2204 = Class355.anInt4372;
+	    Class167.anInt2204 = Class355.localHeightLevel;
 	    if (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959).aClass239_Sub27_7261.method1840(-32350) == 1)
 		Class167.anInt2204 = 0;
 	    ByteBuffer.setClientState(2, mode);
@@ -98,11 +98,11 @@ final class Class348_Sub41 extends Node
 		    if (class348_sub22 != null) {
 			Npc class318_sub1_sub3_sub3_sub1 = (((Class348_Sub22) class348_sub22).aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 			for (int i_23_ = 0; (i_23_ ^ 0xffffffff) > -11; i_23_++) {
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1).anIntArray10320[i_23_] -= dx;
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1).anIntArray10317[i_23_] -= dy;
+			    ((Mob) class318_sub1_sub3_sub3_sub1).xList[i_23_] -= dx;
+			    ((Mob) class318_sub1_sub3_sub3_sub1).yList[i_23_] -= dy;
 			}
 			((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6388 -= dy * 512;
-			((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6377 -= dx * 512;
+			((Class318_Sub1) class318_sub1_sub3_sub3_sub1).xHash -= dx * 512;
 		    }
 		}
 	    } else {
@@ -124,12 +124,12 @@ final class Class348_Sub41 extends Node
 			    .anInt6388
 			    -= 512 * dy;
 			((Class318_Sub1) npc)
-			    .anInt6377
+			    .xHash
 			    -= 512 * dx;
 			if ((((Class318_Sub1) npc)
-			     .anInt6377) < 0
+			     .xHash) < 0
 			    || ((((Class318_Sub1) npc)
-				 .anInt6377)
+				 .xHash)
 				^ 0xffffffff) < (i_25_ ^ 0xffffffff)
 			    || (((Class318_Sub1) npc)
 				.anInt6388) < 0
@@ -143,29 +143,29 @@ final class Class348_Sub41 extends Node
 			    boolean bool_28_ = true;
 			    for (int i_29_ = 0; (i_29_ ^ 0xffffffff) > -11;
 				 i_29_++) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 npc)
-				    .anIntArray10320[i_29_]
+				    .xList[i_29_]
 				    -= dx;
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 npc)
-				    .anIntArray10317[i_29_]
+				    .yList[i_29_]
 				    -= dy;
-				if ((((Class318_Sub1_Sub3_Sub3)
+				if ((((Mob)
 				      npc)
-				     .anIntArray10320[i_29_]) < 0
+				     .xList[i_29_]) < 0
 				    || ((Class367_Sub4.mapSizeX ^ 0xffffffff)
-					>= ((((Class318_Sub1_Sub3_Sub3)
+					>= ((((Mob)
 					      npc)
-					     .anIntArray10320[i_29_])
+					     .xList[i_29_])
 					    ^ 0xffffffff))
-				    || ((((Class318_Sub1_Sub3_Sub3)
+				    || ((((Mob)
 					  npc)
-					 .anIntArray10317[i_29_])
+					 .yList[i_29_])
 					^ 0xffffffff) > -1
-				    || (((((Class318_Sub1_Sub3_Sub3)
+				    || (((((Mob)
 					   npc)
-					  .anIntArray10317[i_29_])
+					  .yList[i_29_])
 					 ^ 0xffffffff)
 					<= (Class348_Sub40_Sub3.mapSizeY
 					    ^ 0xffffffff)))
@@ -178,9 +178,9 @@ final class Class348_Sub41 extends Node
 				class348_sub22.removeNode();
 			    } else
 				EntityPacket.anIntArray1233[Class150.anInt2057++]
-				    = (((Class318_Sub1_Sub3_Sub3)
+				    = (((Mob)
 					npc)
-				       .anInt10290);
+				       .localId);
 			}
 		    }
 		}
@@ -193,21 +193,21 @@ final class Class348_Sub41 extends Node
 	    }
 		for (int i_30_ = 0; (i_30_ ^ 0xffffffff) > -2049; i_30_++) {
 		    Player class318_sub1_sub3_sub3_sub2
-			= (ClassicLoadingScreen.players
+			= (ClassicLoadingScreen.onscreenPlayers
 			   [i_30_]);
 		    if (class318_sub1_sub3_sub3_sub2 != null) {
 			for (int i_31_ = 0; i_31_ < 10; i_31_++) {
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2)
-				.anIntArray10320[i_31_]
+				.xList[i_31_]
 				-= dx;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub2)
-				.anIntArray10317[i_31_]
+				.yList[i_31_]
 				-= dy;
 			}
 			((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			    .anInt6377
+			    .xHash
 			    -= dx * 512;
 			((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
 			    .anInt6388

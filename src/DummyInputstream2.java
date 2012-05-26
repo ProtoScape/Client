@@ -150,7 +150,7 @@ final class DummyInputstream2 extends InputStream
     }
     
     static final void method126(int i) {
-	Class318_Sub1_Sub3_Sub3.method2433();
+	Mob.method2433();
 	anInt73++;
 	for (int i_7_ = 0; (i_7_ ^ 0xffffffff) > -5; i_7_++)
 	    AbstractMouseEvent.aClass361Array7108[i_7_].method3500(700);

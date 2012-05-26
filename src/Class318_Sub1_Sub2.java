@@ -54,16 +54,16 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1
 	    return false;
 	anInt8733++;
 	Class148 class148
-	    = ModernLoadingScreen.method1449(((Class318_Sub1) this).aByte6381,
-				  (((Class318_Sub1) this).anInt6377
+	    = ModernLoadingScreen.method1449(((Class318_Sub1) this).heightLevel,
+				  (((Class318_Sub1) this).xHash
 				   >> Class362.anInt4459),
 				  (((Class318_Sub1) this).anInt6388
 				   >> Class362.anInt4459));
 	if (class148 == null
-	    || !((Class318_Sub1_Sub3)
+	    || !((Entity)
 		 ((Class148) class148).aClass318_Sub1_Sub3_2040).aBoolean8741)
-	    return aa_Sub2.method164(((Class318_Sub1) this).aByte6381,
-				     (((Class318_Sub1) this).anInt6377
+	    return aa_Sub2.method164(((Class318_Sub1) this).heightLevel,
+				     (((Class318_Sub1) this).xHash
 				      >> Class362.anInt4459),
 				     (byte) -97,
 				     (((Class318_Sub1) this).anInt6388
@@ -72,8 +72,8 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1
 		(((Class318_Sub1) this).anInt6388 >> Class362.anInt4459,
 		 ((Class148) class148).aClass318_Sub1_Sub3_2040
 		     .method2394(true) + this.method2394(true),
-		 ((Class318_Sub1) this).aByte6381, (byte) -79,
-		 ((Class318_Sub1) this).anInt6377 >> Class362.anInt4459));
+		 ((Class318_Sub1) this).heightLevel, (byte) -79,
+		 ((Class318_Sub1) this).xHash >> Class362.anInt4459));
     }
     
     final boolean method2378(int i) {
@@ -83,7 +83,7 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1
 	return (Class99.aBooleanArrayArray1572
 		[(Class318_Sub1_Sub4_Sub1.anInt10084
 		  + -Class239_Sub25.anInt6111
-		  + (((Class318_Sub1) this).anInt6377 >> Class362.anInt4459))]
+		  + (((Class318_Sub1) this).xHash >> Class362.anInt4459))]
 		[(Class318_Sub1_Sub4_Sub1.anInt10084
 		  + (-Class285_Sub2.anInt8502
 		     + (((Class318_Sub1) this).anInt6388
@@ -108,7 +108,7 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1
 	anInt8735++;
 	int i_2_ = -79 % ((-14 - i) / 61);
 	return this.method2390(class348_sub1s,
-			       (((Class318_Sub1) this).anInt6377
+			       (((Class318_Sub1) this).xHash
 				>> Class362.anInt4459),
 			       -2,
 			       (((Class318_Sub1) this).anInt6388
@@ -144,10 +144,10 @@ abstract class Class318_Sub1_Sub2 extends Class318_Sub1
     }
     
     Class318_Sub1_Sub2(int i, int i_6_, int i_7_, int i_8_, int i_9_) {
-	((Class318_Sub1) this).anInt6377 = i;
-	((Class318_Sub1) this).aByte6381 = (byte) i_8_;
+	((Class318_Sub1) this).xHash = i;
+	((Class318_Sub1) this).heightLevel = (byte) i_8_;
 	((Class318_Sub1) this).anInt6382 = i_6_;
-	((Class318_Sub1) this).aByte6376 = (byte) i_9_;
+	((Class318_Sub1) this).mapHeightLevel = (byte) i_9_;
 	((Class318_Sub1) this).anInt6388 = i_7_;
     }
 }

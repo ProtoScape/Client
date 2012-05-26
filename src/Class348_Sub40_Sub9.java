@@ -42,7 +42,7 @@ final class Class348_Sub40_Sub9 extends Class348_Sub40
 				28587);
 	    Widget.method440(2, (byte) -61);
 	}
-	Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.anInt4372;
+	Class318_Sub1_Sub3_Sub5.anInt10395 = Class355.localHeightLevel;
     }
     
     final void method3049(ByteBuffer class348_sub49, int i, int i_2_) {

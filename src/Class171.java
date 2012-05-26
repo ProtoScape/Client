@@ -64,16 +64,16 @@ final class Class171
 			i_15_ = Class318_Sub7.anInt6451 - 1;
 		    for (int i_16_ = i_14_; i_16_ <= i_15_; i_16_++) {
 			int i_17_ = 1;
-			Class318_Sub1_Sub3 class318_sub1_sub3
+			Entity class318_sub1_sub3
 			    = (Class177.method1353
 			       (i_3_, i_16_, i_10_,
 				(aClass2276 != null ? aClass2276
 				 : (aClass2276
 				    = method1324("Class318_Sub1_Sub3")))));
 			if (class318_sub1_sub3 != null
-			    && (((Class318_Sub1_Sub3) class318_sub1_sub3)
+			    && (((Entity) class318_sub1_sub3)
 				.aByte8745) != 0) {
-			    if ((((Class318_Sub1_Sub3) class318_sub1_sub3)
+			    if ((((Entity) class318_sub1_sub3)
 				 .aByte8745)
 				== 1) {
 				boolean bool = i_16_ - 1 >= i_14_;

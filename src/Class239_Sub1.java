@@ -44,11 +44,11 @@ final class Class239_Sub1 extends Class239
 	if (r.aBoolean9722 && (0x18 & Class38.anInt500 ^ 0xffffffff) != -1) {
 	    int i_2_ = -88 / ((i - -33) / 37);
 	    boolean bool = false;
-	    int i_3_ = Class328_Sub1.anInt6513;
-	    int[] is = Class286_Sub7.anIntArray6290;
+	    int i_3_ = Class328_Sub1.onscreenGpiOffset;
+	    int[] is = Class286_Sub7.onscreenGpiList;
 	    for (int i_4_ = 0; i_3_ > i_4_; i_4_++) {
 		Player class318_sub1_sub3_sub3_sub2
-		    = (ClassicLoadingScreen.players
+		    = (ClassicLoadingScreen.onscreenPlayers
 		       [is[i_4_]]);
 		if (((Player)
 		     class318_sub1_sub3_sub3_sub2).aString10544 != null
@@ -83,10 +83,10 @@ final class Class239_Sub1 extends Class239
 		    bool = true;
 		    Class298.method2252
 			(true,
-			 ((Class318_Sub1_Sub3_Sub3)
-			  class318_sub1_sub3_sub3_sub2).anIntArray10320[0],
-			 ((Class318_Sub1_Sub3_Sub3)
-			  class318_sub1_sub3_sub3_sub2).anIntArray10317[0],
+			 ((Mob)
+			  class318_sub1_sub3_sub3_sub2).xList[0],
+			 ((Mob)
+			  class318_sub1_sub3_sub3_sub2).yList[0],
 			 (byte) -99,
 			 class318_sub1_sub3_sub3_sub2.method2436((byte) 54), 0,
 			 class318_sub1_sub3_sub3_sub2.method2436((byte) 91),

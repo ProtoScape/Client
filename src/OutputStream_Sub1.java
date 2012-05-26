@@ -26,10 +26,10 @@ final class OutputStream_Sub1 extends OutputStream
 	    Class348_Sub8.currentToolkit.method3675(i_0_, (byte) -125, i_1_, i_3_,
 					     i_2_, -16777216);
 	else if ((((Class318_Sub1)
-		   Class132.localPlayer).anInt6377
+		   Class132.localPlayer).xHash
 		  ^ 0xffffffff) > -1
 		 || (((Class318_Sub1)
-		      Class132.localPlayer).anInt6377
+		      Class132.localPlayer).xHash
 		     >= Class367_Sub4.mapSizeX * 512)
 		 || ((Class318_Sub1)
 		     Class132.localPlayer).anInt6388 < 0
@@ -43,7 +43,7 @@ final class OutputStream_Sub1 extends OutputStream
 	    Class239_Sub15.anInt6006++;
 	    if (Class132.localPlayer != null
 		&& ((((Class318_Sub1)
-		      Class132.localPlayer).anInt6377
+		      Class132.localPlayer).xHash
 		     + -(256 * Class132.localPlayer
 				   .method2436((byte) 90))
 		     - -256) >> -313379639
@@ -84,8 +84,8 @@ final class OutputStream_Sub1 extends OutputStream
 		     -200 + (Class275.method2064
 			     ((((Class318_Sub1)
 				Class132.localPlayer)
-			       .anInt6377),
-			      Class355.anInt4372, 11219,
+			       .xHash),
+			      Class355.localHeightLevel, 11219,
 			      (((Class318_Sub1)
 				Class132.localPlayer)
 			       .anInt6388))),
@@ -104,7 +104,7 @@ final class OutputStream_Sub1 extends OutputStream
 		AnimationDefinition.method268
 		    (i_6_,
 		     -200 + Class275.method2064(Class348_Sub6.anInt6633,
-						Class355.anInt4372, 11219,
+						Class355.localHeightLevel, 11219,
 						Class348_Sub7.anInt6652),
 		     i_7_, Class192.anInt2578, i_2_, -19360,
 		     Class130_Sub1.anInt5799,
@@ -170,7 +170,7 @@ final class OutputStream_Sub1 extends OutputStream
 		Class101_Sub3.method941(124, Class187.anInt2500);
 		if ((Class375.anInt4545 ^ 0xffffffff)
 		    != (Class132.anInt1906 ^ 0xffffffff))
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		Class375.anInt4545 = Class132.anInt1906;
 	    } else {
 		Class348_Sub8.currentToolkit.ya();
@@ -221,7 +221,7 @@ final class OutputStream_Sub1 extends OutputStream
 			  .anInt6388) >> -932753879,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
-			  .aByte6381) - -1,
+			  .heightLevel) - -1,
 			 Class327.anIntArray4097, Class286_Sub4.anInt6246,
 			 Class59_Sub2_Sub2.anInt8685,
 			 ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
@@ -229,7 +229,7 @@ final class OutputStream_Sub1 extends OutputStream
 			 Class305.anInt3855,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
-			  .anInt6377) >> -832039159,
+			  .xHash) >> -832039159,
 			 Class156.anIntArray2117,
 			 Class348_Sub40_Sub19.anIntArray9259, i_16_,
 			 LoadingStage.anIntArray1045, Class367_Sub11.logicCycle,
@@ -244,11 +244,11 @@ final class OutputStream_Sub1 extends OutputStream
 			 LoadingStage.anIntArray1045, AnimatableToolkit.anIntArray1127,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
-			  .aByte6381) - -1,
+			  .heightLevel) - -1,
 			 i_16_,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
-			  .anInt6377) >> 1790545481,
+			  .xHash) >> 1790545481,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
 			  .anInt6388) >> 1598745993,

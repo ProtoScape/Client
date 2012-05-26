@@ -28,48 +28,48 @@ final class Class335
 	    Class225 class225 = ((Class348_Sub9) class348_sub9)
 				    .aClass318_Sub1_Sub3_Sub3_Sub1_6691
 				    .method2422((byte) 72);
-	    if ((((Class318_Sub1_Sub3_Sub3)
+	    if ((((Mob)
 		  (((Class348_Sub9) class348_sub9)
 		   .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 		 ^ 0xffffffff) == 0
-		|| ((Class318_Sub1_Sub3_Sub3)
+		|| ((Mob)
 		    (((Class348_Sub9) class348_sub9)
 		     .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).aBoolean10213)
 		i_4_ = 0;
 	    else if ((((Class225) class225).anInt2919
-		      == ((Class318_Sub1_Sub3_Sub3)
+		      == ((Mob)
 			  (((Class348_Sub9) class348_sub9)
 			   .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268)
-		     || ((((Class318_Sub1_Sub3_Sub3)
+		     || ((((Mob)
 			   (((Class348_Sub9) class348_sub9)
 			    .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 			  ^ 0xffffffff)
 			 == (((Class225) class225).anInt2920 ^ 0xffffffff))
 		     || (((Class225) class225).anInt2949
-			 == ((Class318_Sub1_Sub3_Sub3)
+			 == ((Mob)
 			     (((Class348_Sub9) class348_sub9)
 			      .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268)
 		     || ((((Class225) class225).anInt2914 ^ 0xffffffff)
-			 == (((Class318_Sub1_Sub3_Sub3)
+			 == (((Mob)
 			      (((Class348_Sub9) class348_sub9)
 			       .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 			     ^ 0xffffffff)))
 		i_4_ = 2;
 	    else if (((((Class225) class225).anInt2940 ^ 0xffffffff)
-		      == (((Class318_Sub1_Sub3_Sub3)
+		      == (((Mob)
 			   (((Class348_Sub9) class348_sub9)
 			    .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 			  ^ 0xffffffff))
 		     || (((Class225) class225).anInt2924
-			 == ((Class318_Sub1_Sub3_Sub3)
+			 == ((Mob)
 			     (((Class348_Sub9) class348_sub9)
 			      .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268)
-		     || ((((Class318_Sub1_Sub3_Sub3)
+		     || ((((Mob)
 			   (((Class348_Sub9) class348_sub9)
 			    .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 			  ^ 0xffffffff)
 			 == (((Class225) class225).anInt2947 ^ 0xffffffff))
-		     || (((Class318_Sub1_Sub3_Sub3)
+		     || (((Mob)
 			  (((Class348_Sub9) class348_sub9)
 			   .aClass318_Sub1_Sub3_Sub3_Sub1_6691)).anInt10268
 			 == ((Class225) class225).anInt2958))
@@ -85,7 +85,7 @@ final class Class335
 				     .aClass318_Sub1_Sub3_Sub3_Sub1_6691))
 				   .definition);
 		if (((NpcDefinition) class79).anIntArray1377 != null)
-		    class79 = class79.method794((Class318_Sub1_Sub3_Sub3
+		    class79 = class79.method794((Mob
 						 .varbitHandler),
 						-1);
 		if (class79 != null && i_5_ != -1) {
@@ -142,11 +142,11 @@ final class Class335
 	    ((Class348_Sub9) class348_sub9).anInt6678
 		= (((Class318_Sub1) (((Class348_Sub9) class348_sub9)
 				     .aClass318_Sub1_Sub3_Sub3_Sub1_6691))
-		   .anInt6377);
+		   .xHash);
 	    ((Class348_Sub9) class348_sub9).anInt6698
 		= ((((Class318_Sub1) (((Class348_Sub9) class348_sub9)
 				      .aClass318_Sub1_Sub3_Sub3_Sub1_6691))
-		    .anInt6377)
+		    .xHash)
 		   - -(((Class348_Sub9) class348_sub9)
 			   .aClass318_Sub1_Sub3_Sub3_Sub1_6691
 			   .method2436((byte) 55)
@@ -178,46 +178,46 @@ final class Class335
 	    Class225 class225 = ((Class348_Sub9) class348_sub9)
 				    .aClass318_Sub1_Sub3_Sub3_Sub2_6679
 				    .method2422((byte) 72);
-	    if (((Class318_Sub1_Sub3_Sub3)
+	    if (((Mob)
 		 (((Class348_Sub9) class348_sub9)
 		  .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268 != -1
-		&& !((Class318_Sub1_Sub3_Sub3)
+		&& !((Mob)
 		     (((Class348_Sub9) class348_sub9)
 		      .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).aBoolean10213) {
-		if ((((Class318_Sub1_Sub3_Sub3)
+		if ((((Mob)
 		      (((Class348_Sub9) class348_sub9)
 		       .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268
 		     != ((Class225) class225).anInt2919)
 		    && (((Class225) class225).anInt2920
-			!= ((Class318_Sub1_Sub3_Sub3)
+			!= ((Mob)
 			    (((Class348_Sub9) class348_sub9)
 			     .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268)
 		    && (((Class225) class225).anInt2949
-			!= ((Class318_Sub1_Sub3_Sub3)
+			!= ((Mob)
 			    (((Class348_Sub9) class348_sub9)
 			     .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268)
 		    && ((((Class225) class225).anInt2914 ^ 0xffffffff)
-			!= (((Class318_Sub1_Sub3_Sub3)
+			!= (((Mob)
 			     (((Class348_Sub9) class348_sub9)
 			      .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268
 			    ^ 0xffffffff))) {
 		    if (((((Class225) class225).anInt2940 ^ 0xffffffff)
-			 == (((Class318_Sub1_Sub3_Sub3)
+			 == (((Mob)
 			      (((Class348_Sub9) class348_sub9)
 			       .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268
 			     ^ 0xffffffff))
-			|| ((((Class318_Sub1_Sub3_Sub3)
+			|| ((((Mob)
 			      (((Class348_Sub9) class348_sub9)
 			       .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268
 			     ^ 0xffffffff)
 			    == (((Class225) class225).anInt2924 ^ 0xffffffff))
 			|| ((((Class225) class225).anInt2947 ^ 0xffffffff)
-			    == ((((Class318_Sub1_Sub3_Sub3)
+			    == ((((Mob)
 				  (((Class348_Sub9) class348_sub9)
 				   .aClass318_Sub1_Sub3_Sub3_Sub2_6679))
 				 .anInt10268)
 				^ 0xffffffff))
-			|| ((((Class318_Sub1_Sub3_Sub3)
+			|| ((((Mob)
 			      (((Class348_Sub9) class348_sub9)
 			       .aClass318_Sub1_Sub3_Sub3_Sub2_6679)).anInt10268
 			     ^ 0xffffffff)
@@ -282,11 +282,11 @@ final class Class335
 	    ((Class348_Sub9) class348_sub9).anInt6678
 		= (((Class318_Sub1) (((Class348_Sub9) class348_sub9)
 				     .aClass318_Sub1_Sub3_Sub3_Sub2_6679))
-		   .anInt6377);
+		   .xHash);
 	    ((Class348_Sub9) class348_sub9).anInt6698
 		= ((((Class318_Sub1) (((Class348_Sub9) class348_sub9)
 				      .aClass318_Sub1_Sub3_Sub3_Sub2_6679))
-		    .anInt6377)
+		    .xHash)
 		   + (((Class348_Sub9) class348_sub9)
 			  .aClass318_Sub1_Sub3_Sub3_Sub2_6679
 			  .method2436((byte) 123)

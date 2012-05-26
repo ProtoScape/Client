@@ -4,7 +4,7 @@
 
 final class ClanChatPlayer
 {
-    static ServerPacket aClass114_304;
+    static ServerPacket serverPacket70;
     static int anInt305;
     String aString306;
     static int anInt307;
@@ -47,12 +47,12 @@ final class ClanChatPlayer
 	}
 	anInt305++;
 	if (i >= -108)
-	    aClass114_304 = null;
+	    serverPacket70 = null;
     }
     
     public static void method284(byte i) {
 	aClass114_315 = null;
-	aClass114_304 = null;
+	serverPacket70 = null;
 	if (i == 51)
 	    aClass174Array311 = null;
     }
@@ -99,7 +99,7 @@ final class ClanChatPlayer
     }
     
     static {
-	aClass114_304 = new ServerPacket(70, -2);
+	serverPacket70 = new ServerPacket(70, -2);
 	aClass114_315 = new ServerPacket(15, 16);
     }
 }

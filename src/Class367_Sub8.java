@@ -59,7 +59,7 @@ final class Class367_Sub8 extends Class367
 		int i_12_ = is_8_[i_9_];
 		for (int i_13_ = 0;
 		     i_11_ != 0 && ((i_13_ ^ 0xffffffff)
-				    > ((((Class318_Sub1_Sub3_Sub3)
+				    > ((((Mob)
 					 class318_sub1_sub3_sub3_sub1)
 					.aClass182Array10308).length
 				       ^ 0xffffffff));
@@ -70,7 +70,7 @@ final class Class367_Sub8 extends Class367
 				= Class10.animationLoader.method835(i_10_,
 								 i + 7394);
 			    int i_14_ = ((AnimationDefinition) class17).anInt248;
-			    Class182 class182 = (((Class318_Sub1_Sub3_Sub3)
+			    Class182 class182 = (((Mob)
 						  class318_sub1_sub3_sub3_sub1)
 						 .aClass182Array10308[i_13_]);
 			    if (class182 != null) {
@@ -85,13 +85,13 @@ final class Class367_Sub8 extends Class367
 					       7))).anInt239
 					    ^ 0xffffffff))
 					class182
-					    = ((Class318_Sub1_Sub3_Sub3)
+					    = ((Mob)
 					       class318_sub1_sub3_sub3_sub1)
 						  .aClass182Array10308[i_13_]
 					    = null;
 				} else if (i_14_ == 0)
 				    class182
-					= ((Class318_Sub1_Sub3_Sub3)
+					= ((Mob)
 					   class318_sub1_sub3_sub3_sub1)
 					      .aClass182Array10308[i_13_]
 					= null;
@@ -104,7 +104,7 @@ final class Class367_Sub8 extends Class367
 				    ((Class182) class182).anInt2455 = 1;
 				    ((Class182) class182).anInt2451 = 0;
 				    ((Class182) class182).anInt2445 = 0;
-				    if (!((Class318_Sub1_Sub3_Sub3)
+				    if (!((Mob)
 					  class318_sub1_sub3_sub3_sub1)
 					 .aBoolean10309)
 					GametipDefinition.method2178
@@ -114,7 +114,7 @@ final class Class367_Sub8 extends Class367
 			    }
 			    if (class182 == null) {
 				class182
-				    = ((Class318_Sub1_Sub3_Sub3)
+				    = ((Mob)
 				       class318_sub1_sub3_sub3_sub1)
 					  .aClass182Array10308[i_13_]
 				    = new Class182();
@@ -124,7 +124,7 @@ final class Class367_Sub8 extends Class367
 				((Class182) class182).anInt2445 = 0;
 				((Class182) class182).anInt2451 = 0;
 				((Class182) class182).anInt2448 = i_12_;
-				if (!((Class318_Sub1_Sub3_Sub3)
+				if (!((Mob)
 				      class318_sub1_sub3_sub3_sub1)
 				     .aBoolean10309)
 				    GametipDefinition.method2178
@@ -132,7 +132,7 @@ final class Class367_Sub8 extends Class367
 					 class17, -19);
 			    }
 			} else
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1)
 				.aClass182Array10308[i_13_]
 				= null;

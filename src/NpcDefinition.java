@@ -1115,16 +1115,11 @@ final class NpcDefinition
 	return ((StringNode) class348_sub50).value;
     }
     
-    static final boolean method802(int i, int i_93_, boolean bool) {
-	if (bool != true)
-	    return false;
+    static boolean isElevatedTile(int x, int y) {
 	anInt1332++;
-	if (i_93_ < 0 || (i ^ 0xffffffff) > -1
-	    || i_93_ >= Class348_Sub33.settingFlags[1].length
-	    || (Class348_Sub33.settingFlags[1][i_93_].length
-		^ 0xffffffff) >= (i ^ 0xffffffff))
+	if (x < 0 || (y ^ 0xffffffff) > -1 || x >= Class348_Sub33.settingFlags[1].length || (Class348_Sub33.settingFlags[1][x].length ^ 0xffffffff) >= (y ^ 0xffffffff))
 	    return false;
-	if ((Class348_Sub33.settingFlags[1][i_93_][i] & 0x2) != 0)
+	if ((Class348_Sub33.settingFlags[1][x][y] & 0x2) != 0)
 	    return true;
 	return false;
     }

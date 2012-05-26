@@ -27,12 +27,12 @@ abstract class FileRequest extends SubNode
 	    for (Class148 class148 = ((Class357) class357).aClass148_4396;
 		 class148 != null;
 		 class148 = ((Class148) class148).aClass148_2038) {
-		Class318_Sub1_Sub3 class318_sub1_sub3
+		Entity class318_sub1_sub3
 		    = ((Class148) class148).aClass318_Sub1_Sub3_2040;
 		if (var_class.isAssignableFrom(class318_sub1_sub3.getClass())
-		    && (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743
+		    && (((Entity) class318_sub1_sub3).aShort8743
 			== i_0_)
-		    && (((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750
+		    && (((Entity) class318_sub1_sub3).aShort8750
 			== i_1_)) {
 		    Class348_Sub46.method3320(class318_sub1_sub3, false);
 		    break;
@@ -62,7 +62,7 @@ abstract class FileRequest extends SubNode
 			= Node.aClass318_Sub1Array4293[i_5_];
 		    Node.aClass318_Sub1Array4293[i_5_]
 			= class318_sub1_sub4;
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		}
 	    } else {
 		((Class318_Sub1) class318_sub1_sub4).aClass318_Sub1_6379
@@ -83,7 +83,7 @@ abstract class FileRequest extends SubNode
 			    = Node.aClass318_Sub1Array4293[i_5_];
 			Node.aClass318_Sub1Array4293[i_5_]
 			    = class318_sub1_sub4_4_;
-			Class348_Sub16_Sub2.aBoolean8870 = true;
+			Class348_Sub16_Sub2.heightLevelChanged = true;
 		    }
 		} else {
 		    ((Class318_Sub1) class318_sub1_sub4_4_).aClass318_Sub1_6379

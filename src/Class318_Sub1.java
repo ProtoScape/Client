@@ -4,12 +4,12 @@
 
 abstract class Class318_Sub1 extends Class318
 {
-    byte aByte6376;
-    int anInt6377;
+    byte mapHeightLevel;
+    int xHash;
     static int anInt6378;
     Class318_Sub1 aClass318_Sub1_6379;
     int anInt6380;
-    byte aByte6381;
+    byte heightLevel;
     int anInt6382;
     static ServerPacket aClass114_6383 = new ServerPacket(11, 6);
     static int anInt6384;
@@ -95,7 +95,7 @@ abstract class Class318_Sub1 extends Class318
 								    (byte) 98);
 		if (i_7_ < -52) {
 		    if (class42 == null || !((Class42) class42).aBoolean569
-			|| !class42.method373((Class318_Sub1_Sub3_Sub3
+			|| !class42.method373((Mob
 					       .varbitHandler),
 					      69))
 			break;
@@ -294,9 +294,9 @@ abstract class Class318_Sub1 extends Class318
 			 int i_31_) {
 	anInt6384++;
 	if (i_30_ != -2)
-	    ((Class318_Sub1) this).aByte6376 = (byte) 33;
+	    ((Class318_Sub1) this).mapHeightLevel = (byte) 33;
 	long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431
-		  [((Class318_Sub1) this).aByte6381][i][i_31_]);
+		  [((Class318_Sub1) this).heightLevel][i][i_31_]);
 	long l_32_ = 0L;
 	int i_33_ = 0;
 	for (/**/; (l_32_ ^ 0xffffffffffffffffL) >= -49L; l_32_ += 16L) {

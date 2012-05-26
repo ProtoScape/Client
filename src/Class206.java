@@ -146,7 +146,7 @@ final class Class206 implements Interface11
 				== ((((Class318_Sub1)
 				      (Class132
 				       .localPlayer))
-				     .aByte6381)
+				     .heightLevel)
 				    ^ 0xffffffff)) {
 				int i_8_
 				    = 0x1fe00 & (((Class10) class10).anInt178
@@ -163,7 +163,7 @@ final class Class206 implements Interface11
 				    = (-(((Class318_Sub1)
 					  (Class132
 					   .localPlayer))
-					 .anInt6377)
+					 .xHash)
 				       + 256 + (i_10_ << 1971089481) + i_9_);
 				int i_12_
 				    = ((((Class10) class10).anInt178 & 0xffc1)
@@ -194,15 +194,15 @@ final class Class206 implements Interface11
 				if ((((Class10) class10).aClass318_Sub1_172
 				     != null)
 				    && (((Class10) class10).aClass318_Sub1_172
-					instanceof Class318_Sub1_Sub3)) {
-				    Class318_Sub1_Sub3 class318_sub1_sub3
-					= ((Class318_Sub1_Sub3)
+					instanceof Entity)) {
+				    Entity class318_sub1_sub3
+					= ((Entity)
 					   (((Class10) class10)
 					    .aClass318_Sub1_172));
-				    short i_15_ = (((Class318_Sub1_Sub3)
+				    short i_15_ = (((Entity)
 						    class318_sub1_sub3)
 						   .aShort8743);
-				    short i_16_ = (((Class318_Sub1_Sub3)
+				    short i_16_ = (((Entity)
 						    class318_sub1_sub3)
 						   .aShort8750);
 				}

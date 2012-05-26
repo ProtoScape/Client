@@ -62,7 +62,7 @@ final class Class223
 				       .definition);
 		    if (((NpcDefinition) class79).anIntArray1377 != null) {
 			((Class348_Sub9) class348_sub9).aBoolean6684 = true;
-			class79 = class79.method794((Class318_Sub1_Sub3_Sub3
+			class79 = class79.method794((Mob
 						     .varbitHandler),
 						    i ^ ~0x3a5d4149);
 		    }
@@ -115,8 +115,8 @@ final class Class223
 			= ((Player)
 			   class318_sub1_sub3_sub3_sub2).aBoolean10517;
 		    FileIndexRequest.aClass356_10465.putNode
-			((long) ((Class318_Sub1_Sub3_Sub3)
-				 class318_sub1_sub3_sub3_sub2).anInt10290,
+			((long) ((Mob)
+				 class318_sub1_sub3_sub3_sub2).localId,
 			 class348_sub9);
 		}
 	    } else {

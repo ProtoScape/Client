@@ -67,7 +67,7 @@ final class Class312
 	    Class348_Sub40_Sub39.method3153(0);
 	    Class348_Sub40_Sub37.method3147((byte) 27);
 	    for (int i_0_ = 0; i_0_ < 2048; i_0_++)
-		ClassicLoadingScreen.players[i_0_] = null;
+		ClassicLoadingScreen.onscreenPlayers[i_0_] = null;
 	    Class132.localPlayer = null;
 	    for (int i_1_ = 0;
 		 (i_1_ ^ 0xffffffff) > (Class348_Sub32.anInt6930 ^ 0xffffffff);
@@ -77,7 +77,7 @@ final class Class312
 			Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_1_])
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 		if (class318_sub1_sub3_sub3_sub1 != null)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    ((Mob) class318_sub1_sub3_sub3_sub1)
 			.anInt10275
 			= -1;
 	    }

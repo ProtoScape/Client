@@ -110,40 +110,40 @@ class Class318_Sub9_Sub2 extends Class318_Sub9
 					 class148 != null;
 					 class148 = (((Class148) class148)
 						     .aClass148_2038)) {
-					Class318_Sub1_Sub3 class318_sub1_sub3
+					Entity class318_sub1_sub3
 					    = (((Class148) class148)
 					       .aClass318_Sub1_Sub3_2040);
 					if (class318_sub1_sub3 != null
 					    && class318_sub1_sub3
 						   .method2388(-111)
-					    && (i_9_ == (((Class318_Sub1_Sub3)
+					    && (i_9_ == (((Entity)
 							  class318_sub1_sub3)
 							 .aShort8743)
 						|| i_9_ == i_4_)
-					    && (i_10_ == (((Class318_Sub1_Sub3)
+					    && (i_10_ == (((Entity)
 							   class318_sub1_sub3)
 							  .aShort8750)
 						|| i_10_ == i_6_)) {
 					    int i_13_
-						= ((((Class318_Sub1_Sub3)
+						= ((((Entity)
 						     class318_sub1_sub3)
 						    .aShort8751)
-						   - (((Class318_Sub1_Sub3)
+						   - (((Entity)
 						       class318_sub1_sub3)
 						      .aShort8743)
 						   + 1);
 					    int i_14_
-						= ((((Class318_Sub1_Sub3)
+						= ((((Entity)
 						     class318_sub1_sub3)
 						    .aShort8747)
-						   - (((Class318_Sub1_Sub3)
+						   - (((Entity)
 						       class318_sub1_sub3)
 						      .aShort8750)
 						   + 1);
 					    class318_sub1.method2380
 						(Class9.aHa171, i_11_, bool,
 						 class318_sub1_sub3,
-						 (((((Class318_Sub1_Sub3)
+						 (((((Entity)
 						     class318_sub1_sub3)
 						    .aShort8750)
 						   - i_1_) * Class270.anInt3465
@@ -151,7 +151,7 @@ class Class318_Sub9_Sub2 extends Class318_Sub9
 						     * (Class348_Sub23_Sub2
 							.anInt9037))),
 						 (byte) -115,
-						 (((((Class318_Sub1_Sub3)
+						 (((((Entity)
 						     class318_sub1_sub3)
 						    .aShort8743)
 						   - i_0_) * Class270.anInt3465

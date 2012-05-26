@@ -3980,16 +3980,16 @@ final class OpenGlToolkit extends AbstractToolkit
     static final void method3802(int i, int i_315_, int i_316_, int i_317_,
 				 int i_318_, int i_319_, int i_320_) {
 	anInt7572++;
-	int i_321_ = Class328_Sub1.anInt6513;
+	int i_321_ = Class328_Sub1.onscreenGpiOffset;
 	Class88.anInt1497 = 0;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	for (int i_322_ = 0; ((Class150.anInt2057 + i_321_ ^ 0xffffffff)
 			      < (i_322_ ^ 0xffffffff)); i_322_++) {
 	    NpcDefinition class79 = null;
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
+	    Mob class318_sub1_sub3_sub3;
 	    if (i_321_ > i_322_)
 		class318_sub1_sub3_sub3
-		    = (ClassicLoadingScreen.players
+		    = (ClassicLoadingScreen.onscreenPlayers
 		       [is[i_322_]]);
 	    else {
 		class318_sub1_sub3_sub3
@@ -4001,24 +4001,24 @@ final class OpenGlToolkit extends AbstractToolkit
 			   (Npc)
 			   class318_sub1_sub3_sub3).definition;
 		if (((NpcDefinition) class79).anIntArray1377 != null) {
-		    class79 = class79.method794((Class318_Sub1_Sub3_Sub3
+		    class79 = class79.method794((Mob
 						 .varbitHandler),
 						i_316_ + -3);
 		    if (class79 == null)
 			continue;
 		}
 	    }
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10285
+	    if ((((Mob) class318_sub1_sub3_sub3).anInt10285
 		 >= 0)
 		&& (((Class239_Sub15.anInt6006 ^ 0xffffffff)
-		     == ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		     == ((((Mob) class318_sub1_sub3_sub3)
 			  .anInt10301)
 			 ^ 0xffffffff))
-		    || ((((Class318_Sub1) class318_sub1_sub3_sub3).aByte6381
+		    || ((((Class318_Sub1) class318_sub1_sub3_sub3).heightLevel
 			 ^ 0xffffffff)
 			== ((((Class318_Sub1)
 			      Class132.localPlayer)
-			     .aByte6381)
+			     .heightLevel)
 			    ^ 0xffffffff)))) {
 		Class348_Sub13.method2801(class318_sub1_sub3_sub3
 					      .method2426(200),
@@ -4026,7 +4026,7 @@ final class OpenGlToolkit extends AbstractToolkit
 					  i_315_ >> 2059440961,
 					  class318_sub1_sub3_sub3, (byte) 100);
 		if (Class239_Sub21.anIntArray6062[0] >= 0) {
-		    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if ((((Mob) class318_sub1_sub3_sub3)
 			 .aString10292) != null
 			&& (i_321_ <= i_322_
 			    || (za.anInt7276 ^ 0xffffffff) == -1
@@ -4040,7 +4040,7 @@ final class OpenGlToolkit extends AbstractToolkit
 			&& Class88.anInt1497 < NativeLibTracker.anInt4814) {
 			NativeLibTracker.anIntArray4819[Class88.anInt1497]
 			    = ((Class369.b12FullBitmapFont.method1183
-				(true, ((Class318_Sub1_Sub3_Sub3)
+				(true, ((Mob)
 					class318_sub1_sub3_sub3).aString10292))
 			       / 2);
 			NativeLibTracker.anIntArray4822[Class88.anInt1497]
@@ -4048,23 +4048,23 @@ final class OpenGlToolkit extends AbstractToolkit
 			NativeLibTracker.anIntArray4813[Class88.anInt1497]
 			    = Class239_Sub21.anIntArray6062[1];
 			NativeLibTracker.anIntArray4817[Class88.anInt1497]
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3).anInt10201;
 			NativeLibTracker.anIntArray4806[Class88.anInt1497]
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3).anInt10234;
 			NativeLibTracker.anIntArray4812[Class88.anInt1497]
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3).anInt10264;
 			NativeLibTracker.aStringArray4818[Class88.anInt1497]
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3).aString10292;
 			Class88.anInt1497++;
 		    }
 		    int i_323_ = Class239_Sub21.anIntArray6062[1] + i;
-		    if (!(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (!(((Mob) class318_sub1_sub3_sub3)
 			  .aBoolean10309)
-			&& ((((Class318_Sub1_Sub3_Sub3)
+			&& ((((Mob)
 			      class318_sub1_sub3_sub3).anInt10223
 			     ^ 0xffffffff)
 			    < (Class367_Sub11.logicCycle ^ 0xffffffff))) {
@@ -4080,7 +4080,7 @@ final class OpenGlToolkit extends AbstractToolkit
 			} else {
 			    Player class318_sub1_sub3_sub3_sub2
 				= (ClassicLoadingScreen
-				   .players
+				   .onscreenPlayers
 				   [is[i_322_]]);
 			    i_324_ = (((Class225) class318_sub1_sub3_sub3
 						      .method2422((byte) 72))
@@ -4131,11 +4131,11 @@ final class OpenGlToolkit extends AbstractToolkit
 				      + (i_317_ + -(class105.getWidth()
 						    >> 1317367617)));
 			int i_330_ = (class105.getWidth()
-				      * ((Class318_Sub1_Sub3_Sub3)
+				      * ((Mob)
 					 class318_sub1_sub3_sub3).anInt10295
 				      / 255);
 			int i_331_ = class105.getHeight();
-			if ((((Class318_Sub1_Sub3_Sub3)
+			if ((((Mob)
 			      class318_sub1_sub3_sub3).anInt10295
 			     ^ 0xffffffff) < -1
 			    && (i_330_ ^ 0xffffffff) > -3)
@@ -4157,19 +4157,19 @@ final class OpenGlToolkit extends AbstractToolkit
 					AbstractMouseEvent.aClass105Array7107
 					    [0].getHeight());
 		    i_323_ -= 2;
-		    if (!((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (!((Mob) class318_sub1_sub3_sub3)
 			 .aBoolean10309) {
-			if (((Class318_Sub1_Sub3_Sub3)
+			if (((Mob)
 			     class318_sub1_sub3_sub3).anInt10287
 			    > Class367_Sub11.logicCycle) {
 			    RasterToolkit class105
 				= (Class239_Sub2.aClass105Array5857
-				   [(((Class318_Sub1_Sub3_Sub3)
+				   [(((Mob)
 				      class318_sub1_sub3_sub3).aBoolean10226
 				     ? 2 : 0)]);
 			    RasterToolkit class105_332_
 				= (Class239_Sub2.aClass105Array5857
-				   [(!((Class318_Sub1_Sub3_Sub3)
+				   [(!((Mob)
 				       class318_sub1_sub3_sub3).aBoolean10226
 				     ? 1 : 3)]);
 			    int i_333_ = -1;
@@ -4217,43 +4217,43 @@ final class OpenGlToolkit extends AbstractToolkit
 				    && class105s.length == 4) {
 				    class105_332_
 					= (class105s
-					   [!(((Class318_Sub1_Sub3_Sub3)
+					   [!(((Mob)
 					       class318_sub1_sub3_sub3)
 					      .aBoolean10226) ? 1 : 3]);
 				    class105 = (class105s
-						[!(((Class318_Sub1_Sub3_Sub3)
+						[!(((Mob)
 						    class318_sub1_sub3_sub3)
 						   .aBoolean10226) ? 0 : 2]);
 				}
 			    }
 			    int i_335_
 				= (-Class367_Sub11.logicCycle
-				   + ((Class318_Sub1_Sub3_Sub3)
+				   + ((Mob)
 				      class318_sub1_sub3_sub3).anInt10287);
 			    int i_336_;
-			    if ((((Class318_Sub1_Sub3_Sub3)
+			    if ((((Mob)
 				  class318_sub1_sub3_sub3).anInt10227
 				 ^ 0xffffffff)
 				> (i_335_ ^ 0xffffffff)) {
-				i_335_ -= ((Class318_Sub1_Sub3_Sub3)
+				i_335_ -= ((Mob)
 					   class318_sub1_sub3_sub3).anInt10227;
 				int i_337_
-				    = ((((Class318_Sub1_Sub3_Sub3)
+				    = ((((Mob)
 					 class318_sub1_sub3_sub3).anInt10271
 					^ 0xffffffff) != -1
-				       ? (((Class318_Sub1_Sub3_Sub3)
+				       ? (((Mob)
 					   class318_sub1_sub3_sub3).anInt10271
-					  * (((((Class318_Sub1_Sub3_Sub3)
+					  * (((((Mob)
 						class318_sub1_sub3_sub3)
 					       .anInt10210)
 					      - i_335_)
-					     / (((Class318_Sub1_Sub3_Sub3)
+					     / (((Mob)
 						 class318_sub1_sub3_sub3)
 						.anInt10271)))
 				       : 0);
 				i_336_
 				    = (class105.getWidth() * i_337_
-				       / ((Class318_Sub1_Sub3_Sub3)
+				       / ((Mob)
 					  class318_sub1_sub3_sub3).anInt10210);
 			    } else
 				i_336_ = class105.getWidth();
@@ -4442,10 +4442,10 @@ final class OpenGlToolkit extends AbstractToolkit
 		    }
 		    int i_344_ = 0;
 		    for (/**/; i_344_ < Class132.anInt1905; i_344_++) {
-			int i_345_ = (((Class318_Sub1_Sub3_Sub3)
+			int i_345_ = (((Mob)
 				       class318_sub1_sub3_sub3)
 				      .anIntArray10219[i_344_]);
-			int i_346_ = (((Class318_Sub1_Sub3_Sub3)
+			int i_346_ = (((Mob)
 				       class318_sub1_sub3_sub3)
 				      .anIntArray10259[i_344_]);
 			Class31 class31 = null;
@@ -4455,13 +4455,13 @@ final class OpenGlToolkit extends AbstractToolkit
 				<= (i_345_ ^ 0xffffffff))
 				continue;
 			    class31 = (FileArchiveTracker.aClass219_4782.method1601
-				       (46, (((Class318_Sub1_Sub3_Sub3)
+				       (46, (((Mob)
 					      class318_sub1_sub3_sub3)
 					     .anIntArray10259[i_344_])));
 			    i_347_ = ((Class31) class31).anInt434;
 			} else if ((i_345_ ^ 0xffffffff) > -1)
 			    continue;
-			int i_348_ = (((Class318_Sub1_Sub3_Sub3)
+			int i_348_ = (((Mob)
 				       class318_sub1_sub3_sub3)
 				      .anIntArray10304[i_344_]);
 			Class31 class31_349_ = null;
@@ -4470,23 +4470,23 @@ final class OpenGlToolkit extends AbstractToolkit
 				= FileArchiveTracker.aClass219_4782.method1601(46,
 								    i_348_);
 			if (-i_347_ + i_345_ <= Class367_Sub11.logicCycle) {
-			    int i_350_ = (((Class318_Sub1_Sub3_Sub3)
+			    int i_350_ = (((Mob)
 					   class318_sub1_sub3_sub3)
 					  .anIntArray10303[i_344_]);
 			    if ((i_350_ ^ 0xffffffff) <= -1) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10223
 				    = 300 + Class367_Sub11.logicCycle;
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10295
 				    = i_350_;
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3)
 				    .anIntArray10303[i_344_]
 				    = -1;
 			    }
 			    if (class31 == null)
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3)
 				    .anIntArray10219[i_344_]
 				    = -1;
@@ -4695,7 +4695,7 @@ final class OpenGlToolkit extends AbstractToolkit
 				    int i_395_ = 0;
 				    String string_396_
 					= (class31.method333
-					   ((((Class318_Sub1_Sub3_Sub3)
+					   ((((Mob)
 					      class318_sub1_sub3_sub3)
 					     .anIntArray10229[i_344_]),
 					    0));
@@ -4704,7 +4704,7 @@ final class OpenGlToolkit extends AbstractToolkit
 							      string_396_);
 				    if (class31_349_ != null) {
 					string = (class31_349_.method333
-						  ((((Class318_Sub1_Sub3_Sub3)
+						  ((((Mob)
 						     class318_sub1_sub3_sub3)
 						    .anIntArray10284[i_344_]),
 						   0));
@@ -4766,7 +4766,7 @@ final class OpenGlToolkit extends AbstractToolkit
 				    }
 				    int i_413_
 					= (-Class367_Sub11.logicCycle
-					   + (((Class318_Sub1_Sub3_Sub3)
+					   + (((Mob)
 					       class318_sub1_sub3_sub3)
 					      .anIntArray10219[i_344_]));
 				    int i_414_
@@ -4981,7 +4981,7 @@ final class OpenGlToolkit extends AbstractToolkit
 	     (IndexLoader.anInt669 ^ 0xffffffff) < (i_433_ ^ 0xffffffff);
 	     i_433_++) {
 	    int i_434_ = Class258_Sub4.anIntArray8557[i_433_];
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
+	    Mob class318_sub1_sub3_sub3;
 	    if (i_434_ >= 2048)
 		class318_sub1_sub3_sub3
 		    = (((Class348_Sub22) (Class348_Sub22)
@@ -4990,9 +4990,9 @@ final class OpenGlToolkit extends AbstractToolkit
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 	    else
 		class318_sub1_sub3_sub3
-		    = ClassicLoadingScreen.players[i_434_];
+		    = ClassicLoadingScreen.onscreenPlayers[i_434_];
 	    int i_435_ = Class268.anIntArray3432[i_433_];
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_436_;
+	    Mob class318_sub1_sub3_sub3_436_;
 	    if ((i_435_ ^ 0xffffffff) <= -2049)
 		class318_sub1_sub3_sub3_436_
 		    = (((Class348_Sub22) (Class348_Sub22)
@@ -5001,8 +5001,8 @@ final class OpenGlToolkit extends AbstractToolkit
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 	    else
 		class318_sub1_sub3_sub3_436_
-		    = ClassicLoadingScreen.players[i_435_];
-	    Class191.method1430(--((Class318_Sub1_Sub3_Sub3)
+		    = ClassicLoadingScreen.onscreenPlayers[i_435_];
+	    Class191.method1430(--((Mob)
 				   class318_sub1_sub3_sub3).anInt10261,
 				(byte) 119, i_320_, i_315_, i, i_319_, i_318_,
 				i_317_, class318_sub1_sub3_sub3_436_,

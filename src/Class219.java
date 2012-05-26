@@ -42,90 +42,90 @@ final class Class219
     
     static final void method1600
 	(boolean bool, int i,
-	 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	 Mob class318_sub1_sub3_sub3) {
 	anInt2867++;
 	Class225 class225 = class318_sub1_sub3_sub3.method2422((byte) 72);
-	if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10319
+	if (((Mob) class318_sub1_sub3_sub3).anInt10319
 	    == 0) {
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10326 = 0;
+	    ((Mob) class318_sub1_sub3_sub3).anInt10326 = 0;
 	    Class235.anInt3062 = -1;
 	    Class127_Sub1.anInt8387 = 0;
 	} else {
-	    if (i != ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    if (i != ((((Mob) class318_sub1_sub3_sub3)
 		       .anInt10286)
 		      ^ 0xffffffff)
-		&& ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		&& ((((Mob) class318_sub1_sub3_sub3)
 		     .anInt10218)
 		    ^ 0xffffffff) == -1) {
 		AnimationDefinition class17
 		    = (Class10.animationLoader.method835
-		       ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		       ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10286),
 			i + 7));
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if ((((Mob) class318_sub1_sub3_sub3)
 		     .anInt10322) > 0
 		    && (((AnimationDefinition) class17).anInt262 ^ 0xffffffff) == -1) {
 		    Class235.anInt3062 = -1;
 		    Class127_Sub1.anInt8387 = 0;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10326++;
 		    return;
 		}
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if ((((Mob) class318_sub1_sub3_sub3)
 		     .anInt10322) <= 0
 		    && (((AnimationDefinition) class17).anInt245 ^ 0xffffffff) == -1) {
 		    Class127_Sub1.anInt8387 = 0;
 		    Class235.anInt3062 = -1;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10326++;
 		    return;
 		}
 	    }
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10269
+	    if ((((Mob) class318_sub1_sub3_sub3).anInt10269
 		 ^ 0xffffffff) != 0
-		&& (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		&& (((Mob) class318_sub1_sub3_sub3)
 		    .anInt10225) <= Class367_Sub11.logicCycle) {
 		GfxDefinition class368
 		    = (Class348_Sub40_Sub18.gfxLoader.loadDefinition
 		       ((byte) 118,
-			(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			(((Mob) class318_sub1_sub3_sub3)
 			 .anInt10269)));
 		if (((GfxDefinition) class368).aBoolean4487
 		    && (((GfxDefinition) class368).anInt4503 ^ 0xffffffff) != 0) {
 		    AnimationDefinition class17
 			= Class10.animationLoader
 			      .method835(((GfxDefinition) class368).anInt4503, 7);
-		    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10322) > 0
 			&& (((AnimationDefinition) class17).anInt262 ^ 0xffffffff) == -1) {
 			Class127_Sub1.anInt8387 = 0;
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10326++;
 			Class235.anInt3062 = -1;
 			return;
 		    }
-		    if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (((((Mob) class318_sub1_sub3_sub3)
 			  .anInt10322)
 			 ^ 0xffffffff) >= -1
 			&& (((AnimationDefinition) class17).anInt245 ^ 0xffffffff) == -1) {
 			Class235.anInt3062 = -1;
 			Class127_Sub1.anInt8387 = 0;
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10326++;
 			return;
 		    }
 		}
 	    }
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10269
+	    if ((((Mob) class318_sub1_sub3_sub3).anInt10269
 		 ^ 0xffffffff) != 0
 		&& ((Class367_Sub11.logicCycle ^ 0xffffffff)
-		    <= ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    <= ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10225)
 			^ 0xffffffff))) {
 		GfxDefinition class368
 		    = (Class348_Sub40_Sub18.gfxLoader.loadDefinition
 		       ((byte) 98,
-			(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			(((Mob) class318_sub1_sub3_sub3)
 			 .anInt10269)));
 		if (((GfxDefinition) class368).aBoolean4487
 		    && ((GfxDefinition) class368).anInt4503 != -1) {
@@ -133,39 +133,39 @@ final class Class219
 			= Class10.animationLoader.method835((((GfxDefinition) class368)
 							  .anInt4503),
 							 i ^ 0x7);
-		    if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (((((Mob) class318_sub1_sub3_sub3)
 			  .anInt10322)
 			 ^ 0xffffffff) < -1
 			&& (((AnimationDefinition) class17).anInt262 ^ 0xffffffff) == -1) {
 			Class127_Sub1.anInt8387 = 0;
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10326++;
 			Class235.anInt3062 = -1;
 			return;
 		    }
-		    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10322) <= 0
 			&& (((AnimationDefinition) class17).anInt245 ^ 0xffffffff) == -1) {
 			Class235.anInt3062 = -1;
 			Class127_Sub1.anInt8387 = 0;
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10326++;
 			return;
 		    }
 		}
 	    }
-	    int i_2_ = ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377;
+	    int i_2_ = ((Class318_Sub1) class318_sub1_sub3_sub3).xHash;
 	    int i_3_ = ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388;
 	    int i_4_
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10320
-			  [-1 + ((Class318_Sub1_Sub3_Sub3)
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .xList
+			  [-1 + ((Mob)
 				 class318_sub1_sub3_sub3).anInt10319])
 		   + class318_sub1_sub3_sub3.method2436((byte) 117) * 256);
 	    int i_5_
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10317
-			  [-1 + ((Class318_Sub1_Sub3_Sub3)
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .yList
+			  [-1 + ((Mob)
 				 class318_sub1_sub3_sub3).anInt10319])
 		   - -(class318_sub1_sub3_sub3.method2436((byte) 72) * 256));
 	    if (i_2_ >= i_4_) {
@@ -189,29 +189,29 @@ final class Class219
 	    } else
 		class318_sub1_sub3_sub3.method2440((byte) 49, 10240);
 	    byte i_6_
-		= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		= (((Mob) class318_sub1_sub3_sub3)
 		   .aByteArray10321
-		   [-1 + (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		   [-1 + (((Mob) class318_sub1_sub3_sub3)
 			  .anInt10319)]);
 	    if (!bool
 		&& (i_4_ - i_2_ > 1024 || (i_4_ + -i_2_ ^ 0xffffffff) > 1023
 		    || (-i_3_ + i_5_ ^ 0xffffffff) < -1025
 		    || i_5_ + -i_3_ < -1024)) {
 		((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388 = i_5_;
-		((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377 = i_4_;
+		((Class318_Sub1) class318_sub1_sub3_sub3).xHash = i_4_;
 		class318_sub1_sub3_sub3.method2435((byte) -108,
-						   (((Class318_Sub1_Sub3_Sub3)
+						   (((Mob)
 						     class318_sub1_sub3_sub3)
 						    .anInt10282),
 						   false);
 		Class235.anInt3062 = -1;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		((Mob) class318_sub1_sub3_sub3)
 		    .anInt10319--;
-		if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if (((((Mob) class318_sub1_sub3_sub3)
 		      .anInt10322)
 		     ^ 0xffffffff)
 		    < -1)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10322--;
 		Class127_Sub1.anInt8387 = 0;
 	    } else {
@@ -225,42 +225,42 @@ final class Class219
 					  .definition)).aBoolean1331;
 		if (bool_8_) {
 		    int i_9_
-			= ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			= ((((Mob) class318_sub1_sub3_sub3)
 			    .anInt10282)
-			   - ((Class264) (((Class318_Sub1_Sub3_Sub3)
+			   - ((Class264) (((Mob)
 					   class318_sub1_sub3_sub3)
 					  .aClass264_10217)).anInt3370);
 		    if ((i_9_ ^ 0xffffffff) != -1
-			&& (((Class318_Sub1_Sub3_Sub3)
+			&& (((Mob)
 			     class318_sub1_sub3_sub3).anInt10275
 			    ^ 0xffffffff) == 0
-			&& (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			&& (((Mob) class318_sub1_sub3_sub3)
 			    .anInt10310) != 0)
 			i_7_ = 8;
 		    if (!bool
-			&& (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			&& (((Mob) class318_sub1_sub3_sub3)
 			    .anInt10319) > 2)
 			i_7_ = 24;
 		    if (!bool
-			&& (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			&& (((Mob) class318_sub1_sub3_sub3)
 			    .anInt10319) > 3)
 			i_7_ = 32;
 		} else {
-		    if (!bool && (((Class318_Sub1_Sub3_Sub3)
+		    if (!bool && (((Mob)
 				   class318_sub1_sub3_sub3).anInt10319
 				  ^ 0xffffffff) < -2)
 			i_7_ = 24;
-		    if (!bool && (((Class318_Sub1_Sub3_Sub3)
+		    if (!bool && (((Mob)
 				   class318_sub1_sub3_sub3).anInt10319
 				  ^ 0xffffffff) < -3)
 			i_7_ = 32;
 		}
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if ((((Mob) class318_sub1_sub3_sub3)
 		     .anInt10326) > 0
-		    && (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    && (((Mob) class318_sub1_sub3_sub3)
 			.anInt10319) > 1) {
 		    i_7_ = 32;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10326--;
 		}
 		if ((i_6_ ^ 0xffffffff) == -3)
@@ -270,48 +270,48 @@ final class Class219
 		Class127_Sub1.anInt8387 = 0;
 		if ((((Class225) class225).anInt2945 ^ 0xffffffff) != 0) {
 		    i_7_ <<= 9;
-		    if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (((((Mob) class318_sub1_sub3_sub3)
 			  .anInt10319)
 			 ^ 0xffffffff)
 			!= -2) {
-			if (i_7_ <= ((Class318_Sub1_Sub3_Sub3)
+			if (i_7_ <= ((Mob)
 				     class318_sub1_sub3_sub3).anInt10325) {
-			    if (((Class318_Sub1_Sub3_Sub3)
+			    if (((Mob)
 				 class318_sub1_sub3_sub3).anInt10325
 				> 0) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10325
 				    -= ((Class225) class225).anInt2945;
-				if ((((Class318_Sub1_Sub3_Sub3)
+				if ((((Mob)
 				      class318_sub1_sub3_sub3).anInt10325
 				     ^ 0xffffffff)
 				    > -1)
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3).anInt10325
 					= 0;
 			    }
 			} else {
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.anInt10325
 				+= ((Class225) class225).anInt2945;
-			    if (i_7_ < ((Class318_Sub1_Sub3_Sub3)
+			    if (i_7_ < ((Mob)
 					class318_sub1_sub3_sub3).anInt10325)
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10325
 				    = i_7_;
 			}
 		    } else {
-			int i_10_ = (((Class318_Sub1_Sub3_Sub3)
+			int i_10_ = (((Mob)
 				      class318_sub1_sub3_sub3).anInt10325
-				     * ((Class318_Sub1_Sub3_Sub3)
+				     * ((Mob)
 					class318_sub1_sub3_sub3).anInt10325);
 			int i_11_
 			    = ((i_4_ >= ((Class318_Sub1)
-					 class318_sub1_sub3_sub3).anInt6377
+					 class318_sub1_sub3_sub3).xHash
 				? -(((Class318_Sub1) class318_sub1_sub3_sub3)
-				    .anInt6377) + i_4_
+				    .xHash) + i_4_
 				: (((Class318_Sub1) class318_sub1_sub3_sub3)
-				   .anInt6377) + -i_4_)
+				   .xHash) + -i_4_)
 			       << -606376951);
 			int i_12_
 			    = (((((Class318_Sub1) class318_sub1_sub3_sub3)
@@ -326,35 +326,35 @@ final class Class219
 			    = ((Class225) class225).anInt2945 * 2 * i_13_;
 			if (i_10_ <= i_14_) {
 			    if (i_13_ < i_10_ / 2) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10325
 				    -= ((Class225) class225).anInt2945;
-				if (((Class318_Sub1_Sub3_Sub3)
+				if (((Mob)
 				     class318_sub1_sub3_sub3).anInt10325
 				    < 0)
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3).anInt10325
 					= 0;
-			    } else if ((((Class318_Sub1_Sub3_Sub3)
+			    } else if ((((Mob)
 					 class318_sub1_sub3_sub3).anInt10325
 					^ 0xffffffff)
 				       > (i_7_ ^ 0xffffffff)) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3).anInt10325
 				    += ((Class225) class225).anInt2945;
-				if (((Class318_Sub1_Sub3_Sub3)
+				if (((Mob)
 				     class318_sub1_sub3_sub3).anInt10325
 				    > i_7_)
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3).anInt10325
 					= i_7_;
 			    }
 			} else
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.anInt10325
 				/= 2;
 		    }
-		    i_7_ = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    i_7_ = (((Mob) class318_sub1_sub3_sub3)
 			    .anInt10325) >> -961523191;
 		    if (i_7_ < 1)
 			i_7_ = 1;
@@ -364,19 +364,19 @@ final class Class219
 		else {
 		    if ((i_2_ ^ 0xffffffff) > (i_4_ ^ 0xffffffff)) {
 			Class127_Sub1.anInt8387 |= 0x4;
-			((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    += i_7_;
 			if (i_4_ < (((Class318_Sub1) class318_sub1_sub3_sub3)
-				    .anInt6377))
-			    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+				    .xHash))
+			    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 				= i_4_;
 		    } else if (i_4_ < i_2_) {
 			Class127_Sub1.anInt8387 |= 0x8;
-			((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    -= i_7_;
-			if (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			if (((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    < i_4_)
-			    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 				= i_4_;
 		    }
 		    if ((i_7_ ^ 0xffffffff) <= -33)
@@ -403,17 +403,17 @@ final class Class219
 				= i_5_;
 		    }
 		}
-		if ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		if ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 		     ^ 0xffffffff) == (i_4_ ^ 0xffffffff)
 		    && i_5_ == (((Class318_Sub1) class318_sub1_sub3_sub3)
 				.anInt6388)) {
-		    if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if (((((Mob) class318_sub1_sub3_sub3)
 			  .anInt10322)
 			 ^ 0xffffffff)
 			< -1)
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10322--;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10319--;
 		}
 	    }

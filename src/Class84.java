@@ -26,7 +26,7 @@ final class Class84
 	}
     }
     
-    static final Class318_Sub1_Sub3_Sub3 method817(int i, int i_0_, int i_1_,
+    static final Mob method817(int i, int i_0_, int i_1_,
 						   int i_2_) {
 	anInt1456++;
 	Class357 class357
@@ -35,28 +35,28 @@ final class Class84
 	    return null;
 	if (i != 252)
 	    return null;
-	Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
+	Mob class318_sub1_sub3_sub3 = null;
 	int i_3_ = -1;
 	for (Class148 class148 = ((Class357) class357).aClass148_4396;
 	     class148 != null;
 	     class148 = ((Class148) class148).aClass148_2038) {
-	    Class318_Sub1_Sub3 class318_sub1_sub3
+	    Entity class318_sub1_sub3
 		= ((Class148) class148).aClass318_Sub1_Sub3_2040;
-	    if (class318_sub1_sub3 instanceof Class318_Sub1_Sub3_Sub3) {
-		Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_4_
-		    = (Class318_Sub1_Sub3_Sub3) class318_sub1_sub3;
+	    if (class318_sub1_sub3 instanceof Mob) {
+		Mob class318_sub1_sub3_sub3_4_
+		    = (Mob) class318_sub1_sub3;
 		int i_5_ = 252 + (-1 + class318_sub1_sub3_sub3_4_
 					   .method2436((byte) 88)) * 256;
 		int i_6_
 		    = (-i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
-				.anInt6377)
+				.xHash)
 		       >> -482650455);
 		int i_7_
 		    = (-i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
 				.anInt6388)
 		       >> -605332215);
 		int i_8_ = i_5_ + (((Class318_Sub1) class318_sub1_sub3_sub3_4_)
-				   .anInt6377) >> 1651294377;
+				   .xHash) >> 1651294377;
 		int i_9_
 		    = ((((Class318_Sub1) class318_sub1_sub3_sub3_4_).anInt6388
 			+ i_5_)
@@ -185,7 +185,7 @@ final class Class84
 	     || WidgetVariable.aClass105_9658 == null
 	     || WidgetVariable.aClass105_9659 == null)
 	    && Class21.indexLoader8
-		   .getArchiveLoaded(Class318_Sub1_Sub3_Sub3.anInt10257)
+		   .getArchiveLoaded(Mob.anInt10257)
 	    && Class21.indexLoader8.getArchiveLoaded(Class313.anInt3937)
 	    && Class21.indexLoader8.getArchiveLoaded(NpcDefinition.anInt1387)) {
 	    ImageSprite class207 = ImageSprite.getSprite(Class21.indexLoader8,
@@ -197,7 +197,7 @@ final class Class84
 	    Class174.aClass105_2309
 		= (var_ha.createRasterForSprite
 		   (ImageSprite.getSprite(Class21.indexLoader8,
-					Class318_Sub1_Sub3_Sub3.anInt10257, 0),
+					Mob.anInt10257, 0),
 		    true));
 	    ImageSprite class207_29_ = ImageSprite.getSprite(Class21.indexLoader8,
 							NpcDefinition.anInt1387, 0);

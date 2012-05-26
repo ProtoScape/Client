@@ -24,127 +24,99 @@ final class Class211
     static int anInt2748;
     boolean aBoolean2749;
     
-    static final boolean method1538(int i, byte i_0_,
-				    GameBuffer class348_sub49_sub2) {
+    static boolean parseOffscreenPlayerMovement(GameBuffer buffer, int id) {
 	anInt2732++;
-	int i_1_ = class348_sub49_sub2.getBits(2);
-	if ((i_1_ ^ 0xffffffff) == -1) {
-	    if (class348_sub49_sub2.getBits(1) != 0)
-		method1538(i, (byte) 105, class348_sub49_sub2);
-	    int i_2_ = class348_sub49_sub2.getBits(6);
-	    int i_3_ = class348_sub49_sub2.getBits(6);
-	    boolean bool
-		= ((class348_sub49_sub2.getBits(1) ^ 0xffffffff)
-		   == -2);
-	    if (bool)
-		Class18.anIntArray279[Class101_Sub3.anInt5768++] = i;
-	    if (ClassicLoadingScreen.players[i] != null)
+	int opcode = buffer.getBits(2);
+	if (opcode == 0) {
+	    if (buffer.getBits(1) != 0)
+		parseOffscreenPlayerMovement(buffer, id);
+	    int xOff = buffer.getBits(6);
+	    int yOff = buffer.getBits(6);
+	    boolean doUpdate = (buffer.getBits(1) == 1);
+	    if (doUpdate)
+		Class18.playerUpdateList[Class101_Sub3.amountUpdatePlayers++] = id;
+	    if (ClassicLoadingScreen.onscreenPlayers[id] != null)
 		throw new RuntimeException("hr:lr");
-	    Class359 class359 = Class348_Sub17.aClass359Array6802[i];
-	    Player class318_sub1_sub3_sub3_sub2
-		= (ClassicLoadingScreen.players[i]
-		   = new Player());
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2).anInt10290
-		= i;
-	    if (Class154.aClass348_Sub49Array2105[i] != null)
-		class318_sub1_sub3_sub3_sub2.method2452
-		    ((byte) 84, Class154.aClass348_Sub49Array2105[i]);
-	    class318_sub1_sub3_sub3_sub2.method2435((byte) -108,
-						    (((Class359) class359)
-						     .anInt4423),
-						    true);
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2).anInt10275
-		= ((Class359) class359).anInt4425;
-	    int i_4_ = ((Class359) class359).anInt4420;
-	    int i_5_ = i_4_ >> 1728102396;
-	    int i_6_ = (0x3fcd8e & i_4_) >> 2011097998;
-	    int i_7_ = 0xff & i_4_;
-	    int i_8_ = -za_Sub2.baseRegionX + i_2_ + (i_6_ << -895287706);
-	    ((Player) class318_sub1_sub3_sub3_sub2)
-		.aBoolean10554
-		= ((Class359) class359).aBoolean4426;
-	    int i_9_ = -Class90.baseRegionY + i_3_ + (i_7_ << 501837894);
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		.aByteArray10321[0]
-		= IntegerVarScriptSettingLoader.aByteArray3300[i];
-	    ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6381
-		= ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376
-		= (byte) i_5_;
-	    if (NpcDefinition.method802(i_9_, i_8_, true))
-		((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376++;
-	    class318_sub1_sub3_sub3_sub2.setLocationUnkn(i_9_, i_8_);
-	    ((Player) class318_sub1_sub3_sub3_sub2)
-		.aBoolean10539
-		= false;
-	    Class348_Sub17.aClass359Array6802[i] = null;
+	    OffscreenPlayer offscreenPlayer = Class348_Sub17.offscreenPlayers[id];
+	    Player player = (ClassicLoadingScreen.onscreenPlayers[id] = new Player());
+	    ((Mob) player).localId = id;
+	    if (Class154.aClass348_Sub49Array2105[id] != null)
+		player.method2452 ((byte) 84, Class154.aClass348_Sub49Array2105[id]);
+	    player.method2435((byte) -108, (offscreenPlayer.anInt4423), true);
+	    ((Mob) player).anInt10275 = offscreenPlayer.anInt4425;
+	    int hash = offscreenPlayer.locationHash;
+	    int z = hash >> 28;
+	    int rX = (0x3fcd8e & hash) >> 14;
+	    int rY = 0xff & hash;
+	    int cX = xOff + (rX << 6) - za_Sub2.baseRegionX;
+	    player.aBoolean10554 = offscreenPlayer.aBoolean4426;
+	    int cY = yOff + (rY << 6) - Class90.baseRegionY;
+	    ((Mob) player).aByteArray10321[0] = IntegerVarScriptSettingLoader.aByteArray3300[id];
+	    ((Class318_Sub1) player).heightLevel = ((Class318_Sub1) player).mapHeightLevel = (byte) z;
+	    if (NpcDefinition.isElevatedTile(cX, cY))
+		((Class318_Sub1) player).mapHeightLevel++;
+	    player.setLocalCoords(cY, cX);
+	    player.isOffscreen = false;
+	    Class348_Sub17.offscreenPlayers[id] = null;
 	    return true;
 	}
-	if ((i_1_ ^ 0xffffffff) == -2) {
-	    int i_10_ = class348_sub49_sub2.getBits(2);
-	    int i_11_
-		= ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420;
-	    ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420
-		= (0xfffffff & i_11_) + (((i_11_ >> 260957884) + i_10_ & 0x3)
-					 << 1400337884);
+	if (opcode == 1) {
+	    int zOff = buffer.getBits(2);
+	    int hash = ((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash;
+	    ((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash = (0xfffffff & hash) + (((hash >> 28) + zOff & 0x3) << 28);
 	    return false;
 	}
-	if (i_1_ == 2) {
-	    int i_12_ = class348_sub49_sub2.getBits(5);
-	    int i_13_ = i_12_ >> -135563069;
-	    int i_14_ = 0x7 & i_12_;
-	    int i_15_
-		= ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420;
-	    int i_16_ = 0x3 & i_13_ + (i_15_ >> -890531620);
-	    int i_17_ = (i_15_ & 0x3fd366) >> -1713508850;
-	    int i_18_ = 0xff & i_15_;
-	    if ((i_14_ ^ 0xffffffff) == -1) {
-		i_17_--;
-		i_18_--;
+	if (opcode == 2) {
+	    int hash = buffer.getBits(5);
+	    int zOff = hash >> 3;
+	    int dOpcode = 0x7 & hash;
+	    int locationHash = ((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash;
+	    int newZ = 0x3 & zOff + (locationHash >> 28);
+	    int rX = (locationHash & 0x3fd366) >> 14;
+	    int rY = 0xff & locationHash;
+	    if ((dOpcode) == 0) {
+		rX--;
+		rY--;
 	    }
-	    if ((i_14_ ^ 0xffffffff) == -2)
-		i_18_--;
-	    if ((i_14_ ^ 0xffffffff) == -3) {
-		i_18_--;
-		i_17_++;
+	    if (dOpcode == 1)
+		rY--;
+	    if ((dOpcode) == 2) {
+		rY--;
+		rX++;
 	    }
-	    if (i_14_ == 3)
-		i_17_--;
-	    if ((i_14_ ^ 0xffffffff) == -5)
-		i_17_++;
-	    if (i_14_ == 5) {
-		i_17_--;
-		i_18_++;
+	    if (dOpcode == 3)
+		rX--;
+	    if ((dOpcode ^ 0xffffffff) == -5)
+		rX++;
+	    if (dOpcode == 5) {
+		rX--;
+		rY++;
 	    }
-	    if (i_14_ == 6)
-		i_18_++;
-	    if ((i_14_ ^ 0xffffffff) == -8) {
-		i_17_++;
-		i_18_++;
+	    if (dOpcode == 6)
+		rY++;
+	    if ((dOpcode ^ 0xffffffff) == -8) {
+		rX++;
+		rY++;
 	    }
-	    ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420
-		= i_18_ + ((i_16_ << 165004252) + (i_17_ << 706528398));
+	    ((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash = rY + ((newZ << 28) + (rX << 14));
 	    return false;
 	}
-	int i_19_ = class348_sub49_sub2.getBits(18);
-	int i_20_ = i_19_ >> 672217744;
-	int i_21_ = 0xff & i_19_ >> 618722952;
-	int i_22_ = 0xff & i_19_;
-	int i_23_
-	    = ((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420;
-	int i_24_ = 0x3 & (i_23_ >> -595563684) - -i_20_;
-	int i_25_ = i_21_ + (i_23_ >> -753926354) & 0xff;
-	if (i_0_ != 105)
-	    anIntArray2744 = null;
-	int i_26_ = 0xff & i_23_ + i_22_;
-	((Class359) Class348_Sub17.aClass359Array6802[i]).anInt4420
-	    = i_26_ + (i_24_ << -1791143364) - -(i_25_ << 1982417070);
+	int hash = buffer.getBits(18);
+	int zOff = hash >> 16;
+	int xOff = 0xff & hash >> 8;
+	int yOff = 0xff & hash;
+	int locationHash = ((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash;
+	int newZ = 0x3 & (locationHash >> 28) + zOff;
+	int newX = xOff + (locationHash >> 14) & 0xff;
+	int newY = 0xff & locationHash + yOff;
+	((OffscreenPlayer) Class348_Sub17.offscreenPlayers[id]).locationHash  = newY + (newZ << 28) + (newX << 14);
 	return false;
     }
     
     final void method1539(int i, byte i_27_, int i_28_, int i_29_, int i_30_) {
 	anInt2741++;
 	if (i_27_ <= 114)
-	    method1538(-108, (byte) -46, null);
+	    parseOffscreenPlayerMovement(null, -108);
 	anInt2735 = i_28_;
 	anInt2738 = i;
 	anInt2743 = i_30_;

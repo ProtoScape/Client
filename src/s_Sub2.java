@@ -1000,7 +1000,7 @@ final class s_Sub2 extends s
     }
     
     static final void method4001(Class318_Sub1 class318_sub1) {
-	Class9.aHa171.H(((Class318_Sub1) class318_sub1).anInt6377,
+	Class9.aHa171.H(((Class318_Sub1) class318_sub1).xHash,
 			(((Class318_Sub1) class318_sub1).anInt6382
 			 + (class318_sub1.method2394(true) >> 1)),
 			((Class318_Sub1) class318_sub1).anInt6388,

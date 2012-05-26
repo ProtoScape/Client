@@ -38,7 +38,7 @@ final class Class91
 	    if (Class5_Sub1.aBoolean8335
 		&& Class348_Sub42_Sub1.method3169(i_3_, 0))
 		Class286_Sub2.method2146((byte) 84);
-	    if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+	    if (((((Mob) class318_sub1_sub3_sub3_sub1)
 		  .anInt10306)
 		 ^ 0xffffffff)
 		!= (Class348_Sub23_Sub3.anInt9041 ^ 0xffffffff)) {
@@ -77,19 +77,19 @@ final class Class91
 	    throw new RuntimeException("gnp3 mis:" + (Class348_Sub32.anInt6930
 						      - Class150.anInt2057));
 	for (int i_5_ = 0; i_5_ < Class348_Sub32.anInt6930; i_5_++) {
-	    if (((Class318_Sub1_Sub3_Sub3)
+	    if (((Mob)
 		 (((Class348_Sub22)
 		   Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_5_])
 		  .aClass318_Sub1_Sub3_Sub3_Sub1_6859)).anInt10306
 		!= Class348_Sub23_Sub3.anInt9041)
 		throw new RuntimeException
 			  ("gnp4 uk:"
-			   + (((Class318_Sub1_Sub3_Sub3)
+			   + (((Mob)
 			       (((Class348_Sub22) (Class348_Sub40_Sub23
 						   .aClass348_Sub22Array9319
 						   [i_5_]))
 				.aClass318_Sub1_Sub3_Sub3_Sub1_6859))
-			      .anInt10290));
+			      .localId));
 	}
     }
     

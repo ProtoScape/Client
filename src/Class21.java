@@ -31,7 +31,7 @@ final class Class21
 	    || (i_0_ ^ 0xffffffff) != (Class295.anInt3760 ^ 0xffffffff)
 	    || i_1_ != Class27.anInt396) {
 	    Class369_Sub1.anInt8583 = i_2_;
-	    Class348_Sub16_Sub2.aBoolean8870 = true;
+	    Class348_Sub16_Sub2.heightLevelChanged = true;
 	    Class27.anInt396 = i_1_;
 	    Class295.anInt3760 = i_0_;
 	    double d = -((double) (i_2_ * 2) * 3.141592653589793) / 16384.0;

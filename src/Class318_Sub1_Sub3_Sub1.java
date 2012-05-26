@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
+final class Class318_Sub1_Sub3_Sub1 extends Entity
     implements Interface10
 {
     private boolean aBoolean10003;
@@ -73,8 +73,8 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 	if (i != 836)
 	    method41(-125);
 	if (var_r != null)
-	    Class130.method1130(var_r, ((Class318_Sub1) this).aByte6376,
-				((Class318_Sub1) this).anInt6377,
+	    Class130.method1130(var_r, ((Class318_Sub1) this).mapHeightLevel,
+				((Class318_Sub1) this).xHash,
 				((Class318_Sub1) this).anInt6388, null);
     }
     
@@ -93,7 +93,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 		aBoolean10014 = ((ObjectDefinition) class51).anInt874 != 0 && !bool;
 		aBoolean10017 = bool;
 		aBoolean10019 = bool_10_;
-		((Class318_Sub1) this).aByte6376 = (byte) i_0_;
+		((Class318_Sub1) this).mapHeightLevel = (byte) i_0_;
 		aBoolean10003
 		    = (var_ha.method3682() && ((ObjectDefinition) class51).aBoolean894
 		       && !aBoolean10017
@@ -150,7 +150,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 	AnimatableToolkit class64 = method2414(-1, var_ha, 131072);
 	if (class64 != null) {
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    if (Class305.aBoolean3870)
@@ -280,7 +280,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
     final Class30 method2381(AbstractToolkit var_ha, int i) {
 	if (aClass30_10025 == null)
 	    aClass30_10025 = (Class348_Sub23_Sub1.method2967
-			      (((Class318_Sub1) this).anInt6377,
+			      (((Class318_Sub1) this).xHash,
 			       method2414(i + -8, var_ha, 0),
 			       ((Class318_Sub1) this).anInt6388,
 			       ((Class318_Sub1) this).anInt6382, 2));
@@ -298,21 +298,21 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 	s var_s;
 	s var_s_21_;
 	if (aBoolean10017) {
-	    var_s = Class332.aSArray4142[((Class318_Sub1) this).aByte6376];
+	    var_s = Class332.aSArray4142[((Class318_Sub1) this).mapHeightLevel];
 	    var_s_21_ = Class348_Sub1_Sub1.aSArray8801[0];
 	} else {
 	    var_s = (Class348_Sub1_Sub1.aSArray8801
-		     [((Class318_Sub1) this).aByte6376]);
-	    if ((((Class318_Sub1) this).aByte6376 ^ 0xffffffff) <= -4)
+		     [((Class318_Sub1) this).mapHeightLevel]);
+	    if ((((Class318_Sub1) this).mapHeightLevel ^ 0xffffffff) <= -4)
 		var_s_21_ = null;
 	    else
 		var_s_21_ = (Class348_Sub1_Sub1.aSArray8801
-			     [((Class318_Sub1) this).aByte6376 - -1]);
+			     [((Class318_Sub1) this).mapHeightLevel - -1]);
 	}
 	return class51.method476(var_ha, var_s_21_,
 				 ((aByte10024 ^ 0xffffffff) != -12 ? aByte10024
 				  : 10),
-				 i_20_, ((Class318_Sub1) this).anInt6377, bool,
+				 i_20_, ((Class318_Sub1) this).xHash, bool,
 				 var_s, ((Class318_Sub1) this).anInt6382,
 				 ((Class318_Sub1) this).anInt6388,
 				 (aByte10024 != 11 ? (int) aByte10015
@@ -355,8 +355,8 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 	    aR10036 = null;
 	}
 	if (var_r != null)
-	    Class169.method1301(var_r, ((Class318_Sub1) this).aByte6376,
-				((Class318_Sub1) this).anInt6377,
+	    Class169.method1301(var_r, ((Class318_Sub1) this).mapHeightLevel,
+				((Class318_Sub1) this).xHash,
 				((Class318_Sub1) this).anInt6388, null);
     }
     
@@ -388,7 +388,7 @@ final class Class318_Sub1_Sub3_Sub1 extends Class318_Sub1_Sub3
 	if (((Class318_Sub1_Sub3_Sub1) this).aClass64_10028 == null)
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	Class318_Sub4 class318_sub4

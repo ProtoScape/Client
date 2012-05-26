@@ -18,7 +18,7 @@ final class Class362
 		aClass324_4456 = null;
 	    anInt4457++;
 	    boolean bool_0_
-		= !Class295.aBoolean3763 || Class359.method3490(true);
+		= !Class295.aBoolean3763 || OffscreenPlayer.method3490(true);
 	    if (bool_0_) {
 		if (Class295.aBoolean3763 && bool_0_) {
 		    font = Class281.aClass143_3649;

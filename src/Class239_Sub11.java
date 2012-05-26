@@ -24,7 +24,7 @@ final class Class239_Sub11 extends Class239
 	if ((i_0_ ^ 0xffffffff) != -1) {
 	    if (bool != true)
 		method1769(-43);
-	    int i_1_ = (((VarpHandler) Class318_Sub1_Sub3_Sub3.varbitHandler)
+	    int i_1_ = (((VarpHandler) Mob.varbitHandler)
 			.configs[i]);
 	    if (i_0_ == 5)
 		Class318_Sub1_Sub5.anInt8770 = i_1_;

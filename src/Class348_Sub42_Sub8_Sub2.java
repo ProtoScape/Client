@@ -337,8 +337,8 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			Class348_Sub3.currentIncomingPacket = null;
 			return true;
 		}
-		if (Class348_Sub3.currentIncomingPacket == ClanChatPlayer.aClass114_304) {
-			Class90.method853((byte) 99);
+		if (Class348_Sub3.currentIncomingPacket == ClanChatPlayer.serverPacket70) {
+			Class90.parseBuildMapPacket((byte) 99);
 			Class348_Sub3.currentIncomingPacket = null;
 			return false;
 		}
@@ -409,7 +409,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 		if (Class348_Sub3.currentIncomingPacket == Class298.aClass114_3809) {
 			int value = Class299.gameBuffer.method3346(255);
 			int id = Class299.gameBuffer.method3355(124);
-			Class318_Sub1_Sub3_Sub3.varbitHandler.putQueuedConfig(id, value);
+			Mob.varbitHandler.putQueuedConfig(id, value);
 			Class348_Sub3.currentIncomingPacket = null;
 			return true;
 		}
@@ -441,9 +441,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 						boolean bool_45_ = true;
 						int i_46_
 						= (!bool_41_
-								? ((Class318_Sub1_Sub3_Sub3)
+								? ((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10269
-										: ((Class318_Sub1_Sub3_Sub3)
+										: ((Mob)
 												class318_sub1_sub3_sub3_sub1).anInt10291);
 						if ((i_38_ ^ 0xffffffff) != 0
 								&& (i_46_ ^ 0xffffffff) != 0) {
@@ -494,40 +494,40 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 						}
 						if (bool_45_) {
 							if (!bool_41_) {
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10243
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10220
 										= i_37_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10269
 										= i_38_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10240
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10278
 										= i_43_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10225
 										= Class367_Sub11.logicCycle + i_39_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10237
 										= i_42_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10283
 										= 1;
-								if (((Class318_Sub1_Sub3_Sub3)
+								if (((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10225
 										> Class367_Sub11.logicCycle)
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub1).anInt10240
 											= -1;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10269
 										^ 0xffffffff) != 0
-										&& (((((Class318_Sub1_Sub3_Sub3)
+										&& (((((Mob)
 												class318_sub1_sub3_sub3_sub1)
 												.anInt10225)
 												^ 0xffffffff)
@@ -538,7 +538,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 											(Class348_Sub40_Sub18
 													.gfxLoader.loadDefinition
 													((byte) 87,
-															(((Class318_Sub1_Sub3_Sub3)
+															(((Mob)
 																	class318_sub1_sub3_sub3_sub1)
 																	.anInt10269))))
 																	.anInt4503);
@@ -549,7 +549,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 										if (class17 != null
 												&& (((AnimationDefinition) class17)
 														.anIntArray237) != null
-														&& !(((Class318_Sub1_Sub3_Sub3)
+														&& !(((Mob)
 																class318_sub1_sub3_sub3_sub1)
 																.aBoolean10309))
 											GametipDefinition.method2178
@@ -558,41 +558,41 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 									}
 								}
 							} else {
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10211
 										= i_39_ + Class367_Sub11.logicCycle;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10260
 										= i_37_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10291
 										= i_38_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10289
 										= i_43_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10202
 										= i_42_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10273
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10276
 										= 1;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10224
 										= 0;
-								if (((Class318_Sub1_Sub3_Sub3)
+								if (((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10211
 										> Class367_Sub11.logicCycle)
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub1).anInt10224
 											= -1;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub1).anInt10291
 										^ 0xffffffff) != 0
 										&& (Class367_Sub11.logicCycle
-												== (((Class318_Sub1_Sub3_Sub3)
+												== (((Mob)
 														class318_sub1_sub3_sub3_sub1)
 														.anInt10211))) {
 									int i_51_
@@ -600,7 +600,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 											(Class348_Sub40_Sub18
 													.gfxLoader.loadDefinition
 													((byte) 103,
-															(((Class318_Sub1_Sub3_Sub3)
+															(((Mob)
 																	class318_sub1_sub3_sub3_sub1)
 																	.anInt10291))))
 																	.anInt4503);
@@ -611,7 +611,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 										if (class17 != null
 												&& (((AnimationDefinition) class17)
 														.anIntArray237) != null
-														&& !(((Class318_Sub1_Sub3_Sub3)
+														&& !(((Mob)
 																class318_sub1_sub3_sub3_sub1)
 																.aBoolean10309))
 											GametipDefinition.method2178
@@ -627,7 +627,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 					Player class318_sub1_sub3_sub3_sub2;
 					if (Class348_Sub42_Sub11.localPlayerId != i_52_)
 						class318_sub1_sub3_sub3_sub2
-						= (ClassicLoadingScreen.players
+						= (ClassicLoadingScreen.onscreenPlayers
 								[i_52_]);
 					else
 						class318_sub1_sub3_sub3_sub2
@@ -638,9 +638,9 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 						boolean bool_53_ = true;
 						int i_54_
 						= (!bool_41_
-								? ((Class318_Sub1_Sub3_Sub3)
+								? ((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10269
-										: ((Class318_Sub1_Sub3_Sub3)
+										: ((Mob)
 												class318_sub1_sub3_sub3_sub2).anInt10291);
 						if ((i_38_ ^ 0xffffffff) != 0 && i_54_ != -1) {
 							if ((i_54_ ^ 0xffffffff) != (i_38_ ^ 0xffffffff)) {
@@ -688,48 +688,48 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 						}
 						if (bool_53_) {
 							if (bool_41_) {
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10224
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10260
 										= i_37_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10289
 										= i_43_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10273
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10276
 										= 1;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10291
 										= i_38_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10211
 										= i_39_ + Class367_Sub11.logicCycle;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10202
 										= i_42_;
-								if (((Class318_Sub1_Sub3_Sub3)
+								if (((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10211
 										> Class367_Sub11.logicCycle)
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub2).anInt10224
 											= -1;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10291
 										^ 0xffffffff)
 										== -65536)
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub2).anInt10291
 											= -1;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10291
 										!= -1)
 										&& ((Class367_Sub11.logicCycle ^ 0xffffffff)
-												== ((((Class318_Sub1_Sub3_Sub3)
+												== ((((Mob)
 														class318_sub1_sub3_sub3_sub2)
 														.anInt10211)
 														^ 0xffffffff))) {
@@ -738,7 +738,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 											(Class348_Sub40_Sub18
 													.gfxLoader.loadDefinition
 													((byte) 45,
-															(((Class318_Sub1_Sub3_Sub3)
+															(((Mob)
 																	class318_sub1_sub3_sub3_sub2)
 																	.anInt10291))))
 																	.anInt4503);
@@ -749,7 +749,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 										if (class17 != null
 												&& (((AnimationDefinition) class17)
 														.anIntArray237) != null
-														&& !(((Class318_Sub1_Sub3_Sub3)
+														&& !(((Mob)
 																class318_sub1_sub3_sub3_sub2)
 																.aBoolean10309))
 											GametipDefinition.method2178
@@ -758,49 +758,49 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 									}
 								}
 							} else {
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10269
 										= i_38_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10243
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10220
 										= i_37_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10240
 										= 0;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10278
 										= i_43_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10237
 										= i_42_;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10283
 										= 1;
-								((Class318_Sub1_Sub3_Sub3)
+								((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10225
 										= i_39_ + Class367_Sub11.logicCycle;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10269
 										^ 0xffffffff)
 										== -65536)
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub2).anInt10269
 											= -1;
 								if (Class367_Sub11.logicCycle
-										< (((Class318_Sub1_Sub3_Sub3)
+										< (((Mob)
 												class318_sub1_sub3_sub3_sub2)
 												.anInt10225))
-									((Class318_Sub1_Sub3_Sub3)
+									((Mob)
 											class318_sub1_sub3_sub3_sub2).anInt10240
 											= -1;
-								if ((((Class318_Sub1_Sub3_Sub3)
+								if ((((Mob)
 										class318_sub1_sub3_sub3_sub2).anInt10269
 										!= -1)
 										&& (Class367_Sub11.logicCycle
-												== (((Class318_Sub1_Sub3_Sub3)
+												== (((Mob)
 														class318_sub1_sub3_sub3_sub2)
 														.anInt10225))) {
 									int i_59_
@@ -808,7 +808,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 											(Class348_Sub40_Sub18
 													.gfxLoader.loadDefinition
 													((byte) 81,
-															(((Class318_Sub1_Sub3_Sub3)
+															(((Mob)
 																	class318_sub1_sub3_sub3_sub2)
 																	.anInt10269))))
 																	.anInt4503);
@@ -819,7 +819,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 										if (class17 != null
 												&& (((AnimationDefinition) class17)
 														.anIntArray237) != null
-														&& !(((Class318_Sub1_Sub3_Sub3)
+														&& !(((Mob)
 																class318_sub1_sub3_sub3_sub2)
 																.aBoolean10309))
 											GametipDefinition.method2178
@@ -843,7 +843,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 									int i_64_ = 512 * i_62_ + 256;
 									int i_65_ = i_60_;
 									if ((i_65_ ^ 0xffffffff) > -4
-											&& NpcDefinition.method802(i_62_, i_61_, true))
+											&& NpcDefinition.isElevatedTile(i_61_, i_62_))
 										i_65_++;
 									Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4
 									= (new Class318_Sub1_Sub3_Sub4
@@ -1041,8 +1041,6 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			Class348_Sub3.currentIncomingPacket = null;
 			return false;
 		}
-		
-		// 105 - gpi
 		if (Class367_Sub4.aClass114_7323 == Class348_Sub3.currentIncomingPacket) {
 			Class348_Sub16_Sub1.parseGpi(Class299.gameBuffer, Class348_Sub40_Sub25.currentPacketSize);
 			Class348_Sub3.currentIncomingPacket = null;
@@ -1073,7 +1071,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			return true;
 		}
 		if (Class348_Sub3.currentIncomingPacket == Class361.aClass114_4433) {
-			Class318_Sub1_Sub3_Sub3.varbitHandler.reset();
+			Mob.varbitHandler.reset();
 			GametipDefinition.anInt3695 += 32;
 			Class348_Sub3.currentIncomingPacket = null;
 			return true;
@@ -1222,7 +1220,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			int i = Class299.gameBuffer.getShort();
 			Player player;
 			if (i != Class348_Sub42_Sub11.localPlayerId)
-                            player = ClassicLoadingScreen.players[i];
+                            player = ClassicLoadingScreen.onscreenPlayers[i];
 			else
 				player
 				= Class132.localPlayer;
@@ -1269,16 +1267,16 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 								(Class299.gameBuffer,
 										(byte) 119));
 					}
-					((Class318_Sub1_Sub3_Sub3) player)
+					((Mob) player)
 					.aString10292
 					= string.trim();
-					((Class318_Sub1_Sub3_Sub3) player)
+					((Mob) player)
 					.anInt10201
 					= i_91_ >> -71851640;
-				((Class318_Sub1_Sub3_Sub3) player)
+				((Mob) player)
 				.anInt10234
 				= i_91_ & 0xff;
-				((Class318_Sub1_Sub3_Sub3) player)
+				((Mob) player)
 				.anInt10264
 				= 150;
 				int i_96_;
@@ -1570,7 +1568,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 		if (Class348_Sub3.currentIncomingPacket == Class348_Sub40_Sub19.aClass114_9254) {
                     int value = Class299.gameBuffer.method3393((byte) -88);
                     int id = Class299.gameBuffer.readLEShort(!bool);
-                    Class318_Sub1_Sub3_Sub3.varbitHandler.putQueuedSetting(id, value);
+                    Mob.varbitHandler.putQueuedSetting(id, value);
                     Class348_Sub3.currentIncomingPacket = null;
                     return true;
 		}
@@ -1620,16 +1618,16 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 		}
 		if (SocketWorker.aClass114_2665 == Class348_Sub3.currentIncomingPacket) {
 			for (int i = 0;
-			i < ClassicLoadingScreen.players.length;
+			i < ClassicLoadingScreen.onscreenPlayers.length;
 			i++) {
-				if (ClassicLoadingScreen.players[i]
+				if (ClassicLoadingScreen.onscreenPlayers[i]
 				                                                    != null) {
-					((Class318_Sub1_Sub3_Sub3)
-							ClassicLoadingScreen.players[i])
+					((Mob)
+							ClassicLoadingScreen.onscreenPlayers[i])
 							.anIntArray10236
 							= null;
-					((Class318_Sub1_Sub3_Sub3)
-							ClassicLoadingScreen.players[i])
+					((Mob)
+							ClassicLoadingScreen.onscreenPlayers[i])
 							.anInt10286
 							= -1;
 				}
@@ -1637,12 +1635,12 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			for (int i = 0;
 			(i ^ 0xffffffff) > (Class348_Sub32.anInt6930 ^ 0xffffffff);
 			i++) {
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 						(((Class348_Sub22)
 								Class348_Sub40_Sub23.aClass348_Sub22Array9319[i])
 								.aClass318_Sub1_Sub3_Sub3_Sub1_6859)).anIntArray10236
 								= null;
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 						(((Class348_Sub22)
 								Class348_Sub40_Sub23.aClass348_Sub22Array9319[i])
 								.aClass318_Sub1_Sub3_Sub3_Sub1_6859)).anInt10286
@@ -2001,12 +1999,12 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 		if (Class348_Sub3.currentIncomingPacket == Class239.aClass114_3143) {
 			int i = Class299.gameBuffer.getShort();
 			byte i_167_ = Class299.gameBuffer.getByte();
-			Class318_Sub1_Sub3_Sub3.varbitHandler.putQueuedConfig(i, i_167_);
+			Mob.varbitHandler.putQueuedConfig(i, i_167_);
 			Class348_Sub3.currentIncomingPacket = null;
 			return true;
 		}
 		if (Class348_Sub3.currentIncomingPacket
-				== Class318_Sub1_Sub3.aClass114_8756) {
+				== Entity.aClass114_8756) {
 			int i = Class299.gameBuffer.readLEShort(false);
 			if ((i ^ 0xffffffff) == -65536)
 				i = -1;
@@ -2435,7 +2433,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 		if (Class348_Sub3.currentIncomingPacket == Class151.aClass114_2068) {
                     int id = Class299.gameBuffer.method3355(-103);
                     int value = Class299.gameBuffer.method3346(255);
-                    Class318_Sub1_Sub3_Sub3.varbitHandler.putQueuedSetting(id, value);
+                    Mob.varbitHandler.putQueuedSetting(id, value);
                     Class348_Sub3.currentIncomingPacket = null;
                     return true;
 		}
@@ -2588,7 +2586,7 @@ final class Class348_Sub42_Sub8_Sub2 extends Class348_Sub42_Sub8
 			Class348_Sub3.currentIncomingPacket = null;
 			return true;
 		}
-		if (Class348_Sub3.currentIncomingPacket == Class359.aClass114_4421) {
+		if (Class348_Sub3.currentIncomingPacket == OffscreenPlayer.aClass114_4421) {
 			GameMode.anInt2986 = LoadingHandler.anInt3918;
 			if ((Class348_Sub40_Sub25.currentPacketSize ^ 0xffffffff) == -1) {
 				Class37.amountClanChatUsers = 0;

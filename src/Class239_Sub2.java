@@ -69,7 +69,7 @@ final class Class239_Sub2 extends Class239
 	int i_3_ = Class130_Sub1.anInt5799 >> 927495497;
 	int i_4_ = Class192.anInt2578 >> -170949527;
 	int i_5_
-	    = Class275.method2064(Class130_Sub1.anInt5799, Class355.anInt4372,
+	    = Class275.method2064(Class130_Sub1.anInt5799, Class355.localHeightLevel,
 				  11219, Class192.anInt2578);
 	int i_6_ = 0;
 	if (i_3_ > 3 && (i_4_ ^ 0xffffffff) < -4
@@ -77,9 +77,9 @@ final class Class239_Sub2 extends Class239
 	    && Class348_Sub40_Sub3.mapSizeY - 4 > i_4_) {
 	    for (int i_7_ = i_3_ - 4; i_3_ - -4 >= i_7_; i_7_++) {
 		for (int i_8_ = -4 + i_4_; i_8_ <= 4 + i_4_; i_8_++) {
-		    int i_9_ = Class355.anInt4372;
+		    int i_9_ = Class355.localHeightLevel;
 		    if ((i_9_ ^ 0xffffffff) > -4
-			&& NpcDefinition.method802(i_8_, i_7_, true))
+			&& NpcDefinition.isElevatedTile(i_7_, i_8_))
 			i_9_++;
 		    int i_10_ = 0;
 		    if ((((MapLoader) Class338.mMapLoader)

@@ -55,7 +55,7 @@ final class Class348_Sub42_Sub11 extends SubNode
     
     static final void method3223() {
 	for (int i = 0; i < Class86.anInt1477; i++) {
-	    Class318_Sub1_Sub3 class318_sub1_sub3
+	    Entity class318_sub1_sub3
 		= Class24.aClass318_Sub1_Sub3Array357[i];
 	    Class348_Sub46.method3320(class318_sub1_sub3, true);
 	    Class24.aClass318_Sub1_Sub3Array357[i] = null;
@@ -103,7 +103,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 		     i_8_++)
 		    Class289.aByteArrayArrayArray3700[i_7_][i_6_][i_8_] = i_5_;
 	    }
-	    if (Class355.anInt4372 != 3) {
+	    if (Class355.localHeightLevel != 3) {
 		for (int i_9_ = 0; (i_9_ ^ 0xffffffff) > -3; i_9_++) {
 		    Class327.anIntArray4097[i_9_] = -1000000;
 		    Class156.anIntArray2117[i_9_] = 1000000;
@@ -113,7 +113,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 		}
 		int i_10_ = (((Class318_Sub1)
 			      Class132.localPlayer)
-			     .anInt6377);
+			     .xHash);
 		int i_11_ = (((Class318_Sub1)
 			      Class132.localPlayer)
 			     .anInt6388);
@@ -125,7 +125,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 			    i_10_ = Class9.anInt167;
 			}
 			if ((0x4 & (Class348_Sub33.settingFlags
-				    [Class355.anInt4372][i_10_ >> -504285367]
+				    [Class355.localHeightLevel][i_10_ >> -504285367]
 				    [i_11_ >> -1016460983]))
 			    != 0)
 			    Class367_Sub4.method3542
@@ -174,7 +174,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					i_13_--;
 				    if ((0x4 & (Class348_Sub33
 						.settingFlags
-						[Class355.anInt4372][i_12_]
+						[Class355.localHeightLevel][i_12_]
 						[i_13_]))
 					!= 0) {
 					Class367_Sub4.method3542
@@ -193,7 +193,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					i_19_ -= 65536;
 					if ((0x4 & (Class348_Sub33
 						    .settingFlags
-						    [Class355.anInt4372][i_12_]
+						    [Class355.localHeightLevel][i_12_]
 						    [i_13_])
 					     ^ 0xffffffff)
 					    != -1) {
@@ -218,7 +218,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					i_12_++;
 				    if ((0x4 & (Class348_Sub33
 						.settingFlags
-						[Class355.anInt4372][i_12_]
+						[Class355.localHeightLevel][i_12_]
 						[i_13_])
 					 ^ 0xffffffff)
 					!= -1) {
@@ -239,7 +239,7 @@ final class Class348_Sub42_Sub11 extends SubNode
 					i_21_ -= 65536;
 					if ((0x4 & (Class348_Sub33
 						    .settingFlags
-						    [Class355.anInt4372][i_12_]
+						    [Class355.localHeightLevel][i_12_]
 						    [i_13_]))
 					    != 0) {
 					    Class367_Sub4.method3542
@@ -256,11 +256,11 @@ final class Class348_Sub42_Sub11 extends SubNode
 		    } else {
 			int i_22_
 			    = Class275.method2064(Class286_Sub4.anInt6246,
-						  Class355.anInt4372, 11219,
+						  Class355.localHeightLevel, 11219,
 						  Class59_Sub2_Sub2.anInt8685);
 			if (i_22_ - Class305.anInt3855 < 3200
 			    && ((Class348_Sub33.settingFlags
-				 [Class355.anInt4372]
+				 [Class355.localHeightLevel]
 				 [Class286_Sub4.anInt6246 >> 378417865]
 				 [Class59_Sub2_Sub2.anInt8685 >> -1035753239])
 				& 0x4) != 0)

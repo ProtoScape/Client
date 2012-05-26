@@ -33,7 +33,7 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1
 	anInt8767++;
 	return (Class99.aBooleanArrayArray1572
 		[(-Class239_Sub25.anInt6111
-		  + ((((Class318_Sub1) this).anInt6377 >> Class362.anInt4459)
+		  + ((((Class318_Sub1) this).xHash >> Class362.anInt4459)
 		     - -Class318_Sub1_Sub4_Sub1.anInt10084))]
 		[(Class318_Sub1_Sub4_Sub1.anInt10084
 		  + (-Class285_Sub2.anInt8502
@@ -73,9 +73,9 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1
 	return Class125.method1110((((Class318_Sub1) this).anInt6388
 				    >> Class362.anInt4459),
 				   this.method2394(true),
-				   ((Class318_Sub1) this).aByte6376,
+				   ((Class318_Sub1) this).mapHeightLevel,
 				   (byte) -79,
-				   (((Class318_Sub1) this).anInt6377
+				   (((Class318_Sub1) this).xHash
 				    >> Class362.anInt4459));
     }
     
@@ -133,7 +133,7 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1
 	anInt8771++;
 	int i_10_ = 122 % ((-14 - i) / 61);
 	return this.method2390(class348_sub1s,
-			       (((Class318_Sub1) this).anInt6377
+			       (((Class318_Sub1) this).xHash
 				>> Class362.anInt4459),
 			       -2,
 			       (((Class318_Sub1) this).anInt6388
@@ -143,12 +143,12 @@ abstract class Class318_Sub1_Sub5 extends Class318_Sub1
     Class318_Sub1_Sub5(int i, int i_11_, int i_12_, int i_13_, int i_14_,
 		       int i_15_, int i_16_) {
 	((Class318_Sub1_Sub5) this).aShort8769 = (short) i_16_;
-	((Class318_Sub1) this).aByte6376 = (byte) i_14_;
+	((Class318_Sub1) this).mapHeightLevel = (byte) i_14_;
 	((Class318_Sub1) this).anInt6382 = i_11_;
-	((Class318_Sub1) this).anInt6377 = i;
+	((Class318_Sub1) this).xHash = i;
 	((Class318_Sub1_Sub5) this).aShort8781 = (short) i_15_;
 	((Class318_Sub1) this).anInt6388 = i_12_;
-	((Class318_Sub1) this).aByte6381 = (byte) i_13_;
+	((Class318_Sub1) this).heightLevel = (byte) i_13_;
     }
     
     static final LobbyWorld getFirstLobbyWorld(int i) {

@@ -17,8 +17,8 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1
 	if (i > -51)
 	    gamePacket50 = null;
 	anInt8723++;
-	return aa_Sub2.method164(((Class318_Sub1) this).aByte6376,
-				 (((Class318_Sub1) this).anInt6377
+	return aa_Sub2.method164(((Class318_Sub1) this).mapHeightLevel,
+				 (((Class318_Sub1) this).xHash
 				  >> Class362.anInt4459),
 				 (byte) -97,
 				 (((Class318_Sub1) this).anInt6388
@@ -29,7 +29,7 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1
 	anInt8722++;
 	int i_0_ = 88 % ((i - -14) / 61);
 	return this.method2390(class348_sub1s,
-			       (((Class318_Sub1) this).anInt6377
+			       (((Class318_Sub1) this).xHash
 				>> Class362.anInt4459),
 			       -2,
 			       (((Class318_Sub1) this).anInt6388
@@ -60,12 +60,12 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1
     
     Class318_Sub1_Sub1(int i, int i_4_, int i_5_, int i_6_, int i_7_,
 		       int i_8_) {
-	((Class318_Sub1) this).aByte6376 = (byte) i_7_;
-	((Class318_Sub1) this).anInt6377 = i;
+	((Class318_Sub1) this).mapHeightLevel = (byte) i_7_;
+	((Class318_Sub1) this).xHash = i;
 	((Class318_Sub1) this).anInt6388 = i_5_;
 	((Class318_Sub1_Sub1) this).aShort8727 = (short) i_8_;
 	((Class318_Sub1) this).anInt6382 = i_4_;
-	((Class318_Sub1) this).aByte6381 = (byte) i_6_;
+	((Class318_Sub1) this).heightLevel = (byte) i_6_;
     }
     
     final boolean method2378(int i) {
@@ -75,7 +75,7 @@ abstract class Class318_Sub1_Sub1 extends Class318_Sub1
 	return (Class99.aBooleanArrayArray1572
 		[(Class318_Sub1_Sub4_Sub1.anInt10084
 		  + -Class239_Sub25.anInt6111
-		  + (((Class318_Sub1) this).anInt6377 >> Class362.anInt4459))]
+		  + (((Class318_Sub1) this).xHash >> Class362.anInt4459))]
 		[((((Class318_Sub1) this).anInt6388 >> Class362.anInt4459)
 		  + -Class285_Sub2.anInt8502
 		  + Class318_Sub1_Sub4_Sub1.anInt10084)]);

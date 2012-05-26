@@ -477,7 +477,7 @@ final class StringVarScriptSettingLoader
 				  + ((((Class318_Sub1)
 				       (Class132
 					.localPlayer))
-				      .anInt6377)
+				      .xHash)
 				     >> 875117673)
 				  + " z:"
 				  + ((((Class318_Sub1)
@@ -494,7 +494,7 @@ final class StringVarScriptSettingLoader
 					 [(((Class318_Sub1)
 					    (Class132
 					     .localPlayer))
-					   .aByte6381)]
+					   .heightLevel)]
 					 .method3982
 				     ((byte) -86,
 				      (((Class318_Sub1)
@@ -504,7 +504,7 @@ final class StringVarScriptSettingLoader
 				      (((Class318_Sub1)
 					(Class132
 					 .localPlayer))
-				       .anInt6377) >> -1239792887))));
+				       .xHash) >> -1239792887))));
 			    break;
 			}
 			if (string.equalsIgnoreCase("resetminimap")) {
@@ -564,7 +564,7 @@ final class StringVarScriptSettingLoader
 				  + (((Class318_Sub1)
 				      (Class132
 				       .localPlayer))
-				     .aByte6381)
+				     .heightLevel)
 				  + ","
 				  + (((Class286_Sub4.anInt6246 >> 701891721)
 				      - -za_Sub2.baseRegionX)
@@ -587,7 +587,7 @@ final class StringVarScriptSettingLoader
 				       (((Class318_Sub1)
 					 (Class132
 					  .localPlayer))
-					.aByte6381),
+					.heightLevel),
 				       11219, Class59_Sub2_Sub2.anInt8685))
 				     - Class305.anInt3855)));
 			    ClientApplet.addConsoleMessage
@@ -595,7 +595,7 @@ final class StringVarScriptSettingLoader
 				  + (((Class318_Sub1)
 				      (Class132
 				       .localPlayer))
-				     .aByte6381)
+				     .heightLevel)
 				  + ","
 				  + (GameFont.anInt4336 - -za_Sub2.baseRegionX
 				     >> -576384442)
@@ -614,7 +614,7 @@ final class StringVarScriptSettingLoader
 				       (((Class318_Sub1)
 					 (Class132
 					  .localPlayer))
-					.aByte6381),
+					.heightLevel),
 				       11219, Class281.anInt3647))
 				     - Class121.anInt1797)));
 			    break;
@@ -785,7 +785,7 @@ final class StringVarScriptSettingLoader
 			if (string.startsWith("getclientvarpbit")) {
 			    int i_15_ = Integer.parseInt(string.substring(17));
 			    ClientApplet.addConsoleMessage
-				("varpbit=" + Class318_Sub1_Sub3_Sub3
+				("varpbit=" + Mob
 						  .varbitHandler
 						  .getSetting(i_15_));
 			    break;
@@ -793,7 +793,7 @@ final class StringVarScriptSettingLoader
 			if (string.startsWith("getclientvarp")) {
 			    int i_16_ = Integer.parseInt(string.substring(14));
 			    ClientApplet.addConsoleMessage
-				("varp=" + Class318_Sub1_Sub3_Sub3
+				("varp=" + Mob
 					       .varbitHandler
 					       .getRawConfig(i_16_));
 			    break;

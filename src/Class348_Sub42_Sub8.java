@@ -86,15 +86,15 @@ abstract class Class348_Sub42_Sub8 extends SubNode
 	Class33.method338(i + 45, OndemandFileRequest.anInt10447);
 	Class132.localPlayer
 	    = new Player();
-	((Class318_Sub1) Class132.localPlayer).anInt6377
+	((Class318_Sub1) Class132.localPlayer).xHash
 	    = 512 * Class367_Sub4.mapSizeX / 2;
-	((Class318_Sub1_Sub3_Sub3) Class132.localPlayer)
-	    .anIntArray10320[0]
+	((Mob) Class132.localPlayer)
+	    .xList[0]
 	    = Class367_Sub4.mapSizeX / 2;
 	((Class318_Sub1) Class132.localPlayer).anInt6388
 	    = 512 * Class348_Sub40_Sub3.mapSizeY / 2;
-	((Class318_Sub1_Sub3_Sub3) Class132.localPlayer)
-	    .anIntArray10317[0]
+	((Mob) Class132.localPlayer)
+	    .yList[0]
 	    = Class348_Sub40_Sub3.mapSizeY / 2;
 	Class286_Sub4.anInt6246 = Class59_Sub2_Sub2.anInt8685 = 0;
 	if ((Class348_Sub40_Sub21.anInt9282 ^ 0xffffffff) == -3) {

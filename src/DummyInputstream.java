@@ -63,7 +63,7 @@ final class DummyInputstream extends InputStream
 		    int i_16_ = 256 + 512 * i_10_;
 		    int i_17_ = Class348_Sub40_Sub12.anInt9200;
 		    if ((i_17_ ^ 0xffffffff) > -4
-			&& NpcDefinition.method802(i_10_, i_9_, true))
+			&& NpcDefinition.isElevatedTile(i_9_, i_10_))
 			i_17_++;
 		    Class318_Sub1_Sub3_Sub4 class318_sub1_sub3_sub4
 			= (new Class318_Sub1_Sub3_Sub4
@@ -99,22 +99,22 @@ final class DummyInputstream extends InputStream
 			< (i_20_ ^ 0xffffffff))) {
 		    int i_28_ = 1 + i_23_;
 		    if (((i_19_ + -i_28_ ^ 0xffffffff)
-			 >= ((((Class318_Sub1_Sub3_Sub3)
+			 >= ((((Mob)
 			       Class132.localPlayer)
-			      .anIntArray10320[0])
+			      .xList[0])
 			     ^ 0xffffffff))
-			&& ((((Class318_Sub1_Sub3_Sub3)
+			&& ((((Mob)
 			      Class132.localPlayer)
-			     .anIntArray10320[0])
+			     .xList[0])
 			    ^ 0xffffffff) >= (i_28_ + i_19_ ^ 0xffffffff)
 			&& ((-i_28_ + i_20_ ^ 0xffffffff)
-			    >= ((((Class318_Sub1_Sub3_Sub3)
+			    >= ((((Mob)
 				  Class132.localPlayer)
-				 .anIntArray10317[0])
+				 .yList[0])
 				^ 0xffffffff))
-			&& ((((Class318_Sub1_Sub3_Sub3)
+			&& ((((Mob)
 			      Class132.localPlayer)
-			     .anIntArray10317[0])
+			     .yList[0])
 			    ^ 0xffffffff) >= (i_20_ + i_28_ ^ 0xffffffff))
 			Class239_Sub10.method1760(i_21_, i_26_, false,
 						  ((i_20_ << -933699064)
@@ -155,21 +155,21 @@ final class DummyInputstream extends InputStream
 		    && i_32_ < Class367_Sub4.mapSizeX
 		    && i_33_ < Class348_Sub40_Sub3.mapSizeY) {
 		    int i_41_ = i_36_ + 1;
-		    if ((((Class318_Sub1_Sub3_Sub3)
+		    if ((((Mob)
 			  Class132.localPlayer)
-			 .anIntArray10320[0]) >= i_32_ - i_41_
-			&& (((Class318_Sub1_Sub3_Sub3)
+			 .xList[0]) >= i_32_ - i_41_
+			&& (((Mob)
 			     Class132.localPlayer)
-			    .anIntArray10320[0]) <= i_41_ + i_32_
+			    .xList[0]) <= i_41_ + i_32_
 			&& ((-i_41_ + i_33_ ^ 0xffffffff)
-			    >= ((((Class318_Sub1_Sub3_Sub3)
+			    >= ((((Mob)
 				  Class132.localPlayer)
-				 .anIntArray10317[0])
+				 .yList[0])
 				^ 0xffffffff))
 			&& (i_33_ - -i_41_
-			    >= (((Class318_Sub1_Sub3_Sub3)
+			    >= (((Mob)
 				 Class132.localPlayer)
-				.anIntArray10317[0])))
+				.yList[0])))
 			Class37.method358(i_37_,
 					  (i_36_ + (i_33_ << -253122776)
 					   + ((Class348_Sub40_Sub12.anInt9200
@@ -248,7 +248,7 @@ final class DummyInputstream extends InputStream
 		    i_61_ <<= 2;
 		    i_52_ *= 256;
 		    if (i_58_ != 0 && (i_55_ ^ 0xffffffff) != 0) {
-			Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
+			Mob class318_sub1_sub3_sub3 = null;
 			if ((i_58_ ^ 0xffffffff) > -1) {
 			    int i_67_ = -i_58_ + -1;
 			    if ((i_67_ ^ 0xffffffff)
@@ -256,7 +256,7 @@ final class DummyInputstream extends InputStream
 				    ^ 0xffffffff))
 				class318_sub1_sub3_sub3
 				    = (ClassicLoadingScreen
-				       .players
+				       .onscreenPlayers
 				       [i_67_]);
 			    else
 				class318_sub1_sub3_sub3

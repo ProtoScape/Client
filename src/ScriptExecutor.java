@@ -1358,14 +1358,14 @@ final class ScriptExecutor
 		Class348_Sub42_Sub4.anInt9511 = intStack[intStackOffset + 3];
 		Class231.anInt2996 = intStack[intStackOffset + 4];
 		Class348_Sub40_Sub16.anInt9231 = intStack[intStackOffset + 5];
-		Class318_Sub1_Sub3_Sub3.anInt10257 = intStack[intStackOffset + 6];
+		Mob.anInt10257 = intStack[intStackOffset + 6];
 		Class313.anInt3937 = intStack[intStackOffset + 7];
 		NpcDefinition.anInt1387 = intStack[intStackOffset + 8];
 		Class348_Sub42_Sub11.anInt9586 = intStack[intStackOffset + 9];
 		Class5_Sub2.anInt8363 = intStack[intStackOffset + 10];
 		Class21.indexLoader8.getArchiveLoaded(Class231.anInt2996);
 		Class21.indexLoader8.getArchiveLoaded(Class348_Sub40_Sub16.anInt9231);
-		Class21.indexLoader8.getArchiveLoaded(Class318_Sub1_Sub3_Sub3.anInt10257);
+		Class21.indexLoader8.getArchiveLoaded(Mob.anInt10257);
 		Class21.indexLoader8.getArchiveLoaded(Class313.anInt3937);
 		Class21.indexLoader8.getArchiveLoaded(NpcDefinition.anInt1387);
 		WidgetVariable.aClass105_9659
@@ -1399,7 +1399,7 @@ final class ScriptExecutor
 		int i_122_ = intStack[intStackOffset];
 		int i_123_ = intStack[intStackOffset + 1];
 		intStack[intStackOffset++]
-		    = Class318_Sub1_Sub3.method2410((byte) -49, i_123_,
+		    = Entity.method2410((byte) -49, i_123_,
 						    i_122_) ? 1 : 0;
 		return;
 	    }
@@ -5187,11 +5187,11 @@ final class ScriptExecutor
 		    return;
 		}
 		if (i == 3308) {
-		    int i_327_ = (((Class318_Sub1) Class132.localPlayer).aByte6381);
+		    int i_327_ = (((Class318_Sub1) Class132.localPlayer).heightLevel);
 		    int i_328_
 			= (((((Class318_Sub1)
 			      Class132.localPlayer)
-			     .anInt6377)
+			     .xHash)
 			    >> 9)
 			   + za_Sub2.baseRegionX);
 		    int i_329_
@@ -5417,7 +5417,7 @@ final class ScriptExecutor
 		}
 		if (i == 3349) {
 		    intStack[intStackOffset++]
-			= ((Class318_Sub1_Sub3_Sub3)
+			= ((Mob)
 			   Class132.localPlayer)
 			      .aClass264_10217.method2019((byte) -31) >> 3;
 		    return;
@@ -6600,10 +6600,10 @@ final class ScriptExecutor
 			intStack[intStackOffset++] = intOperands[position];
 		    else if (opcode == 1) {
 			int setting = intOperands[position];
-			intStack[intStackOffset++] = (((VarpHandler) Class318_Sub1_Sub3_Sub3.varbitHandler).configs[setting]);
+			intStack[intStackOffset++] = (((VarpHandler) Mob.varbitHandler).configs[setting]);
 		    } else if (opcode == 2) {
 			int i_493_ = intOperands[position];
-			Class318_Sub1_Sub3_Sub3.varbitHandler.putConfig(i_493_, intStack[--intStackOffset]);
+			Mob.varbitHandler.putConfig(i_493_, intStack[--intStackOffset]);
 		    } else if (opcode == 3)
 			strStack[anInt1170++] = (((ClientScript) script).strOperands[position]);
 		    else if (opcode == 6)
@@ -6645,11 +6645,11 @@ final class ScriptExecutor
 		    } else if (opcode == 25) {
 			int i_494_ = intOperands[position];
 			intStack[intStackOffset++]
-			    = Class318_Sub1_Sub3_Sub3.varbitHandler
+			    = Mob.varbitHandler
 				  .getSetting(i_494_);
 		    } else if (opcode == 27) {
 			int id = intOperands[position];
-			Class318_Sub1_Sub3_Sub3.varbitHandler.putSetting(id, intStack[--intStackOffset]);
+			Mob.varbitHandler.putSetting(id, intStack[--intStackOffset]);
 		    } else if (opcode == 31) {
 			intStackOffset -= 2;
 			if (intStack[intStackOffset]

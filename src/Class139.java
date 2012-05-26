@@ -14,7 +14,7 @@ final class Class139
     static int anInt1955;
     
     static final void method1165(int i) {
-	Class299.gameBuffer.initiateBitAccess(i ^ ~0x79);
+	Class299.gameBuffer.initiateBitAccess();
 	anInt1950++;
 	int i_0_
 	    = Class299.gameBuffer.getBits(8);
@@ -38,7 +38,7 @@ final class Class139
 		    = Class299.gameBuffer.getBits(1);
 		if ((i_4_ ^ 0xffffffff) == -1) {
 		    EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    ((Mob) class318_sub1_sub3_sub3_sub1)
 			.anInt10306
 			= Class348_Sub23_Sub3.anInt9041;
 		} else {
@@ -46,13 +46,13 @@ final class Class139
 				   .getBits(2);
 		    if (i_5_ == 0) {
 			EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10306
 			    = Class348_Sub23_Sub3.anInt9041;
 			Class13.anIntArray224[Class101.anInt1597++] = i_3_;
 		    } else if ((i_5_ ^ 0xffffffff) == -2) {
 			EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10306
 			    = Class348_Sub23_Sub3.anInt9041;
 			int i_6_ = Class299.gameBuffer
@@ -64,7 +64,7 @@ final class Class139
 			    Class13.anIntArray224[Class101.anInt1597++] = i_3_;
 		    } else if (i_5_ == 2) {
 			EntityPacket.anIntArray1233[Class150.anInt2057++] = i_3_;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10306
 			    = Class348_Sub23_Sub3.anInt9041;
 			if (Class299.gameBuffer

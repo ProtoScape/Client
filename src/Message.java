@@ -32,7 +32,7 @@ final class Message
 	     String string_2_, String string_3_, int i_4_, String string_5_) {
 	try {
 	    ((Message) this).anInt2031
-		= Class318_Sub1_Sub3.method2408((byte) 53);
+		= Entity.method2408((byte) 53);
 	    ((Message) this).aString2028 = string_5_;
 	    ((Message) this).type = type;
 	    ((Message) this).aString2033 = string_1_;
@@ -59,7 +59,7 @@ final class Message
 			  String string_11_, String string_12_) {
 	try {
 	    ((Message) this).anInt2031
-		= Class318_Sub1_Sub3.method2408((byte) -91);
+		= Entity.method2408((byte) -91);
 	    anInt2036++;
 	    ((Message) this).aString2033 = string_7_;
 	    ((Message) this).aString2024 = string_11_;

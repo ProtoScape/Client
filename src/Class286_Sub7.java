@@ -18,7 +18,7 @@ final class Class286_Sub7 extends Class286
     static int anInt6287;
     static int anInt6288;
     static boolean aBoolean6289;
-    static int[] anIntArray6290 = new int[2048];
+    static int[] onscreenGpiList = new int[2048];
     static int anInt6291;
     
     static final void method2165(boolean bool, String string) {
@@ -155,7 +155,7 @@ final class Class286_Sub7 extends Class286
     public static void method2166(int i) {
 	if (i == 6336) {
 	    indexLoader32_34 = null;
-	    anIntArray6290 = null;
+	    onscreenGpiList = null;
 	}
     }
     

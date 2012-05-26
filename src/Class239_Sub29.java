@@ -82,7 +82,7 @@ final class Class239_Sub29 extends Class239
 	anInt6152++;
 	for (int i_11_ = 0; (i_11_ ^ 0xffffffff) > -6; i_11_++)
 	    Class181.aBooleanArray2374[i_11_] = false;
-	Class359.anInt4424 = Class59_Sub2_Sub2.anInt8685;
+	OffscreenPlayer.anInt4424 = Class59_Sub2_Sub2.anInt8685;
 	WorldInfo.anInt3662 = ClientScript.anInt9701;
 	Class5_Sub3.anInt8368 = Class305.anInt3855;
 	FloatBuffer.anInt9751 = Class367_Sub11.logicCycle;

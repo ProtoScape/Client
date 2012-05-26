@@ -23,31 +23,31 @@ final class Class348_Sub8 extends Node
     static int anInt6667;
     
     static final int method2774
-	(byte i, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	(byte i, Mob class318_sub1_sub3_sub3) {
 	anInt6667++;
 	if (i != 108)
 	    anApplet6662 = null;
-	if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10310
+	if (((Mob) class318_sub1_sub3_sub3).anInt10310
 	    == 0)
 	    return 0;
-	if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10275
+	if (((Mob) class318_sub1_sub3_sub3).anInt10275
 	    != -1) {
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_0_ = null;
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10275
+	    Mob class318_sub1_sub3_sub3_0_ = null;
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10275
 		>= 32768) {
-		if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if (((((Mob) class318_sub1_sub3_sub3)
 		      .anInt10275)
 		     ^ 0xffffffff)
 		    <= -32769)
 		    class318_sub1_sub3_sub3_0_
-			= (ClassicLoadingScreen.players
-			   [((Class318_Sub1_Sub3_Sub3)
+			= (ClassicLoadingScreen.onscreenPlayers
+			   [((Mob)
 			     class318_sub1_sub3_sub3).anInt10275 + -32768]);
 	    } else {
 		Class348_Sub22 class348_sub22
 		    = ((Class348_Sub22)
 		       (Class282.aClass356_3654.get
-			((long) ((Class318_Sub1_Sub3_Sub3)
+			((long) ((Mob)
 				 class318_sub1_sub3_sub3).anInt10275)));
 		if (class348_sub22 != null)
 		    class318_sub1_sub3_sub3_0_
@@ -55,9 +55,9 @@ final class Class348_Sub8 extends Node
 			   .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
 	    }
 	    if (class318_sub1_sub3_sub3_0_ != null) {
-		int i_1_ = (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		int i_1_ = (((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    + -(((Class318_Sub1) class318_sub1_sub3_sub3_0_)
-				.anInt6377));
+				.xHash));
 		int i_2_ = (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 			    + -(((Class318_Sub1) class318_sub1_sub3_sub3_0_)
 				.anInt6388));
@@ -74,9 +74,9 @@ final class Class348_Sub8 extends Node
 	    if (((((Player) class318_sub1_sub3_sub3_sub2)
 		  .anInt10524)
 		 ^ 0xffffffff) != 0
-		&& ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		&& ((((Mob) class318_sub1_sub3_sub3_sub2)
 		     .anInt10319) == 0
-		    || (((Class318_Sub1_Sub3_Sub3)
+		    || (((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10326
 			^ 0xffffffff) < -1)) {
 		class318_sub1_sub3_sub3_sub2.method2440
@@ -92,9 +92,9 @@ final class Class348_Sub8 extends Node
 		= (Npc) class318_sub1_sub3_sub3;
 	    if ((((Npc) class318_sub1_sub3_sub3_sub1)
 		 .anInt10499) != -1
-		&& ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		&& ((((Mob) class318_sub1_sub3_sub3_sub1)
 		     .anInt10319) == 0
-		    || (((Class318_Sub1_Sub3_Sub3)
+		    || (((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10326
 			^ 0xffffffff) < -1)) {
 		int i_3_ = (-((-za_Sub2.baseRegionX
@@ -103,7 +103,7 @@ final class Class348_Sub8 extends Node
 			       - za_Sub2.baseRegionX)
 			      * 256)
 			    + (((Class318_Sub1) class318_sub1_sub3_sub3_sub1)
-			       .anInt6377));
+			       .xHash));
 		int i_4_
 		    = (((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6388
 		       - 256 * (((Npc)

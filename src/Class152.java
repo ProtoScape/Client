@@ -90,7 +90,7 @@ final class Class152
 				 = ((Class357) class357).aClass148_4396;
 			     class148 != null;
 			     class148 = ((Class148) class148).aClass148_2038) {
-			    Class318_Sub1_Sub3 class318_sub1_sub3
+			    Entity class318_sub1_sub3
 				= (((Class148) class148)
 				   .aClass318_Sub1_Sub3_2040);
 			    if (class318_sub1_sub3 instanceof Interface10)

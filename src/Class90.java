@@ -19,7 +19,7 @@ final class Class90
 	anIntArray1518 = null;
     }
     
-    static final void method853(byte i) {
+    static void parseBuildMapPacket(byte i) {
 	anInt1515++;
 	int sizeId = Class299.gameBuffer.getUByte();
 	int chnkY = Class299.gameBuffer.getWordLE128(-121);
@@ -28,7 +28,7 @@ final class Class90
 	Class312.anInt3931 = Class299.gameBuffer.method3393((byte) -112);
 	Class322.method2554((byte) -45);
 	Class348_Sub40_Sub22.setMapSize(sizeId);
-	Class299.gameBuffer.initiateBitAccess(-122);
+	Class299.gameBuffer.initiateBitAccess();
 	for (int i_3_ = 0; (i_3_ ^ 0xffffffff) > -5; i_3_++) {
 	    for (int i_4_ = 0;
 		 ((i_4_ ^ 0xffffffff)
@@ -51,7 +51,7 @@ final class Class90
 		}
 	    }
 	}
-	Class299.gameBuffer.finalizeBitAccess(false);
+	Class299.gameBuffer.finalizeBitAccess();
 	int i_7_
 	    = (-((ByteBuffer) Class299.gameBuffer).position
 	       + Class348_Sub40_Sub25.currentPacketSize) / 16;

@@ -357,7 +357,7 @@ final class Class164
 		(i + 28539, (((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 				 .aClass239_Sub27_7261.method1840(i + -3690)
 			     ^ 0xffffffff) == -1);
-	    Class318_Sub1_Sub3_Sub3.varbitHandler = new VarpHandler();
+	    Mob.varbitHandler = new VarpHandler();
 	    Class348_Sub40.method3038(-1);
 	    RuntimeException_Sub1.method4011(i + 29684,
 					     Class239.indexLoader27);
@@ -389,7 +389,7 @@ final class Class164
 			      Class348_Sub40_Sub12.objectLoader,
 			      Class348_Sub23_Sub2.aClass153_9031,
 			      Class2.aClass141_117,
-			      Class318_Sub1_Sub3_Sub3.varbitHandler);
+			      Mob.varbitHandler);
 	if (LoadingStage.loadingStage16 == WidgetVariable.currentLoadingStage) {
 	    IsaacCipher.globalScriptIntVars
 		= (new int

@@ -93,7 +93,7 @@ final class Class239_Sub3 extends Class239
 	anInt5863++;
 	AbstractMouseEvent class348_sub45
 	    = ((AbstractMouseEvent)
-	       Class318_Sub1_Sub3.aClass262_8744.getFirst(i ^ 0x5));
+	       Entity.aClass262_8744.getFirst(i ^ 0x5));
 	boolean bool = (Class289.aClass46_3701 != null
 			|| (SubNode.anInt7059 ^ 0xffffffff) < -1);
 	int i_19_ = class348_sub45.method3308((byte) -128);

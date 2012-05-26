@@ -102,8 +102,8 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 	    aR9976 = null;
 	}
 	if (var_r != null)
-	    Class169.method1301(var_r, ((Class318_Sub1) this).aByte6376,
-				((Class318_Sub1) this).anInt6377,
+	    Class169.method1301(var_r, ((Class318_Sub1) this).mapHeightLevel,
+				((Class318_Sub1) this).xHash,
 				((Class318_Sub1) this).anInt6388, null);
     }
     
@@ -116,19 +116,19 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 	s var_s;
 	s var_s_5_;
 	if (aBoolean9983) {
-	    var_s = Class332.aSArray4142[((Class318_Sub1) this).aByte6376];
+	    var_s = Class332.aSArray4142[((Class318_Sub1) this).mapHeightLevel];
 	    var_s_5_ = Class348_Sub1_Sub1.aSArray8801[0];
 	} else {
 	    var_s = (Class348_Sub1_Sub1.aSArray8801
-		     [((Class318_Sub1) this).aByte6376]);
-	    if (((Class318_Sub1) this).aByte6376 < 3)
+		     [((Class318_Sub1) this).mapHeightLevel]);
+	    if (((Class318_Sub1) this).mapHeightLevel < 3)
 		var_s_5_ = (Class348_Sub1_Sub1.aSArray8801
-			    [1 + ((Class318_Sub1) this).aByte6376]);
+			    [1 + ((Class318_Sub1) this).mapHeightLevel]);
 	    else
 		var_s_5_ = null;
 	}
 	return class51.method476(var_ha, var_s_5_, 22, i,
-				 ((Class318_Sub1) this).anInt6377, bool, var_s,
+				 ((Class318_Sub1) this).xHash, bool, var_s,
 				 ((Class318_Sub1) this).anInt6382,
 				 ((Class318_Sub1) this).anInt6388, aByte9980,
 				 128);
@@ -164,7 +164,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 	if (aClass64_9993 == null)
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	Class318_Sub4 class318_sub4
@@ -284,8 +284,8 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 	    var_r = class2 == null ? null : ((Class2) class2).aR118;
 	}
 	if (var_r != null)
-	    Class130.method1130(var_r, ((Class318_Sub1) this).aByte6376,
-				((Class318_Sub1) this).anInt6377,
+	    Class130.method1130(var_r, ((Class318_Sub1) this).mapHeightLevel,
+				((Class318_Sub1) this).xHash,
 				((Class318_Sub1) this).anInt6388, null);
 	if (i != 836)
 	    aShort9991 = (short) 86;
@@ -298,7 +298,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 	AnimatableToolkit class64 = method2404(var_ha, 69, 131072);
 	if (class64 != null) {
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    if (Class305.aBoolean3870)
@@ -333,7 +333,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
 		       && !bool);
 		((Class318_Sub1) this).anInt6388 = i_23_;
 		aBoolean9989 = bool_25_;
-		((Class318_Sub1) this).anInt6377 = i_21_;
+		((Class318_Sub1) this).xHash = i_21_;
 		aByte9980 = (byte) i_24_;
 		aShort9991 = (short) ((ObjectDefinition) class51).anInt941;
 		aBoolean9988
@@ -370,7 +370,7 @@ final class Class318_Sub1_Sub1_Sub2 extends Class318_Sub1_Sub1
     final Class30 method2381(AbstractToolkit var_ha, int i) {
 	if (aClass30_9999 == null)
 	    aClass30_9999 = (Class348_Sub23_Sub1.method2967
-			     (((Class318_Sub1) this).anInt6377,
+			     (((Class318_Sub1) this).xHash,
 			      method2404(var_ha, 86, 0),
 			      ((Class318_Sub1) this).anInt6388,
 			      ((Class318_Sub1) this).anInt6382, i ^ 0x5));

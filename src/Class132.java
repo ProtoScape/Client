@@ -25,8 +25,8 @@ final class Class132
 	    anInt1908++;
 	    Class64_Sub3.playerPassword = string;
 	    Class186.playerUsername = string_0_;
-	    Class318_Sub1_Sub3_Sub3.aBoolean10238 = bool;
-	    if (!Class318_Sub1_Sub3_Sub3.aBoolean10238
+	    Mob.aBoolean10238 = bool;
+	    if (!Mob.aBoolean10238
 		&& (Class64_Sub3.playerPassword.equals("")
 		    || Class186.playerUsername.equals("")))
 		Class14_Sub4.method254(3, (byte) -100);

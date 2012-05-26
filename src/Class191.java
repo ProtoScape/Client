@@ -48,8 +48,8 @@ final class Class191
     
     static final void method1430
 	(int i, byte i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_,
-	 int i_7_, Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3,
-	 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3_8_) {
+	 int i_7_, Mob class318_sub1_sub3_sub3,
+	 Mob class318_sub1_sub3_sub3_8_) {
 	try {
 	    anInt2567++;
 	    int i_9_ = class318_sub1_sub3_sub3.method2425(-1);
@@ -70,9 +70,9 @@ final class Class191
 			.method582(class105, (long) i_9_, (byte) -115);
 		}
 		aa_Sub2.method165
-		    (((Class318_Sub1) class318_sub1_sub3_sub3_8_).aByte6381,
+		    (((Class318_Sub1) class318_sub1_sub3_sub3_8_).heightLevel,
 		     i_5_, 0, i_3_ >> -1818761215,
-		     ((Class318_Sub1) class318_sub1_sub3_sub3_8_).anInt6377,
+		     ((Class318_Sub1) class318_sub1_sub3_sub3_8_).xHash,
 		     class318_sub1_sub3_sub3_8_.method2436((byte) 126) * 256,
 		     ((Class318_Sub1) class318_sub1_sub3_sub3_8_).anInt6388,
 		     (byte) 92, i_6_ >> 1288222721, i_2_);

@@ -40,7 +40,7 @@ final class Class203
 		    .aClass239_Sub27_7261.method1840(-32350) != 0
 		|| i_3_ == (((Class318_Sub1)
 			     Class132.localPlayer)
-			    .aByte6381))) {
+			    .heightLevel))) {
 	    long l = (long) (i_5_ << 1618270446 | i_3_ << 1870646844 | i_4_);
 	    Class348_Sub37 class348_sub37
 		= ((Class348_Sub37)
@@ -137,18 +137,18 @@ final class Class203
 					      11219, 256 + (i << -737638519));
 		    ((Class318_Sub1) class318_sub1_sub2_sub1).anInt6388
 			= i << 1186653097;
-		    ((Class318_Sub1) class318_sub1_sub2_sub1).aByte6381
+		    ((Class318_Sub1) class318_sub1_sub2_sub1).heightLevel
 			= (byte) i_3_;
 		    ((Class318_Sub1_Sub2_Sub1) class318_sub1_sub2_sub1)
 			.anInt10196
 			= 0;
-		    ((Class318_Sub1) class318_sub1_sub2_sub1).anInt6377
+		    ((Class318_Sub1) class318_sub1_sub2_sub1).xHash
 			= i_2_ << -1403769975;
 		    ((Class318_Sub1) class318_sub1_sub2_sub1).anInt6382 = i_8_;
-		    ((Class318_Sub1) class318_sub1_sub2_sub1).aByte6376
+		    ((Class318_Sub1) class318_sub1_sub2_sub1).mapHeightLevel
 			= (byte) i_3_;
-		    if (NpcDefinition.method802(i, i_2_, true))
-			((Class318_Sub1) class318_sub1_sub2_sub1).aByte6376++;
+		    if (NpcDefinition.isElevatedTile(i_2_, i))
+			((Class318_Sub1) class318_sub1_sub2_sub1).mapHeightLevel++;
 		    Class367_Sub2.method3536(i_3_, i_2_, i, i_8_,
 					     class318_sub1_sub2_sub1);
 		}

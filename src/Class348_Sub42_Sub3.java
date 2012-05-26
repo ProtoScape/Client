@@ -89,13 +89,13 @@ final class Class348_Sub42_Sub3 extends SubNode
     static final void method3175(byte i) {
 	if (!Class348_Sub42_Sub8.method3196(Class240.anInt4674, -114)
 	    && !ArchiveFetcher.method2672(Class240.anInt4674, -103)) {
-	    int i_12_ = ((((Class318_Sub1_Sub3_Sub3)
+	    int i_12_ = ((((Mob)
 			   Class132.localPlayer)
-			  .anIntArray10320[0])
+			  .xList[0])
 			 >> 123282371);
-	    int i_13_ = ((((Class318_Sub1_Sub3_Sub3)
+	    int i_13_ = ((((Mob)
 			   Class132.localPlayer)
-			  .anIntArray10317[0])
+			  .yList[0])
 			 >> 1031515907);
 	    if ((i_12_ ^ 0xffffffff) > -1
 		|| Class367_Sub4.mapSizeX >> -1390409597 <= i_12_

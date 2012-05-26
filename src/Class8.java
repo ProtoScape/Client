@@ -30,7 +30,7 @@ final class Class8
 	       .definition);
 	if (((NpcDefinition) class79).anIntArray1377 != null) {
 	    class79
-		= class79.method794(Class318_Sub1_Sub3_Sub3.varbitHandler,
+		= class79.method794(Mob.varbitHandler,
 				    i);
 	    if (class79 == null)
 		return -1;
@@ -39,35 +39,35 @@ final class Class8
 	if (i != -1)
 	    return 14;
 	Class225 class225 = class318_sub1_sub3_sub3_sub1.method2422((byte) 72);
-	if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+	if (((((Mob) class318_sub1_sub3_sub3_sub1)
 	      .anInt10268)
 	     ^ 0xffffffff) != 0
-	    && !(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+	    && !(((Mob) class318_sub1_sub3_sub3_sub1)
 		 .aBoolean10213)) {
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+	    if ((((Mob) class318_sub1_sub3_sub3_sub1)
 		 .anInt10268) != ((Class225) class225).anInt2919
 		&& (((Class225) class225).anInt2920
-		    != ((Class318_Sub1_Sub3_Sub3)
+		    != ((Mob)
 			class318_sub1_sub3_sub3_sub1).anInt10268)
 		&& (((Class225) class225).anInt2949
-		    != ((Class318_Sub1_Sub3_Sub3)
+		    != ((Mob)
 			class318_sub1_sub3_sub3_sub1).anInt10268)
-		&& (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		&& (((((Mob) class318_sub1_sub3_sub3_sub1)
 		      .anInt10268)
 		     ^ 0xffffffff)
 		    != (((Class225) class225).anInt2914 ^ 0xffffffff))) {
 		if ((((Class225) class225).anInt2940
-		     == ((Class318_Sub1_Sub3_Sub3)
+		     == ((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10268)
-		    || ((((Class318_Sub1_Sub3_Sub3)
+		    || ((((Mob)
 			  class318_sub1_sub3_sub3_sub1).anInt10268
 			 ^ 0xffffffff)
 			== (((Class225) class225).anInt2924 ^ 0xffffffff))
-		    || (((Class318_Sub1_Sub3_Sub3)
+		    || (((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10268
 			== ((Class225) class225).anInt2947)
 		    || ((((Class225) class225).anInt2958 ^ 0xffffffff)
-			== (((Class318_Sub1_Sub3_Sub3)
+			== (((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10268
 			    ^ 0xffffffff)))
 		    i_0_ = ((NpcDefinition) class79).anInt1395;

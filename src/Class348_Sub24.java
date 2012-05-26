@@ -82,7 +82,7 @@ final class Class348_Sub24 extends Node
 							     .address));
 		AbstractMouseEvent class348_sub45
 		    = ((AbstractMouseEvent)
-		       Class318_Sub1_Sub3.aClass262_8744.getFirst(4));
+		       Entity.aClass262_8744.getFirst(4));
 		if (class348_sub45 != null
 		    || ((-2000L + Class62.getCurrentTimeMillis() ^ 0xffffffffffffffffL)
 			< (Class355.aLong4367 ^ 0xffffffffffffffffL))) {
@@ -360,7 +360,7 @@ final class Class348_Sub24 extends Node
 			Class34.method349(i + -6692);
 			Class348_Sub40_Sub38.method3150(true);
 			Class186.method1397(0);
-			for (int id = Class318_Sub1_Sub3_Sub3.varbitHandler.handleQueuedConfig(true); (id ^ 0xffffffff) != 0; id = Class318_Sub1_Sub3_Sub3.varbitHandler.handleQueuedConfig(false)) {
+			for (int id = Mob.varbitHandler.handleQueuedConfig(true); (id ^ 0xffffffff) != 0; id = Mob.varbitHandler.handleQueuedConfig(false)) {
 			    Class239_Sub11.method1767(true, id);
 			    Class327.anIntArray4096[Class139.bitAnd(31, GametipDefinition.anInt3695++)] = id;
 			}
@@ -845,7 +845,7 @@ final class Class348_Sub24 extends Node
 				= ((((Class318_Sub1)
 				     (Class132
 				      .localPlayer))
-				    .aByte6381)
+				    .heightLevel)
 				   - Class98.anInt1565);
 			    if ((i_30_ ^ 0xffffffff) <= -1) {
 				if (i_30_ > 3)
@@ -853,13 +853,13 @@ final class Class348_Sub24 extends Node
 			    } else
 				i_30_ = 0;
 			    Class361.method3502
-				((((Class318_Sub1_Sub3_Sub3)
+				((((Mob)
 				   Class132.localPlayer)
-				  .anIntArray10317[0]) + Class90.baseRegionY,
+				  .yList[0]) + Class90.baseRegionY,
 				 i ^ 0x2caa, i_30_,
-				 (((Class318_Sub1_Sub3_Sub3)
+				 (((Mob)
 				   Class132.localPlayer)
-				  .anIntArray10320[0]) + za_Sub2.baseRegionX);
+				  .xList[0]) + za_Sub2.baseRegionX);
 			}
 			Class261.method1987(-120);
 			int i_31_ = 0;

@@ -243,296 +243,186 @@ final class Class286_Sub9 extends Class286
 	}
     }
     
-    static final void method2177(int i, int i_22_,
-				 GameBuffer class348_sub49_sub2) {
+    static void parseOnscreenPlayerMovement(GameBuffer buffer, int id) {
 	anInt6311++;
-	boolean bool
-	    = ((class348_sub49_sub2.getBits(i) ^ 0xffffffff)
-	       == -2);
-	if (bool)
-	    Class18.anIntArray279[Class101_Sub3.anInt5768++] = i_22_;
-	int i_23_ = class348_sub49_sub2.getBits(2);
-	Player class318_sub1_sub3_sub3_sub2
-	    = ClassicLoadingScreen.players[i_22_];
-	if (i_23_ == 0) {
-	    if (bool)
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .aBoolean10539
-		    = false;
+	boolean doUpdate = ((buffer.getBits(1) ^ 0xffffffff) == -2);
+	if (doUpdate)
+	    Class18.playerUpdateList[Class101_Sub3.amountUpdatePlayers++] = id;
+	int opcode = buffer.getBits(2);
+	Player player = ClassicLoadingScreen.onscreenPlayers[id];
+	if (opcode == 0) {
+	    if (doUpdate)
+		((Player) player).isOffscreen = false;
 	    else {
-		if ((i_22_ ^ 0xffffffff)
-		    == (Class348_Sub42_Sub11.localPlayerId ^ 0xffffffff))
+		if (id == Class348_Sub42_Sub11.localPlayerId)
 		    throw new RuntimeException("s:lr");
-		Class359 class359 = (Class348_Sub17.aClass359Array6802[i_22_]
-				     = new Class359());
-		((Class359) class359).anInt4420
-		    = ((Class90.baseRegionY - -(((Class318_Sub1_Sub3_Sub3)
-					       class318_sub1_sub3_sub3_sub2)
-					      .anIntArray10317[0])
-			>> 592604966)
-		       + ((((Class318_Sub1_Sub3_Sub3)
-			    class318_sub1_sub3_sub3_sub2).anIntArray10320[0]
-			   + za_Sub2.baseRegionX)
-			  >> 1829075398 << -2094968434)
-		       + ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			   .aByte6381)
-			  << 471827900));
-		if ((((Player)
-		      class318_sub1_sub3_sub3_sub2).anInt10524
-		     ^ 0xffffffff)
-		    != 0)
-		    ((Class359) class359).anInt4423
-			= ((Player)
-			   class318_sub1_sub3_sub3_sub2).anInt10524;
+		OffscreenPlayer offscreenPlayer = (Class348_Sub17.offscreenPlayers[id] = new OffscreenPlayer());
+		((OffscreenPlayer) offscreenPlayer).locationHash = ((Class90.baseRegionY + (((Mob)player).yList[0]) >> 6) + ((((Mob)player).xList[0] + za_Sub2.baseRegionX) >> 6 << 14) + ((player.heightLevel) << 28));
+		if ((((Player) player).anInt10524 ^ 0xffffffff) != 0)
+		    ((OffscreenPlayer) offscreenPlayer).anInt4423 = ((Player) player).anInt10524;
 		else
-		    ((Class359) class359).anInt4423
-			= ((Class318_Sub1_Sub3_Sub3)
-			   class318_sub1_sub3_sub3_sub2)
-			      .aClass264_10217.method2019((byte) -91);
-		((Class359) class359).aBoolean4426
-		    = ((Player)
-		       class318_sub1_sub3_sub3_sub2).aBoolean10554;
-		((Class359) class359).anInt4425
-		    = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		       .anInt10275);
-		if (((Player)
-		     class318_sub1_sub3_sub3_sub2).anInt10553
-		    > 0)
-		    Class295.method2221(class318_sub1_sub3_sub3_sub2, -28482);
-		ClassicLoadingScreen.players[i_22_] = null;
-		if (class348_sub49_sub2.getBits(1) != 0)
-		    Class211.method1538(i_22_, (byte) 105,
-					class348_sub49_sub2);
+		    ((OffscreenPlayer) offscreenPlayer).anInt4423 = ((Mob) player).aClass264_10217.method2019((byte) -91);
+		((OffscreenPlayer) offscreenPlayer).aBoolean4426 = ((Player) player).aBoolean10554;
+		((OffscreenPlayer) offscreenPlayer).anInt4425 = (((Mob) player).anInt10275);
+		if (((Player) player).anInt10553 > 0)
+		    Class295.method2221(player, -28482);
+		ClassicLoadingScreen.onscreenPlayers[id] = null;
+		if (buffer.getBits(1) != 0)
+		    Class211.parseOffscreenPlayerMovement(buffer, id);
 	    }
-	} else if ((i_23_ ^ 0xffffffff) == -2) {
-	    int i_24_ = class348_sub49_sub2.getBits(3);
-	    int i_25_
-		= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		   .anIntArray10320[0]);
-	    int i_26_
-		= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		   .anIntArray10317[0]);
-	    if ((i_24_ ^ 0xffffffff) != -1) {
-		if (i_24_ != 1) {
-		    if ((i_24_ ^ 0xffffffff) != -3) {
-			if ((i_24_ ^ 0xffffffff) == -4)
-			    i_25_--;
-			else if ((i_24_ ^ 0xffffffff) != -5) {
-			    if (i_24_ != 5) {
-				if (i_24_ != 6) {
-				    if (i_24_ == 7) {
-					i_26_++;
-					i_25_++;
+	} else if ((opcode ^ 0xffffffff) == -2) {
+	    int dOpcode = buffer.getBits(3);
+	    int x = (((Mob) player).xList[0]);
+	    int y = (((Mob) player).yList[0]);
+	    if ((dOpcode ^ 0xffffffff) != -1) {
+		if (dOpcode != 1) {
+		    if ((dOpcode ^ 0xffffffff) != -3) {
+			if ((dOpcode ^ 0xffffffff) == -4)
+			    x--;
+			else if ((dOpcode ^ 0xffffffff) != -5) {
+			    if (dOpcode != 5) {
+				if (dOpcode != 6) {
+				    if (dOpcode == 7) {
+					y++;
+					x++;
 				    }
 				} else
-				    i_26_++;
+				    y++;
 			    } else {
-				i_26_++;
-				i_25_--;
+				y++;
+				x--;
 			    }
 			} else
-			    i_25_++;
+			    x++;
 		    } else {
-			i_25_++;
-			i_26_--;
+			x++;
+			y--;
 		    }
 		} else
-		    i_26_--;
+		    y--;
 	    } else {
-		i_26_--;
-		i_25_--;
+		y--;
+		x--;
 	    }
-	    if (!bool)
-		class318_sub1_sub3_sub3_sub2.method2455(i_26_, -26443,
-							(IntegerVarScriptSettingLoader
-							 .aByteArray3300
-							 [i_22_]),
-							i_25_);
+	    if (!doUpdate)
+		player.method2455(y, -26443, (IntegerVarScriptSettingLoader.aByteArray3300[id]), x);
 	    else {
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .anInt10531
-		    = i_26_;
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .aBoolean10539
-		    = true;
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .anInt10549
-		    = i_25_;
+		((Player) player).anInt10531 = y;
+		((Player) player).isOffscreen = true;
+		((Player) player).anInt10549 = x;
 	    }
-	} else if ((i_23_ ^ 0xffffffff) == -3) {
-	    int i_27_ = class348_sub49_sub2.getBits(4);
-	    int i_28_
-		= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		   .anIntArray10320[0]);
-	    int i_29_
-		= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		   .anIntArray10317[0]);
-	    if (i_27_ == 0) {
-		i_28_ -= 2;
-		i_29_ -= 2;
-	    } else if ((i_27_ ^ 0xffffffff) != -2) {
-		if (i_27_ != 2) {
-		    if ((i_27_ ^ 0xffffffff) != -4) {
-			if (i_27_ == 4) {
-			    i_28_ += 2;
-			    i_29_ -= 2;
-			} else if ((i_27_ ^ 0xffffffff) != -6) {
-			    if (i_27_ == 6) {
-				i_29_--;
-				i_28_ += 2;
-			    } else if ((i_27_ ^ 0xffffffff) == -8)
-				i_28_ -= 2;
-			    else if ((i_27_ ^ 0xffffffff) == -9)
-				i_28_ += 2;
-			    else if (i_27_ == 9) {
-				i_29_++;
-				i_28_ -= 2;
-			    } else if ((i_27_ ^ 0xffffffff) != -11) {
-				if (i_27_ == 11) {
-				    i_29_ += 2;
-				    i_28_ -= 2;
-				} else if ((i_27_ ^ 0xffffffff) == -13) {
-				    i_29_ += 2;
-				    i_28_--;
-				} else if ((i_27_ ^ 0xffffffff) != -14) {
-				    if ((i_27_ ^ 0xffffffff) == -15) {
-					i_29_ += 2;
-					i_28_++;
-				    } else if ((i_27_ ^ 0xffffffff) == -16) {
-					i_28_ += 2;
-					i_29_ += 2;
+	} else if ((opcode ^ 0xffffffff) == -3) {
+	    int dOpcode = buffer.getBits(4);
+	    int x = (((Mob) player).xList[0]);
+	    int y = (((Mob) player).yList[0]);
+	    if (dOpcode == 0) {
+		x -= 2;
+		y -= 2;
+	    } else if ((dOpcode ^ 0xffffffff) != -2) {
+		if (dOpcode != 2) {
+		    if ((dOpcode ^ 0xffffffff) != -4) {
+			if (dOpcode == 4) {
+			    x += 2;
+			    y -= 2;
+			} else if ((dOpcode ^ 0xffffffff) != -6) {
+			    if (dOpcode == 6) {
+				y--;
+				x += 2;
+			    } else if ((dOpcode ^ 0xffffffff) == -8)
+				x -= 2;
+			    else if ((dOpcode ^ 0xffffffff) == -9)
+				x += 2;
+			    else if (dOpcode == 9) {
+				y++;
+				x -= 2;
+			    } else if ((dOpcode ^ 0xffffffff) != -11) {
+				if (dOpcode == 11) {
+				    y += 2;
+				    x -= 2;
+				} else if ((dOpcode ^ 0xffffffff) == -13) {
+				    y += 2;
+				    x--;
+				} else if ((dOpcode ^ 0xffffffff) != -14) {
+				    if ((dOpcode ^ 0xffffffff) == -15) {
+					y += 2;
+					x++;
+				    } else if ((dOpcode ^ 0xffffffff) == -16) {
+					x += 2;
+					y += 2;
 				    }
 				} else
-				    i_29_ += 2;
+				    y += 2;
 			    } else {
-				i_29_++;
-				i_28_ += 2;
+				y++;
+				x += 2;
 			    }
 			} else {
-			    i_28_ -= 2;
-			    i_29_--;
+			    x -= 2;
+			    y--;
 			}
 		    } else {
-			i_29_ -= 2;
-			i_28_++;
+			y -= 2;
+			x++;
 		    }
 		} else
-		    i_29_ -= 2;
+		    y -= 2;
 	    } else {
-		i_29_ -= 2;
-		i_28_--;
+		y -= 2;
+		x--;
 	    }
-	    if (!bool)
-		class318_sub1_sub3_sub3_sub2.method2455(i_29_, -26443,
-							(IntegerVarScriptSettingLoader
-							 .aByteArray3300
-							 [i_22_]),
-							i_28_);
+	    if (!doUpdate)
+		player.method2455(y, -26443, (IntegerVarScriptSettingLoader.aByteArray3300[id]), x);
 	    else {
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .aBoolean10539
-		    = true;
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .anInt10549
-		    = i_28_;
-		((Player) class318_sub1_sub3_sub3_sub2)
-		    .anInt10531
-		    = i_29_;
+		((Player) player).isOffscreen = true;
+		((Player) player).anInt10549 = x;
+		((Player) player).anInt10531 = y;
 	    }
 	} else {
-	    int i_30_ = class348_sub49_sub2.getBits(1);
-	    if ((i_30_ ^ 0xffffffff) == -1) {
-		int i_31_ = class348_sub49_sub2.getBits(12);
-		int i_32_ = i_31_ >> -1062068982;
-		int i_33_ = 0x1f & i_31_ >> -1409005179;
-		if (i_33_ > 15)
-		    i_33_ -= 32;
-		int i_34_ = 0x1f & i_31_;
-		if (i_34_ > 15)
-		    i_34_ -= 32;
-		int i_35_ = i_33_ + (((Class318_Sub1_Sub3_Sub3)
-				      class318_sub1_sub3_sub3_sub2)
-				     .anIntArray10320[0]);
-		int i_36_ = i_34_ + (((Class318_Sub1_Sub3_Sub3)
-				      class318_sub1_sub3_sub3_sub2)
-				     .anIntArray10317[0]);
-		if (!bool)
-		    class318_sub1_sub3_sub3_sub2.method2455(i_36_, -26443,
-							    (IntegerVarScriptSettingLoader
-							     .aByteArray3300
-							     [i_22_]),
-							    i_35_);
+	    int flag = buffer.getBits(1);
+	    if ((flag ^ 0xffffffff) == -1) {
+		int hash = buffer.getBits(12);
+		int zOff = hash >> 10;
+		int xOff = 0x1f & hash >> 5;
+		if (xOff > 15)
+		    xOff -= 32;
+		int yOff = 0x1f & hash;
+		if (yOff > 15)
+		    yOff -= 32;
+		int cX = xOff + (((Mob) player).xList[0]);
+		int cY = yOff + (((Mob) player).yList[0]);
+		if (!doUpdate)
+		    player.method2455(cY, -26443, (IntegerVarScriptSettingLoader.aByteArray3300[id]), cX);
 		else {
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).anInt10531
-			= i_36_;
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).anInt10549
-			= i_35_;
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).aBoolean10539
-			= true;
+		    ((Player) player).anInt10531 = cY;
+		    ((Player) player).anInt10549 = cX;
+		    ((Player) player).isOffscreen = true;
 		}
-		((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6381
-		    = ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376
-		    = (byte) (0x3
-			      & (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-				 .aByte6381) + i_32_);
-		if (NpcDefinition.method802(i_36_, i_35_, true))
-		    ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376++;
-		if (Class348_Sub42_Sub11.localPlayerId == i_22_) {
-		    if ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			 .aByte6381)
-			!= Class355.anInt4372)
-			Class348_Sub16_Sub2.aBoolean8870 = true;
-		    Class355.anInt4372
-			= (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			   .aByte6381);
+		player.heightLevel = player.mapHeightLevel = (byte) (0x3 & player.heightLevel + zOff);
+		if (NpcDefinition.isElevatedTile(cX, cY))
+		    player.mapHeightLevel++;
+		if (Class348_Sub42_Sub11.localPlayerId == id) {
+		    if (player.heightLevel != Class355.localHeightLevel)
+			Class348_Sub16_Sub2.heightLevelChanged = true;
+		    Class355.localHeightLevel= player.heightLevel;
 		}
 	    } else {
-		int i_37_ = class348_sub49_sub2.getBits(30);
-		int i_38_ = i_37_ >> -1838781572;
-		int i_39_ = 0x3fff & i_37_ >> -946421778;
-		int i_40_ = 0x3fff & i_37_;
-		int i_41_ = ((i_39_ + ((((Class318_Sub1_Sub3_Sub3)
-					 class318_sub1_sub3_sub3_sub2)
-					.anIntArray10320[0])
-				       + za_Sub2.baseRegionX)
-			      & 0x3fff)
-			     - za_Sub2.baseRegionX);
-		int i_42_ = (-Class90.baseRegionY
-			     + (0x3fff & (i_40_ + Class90.baseRegionY
-					  + (((Class318_Sub1_Sub3_Sub3)
-					      class318_sub1_sub3_sub3_sub2)
-					     .anIntArray10317[0]))));
-		if (bool) {
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).aBoolean10539
-			= true;
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).anInt10531
-			= i_42_;
-		    ((Player)
-		     class318_sub1_sub3_sub3_sub2).anInt10549
-			= i_41_;
+		int hash = buffer.getBits(30);
+		int zOff = hash >> 28;
+		int xOff = 0x3fff & hash >> 14;
+		int yOff = 0x3fff & hash;
+		int cX = ((xOff + ((((Mob) player).xList[0]) + za_Sub2.baseRegionX) & 0x3fff) - za_Sub2.baseRegionX);
+		int cY = (-Class90.baseRegionY + (0x3fff & (yOff + Class90.baseRegionY + (((Mob) player).yList[0]))));
+		if (doUpdate) {
+		    ((Player)  player).isOffscreen = true;
+		    ((Player) player).anInt10531 = cY;
+		    ((Player) player).anInt10549 = cX;
 		} else
-		    class318_sub1_sub3_sub3_sub2.method2455(i_42_, -26443,
-							    (IntegerVarScriptSettingLoader
-							     .aByteArray3300
-							     [i_22_]),
-							    i_41_);
-		((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6381
-		    = ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376
-		    = (byte) ((((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			       .aByte6381) + i_38_
-			      & 0x3);
-		if (NpcDefinition.method802(i_42_, i_41_, true))
-		    ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376++;
-		if ((i_22_ ^ 0xffffffff)
-		    == (Class348_Sub42_Sub11.localPlayerId ^ 0xffffffff))
-		    Class355.anInt4372
-			= (((Class318_Sub1) class318_sub1_sub3_sub3_sub2)
-			   .aByte6381);
+		    player.method2455(cY, -26443, (IntegerVarScriptSettingLoader.aByteArray3300[id]), cX);
+		player.heightLevel = player.mapHeightLevel = (byte) ((player.heightLevel) + zOff & 0x3);
+		if (NpcDefinition.isElevatedTile(cX, cY))
+		    player.mapHeightLevel++;
+		if ((id ^ 0xffffffff) == (Class348_Sub42_Sub11.localPlayerId ^ 0xffffffff))
+		    Class355.localHeightLevel = (player.heightLevel);
 	    }
 	}
     }

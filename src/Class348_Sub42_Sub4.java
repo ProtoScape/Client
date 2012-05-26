@@ -7,7 +7,7 @@ final class Class348_Sub42_Sub4 extends SubNode
     static int anInt9510;
     static int anInt9511;
     double aDouble9512;
-    static int anInt9513 = 0;
+    static int offscreenGpiOffset = 0;
     static int anInt9514;
     static int anInt9515;
     static float aFloat9516;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-abstract class Class318_Sub1_Sub3 extends Class318_Sub1
+abstract class Entity extends Class318_Sub1
 {
     static int anInt8739;
     static int anInt8740;
@@ -26,11 +26,11 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
     final boolean method2378(int i) {
 	anInt8740++;
 	if (i != 0)
-	    ((Class318_Sub1_Sub3) this).aShort8747 = (short) -75;
-	for (int i_0_ = ((Class318_Sub1_Sub3) this).aShort8743;
-	     i_0_ <= ((Class318_Sub1_Sub3) this).aShort8751; i_0_++) {
-	    for (int i_1_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		 ((((Class318_Sub1_Sub3) this).aShort8747 ^ 0xffffffff)
+	    ((Entity) this).aShort8747 = (short) -75;
+	for (int i_0_ = ((Entity) this).aShort8743;
+	     i_0_ <= ((Entity) this).aShort8751; i_0_++) {
+	    for (int i_1_ = ((Entity) this).aShort8750;
+		 ((((Entity) this).aShort8747 ^ 0xffffffff)
 		  <= (i_1_ ^ 0xffffffff));
 		 i_1_++) {
 		int i_2_ = (-Class239_Sub25.anInt6111 + i_0_
@@ -57,13 +57,13 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	anInt8748++;
 	if (i > -51)
 	    return true;
-	return Class318_Sub2.method2499(((Class318_Sub1) this).aByte6376,
-					((Class318_Sub1_Sub3) this).aShort8747,
-					((Class318_Sub1_Sub3) this).aShort8750,
+	return Class318_Sub2.method2499(((Class318_Sub1) this).mapHeightLevel,
+					((Entity) this).aShort8747,
+					((Entity) this).aShort8750,
 					this.method2394(true),
-					((Class318_Sub1_Sub3) this).aShort8743,
+					((Entity) this).aShort8743,
 					(byte) 116,
-					(((Class318_Sub1_Sub3) this)
+					(((Entity) this)
 					 .aShort8751));
     }
     
@@ -156,20 +156,20 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	return false;
     }
     
-    Class318_Sub1_Sub3(int i, int i_10_, int i_11_, int i_12_, int i_13_,
+    Entity(int i, int i_10_, int i_11_, int i_12_, int i_13_,
 		       int i_14_, int i_15_, int i_16_, int i_17_,
 		       boolean bool, byte i_18_) {
 	((Class318_Sub1) this).anInt6382 = i_12_;
-	((Class318_Sub1_Sub3) this).aBoolean8741 = bool;
-	((Class318_Sub1_Sub3) this).aShort8747 = (short) i_17_;
-	((Class318_Sub1) this).anInt6377 = i_11_;
-	((Class318_Sub1_Sub3) this).aByte8745 = i_18_;
-	((Class318_Sub1_Sub3) this).aShort8751 = (short) i_15_;
+	((Entity) this).aBoolean8741 = bool;
+	((Entity) this).aShort8747 = (short) i_17_;
+	((Class318_Sub1) this).xHash = i_11_;
+	((Entity) this).aByte8745 = i_18_;
+	((Entity) this).aShort8751 = (short) i_15_;
 	((Class318_Sub1) this).anInt6388 = i_13_;
-	((Class318_Sub1) this).aByte6381 = (byte) i;
-	((Class318_Sub1_Sub3) this).aShort8750 = (short) i_16_;
-	((Class318_Sub1_Sub3) this).aShort8743 = (short) i_14_;
-	((Class318_Sub1) this).aByte6376 = (byte) i_10_;
+	((Class318_Sub1) this).heightLevel = (byte) i;
+	((Entity) this).aShort8750 = (short) i_16_;
+	((Entity) this).aShort8743 = (short) i_14_;
+	((Class318_Sub1) this).mapHeightLevel = (byte) i_10_;
     }
     
     static final int method2411(Class113 class113, int i) {
@@ -181,7 +181,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	if (Class261.aClass113_3314 == class113)
 	    return 34066;
 	if (i != 25602)
-	    getSkipAmount(-121, null);
+	    getSkipAmount(null);
 	throw new IllegalArgumentException();
     }
     
@@ -197,14 +197,14 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	anInt8753++;
 	int i_19_ = 0;
     while_104_:
-	for (int i_20_ = ((Class318_Sub1_Sub3) this).aShort8743;
-	     ((((Class318_Sub1_Sub3) this).aShort8751 ^ 0xffffffff)
+	for (int i_20_ = ((Entity) this).aShort8743;
+	     ((((Entity) this).aShort8751 ^ 0xffffffff)
 	      <= (i_20_ ^ 0xffffffff));
 	     i_20_++) {
-	    for (int i_21_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		 ((Class318_Sub1_Sub3) this).aShort8747 >= i_21_; i_21_++) {
+	    for (int i_21_ = ((Entity) this).aShort8750;
+		 ((Entity) this).aShort8747 >= i_21_; i_21_++) {
 		long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431
-			  [((Class318_Sub1) this).aByte6381][i_20_][i_21_]);
+			  [((Class318_Sub1) this).heightLevel][i_20_][i_21_]);
 		long l_22_ = 0L;
 	    while_103_:
 		while (l_22_ <= 48L) {
@@ -231,43 +231,43 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	int i_25_ = 17 % ((i - -14) / 61);
 	for (int i_26_ = i_19_; (i_26_ ^ 0xffffffff) > -5; i_26_++)
 	    class348_sub1s[i_26_] = null;
-	if (((Class318_Sub1_Sub3) this).aByte8745 != 0) {
-	    int i_27_ = (((Class318_Sub1_Sub3) this).aShort8743
+	if (((Entity) this).aByte8745 != 0) {
+	    int i_27_ = (((Entity) this).aShort8743
 			 + -Class239_Sub25.anInt6111);
 	    int i_28_ = (-Class285_Sub2.anInt8502
-			 + ((Class318_Sub1_Sub3) this).aShort8750);
+			 + ((Entity) this).aShort8750);
 	    int i_29_;
 	    short i_30_;
 	    int i_31_;
 	    short i_32_;
-	    if ((((Class318_Sub1_Sub3) this).aByte8745 ^ 0xffffffff) == -2) {
+	    if ((((Entity) this).aByte8745 ^ 0xffffffff) == -2) {
 		if (i_27_ >= i_28_) {
-		    i_32_ = ((Class318_Sub1_Sub3) this).aShort8743;
-		    i_30_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		    i_31_ = ((Class318_Sub1_Sub3) this).aShort8750 - -1;
-		    i_29_ = ((Class318_Sub1_Sub3) this).aShort8743 - 1;
+		    i_32_ = ((Entity) this).aShort8743;
+		    i_30_ = ((Entity) this).aShort8750;
+		    i_31_ = ((Entity) this).aShort8750 - -1;
+		    i_29_ = ((Entity) this).aShort8743 - 1;
 		} else {
-		    i_30_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		    i_31_ = ((Class318_Sub1_Sub3) this).aShort8750 + -1;
-		    i_32_ = ((Class318_Sub1_Sub3) this).aShort8743;
-		    i_29_ = 1 + ((Class318_Sub1_Sub3) this).aShort8743;
+		    i_30_ = ((Entity) this).aShort8750;
+		    i_31_ = ((Entity) this).aShort8750 + -1;
+		    i_32_ = ((Entity) this).aShort8743;
+		    i_29_ = 1 + ((Entity) this).aShort8743;
 		}
 	    } else if ((i_28_ ^ 0xffffffff) < (-i_27_ ^ 0xffffffff)) {
-		i_29_ = ((Class318_Sub1_Sub3) this).aShort8743 + -1;
-		i_30_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		i_31_ = -1 + ((Class318_Sub1_Sub3) this).aShort8750;
-		i_32_ = ((Class318_Sub1_Sub3) this).aShort8743;
+		i_29_ = ((Entity) this).aShort8743 + -1;
+		i_30_ = ((Entity) this).aShort8750;
+		i_31_ = -1 + ((Entity) this).aShort8750;
+		i_32_ = ((Entity) this).aShort8743;
 	    } else {
-		i_31_ = ((Class318_Sub1_Sub3) this).aShort8750 + 1;
-		i_32_ = ((Class318_Sub1_Sub3) this).aShort8743;
-		i_30_ = ((Class318_Sub1_Sub3) this).aShort8750;
-		i_29_ = 1 + ((Class318_Sub1_Sub3) this).aShort8743;
+		i_31_ = ((Entity) this).aShort8750 + 1;
+		i_32_ = ((Entity) this).aShort8743;
+		i_30_ = ((Entity) this).aShort8750;
+		i_29_ = 1 + ((Entity) this).aShort8743;
 	    }
 	    int i_33_ = 0;
 	while_106_:
 	    for (/**/; (i_33_ ^ 0xffffffff) > (i_19_ ^ 0xffffffff); i_33_++) {
 		long l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431
-			  [((Class318_Sub1) this).aByte6381][i_32_][i_31_]);
+			  [((Class318_Sub1) this).heightLevel][i_32_][i_31_]);
 		while (l != 0L) {
 		    Class211 class211 = (Class239_Sub14.aClass211Array5993
 					 [(int) (-1L + (l & 0xffffL))]);
@@ -277,7 +277,7 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 			continue while_106_;
 		}
 		l = (Class348_Sub42_Sub8_Sub2.aLongArrayArrayArray10431
-		     [((Class318_Sub1) this).aByte6381][i_29_][i_30_]);
+		     [((Class318_Sub1) this).heightLevel][i_29_][i_30_]);
 		while ((l ^ 0xffffffffffffffffL) != -1L) {
 		    Class211 class211 = (Class239_Sub14.aClass211Array5993
 					 [(int) (-1L + (0xffffL & l))]);
@@ -294,22 +294,19 @@ abstract class Class318_Sub1_Sub3 extends Class318_Sub1
 	return i_19_;
     }
     
-    static final int getSkipAmount(int i,
-				GameBuffer class348_sub49_sub2) {
+    static int getSkipAmount(GameBuffer buffer) {
 	anInt8749++;
-	int i_35_ = class348_sub49_sub2.getBits(2);
-	if (i != 1)
-	    aClass262_8744 = null;
-	int i_36_;
-	if (i_35_ != 0) {
-	    if (i_35_ == 1)
-		i_36_ = class348_sub49_sub2.getBits(5);
-	    else if ((i_35_ ^ 0xffffffff) != -3)
-		i_36_ = class348_sub49_sub2.getBits(11);
+	int type = buffer.getBits(2);
+	int amount;
+	if (type != 0) {
+	    if (type == 1)
+		amount = buffer.getBits(5);
+	    else if ((type ^ 0xffffffff) != -3)
+		amount = buffer.getBits(11);
 	    else
-		i_36_ = class348_sub49_sub2.getBits(8);
+		amount = buffer.getBits(8);
 	} else
-	    i_36_ = 0;
-	return i_36_;
+	    amount = 0;
+	return amount;
     }
 }

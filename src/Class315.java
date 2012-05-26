@@ -75,37 +75,37 @@ final class Class315
 	    = (((Player) class318_sub1_sub3_sub3_sub2)
 	       .anInt10560);
 	Class225 class225 = class318_sub1_sub3_sub3_sub2.method2422((byte) 72);
-	if (i != (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+	if (i != (((Mob) class318_sub1_sub3_sub3_sub2)
 		  .anInt10268)
-	    && !(((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+	    && !(((Mob) class318_sub1_sub3_sub3_sub2)
 		 .aBoolean10213)) {
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+	    if ((((Mob) class318_sub1_sub3_sub3_sub2)
 		 .anInt10268) != ((Class225) class225).anInt2919
 		&& ((((Class225) class225).anInt2920 ^ 0xffffffff)
-		    != (((Class318_Sub1_Sub3_Sub3)
+		    != (((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10268
 			^ 0xffffffff))
-		&& (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		&& (((((Mob) class318_sub1_sub3_sub3_sub2)
 		      .anInt10268)
 		     ^ 0xffffffff)
 		    != (((Class225) class225).anInt2949 ^ 0xffffffff))
 		&& ((((Class225) class225).anInt2914 ^ 0xffffffff)
-		    != (((Class318_Sub1_Sub3_Sub3)
+		    != (((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10268
 			^ 0xffffffff))) {
-		if ((((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		if ((((((Mob) class318_sub1_sub3_sub3_sub2)
 		       .anInt10268)
 		      ^ 0xffffffff)
 		     == (((Class225) class225).anInt2940 ^ 0xffffffff))
-		    || (((Class318_Sub1_Sub3_Sub3)
+		    || (((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10268
 			== ((Class225) class225).anInt2924)
 		    || ((((Class225) class225).anInt2947 ^ 0xffffffff)
-			== (((Class318_Sub1_Sub3_Sub3)
+			== (((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10268
 			    ^ 0xffffffff))
 		    || ((((Class225) class225).anInt2958 ^ 0xffffffff)
-			== (((Class318_Sub1_Sub3_Sub3)
+			== (((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10268
 			    ^ 0xffffffff)))
 		    i_4_ = ((Player)

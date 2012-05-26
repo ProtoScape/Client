@@ -64,7 +64,7 @@ abstract class Class348_Sub40 extends Node
 	     ^ 0xffffffff)
 	    == i)
 	    i_0_ |= 0x40;
-	Class318_Sub1_Sub3_Sub3.method2420(i_0_, i);
+	Mob.method2420(i_0_, i);
 	Class348_Sub40_Sub12.objectLoader.method2009(i_0_, (byte) 109);
 	ToolkitException.itemLoader.method1942(i_0_, (byte) -125);
 	Class189.npcLoader.method2073(-25032, i_0_);

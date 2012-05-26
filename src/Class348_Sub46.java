@@ -38,30 +38,30 @@ final class Class348_Sub46 extends Node
 	anInt7114++;
 	if (((Class334.anInt4155 ^ 0xffffffff)
 	     != ((((Class318_Sub1) Class132.localPlayer)
-		  .aByte6381)
+		  .heightLevel)
 		 ^ 0xffffffff))
 	    && Message.aClass357ArrayArrayArray2029 != null) {
 	    if (LongNode.method2808
 		((((Class318_Sub1) Class132.localPlayer)
-		  .aByte6381),
+		  .heightLevel),
 		 var_ha, true))
 		Class334.anInt4155
 		    = ((Class318_Sub1)
-		       Class132.localPlayer).aByte6381;
+		       Class132.localPlayer).heightLevel;
 	}
     }
     
-    static final void method3320(Class318_Sub1_Sub3 class318_sub1_sub3,
+    static final void method3320(Entity class318_sub1_sub3,
 				 boolean bool) {
-	for (int i = ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8743;
-	     i <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8751; i++) {
+	for (int i = ((Entity) class318_sub1_sub3).aShort8743;
+	     i <= ((Entity) class318_sub1_sub3).aShort8751; i++) {
 	    for (int i_0_
-		     = ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8750;
-		 i_0_ <= ((Class318_Sub1_Sub3) class318_sub1_sub3).aShort8747;
+		     = ((Entity) class318_sub1_sub3).aShort8750;
+		 i_0_ <= ((Entity) class318_sub1_sub3).aShort8747;
 		 i_0_++) {
 		Class357 class357
 		    = (Message.aClass357ArrayArrayArray2029
-		       [((Class318_Sub1) class318_sub1_sub3).aByte6381][i]
+		       [((Class318_Sub1) class318_sub1_sub3).heightLevel][i]
 		       [i_0_]);
 		if (class357 != null) {
 		    Class148 class148 = ((Class357) class357).aClass148_4396;

@@ -39,7 +39,7 @@ final class Class108
 		    < (i_17_ ^ 0xffffffff))) {
 		int i_18_ = (((Class318_Sub1)
 			      Class132.localPlayer)
-			     .aByte6381);
+			     .heightLevel);
 		if ((i_18_ ^ 0xffffffff) > -4
 		    && ((Class348_Sub33.settingFlags[1][i_16_]
 			 [i_17_]) & 0x2

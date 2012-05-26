@@ -134,7 +134,7 @@ final class Class237_Sub1 extends MapLoader
 			} else if ((i_4_ ^ 0xffffffff) == -11 || i_4_ == 11) {
 			    Class318_Sub1_Sub3_Sub1 class318_sub1_sub3_sub1
 				= null;
-			    Class318_Sub1_Sub3 class318_sub1_sub3;
+			    Entity class318_sub1_sub3;
 			    int i_18_;
 			    if (!bool_17_) {
 				i_18_ = 15;
@@ -193,7 +193,7 @@ final class Class237_Sub1 extends MapLoader
 			} else if (i_4_ >= 12 && i_4_ <= 17
 				   || ((i_4_ ^ 0xffffffff) <= -19
 				       && i_4_ <= 21)) {
-			    Class318_Sub1_Sub3 class318_sub1_sub3;
+			    Entity class318_sub1_sub3;
 			    if (!bool_17_)
 				class318_sub1_sub3
 				    = (new Class318_Sub1_Sub3_Sub2
@@ -538,7 +538,7 @@ final class Class237_Sub1 extends MapLoader
 						    (((ObjectDefinition) class51)
 						     .aBoolean896));
 			} else if (i_4_ == 9) {
-			    Class318_Sub1_Sub3 class318_sub1_sub3;
+			    Entity class318_sub1_sub3;
 			    if (bool_17_) {
 				Class318_Sub1_Sub3_Sub1 class318_sub1_sub3_sub1
 				    = (new Class318_Sub1_Sub3_Sub1

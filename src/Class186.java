@@ -26,21 +26,21 @@ abstract class Class186
     
     static final void method1397(int i) {
 	anInt2493++;
-	int i_0_ = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i_0_ = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	for (int i_1_ = 0; (i_0_ ^ 0xffffffff) < (i_1_ ^ 0xffffffff); i_1_++) {
 	    Player class318_sub1_sub3_sub3_sub2
-		= ClassicLoadingScreen.players[is[i_1_]];
+		= ClassicLoadingScreen.onscreenPlayers[is[i_1_]];
 	    if (class318_sub1_sub3_sub3_sub2 != null
-		&& ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		&& ((((Mob) class318_sub1_sub3_sub3_sub2)
 		     .anInt10264)
 		    ^ 0xffffffff) < -1) {
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		((Mob) class318_sub1_sub3_sub3_sub2)
 		    .anInt10264--;
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		if ((((Mob) class318_sub1_sub3_sub3_sub2)
 		     .anInt10264)
 		    == 0)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		    ((Mob) class318_sub1_sub3_sub3_sub2)
 			.aString10292
 			= null;
 	    }
@@ -55,16 +55,16 @@ abstract class Class186
 		Npc class318_sub1_sub3_sub3_sub1
 		    = (((Class348_Sub22) class348_sub22)
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-		if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		if (((((Mob) class318_sub1_sub3_sub3_sub1)
 		      .anInt10264)
 		     ^ 0xffffffff)
 		    < -1) {
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    ((Mob) class318_sub1_sub3_sub3_sub1)
 			.anInt10264--;
-		    if (((Class318_Sub1_Sub3_Sub3)
+		    if (((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10264
 			== 0)
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).aString10292
 			    = null;
 		}

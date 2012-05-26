@@ -99,7 +99,7 @@ final class Class231
 			     Class237_Sub1.anInt5819,
 			     Class135_Sub1.anInt4717 - -i_3_, i_6_);
 		    else
-			Class318_Sub1_Sub3_Sub3.method2431
+			Mob.method2431
 			    (-1, i_9_, class348_sub42_sub13, i_6_,
 			     Class63.anInt1117, -256, i_7_, var_ha,
 			     Class348_Sub42_Sub5.anInt9532 + i_4_, 126,

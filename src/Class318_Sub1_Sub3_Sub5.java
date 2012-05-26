@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
+final class Class318_Sub1_Sub3_Sub5 extends Entity
 {
     private int anInt10365;
     int anInt10366;
@@ -75,10 +75,10 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
     
     final void method2471(byte i, int i_0_, int i_1_, int i_2_, int i_3_) {
 	if (!aBoolean10407) {
-	    double d = (double) (i_3_ + -((Class318_Sub1) this).anInt6377);
+	    double d = (double) (i_3_ + -((Class318_Sub1) this).xHash);
 	    double d_4_ = (double) (i_1_ + -((Class318_Sub1) this).anInt6388);
 	    double d_5_ = Math.sqrt(d * d + d_4_ * d_4_);
-	    aDouble10408 = ((double) ((Class318_Sub1) this).anInt6377
+	    aDouble10408 = ((double) ((Class318_Sub1) this).xHash
 			    + (double) anInt10393 * d / d_5_);
 	    aDouble10371 = ((double) anInt10393 * d_4_ / d_5_
 			    + (double) ((Class318_Sub1) this).anInt6388);
@@ -88,7 +88,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 		aDouble10384
 		    = (double) (Class275.method2064((int) aDouble10408,
 						    (((Class318_Sub1) this)
-						     .aByte6381),
+						     .heightLevel),
 						    11219, (int) aDouble10371)
 				- anInt10413);
 	}
@@ -175,11 +175,11 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 						     class129s, class342s,
 						     false);
 		    aClass318_Sub10_10378.method2533
-			(((Class318_Sub1) this).aByte6381,
-			 ((Class318_Sub1_Sub3) this).aShort8743,
-			 ((Class318_Sub1_Sub3) this).aShort8751,
-			 ((Class318_Sub1_Sub3) this).aShort8750,
-			 ((Class318_Sub1_Sub3) this).aShort8747);
+			(((Class318_Sub1) this).heightLevel,
+			 ((Entity) this).aShort8743,
+			 ((Entity) this).aShort8751,
+			 ((Entity) this).aShort8750,
+			 ((Entity) this).aShort8747);
 		}
 		if (i == -2393)
 		    break;
@@ -214,7 +214,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 	anInt10394++;
 	if (!aBoolean10407 && i == 121) {
 	    if ((anInt10387 ^ 0xffffffff) != -1) {
-		Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = null;
+		Mob class318_sub1_sub3_sub3 = null;
 		if ((anInt10387 ^ 0xffffffff) > -1) {
 		    int i_9_ = -1 + -anInt10387;
 		    if ((Class348_Sub42_Sub11.localPlayerId ^ 0xffffffff)
@@ -223,7 +223,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 			    = Class132.localPlayer;
 		    else
 			class318_sub1_sub3_sub3
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_9_]);
 		} else {
 		    int i_10_ = -1 + anInt10387;
@@ -238,13 +238,13 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 		if (class318_sub1_sub3_sub3 != null) {
 		    ((Class318_Sub1) this).anInt6388
 			= ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388;
-		    ((Class318_Sub1) this).anInt6377
-			= ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377;
+		    ((Class318_Sub1) this).xHash
+			= ((Class318_Sub1) class318_sub1_sub3_sub3).xHash;
 		    ((Class318_Sub1) this).anInt6382
 			= Class275.method2064((((Class318_Sub1)
 						class318_sub1_sub3_sub3)
-					       .anInt6377),
-					      ((Class318_Sub1) this).aByte6381,
+					       .xHash),
+					      ((Class318_Sub1) this).heightLevel,
 					      11219,
 					      (((Class318_Sub1)
 						class318_sub1_sub3_sub3)
@@ -273,29 +273,27 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 			if ((i_11_ ^ 0xffffffff) != -1
 			    || (i_12_ ^ 0xffffffff) != -1) {
 			    int i_13_
-				= ((Class318_Sub1_Sub3_Sub3)
+				= ((Mob)
 				   class318_sub1_sub3_sub3)
 				      .aClass264_10217.method2019((byte) -91);
 			    int i_14_ = i_13_;
-			    if ((((Class318_Sub1_Sub3_Sub3)
+			    if ((((Mob)
 				  class318_sub1_sub3_sub3).anIntArray10296
 				 != null)
-				&& ((((Class318_Sub1_Sub3_Sub3)
+				&& ((((Mob)
 				      class318_sub1_sub3_sub3)
 				     .anIntArray10296[anInt10367])
 				    ^ 0xffffffff) != 0)
-				i_14_ = (((Class318_Sub1_Sub3_Sub3)
+				i_14_ = (((Mob)
 					  class318_sub1_sub3_sub3)
 					 .anIntArray10296[anInt10367]);
-			    int i_15_ = 0x3fff & -i_13_ + i_14_;
+			    int i_15_ = 0x3fff & i_14_ - i_13_;
 			    int i_16_ = Class70.sineTable[i_15_];
 			    int i_17_ = Class70.cosineTable[i_15_];
-			    int i_18_
-				= i_12_ * i_16_ + i_11_ * i_17_ >> 803701742;
-			    i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_
-				     >> 266139598);
+			    int i_18_ = i_12_ * i_16_ + i_11_ * i_17_ >> 803701742;
+			    i_12_ = (-(i_11_ * i_16_) + i_12_ * i_17_ >> 266139598);
 			    i_11_ = i_18_;
-			    ((Class318_Sub1) this).anInt6377 += i_11_;
+			    ((Class318_Sub1) this).xHash += i_11_;
 			    ((Class318_Sub1) this).anInt6388 += i_12_;
 			}
 		    }
@@ -361,7 +359,7 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
 	    aDouble10384
 		= (double) (Class275.method2064((int) aDouble10408,
 						(((Class318_Sub1) this)
-						 .aByte6381),
+						 .heightLevel),
 						11219, (int) aDouble10371)
 			    + -anInt10413);
 	else if ((anInt10381 ^ 0xffffffff) == 0)
@@ -459,11 +457,11 @@ final class Class318_Sub1_Sub3_Sub5 extends Class318_Sub1_Sub3
     }
     
     final void method2409(byte i) {
-	((Class318_Sub1_Sub3) this).aShort8743
-	    = ((Class318_Sub1_Sub3) this).aShort8751
+	((Entity) this).aShort8743
+	    = ((Entity) this).aShort8751
 	    = (short) (int) (aDouble10408 / 512.0);
-	((Class318_Sub1_Sub3) this).aShort8750
-	    = ((Class318_Sub1_Sub3) this).aShort8747
+	((Entity) this).aShort8750
+	    = ((Entity) this).aShort8747
 	    = (short) (int) (aDouble10371 / 512.0);
 	if (i > -109)
 	    method2386(47, null);

@@ -95,7 +95,7 @@ final class LongNode extends Node
 		    for (int i_10_ = i; (i_10_ ^ 0xffffffff) >= -4; i_10_++) {
 			if (Class58.method536(i_9_, false, i_8_, i, i_10_)) {
 			    int i_11_ = i_10_;
-			    if (NpcDefinition.method802(i_9_, i_8_, true))
+			    if (NpcDefinition.isElevatedTile(i_8_, i_9_))
 				i_11_--;
 			    if (i_11_ >= 0)
 				bool_7_
@@ -187,8 +187,7 @@ final class LongNode extends Node
 							     i_29_, i,
 							     i_24_)) {
 					int i_31_ = i_24_;
-					if (NpcDefinition.method802(i_30_, i_29_,
-							      true))
+					if (NpcDefinition.isElevatedTile(i_29_, i_30_))
 					    i_31_--;
 					if ((i_31_ ^ 0xffffffff) <= -1)
 					    Class348_Sub41.method3159
@@ -484,7 +483,7 @@ final class LongNode extends Node
 				     .anIntArray3238[i_51_]);
 			if ((((Class318_Sub1)
 			      Class132.localPlayer)
-			     .aByte6381)
+			     .heightLevel)
 			    == i_52_ >> -172998788) {
 			    int i_53_ = ((i_52_ >> -1013473906 & 0x3fff)
 					 - za_Sub2.baseRegionX);

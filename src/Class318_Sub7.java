@@ -227,7 +227,7 @@ final class Class318_Sub7 extends Class318
 			 (za_Sub2.baseRegionX
 			  - -((((Class318_Sub1)
 				Class132.localPlayer)
-			       .anInt6377)
+			       .xHash)
 			      >> -1269731799)),
 			 ((((Class318_Sub1)
 			    Class132.localPlayer)
@@ -235,7 +235,7 @@ final class Class318_Sub7 extends Class318
 			  >> -1006269719) + Class90.baseRegionY,
 			 (((Class318_Sub1)
 			   Class132.localPlayer)
-			  .aByte6381),
+			  .heightLevel),
 			 (byte) -28)) {
 			i_7_ = -Class75.anInt1266 + is[1];
 			i_8_ = -Class75.anInt1263 + is[2];

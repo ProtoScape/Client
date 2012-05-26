@@ -4,7 +4,7 @@
 
 class Class328_Sub1 extends Class328
 {
-    static int anInt6513 = 0;
+    static int onscreenGpiOffset = 0;
     static float[] aFloatArray6514 = new float[4];
     
     public static void method2610(boolean bool) {

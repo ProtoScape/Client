@@ -123,21 +123,21 @@ final class Class342
 				 = ((Class357) class357).aClass148_4396;
 			     class148 != null;
 			     class148 = ((Class148) class148).aClass148_2038) {
-			    Class318_Sub1_Sub3 class318_sub1_sub3
+			    Entity class318_sub1_sub3
 				= (((Class148) class148)
 				   .aClass318_Sub1_Sub3_2040);
 			    if (class318_sub1_sub3 != null
 				&& class318_sub1_sub3.method2388(-71)) {
 				Class318_Sub9_Sub2.method2519
 				    (class318_sub1_sub3, i, i_8_, i_9_,
-				     (((Class318_Sub1_Sub3)
+				     (((Entity)
 				       class318_sub1_sub3).aShort8751
-				      - ((Class318_Sub1_Sub3)
+				      - ((Entity)
 					 class318_sub1_sub3).aShort8743
 				      + 1),
-				     (((Class318_Sub1_Sub3)
+				     (((Entity)
 				       class318_sub1_sub3).aShort8747
-				      - ((Class318_Sub1_Sub3)
+				      - ((Entity)
 					 class318_sub1_sub3).aShort8750
 				      + 1));
 				class318_sub1_sub3.method2392(true);

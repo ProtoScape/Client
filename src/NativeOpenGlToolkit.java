@@ -482,7 +482,7 @@ final class NativeOpenGlToolkit extends NativeToolkit
 	    if (i == 0) {
 		anInt9836++;
 		if (class113 != Class150.aClass113_2047) {
-		    int i_16_ = Class318_Sub1_Sub3.method2411(class113, 25602);
+		    int i_16_ = Entity.method2411(class113, 25602);
 		    OpenGL.glTexGeni(8192, 9472, i_16_);
 		    OpenGL.glEnable(3168);
 		    OpenGL.glTexGeni(8193, 9472, i_16_);

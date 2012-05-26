@@ -25,7 +25,7 @@ final class Canvas_Sub1 extends Canvas
 	    int i_0_
 		= (Class20.anInt319
 		   + ((Class318_Sub1)
-		      Class132.localPlayer).anInt6377);
+		      Class132.localPlayer).xHash);
 	    int i_1_
 		= (Class260.anInt3310
 		   + ((Class318_Sub1)
@@ -385,11 +385,11 @@ final class Canvas_Sub1 extends Canvas
 		StringNode.method3419(13022);
 		int i_29_
 		    = ((Class237_Sub1) Class338.mMapLoader).anInt5824;
-		if ((Class355.anInt4372 ^ 0xffffffff) > (i_29_ ^ 0xffffffff))
-		    i_29_ = Class355.anInt4372;
-		if ((-1 + Class355.anInt4372 ^ 0xffffffff)
+		if ((Class355.localHeightLevel ^ 0xffffffff) > (i_29_ ^ 0xffffffff))
+		    i_29_ = Class355.localHeightLevel;
+		if ((-1 + Class355.localHeightLevel ^ 0xffffffff)
 		    < (i_29_ ^ 0xffffffff))
-		    i_29_ = Class355.anInt4372 - 1;
+		    i_29_ = Class355.localHeightLevel - 1;
 		if ((((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 			 .aClass239_Sub27_7261.method1840(-32350)
 		     ^ 0xffffffff)
@@ -457,7 +457,7 @@ final class Canvas_Sub1 extends Canvas
 		Class348_Sub1.method2718(-106);
 		Class369_Sub1.method3570(false);
 		Class94.method867(true);
-		Class348_Sub16_Sub2.aBoolean8870 = true;
+		Class348_Sub16_Sub2.heightLevelChanged = true;
 		if (Class258_Sub4.doMapProfile) {
 		    ClientApplet.addConsoleMessage(("Took: " + (Class62.getCurrentTimeMillis() - Class90.aLong1516) + "ms"));
 		    Class258_Sub4.doMapProfile = false;

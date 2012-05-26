@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
+final class Class318_Sub1_Sub3_Sub2 extends Entity
     implements Interface10
 {
     static int anInt10038;
@@ -47,7 +47,7 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
 	try {
 	    ((Class318_Sub1_Sub3_Sub2) this).aClass235_10045
 		= new Class235(var_ha, class51, i_8_, i_9_,
-			       ((Class318_Sub1) this).aByte6381, i_0_, this,
+			       ((Class318_Sub1) this).heightLevel, i_0_, this,
 			       bool, i_10_);
 	    aBoolean10056
 		= (((ObjectDefinition) class51).anInt874 ^ 0xffffffff) != -1 && !bool;
@@ -94,7 +94,7 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
 	if (i_12_ != 0)
 	    return false;
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	if (!Class305.aBoolean3870)
@@ -140,16 +140,16 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
 	if (class64 == null)
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	class101.method894(((Class318_Sub1) this).anInt6377,
+	class101.method894(((Class318_Sub1) this).xHash,
 			   ((Class318_Sub1) this).anInt6382,
 			   ((Class318_Sub1) this).anInt6388);
 	Class318_Sub4 class318_sub4
 	    = DummyOutputstream.method136(i, aBoolean10056, false);
 	((Class318_Sub1_Sub3_Sub2) this).aClass235_10045.method1670
-	    (((Class318_Sub1_Sub3) this).aShort8751, class101,
-	     ((Class318_Sub1_Sub3) this).aShort8747, var_ha,
-	     ((Class318_Sub1_Sub3) this).aShort8743, class64, true, (byte) -73,
-	     ((Class318_Sub1_Sub3) this).aShort8750);
+	    (((Entity) this).aShort8751, class101,
+	     ((Entity) this).aShort8747, var_ha,
+	     ((Entity) this).aShort8743, class64, true, (byte) -73,
+	     ((Entity) this).aShort8750);
 	if (!Class305.aBoolean3870)
 	    class64.method615(class101, (((Class318_Sub4) class318_sub4)
 					 .aClass318_Sub3Array6414[0]), 0);
@@ -177,10 +177,10 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
 	    ItemLoader.method1935(((Class318_Sub1) this).anInt6388,
 				((Class318_Sub1) this).anInt6382,
 				aClass30_10051, class64, false,
-				((Class318_Sub1) this).anInt6377);
+				((Class318_Sub1) this).xHash);
 	else
 	    aClass30_10051 = (Class348_Sub23_Sub1.method2967
-			      (((Class318_Sub1) this).anInt6377, class64,
+			      (((Class318_Sub1) this).xHash, class64,
 			       ((Class318_Sub1) this).anInt6388,
 			       ((Class318_Sub1) this).anInt6382, 2));
 	return class318_sub4;
@@ -250,14 +250,14 @@ final class Class318_Sub1_Sub3_Sub2 extends Class318_Sub1_Sub3
 			      .method1668(true, true, -127, 262144, var_ha);
 	if (class64 != null) {
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    ((Class318_Sub1_Sub3_Sub2) this).aClass235_10045.method1670
-		(((Class318_Sub1_Sub3) this).aShort8751, class101,
-		 ((Class318_Sub1_Sub3) this).aShort8747, var_ha,
-		 ((Class318_Sub1_Sub3) this).aShort8743, class64, false,
-		 (byte) -73, ((Class318_Sub1_Sub3) this).aShort8750);
+		(((Entity) this).aShort8751, class101,
+		 ((Entity) this).aShort8747, var_ha,
+		 ((Entity) this).aShort8743, class64, false,
+		 (byte) -73, ((Entity) this).aShort8750);
 	}
 	if (i >= -125)
 	    method2380(null, -30, false, null, 74, (byte) -52, 38);

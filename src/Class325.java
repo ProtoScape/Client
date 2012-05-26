@@ -501,7 +501,7 @@ final class Class325
 				    ((((Class318_Sub1)
 				       (Class132
 					.localPlayer))
-				      .anInt6377));
+				      .xHash));
 				((BufferedPacket) class348_sub47)
 				    .buffer.putShort
 				    ((((Class318_Sub1)
@@ -526,7 +526,7 @@ final class Class325
 				(i_75_ + Class90.baseRegionY, 2,
 				 (((Class318_Sub1)
 				   Class132.localPlayer)
-				  .aByte6381),
+				  .heightLevel),
 				 i_74_ + za_Sub2.baseRegionX);
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -5) {
@@ -574,7 +574,7 @@ final class Class325
 					       .definition);
 			    if (((NpcDefinition) class79).anIntArray1377 != null)
 				class79 = (class79.method794
-					   ((Class318_Sub1_Sub3_Sub3
+					   ((Mob
 					     .varbitHandler),
 					    -1));
 			    if (class79 != null) {
@@ -593,7 +593,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -49) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Node.anInt4292 = 0;
@@ -615,12 +615,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(116,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -89,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 106),
@@ -725,12 +725,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(117,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -100,
 						class318_sub1_sub3_sub3_sub1
 						    .method2436((byte) 68),
@@ -742,7 +742,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -12) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Node.anInt4292 = 0;
@@ -766,12 +766,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(119,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -128,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 53),
@@ -847,12 +847,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(122,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -107,
 						class318_sub1_sub3_sub3_sub1
 						    .method2436((byte) 88),
@@ -870,7 +870,7 @@ final class Class325
 				(i_75_ + Class90.baseRegionY, 2,
 				 (((Class318_Sub1)
 				   Class132.localPlayer)
-				  .aByte6381),
+				  .heightLevel),
 				 za_Sub2.baseRegionX - -i_74_);
 			else {
 			    Class93.anInt1534 = i_72_;
@@ -909,7 +909,7 @@ final class Class325
 		    }
 		    if (i_76_ == 51) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Class26.anInt385 = i_73_;
@@ -942,12 +942,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(-33,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -88,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 44),
@@ -959,7 +959,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -46) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Node.anInt4292 = 0;
@@ -983,12 +983,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(30,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -91,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 70),
@@ -1027,7 +1027,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -24) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Class239_Sub20.anInt6048 = 2;
@@ -1051,12 +1051,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(118,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -106,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 45),
@@ -1076,7 +1076,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -9) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Class93.anInt1534 = i_72_;
@@ -1099,12 +1099,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(127,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -106,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 100),
@@ -1198,12 +1198,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(119,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -111,
 						class318_sub1_sub3_sub3_sub1
 						    .method2436((byte) 65),
@@ -1252,7 +1252,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -59) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Node.anInt4292 = 0;
@@ -1275,12 +1275,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(-127,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -93,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 119),
@@ -1292,7 +1292,7 @@ final class Class325
 		    }
 		    if ((i_76_ ^ 0xffffffff) == -18) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [i_77_]);
 			if (class318_sub1_sub3_sub3_sub2 != null) {
 			    Class239_Sub20.anInt6048 = 2;
@@ -1315,12 +1315,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(121,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub2)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -123,
 						class318_sub1_sub3_sub3_sub2
 						    .method2436((byte) 96),
@@ -1414,12 +1414,12 @@ final class Class325
 			    Class348_Sub42_Sub14.queuePacket(-85,
 							    class348_sub47);
 			    Class298.method2252(true,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10320[0]),
-						(((Class318_Sub1_Sub3_Sub3)
+						 .xList[0]),
+						(((Mob)
 						  class318_sub1_sub3_sub3_sub1)
-						 .anIntArray10317[0]),
+						 .yList[0]),
 						(byte) -121,
 						class318_sub1_sub3_sub3_sub1
 						    .method2436((byte) 99),
@@ -1492,9 +1492,9 @@ final class Class325
 				.method3349(4325, Class9.anInt169);
 			    ((BufferedPacket) class348_sub47)
 				.buffer.method3353
-				((((Class318_Sub1_Sub3_Sub3)
+				((((Mob)
 				   Class132.localPlayer)
-				  .anInt10290),
+				  .localId),
 				 (byte) 3);
 			    ((BufferedPacket) class348_sub47)
 				.buffer
@@ -1570,12 +1570,12 @@ final class Class325
 					.queuePacket(-37, class348_sub47);
 				    Class298.method2252
 					(true,
-					 (((Class318_Sub1_Sub3_Sub3)
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub1)
-					  .anIntArray10320[0]),
-					 (((Class318_Sub1_Sub3_Sub3)
+					  .xList[0]),
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub1)
-					  .anIntArray10317[0]),
+					  .yList[0]),
 					 (byte) -85,
 					 class318_sub1_sub3_sub3_sub1
 					     .method2436((byte) 124),
@@ -1588,7 +1588,7 @@ final class Class325
 			    if ((i_76_ ^ 0xffffffff) == -58) {
 				Player class318_sub1_sub3_sub3_sub2
 				    = (ClassicLoadingScreen
-				       .players
+				       .onscreenPlayers
 				       [i_77_]);
 				if (class318_sub1_sub3_sub3_sub2 != null) {
 				    Class239_Sub20.anInt6048 = 2;
@@ -1612,12 +1612,12 @@ final class Class325
 					.queuePacket(125, class348_sub47);
 				    Class298.method2252
 					(true,
-					 (((Class318_Sub1_Sub3_Sub3)
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub2)
-					  .anIntArray10320[0]),
-					 (((Class318_Sub1_Sub3_Sub3)
+					  .xList[0]),
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub2)
-					  .anIntArray10317[0]),
+					  .yList[0]),
 					 (byte) -98,
 					 class318_sub1_sub3_sub3_sub2
 					     .method2436((byte) 83),
@@ -1686,12 +1686,12 @@ final class Class325
 					.queuePacket(-25, class348_sub47);
 				    Class298.method2252
 					(true,
-					 (((Class318_Sub1_Sub3_Sub3)
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub1)
-					  .anIntArray10320[0]),
-					 (((Class318_Sub1_Sub3_Sub3)
+					  .xList[0]),
+					 (((Mob)
 					   class318_sub1_sub3_sub3_sub1)
-					  .anIntArray10317[0]),
+					  .yList[0]),
 					 (byte) -107,
 					 class318_sub1_sub3_sub3_sub1
 					     .method2436((byte) 104),

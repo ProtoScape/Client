@@ -26,7 +26,7 @@ final class Class101_Sub3 extends Class101
     static int anInt5765;
     static int anInt5766;
     static int anInt5767;
-    static int anInt5768 = 0;
+    static int amountUpdatePlayers = 0;
     float aFloat5769;
     float aFloat5770;
     static int anInt5771;
@@ -626,7 +626,7 @@ final class Class101_Sub3 extends Class101
     static final void method947(byte i) {
 	anInt5783++;
 	if (i != 41)
-	    anInt5768 = 38;
+	    amountUpdatePlayers = 38;
 	for (Class348_Sub9 class348_sub9
 		 = (Class348_Sub9) Class218.aClass262_2859.getFirst(4);
 	     class348_sub9 != null;

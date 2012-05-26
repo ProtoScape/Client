@@ -172,7 +172,7 @@ final class Class44
 			= Node.aClass318_Sub1Array4293[i_21_];
 		    Node.aClass318_Sub1Array4293[i_21_]
 			= class318_sub1_sub5;
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		}
 	    } else {
 		((Class318_Sub1) class318_sub1_sub5).aClass318_Sub1_6379
@@ -193,7 +193,7 @@ final class Class44
 			    = Node.aClass318_Sub1Array4293[i_21_];
 			Node.aClass318_Sub1Array4293[i_21_]
 			    = class318_sub1_sub5_20_;
-			Class348_Sub16_Sub2.aBoolean8870 = true;
+			Class348_Sub16_Sub2.heightLevelChanged = true;
 		    }
 		} else {
 		    ((Class318_Sub1) class318_sub1_sub5_20_)

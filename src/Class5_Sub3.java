@@ -83,13 +83,13 @@ final class Class5_Sub3 extends Class5
 	do {
 	    try {
 		anInt8372++;
-		int i_6_ = Class328_Sub1.anInt6513;
-		int[] is = Class286_Sub7.anIntArray6290;
+		int i_6_ = Class328_Sub1.onscreenGpiOffset;
+		int[] is = Class286_Sub7.onscreenGpiList;
 		if (i_5_ == -7257) {
 		    boolean bool = false;
 		    for (int i_7_ = 0; i_6_ > i_7_; i_7_++) {
 			Player class318_sub1_sub3_sub3_sub2
-			    = (ClassicLoadingScreen.players
+			    = (ClassicLoadingScreen.onscreenPlayers
 			       [is[i_7_]]);
 			if (class318_sub1_sub3_sub3_sub2 != null
 			    && (Class132.localPlayer

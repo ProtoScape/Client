@@ -72,15 +72,15 @@ final class Class322
     
     static final void method2556
 	(boolean bool, int i,
-	 Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3) {
+	 Mob class318_sub1_sub3_sub3) {
 	anInt4028++;
 	int i_3_ = -1;
 	int i_4_ = 0;
-	if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10239
+	if ((((Mob) class318_sub1_sub3_sub3).anInt10239
 	     ^ 0xffffffff)
 	    < (Class367_Sub11.logicCycle ^ 0xffffffff))
 	    Class239_Sub26.method1834(class318_sub1_sub3_sub3, (byte) -16);
-	else if (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	else if (((((Mob) class318_sub1_sub3_sub3)
 		   .anInt10300)
 		  ^ 0xffffffff)
 		 <= (Class367_Sub11.logicCycle ^ 0xffffffff))
@@ -92,67 +92,67 @@ final class Class322
 	}
 	if (bool != false)
 	    aClass114_4027 = null;
-	if (((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377 ^ 0xffffffff)
+	if (((((Class318_Sub1) class318_sub1_sub3_sub3).xHash ^ 0xffffffff)
 	     > -513)
 	    || ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388 < 512
-	    || ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+	    || ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 		 ^ 0xffffffff)
 		<= (-512 + Class367_Sub4.mapSizeX * 512 ^ 0xffffffff))
 	    || ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		 ^ 0xffffffff)
 		<= (-512 + Class348_Sub40_Sub3.mapSizeY * 512
 		    ^ 0xffffffff))) {
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10291
+	    ((Mob) class318_sub1_sub3_sub3).anInt10291
 		= -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10300 = 0;
+	    ((Mob) class318_sub1_sub3_sub3).anInt10300 = 0;
 	    i_4_ = 0;
 	    i_3_ = -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anIntArray10236
+	    ((Mob) class318_sub1_sub3_sub3).anIntArray10236
 		= null;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10269
+	    ((Mob) class318_sub1_sub3_sub3).anInt10269
 		= -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10286
+	    ((Mob) class318_sub1_sub3_sub3).anInt10286
 		= -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10239 = 0;
-	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10320[0])
+	    ((Mob) class318_sub1_sub3_sub3).anInt10239 = 0;
+	    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .xList[0])
 		   + 256 * class318_sub1_sub3_sub3.method2436((byte) 120));
 	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10317[0])
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .yList[0])
 		   + class318_sub1_sub3_sub3.method2436((byte) 88) * 256);
 	    class318_sub1_sub3_sub3.method2427(70);
 	}
 	if ((Class132.localPlayer
 	     == class318_sub1_sub3_sub3)
-	    && (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377 < 6144
+	    && (((Class318_Sub1) class318_sub1_sub3_sub3).xHash < 6144
 		|| (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 		    ^ 0xffffffff) > -6145
 		|| ((512 * (Class367_Sub4.mapSizeX + -12) ^ 0xffffffff)
-		    >= (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		    >= (((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			^ 0xffffffff))
 		|| (512 * (Class348_Sub40_Sub3.mapSizeY - 12)
 		    <= ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388))) {
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10291
+	    ((Mob) class318_sub1_sub3_sub3).anInt10291
 		= -1;
 	    i_3_ = -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10300 = 0;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10269
+	    ((Mob) class318_sub1_sub3_sub3).anInt10300 = 0;
+	    ((Mob) class318_sub1_sub3_sub3).anInt10269
 		= -1;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10239 = 0;
+	    ((Mob) class318_sub1_sub3_sub3).anInt10239 = 0;
 	    i_4_ = 0;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anIntArray10236
+	    ((Mob) class318_sub1_sub3_sub3).anIntArray10236
 		= null;
-	    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10286
+	    ((Mob) class318_sub1_sub3_sub3).anInt10286
 		= -1;
-	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10320[0])
+	    ((Class318_Sub1) class318_sub1_sub3_sub3).xHash
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .xList[0])
 		   + 256 * class318_sub1_sub3_sub3.method2436((byte) 115));
 	    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
-		= (512 * (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			  .anIntArray10317[0])
+		= (512 * (((Mob) class318_sub1_sub3_sub3)
+			  .yList[0])
 		   + 256 * class318_sub1_sub3_sub3.method2436((byte) 115));
 	    class318_sub1_sub3_sub3.method2427(54);
 	}

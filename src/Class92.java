@@ -17,17 +17,17 @@ final class Class92
 	Class348_Sub9 class348_sub9
 	    = ((Class348_Sub9)
 	       (FileIndexRequest.aClass356_10465.get
-		((long) ((Class318_Sub1_Sub3_Sub3)
-			 class318_sub1_sub3_sub3_sub2).anInt10290)));
+		((long) ((Mob)
+			 class318_sub1_sub3_sub3_sub2).localId)));
 	if (bool == true) {
 	    if (class348_sub9 == null)
 		Class223.method1614
 		    (979190089, null,
-		     ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6381,
-		     (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		      .anIntArray10317[0]),
-		     (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		      .anIntArray10320[0]),
+		     ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).heightLevel,
+		     (((Mob) class318_sub1_sub3_sub3_sub2)
+		      .yList[0]),
+		     (((Mob) class318_sub1_sub3_sub3_sub2)
+		      .xList[0]),
 		     class318_sub1_sub3_sub3_sub2, null, 0);
 	    else
 		class348_sub9.method2781((byte) 21);
@@ -99,8 +99,8 @@ final class Class92
 				   ^ 0xffffffff))) {
 			    Npc class318_sub1_sub3_sub3_sub1
 				= new Npc();
-			    ((Class318_Sub1_Sub3_Sub3)
-			     class318_sub1_sub3_sub3_sub1).anInt10290
+			    ((Mob)
+			     class318_sub1_sub3_sub3_sub1).localId
 				= i_5_;
 			    Class348_Sub22 class348_sub22_12_
 				= (new Class348_Sub22
@@ -112,7 +112,7 @@ final class Class92
 				= class348_sub22_12_;
 			    EntityPacket.anIntArray1233[Class150.anInt2057++]
 				= i_5_;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10306
 				= Class367_Sub11.logicCycle;
 			    class318_sub1_sub3_sub3_sub1.method2448(class79,
@@ -122,7 +122,7 @@ final class Class92
 				 ((NpcDefinition) (((Npc)
 					      class318_sub1_sub3_sub3_sub1)
 					     .definition)).anInt1399);
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10310
 				= (((NpcDefinition) (((Npc)
 						class318_sub1_sub3_sub3_sub1)

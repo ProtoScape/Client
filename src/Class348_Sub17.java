@@ -18,7 +18,7 @@ final class Class348_Sub17 extends Node
     byte[] aByteArray6799;
     Class348_Sub19_Sub1[] aClass348_Sub19_Sub1Array6800;
     static int anInt6801;
-    static Class359[] aClass359Array6802 = new Class359[2048];
+    static OffscreenPlayer[] offscreenPlayers = new OffscreenPlayer[2048];
     static int anInt6803;
     
     static final void method2928(boolean bool) {
@@ -45,7 +45,7 @@ final class Class348_Sub17 extends Node
     }
     
     public static void method2930(byte i) {
-	aClass359Array6802 = null;
+	offscreenPlayers = null;
 	int i_0_ = -14 / ((i - 61) / 43);
     }
     
@@ -55,16 +55,16 @@ final class Class348_Sub17 extends Node
 	do {
 	    try {
 		anInt6801++;
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		if ((((Mob) class318_sub1_sub3_sub3_sub1)
 		     .anIntArray10236)
 		    != null) {
 		    boolean bool = true;
 		    for (int i_2_ = 0;
-			 (((Class318_Sub1_Sub3_Sub3)
+			 (((Mob)
 			   class318_sub1_sub3_sub3_sub1).anIntArray10236.length
 			  ^ 0xffffffff) < (i_2_ ^ 0xffffffff);
 			 i_2_++) {
-			if ((((Class318_Sub1_Sub3_Sub3)
+			if ((((Mob)
 			      class318_sub1_sub3_sub3_sub1)
 			     .anIntArray10236[i_2_])
 			    != is[i_2_]) {
@@ -73,40 +73,40 @@ final class Class348_Sub17 extends Node
 			}
 		    }
 		    if (bool
-			&& ((Class318_Sub1_Sub3_Sub3)
+			&& ((Mob)
 			    class318_sub1_sub3_sub3_sub1).anInt10286 != -1) {
 			AnimationDefinition class17
 			    = (Class10.animationLoader.method835
-			       (((Class318_Sub1_Sub3_Sub3)
+			       (((Mob)
 				 class318_sub1_sub3_sub3_sub1).anInt10286,
 				7));
 			int i_3_ = ((AnimationDefinition) class17).anInt248;
 			if (i_3_ == 1) {
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10232
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10218
 				= i;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10294
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10267
 				= 0;
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10244
 				= 1;
-			    if (!((Class318_Sub1_Sub3_Sub3)
+			    if (!((Mob)
 				  class318_sub1_sub3_sub3_sub1).aBoolean10309)
 				GametipDefinition.method2178
 				    (class318_sub1_sub3_sub3_sub1,
-				     ((Class318_Sub1_Sub3_Sub3)
+				     ((Mob)
 				      class318_sub1_sub3_sub3_sub1).anInt10267,
 				     class17, -72);
 			}
 			if ((i_3_ ^ 0xffffffff) == -3)
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10294
 				= 0;
 		    }
@@ -116,26 +116,26 @@ final class Class348_Sub17 extends Node
 		     (i_4_ ^ 0xffffffff) > (is.length ^ 0xffffffff); i_4_++) {
 		    if (is[i_4_] != -1)
 			bool = false;
-		    if (((Class318_Sub1_Sub3_Sub3)
+		    if (((Mob)
 			 class318_sub1_sub3_sub3_sub1).anIntArray10236 == null
-			|| (((Class318_Sub1_Sub3_Sub3)
+			|| (((Mob)
 			     class318_sub1_sub3_sub3_sub1)
 			    .anIntArray10236[i_4_]) == -1
 			|| (((AnimationDefinition) Class10.animationLoader
 					   .method835(is[i_4_], 7)).anInt239
 			    >= ((AnimationDefinition) (Class10.animationLoader.method835
-					   ((((Class318_Sub1_Sub3_Sub3)
+					   ((((Mob)
 					      class318_sub1_sub3_sub3_sub1)
 					     .anIntArray10236[i_4_]),
 					    7))).anInt239)) {
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10218
 			    = i;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10322
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3_sub1).anInt10319;
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub1).anIntArray10236
 			    = is;
 		    }
@@ -144,15 +144,15 @@ final class Class348_Sub17 extends Node
 		    method2931(-66, (byte) 125, null, null);
 		if (!bool)
 		    break;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		((Mob) class318_sub1_sub3_sub3_sub1)
 		    .anIntArray10236
 		    = is;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		((Mob) class318_sub1_sub3_sub3_sub1)
 		    .anInt10218
 		    = i;
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		((Mob) class318_sub1_sub3_sub3_sub1)
 		    .anInt10322
-		    = (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    = (((Mob) class318_sub1_sub3_sub3_sub1)
 		       .anInt10319);
 	    } catch (RuntimeException runtimeexception) {
 		throw method2929(runtimeexception,

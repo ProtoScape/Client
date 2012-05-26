@@ -14,7 +14,7 @@ final class Class355
     private IndexLoader aClass45_4369;
     static int anInt4370;
     static int anInt4371;
-    static int anInt4372;
+    static int localHeightLevel;
     private Interface15 anInterface15_4373;
     
     static final void method3470(int i) {
@@ -77,7 +77,7 @@ final class Class355
     
     public static void method3473(int i) {
 	if (i != 12949)
-	    anInt4372 = -30;
+	    localHeightLevel = -30;
 	anObject4366 = null;
     }
     

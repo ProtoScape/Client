@@ -66,15 +66,15 @@ final class FileIndexTracker implements ElementTracker
 		      : Class348_Sub40_Sub36.aClass114_9456
 			    .getOpcode((byte) 113))
 		   + " - " + Class348_Sub40_Sub25.currentPacketSize + ","
-		   + ((((Class318_Sub1_Sub3_Sub3)
+		   + ((((Mob)
 			Class132.localPlayer)
-		       .anIntArray10320[0])
+		       .xList[0])
 		      + za_Sub2.baseRegionX)
 		   + ","
 		   + (Class90.baseRegionY
-		      - -(((Class318_Sub1_Sub3_Sub3)
+		      - -(((Mob)
 			   Class132.localPlayer)
-			  .anIntArray10317[0]))
+			  .yList[0]))
 		   + " - ");
 	    for (int i_2_ = 0;
 		 Class348_Sub40_Sub25.currentPacketSize > i_2_ && i_2_ < 50; i_2_++)

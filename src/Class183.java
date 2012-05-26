@@ -35,7 +35,7 @@ final class Class183
 			    Node.aClass318_Sub1Array4293[i]
 				= (((Class318_Sub1) class318_sub1_1_)
 				   .aClass318_Sub1_6379);
-			Class348_Sub16_Sub2.aBoolean8870 = true;
+			Class348_Sub16_Sub2.heightLevelChanged = true;
 			return;
 		    }
 		    class318_sub1_0_ = class318_sub1_1_;
@@ -56,7 +56,7 @@ final class Class183
 			    Class250.aClass318_Sub1Array3226[i]
 				= (((Class318_Sub1) class318_sub1_2_)
 				   .aClass318_Sub1_6379);
-			Class348_Sub16_Sub2.aBoolean8870 = true;
+			Class348_Sub16_Sub2.heightLevelChanged = true;
 			return;
 		    }
 		    class318_sub1_0_ = class318_sub1_2_;
@@ -77,7 +77,7 @@ final class Class183
 			    Class115.aClass318_Sub1Array1754[i]
 				= (((Class318_Sub1) class318_sub1_3_)
 				   .aClass318_Sub1_6379);
-			Class348_Sub16_Sub2.aBoolean8870 = true;
+			Class348_Sub16_Sub2.heightLevelChanged = true;
 			return;
 		    }
 		    class318_sub1_0_ = class318_sub1_3_;

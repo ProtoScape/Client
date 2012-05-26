@@ -87,10 +87,10 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 	AnimatableToolkit class64 = ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
 			      .method1668(false, true, -127, 262144, var_ha);
 	if (class64 != null) {
-	    int i_0_ = ((Class318_Sub1) this).anInt6377 >> -1531002263;
+	    int i_0_ = ((Class318_Sub1) this).xHash >> -1531002263;
 	    int i_1_ = ((Class318_Sub1) this).anInt6388 >> -915591191;
 	    Class101 class101 = var_ha.method3705();
-	    class101.method894(((Class318_Sub1) this).anInt6377,
+	    class101.method894(((Class318_Sub1) this).xHash,
 			       ((Class318_Sub1) this).anInt6382,
 			       ((Class318_Sub1) this).anInt6388);
 	    ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155.method1670
@@ -120,14 +120,14 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 	if (class64 == null)
 	    return null;
 	Class101 class101 = var_ha.method3705();
-	class101.method894((((Class318_Sub1) this).anInt6377
+	class101.method894((((Class318_Sub1) this).xHash
 			    + ((Class318_Sub1_Sub5) this).aShort8781),
 			   ((Class318_Sub1) this).anInt6382,
 			   (((Class318_Sub1) this).anInt6388
 			    + ((Class318_Sub1_Sub5) this).aShort8769));
 	Class318_Sub4 class318_sub4
 	    = DummyOutputstream.method136(i, aBoolean10153, false);
-	int i_3_ = ((Class318_Sub1) this).anInt6377 >> 1712008233;
+	int i_3_ = ((Class318_Sub1) this).xHash >> 1712008233;
 	int i_4_ = ((Class318_Sub1) this).anInt6388 >> 321153897;
 	((Class318_Sub1_Sub5_Sub2) this).aClass235_10155.method1670
 	    (i_3_, class101, i_4_, var_ha, i_3_, class64, true, (byte) -73,
@@ -157,14 +157,14 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 			      .aClass318_Sub10_3081) != null;
 	if (aClass30_10150 == null)
 	    aClass30_10150 = (Class348_Sub23_Sub1.method2967
-			      (((Class318_Sub1) this).anInt6377, class64,
+			      (((Class318_Sub1) this).xHash, class64,
 			       ((Class318_Sub1) this).anInt6388,
 			       ((Class318_Sub1) this).anInt6382, 2));
 	else
 	    ItemLoader.method1935(((Class318_Sub1) this).anInt6388,
 				((Class318_Sub1) this).anInt6382,
 				aClass30_10150, class64, false,
-				((Class318_Sub1) this).anInt6377);
+				((Class318_Sub1) this).xHash);
 	return class318_sub4;
     }
     
@@ -198,7 +198,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 	try {
 	    ((Class318_Sub1_Sub5_Sub2) this).aClass235_10155
 		= new Class235(var_ha, class51, i_11_, i_12_,
-			       ((Class318_Sub1) this).aByte6381, i_5_, this,
+			       ((Class318_Sub1) this).heightLevel, i_5_, this,
 			       bool, i_13_);
 	    aBoolean10153 = ((ObjectDefinition) class51).anInt874 != 0 && !bool;
 	} catch (RuntimeException runtimeexception) {
@@ -222,7 +222,7 @@ final class Class318_Sub1_Sub5_Sub2 extends Class318_Sub1_Sub5
 	    return true;
 	Class101 class101 = var_ha.method3705();
 	class101.method894((((Class318_Sub1_Sub5) this).aShort8781
-			    + ((Class318_Sub1) this).anInt6377),
+			    + ((Class318_Sub1) this).xHash),
 			   ((Class318_Sub1) this).anInt6382,
 			   (((Class318_Sub1_Sub5) this).aShort8769
 			    + ((Class318_Sub1) this).anInt6388));

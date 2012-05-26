@@ -212,14 +212,14 @@ final class Class348_Sub18 extends Node
 			 .aString10544),
 			(byte) -41));
 		((Widget) class46).anInt699
-		    = ((Class318_Sub1_Sub3_Sub3)
+		    = ((Mob)
 		       Class132.localPlayer).anInt10268;
 		((Widget) class46).anInt841 = 0;
 		((Widget) class46).anInt730
-		    = ((Class318_Sub1_Sub3_Sub3)
+		    = ((Mob)
 		       Class132.localPlayer).anInt10312;
 		((Widget) class46).anInt795
-		    = ((Class318_Sub1_Sub3_Sub3)
+		    = ((Mob)
 		       Class132.localPlayer).anInt10245;
 		AnimationDefinition class17
 		    = ((((Widget) class46).anInt699 ^ 0xffffffff) != 0

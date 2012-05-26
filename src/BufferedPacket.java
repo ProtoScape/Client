@@ -104,7 +104,7 @@ final class BufferedPacket extends Node
 	    }
 	    anInt7123++;
 	    Class354.method3466(i + -1347);
-	    Class348_Sub16_Sub2.aBoolean8870 = true;
+	    Class348_Sub16_Sub2.heightLevelChanged = true;
 	}
     }
 }

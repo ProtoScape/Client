@@ -316,7 +316,7 @@ final class Class38
     
     static final void method365(Class318_Sub1 class318_sub1,
 				Class348_Sub1[] class348_sub1s) {
-	if (Class318_Sub1_Sub3_Sub3.aBoolean10221) {
+	if (Mob.aBoolean10221) {
 	    int i = class318_sub1.method2384(class348_sub1s, 49);
 	    Class9.aHa171.method3642(i, class348_sub1s);
 	}
@@ -325,19 +325,19 @@ final class Class38
 	    boolean bool_11_ = false;
 	    int i;
 	    int i_12_;
-	    if (class318_sub1 instanceof Class318_Sub1_Sub3) {
-		i = (((Class318_Sub1_Sub3) (Class318_Sub1_Sub3) class318_sub1)
+	    if (class318_sub1 instanceof Entity) {
+		i = (((Entity) (Entity) class318_sub1)
 		     .aShort8743);
-		i_12_ = ((Class318_Sub1_Sub3) (Class318_Sub1_Sub3)
+		i_12_ = ((Entity) (Entity)
 			 class318_sub1).aShort8750;
 	    } else {
-		i = (((Class318_Sub1) class318_sub1).anInt6377
+		i = (((Class318_Sub1) class318_sub1).xHash
 		     >> Class362.anInt4459);
 		i_12_ = (((Class318_Sub1) class318_sub1).anInt6388
 			 >> Class362.anInt4459);
 	    }
 	    Class9.aHa171.EA((Class348_Sub1_Sub1.aSArray8801[0].method3986
-			      (((Class318_Sub1) class318_sub1).anInt6377,
+			      (((Class318_Sub1) class318_sub1).xHash,
 			       ((Class318_Sub1) class318_sub1).anInt6388,
 			       (byte) -118)),
 			     Class367_Sub8.method3547(i, i_12_),

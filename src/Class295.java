@@ -42,8 +42,8 @@ final class Class295
 	Class348_Sub9 class348_sub9
 	    = ((Class348_Sub9)
 	       (FileIndexRequest.aClass356_10465.get
-		((long) ((Class318_Sub1_Sub3_Sub3)
-			 class318_sub1_sub3_sub3_sub2).anInt10290)));
+		((long) ((Mob)
+			 class318_sub1_sub3_sub3_sub2).localId)));
 	if (class348_sub9 != null) {
 	    if (((Class348_Sub9) class348_sub9).aClass348_Sub16_Sub5_6676
 		!= null) {

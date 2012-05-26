@@ -64,7 +64,7 @@ final class ConnectionMode
 		IndexLoader.aFloat670 = Class348_Sub3.aFloat6586;
 		Class258_Sub4.aFloat8560 = Class239_Sub10.aFloat5945;
 		Class246.aFloat3177 = Class361.aFloat4455;
-		Class318_Sub1_Sub3.anInt8739 = Class119_Sub1.anInt4703;
+		Entity.anInt8739 = Class119_Sub1.anInt4703;
 		Class239_Sub19.anInt6042 = Class36.anInt486;
 	    }
 	}

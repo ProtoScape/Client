@@ -35,7 +35,7 @@ final class Class75_Sub1 extends Class75
 			= Node.aClass318_Sub1Array4293[i_3_];
 		    Node.aClass318_Sub1Array4293[i_3_]
 			= class318_sub1_sub1;
-		    Class348_Sub16_Sub2.aBoolean8870 = true;
+		    Class348_Sub16_Sub2.heightLevelChanged = true;
 		}
 	    } else {
 		((Class318_Sub1) class318_sub1_sub1).aClass318_Sub1_6379

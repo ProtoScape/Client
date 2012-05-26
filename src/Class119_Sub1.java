@@ -102,7 +102,7 @@ final class Class119_Sub1 extends Class119 implements Interface2
 					       .definition);
 			    if (((NpcDefinition) class79).anIntArray1377 != null)
 				class79 = (class79.method794
-					   ((Class318_Sub1_Sub3_Sub3
+					   ((Mob
 					     .varbitHandler),
 					    -1));
 			    if (class79 != null)
@@ -131,7 +131,7 @@ final class Class119_Sub1 extends Class119 implements Interface2
 						  .aLong9605)));
 			if (((ObjectDefinition) class51).anIntArray945 != null)
 			    class51
-				= class51.method480((Class318_Sub1_Sub3_Sub3
+				= class51.method480((Mob
 						     .varbitHandler),
 						    (byte) 47);
 			if (class51 != null)

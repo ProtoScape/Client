@@ -220,7 +220,7 @@ public final class Client extends ClientApplet {
 	    } else {
 		EntryElementLoader.aShortArrayArray4791 = Class268.aShortArrayArray3443;
 		Class367_Sub2.aShortArrayArrayArray7290
-		    = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253;
+		    = Mob.aShortArrayArrayArray10253;
 	    }
 	} else {
 	    Class116.aBoolean1759 = true;
@@ -336,7 +336,7 @@ public final class Client extends ClientApplet {
 	Class54.method501(1);
 	ByteBuffer.method3376(i ^ ~0x6d);
 	BufferedPacket.method3323(-44);
-	Class318_Sub1_Sub3_Sub3.method2429(-123);
+	Mob.method2429(-123);
 	Class357.method3487(-65);
 	EntityPacket.method744((byte) 115);
 	Class348_Sub27.method3001(0);
@@ -405,7 +405,7 @@ public final class Client extends ClientApplet {
 	BitmapFont.method1180((byte) -76);
 	Class98.method879(96);
 	Class348_Sub1.method2719(11339);
-	Class318_Sub1_Sub3.method2412(true);
+	Entity.method2412(true);
 	Class318_Sub1.method2389(1);
 	Class348_Sub16_Sub3.method2871(-65);
 	Class163.method1276(i + -199);
@@ -484,7 +484,7 @@ public final class Client extends ClientApplet {
 	Class116.method1062((byte) 35);
 	Class108.method1013((byte) 114);
 	Class348_Sub10.method2785();
-	Class359.method3491(1);
+	OffscreenPlayer.method3491(1);
 	LongNode.method2805((byte) 113);
 	Class277.method2071(-128);
 	Class22.method293((byte) -83);
@@ -850,15 +850,15 @@ public final class Client extends ClientApplet {
     }
     
     static final void method104(int i) {
-	int i_7_ = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i_7_ = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	int i_8_
 	    = MouseMovementListener.aBoolean7444 ? i_7_ : i_7_ + Class150.anInt2057;
 	for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
+	    Mob class318_sub1_sub3_sub3;
 	    if (i_9_ < i_7_)
 		class318_sub1_sub3_sub3
-		    = (ClassicLoadingScreen.players
+		    = (ClassicLoadingScreen.onscreenPlayers
 		       [is[i_9_]]);
 	    else
 		class318_sub1_sub3_sub3
@@ -866,52 +866,52 @@ public final class Client extends ClientApplet {
 			(Class282.aClass356_3654.get
 			 ((long) EntityPacket.anIntArray1233[i_9_ - i_7_])))
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-	    if (((Class318_Sub1) class318_sub1_sub3_sub3).aByte6381 == i) {
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10261
+	    if (((Class318_Sub1) class318_sub1_sub3_sub3).heightLevel == i) {
+		((Mob) class318_sub1_sub3_sub3).anInt10261
 		    = 0;
-		if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		if ((((Mob) class318_sub1_sub3_sub3)
 		     .anInt10285)
 		    < 0)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.aBoolean10309
 			= false;
 		else {
 		    int i_10_ = class318_sub1_sub3_sub3.method2436((byte) 71);
 		    if ((i_10_ & 0x1) == 0) {
 			if (((((Class318_Sub1) class318_sub1_sub3_sub3)
-			      .anInt6377)
+			      .xHash)
 			     & 0x1ff) != 0
 			    || ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				 .anInt6388)
 				& 0x1ff) != 0) {
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.aBoolean10309
 				= false;
 			    continue;
 			}
 		    } else if (((((Class318_Sub1) class318_sub1_sub3_sub3)
-				 .anInt6377)
+				 .xHash)
 				& 0x1ff) != 256
 			       || ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				    .anInt6388)
 				   & 0x1ff) != 256) {
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .aBoolean10309
 			    = false;
 			continue;
 		    }
 		    if (i_10_ == 1) {
 			int i_11_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
-				      .anInt6377)
+				      .xHash)
 				     >> 9);
 			int i_12_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				      .anInt6388)
 				     >> 9);
-			if (((Class318_Sub1_Sub3_Sub3)
+			if (((Mob)
 			     class318_sub1_sub3_sub3).anInt10285
 			    != (Class348_Sub42_Sub17.anIntArrayArray9678[i_11_]
 				[i_12_])) {
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.aBoolean10309
 				= true;
 			    continue;
@@ -919,7 +919,7 @@ public final class Client extends ClientApplet {
 			if (Class239_Sub8.anIntArrayArray5921[i_11_][i_12_]
 			    > 1) {
 			    Class239_Sub8.anIntArrayArray5921[i_11_][i_12_]--;
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.aBoolean10309
 				= true;
 			    continue;
@@ -927,26 +927,26 @@ public final class Client extends ClientApplet {
 		    } else {
 			int i_13_ = (i_10_ - 1) * 256 + 252;
 			int i_14_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
-				      .anInt6377) - i_13_
+				      .xHash) - i_13_
 				     >> 9);
 			int i_15_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				      .anInt6388) - i_13_
 				     >> 9);
 			int i_16_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
-				      .anInt6377) + i_13_
+				      .xHash) + i_13_
 				     >> 9);
 			int i_17_ = ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				      .anInt6388) + i_13_
 				     >> 9);
 			if (!Class103.method949(i_15_, i_16_,
-						(((Class318_Sub1_Sub3_Sub3)
+						(((Mob)
 						  class318_sub1_sub3_sub3)
 						 .anInt10285),
 						(byte) 124, i_14_, i_17_)) {
 			    for (int i_18_ = i_14_; i_18_ <= i_16_; i_18_++) {
 				for (int i_19_ = i_15_; i_19_ <= i_17_;
 				     i_19_++) {
-				    if (((Class318_Sub1_Sub3_Sub3)
+				    if (((Mob)
 					 class318_sub1_sub3_sub3).anInt10285
 					== (Class348_Sub42_Sub17
 					    .anIntArrayArray9678[i_18_]
@@ -955,22 +955,22 @@ public final class Client extends ClientApplet {
 					    [i_18_][i_19_]--;
 				}
 			    }
-			    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			    ((Mob) class318_sub1_sub3_sub3)
 				.aBoolean10309
 				= true;
 			    continue;
 			}
 		    }
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.aBoolean10309
 			= false;
 		    ((Class318_Sub1) class318_sub1_sub3_sub3).anInt6382
 			= Class275.method2064((((Class318_Sub1)
 						class318_sub1_sub3_sub3)
-					       .anInt6377),
+					       .xHash),
 					      (((Class318_Sub1)
 						class318_sub1_sub3_sub3)
-					       .aByte6381),
+					       .heightLevel),
 					      11219,
 					      (((Class318_Sub1)
 						class318_sub1_sub3_sub3)
@@ -999,7 +999,7 @@ public final class Client extends ClientApplet {
 		    Class282.aClass356_3654
 			.get((long) EntityPacket.anIntArray1233[i]))
 		   .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-	    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+	    if ((((Mob) class318_sub1_sub3_sub3_sub1)
 		 .aBoolean10309)
 		&& class318_sub1_sub3_sub3_sub1.method2425(-1) != -1) {
 		int i_20_
@@ -1007,39 +1007,39 @@ public final class Client extends ClientApplet {
 			- 1) * 256
 		       + 252);
 		int i_21_
-		    = (((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6377
+		    = (((Class318_Sub1) class318_sub1_sub3_sub3_sub1).xHash
 		       - i_20_) >> 9;
 		int i_22_
 		    = (((Class318_Sub1) class318_sub1_sub3_sub3_sub1).anInt6388
 		       - i_20_) >> 9;
-		Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3
+		Mob class318_sub1_sub3_sub3
 		    = Class84.method817(252, i_21_,
 					(((Class318_Sub1)
 					  class318_sub1_sub3_sub3_sub1)
-					 .aByte6381),
+					 .heightLevel),
 					i_22_);
 		if (class318_sub1_sub3_sub3 != null) {
 		    int i_23_
-			= (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
-			   .anInt10290);
+			= (((Mob) class318_sub1_sub3_sub3)
+			   .localId);
 		    if (class318_sub1_sub3_sub3
 			instanceof Npc)
 			i_23_ += 2048;
-		    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10261) == 0
 			&& class318_sub1_sub3_sub3.method2425(-1) != -1) {
 			Class258_Sub4.anIntArray8557[IndexLoader.anInt669] = i_23_;
 			Class268.anIntArray3432[IndexLoader.anInt669] = i_23_;
 			IndexLoader.anInt669++;
-			((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+			((Mob) class318_sub1_sub3_sub3)
 			    .anInt10261++;
 		    }
 		    Class258_Sub4.anIntArray8557[IndexLoader.anInt669] = i_23_;
 		    Class268.anIntArray3432[IndexLoader.anInt669]
-			= ((Class318_Sub1_Sub3_Sub3)
-			   class318_sub1_sub3_sub3_sub1).anInt10290 + 2048;
+			= ((Mob)
+			   class318_sub1_sub3_sub3_sub1).localId + 2048;
 		    IndexLoader.anInt669++;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    ((Mob) class318_sub1_sub3_sub3)
 			.anInt10261++;
 		}
 	    }
@@ -1406,7 +1406,7 @@ public final class Client extends ClientApplet {
 			boolean bool_54_ = false;
 			AbstractMouseEvent class348_sub45
 			    = ((AbstractMouseEvent)
-			       Class318_Sub1_Sub3.aClass262_8744
+			       Entity.aClass262_8744
 				   .getFirst(4));
 			if (class348_sub45 != null
 			    && class348_sub45.getType(109) == 0
@@ -1689,7 +1689,7 @@ public final class Client extends ClientApplet {
 						    = ((((Class318_Sub1)
 							 (Class132
 							  .localPlayer))
-							.anInt6377) - i_68_
+							.xHash) - i_68_
 						       >> 9) + (i_64_ >> 2);
 						i_67_
 						    = ((((Class318_Sub1)
@@ -2546,14 +2546,14 @@ public final class Client extends ClientApplet {
     }
     
     static final void method112() {
-	int i = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	int i_92_ = MouseMovementListener.aBoolean7444 ? i : i + Class150.anInt2057;
 	for (int i_93_ = 0; i_93_ < i_92_; i_93_++) {
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
+	    Mob class318_sub1_sub3_sub3;
 	    if (i_93_ < i)
 		class318_sub1_sub3_sub3
-		    = (ClassicLoadingScreen.players
+		    = (ClassicLoadingScreen.onscreenPlayers
 		       [is[i_93_]]);
 	    else
 		class318_sub1_sub3_sub3
@@ -2561,16 +2561,16 @@ public final class Client extends ClientApplet {
 			(Class282.aClass356_3654.get
 			 ((long) EntityPacket.anIntArray1233[i_93_ - i])))
 		       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-	    if (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3).anInt10285
+	    if (((Mob) class318_sub1_sub3_sub3).anInt10285
 		>= 0) {
 		int i_94_ = class318_sub1_sub3_sub3.method2436((byte) 74);
 		if ((i_94_ & 0x1) == 0) {
-		    if ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		    if ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			 & 0x1ff) == 0
 			&& (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 			    & 0x1ff) == 0)
 			continue;
-		} else if ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		} else if ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    & 0x1ff) == 256
 			   && ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				.anInt6388)
@@ -2578,8 +2578,8 @@ public final class Client extends ClientApplet {
 		    continue;
 		((Class318_Sub1) class318_sub1_sub3_sub3).anInt6382
 		    = (Class275.method2064
-		       (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377,
-			((Class318_Sub1) class318_sub1_sub3_sub3).aByte6381,
+		       (((Class318_Sub1) class318_sub1_sub3_sub3).xHash,
+			((Class318_Sub1) class318_sub1_sub3_sub3).heightLevel,
 			11219,
 			((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388));
 		Class89.method850(class318_sub1_sub3_sub3, true);
@@ -2623,7 +2623,7 @@ public final class Client extends ClientApplet {
 		    int i_98_
 			= class318_sub1_sub3_sub3_sub1.method2436((byte) 117);
 		    if ((0x2 & i_97_ ^ 0xffffffff) != -1
-			&& ((Class318_Sub1_Sub3_Sub3)
+			&& ((Mob)
 			    class318_sub1_sub3_sub3_sub1).anInt10319 == 0
 			&& Math.random() * 1000.0 < 10.0) {
 			int i_99_
@@ -2632,9 +2632,9 @@ public final class Client extends ClientApplet {
 			    = (int) Math.round(10.0 * Math.random() - 5.0);
 			if ((i_99_ ^ 0xffffffff) != -1
 			    || (i_100_ ^ 0xffffffff) != -1) {
-			    int i_101_ = ((((Class318_Sub1_Sub3_Sub3)
+			    int i_101_ = ((((Mob)
 					    class318_sub1_sub3_sub3_sub1)
-					   .anIntArray10320[0])
+					   .xList[0])
 					  - -i_99_);
 			    if (i_101_ < 0)
 				i_101_ = 0;
@@ -2644,9 +2644,9 @@ public final class Client extends ClientApplet {
 				i_101_
 				    = -1 + (-i_98_ + Class367_Sub4.mapSizeX);
 			    int i_102_
-				= i_100_ + (((Class318_Sub1_Sub3_Sub3)
+				= i_100_ + (((Mob)
 					     class318_sub1_sub3_sub3_sub1)
-					    .anIntArray10317[0]);
+					    .yList[0]);
 			    if (i_102_ < 0)
 				i_102_ = 0;
 			    else if ((i_102_ ^ 0xffffffff)
@@ -2659,40 +2659,40 @@ public final class Client extends ClientApplet {
 					  (i_101_, i_98_, i_98_,
 					   Class348_Sub40_Sub11.anIntArray9185,
 					   true, (byte) 120, -1,
-					   (((Class318_Sub1_Sub3_Sub3)
+					   (((Mob)
 					     class318_sub1_sub3_sub3_sub1)
-					    .anIntArray10320[0]),
-					   (((Class318_Sub1_Sub3_Sub3)
+					    .xList[0]),
+					   (((Mob)
 					     class318_sub1_sub3_sub3_sub1)
-					    .anIntArray10317[0]),
+					    .yList[0]),
 					   Class348_Sub42_Sub14.anIntArray9626,
 					   i_102_,
 					   (AbstractMouseEvent.aClass361Array7108
 					    [(((Class318_Sub1)
 					       class318_sub1_sub3_sub3_sub1)
-					      .aByte6381)]),
+					      .heightLevel)]),
 					   i_98_, 0, 0));
 			    if ((i_103_ ^ 0xffffffff) < -1) {
 				if ((i_103_ ^ 0xffffffff) < -10)
 				    i_103_ = 9;
 				for (int i_104_ = 0; i_103_ > i_104_;
 				     i_104_++) {
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3_sub1)
-					.anIntArray10320[i_104_]
+					.xList[i_104_]
 					= (Class348_Sub42_Sub14.anIntArray9626
 					   [-1 + (-i_104_ + i_103_)]);
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3_sub1)
-					.anIntArray10317[i_104_]
+					.yList[i_104_]
 					= (Class348_Sub40_Sub11.anIntArray9185
 					   [-1 + (-i_104_ + i_103_)]);
-				    ((Class318_Sub1_Sub3_Sub3)
+				    ((Mob)
 				     class318_sub1_sub3_sub3_sub1)
 					.aByteArray10321[i_104_]
 					= (byte) 1;
 				}
-				((Class318_Sub1_Sub3_Sub3)
+				((Mob)
 				 class318_sub1_sub3_sub3_sub1).anInt10319
 				    = i_103_;
 			    }
@@ -2922,11 +2922,11 @@ public final class Client extends ClientApplet {
 		if (type != -1) {
 		    if ((type ^ 0xffffffff) != -7) {
 			if (Class371.method3584(type, 1)) {
-			    Class318_Sub1_Sub3.aClass262_8744.addToFront(mouseEvent, -20180);
-			    if ((Class318_Sub1_Sub3.aClass262_8744.getSize(0)
+			    Entity.aClass262_8744.addToFront(mouseEvent, -20180);
+			    if ((Entity.aClass262_8744.getSize(0)
 				 ^ 0xffffffff)
 				< -11)
-				Class318_Sub1_Sub3.aClass262_8744
+				Entity.aClass262_8744
 				    .removeFirst(8);
 			}
 		    } else
@@ -2971,59 +2971,59 @@ public final class Client extends ClientApplet {
 		Class88.method843((byte) 67);
 	    }
 	    Class22.method294(Class348_Sub8.currentToolkit, 0);
-	    Class318_Sub1_Sub3.aClass262_8744.removeFirst(8);
+	    Entity.aClass262_8744.removeFirst(8);
 	}
     }
     
     static final void method115() {
-	int i = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	int i_112_ = ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)
 			 .aClass239_Sub13_7236.method1776(-32350);
 	boolean bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50;
 	for (int i_113_ = 0; i_113_ < i; i_113_++) {
 	    Player class318_sub1_sub3_sub3_sub2
-		= ClassicLoadingScreen.players[is[i_113_]];
+		= ClassicLoadingScreen.onscreenPlayers[is[i_113_]];
 	    if (!class318_sub1_sub3_sub3_sub2.method2457((byte) -90))
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		((Mob) class318_sub1_sub3_sub3_sub2)
 		    .anInt10285
 		    = -1;
 	    else if (((Player)
 		      class318_sub1_sub3_sub3_sub2)
 		     .aBoolean10551)
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		((Mob) class318_sub1_sub3_sub3_sub2)
 		    .anInt10285
 		    = -1;
 	    else {
 		class318_sub1_sub3_sub3_sub2.method2409((byte) -126);
-		if ((((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
+		if ((((Entity) class318_sub1_sub3_sub3_sub2)
 		     .aShort8743) < 0
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
+		    || (((Entity) class318_sub1_sub3_sub3_sub2)
 			.aShort8750) < 0
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
+		    || (((Entity) class318_sub1_sub3_sub3_sub2)
 			.aShort8751) >= Class367_Sub4.mapSizeX
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub2)
+		    || (((Entity) class318_sub1_sub3_sub3_sub2)
 			.aShort8747) >= Class348_Sub40_Sub3.mapSizeY)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
+		    ((Mob) class318_sub1_sub3_sub3_sub2)
 			.anInt10285
 			= -1;
 		else {
 		    ((Player)
 		     class318_sub1_sub3_sub3_sub2).aBoolean10521
-			= (((Class318_Sub1_Sub3_Sub3)
+			= (((Mob)
 			    class318_sub1_sub3_sub3_sub2).aBoolean10213
 			   ? bool : false);
 		    if (class318_sub1_sub3_sub3_sub2
 			== Class132.localPlayer)
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10285
 			    = 2147483647;
 		    else {
 			int i_114_ = 0;
-			if (!((Class318_Sub1_Sub3_Sub3)
+			if (!((Mob)
 			      class318_sub1_sub3_sub3_sub2).aBoolean10309)
 			    i_114_++;
-			if (((Class318_Sub1_Sub3_Sub3)
+			if (((Mob)
 			     class318_sub1_sub3_sub3_sub2).anInt10223
 			    > Class367_Sub11.logicCycle)
 			    i_114_ += 2;
@@ -3040,7 +3040,7 @@ public final class Client extends ClientApplet {
 				i_114_ += 128;
 			    i_114_ += 256;
 			}
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10285
 			    = i_114_ + 1;
 		    }
@@ -3058,29 +3058,29 @@ public final class Client extends ClientApplet {
 		|| !(((Npc)
 		      class318_sub1_sub3_sub3_sub1)
 			 .definition.method796
-		     (Class318_Sub1_Sub3_Sub3.varbitHandler, 18627)))
-		((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		     (Mob.varbitHandler, 18627)))
+		((Mob) class318_sub1_sub3_sub3_sub1)
 		    .anInt10285
 		    = -1;
 	    else {
 		class318_sub1_sub3_sub3_sub1.method2409((byte) -118);
-		if ((((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
+		if ((((Entity) class318_sub1_sub3_sub3_sub1)
 		     .aShort8743) < 0
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
+		    || (((Entity) class318_sub1_sub3_sub3_sub1)
 			.aShort8750) < 0
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
+		    || (((Entity) class318_sub1_sub3_sub3_sub1)
 			.aShort8751) >= Class367_Sub4.mapSizeX
-		    || (((Class318_Sub1_Sub3) class318_sub1_sub3_sub3_sub1)
+		    || (((Entity) class318_sub1_sub3_sub3_sub1)
 			.aShort8747) >= Class348_Sub40_Sub3.mapSizeY)
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    ((Mob) class318_sub1_sub3_sub3_sub1)
 			.anInt10285
 			= -1;
 		else {
 		    int i_116_ = 0;
-		    if (!((Class318_Sub1_Sub3_Sub3)
+		    if (!((Mob)
 			  class318_sub1_sub3_sub3_sub1).aBoolean10309)
 			i_116_++;
-		    if (((Class318_Sub1_Sub3_Sub3)
+		    if (((Mob)
 			 class318_sub1_sub3_sub3_sub1).anInt10223
 			> Class367_Sub11.logicCycle)
 			i_116_ += 2;
@@ -3112,7 +3112,7 @@ public final class Client extends ClientApplet {
 					   class318_sub1_sub3_sub3_sub1)
 					  .definition)).aBoolean1381)
 			i_116_ += 256;
-		    ((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub1)
+		    ((Mob) class318_sub1_sub3_sub3_sub1)
 			.anInt10285
 			= i_116_ + 1;
 		}
@@ -3131,23 +3131,23 @@ public final class Client extends ClientApplet {
 			Npc class318_sub1_sub3_sub3_sub1
 			    = (((Class348_Sub22) class348_sub22)
 			       .aClass318_Sub1_Sub3_Sub3_Sub1_6859);
-			if (((Class318_Sub1_Sub3_Sub3)
+			if (((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10285
 			    >= 0)
-			    ((Class318_Sub1_Sub3_Sub3)
+			    ((Mob)
 			     class318_sub1_sub3_sub3_sub1).anInt10285
 				+= 2048;
 		    }
 		} else if (((Class302) class302).anInt3840 == 10) {
 		    Player class318_sub1_sub3_sub3_sub2
-			= (ClassicLoadingScreen.players
+			= (ClassicLoadingScreen.onscreenPlayers
 			   [((Class302) class302).anInt3833]);
 		    if (class318_sub1_sub3_sub3_sub2 != null
 			&& (class318_sub1_sub3_sub3_sub2
 			    != Class132.localPlayer)
-			&& ((Class318_Sub1_Sub3_Sub3)
+			&& ((Mob)
 			    class318_sub1_sub3_sub3_sub2).anInt10285 >= 0)
-			((Class318_Sub1_Sub3_Sub3)
+			((Mob)
 			 class318_sub1_sub3_sub3_sub2).anInt10285
 			    += 2048;
 		}
@@ -3399,30 +3399,30 @@ public final class Client extends ClientApplet {
     }
     
     static final void method117(int i) {
-	int i_122_ = Class328_Sub1.anInt6513;
-	int[] is = Class286_Sub7.anIntArray6290;
+	int i_122_ = Class328_Sub1.onscreenGpiOffset;
+	int[] is = Class286_Sub7.onscreenGpiList;
 	for (int i_123_ = 0; i_123_ < i_122_ + Class150.anInt2057; i_123_++) {
-	    Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
+	    Mob class318_sub1_sub3_sub3;
 	    if (i_123_ < i_122_)
 		class318_sub1_sub3_sub3
-		    = (ClassicLoadingScreen.players
+		    = (ClassicLoadingScreen.onscreenPlayers
 		       [is[i_123_]]);
 	    else
 		class318_sub1_sub3_sub3
 		    = ((Class348_Sub22) (Class348_Sub22)
 		       (Class282.aClass356_3654.get
 			((long) EntityPacket.anIntArray1233[i_123_ - i_122_]))).aClass318_Sub1_Sub3_Sub3_Sub1_6859;
-	    if (((Class318_Sub1) class318_sub1_sub3_sub3).aByte6381 == i
-		&& (((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+	    if (((Class318_Sub1) class318_sub1_sub3_sub3).heightLevel == i
+		&& (((Mob) class318_sub1_sub3_sub3)
 		    .anInt10285) >= 0) {
 		int i_124_ = class318_sub1_sub3_sub3.method2436((byte) 114);
 		if ((i_124_ & 0x1) == 0) {
-		    if ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		    if ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			 & 0x1ff) != 0
 			|| (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 			    & 0x1ff) != 0)
 			continue;
-		} else if ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+		} else if ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    & 0x1ff) != 256
 			   || ((((Class318_Sub1) class318_sub1_sub3_sub3)
 				.anInt6388)
@@ -3430,21 +3430,21 @@ public final class Client extends ClientApplet {
 		    continue;
 		if (i_124_ == 1) {
 		    int i_125_
-			= (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			= (((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			   >> 9);
 		    int i_126_
 			= (((Class318_Sub1) class318_sub1_sub3_sub3).anInt6388
 			   >> 9);
-		    if ((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3)
+		    if ((((Mob) class318_sub1_sub3_sub3)
 			 .anInt10285)
 			> (Class348_Sub42_Sub17.anIntArrayArray9678[i_125_]
 			   [i_126_])) {
 			Class348_Sub42_Sub17.anIntArrayArray9678[i_125_]
 			    [i_126_]
-			    = ((Class318_Sub1_Sub3_Sub3)
+			    = ((Mob)
 			       class318_sub1_sub3_sub3).anInt10285;
 			Class239_Sub8.anIntArrayArray5921[i_125_][i_126_] = 1;
-		    } else if (((Class318_Sub1_Sub3_Sub3)
+		    } else if (((Mob)
 				class318_sub1_sub3_sub3).anInt10285
 			       == (Class348_Sub42_Sub17.anIntArrayArray9678
 				   [i_125_][i_126_]))
@@ -3452,7 +3452,7 @@ public final class Client extends ClientApplet {
 		} else {
 		    int i_127_ = (i_124_ - 1) * 256 + 60;
 		    int i_128_
-			= ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			= ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    - i_127_)
 			   >> 9);
 		    int i_129_
@@ -3460,7 +3460,7 @@ public final class Client extends ClientApplet {
 			    - i_127_)
 			   >> 9);
 		    int i_130_
-			= ((((Class318_Sub1) class318_sub1_sub3_sub3).anInt6377
+			= ((((Class318_Sub1) class318_sub1_sub3_sub3).xHash
 			    + i_127_)
 			   >> 9);
 		    int i_131_
@@ -3469,18 +3469,18 @@ public final class Client extends ClientApplet {
 			   >> 9);
 		    for (int i_132_ = i_128_; i_132_ <= i_130_; i_132_++) {
 			for (int i_133_ = i_129_; i_133_ <= i_131_; i_133_++) {
-			    if (((Class318_Sub1_Sub3_Sub3)
+			    if (((Mob)
 				 class318_sub1_sub3_sub3).anInt10285
 				> (Class348_Sub42_Sub17.anIntArrayArray9678
 				   [i_132_][i_133_])) {
 				Class348_Sub42_Sub17.anIntArrayArray9678
 				    [i_132_][i_133_]
-				    = ((Class318_Sub1_Sub3_Sub3)
+				    = ((Mob)
 				       class318_sub1_sub3_sub3).anInt10285;
 				Class239_Sub8.anIntArrayArray5921[i_132_]
 				    [i_133_]
 				    = 1;
-			    } else if (((Class318_Sub1_Sub3_Sub3)
+			    } else if (((Mob)
 					class318_sub1_sub3_sub3).anInt10285
 				       == (Class348_Sub42_Sub17
 					   .anIntArrayArray9678[i_132_]
@@ -3504,16 +3504,16 @@ public final class Client extends ClientApplet {
 	    if (i < 40)
 		aClass262_5185 = null;
 	    if (Class132.localPlayer != null)
-		string += ("2)" + Class355.anInt4372 + ","
+		string += ("2)" + Class355.localHeightLevel + ","
 			   + (za_Sub2.baseRegionX
-			      + (((Class318_Sub1_Sub3_Sub3)
+			      + (((Mob)
 				  Class132.localPlayer)
-				 .anIntArray10320[0]))
+				 .xList[0]))
 			   + ","
 			   + (Class90.baseRegionY
-			      + (((Class318_Sub1_Sub3_Sub3)
+			      + (((Mob)
 				  Class132.localPlayer)
-				 .anIntArray10317[0]))
+				 .yList[0]))
 			   + "|");
 	    string += ("3)"
 		       + ((Class348_Sub51) BitmapTable.aClass348_Sub51_3959)

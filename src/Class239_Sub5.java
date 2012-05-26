@@ -49,80 +49,45 @@ final class Class239_Sub5 extends Class239
 	return true;
     }
     
-    static final void method1741(GameBuffer class348_sub49_sub2,
-				 byte i) {
+    static void parseGpiInitiate(GameBuffer buffer, byte i) {
 	anInt5893++;
-	class348_sub49_sub2.initiateBitAccess(122);
-	int i_3_ = Class348_Sub42_Sub11.localPlayerId;
-	Player class318_sub1_sub3_sub3_sub2
-	    = (Class132.localPlayer
-	       = ClassicLoadingScreen.players[i_3_]
-	       = new Player());
-	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2).anInt10290
-	    = i_3_;
-	int i_4_ = class348_sub49_sub2.getBits(30);
-	if (i != 118)
-	    anInt5886 = 111;
-	byte i_5_ = (byte) (i_4_ >> -1874018660);
-	int i_6_ = i_4_ >> -1334666546 & 0x3fff;
-	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-	    .anIntArray10320[0]
-	    = -za_Sub2.baseRegionX + i_6_;
-	int i_7_ = 0x3fff & i_4_;
-	((Class318_Sub1) class318_sub1_sub3_sub3_sub2).anInt6377
-	    = (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		 .anIntArray10320[0])
-		<< 1847678345)
-	       + (class318_sub1_sub3_sub3_sub2.method2436((byte) 91)
-		  << 564121416));
-	((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-	    .anIntArray10317[0]
-	    = i_7_ + -Class90.baseRegionY;
-	((Class318_Sub1) class318_sub1_sub3_sub3_sub2).anInt6388
-	    = (((((Class318_Sub1_Sub3_Sub3) class318_sub1_sub3_sub3_sub2)
-		 .anIntArray10317[0])
-		<< -77668919)
-	       - -(class318_sub1_sub3_sub3_sub2.method2436((byte) 85)
-		   << -1331342872));
-	Class355.anInt4372
-	    = ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6381
-	    = ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376 = i_5_;
-	if (NpcDefinition.method802((((Class318_Sub1_Sub3_Sub3)
-				class318_sub1_sub3_sub3_sub2)
-			       .anIntArray10317[0]),
-			      (((Class318_Sub1_Sub3_Sub3)
-				class318_sub1_sub3_sub3_sub2)
-			       .anIntArray10320[0]),
-			      true))
-	    ((Class318_Sub1) class318_sub1_sub3_sub3_sub2).aByte6376++;
-	if (Class154.aClass348_Sub49Array2105[i_3_] != null)
-	    class318_sub1_sub3_sub3_sub2.method2452((byte) 84,
-						    (Class154
-						     .aClass348_Sub49Array2105
-						     [i_3_]));
-	Class328_Sub1.anInt6513 = 0;
-	Class286_Sub7.anIntArray6290[Class328_Sub1.anInt6513++] = i_3_;
-	Class348_Sub5.gpiFlags[i_3_] = (byte) 0;
-	Class348_Sub42_Sub4.anInt9513 = 0;
-	for (int i_8_ = 1; (i_8_ ^ 0xffffffff) > -2049; i_8_++) {
-	    if ((i_3_ ^ 0xffffffff) != (i_8_ ^ 0xffffffff)) {
-		int i_9_ = class348_sub49_sub2.getBits(18);
+	buffer.initiateBitAccess();
+	int localId = Class348_Sub42_Sub11.localPlayerId;
+	Player player = (Class132.localPlayer = ClassicLoadingScreen.onscreenPlayers[localId] = new Player());
+	((Mob) player).localId = localId;
+	int hash = buffer.getBits(30);
+	byte z = (byte) (hash >> 28);
+	int cX = hash >> 14 & 0x3fff;
+	((Mob) player).xList[0] = cX - za_Sub2.baseRegionX;
+	int cY = 0x3fff & hash;
+	((Class318_Sub1) player).xHash = (((((Mob) player).xList[0]) << 9) + (player.method2436((byte) 91) << 8));
+	((Mob) player).yList[0] = cY - Class90.baseRegionY;
+	((Class318_Sub1) player).anInt6388 = (((((Mob) player).yList[0]) << -77668919) - -(player.method2436((byte) 85) << -1331342872));
+	Class355.localHeightLevel = ((Class318_Sub1) player).heightLevel = ((Class318_Sub1) player).mapHeightLevel = z;
+	if (NpcDefinition.isElevatedTile((((Mob) player).xList[0]), (((Mob)player).yList[0])))
+	    ((Class318_Sub1) player).mapHeightLevel++;
+	if (Class154.aClass348_Sub49Array2105[localId] != null)
+	    player.method2452((byte) 84, (Class154.aClass348_Sub49Array2105[localId]));
+	Class328_Sub1.onscreenGpiOffset = 0;
+	Class286_Sub7.onscreenGpiList[Class328_Sub1.onscreenGpiOffset++] = localId;
+	Class348_Sub5.gpiFlags[localId] = (byte) 0;
+	Class348_Sub42_Sub4.offscreenGpiOffset = 0;
+	for (int id = 1; (id ^ 0xffffffff) > -2049; id++) {
+	    if ((localId ^ 0xffffffff) != (id ^ 0xffffffff)) {
+		int i_9_ = buffer.getBits(18);
 		int i_10_ = i_9_ >> -916532240;
 		int i_11_ = (i_9_ & 0xff78) >> 1563982568;
 		int i_12_ = i_9_ & 0xff;
-		Class359 class359
-		    = Class348_Sub17.aClass359Array6802[i_8_] = new Class359();
-		((Class359) class359).aBoolean4426 = false;
-		((Class359) class359).anInt4420
-		    = (i_11_ << -1517233394) + ((i_10_ << 913818428) + i_12_);
-		((Class359) class359).anInt4423 = 0;
-		((Class359) class359).anInt4425 = -1;
-		Class135_Sub1.anIntArray4709[Class348_Sub42_Sub4.anInt9513++]
-		    = i_8_;
-		Class348_Sub5.gpiFlags[i_8_] = (byte) 0;
+		OffscreenPlayer offscreenPlayer  = Class348_Sub17.offscreenPlayers[id] = new OffscreenPlayer();
+		((OffscreenPlayer) offscreenPlayer).aBoolean4426 = false;
+		((OffscreenPlayer) offscreenPlayer).locationHash = (i_11_ << -1517233394) + ((i_10_ << 913818428) + i_12_);
+		((OffscreenPlayer) offscreenPlayer).anInt4423 = 0;
+		((OffscreenPlayer) offscreenPlayer).anInt4425 = -1;
+		Class135_Sub1.offscreenGpiList[Class348_Sub42_Sub4.offscreenGpiOffset++] = id;
+		Class348_Sub5.gpiFlags[id] = (byte) 0;
 	    }
 	}
-	class348_sub49_sub2.finalizeBitAccess(false);
+	buffer.finalizeBitAccess();
     }
     
     Class239_Sub5(int i, Class348_Sub51 class348_sub51) {

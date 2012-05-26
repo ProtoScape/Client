@@ -42,31 +42,31 @@ final class Class348_Sub9 extends Node
 	if (!Class348_Sub40_Sub17.aBoolean9242)
 	    return false;
 	int i_1_
-	    = ((Class318_Sub1) class318_sub1).anInt6377 >> Class362.anInt4459;
+	    = ((Class318_Sub1) class318_sub1).xHash >> Class362.anInt4459;
 	int i_2_ = i_1_;
 	int i_3_
 	    = ((Class318_Sub1) class318_sub1).anInt6388 >> Class362.anInt4459;
 	int i_4_ = i_3_;
-	if (class318_sub1 instanceof Class318_Sub1_Sub3) {
-	    i_2_ = (((Class318_Sub1_Sub3) (Class318_Sub1_Sub3) class318_sub1)
+	if (class318_sub1 instanceof Entity) {
+	    i_2_ = (((Entity) (Entity) class318_sub1)
 		    .aShort8751);
-	    i_4_ = (((Class318_Sub1_Sub3) (Class318_Sub1_Sub3) class318_sub1)
+	    i_4_ = (((Entity) (Entity) class318_sub1)
 		    .aShort8747);
-	    i_1_ = (((Class318_Sub1_Sub3) (Class318_Sub1_Sub3) class318_sub1)
+	    i_1_ = (((Entity) (Entity) class318_sub1)
 		    .aShort8743);
-	    i_3_ = (((Class318_Sub1_Sub3) (Class318_Sub1_Sub3) class318_sub1)
+	    i_3_ = (((Entity) (Entity) class318_sub1)
 		    .aShort8750);
 	}
 	for (int i_5_ = i_1_; i_5_ <= i_2_; i_5_++) {
 	    for (int i_6_ = i_3_; i_6_ <= i_4_; i_6_++) {
-		if ((((Class318_Sub1) class318_sub1).aByte6376
+		if ((((Class318_Sub1) class318_sub1).mapHeightLevel
 		     < Class189.anInt2524)
 		    && i_5_ >= Class37.anInt492 && i_5_ < Class27.anInt387
 		    && i_6_ >= Class348_Sub34.anInt6974
 		    && i_6_ < Class59_Sub1.anInt5293) {
 		    if ((is != null
-			 && ((Class318_Sub1) class318_sub1).aByte6381 >= i
-			 && (is[((Class318_Sub1) class318_sub1).aByte6381]
+			 && ((Class318_Sub1) class318_sub1).heightLevel >= i
+			 && (is[((Class318_Sub1) class318_sub1).heightLevel]
 			     [i_5_][i_6_]) == i_0_)
 			|| !class318_sub1.method2378(0)
 			|| class318_sub1.method2382((byte) -79)) {
@@ -313,7 +313,7 @@ final class Class348_Sub9 extends Node
 			       .definition);
 			if (((NpcDefinition) class79).anIntArray1377 != null)
 			    class79
-				= class79.method794((Class318_Sub1_Sub3_Sub3
+				= class79.method794((Mob
 						     .varbitHandler),
 						    -1);
 			if (class79 == null) {
@@ -344,7 +344,7 @@ final class Class348_Sub9 extends Node
 	    } else {
 		ObjectDefinition class51
 		    = (((Class348_Sub9) this).aClass51_6695.method480
-		       (Class318_Sub1_Sub3_Sub3.varbitHandler, (byte) 47));
+		       (Mob.varbitHandler, (byte) 47));
 		if (class51 == null) {
 		    ((Class348_Sub9) this).anInt6681 = 256;
 		    ((Class348_Sub9) this).aBoolean6674 = false;

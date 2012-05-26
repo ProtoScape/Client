@@ -156,7 +156,7 @@ final class Whirlpool
 		    = new int[Class31.anInt425 * Class250.anInt3225];
 		Class318_Sub1_Sub1_Sub2.anInt9997 = 1;
 	    }
-	    Class348_Sub16_Sub2.aBoolean8870 = true;
+	    Class348_Sub16_Sub2.heightLevelChanged = true;
 	}
     }
     

@@ -118,8 +118,8 @@ final class Class268
 				      ((((Class318_Sub1)
 					 (Class132
 					  .localPlayer))
-					.anInt6377),
-				       Class355.anInt4372, 11219,
+					.xHash),
+				       Class355.localHeightLevel, 11219,
 				       (((Class318_Sub1)
 					 (Class132
 					  .localPlayer))
@@ -142,8 +142,8 @@ final class Class268
 			 + (float) (ClientScript.anInt9701
 				    - WorldInfo.anInt3662) * f);
 	    Class59_Sub2_Sub2.anInt8685
-		= (int) ((float) Class359.anInt4424
-			 + f * (float) (-Class359.anInt4424
+		= (int) ((float) OffscreenPlayer.anInt4424
+			 + f * (float) (-OffscreenPlayer.anInt4424
 					+ Class59_Sub2_Sub2.anInt8685));
 	    int i_8_ = Class5.anInt4638 - Class253.anInt3253;
 	    if (i_8_ <= 8192) {
